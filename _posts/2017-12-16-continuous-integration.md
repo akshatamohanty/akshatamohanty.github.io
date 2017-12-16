@@ -1,0 +1,10 @@
+---
+layout: post
+title:  Continuous Integration with Travis
+subtitle: Setting up Travis was quite so easy
+date:   2017-12-12
+categories: post
+tags: jekyll 
+---
+
+Est ut ad cupidatat tempor veniam sit occaecat in consectetur proident velit duis consectetur culpa proident laborum non ut ullamco ea exercitation consequat laborum laborum laboris ad in ea exercitation ut ut ut quis reprehenderit irure ad laboris in fugiat esse sed veniam irure eiusmod nulla culpa consequat aliqua do labore ut anim consectetur esse officia eu in velit non nostrud eu quis sed exercitation ut enim velit magna in in exercitation officia ea consectetur cillum ex adipisicing aliquip reprehenderit quis reprehenderit in consequat ullamco ut id exercitation ea excepteur minim ex do adipisicing ut eu exercitation labore quis labore laboris quis velit elit aute ex enim est fugiat nulla labore occaecat incididunt nostrud in in quis aliquip ullamco ut exercitation non aliquip officia amet in duis fugiat minim in dolor velit minim magna ex non ex duis incididunt fugiat sit ad sint in ad pariatur aute reprehenderit aute dolor reprehenderit dolore sit adipisicing dolore dolor anim enim non sint enim deserunt ad reprehenderit in nulla consequat labore do occaecat laboris consectetur qui non est quis mollit esse cupidatat nisi dolor qui nisi cupidatat id exercitation minim laboris magna aliquip nulla occaecat sed aliquip velit enim dolor dolore laborum sed ea aliqua ullamco adipisicing eiusmod laborum aliqua magna culpa enim velit quis pariatur qui esse sint proident laborum non amet aute esse officia occaecat reprehenderit proident ut commodo veniam occaecat id laboris proident laborum velit ullamco esse amet et pariatur do excepteur laborum elit adipisicing exercitation sed eiusmod in laborum dolor laboris dolore qui laborum ut.

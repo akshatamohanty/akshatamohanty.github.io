@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{ page.title }}</title>
+		<!-- link to main stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/styles/main.css">
+	</head>
+  <body>
+
+  	<div class="container">
+
+  		<a href="/"> &larr; Back to Base</a>
+
+
+  		<h1>{{ page.title}}</h1>
+  		<div class="date">{{ page.date | date_to_long_string }}</div>
+
+  		<div class="text">
+       		{{ content }}
+    	</div>
+
+  	</div>
+
+  </body>
+</html>
