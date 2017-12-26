@@ -5,6 +5,17 @@
 		<!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="/styles/main.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111560396-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-111560396-1');
+		</script>
+
 	</head>
 	<body>
 
@@ -17,7 +28,14 @@
 
 			<div class="intro">
 
-				<p class="text intro">Hey there! Thanks for visiting Codeits! My name is Akshata. I am a Research Assistant at the National University of Singapore. I code for fun and food, in that order. This is a collection of all my "code-its"! Hope you find something useful here.</p>
+				<p class="text intro">Hey there! Thanks for visiting Codeits. My name is Akshata. I am a Research Assistant at the National University of Singapore. I code for fun and food, in that order. This is a collection of all my "codeits"! Hope you find something useful here.</p>
+
+				<!-- <br><br>
+
+				<p style="text-align: center;">
+				Looking for something specific?
+				<input>
+				</p> -->
 
 			</div>
 
@@ -37,6 +55,8 @@
 						    <div class="item {{ category | first }}">
 
 						    	<a href="{{post.url}}">
+
+						    		<div class="type">{{post.type}}</div>
 
 						    		<!-- <div class="img-holder" style="background-image: url(http://placehold.it/80x80);">
 						    		</div> -->
@@ -68,12 +88,15 @@
 		<footer>
 
 			<div class="container">
+
+				<div class="my-image"></div>
 				<h1 class="header">I would love to hear from you!</h1>
 				<div class="social-media-icons">
-					<a href="#" class="fa fa-linkedin"></a>
-					<a href="#" class="fa fa-medium"></a>
-					<a href="#" class="fa fa-twitter"></a>
+					<a target="_blank" href="https://www.linkedin.com/in/akshata-mohanty/" class="fa fa-linkedin"></a>
+					<a target="_blank" href="https://medium.com/@akshata_mohanty" class="fa fa-medium"></a>
+					<a target="_blank" href="https://twitter.com/akshata_mohanty" class="fa fa-twitter"></a>
 				</div>
+
 			</div>
 
 		</footer>

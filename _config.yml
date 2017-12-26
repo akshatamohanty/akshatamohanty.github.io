@@ -1,16 +1,21 @@
 # File: _config.yml
 destination: dist
 
+collections:
+- projects
+- blogs 
+- codes
+
 ## define a custom collection
 # collections:
 #   my_collection:
 #     output: true
 
 # Setup
-title:            Amoh
-tagline:          'A Jekyll theme'
-description:      'In qui eiusmod dolore irure exercitation fugiat magna tempor sint dolore in laboris excepteur ut minim.'
-url:              https://akshatamohanty.github.io/amoh
+title:            Codeits
+tagline:          'Portfolio and blog'
+description:      'A jekyll adventure'
+url:              https://akshatamohanty.github.io/
 baseurl:          # the optional subpath of your site, e.g. "/blog"
                   # NB: This applies to all pages in your Jekyll site.
                   # If you want to move just the blog index pages but keep
@@ -40,5 +45,5 @@ version:            1.0.0
                                 # set this to the root of the paginate_path
                                 # to enable a separate blog link.
 github:
-  repo:             https://github.com/akshatamohanty/jekyll-theme
+  repo:             https://github.com/akshatamohanty/akshatamohanty.github.io
 

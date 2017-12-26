@@ -1,5 +1,6 @@
 ---
 layout: project
+type: Web App
 title:  Studionet
 subtitle: Collaborative Social Media for Learning
 date:   2017-12-12

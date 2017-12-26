@@ -23,6 +23,17 @@
 			justify-content: space-between;
 
 			margin: 10px;
+			min-width: 200px;
+
+			background-color: rgba(255, 255, 255, 0.6);
+
+			.type{
+				display: none;
+				font-size: 11px;
+				text-transform: uppercase;
+				color: lightgrey;
+				line-height: 14px;
+			}
 
 			.date{
 				@extend .text; 
@@ -51,6 +62,10 @@
 
 				color: #888;
 
+				.fa{
+					margin-top: 4px;
+				}
+
 				span{
 					margin: 3px;
 					font-size: 11px;
@@ -75,6 +90,10 @@
 
 				.text{
 
+				}
+
+				.type{
+					display: block;
 				}
 			}
 

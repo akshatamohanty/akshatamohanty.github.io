@@ -25,6 +25,12 @@ html, body {
   margin: 0px;
   padding: 0px; }
 
+body {
+  background-image: url("../assets/graph-bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-height: 100%; }
+
 h1, h2, h3, footer .header, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6, h4, h5, h6 {
   text-align: center;
   color: gray; }
@@ -49,6 +55,9 @@ h3, footer .header, footer h1, footer h2, footer h3, footer h4, footer h5, foote
   justify-content: center; }
 
 .intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 400px;
   margin: 0 auto; }
 
@@ -57,6 +66,18 @@ footer {
   height: 300px;
   color: #fff;
   padding: 15px; }
+  footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  footer .my-image {
+    background-image: url("../assets/my-profile.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 75px;
+    height: 75px;
+    border: 3px solid gray;
+    border-radius: 50%; }
   footer h1, footer h2, footer h3, footer .header, footer h4, footer h5, footer h6 {
     color: #ddd; }
   footer .social-media-icons {
@@ -67,6 +88,19 @@ footer {
       margin: 10px;
       font-size: 32px;
       color: #ddd; }
+
+input {
+  display: block;
+  border: 1px solid gray;
+  border-radius: 20px;
+  height: 30px;
+  font-size: 14px;
+  line-height: 24px;
+  width: 100%;
+  padding: 0px 15px;
+  text-align: center; }
+  input:focus {
+    outline: none; }
 
 .category-container .category-heading {
   text-transform: uppercase; }
@@ -82,7 +116,15 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 10px; }
+    margin: 10px;
+    min-width: 200px;
+    background-color: rgba(255, 255, 255, 0.6); }
+    .category-container .item-container .item .type {
+      display: none;
+      font-size: 11px;
+      text-transform: uppercase;
+      color: lightgrey;
+      line-height: 14px; }
     .category-container .item-container .item .date {
       font-size: 10px;
       color: gray; }
@@ -99,6 +141,8 @@ footer {
       flex-wrap: wrap;
       margin-top: 20px;
       color: #888; }
+      .category-container .item-container .item .tags .fa {
+        margin-top: 4px; }
       .category-container .item-container .item .tags span {
         margin: 3px;
         font-size: 11px;
@@ -110,6 +154,8 @@ footer {
       padding: 10px; }
       .category-container .item-container .item.project .date {
         display: none; }
+      .category-container .item-container .item.project .type {
+        display: block; }
     .category-container .item-container .item.post {
       width: 45%;
       margin: 25px 10px;

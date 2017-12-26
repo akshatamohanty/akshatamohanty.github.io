@@ -39,6 +39,14 @@ html, body{
 
 	margin: 0px; 
 	padding: 0px;
+
+}
+
+body{
+	background-image: url("../assets/graph-bg.svg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-height: 100%;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -77,16 +85,37 @@ h3{
 }
 
 .intro{
+	display: flex; 
+	flex-direction: column; 
+	justify-content: center;
+
 	width: 400px;
 	margin: 0 auto;
 }
 
 footer{
+
 	background-color: #222; 
 	height: 300px;
 	color: #fff;
 
 	padding: 15px;
+
+	.container{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.my-image{
+		background-image: url('../assets/my-profile.jpg');
+		background-size: cover;
+		background-position: center;
+		width: 75px;
+		height: 75px;
+		border: 3px solid gray;
+		border-radius: 50%;
+	}
 
 	.header{
 		@extend h3; 
@@ -103,5 +132,23 @@ footer{
 			font-size: 32px;
 			color: #ddd;
 		}
+	}
+
+}
+
+
+input{
+	display: block; 
+	border: 1px solid gray; 
+	border-radius: 20px;
+	height: 30px;
+	font-size: 14px; 
+	line-height: 24px;
+	width: 100%;
+	padding: 0px 15px;
+	text-align: center;
+
+	&:focus{
+		outline: none;
 	}
 }
