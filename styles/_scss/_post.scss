@@ -1,0 +1,39 @@
+.post-body-wrapper{
+
+	width: 100%; 
+	height: 100%;
+	
+	display: flex; 
+	flex-direction: column;
+	align-items: center;
+
+	.nav-wrapper{
+		width: 600px;
+	}
+
+	.post-content-wrapper{
+		width: 600px;
+		margin: 0 auto;
+		background-color: white;
+
+		padding: 30px;
+
+		.post-container{
+
+			.date{
+				line-height: 24px;
+				font-color: #E7E3E3;
+				margin-bottom: 30px;
+			}
+
+			.post-content{
+				color: #222;
+				font-size: 14px;
+				line-height: 32px;
+			}
+		}
+
+
+	}
+	
+}

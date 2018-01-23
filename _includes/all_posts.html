@@ -1,0 +1,17 @@
+<div class="post-container-wrapper">
+{% for post in paginator.posts %}
+   	{% if post.url %} 
+	    <div class="post-container">
+	    	
+	    		<div class="date">{{ post.date | date_to_long_string }}</div>
+
+		    	<h4 class="title">// {{ post.title }}</h4>
+
+		    	<p class="description-text">
+		    		{{ post.subtitle }}
+		    		<a href="{{post.url}}">Read More &rarr;</a>
+		    	</p>
+		</div>
+	{% endif %}
+{% endfor %}
+</div>

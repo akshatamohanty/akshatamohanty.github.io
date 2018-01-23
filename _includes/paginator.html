@@ -1,0 +1,57 @@
+<div class="pagination-wrapper">
+
+
+
+		
+	{% if paginator.total_pages > 1 %}
+
+	<div class="pagination">
+
+		<ul class="page-items">
+
+	  		{% if paginator.previous_page %}
+	    		<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+	    			<li class="page-link">&laquo; Prev</li>
+	    		</a>
+	  		{% else %}
+
+	    	<li class="page-link hidden">
+	    		<span>&laquo; Prev</span>
+	    	</li>
+	  		{% endif %}
+
+			{% for page in (1..paginator.total_pages) %}
+			{% if page == paginator.page %}
+			  	<a>
+			  		<li class="page-link active">
+			  		{{ page }}
+			  		</li>
+			  	</a>
+			{% elsif page == 1 %}
+				<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+			  		<li class="page-link">{{ page }}</li>
+			  	</a>
+			{% else %}
+			 	<a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">
+			 	 	<li class="page-link">{{ page }}
+			 	 	</li>
+			 	</a>
+			{% endif %}
+			{% endfor %}
+
+			{% if paginator.next_page %}
+				<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+					<li class="page-link">Next &raquo;</li>
+				</a>
+			{% else %}
+			<li class="page-link hidden">
+				<span>Next &raquo;</span>
+			</li>
+			{% endif %}
+
+	  	</ul>
+
+	</div>
+	{% endif %}
+
+</div>

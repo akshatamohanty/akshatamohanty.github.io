@@ -12,9 +12,9 @@ collections:
 #     output: true
 
 # Setup
-title:            Codeits
-tagline:          'Portfolio and blog'
-description:      'A jekyll adventure'
+title:            Brain Dump
+tagline:          'Because all it takes in an idea'
+description:      'A foodie-codie blog'
 url:              https://akshatamohanty.github.io/
 baseurl:          # the optional subpath of your site, e.g. "/blog"
                   # NB: This applies to all pages in your Jekyll site.
@@ -29,14 +29,15 @@ author:
   name:           'Akshata Mohanty'
   url:            https://akshatamohanty.github.io/
 
-paginate:         5
-# paginate_path:    '/page:num'
-                    # Or '/blog/page:num' if you want to move your index pages
 
-# plugins:
+plugins:
+  - jekyll-paginate
 #   - jekyll-feed
 #   - jekyll-gist
-#   - jekyll-paginate
+
+paginate:         3
+paginate_path:    '/page:num'
+                    # Or '/blog/page:num' if you want to move your index pages
 
 # Custom vars
 version:            1.0.0
