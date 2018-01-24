@@ -1,10 +1,11 @@
---
-title: Saving in angular
-subtitle: Lorem ipsum
-categories: posts
-tags: angular shortcuts javascript
-date: 24-1-2018
---
+---
+layout: post
+title:  Detecting Ctrl+S and adding shortcuts to your angular application
+subtitle: Lessons learned while trying to integrate karma/jasmine into a typescript development environment. Took some time to figure this out but was totally worth the effort.
+date:   2018-1-24
+categories: post
+tags: shortcuts angular
+---
 
 
 ### Method 1
