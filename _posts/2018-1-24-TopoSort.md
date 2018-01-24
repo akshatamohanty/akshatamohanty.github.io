@@ -2,9 +2,8 @@
 title: Topological Sorting Algorithm with JS
 subtitle: Phew!
 date: 24-1-2018
-category: post
-layout: post
-tag: algorithms javascript graphs
+categories: post
+tags: algorithms javascript graphs
 ---
 
 ### Topological Sorting
