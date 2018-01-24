@@ -4,6 +4,7 @@ subtitle: Phew!
 date: 24-1-2018
 categories: post
 tags: algorithms, javascript, graphs
+layout: post
 ---
 
 ### Topological Sorting

@@ -1,6 +1,9 @@
 $bg-color: #EEEEEE;
-$text-color: #222222;
+
 $heading-color: #8B8B8B;
+$text-color: #222222;
+$accent-color: #E8C985; 
+$accent-color-muted: #ED6767;
 
 .media{
 	height: 30px; 
@@ -15,4 +18,14 @@ $heading-color: #8B8B8B;
 	line-height: 30px;
 	text-align: center;
 	vertical-align: middle;
+}
+
+.font-size-regular{
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.font-size-small{
+	font-size: 10px;
+	line-height: 16px;
 }

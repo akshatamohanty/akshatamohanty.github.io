@@ -9,20 +9,16 @@
 
 		.title{
 			text-transform: uppercase;
-			color: gray;
 		}
 
 		.description-text{
-			font-size: 14px;
-			line-height: 24px;
+
+			@extend .font-size-regular;
 
 			a{
 				display: block;
-				font-size: 14px;
-				line-height: 24px;
 				font-weight: 100;
-				font-family: Oswald;
-				color:#707088;
+				
 				a::after{
 					content: "->"
 				}
@@ -39,7 +35,7 @@
 		}
 
 		.date{
-			font-size: 10px;
+			@extend .font-size-small;
 		}
 
 	}

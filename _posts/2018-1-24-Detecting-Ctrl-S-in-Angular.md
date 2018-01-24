@@ -5,7 +5,6 @@ subtitle: Lessons learned while trying to integrate karma/jasmine into a typescr
 date:   2018-1-24
 categories: post
 tags: shortcuts angular
-published: false
 ---
 
 

@@ -13,9 +13,9 @@
 	}
 
 	.intro{
-		font-size: 12px;
-		line-height: 24px;
+		@extend .font-size-small;
 		font-weight: 100;
+		text-align: center;
 	}
 
 	.disabled{
@@ -133,6 +133,7 @@
 			li.page-link{
 				display: inline;
 				margin-right: 5px;
+				padding: 5px;
 
 				&.active{
 					background-color: gray;
