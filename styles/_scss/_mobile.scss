@@ -1,6 +1,10 @@
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (max-device-width : 768px) {
 /* Styles */
+	body{
+		font-size: 20px;
+	}
+
 	.body-wrapper{
 		width: 100%;
 
@@ -19,10 +23,10 @@
 	.post-body-wrapper{
 		width: 90% !important;
 
-		.post-content{
-			font-size: 2em;
-			line-height: 2.2em;
-		}
+	}
+
+	.post-container-wrapper{
+		padding: 0.8em;
 	}
 
 }
@@ -51,11 +55,10 @@
 
 	.post-body-wrapper{
 		width: 80% !important;
+	}
 
-		.post-content{
-			font-size: 2em;
-			line-height: 2.2em;
-		}
+	.post-container-wrapper{
+		padding: 0.8em;
 	}
 }
 
@@ -70,13 +73,14 @@
 		}
 
 	}
+
 	.post-body-wrapper{
 		width: 80% !important;
 
-		.post-content{
-			font-size: 2em;
-			line-height: 2.2em;
-		}
+	}
+
+	.post-container-wrapper{
+		padding: 0.8em;
 	}
 }
 
@@ -91,13 +95,13 @@
 		}
 
 	}
+
 	.post-body-wrapper{
 		width: 90% !important;
+	}
 
-		.post-content{
-			font-size: 2em;
-			line-height: 2.2em;
-		}
+	.post-container-wrapper{
+		padding: 0.8em;
 	}
 }
 /**********
