@@ -29,7 +29,8 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: center; }
   .body-wrapper .nav-wrapper {
     padding: 0.8em;
     margin-top: 10rem;
@@ -37,7 +38,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start; }
+    align-self: flex-start; }
   .body-wrapper .content-wrapper {
     padding: 0.8em;
     display: flex;
@@ -56,7 +57,7 @@ body {
   width: inherit;
   margin: 0 auto; }
   .navigation section {
-    margin: 0.8em 0px; }
+    margin: 1.6em 0px; }
   .navigation .tag-container {
     display: flex;
     flex-direction: row;
@@ -136,7 +137,14 @@ body {
     flex-wrap: wrap;
     margin: 0.8em; }
     .body-wrapper .nav-wrapper {
-      width: 80%; } }
+      width: 80%;
+      align-self: center; }
+
+  .post-body-wrapper {
+    width: 90% !important; }
+    .post-body-wrapper .post-content {
+      font-size: 2em;
+      line-height: 2.2em; } }
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width: 321px) {
   /* Styles */ }
@@ -149,21 +157,39 @@ body {
   .body-wrapper {
     width: 80%; }
     .body-wrapper .nav-wrapper {
-      width: 10rem; } }
+      width: 10rem; }
+
+  .post-body-wrapper {
+    width: 80% !important; }
+    .post-body-wrapper .post-content {
+      font-size: 2em;
+      line-height: 2.2em; } }
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   /* Styles */
   .body-wrapper {
     width: 80%; }
     .body-wrapper .nav-wrapper {
-      width: 10rem; } }
+      width: 10rem; }
+
+  .post-body-wrapper {
+    width: 80% !important; }
+    .post-body-wrapper .post-content {
+      font-size: 2em;
+      line-height: 2.2em; } }
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   /* Styles */
   .body-wrapper {
     width: 90%; }
     .body-wrapper .nav-wrapper {
-      width: 8rem; } }
+      width: 8rem; }
+
+  .post-body-wrapper {
+    width: 90% !important; }
+    .post-body-wrapper .post-content {
+      font-size: 2em;
+      line-height: 2.2em; } }
 /**********
 iPad 3
 **********/
@@ -230,15 +256,16 @@ iPad 3
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center; }
-  .post-body-wrapper .nav-wrapper {
+  align-items: center;
+  width: 600px;
+  margin: 0 auto; }
+  .post-body-wrapper .backnav-wrapper {
     margin-top: 2rem;
     width: 100% !important; }
   .post-body-wrapper .post-wrapper {
     margin: 0 auto;
     background-color: white;
-    padding: 5rem;
-    width: 600px; }
+    padding: 5rem; }
     .post-body-wrapper .post-wrapper .summary {
       border-top: 1px solid gray;
       border-bottom: 1px solid gray;

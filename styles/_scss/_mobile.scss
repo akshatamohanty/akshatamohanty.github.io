@@ -11,6 +11,17 @@
 
 		.nav-wrapper{
 			width: 80%;
+			align-self: center;
+		}
+
+	}
+
+	.post-body-wrapper{
+		width: 90% !important;
+
+		.post-content{
+			font-size: 2em;
+			line-height: 2.2em;
 		}
 	}
 
@@ -35,8 +46,17 @@
 		.nav-wrapper{
 			width: 10rem;
 		}
+
 	}
 
+	.post-body-wrapper{
+		width: 80% !important;
+
+		.post-content{
+			font-size: 2em;
+			line-height: 2.2em;
+		}
+	}
 }
 
 /* iPads (landscape) ----------- */
@@ -44,8 +64,18 @@
 /* Styles */
 	.body-wrapper{
 		width: 80%;
+
 		.nav-wrapper{
 			width: 10rem;
+		}
+
+	}
+	.post-body-wrapper{
+		width: 80% !important;
+
+		.post-content{
+			font-size: 2em;
+			line-height: 2.2em;
 		}
 	}
 }
@@ -55,8 +85,18 @@
 /* Styles */
 	.body-wrapper{
 		width: 90%;
+
 		.nav-wrapper{
 			width: 8rem;
+		}
+
+	}
+	.post-body-wrapper{
+		width: 90% !important;
+
+		.post-content{
+			font-size: 2em;
+			line-height: 2.2em;
 		}
 	}
 }

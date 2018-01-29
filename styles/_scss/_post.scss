@@ -3,8 +3,10 @@
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
+	width: $content-width;
+	margin: 0 auto;
 
-	.nav-wrapper{
+	.backnav-wrapper{
 		margin-top: 2rem;
 		width: 100% !important;
 	}
@@ -13,8 +15,7 @@
 		margin: 0 auto;
 		background-color: white;
 		padding: 5rem;
-		width: $content-width;
-
+		
 		.summary{
 			border-top: 1px solid gray;
 			border-bottom: 1px solid gray;
