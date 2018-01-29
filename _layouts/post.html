@@ -3,12 +3,6 @@
 	<head>
 		<title>{{ page.title }}</title>
 
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
 		<!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="/styles/main.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -26,30 +20,26 @@
 	</head>
 	<body>
 
-		<div class="post-body-wrapper">
+		<div class="body-wrapper post-body-wrapper">
 		
 			<div class="nav-wrapper">
 				{% include back.html %}
 			</div>
 
-			<div class="post-content-wrapper">	
+			<div class="post-wrapper">	
 
-				<div class="post-container">
+				<h1>{{page.title}}</h1>
 
-					<h2>{{page.title}}</h2>
-
-					<hr>
-					{{ page.summary }}
-					Cupidatat cupidatat in deserunt voluptate qui ut cupidatat id voluptate sunt quis labore sit in non fugiat reprehenderit eu voluptate excepteur veniam do in esse incididunt do in.
-					<hr>
-
-					<div class="date">{{ page.date | date_to_long_string }}</div>
-
-					<div class="post-content">
-						{{ page.content }}
-					</div>
-
+				<div class="summary">
+				{{ page.summary }}
+				Cupidatat cupidatat in deserunt voluptate qui ut cupidatat id voluptate sunt quis labore sit in non fugiat reprehenderit eu voluptate excepteur veniam do in esse incididunt do in.
 				</div>
+
+				<div class="date">Written on {{ page.date | date_to_long_string }}</div>
+
+				<article class="post-content">
+					{{ page.content }}
+				</article>
 
 			</div>
 

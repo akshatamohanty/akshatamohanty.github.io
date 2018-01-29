@@ -1,36 +1,42 @@
 .post-body-wrapper{
-
-	width: 100%; 
-	height: 100%;
-	
 	display: flex; 
 	flex-direction: column;
+	justify-content: space-around;
 	align-items: center;
 
 	.nav-wrapper{
-		width: 600px;
+		margin-top: 2rem;
+		width: 100% !important;
 	}
 
-	.post-content-wrapper{
-		width: 600px;
+	.post-wrapper{
 		margin: 0 auto;
 		background-color: white;
+		padding: 5rem;
+		width: $content-width;
 
-		padding: 30px;
+		.summary{
+			border-top: 1px solid gray;
+			border-bottom: 1px solid gray;
 
-		.post-container{
+			margin-top: 3rem;
+			margin-bottom: 3rem;
+		}
 
-			.date{
-				line-height: 24px;
-				font-color: #E7E3E3;
-				margin-bottom: 30px;
-			}
+		.date{
+			margin-bottom: 3rem;
+			font-size: 0.8em;
+		}
 
-			.post-content{
-				color: #222;
-				font-size: 14px;
-				line-height: 32px;
-			}
+		.post-content{
+			font-size: 1.2em;
+			line-height: 1.8em;
+
+			margin-bottom: 3rem;
+		}
+
+		section{
+			margin-top: 10rem;
 		}
 
 

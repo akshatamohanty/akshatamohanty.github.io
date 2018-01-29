@@ -3,17 +3,13 @@
 	display: flex;
 	flex-direction: column;
 
+	padding: 1.2em;
+
 	.post-container{
 
-		margin: 15px;
-
-		.title{
-			text-transform: uppercase;
-		}
+		margin-bottom: 2.5em;
 
 		.description-text{
-
-			@extend .font-size-regular;
 
 			a{
 				display: block;
@@ -34,9 +30,7 @@
 			}
 		}
 
-		.date{
-			@extend .font-size-small;
-		}
+
 
 	}
 

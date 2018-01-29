@@ -35,7 +35,7 @@ plugins:
 #   - jekyll-feed
 #   - jekyll-gist
 
-paginate:         3
+paginate:         10
 paginate_path:    '/page:num'
                     # Or '/blog/page:num' if you want to move your index pages
 

@@ -5,27 +5,21 @@ $text-color: #222222;
 $accent-color: #E8C985; 
 $accent-color-muted: #ED6767;
 
-.media{
-	height: 30px; 
-	width: 30px; 
+$default-margin: 0.8em;
+$content-width: 600px;
 
-	font-size: 14px;
-	line-height: 30px;
+$navigation-height: 3rem;
+
+.media{
+	height: 2rem; 
+	width: 2rem; 
+
+	font-size: 1rem;
+	line-height: 2rem;
 
 	border: 1px solid #222; 
 	margin: 5px;
 
-	line-height: 30px;
 	text-align: center;
 	vertical-align: middle;
-}
-
-.font-size-regular{
-	font-size: 12px;
-	line-height: 20px;
-}
-
-.font-size-small{
-	font-size: 10px;
-	line-height: 16px;
 }

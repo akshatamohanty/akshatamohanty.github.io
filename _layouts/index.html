@@ -3,9 +3,15 @@
 	<head>
 		<title>{{ page.title }}</title>
 
+		<!-- Required meta tags -->
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/styles/main.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+		<!-- main stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/styles/main.css">
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111560396-1"></script>
@@ -29,7 +35,6 @@
 			<div class="content-wrapper">
 
 				{% include all_posts.html %}
-
 
 				<div class="paginate-wrapper">
 					{% include paginator.html %}
