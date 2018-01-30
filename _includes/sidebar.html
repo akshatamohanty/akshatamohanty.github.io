@@ -1,19 +1,14 @@
 <div class="navigation">
 	
-	<h2 class="center">{{page.title}}</h2>
-
-	<p class="center">{{page.about-me}}</p>
-
-	<!-- <div>
-		<ul>
-			<li>Blog</li>
-			<li class="disabled">Projects</li>
-			<li class="disabled">Contact</li>
-		</ul>
-	</div> -->
+	<h1 class="center page-title">{{site.title}}</h1>
 
 	<section class="center">
-		<h5>Topics</h5>
+		<h5 class="heading">ABOUT ME</h5>
+		<p class="center">{{ site.description }}</p>
+	</section>
+
+	<section class="center">
+		<h5 class="heading">Topics</h5>
 		<ul class="tag-container">
 			{% for tag in site.tags %}
 			  {% assign t = tag | first %}
@@ -27,7 +22,7 @@
 	</section>
 
 	<section class="center">
-		<h5>My Work</h5>
+		<h5 class="heading">My Work</h5>
 		<div class="social-media-icons">
 			<!-- <div class="media-icon"><i class="fa fa-medium"></i></div> -->
 			<a target="_blank" href="https://www.github.com/akshatamohanty/">
@@ -42,7 +37,7 @@
 	</section>
 
 	<section class="center">
-		<h5>Contact</h5>
+		<h5 class="heading">Contact</h5>
 		<div class="social-media-icons">
 			<a target="_blank" href="mailto:akshatamohanty@gmail.com">
 				<div class="media-icon">

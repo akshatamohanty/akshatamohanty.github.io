@@ -1,0 +1,38 @@
+.pagination-wrapper{
+	width: 100%;
+
+	.pagination{
+
+		width: 100%;
+
+		ul.page-items{
+			width: 100%;
+
+			display: flex;
+			flex-direction: row;
+			align-items: flex-end;
+
+			padding: 0px 0px 0px 1rem;
+			margin: 0px;
+
+			list-style: none;
+
+			li.page-link{
+				display: inline;
+				margin-right: 5px;
+				padding: 5px;
+
+				&.active{
+					background-color: gray;
+					color: white;
+				}
+
+				&.hidden{
+					display: none;
+				}
+			}
+		}
+
+	}
+
+}

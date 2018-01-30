@@ -1,7 +1,30 @@
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (max-device-width : 768px) {
 /* Styles */
+	
 	body{
+		font-size: 20px;
+	}
+
+	.body-wrapper{
+
+		width: auto;
+		padding: 0.5em;
+
+		flex-direction: column; 
+		flex-wrap: wrap;
+		align-items: center;
+
+		.main-nav-wrapper{
+			position: relative;
+		}
+
+		.main-content-wrapper{
+			margin: 0.5em;
+		}
+	}
+
+	/* body{
 		font-size: 20px;
 	}
 
@@ -9,7 +32,7 @@
 		width: 100%;
 
 		flex-direction: column; 
-		flex-wrap: wrap;
+		
 		
 		margin: $default-margin;
 
@@ -27,24 +50,25 @@
 
 	.post-container-wrapper{
 		padding: 0.8em;
-	}
+	} */
 
 }
 
-/* Smartphones (landscape) ----------- */
-@media only screen and (min-width : 321px) {
-/* Styles */
-}
-
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width : 320px) {
-/* Styles */
-}
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 	/* Styles */
 	.body-wrapper{
+
+		width: 80%;
+		padding: 0.8em;
+
+		.main-content-wrapper{
+			margin: 0.8em;
+		}
+	}
+
+	/* .body-wrapper{
 		width: 80%;
 
 		.nav-wrapper{
@@ -59,13 +83,14 @@
 
 	.post-container-wrapper{
 		padding: 0.8em;
-	}
+	} */
 }
 
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
 /* Styles */
-	.body-wrapper{
+	
+	/* .body-wrapper{
 		width: 80%;
 
 		.nav-wrapper{
@@ -81,13 +106,13 @@
 
 	.post-container-wrapper{
 		padding: 0.8em;
-	}
+	} */
 }
 
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
 /* Styles */
-	.body-wrapper{
+	/* .body-wrapper{
 		width: 90%;
 
 		.nav-wrapper{
@@ -102,8 +127,21 @@
 
 	.post-container-wrapper{
 		padding: 0.8em;
-	}
+	} */
 }
+
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+/* Styles */
+}
+
+
 /**********
 iPad 3
 **********/

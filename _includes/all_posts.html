@@ -1,24 +1,14 @@
 <div class="post-container-wrapper">
-
-	<!-- <div class="category">
-		<ul>
-			<li>POSTS</li>
-			<li>PROJECTS</li>
-		</ul>
-	</div> -->
-
 	{% for post in paginator.posts %}
 	   	{% if post.url %} 
 		    <div class="post-container">
 		    	
-
 		    		<div class="date">{{ post.date | date_to_long_string }}</div>
 			    	<h4 class="title">// {{ post.title }}</h4>
 
-			    	<p>
-			    		{{ post.subtitle }}
-			    		<a href="{{post.url}}">Read More &rarr;</a>
-			    	</p>
+			    	<p>{{ post.subtitle }}</p>
+			    	
+			    	<a href="../{{post.url}}">Read More &rarr;</a>
 			</div>
 		{% endif %}
 	{% endfor %}

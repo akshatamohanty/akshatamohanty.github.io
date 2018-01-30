@@ -12,55 +12,46 @@ html{
 
 body{
 	width: 100%; 
-
 	background-color: $bg-color;
 
-	display: flex; 
-	flex-direction: row;
+	margin: 0px; 
+	padding: 0px;
+
+	font-size: 16px;
 }
 
 
 .body-wrapper{
-
 	position: relative;
 
 	width: 60%;
-	height: 80%; 
+	height: auto;
+	max-width: 750px;
 
 	margin: 0 auto;
+	padding: $default-spacing;
 
 	display: flex; 
 	flex-direction: row; 
 	justify-content: space-between;
-	align-items: center;
 
-	.nav-wrapper{
-		padding: $default-margin;
-		margin-top: 10rem;
-		width: 10rem;  //16px*20
+	.main-nav-wrapper{
+		width: $side-navigation-width;
 
-		display: flex; 
-		flex-direction: column; 
-		justify-content: space-between;
-		align-self: flex-start;
+		margin: $side-navigation-margin-top $default-spacing $default-spacing $default-spacing;
+		padding: 0px;
 	}
 
-	.content-wrapper{
-		padding: $default-margin;
+	.main-content-wrapper{
+		margin: $default-spacing;
+		padding: 0px;
 
+		flex-grow: 1;
+		
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		height: auto;
-		
-		.paginate-wrapper{
-
-		}
 	}
 
 }
 
-
-.center{
-	text-align: center;
-}

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>{{ page.title }}</title>
+		<title>Detecting Ctrl+S and adding shortcuts to your angular application</title>
 
 		<!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="/styles/main.css">
@@ -22,30 +22,53 @@
 
 		<div class="body-wrapper post-body-wrapper">
 		
-			{% include back.html %}
+			<div class="back-navigation">
+	<div class="home">
+		<a href="/">&larr;Back to Posts</a>
+	</div>
+
+	<div class="share">
+		<div class="media-icon"><i class="fa fa-linkedin"></i></div>
+		<div class="media-icon"><i class="fa fa-facebook-official"></i></div>
+		<div class="media-icon"><i class="fa fa-twitter"></i></div>
+	</div>
+</div>
+
 
 			<article class="post-wrapper">	
 
 				<section class="post-title">
-					<h3>{{page.title}}</h3>
+					<h3>Detecting Ctrl+S and adding shortcuts to your angular application</h3>
 				</section>
 
 				<section class="summary">
-					{{ page.summary }}
+					
 					Cupidatat cupidatat in deserunt voluptate qui ut cupidatat id voluptate sunt quis labore sit in non fugiat reprehenderit eu voluptate excepteur veniam do in esse incididunt do in.
 				</section>
 
 				<section class="date">
-					Written on {{ page.date | date_to_long_string }}
+					Written on 24 January 2018
 				</section>
 
 				<section class="post-content">
-					{{ page.content }}
+					<h3 id="method-1">Method 1</h3>
+
 				</section>
 
 			</article>
 
-			{% include back.html %}
+			<div class="back-navigation">
+	<div class="home">
+		<a href="/">&larr;Back to Posts</a>
+	</div>
+
+	<div class="share">
+		<div class="media-icon"><i class="fa fa-linkedin"></i></div>
+		<div class="media-icon"><i class="fa fa-facebook-official"></i></div>
+		<div class="media-icon"><i class="fa fa-twitter"></i></div>
+	</div>
+</div>
+
 
 		</div>
 
