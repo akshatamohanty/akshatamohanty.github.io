@@ -1,5 +1,5 @@
 # File: _config.yml
-destination: site
+destination: _site
 
 collections:
   projects:
@@ -42,8 +42,6 @@ plugins:
   - jekyll-paginate-v2
 #   - jekyll-feed
 #   - jekyll-gist
-
-gems: [jekyll-paginate-v2]
 
 ############################################################
 # Site configuration for the Jekyll 3 Pagination Gem
