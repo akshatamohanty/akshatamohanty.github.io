@@ -273,12 +273,12 @@ body {
       list-style-type: none; }
       .projects-container-wrapper .projects-container .tag-container .tag {
         font-size: 10px;
-        line-height: 14px;
-        padding: 5px;
-        border-radius: 50px;
+        line-height: 11px;
+        padding: 3px;
+        border-radius: 3px;
         border: 1px solid gray;
         margin: 2px 4px 2px 0px;
-        background-color: #DDD4D4;
+        background-color: #f6f5f5;
         color: #494242; }
         .projects-container-wrapper .projects-container .tag-container .tag .name {
           padding: 0px 3px; }
