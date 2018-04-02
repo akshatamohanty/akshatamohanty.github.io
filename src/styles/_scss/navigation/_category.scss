@@ -1,0 +1,36 @@
+.category-navigation{
+
+	ul{
+
+		margin: 0px; 
+		padding: 0px;
+
+		list-style-type: none;
+
+		display: flex;
+		flex-direction: row; 
+		justify-content: space-around;
+
+		li{
+
+			a{
+				font-size: 1.2em;
+				padding: 0.4em;
+				color: $accent-color-muted;
+			}
+
+			flex-grow: 1;
+			text-align: center;
+
+			cursor: pointer;
+
+			border: 3px solid $accent-2;
+
+			&.active{
+				background-color: $accent-contrast-2;
+				color: $accent-contrast-2;
+			}
+
+		}
+	}
+}

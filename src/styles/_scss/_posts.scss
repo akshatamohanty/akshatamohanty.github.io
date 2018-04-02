@@ -1,0 +1,53 @@
+.posts-container-wrapper{
+
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+
+	padding: 1.2em 0em 1em 0em;
+
+	.posts-container{
+
+		margin-top: 1em;
+		margin-bottom: 1em;
+
+		.image{
+			display: none;
+		}
+
+		.title{
+			&::before{
+				content: '//'
+			}
+		}
+
+		.description-text{
+
+			a{
+				display: block;
+				font-weight: 100;
+				
+				a::after{
+					content: "->"
+				}
+			}
+		}
+
+
+		.date{
+			text-transform: uppercase;
+			font-size: 12px;
+			font-family: Oswald;
+		}
+
+		.link{
+			&:before{
+				content: "Read More";
+			}
+		}
+
+
+
+	}
+
+}

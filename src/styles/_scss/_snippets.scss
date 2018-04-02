@@ -1,0 +1,44 @@
+.snippets-container-wrapper{
+
+	display: flex;
+	flex-direction: column;
+
+	padding: 1.2em 0em 1em 0em;
+
+	.snippets-container{
+
+		margin-top: 1em;
+		margin-bottom: 1em;
+
+		.description-text{
+
+			a{
+				display: block;
+				font-weight: 100;
+				
+				a::after{
+					content: "->"
+				}
+			}
+		}
+
+		.tags{
+
+			display: none;
+
+			.tag{
+
+			}
+		}
+
+		.date{
+			text-transform: uppercase;
+			font-size: 12px;
+			font-family: Oswald;
+		}
+
+
+
+	}
+
+}
