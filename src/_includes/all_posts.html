@@ -1,0 +1,34 @@
+<div class="{{page.type}}-container-wrapper">
+	{% for item in paginator.posts %}
+	   	{% if item.url %} 
+		    <div class="{{page.type}}-container">
+
+		    	{% if page.type == "projects" %} 
+
+		    	<ul class="tag-container">
+					{% for tag in item.tags %}
+					<li class="tag">{{tag}}</li> 
+					{% endfor %}
+				</ul>
+
+		    	
+		    	<div class="image" 
+		    		style="background-image: url(./images/{{item.image}})">
+		    	</div>
+		    	{% endif %}
+
+
+
+		    	<h4 class="title">{{ item.title }}</h4>
+	    		
+	    		<div class="date">{{ item.date | date_to_long_string }}</div>
+
+		    	<p>{{ item.subtitle }}</p>
+
+
+
+		    	<a class="link" href="../{{item.url}}">&rarr;</a>
+			</div>
+		{% endif %}
+	{% endfor %}
+</div>
