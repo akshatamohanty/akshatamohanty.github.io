@@ -26,31 +26,35 @@
 	</head>
 	<body>
 
-		<div class="body-wrapper">
-		
-			<div class="main-content-wrapper">
+		<div class="main-container container rows">
 
-				<h1 class="center page-title">{{site.title}}</h1>
+			<div class="container rows">
 
-				{% include category_navigation.html %}
+				<div class="header">
+					<div id="blog-title"><span class="mark">abra</span>cadabra</div>
+					<div>{% include category_navigation.html %}</div> 
+				</div>
 
-				{% include all_posts.html %}
+				<div class="container cols">
 
-				{% include paginator.html %}
+					<div id="item-container" 
+						 class="item-container container rows main-item">
+						<div class="main-item">{% include all-items.html %}</div>
 
+						<div>{% include paginator.html %}</div>
+					</div>
 
-			</div>
+					<div id="side-bar">
+						{% include sidebar.html %}
+					</div>
+					
+				</div>
 
-			<div class="main-nav-wrapper">
-				{% include sidebar.html %}
 			</div>
 
 		</div>
 
 	</body>
-
-	<!-- scripts-->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </html>
 

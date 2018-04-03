@@ -1,0 +1,21 @@
+<div class="container-fluid">
+
+		{% for item in paginator.posts %}
+
+				{% if page.type == "posts" %} 
+					{% include post-list-layout.html %}
+				{% endif %}
+
+
+				{% if page.type == "projects" %} 
+					{% include project-list-layout.html %}
+				{% endif %}
+
+
+				{% if page.type == "snippets" %} 
+					{% include snippet-list-layout.html %}
+				{% endif %}
+
+		{% endfor %}
+		
+</div>

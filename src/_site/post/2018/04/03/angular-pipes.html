@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Angular Pipes - A summary</title>
+
+		<!-- link to main stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/styles/main.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111560396-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-111560396-1');
+		</script>
+
+	</head>
+	<body>
+
+		<div class="body-wrapper post-body-wrapper">
+		
+			<div class="back-navigation">
+	<div class="home">
+		<a href="/">&larr;Back to Posts</a>
+	</div>
+
+	<div class="share">
+		<div class="media-icon"><i class="fa fa-linkedin"></i></div>
+		<div class="media-icon"><i class="fa fa-facebook-official"></i></div>
+		<div class="media-icon"><i class="fa fa-twitter"></i></div>
+	</div>
+</div>
+
+
+			<article class="post-wrapper">	
+
+				<section class="post-title">
+					<h3>Angular Pipes - A summary</h3>
+				</section>
+
+				<section class="summary">
+					
+					Cupidatat cupidatat in deserunt voluptate qui ut cupidatat id voluptate sunt quis labore sit in non fugiat reprehenderit eu voluptate excepteur veniam do in esse incididunt do in.
+				</section>
+
+				<section class="date">
+					Written on 03 April 2018
+				</section>
+
+				<section class="post-content">
+					<p>While working on my projects, I often find situations when I need a piece of string to shorten itself and get appended by an ellipsis. This little piece of code does just that, as a pipe in Angular Applications.</p>
+
+<h4 id="what-is-a-pipe">What is a Pipe?</h4>
+
+<p>Angular is awesome for displaying data! The two-way binding, the centralized data-services - they all make me sleep easy at night (most of the times!). Pipe is another such simple but powerful feature. Most of the time, you will store, retrive and manipulate raw data - numbers, dates, strings etc. If a person last logged in on April 3, 2018, the value is probably stored as 1522739114055 in your database. However, displaying this value directly to the user - might be a little … uh… disturbing for the user, not to mention all the UX junkies who will haunt you in your dreams. So now, one way would be you could painfully write a function in your component.ts file, to convert your data values to human readable strings and add this function in every component that needs it. Or … you could make a Pipe! And magically tranform your dates … into awesome messages for your user!</p>
+
+<h4 id="how-to-use-a-pipe">How to use a Pipe?</h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div class="data"&gt; &lt;/div&gt;
+</code></pre></div></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>some_data</th>
+      <th style="text-align: center">result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1522739114055</td>
+      <td style="text-align: center">Apr 3, 2018</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="key-takeaway">Key Takeaway</h4>
+
+<p>This template is pretty much all you need to build a basic Angular pipe. Two key things to keep in mind -</p>
+<ul>
+  <li>Remember to include this pipe in your <strong>declarations array</strong> in the <strong>app.module.ts</strong> file.</li>
+  <li>The <strong>tranform</strong> function is the hero of a pipe. This is where all the processing takes place.</li>
+</ul>
+
+				</section>
+
+			</article>
+
+			<div class="back-navigation">
+	<div class="home">
+		<a href="/">&larr;Back to Posts</a>
+	</div>
+
+	<div class="share">
+		<div class="media-icon"><i class="fa fa-linkedin"></i></div>
+		<div class="media-icon"><i class="fa fa-facebook-official"></i></div>
+		<div class="media-icon"><i class="fa fa-twitter"></i></div>
+	</div>
+</div>
+
+
+		</div>
+
+
+	</body>
+</html>

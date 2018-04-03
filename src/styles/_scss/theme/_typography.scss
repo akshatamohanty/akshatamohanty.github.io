@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab|Muli');
+
+body{
+	font-family: Josefin+Slab;
+
+	font-size: 1.5em;
+	color: $text-color;
+	
+	background-color: $background-color;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: Muli;
+	font-weight: 600;
+	color: $accent-color-3;
+	line-height: 120%;
+
+	text-transform: uppercase;
+}
+
+p{
+	color: $text-color;
+}
+
+#blog-title{
+	color: $accent-color-3;
+	text-transform: uppercase;
+
+	.mark{
+		color: white;
+	}
+}

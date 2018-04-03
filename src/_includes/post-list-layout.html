@@ -1,0 +1,14 @@
+<div class="container cols">
+	<div style="width: 150px;">
+		<div class="date">{{ item.date | date_to_long_string }}</div>
+		<ul class="tag-container">
+			{% for tag in item.tags %}
+			<li class="tag">{{tag}}</li> 
+			{% endfor %}
+		</ul>
+	</div>
+	<div class="main-item">
+		<h4 class="title">{{ item.title }}</h4>
+		<p>{{ item.subtitle }}</p>
+	</div>
+</div>
