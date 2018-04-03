@@ -4,17 +4,17 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 
-	padding: 1.2em 0em 1em 0em;
+	padding: 1.2em 0em 0em 0em;
 
 	.projects-container{
 
 		max-width: 150px;
-		min-width: 200px;
+		min-width: 180px;
 
 		border: 1px solid #CFCDCD; 
 		border-radius: 4px;
 
-		margin: 0.35em 0.7em 0.35em 0px;
+		margin: 0.7em 0.7em 0.7em 0px;
 		padding: 0.3em;
 
 		display: flex;

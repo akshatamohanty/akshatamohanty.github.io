@@ -6,13 +6,25 @@
 		font-size: 20px;
 	}
 
+	.projects-container-wrapper .projects-container{
+		width: 100%; 
+		max-width: 800px;
+		line-height: 150%;
+
+		.title{
+			font-size: 26px !important;
+		}
+	}
+
 	.body-wrapper{
 
-		width: auto;
+		width: 90%;
 		padding: 0.5em;
 
 		flex-direction: column; 
 		flex-wrap: wrap;
+
+		max-width: none;
 
 		.main-nav-wrapper{
 			position: relative;
@@ -20,8 +32,28 @@
 
 		.main-content-wrapper{
 			margin: 0.5em;
+	
+			.header{
+				display: flex; 
+				flex-direction: column;
+				align-items: center;
+
+				.page-title{
+					font-size: 26px !important;
+				}
+
+				.nav-bar{
+					margin-top: 15px;
+				}
+			}
+
+			blockquote{
+				margin-left: 0px !important;
+			}
 		}
+
 	}
+
 
 	/* body{
 		font-size: 20px;

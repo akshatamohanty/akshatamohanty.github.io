@@ -9,7 +9,7 @@
 
 		        	<a 
 						{% if collection.label == 'posts' %}href="/"
-						{% else %}href="../{{ collection.label }}/"
+						{% else %}href="{{site.baseurl}}/{{ collection.label }}/"
 						{% endif %}
 		        	>
 		        	{{ collection.label }} 

@@ -6,7 +6,7 @@
 
 		<ul class="page-items">
 
-	  		{% if paginator.previous_page %}
+	  		<!-- {% if paginator.previous_page %}
 	    		<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
 	    			<li class="page-link">&laquo; Prev</li>
 	    		</a>
@@ -15,28 +15,28 @@
 	    	<li class="page-link hidden">
 	    		<span>&laquo; Prev</span>
 	    	</li>
-	  		{% endif %}
+	  		{% endif %} -->
 
 			{% for page in (1..paginator.total_pages) %}
 			{% if page == paginator.page %}
 			  	<a>
-			  		<li class="page-link active">
-			  		{{ page }}
+			  		<li class="page-link">
+			  		<div class="active">{{ page }}</div>
 			  		</li>
 			  	</a>
 			{% elsif page == 1 %}
 				<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
-			  		<li class="page-link">{{ page }}</li>
+			  		<li class="page-link"><div>{{ page }}</div></li>
 			  	</a>
 			{% else %}
 			 	<a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">
-			 	 	<li class="page-link">{{ page }}
+			 	 	<li class="page-link"><div>{{ page }}</div>
 			 	 	</li>
 			 	</a>
 			{% endif %}
 			{% endfor %}
 
-			{% if paginator.next_page %}
+			<!-- {% if paginator.next_page %}
 				<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
 					<li class="page-link">Next &raquo;</li>
 				</a>
@@ -44,7 +44,7 @@
 			<li class="page-link hidden">
 				<span>Next &raquo;</span>
 			</li>
-			{% endif %}
+			{% endif %} -->
 
 	  	</ul>
 

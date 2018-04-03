@@ -1,0 +1,23 @@
+<div class="stats">
+	<div class="date">{{ item.date | date: "%m/%d/%Y" }}</div>
+	<ul class="tag-container">
+		{% for tag in item.tags %}
+		<li class="tag">{{tag}}</li> 
+		{% endfor %}
+	</ul>
+</div>
+
+<div class="post">
+
+	<h4 class="title">
+		{{ item.title }}
+	</h4>
+
+	<p>
+		{{ item.subtitle }}
+		<br>
+		<a class="link" href="../{{item.url}}">&rarr;</a>
+		
+	</p>
+
+</div>

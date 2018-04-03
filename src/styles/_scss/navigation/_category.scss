@@ -9,27 +9,38 @@
 
 		display: flex;
 		flex-direction: row; 
-		justify-content: space-around;
+
+		font-size: 16px;
+		min-width: 200px;
+
 
 		li{
 
+			margin: 0px 0px 0px 30px;
+			padding: 0px;
+
+			color: $text-color-muted;
+			text-transform: uppercase;
+			
 			a{
-				font-size: 1.2em;
-				padding: 0.4em;
-				color: $accent-color-muted;
+				font-family: Oswald;
+				margin: 20px 0px;
+				text-decoration: none;
+				color: $text-color;
+			}
+
+			&.active{
+				a{
+					color: $accent-color !important;
+					font-weight: bold;
+				}
 			}
 
 			flex-grow: 1;
-			text-align: center;
 
 			cursor: pointer;
 
-			border: 3px solid $accent-2;
-
-			&.active{
-				background-color: $accent-contrast-2;
-				color: $accent-contrast-2;
-			}
+			
 
 		}
 	}
