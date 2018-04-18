@@ -2,12 +2,13 @@
 
 set -e
 
-DEPLOY_REPO="https://github.com/akshatamohanty/akshatamohanty.github.io.git"
+DEPLOY_REPO="https://${DEPLOY_BLOG_TOKEN}@github.com/akshatamohanty/akshatamohanty.github.io.git"
 
 function main {
 	clean
-	# get_current_site
+	get_current_site
 	build_site
+	deploy
 }
 
 function clean { 
@@ -23,18 +24,17 @@ function get_current_site {
 function build_site { 
 	echo "building site"
 	bundle exec jekyll build 
-	deploy
 }
 
 function deploy {
-	echo "checkout master"
-	git checkout master
-	git checkout dev -- _site
-	git add _site
-	git add .
-	git commit -m'new-build-deployed'
-	echo "pushing master"
-	git push origin master
+	echo "deploying changes"
+	cd _site
+	git config --global user.name "Travis CI"
+    git config --global user.email akshatamohanty+travis@gmail.com
+	git add -A
+	git status
+	git commit -m "Lastest site built on successful travis build $TRAVIS_BUILD_NUMBER auto-pushed to github"
+	git push $DEPLOY_REPO master:master
 }
 
 main

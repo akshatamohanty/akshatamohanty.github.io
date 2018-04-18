@@ -1,29 +1,16 @@
 language: ruby
 rvm:
 - 2.3.3
-
 cache: bundler
 install:
 - bundle install
 script:
 - "./build.sh"
-
-# after_script:
-#  - jekyll es
-
-# Assume bundler is being used, therefore
-# the `install` step will run `bundle install` by default.
-# script: ./script/cibuild
-
-# branch whitelist, only for GitHub Pages
 branches:
   only:
-  - dev     # test the gh-pages branch
-
+  - dev
 env:
   global:
-  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
-
-sudo: false # route your build to the container-based infrastructure for a faster build
-
-
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+  - secure: oHZPthw0pvMFCUzjqARRmCKG4ncHpAMZoYDJdR4CVX7/liGFm2lBphlvZtXAb/gxatX+JgyaQW/TCXCvxSNLd8yfMeliXyJrEqYFD2TPTLnEY3fL/H5sb0Bez/X7TwvLZoXeyaTXvReoQLdsZIpr+SSwGU8C1YhKitALZMGPV1KN8TH2pOMq/BHLf+ZgMcDN/TuNREg6GFkizo1eeeVCSBPxkQ7gpKKADNRnfjhubdjm7Cm8eCtcl5SVncDItDJOqvTopMHGqbQO2pGd+521gvTrJq+D1CS3rWQN/jRVHBK37o+5WOQss2NGNLb8RXCrGA5ev7GDj6+FRwdxe5M1PzOQ7OEnGt/1IsG+JtG3HbBFryAHcfTlamh1eARLJtNbvUcLu4rprZEIe+7AHe5Or2eFXrvXlzS0KP3t+cJlTxhDj8ofdEN6XFXXLs/UJ1Fj4yGxORMlVWctnQIEXVve3ipPEmwQuM5ZfYZcRzkuyYUoxJiWVGmWa1lMkjVOgrHlxeggnIjl7WWGhjvqoFHklrPa2tVelwRlxNzYw6lPvbTeVDrqpOumVe+MDrbTQZbK8gf/vkw53pSU8F5fqv/1t/D/lYZuK04J2aztO2Eh3oSpn7EhL5ta38SGekal3IJjldzUNlmj6T03wiCVxXBAgZUKuFMy5vEy5bLjuKzGd3o=
+sudo: false
