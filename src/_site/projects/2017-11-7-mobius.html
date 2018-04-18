@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mobius</title>
+
+		<!-- Required meta tags -->
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- link to main stylesheet -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+		<!-- main stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/styles/main.css">
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111560396-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-111560396-1');
+		</script>
+
+	</head>
+	<body>
+
+		<div class="body-wrapper">
+		
+			<div class="main-content-wrapper">
+
+				<div class="segment header">
+	<div class="page-title">
+		<span class="mark">abra</span>-ca-<span class="mark">dabra</span>
+	</div>
+
+	<div class="nav-bar">
+		<div class="category-navigation">
+	<ul>
+
+			
+		        <li 
+		        	
+					>
+
+		        	<a 
+						href="/"
+						
+		        	>
+		        	posts 
+		        	</a>
+		        </li>
+			
+		        <li 
+		        	
+					>
+
+		        	<a 
+						href="/projects/"
+						
+		        	>
+		        	projects 
+		        	</a>
+		        </li>
+			
+		        <li 
+		        	
+					>
+
+		        	<a 
+						href="/snippets/"
+						
+		        	>
+		        	snippets 
+		        	</a>
+		        </li>
+			
+		
+			<!-- <li class="" id='nav-blog'>
+				<a href='/'>Blog</a>
+			</li>
+		
+		
+			<li class="" id='nav-projects'>
+				<a href='./projects'>Projects</a>
+			</li> -->
+		
+		<!-- <li class="disabled">Jargon</li> -->
+	</ul>
+</div>
+
+	</div>
+</div>
+
+				<div class="segment">
+					<div class="date">Published on 11/07/2017</div>
+					
+					<h1 class="content-page-title">Mobius</h1>
+
+					<br><br>
+
+					<ul class="tag-container">
+						
+						<li class="tag">karma</li> 
+						
+						<li class="tag">testing</li> 
+						
+						<li class="tag">typescript</li> 
+						
+					</ul>
+				</div>
+
+
+				<blockquote class="segment content-summary">
+					Lorem ipsum commodo elit duis in aliqua dolore adipisicing deserunt excepteur dolor fugiat do culpa ullamco
+				</blockquote>
+
+				
+				<div class="segment content-body">
+					<h4 id="creating-a-packagejson-file">Creating a package.json file</h4>
+<p>Use ‘npm init’ to create the package.json file. It acts like a wizard and steps you through the entire file creation. Press enter to accept defaults (which will be in most cases). This file is what is used to configure the build process and run, build and test your application.</p>
+
+<h4 id="folder-structure">Folder Structure</h4>
+<p>This projects implements a folder structure as follows - 
+./
+  — .config: [Contains all the config files]
+        — karma.config.ts : Karma Configuration File
+        — tsconfig.json: Typscript Configuration File
+  —- src: [Containts all the source Typescript files]
+  —- tests: [Contains tests to be run on the src folder files]</p>
+
+<h4 id="packages-to-install">Packages to install</h4>
+<p>Next, you’ll need to install the packages required to compile and test typescript files.</p>
+<ul>
+  <li>@types/nodes - This is needed to allow you to script in nodejs and use keywords like require, export etc.</li>
+  <li>karma-typescript - To compile typescript files into Javascript which can be tested by Jasmine</li>
+  <li>karma-chrome-launcher - To launch an instance of chrome. You have to install a launcher for each browser that you want to check against.</li>
+  <li>karma-jasmine-html-reporter - This is required to display the Jasmine test results on Chrome; [Note: not karma-html-report]</li>
+  <li>@types/jasmine- Required for Jasmine test to run and to get rid of errors with <code class="highlighter-rouge">describe</code> keyword etc</li>
+  <li>typescript - Duh!</li>
+  <li>Jasmine Core</li>
+</ul>
+
+<h4 id="karma-config-files">Karma Config Files</h4>
+<ul>
+  <li>Update the config file “files”: [] property, to point to the test files as well as the imports. This is required for the karma-typescript-compiler to compile properly or it won’t find the imported files, which you might be trying to check.</li>
+  <li>If the tests are not visible, but Jasmine is, means there is problem with file paths in the karma.config file</li>
+  <li>Specify the module in the karmaTypescriptConfig options as “commonjs” or it will not accept export/import modules</li>
+</ul>
+
+<h4 id="running-scripts-with-packagejson">Running scripts with Package.json</h4>
+<ul>
+  <li>Update package.json to run { “test” : “karma start <karma_config_file_path>" }. Basically, this gets run whenever 'npm test' is run</karma_config_file_path></li>
+</ul>
+
+<h4 id="typedocs">Typedocs</h4>
+<p>for the docs - just the following script in package.json will do -
+“build-docs”: “typedoc –out ./docs ./src –module commonjs”</p>
+
+				</div>
+
+				<div class="copyright">Copyright © 2018 Akshata Mohanty. All Rights Reserved.</div>
+			</div>
+
+		</div>
+
+	</body>
+
+	<!-- scripts-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</html>
+

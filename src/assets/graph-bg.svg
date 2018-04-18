@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1024 768" style="enable-background:new 0 0 1024 768;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+	.st1{fill:#D8D8D8;}
+	.st2{fill:none;stroke:#D8D8D8;stroke-miterlimit:10;}
+	.st3{fill:#4D4D4D;}
+	.st4{fill:none;stroke:#626067;stroke-miterlimit:10;}
+	.st5{fill:#4D4D4D;stroke:#626067;stroke-miterlimit:10;}
+	.st6{fill:#272727;stroke:#424242;stroke-miterlimit:10;}
+	.st7{fill:none;stroke:#272727;stroke-miterlimit:10;}
+	.st8{fill:none;stroke:#E6E6E6;stroke-miterlimit:10;}
+</style>
+<path class="st0" d="M79.5,380.3"/>
+<ellipse transform="matrix(0.948 -0.3182 0.3182 0.948 -14.7191 17.193)" class="st1" cx="45.3" cy="53.7" rx="24" ry="24"/>
+<ellipse transform="matrix(0.948 -0.3182 0.3182 0.948 -44.9357 30.0445)" class="st1" cx="69.5" cy="152.6" rx="11.5" ry="11.5"/>
+<ellipse transform="matrix(0.948 -0.3182 0.3182 0.948 9.2997 56.8252)" class="st1" cx="178.6" cy="-0.1" rx="15.5" ry="15.5"/>
+<ellipse transform="matrix(0.948 -0.3182 0.3182 0.948 -15.7738 57.6663)" class="st1" cx="168.7" cy="77.1" rx="11.5" ry="11.5"/>
+<polygon class="st2" points="68.9,152.3 46.5,57.4 168,76.8 178.6,-0.1 "/>
+<line class="st2" x1="178.6" y1="-0.1" x2="47" y2="57"/>
+<ellipse transform="matrix(0.948 -0.3182 0.3182 0.948 -53.1094 81.202)" class="st1" cx="222" cy="203.2" rx="45.5" ry="45.5"/>
+<line class="st2" x1="222" y1="203.2" x2="68.9" y2="152.3"/>
+<path class="st2" d="M236-74"/>
+<ellipse transform="matrix(2.850312e-02 -0.9996 0.9996 2.850312e-02 552.7158 1456.2728)" class="st3" cx="1025.6" cy="443.8" rx="24" ry="24"/>
+<ellipse transform="matrix(2.850312e-02 -0.9996 0.9996 2.850312e-02 465.7693 1344.0325)" class="st3" cx="924.3" cy="432.4" rx="11.5" ry="11.5"/>
+<ellipse transform="matrix(2.850312e-02 -0.9996 0.9996 2.850312e-02 413.371 1600.2659)" class="st3" cx="1030" cy="587.5" rx="15.5" ry="15.5"/>
+<ellipse transform="matrix(2.850312e-02 -0.9996 0.9996 2.850312e-02 382.3021 1496.3357)" class="st3" cx="961" cy="551.5" rx="11.5" ry="11.5"/>
+<polygon class="st4" points="924.9,431.9 1021.6,443.7 961.5,551 1030,587.5 "/>
+<line class="st5" x1="1030" y1="587.5" x2="1025" y2="444.3"/>
+<ellipse transform="matrix(2.850312e-02 -0.9996 0.9996 2.850312e-02 242.8535 1366.0642)" class="st3" cx="824.2" cy="558.1" rx="45.5" ry="45.5"/>
+<line class="st5" x1="824.2" y1="558.1" x2="924.9" y2="431.9"/>
+<path class="st3" d="M1079.6,666.8"/>
+<ellipse transform="matrix(2.850312e-02 -0.9996 0.9996 2.850312e-02 -589.7073 760.8095)" class="st6" cx="96.6" cy="683.8" rx="24" ry="24"/>
+<ellipse transform="matrix(2.850312e-02 -0.9996 0.9996 2.850312e-02 -676.6538 648.5692)" class="st6" cx="-4.7" cy="672.4" rx="11.5" ry="11.5"/>
+<ellipse transform="matrix(2.850312e-02 -0.9996 0.9996 2.850312e-02 -729.0521 904.8026)" class="st6" cx="101" cy="827.5" rx="15.5" ry="15.5"/>
+<ellipse transform="matrix(2.850312e-02 -0.9996 0.9996 2.850312e-02 -760.121 800.8724)" class="st6" cx="32" cy="791.5" rx="11.5" ry="11.5"/>
+<polygon class="st7" points="-4.1,671.9 92.6,683.7 32.5,791 101,827.5 "/>
+<ellipse transform="matrix(2.850312e-02 -0.9996 0.9996 2.850312e-02 -899.5696 670.6009)" class="st6" cx="-104.8" cy="798.1" rx="45.5" ry="45.5"/>
+<line class="st6" x1="-104.8" y1="798.1" x2="-4.1" y2="671.9"/>
+<path class="st8" d="M150.6,906.8"/>
+</svg>
