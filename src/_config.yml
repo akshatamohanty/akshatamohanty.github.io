@@ -1,5 +1,5 @@
 # File: _config.yml
-destination: ../..
+destination: _site
 
 collections:
   projects:
