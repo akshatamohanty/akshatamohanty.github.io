@@ -1,0 +1,25 @@
+<div class="project">
+	<ul class="tag-container">
+		{% for tag in item.tags %}
+		<li class="tag">{{tag}}</li> 
+		{% endfor %}
+	</ul>
+
+	<div class="image" 
+		style="background-image: url(./images/{{item.image}})">
+	</div>
+
+	<div class="date">{{ item.date | date: "%m/%d/%Y" }}</div>
+
+	<h4 class="title">
+		{{ item.title }}
+	</h4>
+
+	<p>
+		{{ item.subtitle }}
+		<br>
+		<a class="link" href="../{{item.url}}">&rarr;</a>
+		
+	</p>
+
+</div>

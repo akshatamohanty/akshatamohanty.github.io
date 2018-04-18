@@ -1,0 +1,20 @@
+<div class="page-heading"> 
+	/* <br>&nbsp;* &nbsp;&nbsp;{{page.tagline}} <br>&nbsp;*/</div>
+
+<div class="{{page.type}}-container-wrapper">
+	{% for item in paginator.posts %}
+	   		
+		    <div class="{{page.type}}-container">
+				{% if page.type == "posts" %}
+					{% include elements/single-post-layout.html %}
+				{% endif %}
+
+				{% if page.type == "projects" %}
+					{% include elements/single-project-layout.html %}
+				{% endif %}
+			</div>
+
+	{% endfor %}
+</div>
+
+
