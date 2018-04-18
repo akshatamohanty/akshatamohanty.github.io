@@ -2,7 +2,7 @@
 
 set -e
 
-DEPLOY_REPO="https://github.com/akshatamohanty/akshatamohanty.github.io.git"
+DEPLOY_REPO="https://${DEPLOY_BLOG_TOKEN}@github.com/akshatamohanty/akshatamohanty.github.io.git"
 
 function main {
 	clean
@@ -34,6 +34,7 @@ function deploy {
 	git add -A
 	git status
 	git commit -m "Lastest site built on successful travis build $TRAVIS_BUILD_NUMBER auto-pushed to github"
+	git remote -v
 	git push $DEPLOY_REPO master:master
 }
 
