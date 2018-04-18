@@ -1,2 +1,0 @@
-[alias]
-test = !sh -c 'git add . && git commit -m"new-build" && git checkout master && dir'
