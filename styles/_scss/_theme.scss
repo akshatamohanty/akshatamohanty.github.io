@@ -15,8 +15,12 @@ $accent-color: #ED6767;//#42B6F3;
 $text-color: #222; 
 $text-color-muted: #868686;
 
+
+$heading-font: Montserrat; //Oswald, sans-serif;
+$body-font: Raleway; //Roboto, sans-serif;
+
 body{
-	font-family: Roboto;
+	font-family: $body-font;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -26,7 +30,10 @@ h1, h2, h3, h4, h5, h6{
 	margin: 0px;
 
 	color: $text-color;
+
+	font-family: $heading-font;
 }
+
 
 // h1{
 // 	font-size: 2.2em;
@@ -54,7 +61,7 @@ h1, h2, h3, h4, h5, h6{
 // }
 
 a{
-	font-family: Oswald;
+	font-family: $heading-font;
 	color: $accent-color-muted;
 	text-decoration: none;
 
@@ -66,7 +73,7 @@ a{
 
 p{
 	color: $text-color;
-	font-family: Roboto;
+	font-family: $body-font;
 }
 
 

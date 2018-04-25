@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,600|Oswald');
+// @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,600|Oswald');
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:100,300,400,600');
+
+$heading-font: Montserrat; //Oswald, sans-serif;
+$body-font: Raleway; //Roboto, sans-serif;
 
 html{
 	position: relative;
@@ -87,11 +92,11 @@ body{
 		blockquote{
 			font-size: 34px;
 			line-height: 44px;
-			font-family: Roboto;
+			font-family: $body-font;
 			border-left: 3px solid $accent-color;
 			font-weight: 100;
 			padding: 10px 30px;
-			margin: 45px 0 45px -35px !important;
+			margin: 45px 0 45px -35px;
 		}
 
 		.copyright{
