@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Navigating Angular Animations</title>
+		<title>Simple Angular Animation to create a slide-in/slide-out navbar</title>
 
 		<!-- Required meta tags -->
 	    <meta charset="utf-8">
@@ -96,7 +96,7 @@
 				<div class="segment">
 					<div class="date">Published on 04/25/2018</div>
 					
-					<h1 class="content-page-title">Navigating Angular Animations</h1>
+					<h1 class="content-page-title">Simple Angular Animation to create a slide-in/slide-out navbar</h1>
 
 					<br><br>
 
@@ -111,7 +111,7 @@
 
 
 				<blockquote class="segment content-summary">
-					Lorem ipsum commodo elit duis in aliqua dolore adipisicing deserunt excepteur dolor fugiat do culpa ullamco
+					Angular provides a way to add animations to your app, tied to your application logic, with almost similar performance as native CSS animations.
 				</blockquote>
 
 				
@@ -129,7 +129,7 @@
 
 <h2 id="adding-an-animation">Adding an animation</h2>
 
-<h3 id="installing-angular-animations-package">Installing Angular Animations Package</h3>
+<h4 id="installing-angular-animations-package">Installing Angular Animations Package</h4>
 <p>Make sure you have @angular/animations installed, using <code class="highlighter-rouge">npm install @angular/animations --save</code>.</p>
 
 <p><strong><em>package.json</em></strong></p>
@@ -140,7 +140,7 @@
     
 </code></pre></div></div>
 
-<h3 id="importing-the-browser-animation-module">Importing the Browser Animation Module</h3>
+<h4 id="importing-the-browser-animation-module">Importing the Browser Animation Module</h4>
 <p>The BrowserAnimationsModule is part of the <strong>@angular/platform-browser</strong> package. The platform-browser is automatically installed if you’ve generated your app using angular-cli. Only the BrowserAnimationsModule will need to be imported and added to the <strong>imports</strong> array, as shown below.</p>
 
 <p><strong><em>app.module.ts</em></strong></p>
@@ -157,7 +157,7 @@
 export class AppModule { }
 </code></pre></div></div>
 
-<h3 id="importing-required-animation-functions-in-the-component">Importing required animation functions in the component</h3>
+<h4 id="importing-required-animation-functions-in-the-component">Importing required animation functions in the component</h4>
 
 <p>To add animations to your component, you will need to add metadata defining your animation while creating your component. To define your animation, you’ll need to minimally import</p>
 <ul>
@@ -173,7 +173,7 @@ export class AppModule { }
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import { trigger, state, style, transition, animate, keyframes } from '@angular/animations';
 </code></pre></div></div>
 
-<h3 id="adding-an-animation-to-the-component">Adding an animation to the component</h3>
+<h4 id="adding-an-animation-to-the-component">Adding an animation to the component</h4>
 <p>In the example below, the metadata has defined an animation trigger, called “slide_in_out” with two states - ‘slide_in’ and ‘slide_out’. The states can be considered as the values the animation <em>slide_in_out</em> can be assigned and the corresponding CSS that becomes active on getting that value.</p>
 
 <p>The transition is what specifies the animation when the states changes from slide_in to slide_out and vice versa. You can choose to define this animation in one direction, from void / any state, with different timing and effects.</p>
@@ -198,11 +198,13 @@ export class AppModule { }
 })
 </code></pre></div></div>
 
-<h3 id="add-the-animation-to-the-element">Add the animation to the element</h3>
+<h4 id="add-the-animation-to-the-element">Add the animation to the element</h4>
 
 <p>Once you’ve defined your animation, you can now add it to your HTML element and link it to a variable, slider_state in this example. In this example, when the slider_state equals ‘slide_in’, the width of the div is 350px and when the slider_state equals ‘slide_out’, the width of the div is 0.</p>
 
 <p>The slider_state variable needs to be controlled in your component file. In this example, we control the slide-in-out navbar using a button.</p>
+
+<p>When the button is clicked, it changes the value of slider_state, as shown below, hence triggering the animation.</p>
 
 <p><strong><em>app.component.html</em></strong></p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;button (click)="toggleSlider()"&gt;Toggle Slider&lt;/button&gt;
@@ -211,8 +213,6 @@ export class AppModule { }
   &lt;!-- some content --&gt;
 &lt;/div&gt;
 </code></pre></div></div>
-
-<p>When the button is clicked, it changes the value of slider_state, as shown below, hence triggering the animation.</p>
 
 <p><strong><em>app.component.ts</em></strong></p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  slider_state:string = "slide_in";
@@ -231,7 +231,7 @@ export class AppModule { }
   <li>The state is defined as a <strong>string</strong> value and use booleans or numerical values might cause errors</li>
 </ul>
 
-<h3 id="references">References:</h3>
+<h4 id="references">References:</h4>
 <p><a href="https://angular.io/guide/animations">Angular Animations Documentation</a></p>
 
 				</div>

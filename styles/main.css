@@ -1,15 +1,16 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,600|Oswald");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:100,300,400,600");
 body {
-  font-family: Roboto; }
+  font-family: Raleway; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   line-height: 1.3;
   margin: 0px;
-  color: #222; }
+  color: #222;
+  font-family: Montserrat; }
 
 a {
-  font-family: Oswald;
+  font-family: Montserrat;
   color: #ED6767;
   text-decoration: none; }
   a:hover {
@@ -18,7 +19,7 @@ a {
 
 p {
   color: #222;
-  font-family: Roboto; }
+  font-family: Raleway; }
 
 .date {
   text-transform: uppercase;
@@ -88,11 +89,11 @@ body {
     .body-wrapper .main-content-wrapper blockquote {
       font-size: 34px;
       line-height: 44px;
-      font-family: Roboto;
+      font-family: Raleway;
       border-left: 3px solid #ED6767;
       font-weight: 100;
       padding: 10px 30px;
-      margin: 45px 0 45px -35px !important; }
+      margin: 45px 0 45px -35px; }
     .body-wrapper .main-content-wrapper .copyright {
       color: #868686;
       font-weight: 300;
@@ -165,7 +166,7 @@ body {
     flex-grow: 1;
     cursor: pointer; }
     .category-navigation ul li a {
-      font-family: Oswald;
+      font-family: Montserrat;
       margin: 20px 0px;
       text-decoration: none;
       color: #222; }
@@ -339,22 +340,25 @@ body {
       min-width: 300px;
       max-width: 500px; }
     .posts-container-wrapper .posts-container .title {
-      font-size: 36px;
-      line-height: 40px;
-      font-family: Oswald;
-      font-weight: 300; }
+      font-size: 24px;
+      line-height: 30px;
+      font-family: Montserrat;
+      font-weight: 300;
+      border-bottom: 1px solid #ddd;
+      padding-top: 15px; }
     .posts-container-wrapper .posts-container p {
       color: #868686;
       font-size: 18px;
-      line-height: 27px;
+      line-height: 24px;
       font-weight: 300; }
     .posts-container-wrapper .posts-container .date {
       text-transform: uppercase;
       font-size: 12px;
-      font-family: Oswald;
+      font-family: Montserrat;
       margin-bottom: 10px; }
     .posts-container-wrapper .posts-container .link:before {
-      content: "Read More"; }
+      content: "Read More";
+      margin-top: 10px; }
 
 .tag-container {
   display: flex;
@@ -365,8 +369,8 @@ body {
   padding: 0px;
   list-style-type: none; }
   .tag-container .tag {
-    font-size: 10px;
-    line-height: 11px;
+    font-size: 12px;
+    line-height: 16px;
     padding: 3px;
     border-radius: 3px;
     border: 1px solid gray;
@@ -376,10 +380,19 @@ body {
     .tag-container .tag .name {
       padding: 0px 3px; }
 
+h1, h2 {
+  border-bottom: 1px solid #ED6767;
+  color: #ED6767;
+  text-transform: uppercase; }
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 45px 0px 15px 0px; }
+
 .content-summary {
   font-size: 18px !important;
   line-height: 24px !important;
-  margin-left: 0px !important; }
+  font-weight: 600;
+  margin: 0px !important; }
 
 .content-post-title {
   font-size: 32px !important;
@@ -387,17 +400,26 @@ body {
   color: #222; }
 
 .content-body {
-  font-size: 16px !important;
-  line-height: 24px !important;
-  font-weight: 300 !important; }
-  .content-body h1, .content-body h2, .content-body h3, .content-body h4, .content-body h5, .content-body h6 {
-    color: #ED6767;
-    text-transform: uppercase; }
-  .content-body p {
-    margin-bottom: 60px;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 300; }
+  font-size: 14px !important;
+  line-height: 30px !important;
+  margin-top: 0px; }
+  .content-body h3, .content-body h4, .content-body h5, .content-body h6 {
+    color: #868686;
+    text-transform: uppercase;
+    margin-top: 30px; }
+
+pre.highlight {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  border-left: 5px solid gray;
+  padding: 10px 0px 10px 15px;
+  background-color: #f7f7f7; }
+
+.date {
+  margin: 10px 0px; }
+
+.tag {
+  font-size: 14px; }
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (max-device-width: 768px) {
