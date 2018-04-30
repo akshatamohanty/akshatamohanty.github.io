@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Exploring Memory in Chrome Task Manager</title>
+
+		<!-- Required meta tags -->
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- link to main stylesheet -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+		<!-- main stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/styles/main.css">
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111560396-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-111560396-1');
+		</script>
+
+	</head>
+	<body>
+
+		<div class="body-wrapper">
+		
+			<div class="main-content-wrapper">
+
+				<div class="segment header">
+	<div class="page-title">
+		<span class="mark">abra</span>-ca-<span class="mark">dabra</span>
+	</div>
+
+	<div class="nav-bar">
+		<div class="category-navigation">
+	<ul>
+
+			
+		        <li 
+		        	
+					>
+
+		        	<a 
+						href="/"
+						
+		        	>
+		        	posts 
+		        	</a>
+		        </li>
+			
+		        <li 
+		        	
+					>
+
+		        	<a 
+						href="/projects/"
+						
+		        	>
+		        	projects 
+		        	</a>
+		        </li>
+			
+		        <li 
+		        	
+					>
+
+		        	<a 
+						href="/snippets/"
+						
+		        	>
+		        	snippets 
+		        	</a>
+		        </li>
+			
+		
+			<!-- <li class="" id='nav-blog'>
+				<a href='/'>Blog</a>
+			</li>
+		
+		
+			<li class="" id='nav-projects'>
+				<a href='./projects'>Projects</a>
+			</li> -->
+		
+		<!-- <li class="disabled">Jargon</li> -->
+	</ul>
+</div>
+
+	</div>
+</div>
+
+				<div class="segment">
+					<div class="date">Published on 04/30/2018</div>
+					
+					<h1 class="content-page-title">Exploring Memory in Chrome Task Manager</h1>
+
+					<br><br>
+
+					<ul class="tag-container">
+						
+						<li class="tag">memory</li> 
+						
+						<li class="tag">chrome-devtools</li> 
+						
+					</ul>
+				</div>
+
+
+				<blockquote class="segment content-summary">
+					
+				</blockquote>
+
+				
+				<div class="segment content-body">
+					<h2 id="getting-to-the-task-manager">Getting to the Task Manager</h2>
+
+<ul>
+  <li>Shortcut: Shift + Esc, <strong>OR</strong></li>
+  <li>Chrome -&gt; Settings -&gt; More Tools -&gt; Task Manager</li>
+</ul>
+
+<h2 id="understanding-memory-usage-columns-in-task-manager">Understanding Memory Usage Columns in Task Manager</h2>
+
+<ul>
+  <li>
+    <h4 id="memory-footprint">Memory Footprint</h4>
+    <p>The memory footprint represents memory reserved entirely for that process. It is the same value as that in the <strong>Commit Size</strong> column in Windows Task Manager. <em>The Commit column shows the amount of virtual memory in kilobytes that the operating system has reserved for a process. This number includes the amount of physical memory that is in use as well as any pages that have been saved in the page file.</em></p>
+  </li>
+  <li>
+    <h4 id="memory">Memory</h4>
+    <p>Memory is the same value as that in the <strong>Memory (Private Working Set)</strong> column in Windows Task Manager. Private Working Set of a process refers to the amount of memory that is allocated to the process, is not shareable. In Chrome context, it refers to the native memory, which is used to store DOM nodes. A constantly increasing value for this indicates creation of additional DOM noes.</p>
+  </li>
+  <li>
+    <h4 id="gpu-memory">GPU Memory</h4>
+    <p>It represents the amount of GPU memory being used by the page. The GPU process is a process used only when Chrome is displaying GPU-accelerated content. Chrome uses GPU to accelerate web-page rendering, typical HTML, CSS, WebGL, etc.</p>
+  </li>
+  <li>
+    <h4 id="javascript-memory">Javascript Memory</h4>
+    <p>The JavaScript Memory column represents the memory reserved for the JS VM heap. The number in parenthese is represents how much memory the reachable objects on your page are using. So, if the value is  x ( y ) imples that ‘y’ is the active memory and (x-y) is memory is unreachable and will be garbage collected. If ‘x’ is increasing, it might signify a memory leak since either new objects are being created, or the existing objects are growing.</p>
+  </li>
+</ul>
+
+<h4 id="references">References:</h4>
+<ul>
+  <li><a href="https://developers.google.com/web/tools/chrome-devtools/memory-problems/#monitor_memory_use_in_realtime_with_the_chrome_task_manager">Chrome DevTools</a></li>
+  <li><a href="https://stackoverflow.com/questions/14167013/javascript-memory-and-leak-problems">Stackoverflow</a></li>
+  <li><a href="https://www.techrepublic.com/blog/windows-and-office/investigate-memory-usage-with-windows-7-resource-monitor/">investigate-memory-usage-with-windows-7-resource-monitor/</a></li>
+</ul>
+
+				</div>
+
+				<div class="copyright">Copyright © 2018 Akshata Mohanty. All Rights Reserved.</div>
+			</div>
+
+		</div>
+
+	</body>
+
+	<!-- scripts-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</html>
+
