@@ -1,6 +1,7 @@
 h1, h2{
-	border-bottom: 1px solid $accent-color;
-	color: $accent-color;
+	border-bottom: 1px solid $text-color-muted;
+	//color: $accent-color;
+	color: $text-color-muted;
 	text-transform: uppercase;
 }
 
