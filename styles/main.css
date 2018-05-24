@@ -611,6 +611,13 @@ html, body {
   overflow-x: hidden;
   background-color: #f7f7f7; }
 
+.text--fixed-width {
+  width: 300px; }
+
+.text--content {
+  font-size: 16px;
+  line-height: 24px; }
+
 .text--highlight {
   color: #d20068;
   font-family: 'Reenie Beanie'; }
@@ -665,6 +672,7 @@ html, body {
       .container .container__content .items .items__container-post {
         min-width: 100px;
         width: 40%;
+        min-width: 150px;
         margin: 0px;
         padding: 10px; }
         .container .container__content .items .items__container-post .item--post {
@@ -688,7 +696,7 @@ html, body {
             margin: 15px 20px; }
       .container .container__content .items .items__container-project {
         width: 25%;
-        min-width: 100px;
+        min-width: 150px;
         margin: 0px;
         padding: 10px;
         cursor: pointer; }
