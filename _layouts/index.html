@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{ site.title }}</title>
+
+		<!-- Required meta tags -->
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- link to main stylesheet -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+		<!-- main stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/styles/main.css">
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111560396-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-111560396-1');
+		</script>
+
+		<link  href="http://fonts.googleapis.com/css?
+family=Reenie+Beanie:regular" 
+rel="stylesheet"
+type="text/css">
+	</head>
+	<body>
+
+		<div class="public-page">
+			<div class="section section--hero section--angled-up">
+				<div class="container">
+					<h1>
+						Hello. <br>
+						I am <span class="text--highlight">Akshata</span>.
+					</h1>
+					<p>I eat code.</p>
+
+				</div>
+			</div>
+
+			<div class="section section--posts section--up">
+				
+				<div class="container">
+					
+					<div class="container__title text--right">
+						Recent Posts
+					</div>
+
+					<div class="container__content">
+						<div class="items">
+							{% for post in paginator.posts %}
+
+								<div class="items__container-post">
+									<div class="item--post">
+										<div class="item--post--date">
+										<span class="text--highlight">#</span>
+										{{post.date | date: "%m/%d/%Y"}}
+										</div>
+										<div class="item--post--title">{{post.title}}</div>
+										<div class="item--post--subtitle">{{post.subtitle}}</div>
+									</div>
+								</div>
+							   		
+
+							{% endfor %}
+						</div>
+					</div>
+
+					<div class="container__calltoaction">
+						<div class="calltoaction__link" >
+							<a href="./posts">Visit my blog</a>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="section section--projects section--highlight section--angled-down section--up">
+
+				<div class="container">
+					<div class="container__title title--highlight">
+						Featured Projects
+					</div>
+
+					<div class="container__content">
+						<div class="items">
+							<div class="items__container-project">
+								<a href="https://design-automation.github.io/mobius-modeller">
+									<div class="item--project">
+										<div class="item--project--title">
+											Mobius Modeller
+										</div>
+
+										<!-- <div class="item--project--spacer"></div> -->
+
+										<div class="item--project--description">
+											Visual programming environment in Javascript
+										</div>
+									</div>
+								</a>
+							</div>
+
+							<div class="items__container-project">
+								<a href="">
+									<div class="item--project">
+										<div class="item--project--title">
+											T.B.A
+										</div>
+
+										<!-- <div class="item--project--spacer"></div> -->
+
+										<div class="item--project--description">
+											TBA
+										</div>
+									</div>
+								</a>
+							</div>
+
+							<div class="items__container-project">
+								<a href="https://design-automation.github.io/mobius-cesium/gallery">
+									<div class="item--project">
+										<div class="item--project--title">
+											Extruded Cities
+										</div>
+
+										<!-- <div class="item--project--spacer"></div> -->
+
+										<div class="item--project--description">
+											3D Urban Data Visualizations with Visual Programming 
+										</div>
+									</div>
+								</a>
+							</div>
+
+							<div class="items__container-project">
+								<a href="https://github.com/akshatamohanty/studionet">
+									<div class="item--project">
+										<div class="item--project--title">
+											Studionet
+										</div>
+
+										<!-- <div class="item--project--spacer"></div> -->
+
+										<div class="item--project--description">
+											Social Networking platform for idea-sharing
+										</div>
+									</div>
+								</a>
+							</div>
+
+							<div class="items__container-project">
+								<a href="https://github.com/akshatamohanty/lunchedin">
+									<div class="item--project">
+										<div class="item--project--title">
+											LunchedIn
+										</div>
+
+										<!-- <div class="item--project--spacer"></div> -->
+
+										<div class="item--project--description">
+											Web application for professional networking over lunch
+										</div>
+									</div>
+								</a>
+							</div>
+
+							<div class="items__container-project">
+								<a href="https://github.com/akshatamohanty/dog-breed-classifier">
+									<div class="item--project">
+										<div class="item--project--title">
+											Dog Breed Classifier
+										</div>
+
+										<!-- <div class="item--project--spacer"></div> -->
+
+										<div class="item--project--description">
+											A Convolutional Network that finds you your soul-dogmate!
+										</div>
+									</div>
+								</a>
+							</div>
+
+						</div>
+					</div>
+
+
+					<div class="container__calltoaction">
+						<div class="calltoaction__link" >
+							<a href="./projects">See all projects</a>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+
+			<div class="section section--contact">
+				<div class="container">
+					<div class="container__title text--highlight">
+						Get in touch.
+					</div>
+
+					<div class="container__content">
+						<div class="social-media-icons">
+							<a target="_blank" href="https://linkedin.com/in/akshata-mohanty"><i class="fa fa-linkedin"></i></a>
+							<a target="_blank" href="https://github.com/akshatamohanty"><i class="fa fa-github"></i></a>
+							<a target="_blank" href="mailto:akshatamohanty@gmail.com"><i class="fa fa-google"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+	<!-- scripts-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</html>
+

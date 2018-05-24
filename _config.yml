@@ -7,11 +7,7 @@ collections:
     defaults: 
       scope: 
         path: "/projects"
-  snippets:
-    output: true
-    defaults: 
-      scope: 
-        path: "/codes"
+        
 
 ## define a custom collection
 # collections:
