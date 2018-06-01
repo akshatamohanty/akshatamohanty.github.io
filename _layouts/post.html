@@ -30,7 +30,7 @@
 		
 			<div class="main-content-wrapper">
 
-				{% include header.html %}
+				{% include page-elements/header.html %}
 
 				<div class="segment">
 					<div class="date">Published on {{ page.date | date: "%m/%d/%Y" }}</div>
@@ -56,7 +56,8 @@
 					{{page.content}}
 				</div>
 
-				<div class="copyright">Copyright © 2018 Akshata Mohanty. All Rights Reserved.</div>
+
+				{% include page-elements/copyright.html %}
 			</div>
 
 		</div>

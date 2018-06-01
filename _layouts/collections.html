@@ -34,34 +34,41 @@
 		
 			<div class="main-content-wrapper">
 
-				{% include header.html %}
-				<!-- <blockquote class="segment">
-					the official mind dump and not-so-secret lab of <a href="http://linkedin.com/in/akshatamohanty/" target="_blank">akshata mohanty </a>
-				</blockquote> -->
+				<!-- header -->
+				{% include page-elements/header.html %}
 				
-				<div class="segment" style="display: flex; flex-direction: row;">
-<!-- 					<div style="max-width: 250px;" class="github-widget" data-username="akshatamohanty"></div> -->
-					<!-- Prepare a container for your calendar. -->
-					<div class="calendar">....</div>
-				</div>
-
 				<div class="segment">
-					{% include all_posts.html %}
-					{% include paginator.html %}
+					
+					<!-- list of posts -->
+					<div class="{{page.type}}-container-wrapper">
+						{% for item in paginator.posts %}
+						   		
+						    <div class="{{page.type}}-container">
+								{% if page.type == "posts" %}
+									{% include post-layouts/post-layout.html %}
+								{% endif %}
+
+								{% if page.type == "projects" %}
+									{% include post-layouts/project-layout.html %}
+								{% endif %}
+							</div>
+
+						{% endfor %}
+					</div>
+
+
+					<!-- paginator -->
+					{% include page-elements/paginator.html %}
 				</div>
 
-				<div class="copyright">Copyright © 2018 <a href="http://linkedin.com/in/akshatamohanty/" target="_blank">Akshata Mohanty</a>. All Rights Reserved.</div>
 			</div>
 
+			<!-- footer-->
+			{% include page-elements/copyright.html %}
+			
 		</div>
 
 	</body>
 
-	<!-- scripts-->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<!-- <script>GitHubCalendar(".calendar", "akshatamohanty");</script> -->
-	<!-- github profile card -->
-<!-- 	<script src="https://unpkg.com/github-card@1.2.1/dist/widget.js"></script>
- -->
 </html>
 
