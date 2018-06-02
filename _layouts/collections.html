@@ -10,12 +10,22 @@
 		<!-- link to main stylesheet -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+		<!-- main stylesheet -->
+		<link  href="https://fonts.googleapis.com/css?family=Reenie+Beanie:regular" rel="stylesheet" type="text/css">
+
+
 		<!-- main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="/styles/main.css">
 		
-		<!-- github calender -->
-		<script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
-		<link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"/>
 				
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111560396-1"></script>
@@ -30,41 +40,56 @@
 	</head>
 	<body>
 
-		<div class="body-wrapper">
-		
-			<div class="main-content-wrapper">
+		<div class="container">
 
-				<!-- header -->
-				{% include page-elements/header.html %}
-				
-				<div class="segment">
-					
-					<!-- list of posts -->
-					<div class="{{page.type}}-container-wrapper">
-						{% for item in paginator.posts %}
-						   		
-						    <div class="{{page.type}}-container">
-								{% if page.type == "posts" %}
-									{% include post-layouts/post-layout.html %}
-								{% endif %}
+			<div class="row">
 
-								{% if page.type == "projects" %}
-									{% include post-layouts/project-layout.html %}
-								{% endif %}
+				<div class="col-md-offset-1 col-md-10">
+
+					<div class="collections--header h1">All {{page.type}}</div>
+
+					<div class="container-fluid">
+
+						<div class="row">
+
+							<div class="col-xs-12">
+						
+						<!-- list of posts -->
+							{% for item in paginator.posts %}
+
+									<div class="container-fluid">
+							   		
+									{% if page.type == "posts" %}
+										{% include post-layouts/post-layout.html %}
+									{% endif %}
+
+									{% if page.type == "projects" %}
+										{% include post-layouts/project-layout.html %}
+									{% endif %}
+
+									</div>
+
+							{% endfor %}
+
 							</div>
+						</div>
 
-						{% endfor %}
+						<!-- paginator -->
+						<!-- {% include page-elements/paginator.html %} -->
+					</div>
+					
+
+					<!-- footer-->
+					<div class="collections--footer">
+						<div class="calltoaction__link" >
+							<a href="/">Back Home</a>
+						</div>
+
+						<div class="h5">{% include page-elements/copyright.html %}</div>
 					</div>
 
-
-					<!-- paginator -->
-					{% include page-elements/paginator.html %}
 				</div>
-
 			</div>
-
-			<!-- footer-->
-			{% include page-elements/copyright.html %}
 			
 		</div>
 

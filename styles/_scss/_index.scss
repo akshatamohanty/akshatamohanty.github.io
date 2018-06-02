@@ -1,28 +1,10 @@
 $highlight-color: #015F93;//#d20068;
 $highlight-darker: #720039;
 
-.text--fixed-width{
-	width: 300px;
-}
-
-.text--content{
-	font-size: 16px;
-	line-height: 24px;
-}
-
-
-.text--highlight{
-	color: $highlight-color;
-	font-family: 'Reenie Beanie';
-}
-
-.text--right{
-	text-align: right;
-}
-
 .social-media-icons{
 	display: flex;
 	flex-direction: row; 
+	justify-content: center;
 
 	i{
 		font-size: 24px;
@@ -86,7 +68,9 @@ $highlight-darker: #720039;
 
 		padding-top: 45px;
 
-		.items{
+		&.items{
+
+			margin: 30px 0px;
 			// display: flex; 
 			// flex-direction: row; 
 			// flex-wrap: wrap;
@@ -100,23 +84,11 @@ $highlight-darker: #720039;
 				//min-width: 150px;
 
 				.item--post{	
-					margin-bottom: 30px;
-
-					border-radius: 5px;
 
 					.item--post--title{
-						margin: 15px 20px;
-						font-weight: 600;
-
 						&::before{
 							content: "## ";
 						}
-					}
-
-					.item--post--subtitle{
-						font-size: 12px;
-						line-height: 14px;
-						margin: 5px 20px;
 					}
 
 					.item--post--date{
@@ -146,23 +118,7 @@ $highlight-darker: #720039;
 					}
 
 					.item--project-tags{
-						font-family: 'Reenie Beanie';
-						font-size: 32px;
-						line-height: 36px;
-
-						ul{
-							margin-left: 0px;
-							padding-left: 0px;
-
-							li{
-								list-style: none;
-								display: inline-block;
-
-								&::before{	
-									content: "#";
-								}
-							}
-						}
+						
 					}
 				}
 				
@@ -171,46 +127,14 @@ $highlight-darker: #720039;
 	}
 
 	.section__contents__calltoaction{
-
-		margin-top: 40px;
-
 		text-align: center;
-		height: 100px;
-
-		.calltoaction__link{
-			height: 80px;
-			min-width: 100px;
-
-			margin: 0 auto;
-			
-			font-size: 18px;
-
-			a{
-				padding: 15px;
-				text-transform: uppercase;
-				line-height: 40px;
-				//background-color: $highlight-color;
-				color: black;
-				box-shadow:1px 1px 5px rgba(255, 255, 255, 0.5); 
-				border: 1px solid #222;
-				border-radius: 6px;
-
-				&:hover{
-					//background-color: $highlight-darker;
-				}
-			}
-
-
-		}
-
 	}
 }
 
 .section{
 	// position: relative;
 	// box-shadow: 3px;
-
-	padding-bottom: 150px;
+	padding-top: 100px;
 
 	&.section--hero{
 

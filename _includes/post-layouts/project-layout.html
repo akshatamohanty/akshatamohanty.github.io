@@ -1,25 +1,34 @@
-<div class="project">
-	<ul class="tag-container">
-		{% for tag in item.tags %}
-		<li class="tag">{{tag}}</li> 
-		{% endfor %}
-	</ul>
+<div class="row row-eq-height collections--element collections--element__project">
 
-	<div class="image" 
-		style="background-image: url(./images/{{item.image}})">
+	<div class="col-xs-12 project--tags">
+		<ul class="project--tags">
+			{% for tag in item.tags %}
+			<li class="tag">{{tag}}</li> 
+			{% endfor %}
+		</ul>
 	</div>
 
-	<div class="date">{{ item.date | date: "%m/%d/%Y" }}</div>
+	<div class="col-xs-12 h2 project--title">{{ item.title }}</div>
 
-	<h4 class="title">
-		{{ item.title }}
-	</h4>
+	<div class="col-sm-5 project--visual">
+		<img class='img-thumbnail img-responsive' src='./images/{{item.image}}'>
+	</div>
 
-	<p>
-		{{ item.subtitle }}
-		<br>
-		<a class="link" href="..{{item.url}}">&rarr;</a>
-		
-	</p>
+	<div class="col-sm-7 project--description">
+
+		<!-- <div class="date">{{ item.date | date: "%m/%d/%Y" }}</div> -->
+		<div class="h4 project__role">
+			{{ item.role }}
+		</div>
+
+		<div class="project--description">
+			<p>
+				{{ item.summary }}
+				<br>
+				<a class="link" target="_blank" href="{{item.project-url}}">Go to Project&rarr;</a>
+			</p>
+		</div>
+
+	</div>
 
 </div>

@@ -1,23 +1,25 @@
-<div class="stats">
-	<div class="date">{{ item.date | date: "%m/%d/%Y" }}</div>
-	<ul class="tag-container">
-		{% for tag in item.tags %}
-		<li class="tag">{{tag}}</li> 
-		{% endfor %}
-	</ul>
-</div>
+<div class="row row-eq-height collections--element collections--element__post">
+	<div class="col-sm-3">
+		<!-- <div class="date"></div> -->
+			<div class="post__date">Written on {{ item.date | date: "%m/%d/%Y" }}</div>
 
-<div class="post">
+		<ul class="tag-container">
+			{% for tag in item.tags %}
+			<li class="tag">{{tag}}</li> 
+			{% endfor %}
+		</ul>
+	</div>
 
-	<h4 class="title">
-		{{ item.title }}
-	</h4>
+	<div class="col-sm-6">
 
-	<p>
-		{{ item.subtitle }}
-		<br>
-		<a class="link" href="..{{item.url}}">&rarr;</a>
-		
-	</p>
+		<div class="h2 post__title" style="margin-top: -10px;">
+			{{ item.title }}
+		</div>
 
+		<div class="post__description">
+			{{ item.subtitle }}
+			<a class="link" href="..{{item.url}}">Read More &rarr;</a>
+		</div>
+
+	</div>
 </div>
