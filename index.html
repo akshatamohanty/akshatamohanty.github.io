@@ -7,257 +7,340 @@
 	    <meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	    <!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	
 		<!-- main stylesheet -->
+		<link  href="https://fonts.googleapis.com/css?family=Reenie+Beanie:regular" rel="stylesheet" type="text/css">
+		<!-- link to main stylesheet -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 		<link rel="stylesheet" type="text/css" href="/styles/main.css">
-		
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111560396-1"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-
-		  gtag('config', 'UA-111560396-1');
-		</script>
-
-		<link  href="https://fonts.googleapis.com/css?
-family=Reenie+Beanie:regular" 
-rel="stylesheet"
-type="text/css">
 	</head>
+
 	<body>
 
-		<div class="public-page">
-			<div class="section section--hero section--angled-up">
-				<div class="container">
-					<h1>
-						Hello. <br>
-						I am <span class="text--highlight">Akshata</span>.
-					</h1>
-					<p>I eat code for breakfast, lunch and dinner.</p>
+		<div class="container public-page">
 
+			<div class="row">
+			
+				<!-- introduction -->
+				<div class="col-xs-12 section section--hero">
+
+					<div class="container-fluid section__contents">
+
+						<div class="row">
+
+							<div class="col-md-6 col-md-offset-3 col-xs-12">
+
+								<div class="row section__contents__title h1">
+									Just another portfolio
+								</div>
+
+								<div class="h3 text-center">
+									Some random elevator pitch text that I am yet to figure out.
+								</div>
+
+								<!-- <h1>Welcome to Akshata World</h1> -->
+
+								<!-- <h3>Hey There! </h3>
+									
+								<h1>
+									I am <span class="text--highlight">Akshata</span>.
+								</h1>
+
+								<h4>I eat code.</h4> -->
+
+							</div>
+
+						</div>
+
+					</div>
 				</div>
-			</div>
 
-			<div class="section section--posts section--up">
-				
-				<div class="container">
+
+				<!-- projects-->
+				<div class="col-xs-12 section section--projects">
+
+					<div class="container-fluid section__contents">
+
+						<div class="row section__contents__title h2">
+							Featured Projects
+						</div>
+
+						<div class="row row-eq-height section__contents__content items">
+							<div class="col-xs-12">
+
+								
+									<div class="col-md-8 col-md-offset-2 items__container-project">
+									   <div class="item--project">
+	<div class="item--project-tags">
+		<ul>
+			<li>web-development</li>
+			<li>angular</li>
+			<li>threejs</li>
+		</ul>
+	</div>
+
+	<div class="h1 item--project--title">
+		Mobius - Visual Programming Web App
+	</div>
+
+	<div class="h4 item--project--role">Product Lead</div>
+
+	<div class="item--project--description">
+		Built with Angular, Mobius offers a visual programming environment in the browser, merging flow-based and textual programming paradigms.  It is an easy-to-use, open source platform, customizable and modular data viewers and function libraries. 
+
+		<br>
+		
+		Mobius was also used for Extruded Cities - a 5-day workshop, conducted during the CAADRIA Conference - 2018, in Beijing, China. Students learned to process and visualize 3D Geospatial Data using the Mobius Visual Programming Environment. They then used Mobius' publishing capabilities to publish they work as interactive websites on Github.
+
+		<br><br>
+	</div>
+
+	<div class="container-fluid item--project--links">
+		<div class="row">
+			<div class="col-sm-12">Links:</div>
+			<ol>
+				<li><a target="_blank" href="https://design-automation.github.io/mobius-modeller">Mobius</a></li>
+				<li><a target="_blank" href="https://design-automation.github.io/mobius-cesium/gallery">Extruded Cities Gallery</a></li>
+			</ol>
+		</div>
+	</div>
+
+</div>
+									</div>
+								
+									<div class="col-md-8 col-md-offset-2 items__container-project">
+									   <div class="item--project">
+	<div class="item--project-tags">
+		<ul>
+			<li>deep-learning</li>
+			<li>speech-recognition</li>
+			<li>keras</li>
+		</ul>
+	</div>
+
+	<div class="h1 item--project--title">
+		Speech Transcription Neural Network
+	</div>
+
+	<div class="h4 item--project--role">Developer</div>
+
+	<div class="item--project--description">
+		A deep neural netwrok for speech transcription to function as part of an end-to-end automatic speech recognition (ASR) pipeline. Developed for my final capstone project for the Artificial Intelligence Nanodegree, I analyzed and experimented with various models exploring different layers and configurations like RNNs (GRU, LSTM), Bidirectional RNNs, CNN + RNNs, RNN + Time Distributed Dense, Dropout, Batch Normalization, etc. 
+	</div>
+
+	<div class="item--project--links">
+		Links:
+		<ol>
+			<li>
+				<a target="_blank" href="https://github.com/akshatamohanty/udacity-ai-nanodegree/blob/master/project-07-vui-capstone/vui_notebook.ipynb">
+					IPython Notebook
+				</a>
+			</li>
+			<li>
+				<a target="_blank" href="https://github.com/akshatamohanty/udacity-ai-nanodegree">
+					AI Nanodegree - All Projects
+				</a>
+			</li>
+		</ol>
+	</div>
+</div>
+									</div>
+								
+									<div class="col-md-8 col-md-offset-2 items__container-project">
+									   <div class="item--project">
+
+	<div class="item--project-tags">
+		<ul>
+			<li>android</li>
+			<li>mobile</li>
+		</ul>
+	</div>
+
+	<div class="h1 item--project--title">
+		Trackread
+	</div>
+
+	<div class="h4 item--project--role">Developer</div>
+
+	<div class="item--project--description">
+		Trackread is an Android Application built as a Capstone Project during my Android Developer Nanodegree from Udacity. The application allows the user to search for a book from Goodreads database, save it on the app to track reading progress and makes notes. The app also integrates services such as Google Analytics and Google AdMod and has two versions - a free version that displayed ads and a paid version free of ads. Trackread also has a widget that displays a list of books the user is currently reading with the progress on the screen.
+	</div>
+
+	
+	<div class="item--project--links">
+		Links:
+		<ol>
+			<li>
+				<a target="_blank" href="https://github.com/akshatamohanty/udacity-android-nanodegree/tree/master/project-07-capstone-project">
+					Trackread on Github
+				</a>
+			</li>
+			<li>
+				<a target="_blank" href="https://github.com/akshatamohanty/udacity-android-nanodegree">
+					Android Nanodegree - All Projects
+				</a>
+			</li>
+		</ol>
+	</div>
+
+</div>
+									</div>
+								
+									<div class="col-md-8 col-md-offset-2 items__container-project">
+									   <div class="item--project">
+
+	<div class="item--project-tags">
+		<ul>
+			<li>product-management</li>
+			<li>fullstack-development</li>
+			<li>startup</li>
+		</ul>
+	</div>
+
+	<div class="h1 item--project--title">
+		LunchedIn
+	</div>
+
+	<div class="h4 item--project--role">Tech Lead</div>
+
+	<div class="item--project--description">
+		LunchedIn is a web application designed to enable professional networking within colleagues in huge organizations, in a fun, food-centric way. On signing up, the user is able to view other members of his organization online and mark friends friends and cuisine preferences. The user is also able to specify days on which he/she is availble for lunch during the week. The app then acts as an email service, creating small, comfortable groups of known and unknown colleagues and sending them to a restaurant closeby that satisfies all their cuisine preferences. I build LunchedIn single-handedly  for a new startup using the MEAN Stack (MongoDB, Express, Angular.js and Node) and was offered position of CTO.
+	</div>
+
+
+	<a href="https://design-automation.github.io/mobius-modeller">Visit Project</a>
+</div>
+									</div>
+								
+
+							</div>
+						</div>
+
+
+						<div class="section__contents__calltoaction">
+							<div class="calltoaction__link" >
+								<a href="./projects">See all projects</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+				<!-- post-board -->
+				<div class="col-xs-12 section section--posts">
 					
-					<div class="container__title text--right">
-						Recent Posts
-					</div>
+					<div class="container-fluid section__contents">
+						
+						<div class="row section__contents__title h1 text--right">
+							Recent Posts
+						</div>
 
-					<div class="container__content">
-						<div class="items">
-							
+						<div class="row section__contents__content items">
 
-								<div class="items__container-post">
+							<div class="items">
+								
+
+								<div class="col-md-6 col-md-offset-3 col-xs-12 items__container-post">
 									<div class="item--post">
-										<div class="item--post--date">
-										<span class="text--highlight">#</span>
-										04/30/2018
+										<div class="h2 item--post--title text--handwritten">Exploring Memory in Chrome Task Manager</div>
+										<div class="h5 item--post--date">
+											Written on some-date 
 										</div>
-										<div class="item--post--title">Exploring Memory in Chrome Task Manager</div>
-										<div class="item--post--subtitle">A simple first-level diagnostic to track down memory leaks and problems</div>
 									</div>
 								</div>
-							   		
 
-							
+								
 
-								<div class="items__container-post">
+								<div class="col-md-6 col-md-offset-3 col-xs-12 items__container-post">
 									<div class="item--post">
-										<div class="item--post--date">
-										<span class="text--highlight">#</span>
-										04/25/2018
+										<div class="h2 item--post--title text--handwritten">Simple Angular Animation to create a slide-in/slide-out navbar</div>
+										<div class="h5 item--post--date">
+											Written on some-date 
 										</div>
-										<div class="item--post--title">Simple Angular Animation to create a slide-in/slide-out navbar</div>
-										<div class="item--post--subtitle">Angular animations are intimidating but a powerful feature to tie animations to components related to business logic, without compromising performance</div>
 									</div>
 								</div>
-							   		
 
-							
+								
 
-								<div class="items__container-post">
+								<div class="col-md-6 col-md-offset-3 col-xs-12 items__container-post">
 									<div class="item--post">
-										<div class="item--post--date">
-										<span class="text--highlight">#</span>
-										11/07/2017
+										<div class="h2 item--post--title text--handwritten">Using Typescript with Karma and Jasmine Testing</div>
+										<div class="h5 item--post--date">
+											Written on some-date 
 										</div>
-										<div class="item--post--title">Using Typescript with Karma and Jasmine Testing</div>
-										<div class="item--post--subtitle">Lessons learned while trying to integrate karma/jasmine into a typescript development environment. Took some time to figure this out but was totally worth the effort.</div>
 									</div>
 								</div>
-							   		
 
-							
+								
+							</div>
+
 						</div>
-					</div>
 
-					<div class="container__calltoaction">
-						<div class="calltoaction__link" >
-							<a href="./posts">Visit my blog</a>
+						<div class="row section__contents__calltoaction">
+							<div class="calltoaction__link" >
+								<a href="./posts">Visit my blog</a>
+							</div>
 						</div>
-					</div>
 
+					</div>
 				</div>
 
-			</div>
 
-			<div class="section section--projects section--highlight section--angled-down section--up">
-
-				<div class="container">
-					<div class="container__title title--highlight">
-						Featured Projects
-					</div>
-
-					<div class="container__content">
-						<div class="items">
-							<div class="items__container-project">
-								<a href="https://design-automation.github.io/mobius-modeller">
-									<div class="item--project">
-										<div class="item--project--title">
-											Mobius Modeller
-										</div>
-
-										<!-- <div class="item--project--spacer"></div> -->
-
-										<div class="item--project--description">
-											Visual programming environment in Javascript
-										</div>
-									</div>
-								</a>
-							</div>
-
-							<div class="items__container-project">
-								<a href="">
-									<div class="item--project">
-										<div class="item--project--title">
-											T.B.A
-										</div>
-
-										<!-- <div class="item--project--spacer"></div> -->
-
-										<div class="item--project--description">
-											TBA
-										</div>
-									</div>
-								</a>
-							</div>
-
-							<div class="items__container-project">
-								<a href="https://design-automation.github.io/mobius-cesium/gallery">
-									<div class="item--project">
-										<div class="item--project--title">
-											Extruded Cities
-										</div>
-
-										<!-- <div class="item--project--spacer"></div> -->
-
-										<div class="item--project--description">
-											3D Urban Data Visualizations with Visual Programming 
-										</div>
-									</div>
-								</a>
-							</div>
-
-							<div class="items__container-project">
-								<a href="https://github.com/akshatamohanty/studionet">
-									<div class="item--project">
-										<div class="item--project--title">
-											Studionet
-										</div>
-
-										<!-- <div class="item--project--spacer"></div> -->
-
-										<div class="item--project--description">
-											Social Networking platform for idea-sharing
-										</div>
-									</div>
-								</a>
-							</div>
-
-							<div class="items__container-project">
-								<a href="https://github.com/akshatamohanty/lunchedin">
-									<div class="item--project">
-										<div class="item--project--title">
-											LunchedIn
-										</div>
-
-										<!-- <div class="item--project--spacer"></div> -->
-
-										<div class="item--project--description">
-											Web application for professional networking over lunch
-										</div>
-									</div>
-								</a>
-							</div>
-
-							<div class="items__container-project">
-								<a href="https://github.com/akshatamohanty/dog-breed-classifier">
-									<div class="item--project">
-										<div class="item--project--title">
-											Dog Breed Classifier
-										</div>
-
-										<!-- <div class="item--project--spacer"></div> -->
-
-										<div class="item--project--description">
-											A Convolutional Network that finds you your soul-dogmate!
-										</div>
-									</div>
-								</a>
-							</div>
-
+				<!-- about -->
+				<div class="col-xs-12 section section--about">
+					<div class="container-fluid section__contents">
+						
+						<div class="row section__contents__title h1">
+							Get in touch
 						</div>
-					</div>
 
+						<div class="row row-eq-height section__contents__content">
+							<div class="col-sm-offset-2 col-sm-4">
 
-					<div class="container__calltoaction">
-						<div class="calltoaction__link" >
-							<a href="./projects">See all projects</a>
-						</div>
-					</div>
+								I have always loved to build things. Startups, technology and products promising global impact enthuse me. An architect by graduation, I would have been developing buildings, but I met Javascript on the way and started architecting software instead! 
+								<br><br>
+								I am addicted to MOOCs and Coursera is my Netflix. I have multiple specializations in <b>Full Stack Web Development</b>, <b>Artificial Intelligence</b> and <b>Machine Learning</b>. My new crush now is <b>Blockchain Technology</b>. 
+								<br><br>
+								I currently work at the National University of Singapore as a Research Assistant.
+								<br><br>
+							</div>
 
-				</div>
-
-			</div>
-
-			<div class="section section--about section--up">
-				<div class="container">
-					<div class="container__title">
-						About me
-					</div>
-					<div class="container__content text--fixed-width">
-						I have always loved to build things. Startups, technology and products promising global impact enthuse me. An architect by graduation, I would have been developing buildings, but I met Javascript on the way and started architecting software instead! 
-						<br><br>
-						I am addicted to MOOCs and Coursera is my Netflix. I have multiple specializations in <b>Full Stack Web Development</b>, <b>Artificial Intelligence</b> and <b>Machine Learning</b>. My new crush now is <b>Blockchain Technology</b>. 
-						<br><br>
-						I currently work at the National University of Singapore as a Research Assistant.
-						<br><br>
-					</div>
-				</div>
-			</div>
-
-
-			<div class="section section--contact section--up">
-				<div class="container">
-					<div class="container__title text--highlight">
-						Got an idea? Let's nerd it out. 
-					</div>
-
-					<div class="container__content">
-						<div class="social-media-icons">
-							<a target="_blank" href="https://linkedin.com/in/akshata-mohanty"><i class="fa fa-linkedin"></i></a>
-							<a target="_blank" href="https://github.com/akshatamohanty"><i class="fa fa-github"></i></a>
-							<a target="_blank" href="mailto:akshatamohanty@gmail.com"><i class="fa fa-google"></i></a>
+							<div class="col-sm-6 text-center">
+								<div class="container-fluid">
+								    <div class="row">	
+								    	<div class="col-xs-12">
+									    	<img src='../assets/jumpup.jpg' 
+											 class="img-responsive" style="width: 50%; border-radius: 50%;margin: 0 auto;"/>
+										</div>
+								    </div>
+								    <div class="row h3 text--handwritten"> 
+								    	<div class="col-xs-12">
+								    		<h3>Got an idea? Let's nerd it out.</h3>
+									    	<div class="social-media-icons">
+												<a target="_blank" href="https://github.com/akshatamohanty"><i class="fa fa-github"></i></a>
+												<a target="_blank" href="https://linkedin.com/in/akshata-mohanty">
+													<i class="fa fa-linkedin"></i>
+												</a>
+												<a target="_blank" href="mailto:akshatamohanty@gmail.com"><i class="fa fa-google"></i></a>
+											</div>
+										</div>
+								    </div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
+
 			</div>
 
 		</div>
@@ -266,5 +349,15 @@ type="text/css">
 
 	<!-- scripts-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111560396-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-111560396-1');
+	</script>
 </html>
 
