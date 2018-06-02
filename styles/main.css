@@ -132,7 +132,7 @@ ul {
         margin: 5px 20px;
         display: none; }
     .section__contents .section__contents__content.items .items__container-project {
-      padding: 40px; }
+      padding: 40px 0px; }
       .section__contents .section__contents__content.items .items__container-project .item--project .item--project--description {
         font-size: 12px;
         line-height: 26px; }
