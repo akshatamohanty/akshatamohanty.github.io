@@ -146,8 +146,8 @@ ul {
     drop-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2); }
   .section.section--highlight {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/texture-background.jpg"); }
-  .section.section--contact {
-    color: white; }
+  .section.section--about {
+    padding-bottom: 120px; }
   .section.section--up {
     margin-top: -150px; }
   .section.section--angled-down {
