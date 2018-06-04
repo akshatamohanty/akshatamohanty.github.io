@@ -3,7 +3,7 @@
 		<!-- <div class="date"></div> -->
 			<div class="post__date">Written on {{ item.date | date: "%m/%d/%Y" }}</div>
 
-		<ul class="tag-container">
+		<ul class="tag-container fancy-list">
 			{% for tag in item.tags %}
 			<li class="tag">{{tag}}</li> 
 			{% endfor %}
