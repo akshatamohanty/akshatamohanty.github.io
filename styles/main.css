@@ -10,16 +10,16 @@ html, body {
   font-size: 12px;
   line-height: 28px; }
 
-ul {
+ul.fancy-list {
   font-family: 'Reenie Beanie';
   font-size: 26px;
   line-height: 36px;
   margin-left: 0px;
   padding-left: 0px; }
-  ul li {
+  ul.fancy-list li {
     list-style: none;
     display: inline-block; }
-    ul li::before {
+    ul.fancy-list li::before {
       content: "#"; }
 
 .calltoaction__link {
@@ -71,7 +71,7 @@ ul {
 * @Author: Akshata
 * @Date:   2018-06-02 16:27:00
 * @Last Modified by:   Akshata
-* @Last Modified time: 2018-06-02 16:46:08
+* @Last Modified time: 2018-06-04 23:52:34
 */
 .post__body {
   padding: 60px 30px; }
@@ -88,14 +88,6 @@ ul {
 
 .post__content h1, .post__content h2, .post__content h3, .post__content h4, .post__content h5, .post__content h6 {
   margin-top: 30px; }
-.post__content ul {
-  font-family: inherit;
-  font-size: inherit; }
-  .post__content ul li {
-    display: block;
-    list-style: default; }
-    .post__content ul li::before {
-      content: ""; }
 
 .post__tags {
   margin: 45px 0px 0px 0px; }
