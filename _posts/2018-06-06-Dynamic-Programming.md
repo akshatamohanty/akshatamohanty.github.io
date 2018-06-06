@@ -1,13 +1,12 @@
 ---
 layout: post
-title:  Dynamic Programming: Recursion with memory
+title:  Dynamic Programming - Recursion with memory
 subtitle: Introduction to DP, Linear Partition Problem and an example
 date:   2018-06-06
 categories: post
 type: post
 tags: algorithm-design
 ---
-
 
 ### What is Dynamic Programming?
 Dynamic Programming is a method of problem-solving where you breakdown the problems into smaller subproblems, similar to the original problem. It may or maynot use recursion. 
