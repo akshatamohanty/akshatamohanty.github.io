@@ -1,0 +1,34 @@
+<div class="spaces-theme row">
+
+	{% include page-elements/header.html %}
+
+
+	{% include page-elements/category-navigation.html %}
+
+	<hr>
+
+	<section class="post-container row">
+		{% for post in site.posts %}
+
+		    {% if post.group == page.page or page.page == 'all' %}
+
+				{% if post.image %}
+					{% include article-layouts/article-with-image.html %}
+				{% else if post.group == 'blog' %}
+					{% include article-layouts/article-blog.html %}
+				{% else %}
+					{% include article-layouts/article-without-image.html %}
+				{% endif %}
+
+			{% endif %}
+
+
+		{% endfor %}
+
+
+	</section>
+
+
+
+
+</div>

@@ -1,11 +1,12 @@
 ---
+layout: post
+group: blog
 title: Topological Sorting Algorithm with JS
 subtitle: Phew!
 date: 24-1-2018
 categories: post
 type: post
 tags: algorithms, javascript, graphs
-layout: post
 ---
 
 ### Topological Sorting

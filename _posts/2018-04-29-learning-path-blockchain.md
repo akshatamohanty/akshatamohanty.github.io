@@ -1,5 +1,6 @@
 ---
 layout: post
+group: blog
 title:  Learning Blockchain
 subtitle: Combination of learning paths from various resources to learn blockchain
 date:   2018-04-29

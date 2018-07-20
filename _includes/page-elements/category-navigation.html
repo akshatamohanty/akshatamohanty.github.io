@@ -1,31 +1,12 @@
-<div class="category-navigation">
+<nav>
 	<ul>
-
-			{% for collection in site.collections %}
-		        <li 
-		        	{% if collection.label == page.type %}class="active"
-					{% endif %}
-					>
-
-		        	<a 
-						{% if collection.label == 'posts' %}href="/"
-						{% else %}href="{{site.baseurl}}/{{ collection.label }}/"
-						{% endif %}
-		        	>
-		        	{{ collection.label }} 
-		        	</a>
-		        </li>
-			{% endfor %}
-		
-			<!-- <li class="{{page.blog}}" id='nav-blog'>
-				<a href='/'>Blog</a>
-			</li>
-		
-		
-			<li class="{{page.projects}}" id='nav-projects'>
-				<a href='./projects'>Projects</a>
-			</li> -->
-		
-		<!-- <li class="disabled">Jargon</li> -->
+		{% assign sorted_pages = site.pages | sort:"order" %}
+		{% for node in sorted_pages %}
+			{% if page.url == node.url %}
+			  <li class="active"><a href="{{node.url}}" class="active">{{node.title}}</a></li>
+			{% else %}
+			  <li><a href="{{node.url}}">{{node.title}}</a></li>
+			{% endif %}
+		{% endfor %} 
 	</ul>
-</div>
+</nav>

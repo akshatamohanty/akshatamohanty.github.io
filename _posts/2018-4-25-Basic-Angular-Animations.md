@@ -1,5 +1,6 @@
 ---
 layout: post
+group: blog
 title:  Simple Angular Animation to create a slide-in/slide-out navbar
 subtitle: Angular animations are intimidating but a powerful feature to tie animations to components related to business logic, without compromising performance
 summary: Angular provides a way to add animations to your app, tied to your application logic, with almost similar performance as native CSS animations.

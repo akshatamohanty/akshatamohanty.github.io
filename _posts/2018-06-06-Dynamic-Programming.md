@@ -1,5 +1,6 @@
 ---
 layout: post
+group: blog
 title:  Dynamic Programming - Recursion with memory
 subtitle: Introduction to DP, Linear Partition Problem and an example
 date:   2018-06-06

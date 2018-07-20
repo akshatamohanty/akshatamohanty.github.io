@@ -1,5 +1,6 @@
 ---
 layout: post
+group: blog
 title:  Using the Trello API
 subtitle: Trello API to collect all cards and make a checklist 
 date:   2018-05-11

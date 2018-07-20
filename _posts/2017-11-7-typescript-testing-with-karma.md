@@ -1,5 +1,6 @@
 ---
 layout: post
+group: blog
 title:  Using Typescript with Karma and Jasmine Testing 
 subtitle: Lessons learned while trying to integrate karma/jasmine into a typescript development environment. Took some time to figure this out but was totally worth the effort.
 date:   2017-11-7
