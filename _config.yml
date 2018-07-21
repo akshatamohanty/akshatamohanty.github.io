@@ -1,7 +1,6 @@
 # File: _config.yml
 destination: _site
-        
-# Setup
+
 title:            Brain-pickings
 baseurl:          # /blog
 
@@ -13,11 +12,6 @@ author:
   url:            https://akshatamohanty.github.io/
 
 
-plugins_dir:
-#   - jekyll-feed
-#   - jekyll-gist
-
-# Custom vars
 version:            1.0.0
 github:
   repo:             https://github.com/akshatamohanty/akshatamohanty.github.io
