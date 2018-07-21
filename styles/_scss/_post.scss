@@ -1,0 +1,65 @@
+// 
+//	POST LISTING
+//
+.post-container{
+	padding: $content-padding $content-padding $content-padding 0px;
+	margin-left: -$post-padding;
+}
+
+article.post{
+	padding: 0px $post-padding;
+	margin: $post-padding 0px;
+
+	.heading{
+		text-transform: uppercase;
+		font-weight: 600;
+		color: $font-color-muted;
+		margin: 0px;
+	}
+
+
+	&.post--blog{
+		width: 100%;
+		margin: $post-padding/2 0px;
+	}
+
+	a{
+		color: inherit;
+	}
+}
+
+
+.list--tags{
+	list-style: none;
+
+	margin: 0px 0px 15px 0px;
+	padding: 0px;
+
+	display: flex;
+	flex-direction: row;
+
+	li{
+		padding: 3px;
+		border: 1px solid #ddd; 
+		border-radius: 3px;
+		margin-right: 10px;
+		text-transform: uppercase;
+
+		background: $font-color-muted;
+		font-size: $font-mini;
+		color: #fff;
+	}
+}
+
+//
+// ACTUAL POST CONTENT
+//
+.post__section{
+	margin: $content-margin 0px;
+}
+
+.section--content{
+	p{
+		margin: $content-margin 0px;
+	}
+}

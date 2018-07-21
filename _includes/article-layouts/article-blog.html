@@ -1,10 +1,9 @@
 {% if page.page == 'blog' %}
-<div class="col-xs-12">
+<article class="post post--blog">
 	<h4>
+		<small>{{ post.date | date: "%B %-d, %Y" }}</small><br>
 		<a href='{{post.url}}'>{{post.title}}</a>
-		<small>[ {{ post.date | date: "%B %-d, %Y" }} ]</small>
 	</h4>
-</div>
+</article>
 <br>
-
 {% endif %}

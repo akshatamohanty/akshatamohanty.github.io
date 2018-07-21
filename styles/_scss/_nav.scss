@@ -1,0 +1,29 @@
+nav{
+	width: 100%; 
+	margin: $content-padding 0px;
+
+	ul{
+		padding: 0px; 
+		//margin: 0px 90px;
+
+		li{
+			display: block;
+			
+			margin-right: $list-spacing;
+			padding: 0px;
+
+			text-transform: uppercase;
+
+			font-size: $font-mini;
+			color: $font-color-muted; 
+
+			cursor: pointer;
+
+			&.active{
+				color: blue;
+				border-bottom: 1px solid blue;
+			}
+		}
+	}
+}
+

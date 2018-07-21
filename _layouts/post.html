@@ -2,42 +2,42 @@
 <html>
 	{% include page-elements/head.html %}
 
-		{% include page-elements/category-navigation.html %}
+	<main class="content-wrapper">
 
-		<div class="container">
+			<br><br>
 
-				<div class="row post">
+			<a href='/writing.html' class='post__section'>&larr; Back to Posts</a>
 
-					<div class="col-sm-8 col-sm-offset-2 col-xs-12 post__body">
+			<article>
+				<header class='post__section'>
+					<ul class="list--tags">
+						{% for tag in page.tags %}
+						<li>{{tag}}</li> 
+						{% endfor %}
+					</ul>
+					<h1>{{page.title}}</h1>
+					<aside>{{ page.date | date: "%m-%d-%Y" }}</aside>
+				</header>
 
+				<section class='post__section'>
+					<b> TL;DR </b>
+					<br>
+					{{page.summary}}
+				</section>
 
-						<div class="row">
-							<h1>{{page.title}}</h1>
-							<div class="text-center">{{ page.date | date: "%m-%d-%Y" }}</div>
-						</div>
+				<section class='post__section section--content'>
+					{{page.content}}
+				</section>
 
-						<div class="row post__summary">
-							{{page.summary}}
-						</div>
+			</article>
 
-						<!-- post-content-->
-						<div class="row post__content" style='display: flex; flex-direction: column;'>
-							{{page.content}}
-						</div>
+	</main>
+	
+	<div class='text-center'>{% include page-elements/category-navigation.html %}</div>
 
+	<br><br><br>
 
-						{% include page-elements/category-navigation.html %}
-						<br><br>
-
-						<!-- footer-->
-						{% include page-elements/copyright.html %}
-
-					</div>
-
-				</div>
-
-		</div>
-
+	{% include page-elements/copyright.html %}
 
 </html>
 

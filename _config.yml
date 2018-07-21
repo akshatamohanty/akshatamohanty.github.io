@@ -1,28 +1,9 @@
 # File: _config.yml
 destination: _site
         
-
-## define a custom collection
-# collections:
-#   my_collection:
-#     output: true
-
 # Setup
 title:            Brain-pickings
-tagline:          Brain-pickings
-description:      Hey there! My name is Akshata. I am an application developer, 
-                  working at the National University of Singapore. 
-                  Architect by training and a technologist by passion, 
-                  I often find myself wandering in the murky cusp between science and art. 
-                  If I am not coding, you'll find me thinking, making or 
-                  lusting after food! Cheers!
-url:              https://akshatamohanty.github.io/
 baseurl:          # /blog
-                  # the optional subpath of your site, e.g. "/blog"
-                  # NB: This applies to all pages in your Jekyll site.
-                  # If you want to move just the blog index pages but keep
-                  # other pages at root, see the paginate_path and
-                  # sidebar_blog_link below.
 
 sass:
   sass_dir: styles/_scss
@@ -31,34 +12,13 @@ author:
   name:           'Akshata Mohanty'
   url:            https://akshatamohanty.github.io/
 
-pages:
-  home
-  
 
-plugins:
+plugins_dir:
 #   - jekyll-feed
 #   - jekyll-gist
 
-
-############################################################
-# Site configuration for the Auto-Pages feature
-# The values here represent the defaults if nothing is set
-autopages:
-
-  # Site-wide kill switch, disable here and it doesn't run at all 
-  enabled: false
-
-
-# paginate:         5
-# paginate_path:    '/page:num'
-                    # Or '/blog/page:num' if you want to move your index pages
-
 # Custom vars
 version:            1.0.0
-#sidebar_blog_link:  '/blog'   # By default, your home page is your blog
-                                # page. If you change your paginate_path,
-                                # set this to the root of the paginate_path
-                                # to enable a separate blog link.
 github:
   repo:             https://github.com/akshatamohanty/akshatamohanty.github.io
 

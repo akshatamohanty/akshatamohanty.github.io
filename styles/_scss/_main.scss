@@ -1,0 +1,60 @@
+$content-margin: 30px; 
+$content-side-padding: 90px; 
+$content-top-padding: 40px;
+
+$content-padding: 30px;
+$content-padding--wide: 120px;
+
+$section-padding: $content-padding--wide/2 $content-padding $content-padding $content-padding--wide;
+$post-padding: 30px;
+
+$list-spacing: 45px;
+
+$body-font-size: 16px;
+$body-line-height: 22px; 
+$body-font-color: #222; 
+$font-color-muted: #999;
+
+$font-mini: 14px;
+
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding: 0px;
+}
+
+.row > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+body{
+	padding: 0px; 
+	margin: 0px; 
+
+	position: relative;
+
+	font-family: 'Courier';
+	font-size: $body-font-size;
+	line-height: $body-line-height;
+	color: $body-font-color; 
+}
+
+
+main.content-wrapper{
+	width: 100%;
+	max-width: 1600px;
+
+
+	padding: 30px;
+}
+
+.copyright{
+	bottom: 0px;
+	text-align: center;
+}
+
