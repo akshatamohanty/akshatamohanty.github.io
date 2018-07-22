@@ -1,7 +1,7 @@
 # File: _config.yml
 destination: _site
 
-title:            Brain-pickings
+title:            Brainpickings
 baseurl:          # /blog
 
 sass:
