@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Brainpickings</title>
+
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- main stylesheet -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="/styles/main.css">
+
+			<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111560396-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-111560396-1');
+		</script>
+</head>
+
+	<main class="content-wrapper">
+
+			<br><br>
+
+			<a href='/writing.html' class='post__section'>&larr; Back to Posts</a>
+
+			<article>
+				<header class='post__section'>
+					<ul class="list--tags">
+						
+						<li>travis</li> 
+						
+						<li>gitbook</li> 
+						
+					</ul>
+					<h1>Generate PDFs from Gitbook automatically, with Travis.CI</h1>
+					<aside>08-08-2018</aside>
+				</header>
+
+				<section class='post__section'>
+					<b> TL;DR </b>
+					<br>
+					
+				</section>
+
+				<section class='post__section section--content'>
+					<h3 id="what-is-gitbook">What is Gitbook?</h3>
+<p>Gitbook is an excellent opensource platform to generate awesome looking documentation and books from simple markdown files. They also have a paid version with an editor. However, the open source free version can easily be paired with Github and Travis to pretty much provide a nice workflow.</p>
+
+<h3 id="the-requirement">The Requirement</h3>
+<p>The book in question was hosted on Github as Markdowns organised into folders in the <code class="highlighter-rouge">master</code> branch. Travis was then configured to run a command <code class="highlighter-rouge">gitpub</code> that automatically generated the Gitbook, cleans it up and commits it to the <code class="highlighter-rouge">gh-pages</code> branch, from which the github.io page is served. However, we also needed the <code class="highlighter-rouge">master</code> branch to have a directly downloadable PDF version of the latest Gitbook output.</p>
+
+<h3 id="the-problem">The Problem</h3>
+<p>Generating a PDF with Gitbook is fairly straightforward using the <code class="highlighter-rouge">gitbook pdf &lt;gitbook-folder-location&gt; &lt;pdf-location&gt;.pdf</code> command. However, running this command inside Travis.CI throws the following Runtime Error.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>File "/usr/bin/ebook-convert", line 20, in &lt;module&gt;
+    sys.exit(main())
+...
+...
+...
+RuntimeError: X server required. If you are running on a headless machine, use xvfb
+</code></pre></div></div>
+
+<p>As is obvious from the error, the error comes from the ebook-convert plugin, that is required by Gitbook for the PDF generation. However, the command <code class="highlighter-rouge">ebook-convert</code> needs to have prepended with <code class="highlighter-rouge">xbvf</code> to run in a headless environment like Travis.</p>
+
+<p>And …</p>
+
+<p>There is no direct way to prepend the <code class="highlighter-rouge">ebook-convert</code> because that is getting called by Gitbook internally. Trying to change that, would mean modifying Gitbook for yourself.</p>
+
+<h3 id="the-solution">The Solution</h3>
+<p>I found this <a href="https://www.systutorials.com/241364/how-to-run-gitbook-on-a-headless-server-make-calibre-run-in-headless-server/">gold nugget</a> which didn’t work for me but definitely led me to my current solution. The workaround was to ‘wrap’ the <code class="highlighter-rouge">ebook-convert</code> command so that when Gitbook calls <code class="highlighter-rouge">ebook-convert</code>, it is actually calling the wrapper command, that calls the actual command prepended with <code class="highlighter-rouge">xbvf</code>.</p>
+
+<p>Steps:</p>
+<ul>
+  <li>Create a wrapper shell script in the repository (script provided below)</li>
+  <li>Rename the ebook-covert in your <code class="highlighter-rouge">/usr/bin</code> folder to ebook-convert2 (or something else!)</li>
+  <li>Move your script to the <code class="highlighter-rouge">/usr/bin</code> folder as <code class="highlighter-rouge">ebook-convert</code></li>
+  <li>Allow the script to be excutable (the command will exit with an error if you don’t do this)</li>
+</ul>
+
+<p>And that’s it! Enjoy your automatic PDFs</p>
+
+<h3 id="files">Files</h3>
+
+<h4 id="wrapper-script">wrapper-script</h4>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+<span class="nb">echo</span> <span class="s2">"Run xvfb-run /usr/bin/ebook-convert2 </span><span class="nv">$@</span><span class="s2">"</span>
+<span class="nb">sudo </span>xvfb-run /usr/bin/ebook-convert2 <span class="s2">"</span><span class="nv">$@</span><span class="s2">"</span>
+</code></pre></div></div>
+
+<h4 id="travisyml">.travis.yml</h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>language: node_js
+node_js:
+  - "6"
+before_install:
+  - sudo apt-get install -y calibre
+  - sudo apt-get install xvfb
+before_script:
+  - npm install gitbook-cli
+  - npm install gitbook-publish@latest
+  - npm install ebook-convert
+  - sudo mv /usr/bin/ebook-convert /usr/bin/ebook-convert2
+  - sudo cp ./ebook-wrapper.sh /usr/bin/ebook-convert
+  - sudo chmod +x /usr/bin/ebook-convert
+script: 
+  - git config --global user.email "akshatamohanty@gmail.com"
+  - git config --global user.name "Akshata"
+  - gitbook pdf ./ ./published/urban-prototyping.pdf
+  - git add ./published/urban-prototyping.pdf
+  - git status
+  - git commit -m"Published PDF" 
+  - git status
+  - git push "https://{USER_NAME}:${GITHUB_TOKEN}@github.com/${GITHUB_REPO}" master
+  - gitpub
+  - git branch
+  - git remote -v
+  - git push --force "https://{USER_NAME}:${GITHUB_TOKEN}@github.com/${GITHUB_REPO}" gh-pages 
+
+</code></pre></div></div>
+
+				</section>
+
+			</article>
+
+	</main>
+	
+	<div class='text-center'><nav>
+	<ul>
+		
+		
+			
+		
+			
+				
+				  <li><a href="/">all</a></li>
+				
+			
+		
+			
+				
+				  <li><a href="/fullstack.html">Web & Mobile</a></li>
+				
+			
+		
+			
+				
+				  <li><a href="/blockchain.html">Blockchain</a></li>
+				
+			
+		
+			
+				
+				  <li><a href="/datascience.html">Data Science</a></li>
+				
+			
+		
+			
+				
+				  <li><a href="/product.html">Product & Design</a></li>
+				
+			
+		
+			
+				
+				  <li><a href="/writing.html">blog</a></li>
+				
+			
+		 
+	</ul>
+</nav></div>
+
+	<br><br><br>
+
+	<div class="h5 copyright text-center">
+		Copyright © 2018 
+		<a href="http://linkedin.com/in/akshatamohanty/" target="_blank">Akshata Mohanty</a>. 
+		All Rights Reserved.
+</div>
+
+</html>
+
