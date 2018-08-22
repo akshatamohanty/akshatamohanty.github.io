@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-	
 	<head>
 	<title>Brainpickings</title>
 
@@ -35,30 +34,56 @@
 
 	<main class="content-wrapper">
 
-		<header>
-	<h3>Akshata Mohanty</h3>
-	<h4>Full Stack Developer</h4>
+			<br><br>
 
-	<br>
+			<a href='/writing.html' class='post__section'>&larr; Back to Posts</a>
 
-	<p>
-		Fascinated by the human brain. Building technologies to aid human potential. Intrigued by cash flows. If I am not coding, I am food-ing.  
-	</p>
+			<article>
+				<header class='post__section'>
+					<ul class="list--tags">
+						
+						<li>gcloud</li> 
+						
+						<li>flask</li> 
+						
+						<li>python</li> 
+						
+					</ul>
+					<h1>How to host a Flask App on Google Cloud?</h1>
+					<aside>08-22-2018</aside>
+				</header>
 
-	<br>
+				<section class='post__section'>
+					<b> TL;DR </b>
+					<br>
+					
+				</section>
 
-	<p>
-		Got an idea? Let's nerd it out.
-    	<div class="social-media-icons">
-			<a target="_blank" href="https://github.com/akshatamohanty"><i class="fa fa-github"></i></a>
-			<a target="_blank" href="https://linkedin.com/in/akshata-mohanty"><i class="fa fa-linkedin"></i></a>
-			<a target="_blank" href="https://linkedin.com/in/akshata-mohanty"><i class="fa fa-medium"></i></a>
-		</div>
-	</p>
-</header>
+				<section class='post__section section--content'>
+					<h3 id="new-flask-project-on-gcloud">New Flask Project on Gcloud</h3>
+<ul>
+  <li>In GoDaddy, go to the DNS Management page</li>
+  <li>
+    <p>Add an ANAME entry with host as the subdomain name and pointing to the compute instance IP</p>
+  </li>
+  <li>Login to your instance using `gcloud compute ssh <instance-name></instance-name></li>
+  <li>Go to the nginx sites config file: add the server_name <subdomain.domain.extension> entry into the file</subdomain.domain.extension></li>
+  <li>Restart nginx</li>
+  <li>The site will be available on the subdomain.domain.ext URL</li>
+  <li>Use certbot: <code class="highlighter-rouge">sudo certbot --nginx</code> with redirect option to add https to your website</li>
+  <li>Create a .git folder with a post-recieve hook in the /home/git folder</li>
+  <li>Make sure all the required folders are owned by the user who’ll make the push</li>
+  <li><code class="highlighter-rouge">sudo chown -R user:user</code> and <code class="highlighter-rouge">ls -l</code> are helpful commands</li>
+</ul>
 
 
-		<nav>
+				</section>
+
+			</article>
+
+	</main>
+	
+	<div class='text-center'><nav>
 	<ul>
 		
 		
@@ -78,7 +103,7 @@
 		
 			
 				
-				  <li class="active"><a href="/blockchain.html" class="active">Blockchain</a></li>
+				  <li><a href="/blockchain.html">Blockchain</a></li>
 				
 			
 		
@@ -101,67 +126,9 @@
 			
 		 
 	</ul>
-</nav>
+</nav></div>
 
-		<hr>
-
-		<section class="post-container row">
-			
-
-			    
-			
-
-			    
-			
-
-			    
-			
-
-			    
-			
-
-			    
-			
-
-			    
-			
-
-			    
-			
-
-			    
-			
-
-			    
-			
-
-			    
-			
-
-			    
-			
-
-			    
-			
-
-			    
-			
-
-			    
-			
-
-			    
-			
-
-			    
-			
-
-			    
-			
-		</section>
-
-	</main>
-
+	<br><br><br>
 
 	<div class="h5 copyright text-center">
 		Copyright © 2018 
@@ -170,3 +137,4 @@
 </div>
 
 </html>
+
