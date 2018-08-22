@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-	
 	<head>
 	<title>Brainpickings</title>
 
@@ -35,30 +34,46 @@
 
 	<main class="content-wrapper">
 
-		<header>
-	<h3>Akshata Mohanty</h3>
-	<h4>Full Stack Developer</h4>
+			<br><br>
 
-	<br>
+			<a href='/writing.html' class='post__section'>&larr; Back to Posts</a>
 
-	<p>
-		Fascinated by the human brain. Building technologies to aid human potential. Intrigued by cash flows. If I am not coding, I am food-ing.  
-	</p>
+			<article>
+				<header class='post__section'>
+					<ul class="list--tags">
+						
+						<li>gcloud</li> 
+						
+						<li>jupyter</li> 
+						
+					</ul>
+					<h1>Accessing Jupyter Notebook running on a Google Compute Instance</h1>
+					<aside>08-22-2018</aside>
+				</header>
 
-	<br>
+				<section class='post__section'>
+					<b> TL;DR </b>
+					<br>
+					
+				</section>
 
-	<p>
-		Got an idea? Let's nerd it out.
-    	<div class="social-media-icons">
-			<a target="_blank" href="https://github.com/akshatamohanty"><i class="fa fa-github"></i></a>
-			<a target="_blank" href="https://linkedin.com/in/akshata-mohanty"><i class="fa fa-linkedin"></i></a>
-			<a target="_blank" href="https://linkedin.com/in/akshata-mohanty"><i class="fa fa-medium"></i></a>
-		</div>
-	</p>
-</header>
+				<section class='post__section section--content'>
+					<h3 id="to-acces-jupyter-notebook-running-in-gcloud-instance">To acces Jupyter Notebook running in GCloud Instance</h3>
+<ul>
+  <li>Make the compute instance static from <code class="highlighter-rouge">External IP Addresses</code> in the VPC Network menu</li>
+  <li>Add a Firewall rule for all instances</li>
+  <li>0.0.0.0/0 for Source IP ranges and tcp:<port-number> for Specified protocols and ports where <port-number> is the number you used above.</port-number></port-number></li>
+  <li>Hit create
+Running jupyter-notebook –port=<specified-port></specified-port></li>
+</ul>
 
+				</section>
 
-		<nav>
+			</article>
+
+	</main>
+	
+	<div class='text-center'><nav>
 	<ul>
 		
 		
@@ -84,7 +99,7 @@
 		
 			
 				
-				  <li class="active"><a href="/datascience.html" class="active">Data Science</a></li>
+				  <li><a href="/datascience.html">Data Science</a></li>
 				
 			
 		
@@ -101,88 +116,9 @@
 			
 		 
 	</ul>
-</nav>
+</nav></div>
 
-		<hr>
-
-		<section class="post-container row">
-			
-
-			    
-			
-
-			    
-			
-
-			    
-			
-
-			    
-			
-
-			    
-			
-
-			    
-			
-
-			    
-			
-
-			    
-
-					
-						<article class="post col-sm-4"> 
-	<ul class="list--tags">
-		
-		<li>speech-recognition</li> 
-		
-		<li>keras</li> 
-		
-	</ul>
-	<h3 class='heading'><a href=https://github.com/akshatamohanty/udacity-ai-nanodegree/blob/master/project-07-vui-capstone/vui_notebook.ipynb target='_blank'>Speech Transcription Neural Network</a></h3>
-	<p>Neural network for speech transcription to function as part of an end-to-end automatic speech recognition (ASR) pipeline</p>
-</article>
-
-
-					
-
-				
-			
-
-			    
-			
-
-			    
-			
-
-			    
-			
-
-			    
-			
-
-			    
-			
-
-			    
-			
-
-			    
-			
-
-			    
-			
-
-			    
-			
-
-			    
-			
-		</section>
-
-	</main>
-
+	<br><br><br>
 
 	<div class="h5 copyright text-center">
 		Copyright © 2018 
@@ -191,3 +127,4 @@
 </div>
 
 </html>
+
