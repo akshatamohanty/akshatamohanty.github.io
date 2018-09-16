@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800');
+
 $content-margin: 30px; 
 $content-side-padding: 90px; 
 $content-top-padding: 40px;
@@ -9,12 +11,13 @@ $section-padding: $content-padding--wide/2 $content-padding $content-padding $co
 $post-padding: 30px;
 $list-spacing: 45px;
 
-$body-font-color: #222; 
-$font-color-muted: #999;
+$body-font-color: #3F4651;
+$font-color-muted: rgba(231, 112, 0, 0.692);//#538CD4;
+$font-color-accent: #E7BF00;
 
 $body-font-size: 16px;
 $body-line-height: 22px; 
-$font-mini: 14px;
+$font-mini: 18px;
 
 .row {
   display: -webkit-box;
@@ -37,7 +40,7 @@ body{
 
 	position: relative;
 
-	font-family: 'Courier';
+	font-family: 'Open Sans';
 	font-size: $body-font-size;
 	line-height: $body-line-height;
 	color: $body-font-color; 
@@ -56,4 +59,3 @@ main.content-wrapper{
 	bottom: 0px;
 	text-align: center;
 }
-

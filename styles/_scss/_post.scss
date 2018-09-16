@@ -8,12 +8,12 @@
 
 article.post{
 	padding: 0px $post-padding;
-	margin: $post-padding 0px;
+	margin: 1.5*$post-padding 0px;
 
 	.heading{
 		text-transform: uppercase;
 		font-weight: 600;
-		color: $font-color-muted;
+		line-height: 1.5;
 		margin: 0px;
 	}
 
@@ -32,7 +32,7 @@ article.post{
 .list--tags{
 	list-style: none;
 
-	margin: 0px 0px 15px 0px;
+	margin: 10px 0px 15px 0px;
 	padding: 0px;
 
 	display: flex;
@@ -40,14 +40,23 @@ article.post{
 
 	li{
 		padding: 3px;
-		border: 1px solid #ddd; 
 		border-radius: 3px;
 		margin-right: 10px;
 		text-transform: uppercase;
 
-		background: $font-color-muted;
+		background: $body-font-color;
 		font-size: $font-mini;
-		color: #fff;
+		color: $font-color-accent;
+	}
+}
+
+.post--blog{
+	max-width: 450px;
+	padding-bottom: 2*$content-padding !important;
+
+	.date{
+		text-transform: uppercase;
+		color: $font-color-accent;
 	}
 }
 
@@ -55,11 +64,19 @@ article.post{
 // ACTUAL POST CONTENT
 //
 .post__section{
-	margin: $content-margin 0px;
+	margin: 2*$content-margin 0px;
 }
 
 .section--content{
 	p{
 		margin: $content-margin 0px;
+		line-height: 150%;
+	}
+
+	h2, h3, h4, h5, h6{
+		color: $font-color-muted;
+		font-weight: 600;
+		text-transform: uppercase; 
+		margin: 60px 0px;
 	}
 }

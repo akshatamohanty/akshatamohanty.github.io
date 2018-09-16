@@ -8,6 +8,7 @@ text: LunchedIn is a web application designed to enable professional networking 
 date:   2016-04-01
 categories: 
 project-url: https://github.com/akshatamohanty/lunched-in
+image: ./images/lunchedin.jpg
 tags: 
 - MEAN-stack
 ---

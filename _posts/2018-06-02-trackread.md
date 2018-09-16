@@ -9,6 +9,7 @@ role: Android Development
 project-url: https://github.com/akshatamohanty/udacity-android-nanodegree/tree/master/project-07-capstone-project
 date:   2017-03-01
 categories: post
+image: ./images/trackread.jpg
 type: project
 tags: 
 - android

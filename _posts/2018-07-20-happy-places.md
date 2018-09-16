@@ -6,6 +6,7 @@ summary: Mood logging with respect to location to track 'happy places'. Built wi
 project-url: https://mood-detector.chocolatefrog.co/static/index.html
 date: 2018-07-20
 categories: post
+image: ./images/happiness.jpg
 tags: 
 - Flask
 - Redis

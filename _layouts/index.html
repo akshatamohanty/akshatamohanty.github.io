@@ -18,7 +18,7 @@
 
 					{% if post.group == 'blog' %}
 						{% include article-layouts/article-blog.html %}
-					{% else if post.image %}
+					{% else if post.image !== '' %}
 						{% include article-layouts/article-with-image.html %}
 					{% else %}
 						{% include article-layouts/article-without-image.html %}

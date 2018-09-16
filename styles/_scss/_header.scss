@@ -1,19 +1,28 @@
 header{
-	h3{
-		margin-bottom: 10px;
-		padding-bottom: 0px;
-		font-size: 22px;
-		line-height: 30px;
+
+	h1, h4{
 		font-weight: 600;
+		text-transform: uppercase;
+	}
+
+	h4{
+		color: $font-color-accent;
+	}
+
+	p{
+		line-height: 150%; 
+		font-size: 16px;
+		margin: 30px 0px;
 	}
 
 	.social-media-icons{
 		.fa{
 			font-size: 24px;
-			border: 1px solid #ddd;
+			border: 3px solid $body-font-color;
 			border-radius: 50%;
 			padding: 10px;
-			color: #888;
+			margin-right: 15px;
+			color: $body-font-color;
 		}
 	}
 }

@@ -10,6 +10,7 @@ project-url: https://github.com/akshatamohanty/udacity-ai-nanodegree/blob/master
 date:   2018-06-02
 categories: post
 type: project
+image: ./images/vuicapstone.jpg
 tags: 
 - speech-recognition
 - keras
