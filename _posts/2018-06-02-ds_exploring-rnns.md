@@ -2,7 +2,7 @@
 layout: post
 size: 4
 group: data
-title:  Exporing RNNs
+title: Exploring RNNs
 summary: Using Recurrent Neural Networks for Stock Price Prediction and Text Generation
 role: Artificial Intelligence and Machine Learning
 project-url: https://akshatamohanty.github.io/udacity-ai-nanodegree/project-06-aind2-rnn/RNN_project.html
@@ -14,4 +14,5 @@ tags:
 - rnn
 - lstm
 - keras
+- AWS
 ---

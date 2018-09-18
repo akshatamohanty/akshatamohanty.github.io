@@ -17,10 +17,14 @@
 
 					{% if post.group == 'blog' %}
 						{% include article-layouts/article-blog.html %}
-					{% else if post.image !== '' %}
+					{% endif %}
+					
+					{% if post.group == 'research' %}
+						{% include article-layouts/article-research.html %}
+					{% endif %}
+
+				{% if post.image %}
 						{% include article-layouts/article-with-image.html %}
-					{% else %}
-						{% include article-layouts/article-without-image.html %}
 					{% endif %}
 
 				{% endif %}

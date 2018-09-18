@@ -70,13 +70,19 @@ article.post{
 	}
 }	
 
-.post--blog{
-	padding-bottom: $content-padding !important;
+.post--research{
+	margin: 0 auto !important;
+	width: 60% !important; 
+	min-width: 300px;
 
-	.date{
-		text-transform: uppercase;
-		color: $font-color-accent;
+	.details{
+		@extend .date;
 	}
+}
+
+.date{
+	text-transform: uppercase;
+	color: $font-color-accent;
 }
 
 //
@@ -93,9 +99,19 @@ article.post{
 	}
 
 	h2, h3, h4, h5, h6{
-		color: $font-color-muted;
+		color: $body-font-color;
 		font-weight: 600;
 		text-transform: uppercase; 
 		margin: 60px 0px;
 	}
+}
+
+header.post__section{
+
+	h1.post__title{
+		font-size: 48px;
+		line-height: 64px;
+		font-weight: 600;
+	}
+
 }

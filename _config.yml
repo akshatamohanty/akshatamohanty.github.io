@@ -1,5 +1,6 @@
 # File: _config.yml
 destination: _site
+encoding: UTF-8
 
 title:            Brainpickings
 baseurl:          # /blog

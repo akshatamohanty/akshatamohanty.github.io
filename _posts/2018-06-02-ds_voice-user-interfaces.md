@@ -13,4 +13,5 @@ image: ./images/vuicapstone.jpg
 tags: 
 - voice-recognition
 - keras
+- AWS
 ---

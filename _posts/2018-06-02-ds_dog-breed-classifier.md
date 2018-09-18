@@ -13,4 +13,5 @@ image: ./images/dogmate.jpg
 tags: 
 - cnn
 - keras
+- AWS
 ---

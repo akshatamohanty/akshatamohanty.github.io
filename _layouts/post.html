@@ -6,24 +6,24 @@
 
 			<br><br>
 
-			<a href='/writing.html' class='post__section'>&larr; Back to Posts</a>
+			<a href='/writing.html' class='post__section nav'>&larr; Back to Posts</a>
 
 			<article>
 				<header class='post__section'>
+					<h1 class='post__title'>{{page.title}}</h1>
 					<ul class="list--tags">
 						{% for tag in page.tags %}
 						<li>{{tag}}</li> 
 						{% endfor %}
 					</ul>
-					<h1>{{page.title}}</h1>
-					<aside>{{ page.date | date: "%m-%d-%Y" }}</aside>
+					<aside class='date'>{{ page.date | date: "%m-%d-%Y" }}</aside>
 				</header>
 
-				<section class='post__section'>
+				<!-- <section class='post__section'>
 					<b> TL;DR </b>
 					<br>
 					{{page.summary}}
-				</section>
+				</section> -->
 
 				<section class='post__section section--content'>
 					{{page.content}}
