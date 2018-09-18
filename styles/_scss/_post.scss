@@ -23,8 +23,14 @@ article.post{
 			background-color: #f7f7f7;
 		}
 
-		img{
-			max-height: 100px;
+		.thumbnail{
+			display: none;
+			border: 0px; 
+			width: 30%;
+
+			img{
+				max-height: 100px;
+			}
 		}
 	}
 

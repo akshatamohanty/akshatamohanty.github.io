@@ -10,5 +10,8 @@ categories:
 project-url: https://github.com/akshatamohanty/lunched-in
 image: ./images/lunchedin.jpg
 tags: 
-- MEAN-stack
+- MongoDB
+- Angularjs
+- express
+- nodejs
 ---

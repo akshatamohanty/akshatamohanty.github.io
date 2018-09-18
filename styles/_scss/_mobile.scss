@@ -20,16 +20,23 @@
 
 }
 
+@media only screen and (min-width: 600px) {
+    .thumbnail{
+        display: inline-block !important;
+    }
+}
+
+
 @media only screen and (min-width: 800px) {
-    main.content-wrapper{   
-        width: 80%;
+    .post{
+        width: 50%;
     }
 }
 
 @media only screen and (min-width: 1000px) {
-    .post{
-        width: 50%;
-    }
+    main.content-wrapper{   
+        width: 90%;
+    }   
 }
 
 @media only screen and (min-width: 1600px) {
