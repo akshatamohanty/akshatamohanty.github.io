@@ -1,9 +1,9 @@
 /* For mobile phones: */
 
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 600px) {
     main.content-wrapper{   
-        padding: $section-padding;
+        width: calc(100% - 30px);
     }
 
     header{
@@ -16,5 +16,24 @@
                 display: inline;
             }
         }
+    }
+
+}
+
+@media only screen and (min-width: 800px) {
+    main.content-wrapper{   
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .post{
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    main.content-wrapper{   
+        width: 70%;
     }
 }

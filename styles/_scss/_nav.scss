@@ -1,6 +1,8 @@
 nav{
 	width: 100%; 
 	margin: 3*$content-padding 0px $content-padding 0px;
+	text-align: center;
+	font-weight: 600;
 
 	ul{
 		padding: 0px; 
@@ -8,9 +10,9 @@ nav{
 
 		li{
 			display: block;
-			
-			margin-right: $list-spacing;
 			padding: 0px;
+			margin: $list-spacing;
+			line-height: 30px;
 
 			text-transform: uppercase;
 
@@ -18,6 +20,11 @@ nav{
 				font-size: $font-mini;
 				color: $font-color-accent; 
 				font-family: 600;
+
+				&:hover{
+					text-decoration: none;
+					color: $body-font-color;
+				}
 			}
 
 			cursor: pointer;

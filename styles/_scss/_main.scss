@@ -9,7 +9,7 @@ $content-padding--wide: 120px;
 
 $section-padding: $content-padding--wide/2 $content-padding $content-padding $content-padding--wide;
 $post-padding: 30px;
-$list-spacing: 45px;
+$list-spacing: 10px;
 
 $body-font-color: #3F4651;
 $font-color-muted: rgba(231, 112, 0, 0.692);//#538CD4;
@@ -24,7 +24,6 @@ $font-mini: 18px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
-  flex-wrap: wrap;
   margin: 0px;
   padding: 0px;
 }
@@ -35,7 +34,7 @@ $font-mini: 18px;
 }
 
 body{
-	padding: 0px; 
+	padding: 15px; 
 	margin: 0px; 
 
 	position: relative;
@@ -44,18 +43,26 @@ body{
 	font-size: $body-font-size;
 	line-height: $body-line-height;
 	color: $body-font-color; 
+
+	background: white;
 }
 
 
 main.content-wrapper{
+	position: relative;
 	width: 100%;
-	max-width: 1600px;
 
-
-	padding: 30px;
+	margin: 0 auto;
+	padding: 0 auto;
 }
 
 .copyright{
 	bottom: 0px;
 	text-align: center;
+}
+
+
+
+a:hover{
+	text-decoration: none;
 }

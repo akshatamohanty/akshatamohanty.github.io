@@ -1,19 +1,19 @@
-<article class="post col-md-6"> 
-	<div clas='row'>
-		<div class='col-xs-4'>	
-			<img class="img-responsive" src='{{post.image}}'>
+<article class="post"> 
+	<a href={{post.project-url}} target='_blank'>
+		<div class='post__content row'>
+			<div class='hidden-xs col-sm-4'>	
+				<img class="img-responsive" src='{{post.image}}'>
+			</div>
+			<div class='col-xs-12 col-sm-8'>
+				<h3 class='heading'>{{post.title}}</h3>
+				<p>{{ post.summary }}</p>
+				<ul class="list--tags">
+					{% for tag in post.tags %}
+					<li>{{tag}}</li> 
+					{% endfor %}
+				</ul>
+			</div>
 		</div>
-		<div class='col-xs-8'>
-			<h3 class='heading'><a href={{post.project-url}} target='_blank'>{{post.title}}</a></h3>
-			<p>{{ post.summary }}</p>
-			<ul class="list--tags">
-				{% for tag in post.tags %}
-				<li>{{tag}}</li> 
-				{% endfor %}
-			</ul>
-		</div>
-	</div>
-	
-	
+	</a>
 </article>
 

@@ -2,13 +2,27 @@
 //	POST LISTING
 //
 .post-container{
-	padding: $content-padding $content-padding $content-padding 0px;
-	margin-left: -$post-padding;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
 }
 
 article.post{
-	padding: 0px $post-padding;
-	margin: 1.5*$post-padding 0px;
+	padding: $post-padding/2 $post-padding/2;
+	margin: 0px;
+
+	.post__content{
+		padding: $post-padding/2;
+		border-radius: 4px;
+		height: 100%;
+		border: 1px solid #ddd;
+
+		&:hover{
+			border: 1px solid $font-color-accent;
+			background-color: #f7f7f7;
+		}
+	}
 
 	.heading{
 		text-transform: uppercase;
@@ -17,11 +31,6 @@ article.post{
 		margin: 0px;
 	}
 
-
-	&.post--blog{
-		width: 100%;
-		margin: $post-padding/2 0px;
-	}
 
 	a{
 		color: inherit;
@@ -37,11 +46,12 @@ article.post{
 
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 
 	li{
 		padding: 3px;
 		border-radius: 3px;
-		margin-right: 10px;
+		margin: 0px 10px 5px 0px;
 		text-transform: uppercase;
 
 		background: $body-font-color;
@@ -51,7 +61,6 @@ article.post{
 }
 
 .post--blog{
-	max-width: 450px;
 	padding-bottom: 2*$content-padding !important;
 
 	.date{

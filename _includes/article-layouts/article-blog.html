@@ -1,7 +1,9 @@
 {% if page.page == 'blog' %}
-<article class="post post--blog">
-	<h5 class='date'>{{ post.date | date: "%B %-d, %Y" }}</h3>
-	<h3><a href='{{post.url}}'>{{post.title}}</a></h2>
-    <p>{{post.subtitle}}</p>
+<article class="post post--blog col-xs-12 col-sm-6 col-lg-4">
+	<div class='post__content'>
+		<h5 class='date'>{{ post.date | date: "%B %-d, %Y" }}</h3>
+		<h3><a href='{{post.url}}'>{{post.title}}</a></h2>
+		<p>{{post.subtitle}}</p>
+	</div>
 </article>
 {% endif %}
