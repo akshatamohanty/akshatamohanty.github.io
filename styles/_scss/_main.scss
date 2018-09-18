@@ -63,6 +63,8 @@ main.content-wrapper{
 
 
 
-a:hover{
-	text-decoration: none;
+a{
+	&:hover, &:visited, &:focus{
+		text-decoration: none;
+	}
 }

@@ -22,6 +22,10 @@ article.post{
 			border: 1px solid $font-color-accent;
 			background-color: #f7f7f7;
 		}
+
+		img{
+			max-height: 100px;
+		}
 	}
 
 	.heading{
@@ -55,13 +59,13 @@ article.post{
 		text-transform: uppercase;
 
 		background: $body-font-color;
-		font-size: $font-mini;
+		font-size: 0.9*$font-mini;
 		color: $font-color-accent;
 	}
-}
+}	
 
 .post--blog{
-	padding-bottom: 2*$content-padding !important;
+	padding-bottom: $content-padding !important;
 
 	.date{
 		text-transform: uppercase;
