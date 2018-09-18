@@ -34,23 +34,23 @@ main.content-wrapper {
 a:hover, a:visited, a:focus {
   text-decoration: none; }
 
-header {
+header.main {
   margin: 60px auto;
   text-align: center;
   min-width: 250px;
   padding: 15px; }
-  header h1, header h4 {
+  header.main h1, header.main h4 {
     font-weight: 600;
     text-transform: uppercase; }
-  header .headline {
+  header.main .headline {
     font-size: 48px; }
-  header h4 {
+  header.main h4 {
     color: #E7BF00; }
-  header p {
+  header.main p {
     line-height: 150%;
     font-size: 16px;
     margin: 30px 0px; }
-  header .social-media-icons .fa {
+  header.main .social-media-icons .fa {
     font-size: 24px;
     border: 3px solid #3F4651;
     border-radius: 50%;
@@ -132,11 +132,14 @@ article.post {
     font-size: 16.2px;
     color: #E7BF00; }
 
-.post--blog {
-  padding-bottom: 30px !important; }
-  .post--blog .date {
-    text-transform: uppercase;
-    color: #E7BF00; }
+.post--research {
+  margin: 0 auto !important;
+  width: 60% !important;
+  min-width: 300px; }
+
+.date, .post--research .details {
+  text-transform: uppercase;
+  color: #E7BF00; }
 
 .post__section {
   margin: 60px 0px; }
@@ -145,17 +148,22 @@ article.post {
   margin: 30px 0px;
   line-height: 150%; }
 .section--content h2, .section--content h3, .section--content h4, .section--content h5, .section--content h6 {
-  color: rgba(231, 112, 0, 0.692);
+  color: #3F4651;
   font-weight: 600;
   text-transform: uppercase;
   margin: 60px 0px; }
+
+header.post__section h1.post__title {
+  font-size: 48px;
+  line-height: 64px;
+  font-weight: 600; }
 
 /* For mobile phones: */
 @media only screen and (min-width: 600px) {
   main.content-wrapper {
     width: calc(100% - 30px); }
 
-  header {
+  header.main {
     width: 50%; }
 
   nav ul li {

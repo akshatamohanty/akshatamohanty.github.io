@@ -36,31 +36,46 @@
 
 			<br><br>
 
-			<a href='/writing.html' class='post__section'>&larr; Back to Posts</a>
+			<a href='/writing.html' class='post__section nav'>&larr; Back to Posts</a>
 
 			<article>
 				<header class='post__section'>
+					<h1 class='post__title'>How to host a Flask App on Google Cloud?</h1>
 					<ul class="list--tags">
 						
-						<li>neo4j</li> 
+						<li>gcloud</li> 
 						
-						<li>angularjs</li> 
+						<li>flask</li> 
 						
-						<li>node</li> 
+						<li>python</li> 
 						
 					</ul>
-					<h1>Studionet Social Network</h1>
-					<aside>06-02-2017</aside>
+					<aside class='date'>08-22-2018</aside>
 				</header>
 
-				<section class='post__section'>
+				<!-- <section class='post__section'>
 					<b> TL;DR </b>
 					<br>
-					Graph Based Social Network to share ideas for collaborative work. Built with Angularjs with a Neo4j Graph Database. Uses Cytoscape.js for the network graphs.
-				</section>
+					
+				</section> -->
 
 				<section class='post__section section--content'>
-					
+					<h3 id="new-flask-project-on-gcloud">New Flask Project on Gcloud</h3>
+<ul>
+  <li>In GoDaddy, go to the DNS Management page</li>
+  <li>
+    <p>Add an ANAME entry with host as the subdomain name and pointing to the compute instance IP</p>
+  </li>
+  <li>Login to your instance using `gcloud compute ssh <instance-name></instance-name></li>
+  <li>Go to the nginx sites config file: add the server_name <subdomain.domain.extension> entry into the file</subdomain.domain.extension></li>
+  <li>Restart nginx</li>
+  <li>The site will be available on the subdomain.domain.ext URL</li>
+  <li>Use certbot: <code class="highlighter-rouge">sudo certbot --nginx</code> with redirect option to add https to your website</li>
+  <li>Create a .git folder with a post-recieve hook in the /home/git folder</li>
+  <li>Make sure all the required folders are owned by the user who’ll make the push</li>
+  <li><code class="highlighter-rouge">sudo chown -R user:user</code> and <code class="highlighter-rouge">ls -l</code> are helpful commands</li>
+</ul>
+
 
 				</section>
 
@@ -88,19 +103,13 @@
 		
 			
 				
-				  <li><a href="/blockchain.html">Blockchain</a></li>
-				
-			
-		
-			
-				
 				  <li><a href="/datascience.html">Data Science</a></li>
 				
 			
 		
 			
 				
-				  <li><a href="/product.html">Product & Design</a></li>
+				  <li><a href="/research.html">research</a></li>
 				
 			
 		

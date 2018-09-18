@@ -36,50 +36,31 @@
 
 			<br><br>
 
-			<a href='/writing.html' class='post__section'>&larr; Back to Posts</a>
+			<a href='/writing.html' class='post__section nav'>&larr; Back to Posts</a>
 
 			<article>
 				<header class='post__section'>
+					<h1 class='post__title'>LunchedIn</h1>
 					<ul class="list--tags">
 						
-						<li>trello</li> 
+						<li>Angularjs</li> 
+						
+						<li>cron</li> 
+						
+						<li>heroku</li> 
 						
 					</ul>
-					<h1>Using the Trello API</h1>
-					<aside>05-11-2018</aside>
+					<aside class='date'>04-01-2016</aside>
 				</header>
 
-				<section class='post__section'>
+				<!-- <section class='post__section'>
 					<b> TL;DR </b>
 					<br>
-					
-				</section>
+					Food-centric professional networking. Users sign up for lunch on designated days and are matched in balanced groups of 3-5 people, according to cuisine preferences.
+				</section> -->
 
 				<section class='post__section section--content'>
-					<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// Get all of the information about the list from a public board
-var success = function(successMsg) {
-  //asyncOutput(successMsg);
-  var books = [];
-  for( var i=0; i &lt; successMsg.length; i++){
-     var card = successMsg[i];
-     if (card.idLabels[0] == "&lt;--&gt;")
-     {
-        books.push(card.shortUrl);
-        Trello.put('/cards/' + card.id + '/closed?value=true', success, error);
-     }
-  }
-  asyncOutput(books);
-};
-
-var error = function(errorMsg) {
-  asyncOutput(errorMsg);
-};
-
-
-var list_id = "&lt;--&gt;";
-var label = "&lt;--&gt;";
-Trello.get('/lists/' + list_id + '/cards', success, error);
-</code></pre></div></div>
+					
 
 				</section>
 
@@ -107,19 +88,13 @@ Trello.get('/lists/' + list_id + '/cards', success, error);
 		
 			
 				
-				  <li><a href="/blockchain.html">Blockchain</a></li>
-				
-			
-		
-			
-				
 				  <li><a href="/datascience.html">Data Science</a></li>
 				
 			
 		
 			
 				
-				  <li><a href="/product.html">Product & Design</a></li>
+				  <li><a href="/research.html">research</a></li>
 				
 			
 		

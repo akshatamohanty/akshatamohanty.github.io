@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Brainpickings</title>
+
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- main stylesheet -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="/styles/main.css">
+
+			<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111560396-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-111560396-1');
+		</script>
+</head>
+
+	<main class="content-wrapper">
+
+			<br><br>
+
+			<a href='/writing.html' class='post__section nav'>&larr; Back to Posts</a>
+
+			<article>
+				<header class='post__section'>
+					<h1 class='post__title'>Using the Trello API</h1>
+					<ul class="list--tags">
+						
+						<li>trello</li> 
+						
+					</ul>
+					<aside class='date'>05-11-2018</aside>
+				</header>
+
+				<!-- <section class='post__section'>
+					<b> TL;DR </b>
+					<br>
+					
+				</section> -->
+
+				<section class='post__section section--content'>
+					<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// Get all of the information about the list from a public board
+var success = function(successMsg) {
+  //asyncOutput(successMsg);
+  var books = [];
+  for( var i=0; i &lt; successMsg.length; i++){
+     var card = successMsg[i];
+     if (card.idLabels[0] == "&lt;--&gt;")
+     {
+        books.push(card.shortUrl);
+        Trello.put('/cards/' + card.id + '/closed?value=true', success, error);
+     }
+  }
+  asyncOutput(books);
+};
+
+var error = function(errorMsg) {
+  asyncOutput(errorMsg);
+};
+
+
+var list_id = "&lt;--&gt;";
+var label = "&lt;--&gt;";
+Trello.get('/lists/' + list_id + '/cards', success, error);
+</code></pre></div></div>
+
+				</section>
+
+			</article>
+
+	</main>
+	
+	<div class='text-center'><nav>
+	<ul>
+		
+		
+			
+		
+			
+				
+				  <li><a href="/">all</a></li>
+				
+			
+		
+			
+				
+				  <li><a href="/fullstack.html">Web & Mobile</a></li>
+				
+			
+		
+			
+				
+				  <li><a href="/datascience.html">Data Science</a></li>
+				
+			
+		
+			
+				
+				  <li><a href="/research.html">research</a></li>
+				
+			
+		
+			
+				
+				  <li><a href="/writing.html">blog</a></li>
+				
+			
+		 
+	</ul>
+</nav></div>
+
+	<br><br><br>
+
+	<div class="h5 copyright text-center">
+		Copyright © 2018 
+		<a href="http://linkedin.com/in/akshatamohanty/" target="_blank">Akshata Mohanty</a>. 
+		All Rights Reserved.
+</div>
+
+</html>
+
