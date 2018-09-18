@@ -102,8 +102,12 @@ article.post {
     article.post .post__content:hover {
       border: 1px solid #E7BF00;
       background-color: #f7f7f7; }
-    article.post .post__content img {
-      max-height: 100px; }
+    article.post .post__content .thumbnail {
+      display: none;
+      border: 0px;
+      width: 30%; }
+      article.post .post__content .thumbnail img {
+        max-height: 100px; }
   article.post .heading {
     text-transform: uppercase;
     font-weight: 600;
@@ -156,12 +160,15 @@ article.post {
 
   nav ul li {
     display: inline; } }
+@media only screen and (min-width: 600px) {
+  .thumbnail {
+    display: inline-block !important; } }
 @media only screen and (min-width: 800px) {
-  main.content-wrapper {
-    width: 80%; } }
-@media only screen and (min-width: 1000px) {
   .post {
     width: 50%; } }
+@media only screen and (min-width: 1000px) {
+  main.content-wrapper {
+    width: 90%; } }
 @media only screen and (min-width: 1600px) {
   main.content-wrapper {
     width: 70%; } }
