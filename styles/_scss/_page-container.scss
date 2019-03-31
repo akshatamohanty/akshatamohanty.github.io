@@ -1,0 +1,9 @@
+$navbar-height: 54px; 
+
+.container--main-wrapper {
+    padding-top: $content-margin + $navbar-height;  
+}
+
+.container--main {
+    padding-top: $content-margin;
+}

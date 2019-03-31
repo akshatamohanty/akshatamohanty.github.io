@@ -1,69 +1,25 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,800');
 
-$content-margin: 30px; 
-$content-side-padding: 90px; 
-$content-top-padding: 40px;
-
-$content-padding: 30px;
-$content-padding--wide: 120px;
-
-$section-padding: $content-padding--wide/2 $content-padding $content-padding $content-padding--wide;
-$post-padding: 30px;
-$list-spacing: 10px;
-
-$body-font-color: #3F4651;
-$font-color-muted: rgba(231, 112, 0, 0.692);//#538CD4;
-$font-color-accent: #E7BF00;
-
-$body-font-size: 16px;
-$body-line-height: 22px; 
-$font-mini: 18px;
-
-.row {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
-  margin: 0px;
-  padding: 0px;
-}
-
-.row > [class*='col-'] {
-  display: flex;
-  flex-direction: column;
+html {
+	position: relative;
+	font-family: 'Lato', sans-serif;
+	font-size: 10px;
 }
 
 body{
-	padding: 15px; 
-	margin: 0px; 
-
 	position: relative;
-
-	font-family: 'Open Sans';
-	font-size: $body-font-size;
-	line-height: $body-line-height;
-	color: $body-font-color; 
-
-	background: white;
+	font-size: 1.4rem;
+	line-height: 1.5;
 }
 
-
-main.content-wrapper{
-	position: relative;
-	width: 100%;
-
-	margin: 0 auto;
-	padding: 0 auto;
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 800;
 }
 
-.copyright{
-	bottom: 0px;
-	text-align: center;
-}
+a {
+	font-size: 1.4rem;
 
-
-
-a{
 	&:hover, &:visited, &:focus{
 		text-decoration: none;
 	}

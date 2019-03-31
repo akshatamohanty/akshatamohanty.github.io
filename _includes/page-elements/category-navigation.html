@@ -1,14 +1,28 @@
-<nav>
-	<ul>
-		{% assign sorted_pages = site.pages | sort:"order" %}
-		{% for node in sorted_pages %}
-			{% if node.title %}
-				{% if page.url == node.url  %}
-				  <li class="active"><a href="{{node.url}}" class="active">{{node.title}}</a></li>
-				{% else %}
-				  <li><a href="{{node.url}}">{{node.title}}</a></li>
-				{% endif %}
-			{% endif %}
-		{% endfor %} 
-	</ul>
+<nav class="navbar fixed-top navbar-expand-lg navbar-light nav--top">
+	<div class="container">
+		<a class="navbar-brand" href="/">&lt;akshata.dev /&gt;</a>
+		<div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav">
+						{% assign sorted_pages = site.pages | sort:"order" %}
+						{% for node in sorted_pages %}
+							{% if node.title %}
+								{% if page.url == node.url  %}
+									<li class="nav-item active">
+											<a class="nav-link" href="{{node.url}}">{{node.title}}</a>
+									</li>
+								{% else %}
+									<li class='nav-item'>
+											<a class='nav-link' href="{{node.url}}">{{node.title}}</a>
+									</li>
+								{% endif %}
+							{% endif %}
+						{% endfor %} 
+				</ul>
+			</div>
+		</div>
+	</div>
 </nav>

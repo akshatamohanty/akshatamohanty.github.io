@@ -1,0 +1,66 @@
+
+//
+// ACTUAL POST CONTENT
+//
+
+.wrapper--post {
+    position: relative;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; 
+    font-size: 1.8rem;
+
+    article {
+        flex-grow: 1;
+    }
+
+    .list-tags {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .copyright {
+        height: 45px;
+    }
+
+    .highlight {
+        background: #ddd; 
+        border: #222; 
+        border-radius: 4px;
+        padding: 0.5 * $content-margin;
+    }
+
+    .post__section, p {
+        margin: 2*$content-margin 0px;
+    }
+    
+    header.post__section{
+
+        h1.post__title{
+            font-size: 3.2rem;
+            line-height: 1.5;
+            font-weight: 600;
+            text-align: center;
+        }
+    
+    }
+    
+    .section--content{
+        margin: $content-margin 0px;
+        font-size: 1.8rem;
+        line-height: 1.5;
+        font-family: 'Lato', sans-serif;
+    
+        h2, h3, h4, h5, h6{
+            color: $black;
+            font-weight: 600;
+            text-transform: uppercase; 
+            margin: 60px 0px;
+        }
+    }
+}
+
+
+
+

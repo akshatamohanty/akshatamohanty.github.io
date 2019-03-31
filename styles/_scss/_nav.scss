@@ -1,42 +1,32 @@
-nav{
-	width: 100%; 
-	margin: 3*$content-padding 0px $content-padding 0px;
-	text-align: center;
-	font-weight: 600;
-
-	ul{
-		padding: 0px; 
-		//margin: 0px 90px;
-
-		li{
-			display: block;
-			padding: 0px;
-			margin: $list-spacing;
-			line-height: 30px;
-
-			text-transform: uppercase;
-
-			a{
-				font-size: $font-mini;
-				color: $font-color-accent; 
-				font-family: 600;
-
-				&:hover{
-					text-decoration: none;
-					color: $body-font-color;
-				}
-			}
-
-			cursor: pointer;
-
-			&.active{
-				color: $font-color-accent;
-				background-color: $body-font-color; 
-				padding: 5px;
-				font-weight: 600; 
-				border-radius: 10px;
-			}
-		}
+/// ---- top navigation
+.nav-item.active {
+	.nav-link {
+		color: $font-color-accent !important;
 	}
 }
 
+
+.nav--top {
+	padding: 0 .5 * $content-margin;
+	background-color: $black;
+
+	.container {
+		padding: .5 * $content-margin;
+	}
+
+	.navbar-brand {
+		color: $font-color-accent;
+		font-size: 1.6rem;
+		font-family: 'Lato', sans-serif;
+	}
+}
+
+.nav-link {
+	text-transform: uppercase;
+}
+
+@media (min-width: 768px) { 
+	.nav-link {
+        margin-left: 15px;
+	}
+}

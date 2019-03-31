@@ -2,7 +2,7 @@
 destination: _site
 encoding: UTF-8
 
-title:            Brainpickings
+title:            Akshata Mohanty - Fullstack Developer @ Rakuten Viki
 baseurl:          # /blog
 
 sass:
@@ -10,10 +10,10 @@ sass:
 
 author:
   name:           'Akshata Mohanty'
-  url:            https://akshatamohanty.github.io/
+  url:            https://akshata.dev/
 
 
-version:            1.0.0
+version:            3.0.0
 github:
   repo:             https://github.com/akshatamohanty/akshatamohanty.github.io
 

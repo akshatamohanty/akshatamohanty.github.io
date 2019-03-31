@@ -2,7 +2,7 @@
 <html>
 	{% include page-elements/head.html %}
 
-	<main class="content-wrapper">
+	<main class="container wrapper--post">
 
 			<br><br>
 
@@ -11,19 +11,13 @@
 			<article>
 				<header class='post__section'>
 					<h1 class='post__title'>{{page.title}}</h1>
-					<ul class="list--tags">
+					<!-- <ul class="list--tags">
 						{% for tag in page.tags %}
 						<li>{{tag}}</li> 
 						{% endfor %}
 					</ul>
-					<aside class='date'>{{ page.date | date: "%m-%d-%Y" }}</aside>
+					<aside class='date'>{{ page.date | date: "%m-%d-%Y" }}</aside> -->
 				</header>
-
-				<!-- <section class='post__section'>
-					<b> TL;DR </b>
-					<br>
-					{{page.summary}}
-				</section> -->
 
 				<section class='post__section section--content'>
 					{{page.content}}
@@ -31,13 +25,11 @@
 
 			</article>
 
+			<div class='text-center copyright'>
+				{% include page-elements/copyright.html %}
+			</div>
 	</main>
 	
-	<div class='text-center'>{% include page-elements/category-navigation.html %}</div>
-
-	<br><br><br>
-
-	{% include page-elements/copyright.html %}
 
 </html>
 

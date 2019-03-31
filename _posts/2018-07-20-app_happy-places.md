@@ -6,11 +6,10 @@ summary: Location-based mood-logging app to track 'happy places' around your cit
 project-url: https://mood-detector.chocolatefrog.co/static/index.html
 date: 2018-07-20
 categories: post
-image: ./images/happiness.jpg
+meta: 
 tags: 
-- Flask
-- Redis
-- Bootstrap
-- d3.js
-- GCE
+- flask
+- redis
+- d3
+- google-cloud-engine
 ---
