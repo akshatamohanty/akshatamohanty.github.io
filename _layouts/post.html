@@ -1,35 +1,44 @@
 <!DOCTYPE html>
 <html>
+	
 	{% include page-elements/head.html %}
 
-	<main class="container wrapper--post">
+	{% include page-elements/category-navigation.html %}
 
-			<br><br>
-
-			<a href='/writing.html' class='post__section nav'>&larr; Back to Posts</a>
-
-			<article>
-				<header class='post__section'>
-					<h1 class='post__title'>{{page.title}}</h1>
-					<!-- <ul class="list--tags">
-						{% for tag in page.tags %}
-						<li>{{tag}}</li> 
-						{% endfor %}
-					</ul>
-					<aside class='date'>{{ page.date | date: "%m-%d-%Y" }}</aside> -->
-				</header>
-
-				<section class='post__section section--content'>
-					{{page.content}}
-				</section>
-
-			</article>
-
-			<div class='text-center copyright'>
-				{% include page-elements/copyright.html %}
+	<div class='container container--main-wrapper'>
+		<div class='row'>
+			<div class='col-md-3 nav--side'>
+					{% include page-elements/about.html %}
 			</div>
+			<div class='col-md-7 offset-md-1 container--main'>
+				<div class='wrapper--post'>
+					<article>
+						<h1 class='post__title'>{{page.title}}</h1>
+		
+						<section class='post__section section--content'>
+							{{page.content}}
+						</section>
+		
+					</article>
+		
+					<div class='text-center copyright'>
+						{% include page-elements/copyright.html %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<main class="content-wrapper">
+
+		<section class="post-container row">
+
+		</section>
+
 	</main>
-	
+
+	{% include page-elements/footer.html %}
 
 </html>
-
