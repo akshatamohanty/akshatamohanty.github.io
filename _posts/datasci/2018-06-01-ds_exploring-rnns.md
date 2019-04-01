@@ -9,6 +9,7 @@ project-url: https://akshatamohanty.github.io/udacity-ai-nanodegree/project-06-a
 date:   2018-06-02
 categories: post
 type: project
+image: ./images/vuicapstone.jpg
 tags: 
 - rnn
 - lstm

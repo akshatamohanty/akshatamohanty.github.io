@@ -9,15 +9,21 @@
 .nav--top {
 	padding: 0 .5 * $content-margin;
 	background-color: $black;
+	color: gray; 
 
 	.container {
-		padding: .5 * $content-margin;
+		padding: .5 * $content-margin 0;
 	}
 
 	.navbar-brand {
 		color: $font-color-accent;
 		font-size: 1.6rem;
 		font-family: 'Lato', sans-serif;
+	}
+
+	.nav-link {
+		font-weight: 600; 
+		color: #6F6F76 !important;
 	}
 }
 
@@ -28,5 +34,11 @@
 @media (min-width: 768px) { 
 	.nav-link {
         margin-left: 15px;
+	}
+
+	.nav--top {
+		.container {
+			padding: .5 * $content-margin;
+		}
 	}
 }
