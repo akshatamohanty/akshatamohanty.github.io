@@ -1,6 +1,7 @@
 ---
 layout: post
 group: research
+marker: conference paper
 title:  "Automated Generation of BIM Models"
 authors: Janssen, P, Chen, KW, and Mohanty, A (2016)
 details: Proceedings of eCAADe 2016, 22-26 August 2016, Oulu, Finland, pp. 583–590.

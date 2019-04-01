@@ -1,4 +1,4 @@
-<article class="post"> 
+<!-- <article class="post"> 
 	<a href={{post.project-url}} target='_blank'>
 		{% if post.image %}
 			<div class='post__content'>
@@ -33,5 +33,14 @@
 		{% endif %}
 	</a>
 	<div class='spacer' />
-</article>
+</article> -->
 
+<article class="post"> 
+	<a href={{post.project-url}} target='_blank'>
+		<div class='post__content'>
+			<div class='post__marker'>{{ post.marker }}</div>
+			<h3 class='heading'>{{post.title}}</h3>
+			<p>{{ post.summary }}</p>
+		</div>
+	</a>
+</article>

@@ -1,16 +1,21 @@
 .spacer {
 	height: 2px; 
 	background: $muted-black; 
-	margin: 2 * $content-margin 0;
+	margin: 0.3 * $content-margin 0;
 }
 
 article.post{
 	font-family: 'Lato', sans-serif;
-	line-height: 2;
+	line-height: 1.2;
 	margin-bottom: $content-margin;
+	margin-left: -15px;
+
+	.heading {
+		font-weight: 700;
+		color: $body-font-color;
+	}
 
 	.post__marker {
-		font-family: 700;
 		color: $light-black;
 	}
 
@@ -58,7 +63,7 @@ article.post{
 }	
 
 .post--research{
-	margin-bottom: 2 * $content-margin !important;
+	margin-left: 0 !important;
 
 	.authors {
 		color: $light-black;

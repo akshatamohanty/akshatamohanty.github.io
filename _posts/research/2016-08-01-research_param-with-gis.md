@@ -1,6 +1,7 @@
 ---
 layout: post
 group: research
+marker: conference paper
 title:  "Parametric Modelling with GIS"
 authors: Janssen, P, Stouffs, R, Mohanty, A, Tan, E, and Li, R (2016)
 details: Proceedings of eCAADe 2016, 22-26 August 2016, Oulu, Finland, pp. 59–68.
