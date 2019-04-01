@@ -4,6 +4,10 @@
 	margin: 0.3 * $content-margin 0;
 }
 
+.subtext {
+	color: $light-black;
+}
+
 article.post{
 	font-family: 'Lato', sans-serif;
 	line-height: 1.2;
@@ -34,6 +38,10 @@ article.post{
 	a{
 		color: inherit;
 	}
+}
+
+.section-header {
+	color: $body-font-color;
 }
 
 
@@ -70,7 +78,9 @@ article.post{
 	}
 
 	.details{
-		@extend .date;
+		color: $light-black;
+		text-transform: uppercase;
+		// @extend .date;
 	}
 }
 

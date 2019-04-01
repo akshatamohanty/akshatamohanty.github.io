@@ -4,15 +4,16 @@
         position: fixed;
 		border: none;
 		margin-bottom: 0;
-		// max-width: 270px;
+		max-width: 25%;
 	}
 }
 
 .nav--side {
 	padding-top: $content-padding;
 	margin-bottom: 3 * $content-margin;
+	line-height: 1.4;
 
-    .main__title {
+	.main__title {
         color: $black;
     }
 
