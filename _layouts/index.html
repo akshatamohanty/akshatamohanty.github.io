@@ -10,8 +10,8 @@
 			<div class='col-md-3 nav--side'>
 				{% include page-elements/about.html %}
 				<br />
-				{{ page.content }}
-				<hr /><br>
+				{{ page.content | markdownify }}
+				<hr />
 				{% include page-elements/social-media.html %}
 			</div>
 			<div class='col-md-7 offset-md-5 container--main'>
@@ -28,6 +28,7 @@
 									{% endif %}
 								{% endfor %}
 							</div>
+							<a href={{page.url}} style='float:right'>More ></a>
 						</div>
 						<br><br><br>
 						{% endif %}
