@@ -1,5 +1,6 @@
 ---
 layout: post
+showcase: false
 size: 4
 group: app
 marker: android app

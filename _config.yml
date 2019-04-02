@@ -4,6 +4,7 @@ encoding: UTF-8
 
 title:            Akshata Mohanty - Fullstack Developer @ Rakuten Viki
 baseurl:          # /blog
+permalink:        /:title:output_ext
 
 sass:
   sass_dir: styles/_scss

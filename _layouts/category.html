@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	
+	{% include page-elements/head.html %}
+
+	{% include page-elements/category-navigation.html %}
+
+	<div class='container container--main-wrapper'>
+		<div class='row'>
+			<div class='col-md-4 nav--side'>
+                {% include page-elements/about.html %}
+                <hr />
+                {{ page.content | markdownify }}
+                <hr /><br>
+                {% include page-elements/social-media.html %}
+			</div>
+			<div class='col-md-7 offset-md-5 container--main'>
+                <div>
+                    {%  include page-elements/section-header.html %}
+                    <div>
+                        {% for post in site.posts %}
+                            {% if post.group == page.page %}
+                                {% include page-elements/post-container.html %}
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+			</div>
+		</div>
+	</div>
+
+	{% include page-elements/copyright.html %}
+
+</html>

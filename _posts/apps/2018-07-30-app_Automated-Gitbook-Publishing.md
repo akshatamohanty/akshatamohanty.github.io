@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+showcase: false
 size: 6
 marker: npm command
 group: app

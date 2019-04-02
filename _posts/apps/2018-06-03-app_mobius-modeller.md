@@ -1,5 +1,6 @@
 ---
 layout: post
+showcase: true
 size: 6
 group: app
 marker: teaching tool

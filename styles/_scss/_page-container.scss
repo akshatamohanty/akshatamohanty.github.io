@@ -5,5 +5,5 @@ $navbar-height: 54px;
 }
 
 .container--main {
-    padding-top: $content-margin;
+    padding: $content-margin 0.5 * $content-margin;
 }

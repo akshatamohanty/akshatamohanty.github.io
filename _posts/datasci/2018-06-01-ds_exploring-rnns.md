@@ -1,5 +1,5 @@
 ---
-published: false
+showcase: false
 layout: post
 size: 4
 group: data

@@ -7,7 +7,12 @@ html {
 }
 
 body{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
 	position: relative;
+	height: 100vh;
 	font-size: 1.4rem;
 	line-height: 1.2;
 }

@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+showcase: false
 size: 6
 group: app
 marker: networking app

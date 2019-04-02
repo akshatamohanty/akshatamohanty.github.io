@@ -5,40 +5,20 @@
 
 	{% include page-elements/category-navigation.html %}
 
-	<div class='container container--main-wrapper'>
-		<div class='row'>
-			<div class='col-md-3 nav--side'>
-					{% include page-elements/about.html %}
-			</div>
-			<div class='col-md-7 offset-md-1 container--main'>
-				<div class='wrapper--post'>
-					<article>
-						<h1 class='post__title'>{{page.title}}</h1>
-		
-						<section class='post__section section--content'>
-							{{page.content}}
-						</section>
-		
-					</article>
-		
-					<div class='text-center copyright'>
-						{% include page-elements/copyright.html %}
-					</div>
+	<main class="container container--main-wrapper">
+		<div class='container-main'>
+			<div class='row'>
+				<div class='col-md-4 nav--side'>
+					<h4>Share</h4>
+				</div>
+				<div class='col-md-7 offset-md-5 container--main'>
+					{{ page }}
 				</div>
 			</div>
 		</div>
-	</div>
-
-
-
-	<main class="content-wrapper">
-
-		<section class="post-container row">
-
-		</section>
-
+		
 	</main>
-
-	{% include page-elements/footer.html %}
+	
+	{% include page-elements/copyright.html %}
 
 </html>
