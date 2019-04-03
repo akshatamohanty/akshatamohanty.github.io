@@ -35,6 +35,15 @@ p {
 .link--color {
   color: blue; }
 
+.img--profile {
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  border: 4px solid #bbb;
+  background-repeat: no-repeat;
+  background-image: url("../assets/profile.png");
+  border-radius: 50%; }
+
 @media (min-width: 768px) {
   .nav--side {
     position: fixed;
