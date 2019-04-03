@@ -9,5 +9,5 @@ permalink: /datascience
 short: data science
 ---
 
-#### Latest Work
-I am scraping Twitter data to understand if the gigs on April Fools' Day, actually affect company likeability. Find some visualizations [here](https://laboratory.akshata.dev/aprilfools)
+<!-- #### Latest Work
+I am scraping Twitter data to understand if the gigs on April Fools' Day, actually affect company likeability. Find some visualizations [here](https://laboratory.akshata.dev/aprilfools) -->

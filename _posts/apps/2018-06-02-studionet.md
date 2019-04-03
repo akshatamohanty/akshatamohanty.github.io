@@ -6,7 +6,7 @@ group: app
 marker: social network
 title:  studionet
 summary: an sharing platform with a graphical interface to visualize ongoing social activity. used as a studio tool at sde, nus
-project-url: https://studionet.nus.edu.sg
+projecturl: https://github.com/akshatamohanty/studionet
 date:   2017-06-02
 categories: post
 type: project

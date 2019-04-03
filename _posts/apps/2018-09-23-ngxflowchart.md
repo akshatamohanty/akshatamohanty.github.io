@@ -6,7 +6,7 @@ marker: opensource library
 group: app
 title: ngxflowchart
 summary: ngxflowchart is an open source angular library to draw flow diagrams. to challenge myself, i built this using HTML5 elements instead of svg to render the graphics 
-project-url: post.url
+projecturl: https://github.com/akshatamohanty/ngxflowchart
 date:   2018-09-18
 categories: post
 image: ./images/ngflowchart.png
