@@ -173,6 +173,7 @@ footer {
   background: #3F4651;
   color: #ddd;
   text-align: center;
-  padding: 9px; }
+  padding: 9px;
+  margin: 0; }
   .copyright a {
     color: inherit; }
