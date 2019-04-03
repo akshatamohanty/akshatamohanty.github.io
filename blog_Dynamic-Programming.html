@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+	<title>Akshata Mohanty - Fullstack Developer @ Rakuten Viki</title>
+
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<meta property="og:title" content="Akshata Mohanty - Fullstack Developer @ Rakuten Viki" />
+	<meta property="og:description" content="I code for fun and food, in that order." />
+	<meta property="og:image" content="https://akshata.dev/assets/jumpup.jpg" />
+
+    <!-- Latest compiled and minified CSS for Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<!-- main stylesheet -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="/styles/main.css">
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111560396-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-111560396-1');
+	</script>
+</head>
+
+	<nav class="navbar fixed-top navbar-expand-lg navbar-light nav--top">
+	<div class="container text-center">
+		<a class="navbar-brand" href="/">&lt;akshata.dev /&gt;</a>
+		<!-- <div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav">
+						
+						
+							
+						
+							
+								
+									<li class='nav-item'>
+											<a class='nav-link' href="/">all</a>
+									</li>
+								
+							
+						
+							
+								
+									<li class='nav-item'>
+											<a class='nav-link' href="/fullstack-development">web and mobile projects</a>
+									</li>
+								
+							
+						
+							
+								
+									<li class='nav-item'>
+											<a class='nav-link' href="/datascience">data science projects</a>
+									</li>
+								
+							
+						
+							
+								
+									<li class='nav-item'>
+											<a class='nav-link' href="/research">research & writing</a>
+									</li>
+								
+							
+						 
+				</ul>
+			</div>
+		</div> -->
+	</div>
+</nav>
+
+	<main class="container container--main-wrapper">
+		<div class='container-main'>
+			<div class='row'>
+				<div class='col-md-3 nav--side'>
+					
+				</div>
+				<div class='col-md-7 offset-md-5 container--main post__content'>
+					<h3 id="what-is-dynamic-programming">What is Dynamic Programming?</h3>
+<p>Dynamic Programming is a method of problem-solving where you breakdown the problems into smaller subproblems, similar to the original problem. It may or maynot use recursion.</p>
+
+<p>For example, the pet question to apply DP can be to get the nth term of the Fibonacci Series;
+By definition, F(n) = F(n-1) + F(n-2)</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## recursive function
+def fibonacci(n):
+    if n == 1: return 1
+    if n == 2: return 1
+    else: return fibonacci(n-1) + fibonacci(n-2)
+    
+    
+### print 50th term
+print( fibonacci(50) )
+</code></pre></div></div>
+
+<p>If I tabulate the iterations:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>calling-function</th>
+      <th>dependency</th>
+      <th>dependency</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>fib(50)</td>
+      <td>fib(49)</td>
+      <td>fib(48)</td>
+    </tr>
+    <tr>
+      <td>fib(49)</td>
+      <td>fib(48)</td>
+      <td>fib(47)</td>
+    </tr>
+    <tr>
+      <td>fib(48)</td>
+      <td>fib(47)</td>
+      <td>fib(46)</td>
+    </tr>
+    <tr>
+      <td>fib(47)</td>
+      <td>fib(46)</td>
+      <td>fib(45) … and so on</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Notice how fib(48), fib(47)… are all repeated? Well, that’s redundant. We can reduce this redundancy by saving the computed values in a lookup table. This saving of results, is known as <strong>Memoization</strong></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## recursive function
+def fibonacci(n):
+    if n == 1: return 1
+    if n == 2: return 1
+    if n in lookup: return lookup[n]
+    else:
+      result = fibonacci(n-1) + fibonacci(n-2)
+      lookup[n] = result
+      return result
+    
+lookup = {}
+### print 50th term
+print( fibonacci(50) )
+</code></pre></div></div>
+
+<h3 id="how-is-it-different-from-divide-and-conquer">How is it different from Divide and Conquer?</h3>
+<p>Divide and Conquer algorithms like split a problem into smaller problems, solve each of them and <strong>combine</strong> the results. Dynamic Programming on the other hand is used to solve problems with <strong>overlapping subproblems</strong>, for example, like in the Fibonacci term computation explained earlier, where the same subproblem was required multiple times.</p>
+
+<h3 id="how-to-know-if-a-problem-can-be-solved-with-dp">How to know if a problem can be solved with DP?</h3>
+<p>DP Problems usually have the following characteristics:</p>
+<ul>
+  <li>For optimization problems, with a focus on arrangement or ordering of the elements</li>
+  <li>They can be broken down into subproblems which as similar to the main problem</li>
+  <li>The global optimum found using DP will usualy be more efficient and better than those found by typical heuristics</li>
+</ul>
+
+<h3 id="linear-partition-problem-wip">Linear Partition Problem (wip)</h3>
+<p>This problem has been described in Steven Skiena, and took me no less than 3 hours to get my head around. Hence, the <strong>attempt</strong> to explain it…</p>
+
+<h5 id="problem-statement">Problem Statement:</h5>
+<p>Suppose the job scanning through a shelf of books is to be split between k workers. To avoid the need to rearrange the books or separate them into piles, we can divide the shelf into k regions and assign each region to one worker.
+What is the fairest way to divide the shelf up?</p>
+
+<p>The first thing to understand is the ‘fairest’ way to divide the shelf up. The fairest way would be when all partitions are as close as possible to the sum of all pages divided equally amongst the workers.</p>
+
+<p>Let’s start with a fair solutions - say there are 300 pages, and 3 workers.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Solution</th>
+      <th>Partition A</th>
+      <th>Partition B</th>
+      <th>Partition C</th>
+      <th>Average</th>
+      <th>max</th>
+      <th>min</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fairest</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>Less Fair</td>
+      <td>101</td>
+      <td>100</td>
+      <td>99</td>
+      <td>100</td>
+      <td>101</td>
+      <td>99</td>
+    </tr>
+    <tr>
+      <td>Least Fair</td>
+      <td>120</td>
+      <td>110</td>
+      <td>70</td>
+      <td>100</td>
+      <td>120</td>
+      <td>70</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Now, the criteria of evaluation would be to check how much further from the average are each of the partition assignments. However, the constraint that the total sum of pages is constant means that if one partition is say 50 more from the average, it would pull the other two away by a sum of 50 pages from the average, to keep the total number of pages the same. Hence, if the largest partition is smaller, the amount of deviation of the other partitions is also smaller.</p>
+
+<p>So, this problem can be redescribed as - partition the set of books in such a way, maximum of the partitions is the minimum of all solutions available, i.e, if each partition is pln_n, we need to find - 
+min ( max(pln_1), max(pln_2), max(pln_3) .. )</p>
+
+<p>Dynamic Programming is a systematic approach that evaluation all possible options;</p>
+
+<p>Say the books have the following number of pages:
+S1 S2 S3 S4 S5 S6 S7 S8</p>
+
+<p>Let the initial problem be - P(8, 3) i.e 8 elements with 3 partitions, which return the maximum of the partitions of the solution.</p>
+
+<p>And we put our first partition after S1 …</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>S1</td>
+      <td>S2 S3 S4 S5 S6 S7 S8</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>There are two options now - either our optimum solution has a partition after S1 or… it doesn’t.</p>
+
+<p>Case 1: 
+Our optimum solution has a partition after S1. Now S2, S3… S8, need to be divided by k-1 partitions in such a way, that the maxmimum of those partitions is minimum …. which is exactly the problem we are trying to solve - but with lesser elements and lesser partitions i.e P(7, 2)</p>
+
+<p>Case 2: 
+Our optimum solution doesn’t have a partition after S1. So, we look at the next solution, we might have a partition after S2. And again this reduces to the same problem as the original problem - P(5, 2)</p>
+
+<p>.. This goes on progressively till we reach the end of where the first partition might be placed.</p>
+
+<p>Now, we need the minimum of Case 1 and Case 2</p>
+
+<p>min ( P(7, 2), P(6, 2), P(5, 2) .. )</p>
+
+<h3 id="questions">Questions</h3>
+
+<p>https://www.codechef.com/ZCOPRAC/problems/ZCO14002</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>### wip
+
+def mt(s, st=0):
+    if len(s) == 0:
+        return 0
+    
+    min_time = []
+    final = None
+    if not (lookup[st] == None):
+        return lookup[st]
+    elif len(s) &lt; 4:
+        final = s[0]
+    else:
+        a = mt(s[1:], st+1)
+        b = mt(s[2:], st+2)
+        c = mt(s[3:], st+3)
+        final = s[0] + min(a, b, c)
+    lookup[st] = final
+    return final
+
+
+for test in range(12):
+    days = input("Enter days")
+    inp = input("Enter sequence")
+    seq = [ int(z) for z in inp.split() ]
+    lookup = [None]*len(seq)
+    mt(seq)
+    print(min(lookup[0:3]))
+
+</code></pre></div></div>
+
+<h3 id="resources">Resources</h3>
+<ul>
+  <li>The Algorithm Design Manual - Steven Skiena</li>
+</ul>
+
+				</div>
+			</div>
+		</div>
+		
+	</main>
+	
+	<div class="h5 copyright">
+	Copyright © 2019
+	<a href="http://linkedin.com/in/akshatamohanty/" target="_blank">Akshata Mohanty</a>. 
+	All Rights Reserved.
+</div>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+	<title>Akshata Mohanty - Fullstack Developer @ Rakuten Viki</title>
+
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<meta property="og:title" content="Akshata Mohanty - Fullstack Developer @ Rakuten Viki" />
+	<meta property="og:description" content="I code for fun and food, in that order." />
+	<meta property="og:image" content="https://akshata.dev/assets/jumpup.jpg" />
+
+    <!-- Latest compiled and minified CSS for Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<!-- main stylesheet -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="/styles/main.css">
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111560396-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-111560396-1');
+	</script>
+</head>
+
+	<nav class="navbar fixed-top navbar-expand-lg navbar-light nav--top">
+	<div class="container text-center">
+		<a class="navbar-brand" href="/">&lt;akshata.dev /&gt;</a>
+		<!-- <div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav">
+						
+						
+							
+						
+							
+								
+									<li class='nav-item'>
+											<a class='nav-link' href="/">all</a>
+									</li>
+								
+							
+						
+							
+								
+									<li class='nav-item'>
+											<a class='nav-link' href="/fullstack-development">web and mobile projects</a>
+									</li>
+								
+							
+						
+							
+								
+									<li class='nav-item'>
+											<a class='nav-link' href="/datascience">data science projects</a>
+									</li>
+								
+							
+						
+							
+								
+									<li class='nav-item'>
+											<a class='nav-link' href="/research">research & writing</a>
+									</li>
+								
+							
+						 
+				</ul>
+			</div>
+		</div> -->
+	</div>
+</nav>
+
+	<main class="container container--main-wrapper">
+		<div class='container-main'>
+			<div class='row'>
+				<div class='col-md-3 nav--side'>
+					
+				</div>
+				<div class='col-md-7 offset-md-5 container--main post__content'>
+					<h2 id="getting-to-the-task-manager">Getting to the Task Manager</h2>
+
+<ul>
+  <li>Shortcut: Shift + Esc, <strong>OR</strong></li>
+  <li>Chrome -&gt; Settings -&gt; More Tools -&gt; Task Manager</li>
+</ul>
+
+<h2 id="understanding-memory-usage-columns-in-task-manager">Understanding Memory Usage Columns in Task Manager</h2>
+
+<ul>
+  <li>
+    <h4 id="memory-footprint">Memory Footprint</h4>
+    <p>The memory footprint represents memory reserved entirely for that process. It is the same value as that in the <strong>Commit Size</strong> column in Windows Task Manager. <em>The Commit column shows the amount of virtual memory in kilobytes that the operating system has reserved for a process. This number includes the amount of physical memory that is in use as well as any pages that have been saved in the page file.</em></p>
+  </li>
+  <li>
+    <h4 id="memory">Memory</h4>
+    <p>Memory is the same value as that in the <strong>Memory (Private Working Set)</strong> column in Windows Task Manager. Private Working Set of a process refers to the amount of memory that is allocated to the process, is not shareable. In Chrome context, it refers to the native memory, which is used to store DOM nodes. A constantly increasing value for this indicates creation of additional DOM noes.</p>
+  </li>
+  <li>
+    <h4 id="gpu-memory">GPU Memory</h4>
+    <p>It represents the amount of GPU memory being used by the page. The GPU process is a process used only when Chrome is displaying GPU-accelerated content. Chrome uses GPU to accelerate web-page rendering, typical HTML, CSS, WebGL, etc.</p>
+  </li>
+  <li>
+    <h4 id="javascript-memory">Javascript Memory</h4>
+    <p>The JavaScript Memory column represents the memory reserved for the JS VM heap. The number in parenthese is represents how much memory the reachable objects on your page are using. So, if the value is  x ( y ) imples that ‘y’ is the active memory and (x-y) is memory is unreachable and will be garbage collected. If ‘x’ is increasing, it might signify a memory leak since either new objects are being created, or the existing objects are growing.</p>
+  </li>
+</ul>
+
+<h4 id="references">References:</h4>
+<ul>
+  <li><a href="https://developers.google.com/web/tools/chrome-devtools/memory-problems/#monitor_memory_use_in_realtime_with_the_chrome_task_manager">Chrome DevTools</a></li>
+  <li><a href="https://stackoverflow.com/questions/14167013/javascript-memory-and-leak-problems">Stackoverflow</a></li>
+  <li><a href="https://www.techrepublic.com/blog/windows-and-office/investigate-memory-usage-with-windows-7-resource-monitor/">investigate-memory-usage-with-windows-7-resource-monitor/</a></li>
+</ul>
+
+				</div>
+			</div>
+		</div>
+		
+	</main>
+	
+	<div class="h5 copyright">
+	Copyright © 2019
+	<a href="http://linkedin.com/in/akshatamohanty/" target="_blank">Akshata Mohanty</a>. 
+	All Rights Reserved.
+</div>
+
+</html>

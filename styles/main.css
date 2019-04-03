@@ -1,33 +1,50 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:400,800");
+@import url("https://fonts.googleapis.com/css?Raleway:400,800");
 html {
   position: relative;
-  font-family: 'Lato', sans-serif;
   font-size: 10px; }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: relative;
+  height: 100vh;
   font-size: 1.4rem;
-  line-height: 1.2; }
+  line-height: 1.2;
+  font-family: 'Raleway', sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Lato', sans-serif;
   font-weight: 800; }
 
 a {
   font-size: 1.4rem; }
   a:hover, a:visited, a:focus {
+    color: inherit;
     text-decoration: none; }
+
+p {
+  margin-bottom: 1.4rem; }
 
 @media (min-width: 768px) {
   .nav--side {
     position: fixed;
     border: none;
-    margin-bottom: 0;
-    max-width: 25%; } }
+    margin-bottom: 0; } }
+@media (max-width: 768px) {
+  .container--main {
+    margin-left: 0; } }
+@media (max-height: 450px) and (orientation: landscape) {
+  .nav--side {
+    position: relative; }
+
+  .container--main {
+    margin-left: 0; } }
 .nav--side {
   padding-top: 30px;
   margin-bottom: 90px;
-  line-height: 1.4; }
+  line-height: 1.4;
+  width: inherit;
+  min-width: 300px; }
   .nav--side .main__title {
     color: #3F4651; }
   .nav--side .social-media-icons .fa {
@@ -42,7 +59,7 @@ a {
   padding-top: 84px; }
 
 .container--main {
-  padding-top: 30px; }
+  padding: 30px 15px; }
 
 .nav-item.active .nav-link {
   color: #E7BF00 !important; }
@@ -56,7 +73,6 @@ a {
   .nav--top .navbar-brand {
     color: #E7BF00;
     font-size: 1.6rem;
-    font-family: 'Lato', sans-serif;
     width: 100%; }
   .nav--top .nav-link {
     font-weight: 600;
@@ -80,7 +96,6 @@ a {
   color: #6f6f6f; }
 
 article.post {
-  font-family: 'Lato', sans-serif;
   line-height: 1.2;
   margin-bottom: 30px;
   margin-left: -15px; }
@@ -132,42 +147,12 @@ article.post {
   text-transform: uppercase;
   color: #E7BF00; }
 
-.wrapper--post {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  font-size: 1.8rem; }
-  .wrapper--post article {
-    flex-grow: 1; }
-  .wrapper--post .list-tags {
-    font-size: 1.8rem;
-    text-align: center; }
-  .wrapper--post .copyright {
-    height: 45px; }
-  .wrapper--post .highlight {
-    background: #ddd;
-    border: #222;
-    border-radius: 4px;
-    padding: 15px; }
-  .wrapper--post .post__section, .wrapper--post p {
-    margin: 60px 0px; }
-  .wrapper--post header.post__section h1.post__title {
-    font-size: 3.2rem;
-    line-height: 1.2;
-    font-weight: 600;
-    text-align: center; }
-  .wrapper--post .section--content {
-    margin: 30px 0px;
-    font-size: 1.8rem;
-    line-height: 1.2;
-    font-family: 'Lato', sans-serif; }
-    .wrapper--post .section--content h2, .wrapper--post .section--content h3, .wrapper--post .section--content h4, .wrapper--post .section--content h5, .wrapper--post .section--content h6 {
-      color: #3F4651;
-      font-weight: 600;
-      text-transform: uppercase;
-      margin: 60px 0px; }
+.post__content {
+  font-size: 1.6rem;
+  line-height: 1.4; }
+  .post__content p {
+    line-height: 1.5;
+    margin-bottom: 1.4rem; }
 
 footer {
   background: #242424;

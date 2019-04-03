@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+	<title>Akshata Mohanty - Fullstack Developer @ Rakuten Viki</title>
+
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<meta property="og:title" content="Akshata Mohanty - Fullstack Developer @ Rakuten Viki" />
+	<meta property="og:description" content="I code for fun and food, in that order." />
+	<meta property="og:image" content="https://akshata.dev/assets/jumpup.jpg" />
+
+    <!-- Latest compiled and minified CSS for Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<!-- main stylesheet -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="/styles/main.css">
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111560396-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-111560396-1');
+	</script>
+</head>
+
+	<nav class="navbar fixed-top navbar-expand-lg navbar-light nav--top">
+	<div class="container text-center">
+		<a class="navbar-brand" href="/">&lt;akshata.dev /&gt;</a>
+		<!-- <div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav">
+						
+						
+							
+						
+							
+								
+									<li class='nav-item'>
+											<a class='nav-link' href="/">all</a>
+									</li>
+								
+							
+						
+							
+								
+									<li class='nav-item'>
+											<a class='nav-link' href="/fullstack-development">web and mobile projects</a>
+									</li>
+								
+							
+						
+							
+								
+									<li class='nav-item'>
+											<a class='nav-link' href="/datascience">data science projects</a>
+									</li>
+								
+							
+						
+							
+								
+									<li class='nav-item'>
+											<a class='nav-link' href="/research">research & writing</a>
+									</li>
+								
+							
+						 
+				</ul>
+			</div>
+		</div> -->
+	</div>
+</nav>
+
+	<main class="container container--main-wrapper">
+		<div class='container-main'>
+			<div class='row'>
+				<div class='col-md-3 nav--side'>
+					
+				</div>
+				<div class='col-md-7 offset-md-5 container--main post__content'>
+					<p>Animations are an important part of the user experience. The subtle movements in an app, when done right, not only provide the user with useful feedback but also create an unconscious, favourable impression of ‘smoothness’ in your application/website. Angular provides a way to add animations to your app, tied to your application logic, with almost similar performance as native CSS animations.</p>
+
+<h2 id="tldr-recipe">tl;dr recipe</h2>
+<ul>
+  <li>Import BrowserAnimationsModule and add it to imports in <strong><em>app.module.ts</em></strong></li>
+  <li>Import { trigger, state, style, transition, animate, keyframes } from ‘@angular/animations’</li>
+  <li>Add an animation in the <strong>animations</strong> array of the Component</li>
+  <li>Define states and add function in the component.ts file to switch between states</li>
+  <li>Add [@animation_name] to an element in your HTML and give it a value controlled by component</li>
+</ul>
+
+<h2 id="adding-an-animation">Adding an animation</h2>
+
+<h4 id="installing-angular-animations-package">Installing Angular Animations Package</h4>
+<p>Make sure you have @angular/animations installed, using <code class="highlighter-rouge">npm install @angular/animations --save</code>.</p>
+
+<p><strong><em>package.json</em></strong></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"dependencies": {
+    ...
+    "@angular/animations": "^5.2.10",
+    ...
+    
+</code></pre></div></div>
+
+<h4 id="importing-the-browser-animation-module">Importing the Browser Animation Module</h4>
+<p>The BrowserAnimationsModule is part of the <strong>@angular/platform-browser</strong> package. The platform-browser is automatically installed if you’ve generated your app using angular-cli. Only the BrowserAnimationsModule will need to be imported and added to the <strong>imports</strong> array, as shown below.</p>
+
+<p><strong><em>app.module.ts</em></strong></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+@NgModule({
+  ...
+  imports: [
+    BrowserAnimationsModule,
+    ...
+  ]
+  ...
+})
+export class AppModule { }
+</code></pre></div></div>
+
+<h4 id="importing-required-animation-functions-in-the-component">Importing required animation functions in the component</h4>
+
+<p>To add animations to your component, you will need to add metadata defining your animation while creating your component. To define your animation, you’ll need to minimally import</p>
+<ul>
+  <li>trigger</li>
+  <li>state</li>
+  <li>style</li>
+  <li>transition</li>
+  <li>animate</li>
+  <li>keyframes</li>
+</ul>
+
+<p><strong><em>app.component.ts</em></strong></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import { trigger, state, style, transition, animate, keyframes } from '@angular/animations';
+</code></pre></div></div>
+
+<h4 id="adding-an-animation-to-the-component">Adding an animation to the component</h4>
+<p>In the example below, the metadata has defined an animation trigger, called “slide_in_out” with two states - ‘slide_in’ and ‘slide_out’. The states can be considered as the values the animation <em>slide_in_out</em> can be assigned and the corresponding CSS that becomes active on getting that value.</p>
+
+<p>The transition is what specifies the animation when the states changes from slide_in to slide_out and vice versa. You can choose to define this animation in one direction, from void / any state, with different timing and effects.</p>
+
+<p><strong><em>app.component.ts</em></strong></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@Component({
+  ...
+  animations: [
+    trigger('slide_in_out', [
+      state('slide_in', style({
+        width: '350px',
+        // css styles when the element is in slide_in
+      })),
+      state('slide_out', style({
+        width: '0px'
+        // css styles when the element is in slide_out
+      })),
+      // animation effect when transitioning from one state to another
+      transition('slide_in &lt;=&gt; slide_out', animate(300))
+    ]),
+  ]
+})
+</code></pre></div></div>
+
+<h4 id="add-the-animation-to-the-element">Add the animation to the element</h4>
+
+<p>Once you’ve defined your animation, you can now add it to your HTML element and link it to a variable, slider_state in this example. In this example, when the slider_state equals ‘slide_in’, the width of the div is 350px and when the slider_state equals ‘slide_out’, the width of the div is 0.</p>
+
+<p>The slider_state variable needs to be controlled in your component file. In this example, we control the slide-in-out navbar using a button.</p>
+
+<p>When the button is clicked, it changes the value of slider_state, as shown below, hence triggering the animation.</p>
+
+<p><strong><em>app.component.html</em></strong></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;button (click)="toggleSlider()"&gt;Toggle Slider&lt;/button&gt;
+
+&lt;div id="slide-nav"  [@slide_in_out]="slider_state"&gt;
+  &lt;!-- some content --&gt;
+&lt;/div&gt;
+</code></pre></div></div>
+
+<p><strong><em>app.component.ts</em></strong></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  slider_state:string = "slide_in";
+  toggleSlider(): void{
+    // do something to change the animation_state variable
+    this.slider_state = this.slider_state === 'slide_out' ? 'slide_in' : 'slide_out';
+  }
+</code></pre></div></div>
+
+<p>And that’s it. That’s how you implement a simple slide-in, slide-out sidenav. View a demo <a href="https://stackblitz.com/edit/angular-slide-nav?file=app%2Fapp.module.ts">here</a></p>
+
+<h2 id="pitfalls">Pitfalls</h2>
+
+<ul>
+  <li>web-animations-js is required to make an angular animation work in browsers that donot support the <strong>Web Animations API</strong></li>
+  <li>The state is defined as a <strong>string</strong> value and use booleans or numerical values might cause errors</li>
+</ul>
+
+<h4 id="references">References:</h4>
+<p><a href="https://angular.io/guide/animations">Angular Animations Documentation</a></p>
+
+				</div>
+			</div>
+		</div>
+		
+	</main>
+	
+	<div class="h5 copyright">
+	Copyright © 2019
+	<a href="http://linkedin.com/in/akshatamohanty/" target="_blank">Akshata Mohanty</a>. 
+	All Rights Reserved.
+</div>
+
+</html>
