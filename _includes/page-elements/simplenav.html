@@ -1,8 +1,11 @@
-Also see:
-{% for alpage in site.pages %}
-    {% if alpage.isCategory == true and alpage.url <> page.url %}    
-        <a href={{alpage.url}}>
-            {{ alpage.short }} || 
-        </a>
-    {% endif %}
-{% endfor %}
+<div class='simple-nav'>
+    <em><b>Also See:&nbsp;&nbsp;&nbsp;&nbsp;</b></em>
+    <a href='/'>home</a>
+    {% for alpage in site.pages %}
+        {% if alpage.isCategory == true and alpage.url <> page.url %}    
+            <a href={{alpage.url}}>
+                {{ alpage.short }}
+            </a>
+        {% endif %}
+    {% endfor %}
+</div>

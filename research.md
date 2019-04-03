@@ -1,6 +1,5 @@
 ---
 layout: category
-isCategory: true
 page: research
 title: research & writing
 description: i think, therefore i am

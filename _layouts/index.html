@@ -9,7 +9,6 @@
 		<div class='row'>
 			<div class='col-md-3 nav--side'>
 				{% include page-elements/about.html %}
-				<br />
 				{{ page.content | markdownify }}
 				<hr />
 				{% include page-elements/social-media.html %}
@@ -18,7 +17,7 @@
 					<h1> /// showcase </h1>
 					<br><br>
 					{% for page in site.pages %}
-						{% if page.isCategory == true %}
+						{% if page.isCategory == true and page.page != 'all' %}
 						<div>
 							{%  include page-elements/section-header.html %}
 							<div>
@@ -28,7 +27,7 @@
 									{% endif %}
 								{% endfor %}
 							</div>
-							<a href={{page.url}} style='float:right'>More ></a>
+							<a href={{page.url}} style='float:right; color: blue;'>More ></a>
 						</div>
 						<br><br><br>
 						{% endif %}

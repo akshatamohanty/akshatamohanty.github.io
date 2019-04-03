@@ -1,11 +1,16 @@
 <article class="post"> 
-    <a href={{post.url}}>
-        <div class='post__content'>
+    {% if post.projecturl %}
+        <a href={{post.projecturl}}>
+    {% else if %}
+        <a href={{post.url}}>
+    {% endif %}        
+    <div class='post__content'>
             <div class='container'>
                 <div class='row'>
                     <div class='col-sm-4'>
                         <div class='post__marker'>{{ post.marker }}</div>
                         <h3 class='heading'>{{post.title}}</h3>
+                        <small>{{post.authors}}</small>
                     </div>
                     <div class='col-sm-8'>
                         <p>{{ post.summary }}</p>

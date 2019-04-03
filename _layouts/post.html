@@ -9,7 +9,20 @@
 		<div class='container-main'>
 			<div class='row'>
 				<div class='col-md-3 nav--side'>
+					<h3>Summary</h3>
 					{{ page.description }}
+					<br><br>
+					{% if page.project-url %}
+						<a href={{post.project-url}} class='link--color' target='_blank'><b>Project Link</b></a>
+					{% endif %} 
+					<br>
+					{% if page.demo-url %}
+						<a href={{post.demo-url}} class='link--color' target='_blank'><b>Demo</b></a>
+					{% endif %} 
+					<br /><hr />
+					<a href="javascript:history.back()">Go Back</a>
+					<br /><br>
+					{% include page-elements/simplenav.html %}
 				</div>
 				<div class='col-md-7 offset-md-5 container--main post__content'>
 					{{ page }}

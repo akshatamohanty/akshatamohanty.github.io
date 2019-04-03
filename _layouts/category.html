@@ -7,15 +7,15 @@
 
 	<div class='container container--main-wrapper'>
 		<div class='row'>
-			<div class='col-md-3 nav--side'>
+			<div class='col-md-3 nav--side category'>
                 {% include page-elements/about.html %}
-                <hr />
-                {{ page.content | markdownify }}
+                <div class='category-description'>{{ page.content | markdownify }}</div>
                 <hr />
                 {% include page-elements/social-media.html %}
 			</div>
 			<div class='col-md-7 offset-md-5 container--main'>
                 {% include page-elements/simplenav.html %}
+                <br>
 
                 <div>
                     {%  include page-elements/section-header.html %}
