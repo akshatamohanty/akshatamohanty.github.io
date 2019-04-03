@@ -8,6 +8,7 @@ title:  ai nanodegree
 summary: compilation of 7 ai/ml projects covering topics like search and planning, adverserial game playing agents, image classifiers with CNNs, natural language processing with RNNS and speech transcription for voice user interfaces
 role: Artificial Intelligence and Machine Learning
 project-url: https://akshatamohanty.github.io/udacity-ai-nanodegree
+description: Udacity is a for-profit educational organization founded by Sebastian Thrun, David Stavens, and Mike Sokolsky offering massive open online courses (MOOCs). This specialization was offered by Udacity as two three-month semester program, covering topics in Artificial Intelligence and Machine Learning, as well as a Specialization in either Computer Vision, Natural Langugae Processing or Voice User Interfaces. I completed the nanodegree by completing 7 required projects with a capstone project in Voice User Interfaces. This is a collection of all my work towards the degree. 
 date:   2018-06-02
 categories: post
 type: project
@@ -20,7 +21,7 @@ tags:
 ---
 
 # Artificial Intelligence Nanodegree and Specializations
-Udacity is a for-profit educational organization founded by Sebastian Thrun, David Stavens, and Mike Sokolsky offering massive open online courses (MOOCs). This specialization was offered by Udacity as two three-month semester program, covering topics in Artificial Intelligence and Machine Learning, as well as a Specialization in either Computer Vision, Natural Langugae Processing or Voice User Interfaces. I completed the nanodegree by completing 7 required projects with a capstone project in Voice User Interfaces. This is a collection of all my work towards the degree. 
+
 
 Certificate [here](https://confirm.udacity.com/QEJPWSRW)
 

@@ -7,10 +7,32 @@
 	}
 }
 
+@media (max-width: 768px) { 
+	// disabled offset-sm-5 
+	.container--main {
+        margin-left: 0;
+	}
+}
+
+
+// fix for low height, landscape phones
+@media (max-height: 450px) and (orientation: landscape) {
+	.nav--side {
+		position: relative;
+	}
+
+	// override container offset applied by bootstrap class
+	.container--main {
+		margin-left: 0;
+	}
+}
+
 .nav--side {
 	padding-top: $content-padding;
 	margin-bottom: 3 * $content-margin;
 	line-height: 1.4;
+	width: inherit;
+	min-width: 300px;
 
 	.main__title {
         color: $black;
