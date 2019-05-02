@@ -1,6 +1,6 @@
 ---
 layout: post
-showcase: true
+showcase: false
 size: 6
 group: app
 marker: social network
