@@ -1,4 +1,5 @@
 ---
+published: false
 layout: post
 group: blog
 title:  Exploring Memory in Chrome Task Manager
@@ -6,7 +7,7 @@ subtitle: A simple first-level diagnostic to track down memory leaks and problem
 summary: 
 date:   2018-04-30
 type: post
-tags: memory chrome-devtools
+category: tech
 ---
 
 ## Getting to the Task Manager

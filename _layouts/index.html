@@ -7,27 +7,30 @@
 
 	<div class='container container--main-wrapper'>
 		<div class='row'>
-			<div class='col-md-3 nav--side'>
+			<div class='col-md-2 nav--side'>
 				{% include page-elements/about.html %}
-				{{ page.content | markdownify }}
+				<span class='category-description'>{{ page.content | markdownify }}</span>
 				<hr />
 				{% include page-elements/social-media.html %}
+				<small class='off-black'> © All Rights Reserved.</small>
 			</div>
-			<div class='col-md-7 offset-md-5 container--main'>
-					<h1> /// latest </h1>
-					<br><br>
+			<div class='col-md-8 offset-md-4 container--main'>
 					{% for page in site.pages %}
-						{% if page.isCategory == true and page.page != 'all' %}
+						{% if page.isCategory == true and page.page != 'all' and page.page != 'blog' %}
 						<div>
 							{%  include page-elements/section-header.html %}
 							<div>
 								{% for post in site.posts %}
 									{% if post.group == page.page and post.showcase == true %}
-										{%  include page-elements/post-container.html %}
+										{% if post.group == 'blog' %}
+											<!-- {% include page-elements/blog-post-container.html %} -->
+										{% else %}
+											{% include page-elements/post-container.html %}
+										{% endif %}
 									{% endif %}
 								{% endfor %}
 							</div>
-							<a href={{page.url}} style='float:right; color: blue;'>More ></a>
+							<a class='link' href={{page.url}} style='float:right;'>More ></a>
 						</div>
 						<br><br><br>
 						{% endif %}
@@ -37,6 +40,6 @@
 		</div>
 	</div>
 
-	{% include page-elements/copyright.html %}
+	<!-- {% include page-elements/copyright.html %} -->
 
 </html>

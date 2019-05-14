@@ -7,22 +7,26 @@
 
 	<div class='container container--main-wrapper'>
 		<div class='row'>
-			<div class='col-md-3 nav--side category'>
+			<div class='col-md-2 nav--side category'>
                 {% include page-elements/about.html %}
                 <div class='category-description'>{{ page.content | markdownify }}</div>
                 <hr />
                 {% include page-elements/social-media.html %}
 			</div>
-			<div class='col-md-7 offset-md-5 container--main'>
-                {% include page-elements/simplenav.html %}
-                <br>
+			<div class='col-md-8 offset-md-4 container--main'>
+                <!-- {% include page-elements/simplenav.html %}
+                <br> -->
 
                 <div>
                     {%  include page-elements/section-header.html %}
                     <div>
                         {% for post in site.posts %}
-                            {% if post.group == page.page %}
-                                {% include page-elements/post-container.html %}
+                            {% if post.group == page.page %}    
+                                {% if post.group == 'blog' %}
+                                    {% include page-elements/blog-post-container.html %}
+                                {% else %}
+                                    {% include page-elements/post-container.html %}
+                                {% endif %}
                             {% endif %}
                         {% endfor %}
                     </div>

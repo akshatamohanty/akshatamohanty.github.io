@@ -1,6 +1,6 @@
 ---
 layout: post
-group: thoughts
+group: publications
 showcase: true
 marker: talk
 title:  "AI for Non-PhDs - AI Superpowers for your apps in 30 minutes "

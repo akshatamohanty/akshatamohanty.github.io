@@ -1,6 +1,7 @@
 ---
+published: false
 layout: post
-group: blog
+group: blog1
 title:  Blockchain Community
 subtitle: List of podcasts, blogs, people to follow for Blockchain News
 date:   2018-04-29

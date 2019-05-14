@@ -1,4 +1,5 @@
 ---
+published: false
 layout: post
 group: blog
 title:  Learning Blockchain
@@ -6,7 +7,7 @@ subtitle: Combination of learning paths from various resources to learn blockcha
 date:   2018-04-29
 categories: post
 type: post
-tags: learning-path blockchain
+category: learning path
 ---
 
 ## Prerequisites

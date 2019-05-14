@@ -1,6 +1,7 @@
 ---
+published: false
 layout: post
-group: blog
+group: blog1
 title:  Accessing Jupyter Notebook running on a Google Compute Instance
 subtitle: Lorem ipsum
 date:   2018-08-22

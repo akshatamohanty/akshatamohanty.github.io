@@ -1,6 +1,6 @@
 ---
 layout: post
-group: thoughts
+group: publications
 showcase: true
 marker: book
 title:  "A System's Evaluation of Global History of Indian Architecture"

@@ -1,12 +1,13 @@
 ---
+published: false
 layout: post
 group: blog
-title:  Dynamic Programming - Recursion with memory
-subtitle: Introduction to DP, Linear Partition Problem and an example
+title: Understanding dynamic programming with examples
+summary: Anim amet aliqua anim culpa eu et dolor et ullamco ullamco velit et in. Quis laboris cupidatat laborum nulla ipsum enim amet sit eiusmod duis occaecat reprehenderit laboris. Magna veniam adipisicing quis esse veniam incididunt elit minim consequat minim eiusmod. Non adipisicing aliquip culpa sunt sit.
 date:   2018-06-06
 categories: post
 type: post
-tags: algorithm-design
+category: tech
 ---
 
 ### What is Dynamic Programming?

@@ -1,4 +1,5 @@
 ---
+published: false
 layout: post
 group: blog
 title:  Generate PDFs from Gitbook automatically, with Travis.CI

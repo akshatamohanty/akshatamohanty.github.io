@@ -1,0 +1,47 @@
+.post-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 2 * $content-margin;
+}
+
+.back {
+    display: inline-block;
+    border: 1px solid $light-black;
+    border-radius: 30px;
+    margin: $content-margin 0;
+    padding: 5px 20px;
+}
+
+.blog-post-container {  
+    padding-bottom: 3 * $content-margin;
+
+    .blog-post__content h1 a {
+        color: $black;
+    }
+
+    .post__meta {
+        font-size: 1.4rem;
+        margin-bottom: 0.25 * $content-margin;
+        font-weight: 600;
+
+        .date {
+            text-transform: uppercase;
+            color: $light-black;
+        }
+
+        .marker {
+            margin-left: 0.5 * $content-margin;
+            text-transform: uppercase;
+            color: $font-color-muted;
+        }
+    }
+
+    .post__content {
+        color: black;
+        line-height: 2;
+
+        p {
+            padding: $content-margin 0;
+        }
+    }
+}
