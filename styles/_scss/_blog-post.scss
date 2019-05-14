@@ -2,6 +2,10 @@
     max-width: 600px;
     margin: 0 auto;
     padding-top: 2 * $content-margin;
+
+    &.blog-post-container {
+        padding: 0 $content-margin;
+    }
 }
 
 .post__title {
