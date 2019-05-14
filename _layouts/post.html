@@ -12,7 +12,7 @@
 					<span class='date'>{{page.date | date: "%B %Y"}}</span>
 					<span class='marker'>{{page.category}}</span>
 				</div>
-				<h1>
+				<h1 class='post__title'>
 					<a href={{page.url}}>{{page.title}}</a>
 				</h1>
 				<br>
@@ -20,6 +20,8 @@
 				<br><br><hr /><br><br>
 				<div class='post__content'>{{ page }}</div>
 				<br><hr /><br>
+				<h3>About the author</h3>
+				<br><br>
 				{% include page-elements/about.html %}
 			</div>
 		</article>

@@ -1,7 +1,7 @@
 $navbar-height: 54px; 
 
 .container--main-wrapper {
-    padding-top: 0.2 * $content-margin + $navbar-height;  
+    padding-top: 0.2 * $content-margin; // 0.2 * $content-margin + $navbar-height;  
     max-width: 1020px;
 }
 

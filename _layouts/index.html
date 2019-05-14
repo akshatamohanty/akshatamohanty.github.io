@@ -3,16 +3,16 @@
 	
 	{% include page-elements/head.html %}
 
-	{% include page-elements/category-navigation.html %}
+	<!-- {% include page-elements/category-navigation.html %} -->
 
 	<div class='container container--main-wrapper'>
 		<div class='row'>
 			<div class='col-md-2 nav--side'>
 				{% include page-elements/about.html %}
-				<span class='category-description'>{{ page.content | markdownify }}</span>
-				<hr />
+				<!-- <span class='category-description'>{{ page.content | markdownify }}</span> -->
+				<!-- <hr />
 				{% include page-elements/social-media.html %}
-				<small class='off-black'> © All Rights Reserved.</small>
+				<small class='off-black'> © All Rights Reserved.</small> -->
 			</div>
 			<div class='col-md-8 offset-md-4 container--main'>
 					{% for page in site.pages %}

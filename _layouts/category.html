@@ -3,19 +3,19 @@
 	
 	{% include page-elements/head.html %}
 
-	{% include page-elements/category-navigation.html %}
+	<!-- {% include page-elements/category-navigation.html %} -->
 
 	<div class='container container--main-wrapper'>
 		<div class='row'>
 			<div class='col-md-2 nav--side category'>
                 {% include page-elements/about.html %}
-                <div class='category-description'>{{ page.content | markdownify }}</div>
+                <!-- <div class='category-description'>{{ page.content | markdownify }}</div>
                 <hr />
-                {% include page-elements/social-media.html %}
+                {% include page-elements/social-media.html %} -->
+                <!-- <small class='off-black'> © All Rights Reserved.</small> -->
 			</div>
 			<div class='col-md-8 offset-md-4 container--main'>
-                <!-- {% include page-elements/simplenav.html %}
-                <br> -->
+                <!-- {% include page-elements/simplenav.html %} -->
 
                 <div>
                     {%  include page-elements/section-header.html %}
@@ -34,7 +34,6 @@
 			</div>
 		</div>
 	</div>
-
-	{% include page-elements/copyright.html %}
+	<!-- {% include page-elements/copyright.html %} -->
 
 </html>
