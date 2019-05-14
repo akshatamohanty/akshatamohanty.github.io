@@ -209,6 +209,8 @@ footer {
   max-width: 600px;
   margin: 0 auto;
   padding-top: 60px; }
+  .post-wrapper.blog-post-container {
+    padding: 0 30px; }
 
 .post__title {
   color: #3F4651;
