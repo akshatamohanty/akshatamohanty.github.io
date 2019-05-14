@@ -1,22 +1,22 @@
 ---
-published: false
 layout: post
 group: blog
-title: Understanding dynamic programming with examples
-summary: Anim amet aliqua anim culpa eu et dolor et ullamco ullamco velit et in. Quis laboris cupidatat laborum nulla ipsum enim amet sit eiusmod duis occaecat reprehenderit laboris. Magna veniam adipisicing quis esse veniam incididunt elit minim consequat minim eiusmod. Non adipisicing aliquip culpa sunt sit.
+title: Understanding dynamic programming concepts with the coin-change example
+summary: Dynamic Programming is a method of problem-solving where you breakdown the problems into smaller subproblems, similar to the original problem. It may or maynot use recursion.
 date:   2018-06-06
 categories: post
 type: post
 category: tech
 ---
 
-### What is Dynamic Programming?
+# What is Dynamic Programming?
+
 Dynamic Programming is a method of problem-solving where you breakdown the problems into smaller subproblems, similar to the original problem. It may or maynot use recursion. 
 
 For example, the pet question to apply DP can be to get the nth term of the Fibonacci Series;
 By definition, F(n) = F(n-1) + F(n-2)
 
-```
+```py
 ## recursive function
 def fibonacci(n):
     if n == 1: return 1
@@ -24,7 +24,7 @@ def fibonacci(n):
     else: return fibonacci(n-1) + fibonacci(n-2)
     
     
-### print 50th term
+# print 50th term
 print( fibonacci(50) )
 ```
 
@@ -39,7 +39,7 @@ If I tabulate the iterations:
 
 Notice how fib(48), fib(47)... are all repeated? Well, that's redundant. We can reduce this redundancy by saving the computed values in a lookup table. This saving of results, is known as **Memoization**
 
-```
+```py
 ## recursive function
 def fibonacci(n):
     if n == 1: return 1
@@ -51,24 +51,30 @@ def fibonacci(n):
       return result
     
 lookup = {}
-### print 50th term
+# print 50th term
 print( fibonacci(50) )
 ```
+<br />
 
-### How is it different from Divide and Conquer?
+# How is it different from Divide and Conquer?
 Divide and Conquer algorithms like split a problem into smaller problems, solve each of them and **combine** the results. Dynamic Programming on the other hand is used to solve problems with **overlapping subproblems**, for example, like in the Fibonacci term computation explained earlier, where the same subproblem was required multiple times.
 
+<br />
 
-### How to know if a problem can be solved with DP?
+# How to know if a problem can be solved with DP?
+
 DP Problems usually have the following characteristics:
 - For optimization problems, with a focus on arrangement or ordering of the elements
 - They can be broken down into subproblems which as similar to the main problem
 - The global optimum found using DP will usualy be more efficient and better than those found by typical heuristics
 
-### Linear Partition Problem (wip)
+<br />
+
+# Linear Partition Problem (work-in-progress)
 This problem has been described in Steven Skiena, and took me no less than 3 hours to get my head around. Hence, the **attempt** to explain it... 
 
-##### Problem Statement: 
+
+## Problem Statement: 
 Suppose the job scanning through a shelf of books is to be split between k workers. To avoid the need to rearrange the books or separate them into piles, we can divide the shelf into k regions and assign each region to one worker.
 What is the fairest way to divide the shelf up?
 
@@ -112,12 +118,13 @@ Now, we need the minimum of Case 1 and Case 2
 
 min ( P(7, 2), P(6, 2), P(5, 2) .. )
 
+<br />
 
-### Questions
+# Questions
 
 https://www.codechef.com/ZCOPRAC/problems/ZCO14002 
 ```
-### wip
+# wip
 
 def mt(s, st=0):
     if len(s) == 0:
@@ -148,7 +155,7 @@ for test in range(12):
 
 ```
 
+<br />
 
-
-### Resources
+# Resources
 - The Algorithm Design Manual - Steven Skiena
