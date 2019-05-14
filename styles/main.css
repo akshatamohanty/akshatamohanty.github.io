@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?Lato:400,800");
+@import url("https://fonts.googleapis.com/css?Ubuntu:400,600,800");
 html {
   position: relative;
   font-size: 10px; }
@@ -9,40 +9,65 @@ body {
   justify-content: space-between;
   position: relative;
   height: 100vh;
-  font-size: 1.4rem;
-  line-height: 1.4;
-  font-family: 'Lato', sans-serif; }
+  font-size: 1.6rem;
+  line-height: 180%;
+  font-family: 'Ubuntu', sans-serif; }
+  body:before {
+    content: '';
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-top: 4px solid rgba(231, 112, 0, 0.692); }
 
 h1, h2, h3, h4, h5, h6 {
+  color: #3F4651;
   font-weight: 800; }
 
-a:hover, a:visited, a:focus {
+a:hover, a:focus {
   color: inherit;
   text-decoration: none; }
 
-.category-description a, .post__content a {
-  color: blue; }
+.category-description p {
+  color: #6f6f6f; }
+.category-description a {
+  color: rgba(231, 112, 0, 0.692); }
 
 p {
   margin-bottom: 1.4rem; }
 
 .simple-nav a:hover {
-  color: blue; }
+  color: rgba(231, 112, 0, 0.692);
+  text-decoration: underline; }
 .simple-nav a:after {
-  content: '||';
+  content: '|';
   margin: 0 10px; }
 
-.link--color {
-  color: blue; }
+.link {
+  color: rgba(231, 112, 0, 0.692);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1.4rem; }
+  .link:hover {
+    text-decoration: underline; }
 
 .img--profile {
-  width: 150px;
-  height: 150px;
+  width: 80px;
+  height: 80px;
   background-size: cover;
-  border: 4px solid #bbb;
   background-repeat: no-repeat;
   background-image: url("../assets/profile.png");
   border-radius: 50%; }
+
+.off-black {
+  color: #6f6f6f; }
+
+.list--no-bullets {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .list--no-bullets li {
+    margin: 0;
+    padding: 0; }
 
 @media (min-width: 768px) {
   .nav--side {
@@ -61,21 +86,22 @@ p {
 .nav--side {
   padding-top: 30px;
   margin-bottom: 90px;
-  line-height: 1.4;
   width: inherit;
-  min-width: 300px; }
+  min-width: 250px; }
   .nav--side .main__title {
     color: #3F4651; }
-  .nav--side .social-media-icons .fa {
-    font-size: 14px;
-    border: 3px solid #3F4651;
-    border-radius: 50%;
-    padding: 10px;
-    margin-right: 15px;
-    color: #3F4651; }
+
+.social-media-icons .fa {
+  font-size: 14px;
+  border: 3px solid #3F4651;
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 15px;
+  color: #3F4651; }
 
 .container--main-wrapper {
-  padding-top: 84px; }
+  padding-top: 6px;
+  max-width: 1020px; }
 
 .container--main {
   padding: 30px 15px; }
@@ -88,7 +114,7 @@ p {
   background-color: #3F4651;
   color: gray; }
   .nav--top .container {
-    padding: 15px 0; }
+    padding: 0 !important; }
   .nav--top .navbar-brand {
     color: #E7BF00;
     font-size: 1.6rem;
@@ -115,7 +141,6 @@ p {
   color: #6f6f6f; }
 
 article.post {
-  line-height: 1.2;
   margin-bottom: 30px;
   margin-left: -15px; }
   article.post .heading {
@@ -166,13 +191,6 @@ article.post {
   text-transform: uppercase;
   color: #E7BF00; }
 
-.post__content {
-  font-size: 1.6rem;
-  line-height: 1.4; }
-  .post__content p {
-    line-height: 1.5;
-    margin-bottom: 1.4rem; }
-
 footer {
   background: #242424;
   height: 600px; }
@@ -186,3 +204,47 @@ footer {
   margin: 0; }
   .copyright a {
     color: inherit; }
+
+.post-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 60px; }
+
+.post__title {
+  color: #3F4651;
+  font-size: 4.8rem;
+  line-height: 1.2; }
+
+.post__content h1 {
+  font-size: 4rem;
+  color: #3F4651; }
+
+.back {
+  display: inline-block;
+  border: 1px solid #6f6f6f;
+  border-radius: 30px;
+  margin: 30px 0;
+  padding: 5px 20px; }
+
+.blog-post-container {
+  padding-bottom: 90px; }
+  .blog-post-container .blog-post__content h1 a {
+    color: #3F4651;
+    font-size: 3.2rem;
+    line-height: 1.2; }
+  .blog-post-container .post__meta {
+    font-size: 1.4rem;
+    margin-bottom: 7.5px;
+    font-weight: 600; }
+    .blog-post-container .post__meta .date {
+      text-transform: uppercase;
+      color: #6f6f6f; }
+    .blog-post-container .post__meta .marker {
+      margin-left: 15px;
+      text-transform: uppercase;
+      color: rgba(231, 112, 0, 0.692); }
+  .blog-post-container .post__content {
+    color: black;
+    line-height: 2; }
+    .blog-post-container .post__content p {
+      padding: 15px 0; }

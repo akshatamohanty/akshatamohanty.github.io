@@ -34,159 +34,127 @@
 	</script>
 </head>
 
-	<nav class="navbar fixed-top navbar-expand-lg navbar-light nav--top">
-	<div class="container text-center">
-		<a class="navbar-brand" href="/">&lt; akshata <i class='fa fa-heart-o'></i> dev / &gt;</a>
-		<!-- <div>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNavDropdown">
-				<ul class="navbar-nav">
-						
-						
-							
-						
-							
-								
-									<li class='nav-item'>
-											<a class='nav-link' href="/">all</a>
-									</li>
-								
-							
-						
-							
-								
-									<li class='nav-item'>
-											<a class='nav-link' href="/fullstack-development">web and mobile projects</a>
-									</li>
-								
-							
-						
-							
-								
-									<li class='nav-item'>
-											<a class='nav-link' href="/thoughts">talks, research and writing</a>
-									</li>
-								
-							
-						
-							
-								
-									<li class='nav-item'>
-											<a class='nav-link' href="/datascience">data science projects</a>
-									</li>
-								
-							
-						
-							
-								
-									<li class='nav-item'>
-											<a class='nav-link' href="/research">research & writing</a>
-									</li>
-								
-							
-						 
-				</ul>
-			</div>
-		</div> -->
-	</div>
-</nav>
+	<main>
+		<article class="post-wrapper blog-post-container"> 
+			<a class='back' href='/blog'>Back to blog</a>
 
-	<main class="container container--main-wrapper">
-		<div class='container-main'>
-			<div class='row'>
-				<div class='col-md-3 nav--side'>
-					<h3>Summary</h3>
-					
-					<br><br>
-					 
-					<br>
-					 
-					<br /><hr />
-					<a href="javascript:history.back()">Go Back</a>
-					<br /><br>
-					<div class='simple-nav'>
-    <em><b>Also See:&nbsp;&nbsp;&nbsp;&nbsp;</b></em>
-    <a href='/'>home</a>
-    
-            
-            <a href=/datascience>
-                data science
-            </a>
-        
-    
-            
-            <a href=/fullstack-development>
-                apps
-            </a>
-        
-    
-        
-    
-        
-    
-        
-    
-            
-            <a href=/thoughts>
-                thoughts
-            </a>
-        
-    
-</div>
+			<div class='blog-post__content'>
+				<div class='post__meta'>
+					<span class='date'>November 2017</span>
+					<span class='marker'>tech</span>
 				</div>
-				<div class='col-md-7 offset-md-5 container--main post__content'>
-					<h4 id="creating-a-packagejson-file">Creating a package.json file</h4>
-<p>Use ‘npm init’ to create the package.json file. It acts like a wizard and steps you through the entire file creation. Press enter to accept defaults (which will be in most cases). This file is what is used to configure the build process and run, build and test your application.</p>
+				<h1 class='post__title'>
+					How to integrate Jasmine testing framework for Typescript
+				</h1>
+				<br>
+				<p>Test-driven development (TDD) is a best practice for clean, robust production-grade code. However, setting up these testing frameworks can be daunting. Here are some of the lessons I learned while setting up Jasmine testing framework for Typescript</p>
+				<br><br><hr /><br><br>
+				<div class='post__content'><h1 id="creating-a-packagejson-file">Creating a package.json file</h1>
 
-<h4 id="folder-structure">Folder Structure</h4>
-<p>This projects implements a folder structure as follows - 
-./
-  — .config: [Contains all the config files]
-        — karma.config.ts : Karma Configuration File
-        — tsconfig.json: Typscript Configuration File
-  —- src: [Containts all the source Typescript files]
-  —- tests: [Contains tests to be run on the src folder files]</p>
+<p>Use <code class="highlighter-rouge">npm init</code> to create the package.json file. It acts like a wizard and steps you through the entire file creation. Press enter to accept defaults (which will be in most cases). This file is what is used to configure the build process and run, build and test your application.</p>
 
-<h4 id="packages-to-install">Packages to install</h4>
+<p><br /></p>
+
+<h1 id="folder-structure">Folder Structure</h1>
+<p>This projects implements a folder structure as follows -</p>
+
+<p>Folder: <code class="highlighter-rouge">./</code></p>
+<ul>
+  <li><code class="highlighter-rouge">.config</code>: [Contains all the config files]
+    <ul>
+      <li><code class="highlighter-rouge">karma.config.ts</code> : Karma Configuration File</li>
+      <li><code class="highlighter-rouge">tsconfig.json</code>: Typscript Configuration File</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">src</code>: [Containts all the source Typescript files]</li>
+  <li><code class="highlighter-rouge">tests</code>: [Contains tests to be run on the src folder files]</li>
+</ul>
+
+<p><br /></p>
+
+<h1 id="packages-to-install">Packages to install</h1>
+
 <p>Next, you’ll need to install the packages required to compile and test typescript files.</p>
 <ul>
-  <li>@types/nodes - This is needed to allow you to script in nodejs and use keywords like require, export etc.</li>
-  <li>karma-typescript - To compile typescript files into Javascript which can be tested by Jasmine</li>
-  <li>karma-chrome-launcher - To launch an instance of chrome. You have to install a launcher for each browser that you want to check against.</li>
-  <li>karma-jasmine-html-reporter - This is required to display the Jasmine test results on Chrome; [Note: not karma-html-report]</li>
-  <li>@types/jasmine- Required for Jasmine test to run and to get rid of errors with <code class="highlighter-rouge">describe</code> keyword etc</li>
-  <li>typescript - Duh!</li>
-  <li>Jasmine Core</li>
+  <li><code class="highlighter-rouge">@types/nodes</code> - This is needed to allow you to script in nodejs and use keywords like require, export etc.</li>
+  <li><code class="highlighter-rouge">karma-typescript</code> - To compile typescript files into Javascript which can be tested by Jasmine</li>
+  <li><code class="highlighter-rouge">karma-chrome-launcher</code> - To launch an instance of chrome. You have to install a launcher for each browser that you want to check against.</li>
+  <li><code class="highlighter-rouge">karma-jasmine-html-reporter</code> - This is required to display the Jasmine test results on Chrome; [Note: not karma-html-report]</li>
+  <li><code class="highlighter-rouge">@types/jasmine</code>- Required for Jasmine test to run and to get rid of errors with <code class="highlighter-rouge">describe</code> keyword etc</li>
+  <li><code class="highlighter-rouge">typescript</code> - Duh!</li>
+  <li><code class="highlighter-rouge">Jasmine Core</code></li>
 </ul>
 
-<h4 id="karma-config-files">Karma Config Files</h4>
-<ul>
-  <li>Update the config file “files”: [] property, to point to the test files as well as the imports. This is required for the karma-typescript-compiler to compile properly or it won’t find the imported files, which you might be trying to check.</li>
-  <li>If the tests are not visible, but Jasmine is, means there is problem with file paths in the karma.config file</li>
-  <li>Specify the module in the karmaTypescriptConfig options as “commonjs” or it will not accept export/import modules</li>
-</ul>
+<p><br /></p>
 
-<h4 id="running-scripts-with-packagejson">Running scripts with Package.json</h4>
-<ul>
-  <li>Update package.json to run { “test” : “karma start <karma_config_file_path>" }. Basically, this gets run whenever 'npm test' is run</karma_config_file_path></li>
-</ul>
+<h1 id="karma-config-files">Karma Config Files</h1>
 
-<h4 id="typedocs">Typedocs</h4>
-<p>for the docs - just the following script in package.json will do -
-“build-docs”: “typedoc –out ./docs ./src –module commonjs”</p>
+<p>Update the config file “files”: [] property, to point to the test files as well as the imports. This is required for the karma-typescript-compiler to compile properly or it won’t find the imported files, which you might be trying to check.</p>
 
-				</div>
-			</div>
-		</div>
-		
-	</main>
-	
-	<div class="h5 copyright">
-	Copyright © 2019
-	<a href="http://linkedin.com/in/akshatamohanty/" target="_blank">Akshata Mohanty</a>. 
-	All Rights Reserved.
+<p>If the tests are not visible, but Jasmine is, means there is problem with file paths in the karma.config file</p>
+
+<p>Specify the module in the karmaTypescriptConfig options as “commonjs” or it will not accept export/import modules</p>
+
+<p><br /></p>
+
+<h1 id="running-scripts-with-packagejson">Running scripts with <code class="highlighter-rouge">package.json</code></h1>
+
+<p>Update package.json to run</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="p">{</span> <span class="s2">"test"</span> <span class="p">:</span> <span class="s2">"karma start &lt;karma_config_file_path&gt;"</span> <span class="p">}</span>
+</code></pre></div></div>
+
+<p>Basically, this gets run whenever <code class="highlighter-rouge">npm test</code> is run</p>
+
+<p><br /></p>
+
+<h1 id="typedocs">Typedocs</h1>
+
+<p>For the docs - just the following script in <code class="highlighter-rouge">package.json</code> will do:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="s2">"build-docs"</span><span class="p">:</span> <span class="s2">"typedoc --out ./docs ./src --module commonjs"</span>
+</code></pre></div></div>
 </div>
+				<br><hr /><br>
+				<h3>About the author</h3>
+				<br><br>
+				<header class='main'>
+	<div class='img--profile'></div>
+	<br>
+	<h2 class='main__title'>Akshata Mohanty</h2>
+
+	<div class='off-black small-text'>
+		<div class='subtext'>
+			<b><a class='link' href='http://viki.com/' target='_blank'>FULLSTACK DEVELOPER @  Viki</a></li></b>
+		</div>
+		<hr/>
+		Self-taught developer. Previously <a class='link' href='https://www.sde.nus.edu.sg/' target='_blank'>NUS</a>, <a class='link' href='https://flipkart.com' target='_blank'>Flipkart</a>. Studied Architecture at <a class='link' href='https://iitkgp.ac.in/' target='_blank'>IITKgp</a>. I code for fun and food, in that order.
+		
+		<br><br>
+	
+		<ul class='list--no-bullets'>
+			<li><a class='link off-black' href='/'>Home</a></li>
+			<li><a class='link off-black' href='/blog'>Blog</a></li>
+			<li><a class='link off-black' href='/fullstack'>Fullstack</a></li>
+			<li><a class='link off-black' href='/datascience'>Data Science</a></li>
+			<li><a class='link off-black' href='/publications'>Publications</a></li>
+		</ul>
+		<hr />
+		<p>
+    <div class='off-black small-text' style='margin-bottom: 15px;'>Got an idea? Let's nerd it out.</div>
+    <div class="social-media-icons">
+        <a target="_blank" href="https://medium.com/@akshatamohanty"><i class="fa fa-medium"></i></a>
+        <a target="_blank" href="https://github.com/akshatamohanty"><i class="fa fa-github"></i></a>
+        <a target="_blank" href="https://linkedin.com/in/akshatamohanty"><i class="fa fa-linkedin"></i></a>
+        <a target="_blank" href="https://twitter.com/@akshatamohanty"><i class="fa fa-twitter"></i></a>
+    </div>
+</p>
+		<small class='off-black'> © All Rights Reserved.</small>
+	</div>
+</header>
+
+			</div>
+		</article>
+	</main>
 
 </html>
