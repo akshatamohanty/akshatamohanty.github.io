@@ -1,11 +1,11 @@
---
+---
 published: false
+marker: blog
 group: blog
 layout: post
 title:  What I learned from Google
 summary: I recently read <a href='https://www.goodreads.com/book/show/23158207-how-google-works' target='_blank'>How Google Works by Eric Schmidt and Jon Rosenberg</a>. The book talks about Google as a company and provides an inside look into the foundations, principles and culture the company is built on. Though the setting was probably written with the intention of guiding entrepreneurs - I found myself resonating with some of the core values that I'd like to apply to my life. Here are my five personal takeaways from this amazing read
 date:   2019-05-14
-category: book review
 ---
 
 # Be a 'smart creative'

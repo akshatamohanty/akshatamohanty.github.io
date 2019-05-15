@@ -1,11 +1,10 @@
 ---
 layout: post
 group: blog
+marker: tutorial
 title: Exploring Angular Animations by building a slider nav
 summary: Animations are an important part of the user experience. The subtle movements in an app, when done right, not only provide the user with useful feedback but also create an unconscious, favourable impression of 'smoothness' in your application/website. Angular provides a way to add animations to your app, tied to your application logic, with almost similar performance as native CSS animations. 
 date:   2018-04-25
-type: post
-category: tech
 ---
 
 Animations are an important part of the user experience. The subtle movements in an app, when done right, not only provide the user with useful feedback but also create an unconscious, favourable impression of 'smoothness' in your application/website. Angular provides a way to add animations to your app, tied to your application logic, with almost similar performance as native CSS animations. 
