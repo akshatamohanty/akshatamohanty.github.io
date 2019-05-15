@@ -2,6 +2,10 @@
 destination: _site
 encoding: UTF-8
 
+name: Blog by Akshata Mohanty
+description: Blog by Akshata Mohanty
+url: https://akshata.dev
+
 title:            Akshata Mohanty - Fullstack Developer @ Rakuten Viki
 baseurl:          # /blog
 permalink:        /:title:output_ext
