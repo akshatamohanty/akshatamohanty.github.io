@@ -6,516 +6,60 @@
     <link>https://akshata.dev</link>
     <atom:link href="https://akshata.dev/feed.xml" rel="self" type="application/rss+xml" />
     
+      
       <item>
-        <title>How To Create A Landing Page</title>
-        <description>&lt;p&gt;–
-published: false
-group: blog
-layout: post
-title:  What I learned from Google
-summary: I recently read &lt;a href=&quot;https://www.goodreads.com/book/show/23158207-how-google-works&quot; target=&quot;_blank&quot;&gt;How Google Works by Eric Schmidt and Jon Rosenberg&lt;/a&gt;. The book talks about Google as a company and provides an inside look into the foundations, principles and culture the company is built on. Though the setting was probably written with the intention of guiding entrepreneurs - I found myself resonating with some of the core values that I’d like to apply to my life. Here are my five personal takeaways from this amazing read
-date:   2019-05-14
-category: book review
-—&lt;/p&gt;
-
-&lt;h1 id=&quot;be-a-smart-creative&quot;&gt;Be a ‘smart creative’&lt;/h1&gt;
-
-&lt;p&gt;The book talks extensively about &lt;code class=&quot;highlighter-rouge&quot;&gt;smart creatives&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;Googlers&lt;/code&gt;. These are people who are intelligent, agile, grow fast, and have a figure-it-out mentality. They have been described as broad in their knowledge and skills, following core principles of movement, elasticity and speed. Such people form the pillars of Google and the book discesses ways of attracting, managing and retaining such talent.&lt;/p&gt;
-
-&lt;p&gt;The psyche of the smart creative definitely seemed one to strive for! For example, … &lt;code class=&quot;highlighter-rouge&quot;&gt;The ads suck&lt;/code&gt;. how to maintain a culture that enables them to grow and some examples from Google…&lt;/p&gt;
-
-&lt;p&gt;In my journey from being a hobbist to a professional developer, I’ve noticed the values being talked about as being very important and relevant to becoming a great programmer. Good programmers - Question everything. Enhanced curiousity. Hardword. Care about everything. 
-It has served me well to develop a bias towards data and action. Instead of just talking, Googlers say &lt;code class=&quot;highlighter-rouge&quot;&gt;let me show you..&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;concentrate-on-first-principles&quot;&gt;Concentrate on first principles&lt;/h1&gt;
-
-&lt;p&gt;Foundations are important. Everything comes from first principles. Bet on technical insight, not market strategy. The consumer can’t tell you what they want it, if they don’t know if it exists. Google started out with no market strategy per se. Market research can’t tell you what the customer doesn’t yet know he wants; technical acuity can. Example - modern modems without the hissing etc, built for newer PCs. If market research had been followed, backward compatibility with bad user experience would have been enforced.&lt;/p&gt;
-
-&lt;p&gt;Build technical insight and differentiation. Today requires you to grow big fast. Building platforms with a specialization is the key to next generation big products. Follow the hedgehog concept - be amazing at one key thing. Always default to open - open discussions, data. The board letters at Google are always open, the products being developed - anyone can talk to anyone culture.
-Technical insight beats all.&lt;/p&gt;
-
-&lt;p&gt;Always ask the question: what is the most important thing you do? Product managers get asked this.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;prioritize&quot;&gt;Prioritize&lt;/h1&gt;
-
-&lt;p&gt;80% of your time should be dedicated to 80% of your revenue.&lt;/p&gt;
-
-&lt;p&gt;Larry Page became CEO by 38. Eric Scmidt by 42. That’s by which you should be feeling that you are ready to lead a company. 
-Follow: 70-20-10 for resource allocation; 70% on main business, 20% for tested ideas and 10% that’ll change the world.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;keep-it-open&quot;&gt;Keep it open&lt;/h1&gt;
-&lt;p&gt;Facilitate openness and trust.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Snippets&lt;/code&gt; was a quick app build to keep track of work done everyday. It could be compiled for weekly progress reports, milestones etc. Keep repeating your key values - even if in different ways. Eric wanted to prioritize user experience - at one point he correlated it to the increasing sofistication of users because of the increasing length of search queries. People didn’t know that statistic but it re-enforced the concentration on user experience.&lt;/p&gt;
-
-&lt;p&gt;Self review. Compare yourself with yourself  - that would make for a better review. Use that to get reviews from other people - when you are open about yourself - people are more open about you.&lt;/p&gt;
-
-&lt;p&gt;Another key to success, in a big company, is to be an awesome router. Keep the communication going. Larry Page could remember everything that everyone did and follow up. Eric kept notes - but notes only helped him so far. Sometimes he missed the gist that Larry didn’t.&lt;/p&gt;
-
-&lt;p&gt;Make you OKRs openly available. They have to be ambitious. Not sandboxed.&lt;/p&gt;
-
-&lt;p&gt;Optimism is important - to start new products, new startups. People would never take on anything new without optimism.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;be-anti-fragile&quot;&gt;Be anti-fragile&lt;/h1&gt;
-
-&lt;p&gt;Fail well.
-Figure out a way to let people experience the product. Fail fast, fail well. Failure should get you new data, new learnings. You have to fail well. Morph ideas - don’t change them. Iterations should always be based off learnings.&lt;/p&gt;
-
-&lt;p&gt;Be anti-fragile. Resilient remains the same, but anti-fragile changes - evolves.&lt;/p&gt;
-
-&lt;p&gt;Instead of asking what could be true - ask what might be true? Predictions are mostly wrong - by laymen, experts or random change. But trying to work out what might be true - requires imagination.&lt;/p&gt;
-
-&lt;p&gt;You need a coach. Eric Schmidt thought he didn’t but later agreed he was wrong. Coaches aren’t necessarily better than the player - but they are good at observing and giving you feedback. Bill Campbell has coached both Eric and Steve Jobs.&lt;/p&gt;
-
-&lt;p&gt;Have a playbook. For everything. How to do this and that?&lt;/p&gt;
-
-</description>
-        <pubDate>Tue, 14 May 2019 00:00:00 +0000</pubDate>
-        <link>https://akshata.dev//How-to-create-a-landing-page.html</link>
-        <guid isPermaLink="true">https://akshata.dev//How-to-create-a-landing-page.html</guid>
-      </item>
-    
-      <item>
+        <category>google plugin</category>
         <title>batch-mailer</title>
-        <description>
-</description>
-        <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
-        <link>https://akshata.dev//app_template-batch-emails.html</link>
-        <guid isPermaLink="true">https://akshata.dev//app_template-batch-emails.html</guid>
+        <description>plugin for google spreadsheets to send customized batch emails based on templates built in google docs</description>
+        <pubDate>May 2019</pubDate>
+        <link>https://akshata.dev/app_template-batch-emails.html</link>
+        <guid isPermaLink="true">https://akshata.dev/app_template-batch-emails.html</guid>
       </item>
+      
     
+      
       <item>
+        <category>app-starter</category>
         <title>client-ai templates</title>
-        <description>
-</description>
-        <pubDate>Mon, 18 Mar 2019 00:00:00 +0000</pubDate>
-        <link>https://akshata.dev//ai-client-templates.html</link>
-        <guid isPermaLink="true">https://akshata.dev//ai-client-templates.html</guid>
+        <description>templates and workflow for developing for client-only ai apps using tensorflow-js and tensorflow-lite</description>
+        <pubDate>Mar 2019</pubDate>
+        <link>https://akshata.dev/ai-client-templates.html</link>
+        <guid isPermaLink="true">https://akshata.dev/ai-client-templates.html</guid>
       </item>
+      
     
+      
       <item>
+        <category>opensource library</category>
         <title>ngxflowchart</title>
-        <description>
-</description>
-        <pubDate>Tue, 18 Sep 2018 00:00:00 +0000</pubDate>
-        <link>https://akshata.dev//ngxflowchart.html</link>
-        <guid isPermaLink="true">https://akshata.dev//ngxflowchart.html</guid>
+        <description>ngxflowchart is an open source angular library to draw flow diagrams. to challenge myself, i built this using HTML5 elements instead of svg to render the graphics</description>
+        <pubDate>Sep 2018</pubDate>
+        <link>https://akshata.dev/ngxflowchart.html</link>
+        <guid isPermaLink="true">https://akshata.dev/ngxflowchart.html</guid>
       </item>
+      
     
+      
       <item>
+        <category>tutorial</category>
         <title>How to generate PDFs from Gitbook automatically using CI tools</title>
-        <description>&lt;h1 id=&quot;what-is-gitbook&quot;&gt;What is Gitbook?&lt;/h1&gt;
-
-&lt;p&gt;Gitbook is an excellent opensource platform to generate awesome looking documentation and books from simple markdown files. They also have a paid version with an editor. However, the open source free version can easily be paired with Github and Travis to pretty much provide a nice workflow.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;the-requirement&quot;&gt;The Requirement&lt;/h1&gt;
-
-&lt;p&gt;The book in question was hosted on Github as Markdowns organised into folders in the &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt; branch. Travis was then configured to run a command &lt;code class=&quot;highlighter-rouge&quot;&gt;gitpub&lt;/code&gt; that automatically generated the Gitbook, cleans it up and commits it to the &lt;code class=&quot;highlighter-rouge&quot;&gt;gh-pages&lt;/code&gt; branch, from which the github.io page is served. However, we also needed the &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt; branch to have a directly downloadable PDF version of the latest Gitbook output.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;the-problem&quot;&gt;The Problem&lt;/h1&gt;
-&lt;p&gt;Generating a PDF with Gitbook is fairly straightforward using the &lt;code class=&quot;highlighter-rouge&quot;&gt;gitbook pdf &amp;lt;gitbook-folder-location&amp;gt; &amp;lt;pdf-location&amp;gt;.pdf&lt;/code&gt; command. However, running this command inside Travis.CI throws the following Runtime Error.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;File &quot;/usr/bin/ebook-convert&quot;, line 20, in &amp;lt;module&amp;gt;
-    sys.exit(main())
-...
-...
-...
-RuntimeError: X server required. If you are running on a headless machine, use xvfb
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;As is obvious from the error, the error comes from the ebook-convert plugin, that is required by Gitbook for the PDF generation. However, the command &lt;code class=&quot;highlighter-rouge&quot;&gt;ebook-convert&lt;/code&gt; needs to have prepended with &lt;code class=&quot;highlighter-rouge&quot;&gt;xbvf&lt;/code&gt; to run in a headless environment like Travis.&lt;/p&gt;
-
-&lt;p&gt;And …&lt;/p&gt;
-
-&lt;p&gt;There is no direct way to prepend the &lt;code class=&quot;highlighter-rouge&quot;&gt;ebook-convert&lt;/code&gt; because that is getting called by Gitbook internally. Trying to change that, would mean modifying Gitbook for yourself.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;the-solution&quot;&gt;The Solution&lt;/h1&gt;
-
-&lt;p&gt;I found this &lt;a href=&quot;https://www.systutorials.com/241364/how-to-run-gitbook-on-a-headless-server-make-calibre-run-in-headless-server/&quot;&gt;gold nugget&lt;/a&gt; which didn’t work for me but definitely led me to my current solution. The workaround was to ‘wrap’ the &lt;code class=&quot;highlighter-rouge&quot;&gt;ebook-convert&lt;/code&gt; command so that when Gitbook calls &lt;code class=&quot;highlighter-rouge&quot;&gt;ebook-convert&lt;/code&gt;, it is actually calling the wrapper command, that calls the actual command prepended with &lt;code class=&quot;highlighter-rouge&quot;&gt;xbvf&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Steps:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Create a wrapper shell script in the repository (script provided below)&lt;/li&gt;
-  &lt;li&gt;Rename the ebook-covert in your &lt;code class=&quot;highlighter-rouge&quot;&gt;/usr/bin&lt;/code&gt; folder to ebook-convert2 (or something else!)&lt;/li&gt;
-  &lt;li&gt;Move your script to the &lt;code class=&quot;highlighter-rouge&quot;&gt;/usr/bin&lt;/code&gt; folder as &lt;code class=&quot;highlighter-rouge&quot;&gt;ebook-convert&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Allow the script to be excutable (the command will exit with an error if you don’t do this)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;And that’s it! Enjoy your automatic PDFs&lt;/p&gt;
-
-&lt;h1 id=&quot;files&quot;&gt;Files&lt;/h1&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;wrapper-script&quot;&gt;wrapper-script&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Run xvfb-run /usr/bin/ebook-convert2 &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$@&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;xvfb-run /usr/bin/ebook-convert2 &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$@&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;travisyml&quot;&gt;.travis.yml&lt;/h2&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  language: node_js
-  node_js:
-    - &quot;6&quot;
-  before_install:
-    - sudo apt-get install -y calibre
-    - sudo apt-get install xvfb
-  before_script:
-    - npm install gitbook-cli
-    - npm install gitbook-publish@latest
-    - npm install ebook-convert
-    - sudo mv /usr/bin/ebook-convert /usr/bin/ebook-convert2
-    - sudo cp ./ebook-wrapper.sh /usr/bin/ebook-convert
-    - sudo chmod +x /usr/bin/ebook-convert
-  script: 
-    - git config --global user.email &quot;akshatamohanty@gmail.com&quot;
-    - git config --global user.name &quot;Akshata&quot;
-    - gitbook pdf ./ ./published/urban-prototyping.pdf
-    - git add ./published/urban-prototyping.pdf
-    - git status
-    - git commit -m&quot;Published PDF&quot; 
-    - git status
-    - git push &quot;https://{USER_NAME}:${GITHUB_TOKEN}@github.com/${GITHUB_REPO}&quot; master
-    - gitpub
-    - git branch
-    - git remote -v
-    - git push --force &quot;https://{USER_NAME}:${GITHUB_TOKEN}@github.com/${GITHUB_REPO}&quot; gh-pages 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Wed, 08 Aug 2018 00:00:00 +0000</pubDate>
-        <link>https://akshata.dev//blog_Automated-PDF-Generation-With-Gitbook-and-Travis.html</link>
-        <guid isPermaLink="true">https://akshata.dev//blog_Automated-PDF-Generation-With-Gitbook-and-Travis.html</guid>
+        <description>Gitbook is an open-source utility that makes it easy to generate well-formatted documentation and e-books. Combining the workflow with Travis is easy too. Trying to generate a PDF automatically though, inside the Travis environment had some hiccups. This is how to get around it.</description>
+        <pubDate>Aug 2018</pubDate>
+        <link>https://akshata.dev/blog_Automated-PDF-Generation-With-Gitbook-and-Travis.html</link>
+        <guid isPermaLink="true">https://akshata.dev/blog_Automated-PDF-Generation-With-Gitbook-and-Travis.html</guid>
       </item>
+      
     
+      
       <item>
+        <category>npm command</category>
         <title>gitpub</title>
-        <description>
-</description>
-        <pubDate>Mon, 30 Jul 2018 00:00:00 +0000</pubDate>
-        <link>https://akshata.dev//app_Automated-Gitbook-Publishing.html</link>
-        <guid isPermaLink="true">https://akshata.dev//app_Automated-Gitbook-Publishing.html</guid>
+        <description>an npm utility to automatically publish markdown files as Gitbooks, using Travis.CI</description>
+        <pubDate>Jul 2018</pubDate>
+        <link>https://akshata.dev/app_Automated-Gitbook-Publishing.html</link>
+        <guid isPermaLink="true">https://akshata.dev/app_Automated-Gitbook-Publishing.html</guid>
       </item>
-    
-      <item>
-        <title>Understanding dynamic programming concepts with the coin-change example</title>
-        <description>&lt;h1 id=&quot;what-is-dynamic-programming&quot;&gt;What is Dynamic Programming?&lt;/h1&gt;
-
-&lt;p&gt;Dynamic Programming is a method of problem-solving where you breakdown the problems into smaller subproblems, similar to the original problem. It may or maynot use recursion.&lt;/p&gt;
-
-&lt;p&gt;For example, the pet question to apply DP can be to get the nth term of the Fibonacci Series;
-By definition, F(n) = F(n-1) + F(n-2)&lt;/p&gt;
-
-&lt;div class=&quot;language-py highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;## recursive function&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;fibonacci&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fibonacci&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fibonacci&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    
-    
-&lt;span class=&quot;c&quot;&gt;# print 50th term&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fibonacci&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;If I tabulate the iterations:&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;calling-function&lt;/th&gt;
-      &lt;th&gt;dependency&lt;/th&gt;
-      &lt;th&gt;dependency&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;fib(50)&lt;/td&gt;
-      &lt;td&gt;fib(49)&lt;/td&gt;
-      &lt;td&gt;fib(48)&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;fib(49)&lt;/td&gt;
-      &lt;td&gt;fib(48)&lt;/td&gt;
-      &lt;td&gt;fib(47)&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;fib(48)&lt;/td&gt;
-      &lt;td&gt;fib(47)&lt;/td&gt;
-      &lt;td&gt;fib(46)&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;fib(47)&lt;/td&gt;
-      &lt;td&gt;fib(46)&lt;/td&gt;
-      &lt;td&gt;fib(45) … and so on&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;Notice how fib(48), fib(47)… are all repeated? Well, that’s redundant. We can reduce this redundancy by saving the computed values in a lookup table. This saving of results, is known as &lt;strong&gt;Memoization&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-py highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;## recursive function&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;fibonacci&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lookup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lookup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fibonacci&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fibonacci&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;lookup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;
-    
-&lt;span class=&quot;n&quot;&gt;lookup&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# print 50th term&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fibonacci&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;how-is-it-different-from-divide-and-conquer&quot;&gt;How is it different from Divide and Conquer?&lt;/h1&gt;
-&lt;p&gt;Divide and Conquer algorithms like split a problem into smaller problems, solve each of them and &lt;strong&gt;combine&lt;/strong&gt; the results. Dynamic Programming on the other hand is used to solve problems with &lt;strong&gt;overlapping subproblems&lt;/strong&gt;, for example, like in the Fibonacci term computation explained earlier, where the same subproblem was required multiple times.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;how-to-know-if-a-problem-can-be-solved-with-dp&quot;&gt;How to know if a problem can be solved with DP?&lt;/h1&gt;
-
-&lt;p&gt;DP Problems usually have the following characteristics:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;For optimization problems, with a focus on arrangement or ordering of the elements&lt;/li&gt;
-  &lt;li&gt;They can be broken down into subproblems which as similar to the main problem&lt;/li&gt;
-  &lt;li&gt;The global optimum found using DP will usualy be more efficient and better than those found by typical heuristics&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;linear-partition-problem-work-in-progress&quot;&gt;Linear Partition Problem (work-in-progress)&lt;/h1&gt;
-&lt;p&gt;This problem has been described in Steven Skiena, and took me no less than 3 hours to get my head around. Hence, the &lt;strong&gt;attempt&lt;/strong&gt; to explain it…&lt;/p&gt;
-
-&lt;h2 id=&quot;problem-statement&quot;&gt;Problem Statement:&lt;/h2&gt;
-&lt;p&gt;Suppose the job scanning through a shelf of books is to be split between k workers. To avoid the need to rearrange the books or separate them into piles, we can divide the shelf into k regions and assign each region to one worker.
-What is the fairest way to divide the shelf up?&lt;/p&gt;
-
-&lt;p&gt;The first thing to understand is the ‘fairest’ way to divide the shelf up. The fairest way would be when all partitions are as close as possible to the sum of all pages divided equally amongst the workers.&lt;/p&gt;
-
-&lt;p&gt;Let’s start with a fair solutions - say there are 300 pages, and 3 workers.&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Solution&lt;/th&gt;
-      &lt;th&gt;Partition A&lt;/th&gt;
-      &lt;th&gt;Partition B&lt;/th&gt;
-      &lt;th&gt;Partition C&lt;/th&gt;
-      &lt;th&gt;Average&lt;/th&gt;
-      &lt;th&gt;max&lt;/th&gt;
-      &lt;th&gt;min&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Fairest&lt;/td&gt;
-      &lt;td&gt;100&lt;/td&gt;
-      &lt;td&gt;100&lt;/td&gt;
-      &lt;td&gt;100&lt;/td&gt;
-      &lt;td&gt;100&lt;/td&gt;
-      &lt;td&gt;100&lt;/td&gt;
-      &lt;td&gt;100&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Less Fair&lt;/td&gt;
-      &lt;td&gt;101&lt;/td&gt;
-      &lt;td&gt;100&lt;/td&gt;
-      &lt;td&gt;99&lt;/td&gt;
-      &lt;td&gt;100&lt;/td&gt;
-      &lt;td&gt;101&lt;/td&gt;
-      &lt;td&gt;99&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Least Fair&lt;/td&gt;
-      &lt;td&gt;120&lt;/td&gt;
-      &lt;td&gt;110&lt;/td&gt;
-      &lt;td&gt;70&lt;/td&gt;
-      &lt;td&gt;100&lt;/td&gt;
-      &lt;td&gt;120&lt;/td&gt;
-      &lt;td&gt;70&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;Now, the criteria of evaluation would be to check how much further from the average are each of the partition assignments. However, the constraint that the total sum of pages is constant means that if one partition is say 50 more from the average, it would pull the other two away by a sum of 50 pages from the average, to keep the total number of pages the same. Hence, if the largest partition is smaller, the amount of deviation of the other partitions is also smaller.&lt;/p&gt;
-
-&lt;p&gt;So, this problem can be redescribed as - partition the set of books in such a way, maximum of the partitions is the minimum of all solutions available, i.e, if each partition is pln_n, we need to find - 
-min ( max(pln_1), max(pln_2), max(pln_3) .. )&lt;/p&gt;
-
-&lt;p&gt;Dynamic Programming is a systematic approach that evaluation all possible options;&lt;/p&gt;
-
-&lt;p&gt;Say the books have the following number of pages:
-S1 S2 S3 S4 S5 S6 S7 S8&lt;/p&gt;
-
-&lt;p&gt;Let the initial problem be - P(8, 3) i.e 8 elements with 3 partitions, which return the maximum of the partitions of the solution.&lt;/p&gt;
-
-&lt;p&gt;And we put our first partition after S1 …&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;S1&lt;/td&gt;
-      &lt;td&gt;S2 S3 S4 S5 S6 S7 S8&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;There are two options now - either our optimum solution has a partition after S1 or… it doesn’t.&lt;/p&gt;
-
-&lt;p&gt;Case 1: 
-Our optimum solution has a partition after S1. Now S2, S3… S8, need to be divided by k-1 partitions in such a way, that the maxmimum of those partitions is minimum …. which is exactly the problem we are trying to solve - but with lesser elements and lesser partitions i.e P(7, 2)&lt;/p&gt;
-
-&lt;p&gt;Case 2: 
-Our optimum solution doesn’t have a partition after S1. So, we look at the next solution, we might have a partition after S2. And again this reduces to the same problem as the original problem - P(5, 2)&lt;/p&gt;
-
-&lt;p&gt;.. This goes on progressively till we reach the end of where the first partition might be placed.&lt;/p&gt;
-
-&lt;p&gt;Now, we need the minimum of Case 1 and Case 2&lt;/p&gt;
-
-&lt;p&gt;min ( P(7, 2), P(6, 2), P(5, 2) .. )&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;questions&quot;&gt;Questions&lt;/h1&gt;
-
-&lt;p&gt;https://www.codechef.com/ZCOPRAC/problems/ZCO14002&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# wip
-
-def mt(s, st=0):
-    if len(s) == 0:
-        return 0
-    
-    min_time = []
-    final = None
-    if not (lookup[st] == None):
-        return lookup[st]
-    elif len(s) &amp;lt; 4:
-        final = s[0]
-    else:
-        a = mt(s[1:], st+1)
-        b = mt(s[2:], st+2)
-        c = mt(s[3:], st+3)
-        final = s[0] + min(a, b, c)
-    lookup[st] = final
-    return final
-
-
-for test in range(12):
-    days = input(&quot;Enter days&quot;)
-    inp = input(&quot;Enter sequence&quot;)
-    seq = [ int(z) for z in inp.split() ]
-    lookup = [None]*len(seq)
-    mt(seq)
-    print(min(lookup[0:3]))
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;resources&quot;&gt;Resources&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;The Algorithm Design Manual - Steven Skiena&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Wed, 06 Jun 2018 00:00:00 +0000</pubDate>
-        <link>https://akshata.dev//blog_Dynamic-Programming.html</link>
-        <guid isPermaLink="true">https://akshata.dev//blog_Dynamic-Programming.html</guid>
-      </item>
-    
-      <item>
-        <title>ai nanodegree</title>
-        <description>&lt;h1 id=&quot;artificial-intelligence-nanodegree&quot;&gt;Artificial Intelligence Nanodegree&lt;/h1&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h3 id=&quot;project-1-sudoku-solver-using-constraint-propagation-technique&quot;&gt;Project 1: Sudoku Solver, using constraint propagation technique&lt;/h3&gt;
-&lt;p&gt;This was an introductory project to build a Sudoku Solver using contraint propagation. Template code was provided with python functions that needed to be completed. Students were also expected to answer questions about Constraint Propogation. Find my Python solution &lt;a href=&quot;https://github.com/akshatamohanty/udacity-ai-nanodegree/blob/master/project-01-sudoku/solution.py&quot;&gt;here&lt;/a&gt; and my assignments &lt;a href=&quot;https://github.com/akshatamohanty/udacity-ai-nanodegree/blob/master/project-01-sudoku/README.md&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;project-2-game-playing-agent-using-min-max-and-alpha-beta-pruning-strategies&quot;&gt;Project 2: Game Playing Agent, using min-max and alpha-beta pruning strategies&lt;/h3&gt;
-&lt;p&gt;This was the second project in the nanodegree and we were required to build an adverserial game playing agent for the game. To build the isolation agent - I explored combinations of various strategies such as min-max search, alpha beta pruning with iterative deeping and evaluated 5-6 heuristics to determine the best performing one for position evalution. Find my game &lt;a href=&quot;https://github.com/akshatamohanty/udacity-ai-nanodegree/blob/master/project-02-isolation/game_agent.py&quot;&gt;here&lt;/a&gt; and a report for my heuristic analysis &lt;a href=&quot;https://github.com/akshatamohanty/udacity-ai-nanodegree/blob/master/project-02-isolation/heuristic_analysis.pdf&quot;&gt;here&lt;/a&gt;. I also summarized a research paper on Game Playing Agents and provide a report analyzing different heuristics for game board evaluation: &lt;a href=&quot;https://github.com/akshatamohanty/udacity-ai-nanodegree/blob/master/project-02-isolation/research_review.pdf&quot;&gt;Research Review: Game Tree Searching by MinMax Approximation by Ron Rivest&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;project-3-optimal-airplane-routes-using-search-algorithms&quot;&gt;Project 3: Optimal Airplane Routes, using search algorithms&lt;/h3&gt;
-&lt;p&gt;The third project was to implement heuristic and non-heuristic planning searches for a airplane cargo problem. The algorithms I implemented were ([code])(https://github.com/akshatamohanty/udacity-ai-nanodegree/blob/master/project-02-isolation/game_agent.py)&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;breadth first search&lt;/li&gt;
-  &lt;li&gt;depth first search&lt;/li&gt;
-  &lt;li&gt;A* star search&lt;/li&gt;
-  &lt;li&gt;A* with level sum search&lt;/li&gt;
-  &lt;li&gt;depth limited search&lt;/li&gt;
-  &lt;li&gt;uniform cost search&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The report analyzing the performance of the different search algorithms is here: &lt;a href=&quot;https://github.com/akshatamohanty/udacity-ai-nanodegree/blob/master/project-02-isolation/heuristic_analysis.pdf&quot;&gt;Heuristic Analysis&lt;/a&gt;. I also wrote a report on historical developments in AI: &lt;a href=&quot;https://github.com/akshatamohanty/udacity-ai-nanodegree/blob/master/project-02-isolation/research_review.pdf&quot;&gt;Research Review: Historical Developments in AI&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;project-4-sign-language-recognizer-using-probabilistic-models&quot;&gt;Project 4: Sign Language Recognizer, using probabilistic models&lt;/h3&gt;
-&lt;p&gt;I used &lt;strong&gt;hidden Markov models&lt;/strong&gt; in this project, to output translations for videos with people communicating using the Amerial Sign Langugage. I explored different feature sets using this data, progressed to training models for each word using &lt;code class=&quot;highlighter-rouge&quot;&gt;hmm&lt;/code&gt; and implemented and analyzed three different methods for model selection - cross validation folds, Bayesian Information Criterion and Discriminative Information Criterion. Finally, I put the feature set and models together to build an &lt;a href=&quot;https://github.com/akshatamohanty/udacity-ai-nanodegree/blob/master/project-04-recognizer/asl_recognizer.ipynb&quot;&gt;ASL recognizer&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h3 id=&quot;project-5-dog-breed-classifier-using-convolutional-neural-networks-cnns&quot;&gt;Project 5: Dog Breed Classifier, using Convolutional Neural Networks (CNNs)&lt;/h3&gt;
-&lt;p&gt;This was the first project in the degree, using deep neural networks. I used a Convolutional Neural Networks using Keras, to create an image classfiier for dogs. I explored various concepts such as data augmentation, transfer learning, haarcascades, object detection and recognition to create a &lt;a href=&quot;https://github.com/akshatamohanty/udacity-ai-nanodegree/blob/master/project-02-isolation/game_agent.py&quot;&gt;model&lt;/a&gt; that  could predict if it was a human or a dog, and the resemblance of either, to a dog breed.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h3 id=&quot;project-6a-stockprice-prediction-using-rnns-for-time-series-prediction&quot;&gt;Project 6a: Stockprice Prediction, using RNNs for time series prediction&lt;/h3&gt;
-&lt;p&gt;In this project, I used Apple Stock Prices as time series data and created a model to predict future prices. The constructed model was an RNN, built with Keras, using LSTM units of specified dimensions. Find my model &lt;a href=&quot;https://github.com/akshatamohanty/udacity-ai-nanodegree/blob/master/project-06-aind2-rnn/StockPricePrediction.ipynb&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h3 id=&quot;project-6b-text-generation-using-rnns&quot;&gt;Project 6b: Text Generation, using RNNs&lt;/h3&gt;
-&lt;p&gt;For this project, I created a set of functions to properly window a large input text corpus for certain given dimensions. Then, I constructed an RNN model in Keras, using LSTM cells, to perform multiclass classification. Using this model, I generated text by progressiving giving it a variety of input sequences, demostrated &lt;a href=&quot;https://github.com/akshatamohanty/udacity-ai-nanodegree/blob/master/project-02-isolation/game_agent.py&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h3 id=&quot;capstone-project-speech-recognition-specialization-voice-user-interfaces&quot;&gt;Capstone Project: Speech Recognition [Specialization: Voice User Interfaces]&lt;/h3&gt;
-&lt;p&gt;This was the final capstone project for the nanodegree. The project was to build a deep neural network that functions as part of an end-to-end automatic speech recognition (ASR) pipeline! I experimented with five models using various layers and configurations such as RNNs (GRU, LSTM), Bidirectional RNNs, CNN + RNNs, RNN + Time Distributed Dense, Dropout, Batch Normalization, etc. I also evaluated and analyzed the performance of each of these models and suggested ways of improving the same. Find this project &lt;a href=&quot;https://github.com/akshatamohanty/udacity-ai-nanodegree/blob/master/project-02-isolation/game_agent.py&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;certificate&quot;&gt;Certificate!!&lt;/h3&gt;
-&lt;p&gt;My certificate lives &lt;a href=&quot;https://confirm.udacity.com/QEJPWSRW&quot;&gt;here&lt;/a&gt;!&lt;/p&gt;
-</description>
-        <pubDate>Sat, 02 Jun 2018 00:00:00 +0000</pubDate>
-        <link>https://akshata.dev//ai-nanodegree.html</link>
-        <guid isPermaLink="true">https://akshata.dev//ai-nanodegree.html</guid>
-      </item>
-    
-      <item>
-        <title>dogmate</title>
-        <description>
-</description>
-        <pubDate>Sat, 02 Jun 2018 00:00:00 +0000</pubDate>
-        <link>https://akshata.dev//dog-breed-classifier.html</link>
-        <guid isPermaLink="true">https://akshata.dev//dog-breed-classifier.html</guid>
-      </item>
-    
-      <item>
-        <title>sudoku solver</title>
-        <description>
-</description>
-        <pubDate>Sat, 02 Jun 2018 00:00:00 +0000</pubDate>
-        <link>https://akshata.dev//sudoku-solver.html</link>
-        <guid isPermaLink="true">https://akshata.dev//sudoku-solver.html</guid>
-      </item>
+      
     
   </channel>
 </rss>
