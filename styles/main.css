@@ -107,6 +107,9 @@ p {
   min-width: 250px; }
   .nav--side .main__title {
     color: #3F4651; }
+  .nav--side li.active a {
+    color: rgba(231, 112, 0, 0.692);
+    font-weight: 900; }
 
 .social-media-icons .fa {
   font-size: 14px;
