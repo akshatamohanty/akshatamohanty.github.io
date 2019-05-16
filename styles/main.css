@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?Ubuntu:400,600,800");
 html {
   position: relative;
   font-size: 10px; }
@@ -10,7 +11,7 @@ body {
   height: 100vh;
   font-size: 1.6rem;
   line-height: 180%;
-  font-family: Helvetica, sans-serif; }
+  font-family: 'Ubuntu', sans-serif; }
   body:before {
     content: '';
     position: fixed;
@@ -106,9 +107,6 @@ p {
   min-width: 250px; }
   .nav--side .main__title {
     color: #3F4651; }
-  .nav--side li.active a {
-    color: rgba(231, 112, 0, 0.692);
-    font-weight: 900; }
 
 .social-media-icons .fa {
   font-size: 14px;
@@ -226,14 +224,11 @@ footer {
     color: inherit; }
 
 .post-wrapper {
-  max-width: 700px;
+  max-width: 600px;
   margin: 0 auto;
   padding-top: 60px; }
   .post-wrapper.blog-post-container {
     padding: 0 30px; }
-  .post-wrapper img {
-    width: 100%;
-    margin: 15px 0; }
 
 .post__title {
   color: #3F4651;
