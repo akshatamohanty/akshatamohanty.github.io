@@ -8,17 +8,6 @@
     
       
       <item>
-        <category>blog</category>
-        <title>A walk with Googlers</title>
-        <description>I am trying to lose weight. And I figured the laziest way of doing that was to walk 4 kilometers back home from work. However, it gets lonely alone - there's only so much streetscape in Singapore! So I picked up How Google Works by Eric Schmidt and Jon Rosenberg to give me company as an audiobook. I don't really know if I lost a lot of weight in the process, but it definitely added a lot to my brain!</description>
-        <pubDate>May 2019</pubDate>
-        <link>https://akshata.dev/what-I-learned-from-google.html</link>
-        <guid isPermaLink="true">https://akshata.dev/what-I-learned-from-google.html</guid>
-      </item>
-      
-    
-      
-      <item>
         <category>google plugin</category>
         <title>batch-mailer</title>
         <description>plugin for google spreadsheets to send customized batch emails based on templates built in google docs</description>
@@ -58,6 +47,17 @@
         <pubDate>Aug 2018</pubDate>
         <link>https://akshata.dev/blog_Automated-PDF-Generation-With-Gitbook-and-Travis.html</link>
         <guid isPermaLink="true">https://akshata.dev/blog_Automated-PDF-Generation-With-Gitbook-and-Travis.html</guid>
+      </item>
+      
+    
+      
+      <item>
+        <category>npm command</category>
+        <title>gitpub</title>
+        <description>an npm utility to automatically publish markdown files as Gitbooks, using Travis.CI</description>
+        <pubDate>Jul 2018</pubDate>
+        <link>https://akshata.dev/app_Automated-Gitbook-Publishing.html</link>
+        <guid isPermaLink="true">https://akshata.dev/app_Automated-Gitbook-Publishing.html</guid>
       </item>
       
     
