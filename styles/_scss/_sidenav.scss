@@ -35,7 +35,11 @@
 
 	.main__title {
         color: $black;
-    }
+	}
+	
+	li.active a {
+		color: $font-color-muted;
+	}
 }
 
 

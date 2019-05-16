@@ -16,14 +16,14 @@
 			</div>
 			<div class='col-md-8 offset-md-4 container--main'>
 					{% for page in site.pages %}
-						{% if page.isCategory == true and page.page != 'all' and page.page != 'blog' %}
+						{% if page.isCategory == true and page.page != 'all' %}
 						<div>
 							{%  include page-elements/section-header.html %}
 							<div>
 								{% for post in site.posts %}
 									{% if post.group == page.page and post.showcase == true %}
 										{% if post.group == 'blog' %}
-											<!-- {% include page-elements/blog-post-container.html %} -->
+											{% include page-elements/blog-post-container.html %}
 										{% else %}
 											{% include page-elements/post-container.html %}
 										{% endif %}
