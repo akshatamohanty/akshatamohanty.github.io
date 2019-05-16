@@ -107,6 +107,8 @@ p {
   min-width: 250px; }
   .nav--side .main__title {
     color: #3F4651; }
+  .nav--side li.active a {
+    color: rgba(231, 112, 0, 0.692); }
 
 .social-media-icons .fa {
   font-size: 14px;
@@ -224,11 +226,13 @@ footer {
     color: inherit; }
 
 .post-wrapper {
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto;
   padding-top: 60px; }
   .post-wrapper.blog-post-container {
     padding: 0 30px; }
+  .post-wrapper img {
+    width: 100%; }
 
 .post__title {
   color: #3F4651;
