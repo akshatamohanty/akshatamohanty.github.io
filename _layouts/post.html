@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
 	
-	{% include page-elements/head.html %}
+	{% include page-elements/head-for-blog.html %}
 
-	<main>
-		<article class="post-wrapper blog-post-container"> 
-			<a class='back' href='/blog'>Back to blog</a>
-
+	<main class="post-wrapper blog-post-container">
+		<a class='back' href='/blog'>Back to blog</a>
+		<article> 
 			<div class='blog-post__content'>
 				<div class='post__meta'>
 					<span class='date'>{{page.date | date: "%B %Y"}}</span>
@@ -19,12 +18,16 @@
 				<p>{{ page.summary }}</p>
 				<br><br><hr /><br><br>
 				<div class='post__content'>{{ page }}</div>
-				<br><hr /><br>
-				<h3>About the author</h3>
-				<br><br>
-				{% include page-elements/about.html %}
+				<br>
 			</div>
 		</article>
+		{% include page-elements/social-media-share.html %}
+		<hr />
+		<br>
+		<h3>About the author</h3>
+		<br>
+		<br>
+		{% include page-elements/about.html %}
 	</main>
 
 </html>
