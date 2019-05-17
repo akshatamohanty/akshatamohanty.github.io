@@ -12,7 +12,7 @@
             <i class="fa fa-linkedin"></i>
         </a>
         <a target="_blank" 
-            href='http://www.reddit.com/submit?url={{site.url}}{{page.url}}&title={{page.title}} by @akshatamohanty'>
+            href='http://www.reddit.com/submit?url={{site.url}}{{page.url}}&title={{page.title | url_encode}}%20by%20@akshatamohanty'>
             <i class="fa fa-reddit"></i>
         </a>
         <a href="whatsapp://send?text={{page.title | url_encode}}%20by%20Akshata Mohanty%20{{site.url}}{{page.url}}" 
