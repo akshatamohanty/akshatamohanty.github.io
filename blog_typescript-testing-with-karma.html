@@ -2,43 +2,54 @@
 <html>
 	
 	<head>
-	<title>Akshata Mohanty - Fullstack Developer @ Rakuten Viki</title>
+        <title>Akshata Mohanty - Fullstack Developer @ Rakuten Viki</title>
+    
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <meta property="og:title" content="How to integrate Jasmine testing framework for Typescript" />
+        <meta property="og:description" content="Test-driven development (TDD) is a best practice for clean, robust production-grade code. However, setting up these testing frameworks can be daunting. Here are some of the lessons I learned while setting up Jasmine testing framework for Typescript" />
+        <meta property="og:image" content= />
+        <meta property="og:image:width" content="400" />
+        <meta property="og:image:height" content="300" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content=https://akshata.dev/blog_typescript-testing-with-karma.html />
+        <meta property="article:published_time" content="2017-11-07T00:00:00+00:00">
+        <meta property="article:author" content="https://akshata.dev">
+        <meta property="og:site_name" content='Blog by Akshata Mohanty' />
+        <meta property="og:type" content='Blog by Akshata Mohanty' />
+        
+        <meta itemprop="keywords" content="" />
+        
+        
+            
+        <!-- Latest compiled and minified CSS for Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+        <!-- main stylesheet -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        <link rel="stylesheet" type="text/css" href="/styles/main.css">
+        <link href='https://akshata.dev/feed.xml' rel='alternate' type='application/atom+xml'>
+    
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111560396-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+    
+            gtag('config', 'UA-111560396-1');
+        </script>
+    </head>
 
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-	<meta property="og:title" content="Akshata Mohanty - Fullstack Developer @ Rakuten Viki" />
-	<meta property="og:description" content="I code for fun and food, in that order." />
-	<meta property="og:image" content="https://akshata.dev/assets/jumpup.jpg" />
-
-    <!-- Latest compiled and minified CSS for Bootstrap -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-	<!-- main stylesheet -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-	<link rel="stylesheet" type="text/css" href="/styles/main.css">
-	<link href='https://akshata.dev/feed.xml' rel='alternate' type='application/atom+xml'>
-
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111560396-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'UA-111560396-1');
-	</script>
-</head>
-
-	<main>
-		<article class="post-wrapper blog-post-container"> 
-			<a class='back' href='/blog'>Back to blog</a>
-
+	<main class="post-wrapper blog-post-container">
+		<a class='back' href='/blog'>Back to blog</a>
+		<article> 
 			<div class='blog-post__content'>
 				<div class='post__meta'>
 					<span class='date'>November 2017</span>
@@ -116,10 +127,45 @@
 <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="s2">"build-docs"</span><span class="p">:</span> <span class="s2">"typedoc --out ./docs ./src --module commonjs"</span>
 </code></pre></div></div>
 </div>
-				<br><hr /><br>
-				<h3>About the author</h3>
-				<br><br>
-				<header class='main'>
+				<br>
+			</div>
+		</article>
+		<p>
+    <h3>Liked this article? Please share!</h3>
+    <div class="social-media-icons">
+        <a class="twitter-share-button"
+            href="https://twitter.com/intent/tweet?text=How to integrate Jasmine testing framework for Typescript by @akshatamohanty&url=https://akshata.dev/blog_typescript-testing-with-karma.html"
+            target="_blank"
+            data-size="large">
+            <i class="fa fa-twitter"></i>
+        </a>
+        <a target="_blank" 
+            href="https://www.linkedin.com/sharing/share-offsite/?url=https://akshata.dev/blog_typescript-testing-with-karma.html">
+            <i class="fa fa-linkedin"></i>
+        </a>
+        <a target="_blank" 
+            href='http://www.reddit.com/submit?url=https://akshata.dev/blog_typescript-testing-with-karma.html&title=How to integrate Jasmine testing framework for Typescript by @akshatamohanty'>
+            <i class="fa fa-reddit"></i>
+        </a>
+        <a href="whatsapp://send" 
+            data-text=How to integrate Jasmine testing framework for Typescript
+            data-href=https://akshata.dev/blog_typescript-testing-with-karma.html>
+            <i class="fa fa-whatsapp"></i>
+        </a>
+        <a target="_blank" 
+            href="http://news.ycombinator.com/submitlink?u=https://akshata.dev/blog_typescript-testing-with-karma.html&t=How to integrate Jasmine testing framework for Typescript by Akshata Mohanty">
+            <i class="fa fa-y-combinator"></i>
+        </a>
+    </div>
+</p>
+<br />
+
+		<hr />
+		<br>
+		<h3>About the author</h3>
+		<br>
+		<br>
+		<header class='main'>
 	<div class='img--profile'></div>
 	<br>
 	<h2 class='main__title'>Akshata Mohanty</h2>
@@ -188,8 +234,6 @@
 	</div>
 </header>
 
-			</div>
-		</article>
 	</main>
 
 </html>
