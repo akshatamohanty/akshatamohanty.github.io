@@ -182,6 +182,9 @@ article.post {
 .section-header {
   color: #3F4651; }
 
+.category .section-header .link--more {
+  display: none; }
+
 .list--tags {
   list-style: none;
   margin: 10px 0px 15px 0px;
