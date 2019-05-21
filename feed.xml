@@ -16,8 +16,8 @@ layout: none
         <title>{{ post.title }}</title>
         <description>{{ post.summary | strip_html }}</description>
         <pubDate>{{ post.date | date: "%b %Y" }}</pubDate>
-        <link>{{ site.url }}{{ post.url }}</link>
-        <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
+        <link>{% if post.projecturl %}{{ post.projecturl }}{% else %}{{ site.url }}{{post.url}}{% endif %} </link>
+        <guid isPermaLink="true">{% if post.projecturl %}{{ post.projecturl }}{% else %}{{ site.url }}{{post.url}}{% endif %}</guid>
       </item>
       {% endif %}
     {% endfor %}

@@ -7,4 +7,6 @@ title: data science projects
 description: 
 permalink: /datascience
 short: data science
+pagination: 
+  enabled: true
 ---

@@ -14,15 +14,14 @@
                 {% include page-elements/social-media.html %} -->
                 <!-- <small class='off-black'> © All Rights Reserved.</small> -->
 			</div>
-			<div class='col-md-8 offset-md-4 container--main'>
+			<div class='col-md-8 offset-md-4 container--main category'>
                 <!-- {% include page-elements/simplenav.html %} -->
-
                 <div>
                     {%  include page-elements/section-header.html %}
                     <div>
                         {% for post in site.posts %}
                             {% if post.group == page.page %}    
-                                {% if post.group == 'blog' %}
+                                {% if post.group == 'blog' or post.group == 'publications' %}
                                     {% include page-elements/blog-post-container.html %}
                                 {% else %}
                                     {% include page-elements/post-container.html %}

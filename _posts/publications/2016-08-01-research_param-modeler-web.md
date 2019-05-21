@@ -1,8 +1,7 @@
 ---
 layout: post
-group: research
+group: publications
 marker: conference paper
-showcase: true
 title:  "Möbius: A Parametric Modeller for the Web"
 authors: Janssen, P, Li, R, and Mohanty, A (2016)
 details: Proceedings of CAADRIA 2016, 22-26 August 2016, Melbourne, Australia, pp. 157–166.

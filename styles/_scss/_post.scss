@@ -42,6 +42,10 @@ article.post{
 	color: $body-font-color;
 }
 
+.category .section-header .link--more {
+	display: none;
+}
+
 
 .list--tags{
 	list-style: none;
