@@ -2,8 +2,8 @@
 destination: _site
 encoding: UTF-8
 
-name: Blog by Akshata Mohanty
-description: Blog by Akshata Mohanty
+name: Akshata Mohanty's Personal Website
+description: Collection of projects, code snippets, articles and random musings by self taught developer
 url: https://akshata.dev
 
 title:            Akshata Mohanty - Fullstack Developer @ Rakuten Viki
@@ -59,3 +59,5 @@ pagination:
   # Optional, the default category to use, omit or just leave this as 'posts' to get a backwards-compatible behavior (all posts)
   category: 'posts'
 ############################################################
+plugins:
+  - jekyll-sitemap
