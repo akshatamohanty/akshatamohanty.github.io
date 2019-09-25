@@ -2,7 +2,7 @@
 layout: post
 group: blog
 marker: tutorial
-title: Exploring Angular Animations by building a slider nav
+title: How to use animations in Angular?
 summary: Animations are an important part of the user experience. The subtle movements in an app, when done right, not only provide the user with useful feedback but also create an unconscious, favourable impression of 'smoothness' in your application/website. Angular provides a way to add animations to your app, tied to your application logic, with almost similar performance as native CSS animations. 
 date:   2018-04-25
 ---
@@ -101,7 +101,7 @@ The slider_state variable needs to be controlled in your component file. In this
 When the button is clicked, it changes the value of slider_state, as shown below, hence triggering the animation.
 
 ***app.component.html***
-```
+```html
 <button (click)="toggleSlider()">Toggle Slider</button>
 
 <div id="slide-nav"  [@slide_in_out]="slider_state">
@@ -112,7 +112,7 @@ When the button is clicked, it changes the value of slider_state, as shown below
 
 
 ***app.component.ts***
-```
+```ts
   slider_state:string = "slide_in";
   toggleSlider(): void{
     // do something to change the animation_state variable

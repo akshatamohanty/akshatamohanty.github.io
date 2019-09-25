@@ -2,12 +2,11 @@
 destination: _site
 encoding: UTF-8
 
-name: Akshata Mohanty's Personal Website
+name: Akshata's Repository
 description: Collection of projects, code snippets, articles and random musings by self taught developer
 url: https://akshata.dev
 
-title:            Akshata Mohanty - Fullstack Developer @ Rakuten Viki
-baseurl:          # /blog
+title:            Akshata's Repository
 permalink:        /:title:output_ext
 
 sass:
