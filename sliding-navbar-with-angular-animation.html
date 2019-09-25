@@ -2,19 +2,19 @@
 <html>
 	
 	<head>
-        <title>Akshata Mohanty - Fullstack Developer @ Rakuten Viki</title>
+        <title>How to use animations in Angular?</title>
     
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-        <meta property="og:title" content="Exploring Angular Animations by building a slider nav" />
+        <meta property="og:title" content="How to use animations in Angular?" />
         <meta property="og:description" content="Animations are an important part of the user experience. The subtle movements in an app, when done right, not only provide the user with useful feedback but also create an unconscious, favourable impression of 'smoothness' in your application/website. Angular provides a way to add animations to your app, tied to your application logic, with almost similar performance as native CSS animations." />
         <meta property="og:image" content= />
         <meta property="og:image:width" content="400" />
         <meta property="og:image:height" content="300" />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content=https://akshata.dev/blog_Basic-Angular-Animations.html />
+        <meta property="og:url" content=https://akshata.dev/sliding-navbar-with-angular-animation.html />
         <meta property="article:published_time" content="2018-04-25T00:00:00+00:00">
         <meta property="article:author" content="https://akshata.dev">
         <meta property="og:site_name" content='Blog by Akshata Mohanty' />
@@ -45,6 +45,29 @@
     
             gtag('config', 'UA-111560396-1');
         </script>
+
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [{
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://akshata.dev.com/"
+            },{
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": "https://akshata.dev/blog"
+            },{
+                "@type": "ListItem",
+                "position": 3,
+                "name": How to use animations in Angular?,
+                "item": https://akshata.dev/sliding-navbar-with-angular-animation.html
+            }]
+        }
+        </script>
     </head>
 
 	<main class="container post-wrapper blog-post-container ">
@@ -56,7 +79,7 @@
 					<span class='marker'></span>
 				</div>
 				<h1 class='post__title'>
-					Exploring Angular Animations by building a slider nav
+					How to use animations in Angular?
 				</h1>
 				<br>
 				<p>Animations are an important part of the user experience. The subtle movements in an app, when done right, not only provide the user with useful feedback but also create an unconscious, favourable impression of 'smoothness' in your application/website. Angular provides a way to add animations to your app, tied to your application logic, with almost similar performance as native CSS animations.</p>
@@ -152,19 +175,19 @@ export class AppModule { }
 <p>When the button is clicked, it changes the value of slider_state, as shown below, hence triggering the animation.</p>
 
 <p><strong><em>app.component.html</em></strong></p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;button (click)="toggleSlider()"&gt;Toggle Slider&lt;/button&gt;
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;button</span> <span class="err">(</span><span class="na">click</span><span class="err">)="</span><span class="na">toggleSlider</span><span class="err">()"</span><span class="nt">&gt;</span>Toggle Slider<span class="nt">&lt;/button&gt;</span>
 
-&lt;div id="slide-nav"  [@slide_in_out]="slider_state"&gt;
-  &lt;!-- some content --&gt;
-&lt;/div&gt;
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"slide-nav"</span>  <span class="err">[@</span><span class="na">slide_in_out</span><span class="err">]="</span><span class="na">slider_state</span><span class="err">"</span><span class="nt">&gt;</span>
+  <span class="c">&lt;!-- some content --&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 </code></pre></div></div>
 
 <p><strong><em>app.component.ts</em></strong></p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  slider_state:string = "slide_in";
-  toggleSlider(): void{
-    // do something to change the animation_state variable
-    this.slider_state = this.slider_state === 'slide_out' ? 'slide_in' : 'slide_out';
-  }
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nx">slider_state</span><span class="p">:</span><span class="nx">string</span> <span class="o">=</span> <span class="s2">"slide_in"</span><span class="p">;</span>
+  <span class="nx">toggleSlider</span><span class="p">():</span> <span class="k">void</span><span class="p">{</span>
+    <span class="c1">// do something to change the animation_state variable</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">slider_state</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">slider_state</span> <span class="o">===</span> <span class="s1">'slide_out'</span> <span class="p">?</span> <span class="s1">'slide_in'</span> <span class="p">:</span> <span class="s1">'slide_out'</span><span class="p">;</span>
+  <span class="p">}</span>
 </code></pre></div></div>
 
 <p>And that’s it. That’s how you implement a simple slide-in, slide-out sidenav. View a demo <a href="https://stackblitz.com/edit/angular-slide-nav?file=app%2Fapp.module.ts">here</a></p>
@@ -186,25 +209,25 @@ export class AppModule { }
     <h3>Liked this article? Please share!</h3>
     <div class="social-media-icons">
         <a class="twitter-share-button"
-            href="https://twitter.com/intent/tweet?text=Exploring Angular Animations by building a slider nav by @akshatamohanty&url=https://akshata.dev/blog_Basic-Angular-Animations.html"
+            href="https://twitter.com/intent/tweet?text=How to use animations in Angular? by @akshatamohanty&url=https://akshata.dev/sliding-navbar-with-angular-animation.html"
             target="_blank"
             data-size="large">
             <i class="fa fa-twitter"></i>
         </a>
         <a target="_blank" 
-            href="https://www.linkedin.com/sharing/share-offsite/?url=https://akshata.dev/blog_Basic-Angular-Animations.html">
+            href="https://www.linkedin.com/sharing/share-offsite/?url=https://akshata.dev/sliding-navbar-with-angular-animation.html">
             <i class="fa fa-linkedin"></i>
         </a>
         <a target="_blank" 
-            href='http://www.reddit.com/submit?url=https://akshata.dev/blog_Basic-Angular-Animations.html&title=Exploring+Angular+Animations+by+building+a+slider+nav%20by%20@akshatamohanty'>
+            href='http://www.reddit.com/submit?url=https://akshata.dev/sliding-navbar-with-angular-animation.html&title=How+to+use+animations+in+Angular%3F%20by%20@akshatamohanty'>
             <i class="fa fa-reddit"></i>
         </a>
-        <a href="whatsapp://send?text=Exploring+Angular+Animations+by+building+a+slider+nav%20by%20Akshata Mohanty%20https://akshata.dev/blog_Basic-Angular-Animations.html" 
+        <a href="whatsapp://send?text=How+to+use+animations+in+Angular%3F%20by%20Akshata Mohanty%20https://akshata.dev/sliding-navbar-with-angular-animation.html" 
             data-action="share/whatsapp/share">
             <i class="fa fa-whatsapp"></i>
         </a>
         <a target="_blank" 
-            href="http://news.ycombinator.com/submitlink?u=https://akshata.dev/blog_Basic-Angular-Animations.html&t=Exploring Angular Animations by building a slider nav by Akshata Mohanty">
+            href="http://news.ycombinator.com/submitlink?u=https://akshata.dev/sliding-navbar-with-angular-animation.html&t=How to use animations in Angular? by Akshata Mohanty">
             <i class="fa fa-y-combinator"></i>
         </a>
     </div>
