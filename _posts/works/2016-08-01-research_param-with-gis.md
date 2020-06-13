@@ -1,6 +1,6 @@
 ---
 layout: post
-group: publications
+group: works
 marker: conference paper
 title:  "Parametric Modelling with GIS"
 authors: Janssen, P, Stouffs, R, Mohanty, A, Tan, E, and Li, R (2016)

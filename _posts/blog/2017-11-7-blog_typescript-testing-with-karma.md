@@ -5,16 +5,17 @@ marker: tutorial
 title:  How to integrate Jasmine testing framework for Typescript
 summary: Test-driven development (TDD) is a best practice for clean, robust production-grade code. However, setting up these testing frameworks can be daunting. Here are some of the lessons I learned while setting up Jasmine testing framework for Typescript
 date:   2017-11-7
+permalink: tdd-with-jasmine-and-typescript
 ---
 
 # Creating a package.json file
 
-Use `npm init` to create the package.json file. It acts like a wizard and steps you through the entire file creation. Press enter to accept defaults (which will be in most cases). This file is what is used to configure the build process and run, build and test your application. 
+Use `npm init` to create the package.json file. It acts like a wizard and steps you through the entire file creation. Press enter to accept defaults (which will be in most cases). This file is what is used to configure the build process and run, build and test your application.
 
 <br />
 
 # Folder Structure
-This projects implements a folder structure as follows - 
+This projects implements a folder structure as follows -
 
 Folder: `./`
   - `.config`: [Contains all the config files]
@@ -25,10 +26,10 @@ Folder: `./`
 
 <br />
 
-# Packages to install 
+# Packages to install
 
-Next, you'll need to install the packages required to compile and test typescript files. 
-- `@types/nodes` - This is needed to allow you to script in nodejs and use keywords like require, export etc. 
+Next, you'll need to install the packages required to compile and test typescript files.
+- `@types/nodes` - This is needed to allow you to script in nodejs and use keywords like require, export etc.
 - `karma-typescript` - To compile typescript files into Javascript which can be tested by Jasmine
 - `karma-chrome-launcher` - To launch an instance of chrome. You have to install a launcher for each browser that you want to check against.
 - `karma-jasmine-html-reporter` - This is required to display the Jasmine test results on Chrome; [Note: not karma-html-report]
@@ -38,9 +39,9 @@ Next, you'll need to install the packages required to compile and test typescrip
 
 <br />
 
-# Karma Config Files 
+# Karma Config Files
 
-Update the config file "files": [] property, to point to the test files as well as the imports. This is required for the karma-typescript-compiler to compile properly or it won't find the imported files, which you might be trying to check. 
+Update the config file "files": [] property, to point to the test files as well as the imports. This is required for the karma-typescript-compiler to compile properly or it won't find the imported files, which you might be trying to check.
 
 If the tests are not visible, but Jasmine is, means there is problem with file paths in the karma.config file
 
@@ -50,11 +51,11 @@ Specify the module in the karmaTypescriptConfig options as "commonjs" or it will
 
 # Running scripts with `package.json`
 
-Update package.json to run 
+Update package.json to run
 
 ```js
   { "test" : "karma start <karma_config_file_path>" }
-``` 
+```
 
 Basically, this gets run whenever `npm test` is run
 

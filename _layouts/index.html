@@ -1,44 +1,39 @@
 <!DOCTYPE html>
 <html>
-	
+
 	{% include page-elements/head.html %}
+	{% include page-elements/category-navigation.html %}
 
-	<!-- {% include page-elements/category-navigation.html %} -->
-
-	<div class='container container--main-wrapper'>
-		<div class='row'>
-			<div class='col-md-2 nav--side'>
-				{% include page-elements/about.html %}
-				<!-- <span class='category-description'>{{ page.content | markdownify }}</span> -->
-				<!-- <hr />
-				{% include page-elements/social-media.html %}
-				<small class='off-black'> © All Rights Reserved.</small> -->
-			</div>
-			<div class='col-md-8 offset-md-4 container--main'>
-					{% for page in site.pages %}
-						{% if page.isCategory == true and page.page != 'all' %}
+	<div>
+		{% if page.page == 'all' %}
+			{% include page-elements/about.new.html %}
+		{% endif %}
+		{% if page.isCategory == true %}
+			{% for page in site.pages %}
+				<div class='col-md-8 offset-md-4 container--main'>
+					asdadss
+					<div>
+						{%  include page-elements/section-header.html %}
 						<div>
-							{%  include page-elements/section-header.html %}
-							<div>
-								{% for post in site.posts %}
-									{% if post.group == page.page and post.showcase == true %}
-										{% if post.group == 'blog' %}
-											{% include page-elements/blog-post-container.html %}
-										{% else %}
-											{% include page-elements/post-container.html %}
-										{% endif %}
+							{% for post in site.posts %}
+								{% if post.group == page.page and post.showcase == true %}
+									{% if post.group == 'blog' %}
+										{% include page-elements/blog-post-container.html %}
+									{% else %}
+										{% include page-elements/post-container.html %}
 									{% endif %}
-								{% endfor %}
-							</div>
+								{% endif %}
+							{% endfor %}
 						</div>
-						<br>
-						{% endif %}
-					{% endfor %}
+					</div>
+				</div>
+			{% endfor %}
+		{% else %}
 
-			</div>
+		{% endif %}
 		</div>
 	</div>
 
-	<!-- {% include page-elements/copyright.html %} -->
+	{% include page-elements/copyright.html %}
 
 </html>

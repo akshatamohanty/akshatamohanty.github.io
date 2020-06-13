@@ -2,12 +2,13 @@
 layout: post
 group: blog
 marker: tutorial
-title: Exploring Angular Animations by building a slider nav
-summary: Animations are an important part of the user experience. The subtle movements in an app, when done right, not only provide the user with useful feedback but also create an unconscious, favourable impression of 'smoothness' in your application/website. Angular provides a way to add animations to your app, tied to your application logic, with almost similar performance as native CSS animations. 
+title: Introduction to Angular Animations -  Build a navigation drawer
+summary: Animations are an important part of the user experience. The subtle movements in an app, when done right, not only provide the user with useful feedback but also create an unconscious, favourable impression of 'smoothness' in your application/website. Angular provides a way to add animations to your app, tied to your application logic, with almost similar performance as native CSS animations.
 date:   2018-04-25
+permalink: /slider-nav-with-angular-animation
 ---
 
-Animations are an important part of the user experience. The subtle movements in an app, when done right, not only provide the user with useful feedback but also create an unconscious, favourable impression of 'smoothness' in your application/website. Angular provides a way to add animations to your app, tied to your application logic, with almost similar performance as native CSS animations. 
+Animations are an important part of the user experience. The subtle movements in an app, when done right, not only provide the user with useful feedback but also create an unconscious, favourable impression of 'smoothness' in your application/website. Angular provides a way to add animations to your app, tied to your application logic, with almost similar performance as native CSS animations.
 
 
 ## tl;dr recipe
@@ -19,7 +20,7 @@ Animations are an important part of the user experience. The subtle movements in
 
 ## Adding an animation
 
-#### Installing Angular Animations Package 
+#### Installing Angular Animations Package
 Make sure you have @angular/animations installed, using ``` npm install @angular/animations --save ```.
 
 ***package.json***
@@ -28,11 +29,11 @@ Make sure you have @angular/animations installed, using ``` npm install @angular
     ...
     "@angular/animations": "^5.2.10",
     ...
-    
+
 ```
 
 #### Importing the Browser Animation Module
-The BrowserAnimationsModule is part of the **@angular/platform-browser** package. The platform-browser is automatically installed if you've generated your app using angular-cli. Only the BrowserAnimationsModule will need to be imported and added to the **imports** array, as shown below. 
+The BrowserAnimationsModule is part of the **@angular/platform-browser** package. The platform-browser is automatically installed if you've generated your app using angular-cli. Only the BrowserAnimationsModule will need to be imported and added to the **imports** array, as shown below.
 
 ***app.module.ts***
 ```
@@ -50,7 +51,7 @@ export class AppModule { }
 ```
 
 
-#### Importing required animation functions in the component 
+#### Importing required animation functions in the component
 
 To add animations to your component, you will need to add metadata defining your animation while creating your component. To define your animation, you'll need to minimally import
   - trigger
@@ -68,7 +69,7 @@ import { trigger, state, style, transition, animate, keyframes } from '@angular/
 #### Adding an animation to the component
 In the example below, the metadata has defined an animation trigger, called "slide_in_out" with two states - 'slide_in' and 'slide_out'. The states can be considered as the values the animation *slide_in_out* can be assigned and the corresponding CSS that becomes active on getting that value.
 
-The transition is what specifies the animation when the states changes from slide_in to slide_out and vice versa. You can choose to define this animation in one direction, from void / any state, with different timing and effects. 
+The transition is what specifies the animation when the states changes from slide_in to slide_out and vice versa. You can choose to define this animation in one direction, from void / any state, with different timing and effects.
 
 ***app.component.ts***
 ```
@@ -96,7 +97,7 @@ The transition is what specifies the animation when the states changes from slid
 
 Once you've defined your animation, you can now add it to your HTML element and link it to a variable, slider_state in this example. In this example, when the slider_state equals 'slide_in', the width of the div is 350px and when the slider_state equals 'slide_out', the width of the div is 0.
 
-The slider_state variable needs to be controlled in your component file. In this example, we control the slide-in-out navbar using a button. 
+The slider_state variable needs to be controlled in your component file. In this example, we control the slide-in-out navbar using a button.
 
 When the button is clicked, it changes the value of slider_state, as shown below, hence triggering the animation.
 
@@ -130,5 +131,5 @@ And that's it. That's how you implement a simple slide-in, slide-out sidenav. Vi
 - The state is defined as a **string** value and use booleans or numerical values might cause errors
 
 
-#### References: 
+#### References:
 [Angular Animations Documentation](https://angular.io/guide/animations)

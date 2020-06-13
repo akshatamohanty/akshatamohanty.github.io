@@ -3,7 +3,7 @@ showcase: false
 published: false
 layout: post
 size: 4
-group: data
+group: projects
 title: Exploring RNNs
 summary: Using Recurrent Neural Networks for Stock Price Prediction and Text Generation
 role: Artificial Intelligence and Machine Learning
@@ -12,7 +12,7 @@ date:   2018-06-02
 categories: post
 type: project
 image: ./images/vuicapstone.jpg
-tags: 
+tags:
 - rnn
 - lstm
 - keras

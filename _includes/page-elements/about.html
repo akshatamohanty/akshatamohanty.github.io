@@ -1,32 +1,10 @@
 <header class='main'>
-	<div class='img--profile'></div>
-	<br>
-	<h2 class='main__title'>Akshata Mohanty</h2>
-
-	<div class='off-black small-text'>
-		<div class='subtext'>
-			<b><a class='link' href='http://viki.com/' target='_blank'>FULLSTACK DEVELOPER @  Viki</a></li></b>
+	<small class='off-black small-text about-me--small'>
+		<div class='img--profile'></div>
+		<div>
+			<b>Hi, I'm Akshata.</b>
+			Fullstack engineer at Rakuten Viki. Architect-turned-software-developer. I like to build apps with AI. I also like teaching, food & MMA.
+			{% include page-elements/social-media.html %}
 		</div>
-		<hr/>
-		Autodidact. Previously <a class='link' href='https://www.sde.nus.edu.sg/' target='_blank'>NUS</a>, <a class='link' href='https://flipkart.com' target='_blank'>Flipkart</a>. Studied Architecture at <a class='link' href='https://iitkgp.ac.in/' target='_blank'>IITKgp</a>. I code for fun and food, in that order.
-		
-		<br><br>
-	
-		<ul class='list--no-bullets'>
-			<li {% if page.page == 'all' %}class='active'{% endif %}><a class='link off-black' href='/'>Home</a></li>
-			<li {% if page.page == 'blog' %}class='active'{% endif %}><a class='link off-black' href='/blog'>Blog</a></li>
-			<li {% if page.page == 'app' %}class='active'{% endif %}><a class='link off-black' href='/fullstack'>Fullstack</a></li>
-			<li {% if page.page == 'data' %}class='active'{% endif %}><a class='link off-black' href='/datascience'>Data Science</a></li>
-			<li {% if page.page == 'publications' %}class='active'{% endif %}><a class='link off-black' href='/publications'>Publications</a></li>
-		</ul>
-
-		<hr />
-		{% include page-elements/social-media.html %}
-		
-		<br>
-
-		{% include page-elements/email-newsletter.html %}
-		<br>
-		<small class='off-black'> © All Rights Reserved.</small>
-	</div>
+	</small>
 </header>

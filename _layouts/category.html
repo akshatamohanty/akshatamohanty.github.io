@@ -1,38 +1,31 @@
 <!DOCTYPE html>
 <html>
-	
+
 	{% include page-elements/head.html %}
+    {% include page-elements/category-navigation.html %}
 
-	<!-- {% include page-elements/category-navigation.html %} -->
-
-	<div class='container container--main-wrapper'>
-		<div class='row'>
-			<div class='col-md-2 nav--side category'>
+	<div class='container--main-wrapper'>
+        <div class='container--main category'>
+            <!-- {% include page-elements/simplenav.html %} -->
+            <div>
                 {% include page-elements/about.html %}
-                <!-- <div class='category-description'>{{ page.content | markdownify }}</div>
+                <br /><br /><br />
+                {%  include page-elements/section-header.html %}
                 <hr />
-                {% include page-elements/social-media.html %} -->
-                <!-- <small class='off-black'> © All Rights Reserved.</small> -->
-			</div>
-			<div class='col-md-8 offset-md-4 container--main category'>
-                <!-- {% include page-elements/simplenav.html %} -->
-                <div>
-                    {%  include page-elements/section-header.html %}
-                    <div>
-                        {% for post in site.posts %}
-                            {% if post.group == page.page %}    
-                                {% if post.group == 'blog' or post.group == 'publications' %}
-                                    {% include page-elements/blog-post-container.html %}
-                                {% else %}
-                                    {% include page-elements/post-container.html %}
-                                {% endif %}
-                            {% endif %}
-                        {% endfor %}
-                    </div>
-                </div>
-			</div>
-		</div>
-	</div>
-	<!-- {% include page-elements/copyright.html %} -->
 
+                <div>
+                    {% for post in site.posts %}
+                        {% if post.group == page.page %}
+                            {% include page-elements/blog-post-container.html %}
+                            <!-- {% if post.group == 'blog' or post.group == 'works' %}
+                            {% else %}
+                                {% include page-elements/post-container.html %}
+                            {% endif %} -->
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+	</div>
+	{% include page-elements/copyright.html %}
 </html>

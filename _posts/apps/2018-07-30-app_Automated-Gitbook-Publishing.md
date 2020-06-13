@@ -2,17 +2,17 @@
 layout: post
 showcase: false
 size: 6
-marker: npm command
-group: app
-title:  gitpub 
+marker: web | npm
+group: projects
+title:  gitpub
 summary: an npm utility to automatically publish markdown files as Gitbooks, using Travis.CI
 date:   2018-07-30
-categories: 
+categories:
 projecturl: https://github.com/akshatamohanty/gitbook-publish
-meta: 
+meta:
 - source
 - codeit
-tags: 
+tags:
 - gitbook
 - travis
 - npm

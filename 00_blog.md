@@ -4,7 +4,7 @@ layout: category
 isCategory: true
 page: blog
 title: blog
-description: 
+description:
 permalink: /blog
 short: blog
 ---
