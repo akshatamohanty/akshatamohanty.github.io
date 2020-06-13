@@ -11,7 +11,6 @@ date:   2018-06-02
 projecturl: https://github.com/akshatamohanty/udacity-ai-nanodegree/tree/master/project-01-sudoku
 categories: post
 type: project
-image: ./images/dogmate.jpg
 tags:
 - cnn
 - keras

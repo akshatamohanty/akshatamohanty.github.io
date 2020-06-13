@@ -3,8 +3,10 @@ $navbar-height: 54px;
 .container--main-wrapper {
     margin: 10vh auto;
     padding-top: 0.2 * $content-margin; // 0.2 * $content-margin + $navbar-height;
-    max-width: 800px;
 }
+
 .container--main {
-    padding: $content-margin 0.5 * $content-margin;
+    padding: $content-margin * 0.5;
+    margin:   0 auto;
+    max-width: 800px;
 }

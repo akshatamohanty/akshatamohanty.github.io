@@ -43,7 +43,7 @@
 
 .about-me {
   z-index: 2;
-  padding: $content-margin;
+  padding: 0.5 * $content-margin;
   margin-top: 30%;
 
   h1 {
@@ -57,7 +57,7 @@
   line-height: 1.8;
   color: $black;
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 640px) {
     .img--profile {
       display: none;
     }

@@ -5,7 +5,6 @@ group: blog
 layout: post
 title:  My takeaways from `How Google Works`
 summary: I am trying to lose weight. And I figured the laziest way of doing that was to walk 4 kilometers back home from work. However, it gets lonely alone - there's only so much streetscape in Singapore! So I picked up <a href='https://www.goodreads.com/book/show/23158207-how-google-works' target='_blank'>How Google Works by Eric Schmidt and Jon Rosenberg</a> to give me company as an audiobook. I don't really know if I lost a lot of weight in the process, but it definitely added a lot to my brain!
-image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Google_Mountain_View_California_-_panoramio.jpg/1280px-Google_Mountain_View_California_-_panoramio.jpg'
 date:   2019-05-16
 tags: google books
 permalink: /how-google-works-book-review

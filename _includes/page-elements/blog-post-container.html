@@ -5,13 +5,20 @@
         <a href={{post.url}}>
     {% endif %}
         <div class='blog-post__content'>
-            <div class='post__meta'>
-                <span class='marker'>{{post.marker}}</span>
-                <!-- <span class='date'>{{post.date | date: "%D"}}</span> -->
+            {% if post.image %}
+            <div class='post__image'>
+                <img src={{post.image}} />
             </div>
-            <h2>{{post.title}}</h2>
-            {% if post.authors %}<p class='post__authors'>{{post.authors}}</p>{% endif %}
-            <p class="post__summary">{{ post.summary }}</p>
+            {% endif %}
+            <div>
+                <div class='post__meta'>
+                    <span class='marker'>{{post.marker}}</span>
+                    <!-- <span class='date'>{{post.date | date: "%D"}}</span> -->
+                </div>
+                <h2>{{post.title}}</h2>
+                {% if post.authors %}<p class='post__authors'>{{post.authors}}</p>{% endif %}
+                <p class="post__summary">{{ post.summary }}</p>
+            </div>
         </div>
     </a>
 </article>

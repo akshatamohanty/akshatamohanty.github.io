@@ -4,28 +4,27 @@
 	{% include page-elements/head.html %}
     {% include page-elements/category-navigation.html %}
 
-	<div class='container--main-wrapper'>
-        <div class='container--main category'>
-            <!-- {% include page-elements/simplenav.html %} -->
-            <div>
-                {% include page-elements/about.html %}
-                <br /><br /><br />
-                {%  include page-elements/section-header.html %}
-                <hr />
+    <br />
+    <div class='container--main category'>
+        <!-- {% include page-elements/simplenav.html %} -->
+        <div>
+            {% include page-elements/about.html %}
+            <br />
+            {%  include page-elements/section-header.html %}
+            <hr />
 
-                <div>
-                    {% for post in site.posts %}
-                        {% if post.group == page.page %}
-                            {% include page-elements/blog-post-container.html %}
-                            <!-- {% if post.group == 'blog' or post.group == 'works' %}
-                            {% else %}
-                                {% include page-elements/post-container.html %}
-                            {% endif %} -->
-                        {% endif %}
-                    {% endfor %}
-                </div>
+            <div>
+                {% for post in site.posts %}
+                    {% if post.group == page.page %}
+                        {% include page-elements/blog-post-container.html %}
+                        <!-- {% if post.group == 'blog' or post.group == 'works' %}
+                        {% else %}
+                            {% include page-elements/post-container.html %}
+                        {% endif %} -->
+                    {% endif %}
+                {% endfor %}
             </div>
         </div>
-	</div>
+    </div>
 	{% include page-elements/copyright.html %}
 </html>
