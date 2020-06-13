@@ -1,15 +1,17 @@
-<article class="blog-post-container"> 
-    <div class='blog-post__content'>
-        <div class='post__meta'>
-            <span class='date'>{{post.date | date: "%B %Y"}}</span>
-            <span class='marker'>{{post.marker}}</span>
+<article class="blog-post-container blog-post-container--link">
+    {% if post.projecturl %}
+        <a href={{post.projecturl}} target='_blank'>
+    {% else %}
+        <a href={{post.url}}>
+    {% endif %}
+        <div class='blog-post__content'>
+            <div class='post__meta'>
+                <span class='marker'>{{post.marker}}</span>
+                <!-- <span class='date'>{{post.date | date: "%D"}}</span> -->
+            </div>
+            <h2>{{post.title}}</h2>
+            {% if post.authors %}<p class='post__authors'>{{post.authors}}</p>{% endif %}
+            <p class="post__summary">{{ post.summary }}</p>
         </div>
-        <h1>
-            <a href={{post.url}}>{{post.title}}</a>
-        </h1>
-        {% if post.authors %}<p>{{post.authors}}</p>{% endif %}
-        <br>
-        <p>{{ post.summary }}</p>
-        <a class='link' href={% if post.projecturl %}{{post.projecturl}} target='_blank'{% else %}{{post.url}}{% endif %}>Read</a>
-    </div>
+    </a>
 </article>

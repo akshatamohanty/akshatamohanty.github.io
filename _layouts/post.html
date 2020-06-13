@@ -1,33 +1,30 @@
 <!DOCTYPE html>
 <html>
-	
+
+	{% include page-elements/category-navigation.html %}
 	{% include page-elements/head-for-blog.html %}
 
-	<main class="container post-wrapper blog-post-container ">
-		<a class='back' href='/blog'>Back to blog</a>
-		<article> 
-			<div class='blog-post__content'>
-				<div class='post__meta'>
-					<span class='date'>{{page.date | date: "%B %Y"}}</span>
-					<span class='marker'>{{page.tag}}</span>
+	<body>
+		<main class="post-wrapper blog-post-container ">
+			<article>
+				<div class='blog-post__content'>
+					<span class='post__marker'>{{page.tag}}</span>
+					<span class='post__date'>{{page.date | date: "%d %B %Y"}}</span>
+					<h1 class='post__title'>
+						{{page.title}}
+					</h1>
+					<br>
+					<p>{{ page.summary }}</p>
+					<br><br><hr /><br><br>
+					<div class='post__content'>{{ page }}</div>
+					<br>
 				</div>
-				<h1 class='post__title'>
-					{{page.title}}
-				</h1>
-				<br>
-				<p>{{ page.summary }}</p>
-				<br><br><hr /><br><br>
-				<div class='post__content'>{{ page }}</div>
-				<br>
-			</div>
-		</article>
-		{% include page-elements/social-media-share.html %}
-		<hr />
-		<br>
-		<h3>About the author</h3>
-		<br>
-		<br>
-		{% include page-elements/about.html %}
-	</main>
-
+			</article>
+			<hr />
+			{% include page-elements/social-media-share.html %}
+			<br/><br />
+			{% include page-elements/about.html %}
+		</main>
+		{% include page-elements/copyright.html %}
+	</body>
 </html>

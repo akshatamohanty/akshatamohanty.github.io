@@ -1,6 +1,6 @@
 ---
 layout: post
-group: publications
+group: works
 marker: conference paper
 title:  "Automated Generation of BIM Models"
 authors: Janssen, P, Chen, KW, and Mohanty, A (2016)

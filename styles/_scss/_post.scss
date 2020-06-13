@@ -1,6 +1,6 @@
 .spacer {
-	height: 2px; 
-	background: $muted-black; 
+	height: 2px;
+	background: $muted-black;
 	margin: 0.3 * $content-margin 0;
 }
 
@@ -26,10 +26,10 @@ article.post{
 		position: relative;
 
 		.thumbnail{
-			border: 0px; 
-			height: 400px; 
+			border: 0px;
+			height: 400px;
 			background-size: contain;
-			background-repeat: no-repeat;			
+			background-repeat: no-repeat;
 		}
 	}
 
@@ -40,6 +40,8 @@ article.post{
 
 .section-header {
 	color: $body-font-color;
+	text-transform: uppercase;
+	font-weight: 100;
 }
 
 .category .section-header .link--more {
@@ -70,7 +72,7 @@ article.post{
 			content: '#'
 		}
 	}
-}	
+}
 
 .post--research{
 	margin-left: 0 !important;

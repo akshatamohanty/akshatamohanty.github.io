@@ -2,17 +2,17 @@
 layout: post
 showcase: true
 size: 4
-group: data
-marker: certification
-title:  ai nanodegree
+group: projects
+marker: ai | certification
+title:  udacity's ai nanodegree
 summary: compilation of 7 ai/ml projects covering topics - search and planning, game playing agents, image recognition, natural language processing and voice user interfaces
 role: Artificial Intelligence and Machine Learning
 projecturl: https://github.com/akshatamohanty/udacity-ai-nanodegree
-description: Udacity is a for-profit educational organization founded by Sebastian Thrun, David Stavens, and Mike Sokolsky offering massive open online courses (MOOCs). This specialization was offered by Udacity as six-month, 2-semester program, covering topics in Artificial Intelligence and Machine Learning, as well as a Specialization in either Computer Vision, Natural Language Processing or Voice User Interfaces. I completed the nanodegree by completing 7 required projects with a capstone project in Voice User Interfaces. This is a collection of all my work towards the degree. 
+description: Udacity is a for-profit educational organization founded by Sebastian Thrun, David Stavens, and Mike Sokolsky offering massive open online courses (MOOCs). This specialization was offered by Udacity as six-month, 2-semester program, covering topics in Artificial Intelligence and Machine Learning, as well as a Specialization in either Computer Vision, Natural Language Processing or Voice User Interfaces. I completed the nanodegree by completing 7 required projects with a capstone project in Voice User Interfaces. This is a collection of all my work towards the degree.
 date:   2018-06-02
 categories: post
 type: project
-tags: 
+tags:
 - search
 - game-playing-agents
 - deep-learning
@@ -50,7 +50,7 @@ I used **hidden Markov models** in this project, to output translations for vide
 
 <br />
 ### Project 5: Dog Breed Classifier, using Convolutional Neural Networks (CNNs)
-This was the first project in the degree, using deep neural networks. I used a Convolutional Neural Networks using Keras, to create an image classfiier for dogs. I explored various concepts such as data augmentation, transfer learning, haarcascades, object detection and recognition to create a [model](https://github.com/akshatamohanty/udacity-ai-nanodegree/blob/master/project-02-isolation/game_agent.py) that  could predict if it was a human or a dog, and the resemblance of either, to a dog breed. 
+This was the first project in the degree, using deep neural networks. I used a Convolutional Neural Networks using Keras, to create an image classfiier for dogs. I explored various concepts such as data augmentation, transfer learning, haarcascades, object detection and recognition to create a [model](https://github.com/akshatamohanty/udacity-ai-nanodegree/blob/master/project-02-isolation/game_agent.py) that  could predict if it was a human or a dog, and the resemblance of either, to a dog breed.
 
 <br />
 ### Project 6a: Stockprice Prediction, using RNNs for time series prediction

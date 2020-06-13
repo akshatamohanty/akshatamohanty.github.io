@@ -1,9 +1,9 @@
 .post-wrapper {
     max-width: 700px;
     margin: 0 auto;
-    padding-top: 2 * $content-margin;
+    padding: 0.5 * $content-margin;
 
-    img { 
+    img {
         width: 100%;
     }
 }
@@ -29,38 +29,87 @@
     padding: 5px 20px;
 }
 
-.blog-post-container {  
-    padding-bottom: 3 * $content-margin;
+.blog-post-container {
+    margin-top: 15vh;
+    margin-bottom: 3 * $content-margin;
 
-    .blog-post__content h1 a {
+    .blog-post__content h2 {
         color: $black;
-        font-size: 3.2rem;
+        font-size: 1.8rem;
         line-height: 1.2;
+        font-weight: 600;
+        margin: 0;
+        padding: 0;
     }
 
-    .post__meta {
-        font-size: 1.4rem;
-        margin-bottom: 0.25 * $content-margin;
+    .meta {
+        font-size: 1.2rem;
+        margin-bottom: 0px;
         font-weight: 600;
+    }
 
-        .date {
-            text-transform: uppercase;
-            color: $light-black;
-        }
+    .post__marker {
+        @extend .meta;
+        text-transform: uppercase;
+        color: $font-color-muted;
+    }
 
-        .marker {
-            margin-left: 0.5 * $content-margin;
-            text-transform: uppercase;
-            color: $font-color-muted;
-        }
+    .post__date {
+        @extend .meta;
+        text-transform: uppercase;
+        color: $light-black;
+        font-size: 1.4rem;
+    }
+
+    .post__summary {
+        font-size: 1.6rem;
+        line-height: 1.6;
+        margin-top: 30px;
+        overflow: hidden;
     }
 
     .post__content {
         color: black;
         line-height: 2;
-
-        p {
-            padding: 0.5  * $content-margin 0;
-        }
     }
+
+    .post__authors {
+        padding: 0;
+        margin: 0 0 5px 0;
+        font-size: 1.4rem;
+    }
+}
+
+.blog-post-container--link {
+    padding: 0;
+    margin: 60px 0;
+
+    a, a:hover {
+        text-decoration: none;
+    }
+
+    .blog-post__content h2 {
+        color: $black;
+        margin-bottom: 10px;
+    }
+
+    .post__meta {
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: $light-black;;
+    }
+
+    .post__summary {
+        margin-top: 0px;
+        color: $body-font-color;
+    }
+}
+
+.blog-post-container--link:hover{
+    cursor: pointer;
+
+    h2 {
+       font-weight: 600;
+    }
+
 }

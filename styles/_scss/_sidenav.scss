@@ -1,14 +1,14 @@
 /// ---- side navigation
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
 	.nav--side {
-        position: fixed;
+    position: fixed;
 		border: none;
 		margin-bottom: 0;
 	}
 }
 
-@media (max-width: 767px) { 
-	// disabled offset-sm-5 
+@media (max-width: 767px) {
+	// disabled offset-sm-5
 	.container--main {
         margin-left: 0;
 	}
@@ -34,17 +34,21 @@
 	min-width: 250px;
 
 	.main__title {
-        color: $black;
+    color: $black;
 	}
-	
+
 	li.active a {
 		color: $font-color-muted;
 	}
 }
 
 
-.social-media-icons{
-	.fa{
+.social-media-icons {
+	a {
+		text-decoration: none;
+	}
+
+	.fa {
 		font-size: 14px;
 		border: 3px solid $body-font-color;
 		border-radius: 50%;

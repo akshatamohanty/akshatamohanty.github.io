@@ -2,8 +2,8 @@
 showcase: false
 layout: post
 size: 4
-group: data
-marker: image classifier
+group: projects
+marker: ai | image classifier | CNN
 title:  dogmate
 summary: an image classifier to classify dog breeds, built with tensorflow
 role: Artificial Intelligence and Machine Learning
@@ -12,7 +12,7 @@ projecturl: https://github.com/akshatamohanty/udacity-ai-nanodegree/tree/master/
 categories: post
 type: project
 image: ./images/dogmate.jpg
-tags: 
+tags:
 - cnn
 - keras
 - AWS

@@ -2,8 +2,8 @@
 showcase: false
 layout: post
 size: 4
-group: data
-marker: time series 
+group: projects
+marker: ai | time series | RNN
 title:  stock price predictor
 summary: an rnn model built with keras to predict future apple stock prices
 role: Artificial Intelligence and Machine Learning
@@ -12,7 +12,7 @@ projecturl: https://github.com/akshatamohanty/udacity-ai-nanodegree/blob/master/
 categories: post
 type: project
 image: ./images/dogmate.jpg
-tags: 
+tags:
 - cnn
 - keras
 - AWS

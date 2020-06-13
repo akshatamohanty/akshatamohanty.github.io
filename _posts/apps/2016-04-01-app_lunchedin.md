@@ -2,15 +2,15 @@
 layout: post
 showcase: false
 size: 6
-group: app
-marker: networking app
+group: projects
+marker: web | mongodb, express, angular, nodejs,
 title:  lunchedin
 summary: meal-based networking with intelligent group creation and email invites
 date:   2016-04-01
-categories: 
+categories:
 projecturl: https://github.com/akshatamohanty/lunched-in
 image: ./images/lunchedin.jpg
-tags: 
+tags:
 - Angularjs
 - cron
 - heroku
