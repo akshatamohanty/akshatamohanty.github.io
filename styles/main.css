@@ -143,11 +143,12 @@ table {
 
 .container--main-wrapper {
   margin: 10vh auto;
-  padding-top: 6px;
-  max-width: 800px; }
+  padding-top: 6px; }
 
 .container--main {
-  padding: 30px 15px; }
+  padding: 15px;
+  margin: 0 auto;
+  max-width: 800px; }
 
 .navbar {
   background-color: #3F4651;
@@ -339,6 +340,24 @@ footer.copyright {
   .blog-post-container--link .post__summary {
     margin-top: 0px;
     color: #3F4651; }
+  .blog-post-container--link .blog-post__content {
+    display: flex;
+    flex-direction: row; }
+    .blog-post-container--link .blog-post__content .post__image {
+      position: relative;
+      width: 200px;
+      min-width: 200px;
+      margin-right: 15px;
+      overflow: hidden; }
+      @media screen and (max-width: 640px) {
+        .blog-post-container--link .blog-post__content .post__image {
+          display: none; } }
+      .blog-post-container--link .blog-post__content .post__image img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        align-self: center; }
 
 .blog-post-container--link:hover {
   cursor: pointer; }
@@ -382,7 +401,7 @@ footer.copyright {
 
 .about-me {
   z-index: 2;
-  padding: 30px;
+  padding: 15px;
   margin-top: 30%; }
   .about-me h1 {
     margin-bottom: 30px; }
@@ -392,7 +411,7 @@ footer.copyright {
   flex-direction: row;
   line-height: 1.8;
   color: #3F4651; }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 640px) {
     .about-me--small .img--profile, .about-me--small .img--profile-lg {
       display: none; } }
 
