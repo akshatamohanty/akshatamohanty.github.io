@@ -21,10 +21,6 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 600;
 }
 
-.highlight {
-	color: $font-color-accent;
-}
-
 a {
 	text-decoration: none;
 	color: inherit;
@@ -123,4 +119,14 @@ p {
 		border-radius: 0;
 		width: 100%;
 	}
+}
+
+pre {
+	background-color: $black;
+	border-radius: 4px;
+	color: $muted-black;
+	padding: 5px;
+	font-size: 1.4rem;
+	max-width: 100%;
+	overflow: auto;
 }
