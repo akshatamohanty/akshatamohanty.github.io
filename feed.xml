@@ -8,9 +8,9 @@
     
       
       <item>
-        <category>talk</category>
+        <category>meetup talk</category>
         <title>AI for Non-PhDs - AI Superpowers for your apps in 30 minutes </title>
-        <description></description>
+        <description>AI is everywhere! The possibilities are endless. And with libraries like Tensorflow and Pytorch, AI is now accessible to developers like you and me, without needing years in a PhD. In this talk, we learn how to build a dog breed classifer and deploy it as a web and mobile app. And all of this, without a server!   </description>
         <pubDate>May 2019</pubDate>
         <link>https://www.youtube.com/embed/1gEaPTeuBmE </link>
         <guid isPermaLink="true">https://www.youtube.com/embed/1gEaPTeuBmE</guid>
@@ -20,28 +20,28 @@
       
       <item>
         <category>book review</category>
-        <title>A walk with Eric and Jon</title>
+        <title>My takeaways from `How Google Works`</title>
         <description>I am trying to lose weight. And I figured the laziest way of doing that was to walk 4 kilometers back home from work. However, it gets lonely alone - there's only so much streetscape in Singapore! So I picked up How Google Works by Eric Schmidt and Jon Rosenberg to give me company as an audiobook. I don't really know if I lost a lot of weight in the process, but it definitely added a lot to my brain!</description>
         <pubDate>May 2019</pubDate>
-        <link>https://akshata.dev/blog_A-walk-with-Eric-and-Jon.html </link>
-        <guid isPermaLink="true">https://akshata.dev/blog_A-walk-with-Eric-and-Jon.html</guid>
+        <link>https://akshata.dev/how-google-works-book-review </link>
+        <guid isPermaLink="true">https://akshata.dev/how-google-works-book-review</guid>
       </item>
       
     
       
       <item>
-        <category>google plugin</category>
+        <category>web | gsuite</category>
         <title>batch-mailer</title>
         <description>plugin for google spreadsheets to send customized batch emails based on templates built in google docs</description>
         <pubDate>May 2019</pubDate>
-        <link>https://github.com/akshatamohanty/GoogleDocsEmail/tree/master/batch-emails </link>
-        <guid isPermaLink="true">https://github.com/akshatamohanty/GoogleDocsEmail/tree/master/batch-emails</guid>
+        <link>https://github.com/akshatamohanty/GoogleDocsEmail </link>
+        <guid isPermaLink="true">https://github.com/akshatamohanty/GoogleDocsEmail</guid>
       </item>
       
     
       
       <item>
-        <category>app-starter</category>
+        <category>ai | tensorflow</category>
         <title>client-ai templates</title>
         <description>templates and workflow for developing for client-only ai apps using tensorflow-js and tensorflow-lite</description>
         <pubDate>Mar 2019</pubDate>
@@ -52,7 +52,7 @@
     
       
       <item>
-        <category>opensource library</category>
+        <category>web | angular</category>
         <title>ngxflowchart</title>
         <description>ngxflowchart is an open source angular library to draw flow diagrams. to challenge myself, i built this using HTML5 elements instead of svg to render the graphics</description>
         <pubDate>Sep 2018</pubDate>
