@@ -121,7 +121,7 @@ min ( P(7, 2), P(6, 2), P(5, 2) .. )
 
 # Questions
 
-https://www.codechef.com/ZCOPRAC/problems/ZCO14002
+<a href='https://www.codechef.com/ZCOPRAC/problems/ZCO14002' target='_blank'>Link to CodeChef Problem</a>
 ```
 # wip
 
