@@ -8,7 +8,7 @@ summary:
 date:   2018-04-30
 type: post
 category: tech
-permalink: chrome-memory-task-manager
+permalink: blog/chrome-memory-task-manager
 ---
 
 ## Getting to the Task Manager

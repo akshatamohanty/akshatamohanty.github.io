@@ -5,7 +5,7 @@ marker: algorithms
 title: Introduction to dynamic programming with the `coin-change` example
 summary: Dynamic Programming is a method of problem-solving where you breakdown the problems into smaller subproblems, similar to the original problem. It may or maynot use recursion.
 date:   2018-06-06
-permalink: /coin-change-dynamic-programming
+permalink: blog/coin-change-dynamic-programming
 ---
 
 # What is Dynamic Programming?

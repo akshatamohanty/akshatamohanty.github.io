@@ -7,7 +7,7 @@ title:  My takeaways from `How Google Works`
 summary: I am trying to lose weight. And I figured the laziest way of doing that was to walk 4 kilometers back home from work. However, it gets lonely alone - there's only so much streetscape in Singapore! So I picked up <a href='https://www.goodreads.com/book/show/23158207-how-google-works' target='_blank'>How Google Works by Eric Schmidt and Jon Rosenberg</a> to give me company as an audiobook. I don't really know if I lost a lot of weight in the process, but it definitely added a lot to my brain!
 date:   2019-05-16
 tags: google books
-permalink: /how-google-works-book-review
+permalink: blog/how-google-works-book-review
 ---
 
 I have a feeling <a href='https://www.goodreads.com/book/show/23158207-how-google-works' target='_blank'>How Google Works by Eric Schmidt and Jon Rosenberg</a> is going to be one of the defining books in my life. Even though the book was probably written with an intention of guiding corporates and entrepreneurs - it did help me consolidate some priciples that I'd like to incorporate into my life. `How Google Works` talks about Google as a company and provides an inside look into the foundations, principles and culture the company is built on. If books are meant to inspire growth, this one is definitely it. Here is a list of my five key takeaways from this amazing read.

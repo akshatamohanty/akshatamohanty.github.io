@@ -2,11 +2,12 @@
 destination: _site
 encoding: UTF-8
 
-name: Akshata's Repository
-description: Collection of projects, code snippets, articles and random musings by self taught developer
+name: Akshata Mohanty | Software Engineer
+description: This is my personal blog, where I write about technology, books and other odd things.
 url: https://akshata.dev
 
-title:            Akshata Mohanty | Fullstack Engineer
+title:            Akshata Mohanty | Software Engineer
+description:      This is my personal blog, where I write about technology, books and other odd things.
 permalink:        /:title:output_ext
 
 sass:

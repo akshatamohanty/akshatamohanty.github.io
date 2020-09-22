@@ -6,7 +6,7 @@ title: How to generate PDFs from Gitbook automatically using CI tools?
 summary: Gitbook is an open-source utility that makes it easy to generate well-formatted documentation and e-books. Combining the workflow with Travis is easy too. Trying to generate a PDF automatically though, inside the Travis environment had some hiccups. This is how to get around it.
 date:   2018-08-08
 tag: AUTOMATION, CICD
-permalink: automatic-pdf-gitbook
+permalink: blog/automatic-pdf-gitbook
 ---
 
 # What is Gitbook?
