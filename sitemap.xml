@@ -37,16 +37,12 @@
 <lastmod>2017-06-02T00:00:00+00:00</lastmod>
 </url>
 <url>
-<loc>https://akshata.dev/tdd-with-jasmine-and-typescript</loc>
+<loc>https://akshata.dev/blog/tdd-with-jasmine-and-typescript</loc>
 <lastmod>2017-11-07T00:00:00+00:00</lastmod>
 </url>
 <url>
-<loc>https://akshata.dev/slider-nav-with-angular-animation</loc>
+<loc>https://akshata.dev/blog/slider-nav-with-angular-animation</loc>
 <lastmod>2018-04-25T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://akshata.dev/mobius-platform.html</loc>
-<lastmod>2018-06-02T00:00:00+00:00</lastmod>
 </url>
 <url>
 <loc>https://akshata.dev/stock-price-prediction.html</loc>
@@ -54,6 +50,10 @@
 </url>
 <url>
 <loc>https://akshata.dev/sudoku-solver.html</loc>
+<lastmod>2018-06-02T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>https://akshata.dev/mobius-platform.html</loc>
 <lastmod>2018-06-02T00:00:00+00:00</lastmod>
 </url>
 <url>
@@ -65,7 +65,7 @@
 <lastmod>2018-06-02T00:00:00+00:00</lastmod>
 </url>
 <url>
-<loc>https://akshata.dev/coin-change-dynamic-programming</loc>
+<loc>https://akshata.dev/blog/coin-change-dynamic-programming</loc>
 <lastmod>2018-06-06T00:00:00+00:00</lastmod>
 </url>
 <url>
@@ -73,7 +73,7 @@
 <lastmod>2018-07-30T00:00:00+00:00</lastmod>
 </url>
 <url>
-<loc>https://akshata.dev/automatic-pdf-gitbook</loc>
+<loc>https://akshata.dev/blog/automatic-pdf-gitbook</loc>
 <lastmod>2018-08-08T00:00:00+00:00</lastmod>
 </url>
 <url>
@@ -89,7 +89,7 @@
 <lastmod>2019-05-03T00:00:00+00:00</lastmod>
 </url>
 <url>
-<loc>https://akshata.dev/how-google-works-book-review</loc>
+<loc>https://akshata.dev/blog/how-google-works-book-review</loc>
 <lastmod>2019-05-16T00:00:00+00:00</lastmod>
 </url>
 <url>

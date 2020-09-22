@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Akshata's Repository</title>
-    <description>Collection of projects, code snippets, articles and random musings by self taught developer</description>
+    <title>Akshata Mohanty | Software Engineer</title>
+    <description>This is my personal blog, where I write about technology, books and other odd things.</description>
     <link>https://akshata.dev</link>
     <atom:link href="https://akshata.dev/feed.xml" rel="self" type="application/rss+xml" />
     
@@ -23,8 +23,8 @@
         <title>My takeaways from `How Google Works`</title>
         <description>I am trying to lose weight. And I figured the laziest way of doing that was to walk 4 kilometers back home from work. However, it gets lonely alone - there's only so much streetscape in Singapore! So I picked up How Google Works by Eric Schmidt and Jon Rosenberg to give me company as an audiobook. I don't really know if I lost a lot of weight in the process, but it definitely added a lot to my brain!</description>
         <pubDate>May 2019</pubDate>
-        <link>https://akshata.dev/how-google-works-book-review </link>
-        <guid isPermaLink="true">https://akshata.dev/how-google-works-book-review</guid>
+        <link>https://akshata.dev/blog/how-google-works-book-review </link>
+        <guid isPermaLink="true">https://akshata.dev/blog/how-google-works-book-review</guid>
       </item>
       
     
