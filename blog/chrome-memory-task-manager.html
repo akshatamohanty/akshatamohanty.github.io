@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+	<nav class="navbar">
+	<a class="navbar-brand" href="/">&lt; iamaatoh / &gt;</a>
+	<a class="navbar-brand-sm" href="/">~</a>
+	<ul class="nav-links-wrapper">
+		<li ><a href='/blog' alt="Akshata Mohanty's Blog">Blog</a></li>
+		<li ><a href='/works' alt="Akshata Mohanty's Projects">Works</a></li>
+		<li ><a href='/talks' alt="Akshata Mohanty's Talks">Talks</a></li>
+	</ul>
+	</div>
+</nav>
+	<head>
+    <title>Memory Tab in Chrome Task Manager</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A simple first-level diagnostic to track down memory leaks and problems" />
+
+    <meta property="og:title" content="Memory Tab in Chrome Task Manager" />
+    <meta property="og:description" content="A simple first-level diagnostic to track down memory leaks and problems" />
+    <meta property="og:image" content= />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="300" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content=https://akshata.dev/blog/chrome-memory-task-manager />
+    <meta property="article:published_time" content="2018-04-30T00:00:00+00:00">
+    <meta property="article:author" content="https://akshata.dev">
+    <meta property="og:site_name" content='Akshata Mohanty | Fullstack Engineer' />
+    <meta property="og:type" content='Akshata Mohanty | Fullstack Engineer' />
+    
+    <meta itemprop="keywords" content="" />
+    
+    
+
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="/styles/main.css">
+    <link href='https://akshata.dev/feed.xml' rel='alternate' type='application/atom+xml'>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111560396-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-111560396-1');
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [{
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://akshata.dev.com/"
+            },{
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": "https://akshata.dev/blog"
+            },{
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Memory Tab in Chrome Task Manager",
+                "item": "https://akshata.dev/blog/chrome-memory-task-manager"
+            }]
+        }
+    </script>
+</head>
+
+	<body>
+		<main class="post-wrapper blog-post-container ">
+			<article>
+				<div class='blog-post__content'>
+					<span class='post__marker'></span>
+					<h1 class='post__title'>
+						Memory Tab in Chrome Task Manager
+					</h1>
+					<summary>A simple first-level diagnostic to track down memory leaks and problems</summary>
+					<div class='post__meta'>
+						<small>By <b>Akshata Mohanty</b></small> |
+						<span>April 30, 2018</span>
+					</div>
+					<img class='post__header-img' src=>
+					<div class='post__content'><h2 id="getting-to-the-task-manager">Getting to the Task Manager</h2>
+
+<ul>
+  <li>Shortcut: Shift + Esc, <strong>OR</strong></li>
+  <li>Chrome -&gt; Settings -&gt; More Tools -&gt; Task Manager</li>
+</ul>
+
+<h2 id="understanding-memory-usage-columns-in-task-manager">Understanding Memory Usage Columns in Task Manager</h2>
+
+<ul>
+  <li>
+    <h4 id="memory-footprint">Memory Footprint</h4>
+    <p>The memory footprint represents memory reserved entirely for that process. It is the same value as that in the <strong>Commit Size</strong> column in Windows Task Manager. <em>The Commit column shows the amount of virtual memory in kilobytes that the operating system has reserved for a process. This number includes the amount of physical memory that is in use as well as any pages that have been saved in the page file.</em></p>
+  </li>
+  <li>
+    <h4 id="memory">Memory</h4>
+    <p>Memory is the same value as that in the <strong>Memory (Private Working Set)</strong> column in Windows Task Manager. Private Working Set of a process refers to the amount of memory that is allocated to the process, is not shareable. In Chrome context, it refers to the native memory, which is used to store DOM nodes. A constantly increasing value for this indicates creation of additional DOM noes.</p>
+  </li>
+  <li>
+    <h4 id="gpu-memory">GPU Memory</h4>
+    <p>It represents the amount of GPU memory being used by the page. The GPU process is a process used only when Chrome is displaying GPU-accelerated content. Chrome uses GPU to accelerate web-page rendering, typical HTML, CSS, WebGL, etc.</p>
+  </li>
+  <li>
+    <h4 id="javascript-memory">Javascript Memory</h4>
+    <p>The JavaScript Memory column represents the memory reserved for the JS VM heap. The number in parenthese is represents how much memory the reachable objects on your page are using. So, if the value is  x ( y ) imples that ‘y’ is the active memory and (x-y) is memory is unreachable and will be garbage collected. If ‘x’ is increasing, it might signify a memory leak since either new objects are being created, or the existing objects are growing.</p>
+  </li>
+</ul>
+
+<h4 id="references">References:</h4>
+<ul>
+  <li><a href="https://developers.google.com/web/tools/chrome-devtools/memory-problems/#monitor_memory_use_in_realtime_with_the_chrome_task_manager">Chrome DevTools</a></li>
+  <li><a href="https://stackoverflow.com/questions/14167013/javascript-memory-and-leak-problems">Stackoverflow</a></li>
+  <li><a href="https://www.techrepublic.com/blog/windows-and-office/investigate-memory-usage-with-windows-7-resource-monitor/">investigate-memory-usage-with-windows-7-resource-monitor/</a></li>
+</ul>
+</div>
+				</div>
+			</article>
+			<hr />
+			<p>
+    <h4>Was this helpful? Please share.</h4>
+    <div class="social-media-icons">
+        <a target="_blank"
+           href='https://www.linkedin.com/sharing/share-offsite/?url=https://akshata.dev/blog/chrome-memory-task-manager'>
+            <i class="fa fa-linkedin"></i>
+        </a>
+        <a target="_blank"
+           href='https://twitter.com/intent/tweet?text=Memory Tab in Chrome Task Manager by @iamaatoh&url=https://akshata.dev/blog/chrome-memory-task-manager'>
+            <i class="fa fa-twitter"></i>
+        </a>
+        <a target="_blank"
+            href='http://www.reddit.com/submit?url=https://akshata.dev/blog/chrome-memory-task-manager&title=Memory+Tab+in+Chrome+Task+Manager%20by%20@akshatamohanty'>
+            <i class="fa fa-reddit"></i>
+        </a>
+        <a target="_blank"
+            href="http://news.ycombinator.com/submitlink?u=https://akshata.dev/blog/chrome-memory-task-manager&t=Memory Tab in Chrome Task Manager by Akshata Mohanty">
+            <i class="fa fa-y-combinator"></i>
+        </a>
+        <a href="whatsapp://send?text=Memory+Tab+in+Chrome+Task+Manager%20by%20Akshata Mohanty%20https://akshata.dev/blog/chrome-memory-task-manager"
+            data-action="share/whatsapp/share">
+            <i class="fa fa-whatsapp"></i>
+        </a>
+    </div>
+</p>
+			<br/><br />
+			<header class='main'>
+	<small class='off-black small-text about-me--small'>
+		<div class='img--profile'></div>
+		<div>
+			<b>Hi, I'm Akshata.</b>
+			Fullstack engineer at Rakuten Viki. Architect-turned-software-developer. I like to build apps with AI. I also like teaching, food & MMA.
+			<div>
+    <!-- <div class='off-black small-text'>Easily found at:</div> -->
+    <div class="social-media-icons">
+        <a target="_blank" href="https://twitter.com/@iamaatoh"><i class="fa fa-twitter"></i></a>
+        <a target="_blank" href="https://medium.com/@iamaatoh"><i class="fa fa-medium"></i></a>
+        <a target="_blank" href="https://github.com/akshatamohanty"><i class="fa fa-github"></i></a>
+        <a target="_blank" href="https://linkedin.com/in/akshatamohanty"><i class="fa fa-linkedin"></i></a>
+    </div>
+</div>
+		</div>
+	</small>
+</header>
+
+		</main>
+		<footer class="h5 copyright">
+	Copyright © 2020
+	Akshata Mohanty</a>.
+	All Rights Reserved.
+</footer>
+	</body>
+</html>

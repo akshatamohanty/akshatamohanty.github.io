@@ -5,26 +5,27 @@
 	<a class="navbar-brand" href="/">&lt; iamaatoh / &gt;</a>
 	<a class="navbar-brand-sm" href="/">~</a>
 	<ul class="nav-links-wrapper">
-		<li ><a href='/blog' alt="Technical notes & learnings">Blog</a></li>
-		<li ><a href='/projects' alt="Collection of my projects">Projects</a></li>
-		<li ><a href='/works' alt="Research papers & technical talks">Works</a></li>
+		<li ><a href='/blog' alt="Akshata Mohanty's Blog">Blog</a></li>
+		<li ><a href='/works' alt="Akshata Mohanty's Projects">Works</a></li>
+		<li ><a href='/talks' alt="Akshata Mohanty's Talks">Talks</a></li>
 	</ul>
 	</div>
 </nav>
 	<head>
-    <title>Akshata Mohanty | Software Engineer</title>
+    <title>Adding Jasmine to a Typescript project</title>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Lessons learned while adding the jasmine testing framework for Typescript" />
 
-    <meta property="og:title" content="How to integrate Jasmine testing framework for Typescript" />
-    <meta property="og:description" content="Test-driven development (TDD) is a best practice for clean, robust production-grade code. However, setting up these testing frameworks can be daunting. Here are some of the lessons I learned while setting up Jasmine testing framework for Typescript" />
+    <meta property="og:title" content="Adding Jasmine to a Typescript project" />
+    <meta property="og:description" content="Lessons learned while adding the jasmine testing framework for Typescript" />
     <meta property="og:image" content= />
     <meta property="og:image:width" content="400" />
     <meta property="og:image:height" content="300" />
     <meta property="og:type" content="article" />
-    <meta property="og:url" content=https://akshata.dev/blog/tdd-with-jasmine-and-typescript />
+    <meta property="og:url" content=https://akshata.dev/blog/jasmine-and-typescript />
     <meta property="article:published_time" content="2017-11-07T00:00:00+00:00">
     <meta property="article:author" content="https://akshata.dev">
     <meta property="og:site_name" content='Akshata Mohanty | Fullstack Engineer' />
@@ -66,27 +67,30 @@
             },{
                 "@type": "ListItem",
                 "position": 3,
-                "name": "How to integrate Jasmine testing framework for Typescript",
-                "item": "https://akshata.dev/blog/tdd-with-jasmine-and-typescript"
+                "name": "Adding Jasmine to a Typescript project",
+                "item": "https://akshata.dev/blog/jasmine-and-typescript"
             }]
         }
     </script>
 </head>
-
 
 	<body>
 		<main class="post-wrapper blog-post-container ">
 			<article>
 				<div class='blog-post__content'>
 					<span class='post__marker'></span>
-					<span class='post__date'>07 November 2017</span>
 					<h1 class='post__title'>
-						How to integrate Jasmine testing framework for Typescript
+						Adding Jasmine to a Typescript project
 					</h1>
-					<br>
-					<p>Test-driven development (TDD) is a best practice for clean, robust production-grade code. However, setting up these testing frameworks can be daunting. Here are some of the lessons I learned while setting up Jasmine testing framework for Typescript</p>
-					<br><br><hr /><br><br>
-					<div class='post__content'><h1 id="creating-a-packagejson-file">Creating a package.json file</h1>
+					<summary>Lessons learned while adding the jasmine testing framework for Typescript</summary>
+					<div class='post__meta'>
+						<small>By <b>Akshata Mohanty</b></small> |
+						<span>November 07, 2017</span>
+					</div>
+					<img class='post__header-img' src=>
+					<div class='post__content'><p>Test-driven development (TDD) is a best practice for clean, robust production-grade code. However, setting up these testing frameworks can be daunting. Here are some of the lessons I learned while setting up Jasmine testing framework for Typescript</p>
+
+<h1 id="creating-a-packagejson-file">Creating a package.json file</h1>
 
 <p>Use <code class="highlighter-rouge">npm init</code> to create the package.json file. It acts like a wizard and steps you through the entire file creation. Press enter to accept defaults (which will be in most cases). This file is what is used to configure the build process and run, build and test your application.</p>
 
@@ -152,7 +156,6 @@
 <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="dl">"</span><span class="s2">build-docs</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">typedoc --out ./docs ./src --module commonjs</span><span class="dl">"</span>
 </code></pre></div></div>
 </div>
-					<br>
 				</div>
 			</article>
 			<hr />
@@ -160,22 +163,22 @@
     <h4>Was this helpful? Please share.</h4>
     <div class="social-media-icons">
         <a target="_blank"
-           href='https://www.linkedin.com/sharing/share-offsite/?url=https://akshata.dev/blog/tdd-with-jasmine-and-typescript'>
+           href='https://www.linkedin.com/sharing/share-offsite/?url=https://akshata.dev/blog/jasmine-and-typescript'>
             <i class="fa fa-linkedin"></i>
         </a>
         <a target="_blank"
-           href='https://twitter.com/intent/tweet?text=How to integrate Jasmine testing framework for Typescript by @iamaatoh&url=https://akshata.dev/blog/tdd-with-jasmine-and-typescript'>
+           href='https://twitter.com/intent/tweet?text=Adding Jasmine to a Typescript project by @iamaatoh&url=https://akshata.dev/blog/jasmine-and-typescript'>
             <i class="fa fa-twitter"></i>
         </a>
         <a target="_blank"
-            href='http://www.reddit.com/submit?url=https://akshata.dev/blog/tdd-with-jasmine-and-typescript&title=How+to+integrate+Jasmine+testing+framework+for+Typescript%20by%20@akshatamohanty'>
+            href='http://www.reddit.com/submit?url=https://akshata.dev/blog/jasmine-and-typescript&title=Adding+Jasmine+to+a+Typescript+project%20by%20@akshatamohanty'>
             <i class="fa fa-reddit"></i>
         </a>
         <a target="_blank"
-            href="http://news.ycombinator.com/submitlink?u=https://akshata.dev/blog/tdd-with-jasmine-and-typescript&t=How to integrate Jasmine testing framework for Typescript by Akshata Mohanty">
+            href="http://news.ycombinator.com/submitlink?u=https://akshata.dev/blog/jasmine-and-typescript&t=Adding Jasmine to a Typescript project by Akshata Mohanty">
             <i class="fa fa-y-combinator"></i>
         </a>
-        <a href="whatsapp://send?text=How+to+integrate+Jasmine+testing+framework+for+Typescript%20by%20Akshata Mohanty%20https://akshata.dev/blog/tdd-with-jasmine-and-typescript"
+        <a href="whatsapp://send?text=Adding+Jasmine+to+a+Typescript+project%20by%20Akshata Mohanty%20https://akshata.dev/blog/jasmine-and-typescript"
             data-action="share/whatsapp/share">
             <i class="fa fa-whatsapp"></i>
         </a>
@@ -188,7 +191,7 @@
 		<div>
 			<b>Hi, I'm Akshata.</b>
 			Fullstack engineer at Rakuten Viki. Architect-turned-software-developer. I like to build apps with AI. I also like teaching, food & MMA.
-			<p>
+			<div>
     <!-- <div class='off-black small-text'>Easily found at:</div> -->
     <div class="social-media-icons">
         <a target="_blank" href="https://twitter.com/@iamaatoh"><i class="fa fa-twitter"></i></a>
@@ -196,7 +199,7 @@
         <a target="_blank" href="https://github.com/akshatamohanty"><i class="fa fa-github"></i></a>
         <a target="_blank" href="https://linkedin.com/in/akshatamohanty"><i class="fa fa-linkedin"></i></a>
     </div>
-</p>
+</div>
 		</div>
 	</small>
 </header>

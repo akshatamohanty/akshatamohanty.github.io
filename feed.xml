@@ -8,6 +8,17 @@
     
       
       <item>
+        <category>guide</category>
+        <title>Preparing for the Google Cloud Associate Engineer Exam</title>
+        <description>What is the Google Cloud Associate Enginer exam about and how to ace it? It's not cramming!</description>
+        <pubDate>Sep 2020</pubDate>
+        <link>https://akshata.dev/blog/how-to-prepare-for-google-cloud-associate-engineer-exam </link>
+        <guid isPermaLink="true">https://akshata.dev/blog/how-to-prepare-for-google-cloud-associate-engineer-exam</guid>
+      </item>
+      
+    
+      
+      <item>
         <category>meetup talk</category>
         <title>AI for Non-PhDs - AI Superpowers for your apps in 30 minutes </title>
         <description>AI is everywhere! The possibilities are endless. And with libraries like Tensorflow and Pytorch, AI is now accessible to developers like you and me, without needing years in a PhD. In this talk, we learn how to build a dog breed classifer and deploy it as a web and mobile app. And all of this, without a server!   </description>
@@ -20,8 +31,8 @@
       
       <item>
         <category>book review</category>
-        <title>My takeaways from `How Google Works`</title>
-        <description>I am trying to lose weight. And I figured the laziest way of doing that was to walk 4 kilometers back home from work. However, it gets lonely alone - there's only so much streetscape in Singapore! So I picked up How Google Works by Eric Schmidt and Jon Rosenberg to give me company as an audiobook. I don't really know if I lost a lot of weight in the process, but it definitely added a lot to my brain!</description>
+        <title>`How Google Works` by Eric Schimdt & Jon Rosenberg</title>
+        <description>My key take-aways from this wonderful insight into the culture of Google</description>
         <pubDate>May 2019</pubDate>
         <link>https://akshata.dev/blog/how-google-works-book-review </link>
         <guid isPermaLink="true">https://akshata.dev/blog/how-google-works-book-review</guid>
@@ -47,17 +58,6 @@
         <pubDate>Mar 2019</pubDate>
         <link>https://github.com/akshatamohanty/client-ai-template </link>
         <guid isPermaLink="true">https://github.com/akshatamohanty/client-ai-template</guid>
-      </item>
-      
-    
-      
-      <item>
-        <category>web | angular</category>
-        <title>ngxflowchart</title>
-        <description>ngxflowchart is an open source angular library to draw flow diagrams. to challenge myself, i built this using HTML5 elements instead of svg to render the graphics</description>
-        <pubDate>Sep 2018</pubDate>
-        <link>https://github.com/akshatamohanty/ngxflowchart </link>
-        <guid isPermaLink="true">https://github.com/akshatamohanty/ngxflowchart</guid>
       </item>
       
     
