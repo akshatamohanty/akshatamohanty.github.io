@@ -2,11 +2,13 @@
 layout: post
 group: blog
 marker: tutorial
-title:  How to integrate Jasmine testing framework for Typescript
-summary: Test-driven development (TDD) is a best practice for clean, robust production-grade code. However, setting up these testing frameworks can be daunting. Here are some of the lessons I learned while setting up Jasmine testing framework for Typescript
+title:  Adding Jasmine to a Typescript project
+summary: Lessons learned while adding the jasmine testing framework for Typescript
 date:   2017-11-7
-permalink: blog/tdd-with-jasmine-and-typescript
+permalink: blog/jasmine-and-typescript
 ---
+
+Test-driven development (TDD) is a best practice for clean, robust production-grade code. However, setting up these testing frameworks can be daunting. Here are some of the lessons I learned while setting up Jasmine testing framework for Typescript
 
 # Creating a package.json file
 

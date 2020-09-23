@@ -1,10 +1,9 @@
 ---
-published: false
+published: true
 layout: post
 group: blog
-title:  Exploring Memory in Chrome Task Manager
-subtitle: A simple first-level diagnostic to track down memory leaks and problems
-summary:
+title:  Memory Tab in Chrome Task Manager
+summary: A simple first-level diagnostic to track down memory leaks and problems
 date:   2018-04-30
 type: post
 category: tech

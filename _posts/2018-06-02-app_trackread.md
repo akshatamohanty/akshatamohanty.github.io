@@ -2,7 +2,7 @@
 layout: post
 showcase: false
 size: 4
-group: projects
+group: works
 marker: android
 title:  trackread
 summary: search for books using the Goodreads API, make notes and monitor your reading progress. with a free and ad-free paid version

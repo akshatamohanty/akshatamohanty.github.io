@@ -3,21 +3,21 @@
 
 	{% include page-elements/category-navigation.html %}
 	{% include page-elements/head-for-blog.html %}
-
 	<body>
 		<main class="post-wrapper blog-post-container ">
 			<article>
 				<div class='blog-post__content'>
 					<span class='post__marker'>{{page.tag}}</span>
-					<span class='post__date'>{{page.date | date: "%d %B %Y"}}</span>
 					<h1 class='post__title'>
 						{{page.title}}
 					</h1>
-					<br>
-					<p>{{ page.summary }}</p>
-					<br><br><hr /><br><br>
+					<summary>{{ page.summary }}</summary>
+					<div class='post__meta'>
+						<small>By <b>Akshata Mohanty</b></small> |
+						<span>{{page.date | date: "%B %d, %Y"}}</span>
+					</div>
+					<img class='post__header-img' src={{page.image}}>
 					<div class='post__content'>{{ page }}</div>
-					<br>
 				</div>
 			</article>
 			<hr />

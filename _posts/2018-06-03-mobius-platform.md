@@ -2,7 +2,7 @@
 layout: post
 showcase: true
 size: 6
-group: projects
+group: works
 marker: web | angular
 title:  mobius
 summary: a visual tool for users to create code using flow diagrams. with customizable components, mobius could visualize text, 2d and 3d outputs

@@ -2,8 +2,8 @@
 layout: post
 group: blog
 marker: tutorial
-title: Introduction to Angular Animations -  Build a navigation drawer
-summary: Animations are an important part of the user experience. The subtle movements in an app, when done right, not only provide the user with useful feedback but also create an unconscious, favourable impression of 'smoothness' in your application/website. Angular provides a way to add animations to your app, tied to your application logic, with almost similar performance as native CSS animations.
+title: Animated Navigation Drawer Component in Angular
+summary: Getting started with Angular Animations by building a simple component
 date:   2018-04-25
 permalink: blog/slider-nav-with-angular-animation
 ---

@@ -2,7 +2,7 @@
 layout: post
 showcase: true
 size: 4
-group: projects
+group: works
 marker: ai | certification
 title:  udacity's ai nanodegree
 summary: compilation of 7 ai/ml projects covering topics - search and planning, game playing agents, image recognition, natural language processing and voice user interfaces

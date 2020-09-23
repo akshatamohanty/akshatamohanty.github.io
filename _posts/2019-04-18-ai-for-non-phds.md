@@ -1,6 +1,6 @@
 ---
 layout: post
-group: works
+group: talks
 showcase: true
 marker: meetup talk
 title:  "AI for Non-PhDs - AI Superpowers for your apps in 30 minutes "

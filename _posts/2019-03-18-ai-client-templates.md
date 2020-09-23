@@ -1,7 +1,7 @@
 ---
 showcase: true
 layout: post
-group: projects
+group: works
 marker: ai | tensorflow
 title:  client-ai templates
 summary: templates and workflow for developing for client-only ai apps using tensorflow-js and tensorflow-lite

@@ -2,7 +2,7 @@
 showcase: false
 layout: post
 size: 4
-group: projects
+group: works
 marker: ai | image classifier | CNN
 title:  dogmate
 summary: an image classifier to classify dog breeds, built with tensorflow

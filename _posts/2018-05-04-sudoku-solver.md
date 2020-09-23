@@ -2,7 +2,7 @@
 showcase: false
 layout: post
 size: 4
-group: projects
+group: works
 marker: ai | constrant propagation
 title:  sudoku solver
 summary: an python algorithm to solve a sudoku puzzle using constraint propagation technique

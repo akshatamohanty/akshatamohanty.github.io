@@ -3,7 +3,7 @@ showcase: false
 published: false
 layout: post
 size: 4
-group: projects
+group: works
 title: Exploring RNNs
 summary: Using Recurrent Neural Networks for Stock Price Prediction and Text Generation
 role: Artificial Intelligence and Machine Learning

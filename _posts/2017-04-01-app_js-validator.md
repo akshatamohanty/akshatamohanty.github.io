@@ -2,7 +2,7 @@
 layout: post
 size: 4
 showcase: false
-group: projects
+group: works
 marker: web | angular
 title:  js-validator
 summary: an app to validate and check javascript errors in realtime. Used as the demo for the coding test @ Design Automation Lab, NUS

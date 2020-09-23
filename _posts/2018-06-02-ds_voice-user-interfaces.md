@@ -3,7 +3,7 @@ showcase: false
 published: false
 layout: post
 size: 4
-group: projects
+group: works
 title:  Speech Transcription
 summary: Neural network for speech transcription to function as part of an end-to-end automatic speech recognition (ASR) pipeline
 role: Artificial Intelligence and Machine Learning

@@ -8,11 +8,9 @@
     <div class='container--main category'>
         <!-- {% include page-elements/simplenav.html %} -->
         <div>
-            {% include page-elements/about.html %}
-            <br />
             {%  include page-elements/section-header.html %}
             <hr />
-
+            <br />
             <div>
                 {% for post in site.posts %}
                     {% if post.group == page.page %}
@@ -25,6 +23,11 @@
                 {% endfor %}
             </div>
         </div>
+        <br />
+        <br />
+        <hr />
+        {% include page-elements/about.html %}
+        <br />
     </div>
 	{% include page-elements/copyright.html %}
 </html>

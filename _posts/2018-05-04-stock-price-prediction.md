@@ -2,7 +2,7 @@
 showcase: false
 layout: post
 size: 4
-group: projects
+group: works
 marker: ai | time series | RNN
 title:  stock price predictor
 summary: an rnn model built with keras to predict future apple stock prices

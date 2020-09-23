@@ -2,7 +2,7 @@
 layout: post
 showcase: false
 size: 6
-group: projects
+group: works
 marker: web | mongodb, express, angular, nodejs,
 title:  lunchedin
 summary: meal-based networking with intelligent group creation and email invites

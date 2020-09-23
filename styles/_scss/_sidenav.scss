@@ -48,6 +48,41 @@
 		text-decoration: none;
 	}
 
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	display: inline;
+
+	.fa {
+		font-size: 24px;
+		border: 3px solid $body-font-color;
+		border-radius: 50%;
+		padding: 10px;
+		margin-right: 15px;
+		margin-top: 10px;
+		color: $body-font-color;
+	}
+
+	:hover {
+		color: $font-color-muted;
+
+		.fa {
+			border: 3px solid $font-color-muted;
+		}
+	}
+}
+
+
+.social-media-icons--small {
+	a {
+		text-decoration: none;
+	}
+
+	width: 24px;
+	height: 24px;
+	text-align: center;
+	display: inline;
+
 	.fa {
 		font-size: 14px;
 		border: 3px solid $body-font-color;
@@ -56,5 +91,13 @@
 		margin-right: 15px;
 		margin-top: 10px;
 		color: $body-font-color;
+	}
+
+	:hover {
+		color: $font-color-muted;
+
+		.fa {
+			border: 3px solid $font-color-muted;
+		}
 	}
 }

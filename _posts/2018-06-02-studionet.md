@@ -2,7 +2,7 @@
 layout: post
 showcase: false
 size: 6
-group: projects
+group: works
 marker: web | mongodb, express, angular, nodejs
 title:  studionet
 summary: an sharing platform with a graphical interface to visualize ongoing social activity. used as a studio tool at sde, nus
