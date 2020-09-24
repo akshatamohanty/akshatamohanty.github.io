@@ -31,6 +31,17 @@
       
       <item>
         <category></category>
+        <title>React-ing faster: Optimize components for performance</title>
+        <description>Strategies to make your React components faster</description>
+        <pubDate>Aug 2020</pubDate>
+        <link>https://akshata.dev/talks/reacting-faster-reactsg.html </link>
+        <guid isPermaLink="true">https://akshata.dev/talks/reacting-faster-reactsg.html</guid>
+      </item>
+      
+    
+      
+      <item>
+        <category></category>
         <title>AI for Non-PhDs: AI Superpowers in 30 minutes</title>
         <description>Exploring accessible AI by building a voice-app</description>
         <pubDate>Jul 2020</pubDate>
@@ -41,21 +52,10 @@
     
       
       <item>
-        <category></category>
-        <title>React-ing faster: Optimize components for performance</title>
-        <description>Strategies to make your React components faster</description>
-        <pubDate>May 2020</pubDate>
-        <link>https://akshata.dev/talks/reacting-faster-reactsg.html </link>
-        <guid isPermaLink="true">https://akshata.dev/talks/reacting-faster-reactsg.html</guid>
-      </item>
-      
-    
-      
-      <item>
         <category>meetup talk</category>
-        <title>React-ing faster: How to optimize your components for performance</title>
+        <title>Handling performance in React</title>
         <description>Case Study describing the optimization process of a real-life a chat feature</description>
-        <pubDate>May 2020</pubDate>
+        <pubDate>Jun 2020</pubDate>
         <link>https://akshata.dev/talks/reacting-faster-talkjs.html </link>
         <guid isPermaLink="true">https://akshata.dev/talks/reacting-faster-talkjs.html</guid>
       </item>
