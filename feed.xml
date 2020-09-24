@@ -8,56 +8,56 @@
     
       
       <item>
-        <category>guide</category>
+        <category></category>
         <title>Preparing for the Google Cloud Associate Engineer Exam</title>
-        <description>What is the Google Cloud Associate Enginer exam about and how to ace it? It's not cramming!</description>
+        <description>What is the Google Cloud Associate Engineer exam about and how to ace it?</description>
         <pubDate>Sep 2020</pubDate>
-        <link>https://akshata.dev/blog/how-to-prepare-for-google-cloud-associate-engineer-exam </link>
-        <guid isPermaLink="true">https://akshata.dev/blog/how-to-prepare-for-google-cloud-associate-engineer-exam</guid>
+        <link>https://akshata.dev/tech/how-to-prepare-for-google-cloud-associate-engineer-exam.html </link>
+        <guid isPermaLink="true">https://akshata.dev/tech/how-to-prepare-for-google-cloud-associate-engineer-exam.html</guid>
+      </item>
+      
+    
+      
+      <item>
+        <category></category>
+        <title>Code with Cloud Programme: Panel Discussion</title>
+        <description>Breaking into Cloud Computing</description>
+        <pubDate>Sep 2020</pubDate>
+        <link>https://akshata.dev/talks/coding-girls-sg-panel.html </link>
+        <guid isPermaLink="true">https://akshata.dev/talks/coding-girls-sg-panel.html</guid>
+      </item>
+      
+    
+      
+      <item>
+        <category></category>
+        <title>AI for Non-PhDs: AI Superpowers in 30 minutes</title>
+        <description>Exploring accessible AI by building a voice-app</description>
+        <pubDate>Jul 2020</pubDate>
+        <link>https://akshata.dev/talks/building-a-voice-app.html </link>
+        <guid isPermaLink="true">https://akshata.dev/talks/building-a-voice-app.html</guid>
+      </item>
+      
+    
+      
+      <item>
+        <category></category>
+        <title>React-ing faster: Optimize components for performance</title>
+        <description>Strategies to make your React components faster</description>
+        <pubDate>May 2020</pubDate>
+        <link>https://akshata.dev/talks/reacting-faster-reactsg.html </link>
+        <guid isPermaLink="true">https://akshata.dev/talks/reacting-faster-reactsg.html</guid>
       </item>
       
     
       
       <item>
         <category>meetup talk</category>
-        <title>AI for Non-PhDs - AI Superpowers for your apps in 30 minutes </title>
-        <description>AI is everywhere! The possibilities are endless. And with libraries like Tensorflow and Pytorch, AI is now accessible to developers like you and me, without needing years in a PhD. In this talk, we learn how to build a dog breed classifer and deploy it as a web and mobile app. And all of this, without a server!   </description>
-        <pubDate>May 2019</pubDate>
-        <link>https://www.youtube.com/embed/1gEaPTeuBmE </link>
-        <guid isPermaLink="true">https://www.youtube.com/embed/1gEaPTeuBmE</guid>
-      </item>
-      
-    
-      
-      <item>
-        <category>book review</category>
-        <title>`How Google Works` by Eric Schimdt & Jon Rosenberg</title>
-        <description>My key take-aways from this wonderful insight into the culture of Google</description>
-        <pubDate>May 2019</pubDate>
-        <link>https://akshata.dev/blog/how-google-works-book-review </link>
-        <guid isPermaLink="true">https://akshata.dev/blog/how-google-works-book-review</guid>
-      </item>
-      
-    
-      
-      <item>
-        <category>web | gsuite</category>
-        <title>batch-mailer</title>
-        <description>plugin for google spreadsheets to send customized batch emails based on templates built in google docs</description>
-        <pubDate>May 2019</pubDate>
-        <link>https://github.com/akshatamohanty/GoogleDocsEmail </link>
-        <guid isPermaLink="true">https://github.com/akshatamohanty/GoogleDocsEmail</guid>
-      </item>
-      
-    
-      
-      <item>
-        <category>ai | tensorflow</category>
-        <title>client-ai templates</title>
-        <description>templates and workflow for developing for client-only ai apps using tensorflow-js and tensorflow-lite</description>
-        <pubDate>Mar 2019</pubDate>
-        <link>https://github.com/akshatamohanty/client-ai-template </link>
-        <guid isPermaLink="true">https://github.com/akshatamohanty/client-ai-template</guid>
+        <title>React-ing faster: How to optimize your components for performance</title>
+        <description>Case Study describing the optimization process of a real-life a chat feature</description>
+        <pubDate>May 2020</pubDate>
+        <link>https://akshata.dev/talks/reacting-faster-talkjs.html </link>
+        <guid isPermaLink="true">https://akshata.dev/talks/reacting-faster-talkjs.html</guid>
       </item>
       
     

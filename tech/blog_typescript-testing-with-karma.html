@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Adding Jasmine to a Typescript project | Akshata Mohanty</title>
+<meta name="description" content=""></meta>
+
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<meta property="og:title" content="Akshata Mohanty" />
+<meta property="og:description" content="" />
+<meta property="og:image" content="https://akshata.dev/assets/jumpup.jpg" />
+<meta property="og:image:width" content="400" />
+<meta property="og:image:height" content="300" />
+<meta property="og:type" content="website" />
+
+<!-- main stylesheet -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/styles/main.css">
+
+<link href='https://akshata.dev/feed.xml' rel='alternate' type='application/atom+xml'>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111560396-1"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-111560396-1');
+</script>
+	</head>
+	<body>
+		<nav class='main'>
+      <div class='content-wrapper'>
+        <div class="nav-wrapper">
+	<a class="navbar-brand" href="/"></a>
+	<ul>
+		<li ><a href='/blog' alt="Akshata Mohanty's Blog">Blog</a></li>
+		<li ><a href='/works' alt="Akshata Mohanty's Projects">Works</a></li>
+		<li ><a href='/talks' alt="Akshata Mohanty's Talks">Talks</a></li>
+		<!-- <li ><a href='/about' alt="About Me">About</a></li> -->
+	</ul>
+</div>
+      </div>
+		</nav>
+		<br /><br />
+		<main>
+			<div class="content-wrapper post">
+				<article>
+					<div class='blog-post__content'>
+						<h1 class='post-title'>
+							Adding Jasmine to a Typescript project
+						</h1>
+						<summary>Lessons learned while adding the jasmine testing framework for Typescript</summary>
+						<small>
+							By <b>Akshata Mohanty</b> |
+							November 07, 2017
+						</small>
+						<br />
+						<br />
+						<img class='post__header-img' src=https://images.pexels.com/photos/372796/pexels-photo-372796.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260 width="100%">
+						<label><small>Image Credits: https://images.pexels.com/photos/372796/pexels-photo-372796.jpeg</small></label>
+						<br/>
+						<div class='post__content'><p>Test-driven development (TDD) is a best practice for clean, robust production-grade code. However, setting up these testing frameworks can be daunting. Here are some of the lessons I learned while setting up Jasmine testing framework for Typescript</p>
+
+<h1 id="creating-a-packagejson-file">Creating a package.json file</h1>
+
+<p>Use <code class="highlighter-rouge">npm init</code> to create the package.json file. It acts like a wizard and steps you through the entire file creation. Press enter to accept defaults (which will be in most cases). This file is what is used to configure the build process and run, build and test your application.</p>
+
+<p><br /></p>
+
+<h1 id="folder-structure">Folder Structure</h1>
+<p>This projects implements a folder structure as follows -</p>
+
+<p>Folder: <code class="highlighter-rouge">./</code></p>
+<ul>
+  <li><code class="highlighter-rouge">.config</code>: [Contains all the config files]
+    <ul>
+      <li><code class="highlighter-rouge">karma.config.ts</code> : Karma Configuration File</li>
+      <li><code class="highlighter-rouge">tsconfig.json</code>: Typscript Configuration File</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">src</code>: [Containts all the source Typescript files]</li>
+  <li><code class="highlighter-rouge">tests</code>: [Contains tests to be run on the src folder files]</li>
+</ul>
+
+<p><br /></p>
+
+<h1 id="packages-to-install">Packages to install</h1>
+
+<p>Next, you’ll need to install the packages required to compile and test typescript files.</p>
+<ul>
+  <li><code class="highlighter-rouge">@types/nodes</code> - This is needed to allow you to script in nodejs and use keywords like require, export etc.</li>
+  <li><code class="highlighter-rouge">karma-typescript</code> - To compile typescript files into Javascript which can be tested by Jasmine</li>
+  <li><code class="highlighter-rouge">karma-chrome-launcher</code> - To launch an instance of chrome. You have to install a launcher for each browser that you want to check against.</li>
+  <li><code class="highlighter-rouge">karma-jasmine-html-reporter</code> - This is required to display the Jasmine test results on Chrome; [Note: not karma-html-report]</li>
+  <li><code class="highlighter-rouge">@types/jasmine</code>- Required for Jasmine test to run and to get rid of errors with <code class="highlighter-rouge">describe</code> keyword etc</li>
+  <li><code class="highlighter-rouge">typescript</code> - Duh!</li>
+  <li><code class="highlighter-rouge">Jasmine Core</code></li>
+</ul>
+
+<p><br /></p>
+
+<h1 id="karma-config-files">Karma Config Files</h1>
+
+<p>Update the config file “files”: [] property, to point to the test files as well as the imports. This is required for the karma-typescript-compiler to compile properly or it won’t find the imported files, which you might be trying to check.</p>
+
+<p>If the tests are not visible, but Jasmine is, means there is problem with file paths in the karma.config file</p>
+
+<p>Specify the module in the karmaTypescriptConfig options as “commonjs” or it will not accept export/import modules</p>
+
+<p><br /></p>
+
+<h1 id="running-scripts-with-packagejson">Running scripts with <code class="highlighter-rouge">package.json</code></h1>
+
+<p>Update package.json to run</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="p">{</span> <span class="dl">"</span><span class="s2">test</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">karma start &lt;karma_config_file_path&gt;</span><span class="dl">"</span> <span class="p">}</span>
+</code></pre></div></div>
+
+<p>Basically, this gets run whenever <code class="highlighter-rouge">npm test</code> is run</p>
+
+<p><br /></p>
+
+<h1 id="typedocs">Typedocs</h1>
+
+<p>For the docs - just the following script in <code class="highlighter-rouge">package.json</code> will do:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="dl">"</span><span class="s2">build-docs</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">typedoc --out ./docs ./src --module commonjs</span><span class="dl">"</span>
+</code></pre></div></div>
+</div>
+					</div>
+				</article>
+			</div>
+		</main>
+		<footer>
+			<div>
+				<br />
+<h2>Was this helpful? Please share.</h2>
+<br />
+<div class="social-media-icons">
+    <a target="_blank"
+        href='https://www.linkedin.com/sharing/share-offsite/?url=https://akshata.dev/tech/blog_typescript-testing-with-karma.html'>
+        <i class="fa fa-linkedin"></i>
+    </a>
+    <a target="_blank"
+        href='https://twitter.com/intent/tweet?text=Adding Jasmine to a Typescript project by @iamaatoh&url=https://akshata.dev/tech/blog_typescript-testing-with-karma.html'>
+        <i class="fa fa-twitter"></i>
+    </a>
+    <a target="_blank"
+        href='http://www.reddit.com/submit?url=https://akshata.dev/tech/blog_typescript-testing-with-karma.html&title=Adding+Jasmine+to+a+Typescript+project%20by%20@akshatamohanty'>
+        <i class="fa fa-reddit"></i>
+    </a>
+    <a target="_blank"
+        href="http://news.ycombinator.com/submitlink?u=https://akshata.dev/tech/blog_typescript-testing-with-karma.html&t=Adding Jasmine to a Typescript project by Akshata Mohanty">
+        <i class="fa fa-y-combinator"></i>
+    </a>
+    <a href="whatsapp://send?text=Adding+Jasmine+to+a+Typescript+project%20by%20Akshata Mohanty%20https://akshata.dev/tech/blog_typescript-testing-with-karma.html"
+        data-action="share/whatsapp/share">
+        <i class="fa fa-whatsapp"></i>
+    </a>
+</div>
+<br/>
+			</div>
+			<br/><br /><br/><br />
+      Copyright © 2020
+Akshata Mohanty</a>.
+All Rights Reserved.
+    </footer>
+	</body>
