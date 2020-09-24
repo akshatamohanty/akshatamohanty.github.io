@@ -1,0 +1,12 @@
+<li class='tile bottom-up'>
+  <a href="{{ post.link }}" target='_blank'>
+    <summary>
+      <small>{{post.type}} | {{ post.location }}</small>
+      <div class='title'>{{ post.title }}</div>
+      {% if post.authors %}<div style="font-size: 1.3rem; margin-bottom: 5px;">{{post.authors}}</div> {% endif %}
+    </summary>
+    <div class='embed'>
+      <img src={{post.image}} />
+    </div>
+  </a>
+</li>

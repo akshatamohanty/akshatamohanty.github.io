@@ -1,6 +1,9 @@
+$navbar-height: 60px;
+$default-spacing: 30px;
+$default-padding: 2%;
+$max-content-width: 70%;
+
 $content-margin: 30px;
-
-
 
 $content-side-padding: 90px;
 $content-top-padding: 40px;
@@ -12,9 +15,8 @@ $section-padding: $content-padding--wide/2 $content-padding $content-padding $co
 $post-padding: 30px;
 $list-spacing: 10px;
 
-
-
-$black: #3F4651;
+$black: #000;
+$white: #fff;
 $light-black: #6f6f6f;
 $muted-black: #ddd;
 

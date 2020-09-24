@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include page-elements/head.html %}
+  </head>
+	<body>
+    <nav class='main'>
+      <div class='content-wrapper'>
+        {% include page-elements/category-navigation.html %}
+      </div>
+    </nav>
+    <main>
+      <!-- header -->
+      <header class='page-header content-wrapper'>
+        <div class='about'>
+          {%  include page-elements/section-header.html title=page.page %}
+        </div>
+        <div class='latest-item'>
+          <h4>Recent →</h4>
+          {% for post in site.categories[page.category.first] limit:1 %}
+            <div class='embed'
+              style="background-image: url({{post.image}});">
+              {{ post.embed }}
+            </div>
+            <h1>
+              {% if post.link %}
+              <a href={{post.link}}>
+              {% else %}
+              <a href={{post.url}}>
+              {% endif %}
+                {{ post.title }}
+              </a>
+            </h1>
+            <summary>{{ post.summary }}</summary>
+            <small>
+              {{post.date | date: "%B %d, %Y"}}
+            </small>
+          {% endfor %}
+        </div>
+      </header>
+
+      <!-- content -->
+      <section>
+        {% for category in page.category %}
+        <div class='content-wrapper content-section'>
+          {%
+            include page-elements/section.html
+            category=category
+            title=category
+            limit=100
+            all=true
+            date=true
+          %}
+          <br /><br /><br /><br /><br /><br />
+        </div>
+        {% endfor %}
+      </section>
+    </main>
+    <footer>
+      {% include page-elements/copyright.html %}
+    </footer>
+  </body>
+</html>

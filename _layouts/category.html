@@ -1,33 +1,63 @@
 <!DOCTYPE html>
 <html>
-
-	{% include page-elements/head.html %}
-    {% include page-elements/category-navigation.html %}
-
-    <br />
-    <div class='container--main category'>
-        <!-- {% include page-elements/simplenav.html %} -->
-        <div>
-            {%  include page-elements/section-header.html %}
-            <hr />
-            <br />
-            <div>
-                {% for post in site.posts %}
-                    {% if post.group == page.page %}
-                        {% include page-elements/blog-post-container.html %}
-                        <!-- {% if post.group == 'blog' or post.group == 'works' %}
-                        {% else %}
-                            {% include page-elements/post-container.html %}
-                        {% endif %} -->
-                    {% endif %}
-                {% endfor %}
+  <head>
+    {% include page-elements/head.html %}
+  </head>
+	<body>
+    <nav class='main'>
+      <div class='content-wrapper'>
+        {% include page-elements/category-navigation.html %}
+      </div>
+    </nav>
+    <main>
+      <!-- header -->
+      <header class='page-header content-wrapper'>
+        <!-- <div class='about'>
+          {%  include page-elements/section-header.html  %}
+        </div> -->
+        <div class='latest-item'>
+          <h4>Recent →</h4>
+          {% for post in site.categories[category] limit:1 %}
+            <div class='image'
+              style="background-image: url('https://placehold.it/400x400');">
             </div>
+            <h1><a href={{post.url}}>{{ post.title }}</a></h1>
+            <summary>{{ post.summary }}</summary>
+            <br />
+            <small>
+              By <b>Akshata Mohanty</b></small> |
+              {{post.date | date: "%B %d, %Y"}}
+            </small>
+          {% endfor %}
         </div>
-        <br />
-        <br />
-        <hr />
-        {% include page-elements/about.html %}
-        <br />
-    </div>
-	{% include page-elements/copyright.html %}
+      </header>
+
+      <!-- content -->
+      <section>
+        {% for category in page.category %}
+        <div class='content-wrapper content-section'>
+          <header>
+            <h3>{{ category }}</h3>
+          </header>
+            <ul class='list-container'>
+              {% for post in site.categories[category]  %}
+                <li class='tile'>
+                  <a href="{{ post.url }}">
+                    <div class='embed'>
+                      <!-- <img src="{{ post.image }}" /> -->
+                      <img src="https://placehold.it/300x200" />
+                    </div>
+                    <div class='title'>{{ post.title }}</div>
+                    <summary>
+                      <div class='description'>{{ post.summary }}</div>
+                    </summary>
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+        </div>
+        {% endfor %}
+      </section>
+    </main>
+  </body>
 </html>

@@ -1,0 +1,28 @@
+{% if include.category == 'research' %}
+{% include thumbnails/research.html %}
+{% elsif include.category == 'talks' %}
+{% include thumbnails/talk.html %}
+{% elsif include.category == 'books' or include.category == 'tech' %}
+{% include thumbnails/post.html date=include.date %}
+{% elsif include.category == 'aiml' or include.category == 'fullstack' %}
+{% include thumbnails/project.html %}
+{% else %}
+  <li class='tile'>
+    <a href="{{ post.url }}">
+      <div class='embed'>
+        {% if post.badge %}
+          <div class='badge'>{{ post.badge }}</div>
+        {% endif %}
+        {% if post.embed %}
+          {{ post.embed }}
+        {% else %}
+          <img src={{post.image}} />
+        {% endif %}
+      </div>
+      <div class='title'>{{ post.title }}</div>
+      <summary>
+        <div class='description'>{{ post.summary }}</div>
+      </summary>
+    </a>
+  </li>
+{% endif %}

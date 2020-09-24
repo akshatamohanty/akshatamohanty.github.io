@@ -1,0 +1,12 @@
+<header>
+  <h3>{{include.title}}</h3>
+  {% if include.all == true %}
+  {% else %}
+    <a href='{{include.link}}'>See More</a>
+  {% endif %}
+</header>
+<ul class='list-container {{include.narrow}}'>
+  {% for post in site.categories[include.category] limit:include.limit %}
+    {% include thumbnails/index.html category=include.category date=include.date %}
+  {% endfor %}
+</ul>

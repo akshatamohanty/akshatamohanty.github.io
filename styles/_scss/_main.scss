@@ -5,7 +5,6 @@ html {
 	margin: 0;
 	padding: 0;
 	font-size: 10px;
-	background-color: #f7f7f7;
 }
 
 body {
@@ -31,20 +30,6 @@ a {
 	}
 }
 
-blockquote {
-	position: relative;
-	margin-top: 45px;
-	margin-bottom: 45px;
-}
-
-blockquote::before {
-	content: ' ';
-	position: absolute;
-	left: -40px;
-	width: 5px;
-	height: 100%;
-	background-color: $light-black;
-}
 
 .category-description {
 	p {
@@ -85,15 +70,7 @@ p {
 	}
 }
 
-.img--profile {
-	width: 120px;
-	height: 120px;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-image: url('../assets/akshata_dev.jpg');
-	border-radius: 4px;
-	margin-right: 15px;
-}
+
 
 .off-black {
 	color: $light-black;
@@ -133,33 +110,5 @@ p {
 	#mc-embedded-subscribe {
 		border-radius: 0;
 		width: 100%;
-	}
-}
-
-pre {
-	background-color: $black;
-	border-radius: 10px;
-	color: $muted-black;
-	padding: 5px 5px 5px 15px;
-	font-size: 1.4rem;
-	max-width: 100%;
-	overflow: auto;
-	border-left: 8px solid $font-color-accent;
-	border-right: 2px solid $muted-black;
-}
-
-table {
-	width: 100%;
-	font-size: 1.4rem;
-	overflow: auto;
-	border-top: 1px solid $muted-black;
-	border-bottom: 1px solid $muted-black;
-
-	td {
-		text-align: center;
-	}
-
-	th {
-		border-bottom: 1px solid $muted-black;
 	}
 }

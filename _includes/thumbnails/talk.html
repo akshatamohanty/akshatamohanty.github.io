@@ -1,0 +1,13 @@
+<li class='tile talk'>
+  <a href="{{ post.link }}" target='_blank'>
+    <summary>
+      <small>
+        {{ post.date | date: "%b '%y" }} | {{ post.where }}
+      </small>
+      <div class='title'>{{ post.title }}</div>
+    </summary>
+    <div class='embed'>
+      {{ post.embed }}
+    </div>
+  </a>
+</li>

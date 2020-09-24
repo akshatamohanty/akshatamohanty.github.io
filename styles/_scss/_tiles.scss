@@ -1,0 +1,212 @@
+
+header.page-header {
+  display: flex;
+  flex-direction: column;
+  min-height: 50vh;
+  margin-top: 45px;
+
+  .about {
+    margin: 60px 0;
+  }
+
+  .latest-item {
+    flex-grow: 1;
+
+    .embed {
+      display: flex;
+      min-height: 314px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      img,
+      iframe,
+      video {
+        height: auto;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.content-section {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    align-items: center;
+
+    h3 {
+      display: inline;
+    }
+
+    a {
+      font-family: 'Ubuntu Condensed', sans-serif;
+      font-size: 1.4rem;
+    }
+  }
+}
+
+ul.list-container {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 3fr));
+  margin: 0;
+  padding: 0;
+
+  .embed {
+    height: 200px;
+  }
+
+  &.narrow {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 4fr));
+
+    .embed {
+      height: 150px;
+    }
+  }
+}
+
+li.tile {
+  list-style-type: none;
+  border-radius: 4px;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 45px;
+
+  a {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  summary {
+    // font-size: 1.3rem;
+    // font-family: 'Montserrat', sans-serif;
+    // color: $light-black;
+    margin-top: 5px;
+    flex-grow: 1;
+  }
+
+  .title {
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 1.3;
+    margin: 5px 0 0 0;
+  }
+
+  .description {
+    font-size: 1.4rem;
+    line-height: 1.2;
+    font-weight: lighter;
+  }
+
+  .details {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+
+  .when {
+    font-size: 1.4rem;
+  }
+
+  .embed {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: gray;
+    text-align: center;
+
+    img {
+      width: 100%;
+      height: auto;
+      max-height: 100%;
+    }
+
+    iframe,
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .badge {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: $black;
+      color: $white;
+      padding: 5px;
+      font-size: 1.2rem;
+    }
+
+  }
+}
+
+
+h3, h4 {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  margin: 10px 0;
+}
+
+// desktop
+@media screen and (min-width: 600px) {
+  header.page-header {
+    display: flex;
+    flex-direction: row;
+
+    .about {
+      padding: 0 45px 0 0;
+    }
+
+    .latest-item {
+      min-width: 55%;
+    }
+  }
+
+  .tile {
+    // margin: 30px 40px 30px 0;
+  }
+}
+
+.img--profile {
+	width: 140px;
+	height: 140px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url('../assets/akshata_dev.jpg');
+  border-radius: 50%;
+  border: 5px solid gray;
+}
+
+
+.social-media-icons {
+	a {
+		text-decoration: none;
+	}
+
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	display: inline;
+
+	.fa {
+		font-size: 24px;
+		border: 3px solid $body-font-color;
+		border-radius: 50%;
+		padding: 10px;
+		margin-right: 15px;
+		margin-top: 10px;
+		color: $body-font-color;
+	}
+
+	:hover {
+		color: $font-color-muted;
+
+		.fa {
+			border: 3px solid $font-color-muted;
+		}
+	}
+}

@@ -1,72 +1,48 @@
-/// ---- top navigation
-.navbar {
-	background-color: $black;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	padding: 0 $content-margin;
+nav.main {
+	position: fixed;
+	width: 100%;
+	background-color: $white;
 	z-index: 3;
-	height: 45px;
-	align-items: center;
+
 
 	ul, li {
-		margin: 0;
-		padding: 0;
+		list-style-type: none;
+		display: inline;
 	}
 
 	a {
 		text-decoration: none;
-		color: $font-color-accent;
-
-		:hover {
-			font-weight: 600;
-			cursor: pointer;
-		}
+		color: inherit;
 	}
 
-	.navbar-brand {
+	.nav-wrapper {
+		margin: 0 auto;
+		width: auto;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.navbar-brand::before {
 		font-size: 2rem;
-		flex-grow: 1;
-	}
-
-	.nav-links-wrapper {
-		li {
-			text-transform: uppercase;
-			display: inline;
-			margin: 0 2vw;
-			font-size: 2rem;
-		}
-
-		li.active {
-			font-weight: 600;
-		}
-	}
-
-	.navbar-brand-sm {
-		display: none;
+		content: '~';
 	}
 }
 
-@media screen and (max-width: 600px) {
-	.navbar {
-		padding: 0 15px;
+// desktop
+@media screen and (min-width: 600px) {
+	nav.main {
+		.nav-wrapper {
+			padding: 0;
+		}
 
-		.navbar-brand {
-			display: none;
+		.navbar-brand::before {
+			content: '<iamaatoh />';
 		}
 
 		.navbar-brand-sm {
 			display: inline-flex;
-		}
-	}
-
-
-	.nav-links-wrapper {
-		text-align: center;
-
-		li {
-			margin: 0;
-			padding: 0;
 		}
 	}
 }
