@@ -136,4 +136,3 @@ Something to note is that the knowledge gained while preparing for this exam is 
 So - go on, take the test and best of luck!
 
 <br />
-<br />
