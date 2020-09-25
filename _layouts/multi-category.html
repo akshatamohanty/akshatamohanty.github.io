@@ -50,17 +50,19 @@
       <!-- content -->
       <section>
         {% for category in page.category %}
-        <div class='content-wrapper content-section'>
-          {%
-            include page-elements/section.html
-            category=category
-            title=category
-            limit=100
-            all=true
-            date=true
-          %}
-          <br /><br /><br /><br /><br /><br />
-        </div>
+          {% if site.categories[category].size > 0 %}
+          <div class='content-wrapper content-section'>
+            {%
+              include page-elements/section.html
+              category=category
+              title=category
+              limit=100
+              all=true
+              date=true
+            %}
+          </div>
+          <div class='divider'></div>
+          {% endif %}
         {% endfor %}
       </section>
     </main>
