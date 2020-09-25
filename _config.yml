@@ -3,12 +3,11 @@ destination: _site
 encoding: UTF-8
 
 name: Akshata Mohanty | Software Engineer
-description: This is my personal blog, where I write about technology, books and other odd things.
+summary: This is my personal blog, where I write about technology, books and other odd things.
 url: https://akshata.dev
 
-title:            Akshata Mohanty | Software Engineer
-description:      This is my personal blog, where I write about technology, books and other odd things.
-permalink:        /:title:output_ext
+title: Akshata Mohanty | Software Engineer
+permalink: /:title:output_ext
 
 sass:
   sass_dir: styles/_scss

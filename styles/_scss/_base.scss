@@ -26,7 +26,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Ubuntu Condensed', sans-serif;
   line-height: 1;
-  margin-bottom: 5px;
+  margin: 5px 0;
 }
 
 h1.post-title {
@@ -159,4 +159,29 @@ blockquote::before {
 	width: 5px;
 	height: 100%;
 	background-color: $light-black;
+}
+
+article {
+  line-height: 1.5;
+
+  a {
+    text-decoration: underline;
+
+    &:hover {
+      color: $font-color-muted;
+    }
+  }
+}
+
+.divider {
+  width: 100%;
+  font-size: 64px;
+  color: $muted-black;
+  text-align: center;
+  padding-bottom: 30px;
+
+  &:before {
+    content: '. . .';
+    margin: 0 auto;
+  }
 }

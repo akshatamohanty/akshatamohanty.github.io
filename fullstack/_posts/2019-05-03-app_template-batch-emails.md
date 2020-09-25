@@ -1,6 +1,6 @@
 ---
 title:  batch-mailer
-summary: plugin for google spreadsheets to send customized batch emails based on templates from docs
+summary: plugin for google spreadsheets to send batch emails from doc templates
 link: https://github.com/akshatamohanty/GoogleDocsEmail
 date:  2019-05-03
 image: https://images.pexels.com/photos/3059854/pexels-photo-3059854.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500

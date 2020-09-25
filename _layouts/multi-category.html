@@ -17,25 +17,33 @@
         </div>
         <div class='latest-item'>
           <h4>Recent →</h4>
-          {% for post in site.categories[page.category.first] limit:1 %}
-            <div class='embed'
-              style="background-image: url({{post.image}});">
-              {{ post.embed }}
-            </div>
-            <h1>
-              {% if post.link %}
-              <a href={{post.link}}>
-              {% else %}
-              <a href={{post.url}}>
+          {% assign latest_post = null %}
+          {% for cate in page.category %}
+            {% for post in site.categories[cate] limit:1 %}
+              {% assign post_date = post.date | date: '%s' %}
+              {% assign latest_date = latest_post.date | date: '%s' %}
+              {% if post_date > latest_date or latest_post == null %}
+              {% assign latest_post = post %}
               {% endif %}
-                {{ post.title }}
-              </a>
-            </h1>
-            <summary>{{ post.summary }}</summary>
-            <small>
-              {{post.date | date: "%B %d, %Y"}}
-            </small>
+            {% endfor %}
           {% endfor %}
+          <div class='embed'
+            style="background-image: url({{latest_post.image}});">
+            {{ latest_post.embed }}
+          </div>
+          <h1>
+            {% if latest_post.link %}
+            <a href={{latest_post.link}} target='_blank'>
+            {% else %}
+            <a href={{latest_post.url}}>
+            {% endif %}
+              {{ latest_post.title }}
+            </a>
+          </h1>
+          <summary>{{ latest_post.summary }}</summary>
+          <small>
+            {{latest_post.date | date: "%B %d, %Y"}}
+          </small>
         </div>
       </header>
 

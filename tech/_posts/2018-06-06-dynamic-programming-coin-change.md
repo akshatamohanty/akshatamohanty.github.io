@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Introduction to Dynamic Programming
-summary: Digging deeper into the "coin-change" problem with DP
+summary: Digging deeper into the "coin-change" problem with dynamicc programming
 date:   2018-06-06
 image: https://images.pexels.com/photos/259165/pexels-photo-259165.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
 credits: https://images.pexels.com/photos/259165/pexels-photo-259165.jpeg

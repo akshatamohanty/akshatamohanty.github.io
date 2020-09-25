@@ -2,7 +2,7 @@
 page: about
 layout: about
 title: About Me
-description: ""
+summarys: ""
 ---
 
 Hi. I am Akshata.
