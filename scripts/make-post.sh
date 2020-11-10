@@ -12,8 +12,9 @@ formattedDate=$(date +"%Y-%m-%d")
 filename=${cate}/_posts/${formattedDate}-${name}.md
 cat > ${filename} <<EOL
 ---
+published: false
 layout: post
-title: ${filename}
+title: ${name}
 summary:
 date:  ${formattedDate}
 image:
