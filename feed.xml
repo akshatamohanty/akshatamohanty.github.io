@@ -9,6 +9,17 @@
       
       <item>
         <category></category>
+        <title>Fireside Chat: From Construction Architects to Tech Architects</title>
+        <description>Transitioning into the tech industry</description>
+        <pubDate>Apr 2021</pubDate>
+        <link>https://akshata.dev/talks/architecture-to-software-engineering.html </link>
+        <guid isPermaLink="true">https://akshata.dev/talks/architecture-to-software-engineering.html</guid>
+      </item>
+      
+    
+      
+      <item>
+        <category></category>
         <title>Preparing for the Google Cloud Associate Engineer Exam</title>
         <description>What is the Google Cloud Associate Engineer exam and how to ace it?</description>
         <pubDate>Sep 2020</pubDate>
@@ -47,17 +58,6 @@
         <pubDate>Aug 2020</pubDate>
         <link>https://akshata.dev/talks/tl-nodejs-workshop.html </link>
         <guid isPermaLink="true">https://akshata.dev/talks/tl-nodejs-workshop.html</guid>
-      </item>
-      
-    
-      
-      <item>
-        <category></category>
-        <title>AI for Non-PhDs: AI Superpowers in 30 minutes</title>
-        <description>Exploring accessible AI by building a voice-app</description>
-        <pubDate>Jul 2020</pubDate>
-        <link>https://akshata.dev/talks/building-a-voice-app.html </link>
-        <guid isPermaLink="true">https://akshata.dev/talks/building-a-voice-app.html</guid>
       </item>
       
     
