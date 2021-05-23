@@ -9,6 +9,17 @@
       
       <item>
         <category></category>
+        <title>Documentation Decoded</title>
+        <description>Effective documentation not only helps understand code, but can also improve code. Here are some ways to create better docs.</description>
+        <pubDate>May 2021</pubDate>
+        <link>https://akshata.dev/tech/the-art-of-writing-documentation.html </link>
+        <guid isPermaLink="true">https://akshata.dev/tech/the-art-of-writing-documentation.html</guid>
+      </item>
+      
+    
+      
+      <item>
+        <category></category>
         <title>Fireside Chat: From Construction Architects to Tech Architects</title>
         <description>Transitioning into the tech industry</description>
         <pubDate>Apr 2021</pubDate>
@@ -47,17 +58,6 @@
         <pubDate>Aug 2020</pubDate>
         <link>https://akshata.dev/talks/reacting-faster-reactsg.html </link>
         <guid isPermaLink="true">https://akshata.dev/talks/reacting-faster-reactsg.html</guid>
-      </item>
-      
-    
-      
-      <item>
-        <category></category>
-        <title>Introduction to NodeJs: Pre-Bootcamp Workshop</title>
-        <description>Fara Blanco, Thomas Chia & Akshata Mohanty</description>
-        <pubDate>Aug 2020</pubDate>
-        <link>https://akshata.dev/talks/tl-nodejs-workshop.html </link>
-        <guid isPermaLink="true">https://akshata.dev/talks/tl-nodejs-workshop.html</guid>
       </item>
       
     
