@@ -1,0 +1,13 @@
+<nav>
+	<a href='/'><h2>&lt;iamaatoh /&gt;</h2></a>
+	<div>Learn. Reflect. Engineer.</div>
+	<br />
+	<hr />
+	<ul>
+		<li {% if page.page == 'blog' %} class='active' {% endif %}><a href='/blog' alt="Blog">Blog</a></li>
+		<li {% if page.page == 'project' %} class='active' {% endif %}><a href='/project' alt="Project">Projects</a></li>
+		<li {% if page.page == 'public' %} class='active' {% endif %}><a href='/public' alt="Public">Talks & Research</a></li>
+		<li {% if page.page == 'contact' %} class='active' {% endif %}><a href='/contact' alt="Contact">Contact</a></li>
+	</ul>
+	<hr />
+</nav>

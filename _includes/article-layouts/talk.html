@@ -1,9 +1,0 @@
-<article class="talk">
-  <div class="wrapper">
-    {{ post.embed }}
-    <h6>{{post.title}}</h6>
-    <summary class="post__summary">{{ post.summary }}</summary>
-    <div class='date'>{{post.date | date: "%D"}}</div>
-    {% if post.authors %}<p class='post__authors'>{{post.authors}}</p>{% endif %}
-  </div>
-</article>

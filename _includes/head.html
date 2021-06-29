@@ -1,0 +1,34 @@
+<head>
+	<title>{{ page.title }} | Akshata Mohanty</title>
+	<meta name="description" content="{{ page.summary }}" />
+
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<meta property="og:title" content="{{ page.title }}" />
+	<meta property="og:description" content="{{ page.summary }}" />
+	<meta property="og:image" content="{{ page.image }}" />
+	<meta property="og:image:width" content="400" />
+	<meta property="og:image:height" content="300" />
+	<meta property="og:type" content="website" />
+
+	<!-- main stylesheet -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/styles/main.css">
+
+	<link href='https://akshata.dev/feed.xml' rel='alternate' type='application/atom+xml'>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111560396-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-111560396-1');
+		document.fonts.ready.then((fontFaceSet) => {
+			document.body.style.opacity = 1
+		});
+	</script>
+</head>

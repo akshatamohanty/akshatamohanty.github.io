@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+
+  <body>
+    {% include navigation.html %}
+
+    <main>
+      <ul>
+        {% for post in site.categories[page.category]  %}
+          <li>
+            {% include thumbnails/{{page.category}}.html %}
+            <br />
+          </li>
+        {% endfor %}
+      </ul>
+    </main>
+  </body>
+
+  {% include footer.html %}
+</html>

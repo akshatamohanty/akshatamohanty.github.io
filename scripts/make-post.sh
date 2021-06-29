@@ -13,7 +13,7 @@ filename=${cate}/_posts/${formattedDate}-${name}.md
 cat > ${filename} <<EOL
 ---
 published: false
-layout: post
+
 title: ${name}
 summary:
 date:  ${formattedDate}

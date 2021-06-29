@@ -1,0 +1,19 @@
+<a href="{{post.link}}" style="display: block; width: 100%; margin: 40px 0; text-align: center;">
+  <div>
+    <h2 style="margin-bottom: 8px">{{ post.title }}</h2>
+    {{ post.date | date: "%b'%y" }}
+    |
+    {{ post.type }}
+    {% if post.where %}
+    | {{ post.where }}
+    {% endif %}
+  </div>
+
+  <div style="position:relative; height: 300px">
+    <br />
+    {{post.embed}}
+    {% if post.image %}
+      <img src="{{post.image}}" style="height: 100%; max-width: 100%;" />
+    {% endif %}
+  </div>
+</a>

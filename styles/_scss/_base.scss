@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
-
 html {
 	position: relative;
 	margin: 0;
@@ -11,104 +8,63 @@ html {
 }
 
 body {
-  opacity: 0;
   position: relative;
-  font-size: 1.8rem;
-	line-height: 1.2;
-	font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+	line-height: 1.4;
+	font-family: 'Courier New', Courier, monospace;
   padding: 0;
-  margin: 0;
+  margin: auto;
   height: 100%;
 
   display: flex;
   flex-direction: column;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Ubuntu Condensed', sans-serif;
-  line-height: 1;
-  margin: 5px 0;
-}
-
-h1.post-title {
-  font-size: 48px;
-  line-height: 1;
-  margin-top: 30px;
-}
-
-small {
-  color: $light-black;
+  max-width: $max-content-width;
 }
 
 nav {
-  font-family: 'Ubuntu Condensed', sans-serif;
-  border-bottom: 4px solid $muted-black;
+	position: fixed;
+	width: 100%;
+	background-color: $white;
+	z-index: 3;
+  text-align: center;
+  max-width: $max-content-width;
+  padding-bottom: 16px;
 
-  li {
-    margin-left: 15px;
-
-    &.active {
-      text-decoration: underline;
-      font-weight: bold;
-    }
+  h2 {
+    margin-bottom: 8px;
   }
 }
 
 main {
-  padding-top: 5%;
+  padding: 200px 16px 0 16px;
   flex-grow: 1;
 }
 
-section {
-  min-height: 300px;
+footer {
+  align-self: center;
+  margin: 16px 8px;
+  text-align: center;
+}
 
+section {
   display: flex;
   flex-direction: column;
   padding: 60px 0;
+}
 
-  header h3 {
+ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  display: inline;
+
+  &.active {
     text-decoration: underline;
-  }
-
-  &.dark {
-    background-color: $black;
-    color: $white;
-  }
-}
-
-footer {
-  min-height: 200px;
-  background: $black;
-  color: $white;
-  font-size: 1rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-nav,
-main,
-footer {
-  .content-wrapper {
-    width:  calc(100% - 30px);
-    margin: 0 15px;
-  }
-}
-
-// desktop
-@media screen and (min-width: 600px) {
-  nav,
-  main,
-  footer {
-    .content-wrapper {
-      margin: 0px auto 0;
-      max-width: $max-content-width;
-
-      &.post {
-        max-width: 750px;
-      }
-    }
+    font-weight: bold;
   }
 }
 
@@ -117,6 +73,10 @@ a {
   color: inherit;
 }
 
+a:hover {
+  cursor: pointer;
+  color: blue;
+}
 
 pre {
 	background-color: $black;
@@ -146,7 +106,6 @@ table {
 	}
 }
 
-
 blockquote {
 	position: relative;
 	margin-top: 45px;
@@ -172,17 +131,17 @@ article {
       color: $font-color-muted;
     }
   }
+
+  li {
+    display: block;
+  }
 }
 
-.divider {
-  width: 100%;
-  font-size: 64px;
-  color: $muted-black;
-  text-align: center;
-  padding-bottom: 30px;
+small {
+  color: $light-black;
+}
 
-  &:before {
-    content: '. . .';
-    margin: 0 auto;
-  }
+iframe, video {
+  height: 100%;
+  width: 100%;
 }

@@ -1,11 +1,17 @@
-<li class='tile'>
-  <a href="{{ post.link }}" target='_blank'>
-    <div class='embed'>
-      <img src="{{post.image}}" />
-    </div>
-    <div class='title'>{{ post.title }}</div>
-    <summary>
-      <div class='description'>{{ post.summary }}</div>
-    </summary>
-  </a>
-</li>
+<a href="{{post.link}}" style="display: flex; flex-direction: row; margin-bottom: 16px;">
+  <div style="margin-right: 16px;">
+    <img src="{{post.image}}" width="150px" />
+  </div>
+
+  <div>
+    <small>
+      {{ post.date | date: "%b'%y" }}
+    </small>
+    <br />
+    <b style="text-transform: uppercase;">{{ post.title }}</b>
+    <br />
+    <small>
+    {{ post.summary }}
+    </small>
+  </div>
+</a>
