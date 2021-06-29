@@ -3,14 +3,14 @@ destination: _site
 encoding: UTF-8
 name: Akshata Mohanty | Software Engineer
 summary: This is my personal blog, where I write about technology, books and other odd things.
-url: https://akshata.dev
+url: https://iamaatoh.com
 title: Akshata Mohanty | Software Engineer
 permalink: none
 sass:
   sass_dir: styles/_scss
 author:
   name:  'Akshata Mohanty'
-  url:  https://akshata.dev/
+  url:  https://iamaatoh.com
 version: 4.0.0
 github:
   repo:  https://github.com/akshatamohanty/akshatamohanty.github.io
