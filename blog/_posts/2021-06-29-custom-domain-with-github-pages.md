@@ -1,27 +1,28 @@
 ---
+published: false
 title: "DNS Detangling: Setting up a custom domain for Github pages"
-summary:
+summary: Geeky excuse to mask good old domain squatting.
 date:  2021-06-29
 tags:
  - tag1
 ---
 
-Buying domains is one of my guilty pleasures. I recently bought a new one to host this website. Here's what I learned while trying to setup it up.
+Buying domains is one of my guilty pleasures. I recently bought a new one to host this website. And here's what I learned while trying to setup it up.
 
-This website, is hosted for free on [Github Pages](https://pages.github.com/). It is a really cool feature, that allows you to host static websites for free, directly from your repo. The default domain that it points to is `<user>.github.io` which is not very user friendly. To correct that, Github pages does offer the ability to re-point this to your own custom domain.
+This website, is hosted for free on [Github Pages](https://pages.github.com/). It is a really cool feature, that allows you to host static websites for free, directly from your repo. But, as with all dreams come true, the default domain that it points to is `<user>.github.io` which is not very user friendly. To correct that, Github pages does offer the ability to re-point this to your own custom domain.
 
-To do that, here are the steps:
+Here's how to do it,
 
 - Setup a `CNAME` entry in your Github repository with your custom domain. For eg, if you visit my repository for this website on Github, you'll notice a [CNAME file](https://github.com/akshatamohanty/akshatamohanty.github.io/blob/master/CNAME) with a domain entry. You can either create this manually or by using the Github UI at `Settings > Pages` page
 
-- Now, we need to configure the DNS records on our hosting platform. I bought my domain using NameCheap - so I followed their guideliness to add A and CNAME records. I wanted `iamaatoh.com` to point directly to my website, not a subdomain. So I followed instructions to get the apex domain to point to the Github page. This is done by
+- Now, we need to configure the DNS records on our hosting platform. I bought my domain using NameCheap - so I followed their guideliness to add A and CNAME records. I wanted `iamaatoh.com` to point directly to my website, not a subdomain. So I followed instructions to get the apex domain to point to the Github page. To do this,
 
   - Add A records to point to Github servers
   - Add CNAME record to point `www` host to my Github `<user>.github.io` path
 
 - To test, I used the `dig` command and the Github UI. After a while, my website showed up here - right where you are reading this blog post.
 
-### what is happening under the hood?
+### So, what's happening under the hood?
 -- add diagram --
 what is an apex domain
 what does the github workflow look like? what's happening?
