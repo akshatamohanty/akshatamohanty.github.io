@@ -104,8 +104,12 @@ article {
     text-decoration: underline; }
     article a:hover {
       color: rgba(231, 112, 0, 0.692); }
-  article li {
+  article ul {
+    padding-left: 32px;
     display: block; }
+  article li {
+    list-style-type: decimal;
+    display: list-item; }
 
 small {
   color: #6f6f6f; }

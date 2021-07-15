@@ -9,6 +9,17 @@
       
       <item>
         <category></category>
+        <title>Python Package Management, for the Node developer</title>
+        <description>Python is cold.</description>
+        <pubDate>Jul 2021</pubDate>
+        <link>https://iamaatoh.com/blog/setup-a-new-python-env.html </link>
+        <guid isPermaLink="true">https://iamaatoh.com/blog/setup-a-new-python-env.html</guid>
+      </item>
+      
+    
+      
+      <item>
+        <category></category>
         <title>Checklist for Better Software Documentation</title>
         <description>Effective documentation not only helps understand code, but can also improve code. Here are some ways to create better docs.</description>
         <pubDate>May 2021</pubDate>
@@ -47,17 +58,6 @@
         <pubDate>Sep 2020</pubDate>
         <link>https://iamaatoh.com/public/coding-girls-sg-panel.html </link>
         <guid isPermaLink="true">https://iamaatoh.com/public/coding-girls-sg-panel.html</guid>
-      </item>
-      
-    
-      
-      <item>
-        <category></category>
-        <title>React-ing faster: Optimize components for performance</title>
-        <description>Strategies to make your React components faster</description>
-        <pubDate>Aug 2020</pubDate>
-        <link>https://iamaatoh.com/public/reacting-faster-reactsg.html </link>
-        <guid isPermaLink="true">https://iamaatoh.com/public/reacting-faster-reactsg.html</guid>
       </item>
       
     

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Python Package Management, for the Node developer | Akshata Mohanty</title>
+	<meta name="description" content="Python is cold." />
+
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<meta property="og:title" content="Python Package Management, for the Node developer" />
+	<meta property="og:description" content="Python is cold." />
+	<meta property="og:image" content="" />
+	<meta property="og:image:width" content="400" />
+	<meta property="og:image:height" content="300" />
+	<meta property="og:type" content="website" />
+
+	<!-- main stylesheet -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/styles/main.css">
+
+	<link href='https://iamaatoh.com/feed.xml' rel='alternate' type='application/atom+xml'>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111560396-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-111560396-1');
+		document.fonts.ready.then((fontFaceSet) => {
+			document.body.style.opacity = 1
+		});
+	</script>
+</head>
+
+
+	<body>
+    <nav>
+	<a href='/'><h2>&lt;iamaatoh /&gt;</h2></a>
+	<div>Learn. Reflect. Engineer.</div>
+	<br />
+	<hr />
+	<ul>
+		<li ><a href='/blog' alt="Blog">Blog</a></li>
+		<li ><a href='/project' alt="Project">Projects</a></li>
+		<li ><a href='/public' alt="Public">Talks & Research</a></li>
+		<li ><a href='/contact' alt="Contact">Contact</a></li>
+	</ul>
+	<hr />
+</nav>
+
+		<main>
+			<center>
+				<small>
+					July 15, 2021
+				</small>
+				<h1>
+					Python Package Management, for the Node developer
+				</h1>
+			</center>
+
+
+			<article>
+				<p>This is going to be simple.</p>
+
+<p>I started building an API in Python. And the first thing was to manage my packages - because, let’s face it - installation hell is the worst kind of hell!</p>
+
+<p>Here’s how to do it,</p>
+
+<ul>
+  <li>Use the command below to create a new environment. This will add a new folder in your project with <code class="highlighter-rouge">_environment_name</code>. Make sure to add this to <code class="highlighter-rouge">.gitignore</code></li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 <span class="nt">-m</span> venv _environment_name_
+</code></pre></div></div>
+
+<ul>
+  <li>Activate this environment using,</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">source </span>_environment_name_/bin/activate
+</code></pre></div></div>
+
+<ul>
+  <li>Now, if you want to install and freeze packages, i.e, the nodejs equivalent of <code class="highlighter-rouge">npm install package_name --save</code>, here’s what you need</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>package_name <span class="o">&amp;&amp;</span> pip freeze <span class="o">&gt;</span> requirements.txt
+</code></pre></div></div>
+
+<p>Might add more to this post later - but for now - adios!</p>
+
+<p>Happy building!</p>
+
+			</article>
+
+			<br />
+			<hr />
+
+			<div>
+				<div>Was this helpful? Share with friends!</div>
+				<div class="social-media-icons">
+						<a target="_blank"
+								href='https://www.linkedin.com/sharing/share-offsite/?url=https://iamaatoh.com/blog/setup-a-new-python-env.html'>
+								<i class="fa fa-linkedin"></i>
+						</a>
+						<a target="_blank"
+								href='https://twitter.com/intent/tweet?text=Python Package Management, for the Node developer by @iamaatoh&url=https://iamaatoh.com/blog/setup-a-new-python-env.html'>
+								<i class="fa fa-twitter"></i>
+						</a>
+						<a target="_blank"
+								href='http://www.reddit.com/submit?url=https://iamaatoh.com/blog/setup-a-new-python-env.html&title=Python+Package+Management%2C+for+the+Node+developer%20by%20@akshatamohanty'>
+								<i class="fa fa-reddit"></i>
+						</a>
+						<a target="_blank"
+								href="http://news.ycombinator.com/submitlink?u=https://iamaatoh.com/blog/setup-a-new-python-env.html&t=Python Package Management, for the Node developer by Akshata Mohanty">
+								<i class="fa fa-y-combinator"></i>
+						</a>
+						<a href="whatsapp://send?text=Python+Package+Management%2C+for+the+Node+developer%20by%20Akshata Mohanty%20https://iamaatoh.com/blog/setup-a-new-python-env.html"
+								data-action="share/whatsapp/share">
+								<i class="fa fa-whatsapp"></i>
+						</a>
+				</div>
+			</div>
+		</main>
+
+		<footer>
+      <footer>
+  <small>
+    Copyright © 2021
+    Akshata Mohanty
+  </small>
+</footer>
+    </footer>
+	</body>
