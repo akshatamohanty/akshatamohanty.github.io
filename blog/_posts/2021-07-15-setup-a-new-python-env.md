@@ -1,6 +1,6 @@
 ---
 published: true
-title: Python Package Management, for the NodeJS developer
+title: Python Package Management, for the Node developer
 summary: Python is cold.
 date:  2021-07-15
 image:
