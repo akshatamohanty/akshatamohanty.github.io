@@ -5,9 +5,9 @@ NC='\033[0m' # No Color
 echo Post title?
 read name
 name=${name:="hello-world"}
-echo Choose a category [tech, productivity or books]
+echo Choose a category [blog, project, public]
 read cate
-cate=${cate:="tech"}
+cate=${cate:="blog"}
 formattedDate=$(date +"%Y-%m-%d")
 filename=${cate}/_posts/${formattedDate}-${name}.md
 cat > ${filename} <<EOL

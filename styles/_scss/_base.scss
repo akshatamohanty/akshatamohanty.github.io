@@ -132,8 +132,14 @@ article {
     }
   }
 
-  li {
+  ul {
+    padding-left: 32px;
     display: block;
+  }
+
+  li {
+    list-style-type: decimal;
+    display: list-item;
   }
 }
 
