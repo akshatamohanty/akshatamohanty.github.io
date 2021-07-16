@@ -12,13 +12,28 @@ layout: none
   <main>
     <h2>Hi. I am Akshata.</h2>
     <br/>
-    I am a Fullstack Engineer at Rakuten Viki, based in Singapore. I am a self-taught developer and graduated with a B.Arch (Hons.), from IIT Kharagpur in India in 2015.
+    I am a Senior Engineer at Rakuten Viki, Singapore. Orginally from India and graduated with a B.Arch (Hons.) degree, from IIT Kharagpur in India in 2015. I am a self-taught developer.
     <br /><br />
-    Before Rakuten, I was the Team Lead in the <a href='http://design-automation.net/' target='_blank'>Design Automation Lab</a>, Department of Architecture, at the National University of Singapore. In that role, I built web tools - Mobius and Studionet, to enhance design learning for budding architects.
-    Post graduation, I did a brief stint in the Programmatic Ads team at Flipkart Internet, Bangalore (India). During my undergradate degree, I interned at the Queensland University of Technology, Brisbane (Australia), VBHC Value Homes, Bangalore (India) and ABDC, Mumbai (India).
+    Before joining Rakuten, I was the Technical Lead for Mobius and Studionet at the <a href='http://design-automation.net/' target='_blank'>Design Automation Lab</a>, at the National University of Singapore.
     <br /><br />
-    I feel strongly about accessible education for all and empowerment throught knowledge. I am currently a Bootcamp Organizer at <a href='http://www.techladies.co/bootcamp-7' target='_blank'>TechLadies</a>, Singapore. I taught myself how to code with FreeCodeCamp, MITx and Coursera. I also earned two nanodegree credentials, in Deep Learning and Android Development from Udacity.
-    <br /><br />
+    I feel strongly about accessible education for all and empowerment through knowledge. I taught myself how to code by binging on FreeCodeCamp, MITx and Coursera, using a project-centric approach. I also have two nanodegree credentials, in Deep Learning and Android Development from Udacity. Now, I organize bootcamps at <a href='http://www.techladies.co/bootcamp-7' target='_blank'>TechLadies</a>, Singapore and help others make the same journey!
+    <!-- volunteer -->
+    <section>
+      <h1>Organizations I support,</h1>
+      <p>Much of what I know, has been through the contributions of others who have made an effort to add value to the world. I support the following organizations financially or with my time. If any of them resonates with you, please considering supporting too!</p>
+      <div style='display: flex; flex-direction: row; align-items: center'>
+        <a href='https://freecodecamp.com' rel='nofollow' target='_blank' style="margin: 16px">
+          <img width='150px' src='/assets/support/fcc_secondary_large.png' alt='FreeCodeCamp' />
+        </a>
+        <a href='https://techladies.co' rel='nofollow' target='_blank' style="margin: 16px; background-color: #4a148c; padding: 10px;">
+          <img width='150px' src='/assets/support/techladies.png'  />
+        </a>
+        <br />
+        <a href='https://www.redcross.sg/' rel='nofollow' target='_blank' style="margin: 16px">
+          <img width='45px' src='/assets/support/singaporedcross.png'  />
+        </a>
+      </div>
+    </section>
     Find me here,
     <br />
     <a href="https://www.linkedin.com/in/iamaatoh/" target='_blank'>LinkedIn</a> |

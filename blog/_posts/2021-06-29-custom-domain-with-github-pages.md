@@ -62,3 +62,4 @@ akshatamohanty.github.io. 3599	IN	A	185.199.111.153
 - https://ap.www.namecheap.com/Domains/DomainControlPanel/iamaatoh.com/advancedns
 - https://support.dnsimple.com/articles/differences-between-a-cname-alias-url/
 - https://support.dnsimple.com/articles/differences-between-a-cname-alias-url/#understanding-the-differences
+https://www.netmeister.org/blog/dns-rrs.html

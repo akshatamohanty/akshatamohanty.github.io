@@ -2,6 +2,12 @@
 page: Home
 title: Homepage
 layout: none
+artwork:
+  - bird
+  - balloons
+  - rainwalk
+  - shading
+  - flowers
 ---
 
 {% include head.html %}
@@ -9,12 +15,12 @@ layout: none
 <body>
   {% include navigation.html %}
 
-  <main>
-    <h1 style="text-align: center">Recent happenings,</h1>
+  <main style="text-align: center">
+    <h1>Recent happenings,</h1>
     <br />
     <br />
     <ul>
-      {% for post in site.posts limit: 4 %}
+      {% for post in site.posts limit: 3 %}
         <li>
           <center>
             {% if post.category == 'blog' %}
@@ -43,6 +49,18 @@ layout: none
         </li>
       {% endfor %}
     </ul>
+    <br><br>
+    <!-- art -->
+    <section>
+      <h1>From the gallery,</h1>
+      <p>I paint with water colors. Here's some of my latest randomness.</p>
+      <!-- gallery -->
+      <div class='gallery'>
+        {% for name in page.artwork %}
+          {% include artwork.html %}
+        {% endfor %}
+      </div>
+    </section>
   </main>
 
   {% include footer.html %}
