@@ -4,10 +4,9 @@ title: Homepage
 layout: none
 artwork:
   - bird
-  - balloons
   - rainwalk
   - shading
-  - flowers
+  - jellyfish
 ---
 
 {% include head.html %}
