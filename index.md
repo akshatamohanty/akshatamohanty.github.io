@@ -3,10 +3,10 @@ page: Home
 title: Homepage
 layout: none
 artwork:
+  - moreFlowers
   - bird
   - rainwalk
   - shading
-  - jellyfish
 ---
 
 {% include head.html %}
