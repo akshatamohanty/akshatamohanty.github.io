@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>How to deploy a smart contract with Remix? | Akshata Mohanty</title>
+	<meta name="description" content="" />
+
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<meta property="og:title" content="How to deploy a smart contract with Remix?" />
+	<meta property="og:description" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:image:width" content="400" />
+	<meta property="og:image:height" content="300" />
+	<meta property="og:type" content="website" />
+
+	<!-- main stylesheet -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/styles/main.css">
+
+	<link href='https://iamaatoh.com/feed.xml' rel='alternate' type='application/atom+xml'>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111560396-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-111560396-1');
+		document.fonts.ready.then((fontFaceSet) => {
+			document.body.style.opacity = 1
+		});
+	</script>
+</head>
+
+
+	<body>
+    <nav>
+	<a href='/'><h2>&lt;iamaatoh /&gt;</h2></a>
+	<div>Learn. Reflect. Engineer.</div>
+	<br />
+	<hr />
+	<ul>
+		<li ><a href='/blog' alt="Blog">Blog</a></li>
+		<li ><a href='/project' alt="Project">Projects</a></li>
+		<li ><a href='/public' alt="Public">Talks & Research</a></li>
+		<li ><a href='/contact' alt="Contact">Contact</a></li>
+	</ul>
+	<hr />
+</nav>
+
+		<main>
+			<center>
+				<small>
+					July 20, 2021
+				</small>
+				<h1>
+					How to deploy a smart contract with Remix?
+				</h1>
+			</center>
+
+
+			<article>
+				<p>So, you’ve heard of smart contracts. And now you want to see one in action.</p>
+
+<p>Thanks to the age of developer-friendly tools, it is extremely simple to get started with building smart contracts.</p>
+
+<p>For this walk-through, we’ll be deploying an Ethereum contract using Remix to a local Ethereum network.</p>
+
+<h1 id="some-background--">Some background -</h1>
+
+<p>But first, for some background,</p>
+
+<h3 id="what-is-remix-new-black-pink-song">What is… Remix? New Black Pink song?</h3>
+
+<p>No, it’s better. It’s the fast track into the world of smart contract development.</p>
+
+<p>Remix is an IDE for developing smart contracts. And given that it has an incredibly accessible web application, it is often used as a playground for baby Ethereum developers, like ourselves.</p>
+
+<p>So, here’s <a href="https://remix.ethereum.org/" rel="nofollow">Remix</a>.</p>
+
+<p>There are the <a href="https://remix-ide.readthedocs.io/en/latest/" rel="nofollow">docs</a>.</p>
+
+<p>And this is what it looks like,</p>
+
+<p><img src="../assets/images/blog-remix/remix-ide.png" /></p>
+
+<p><br /><br /></p>
+
+<h3 id="um-whats-a-smart-contract-again">Um, what’s a smart contract again?</h3>
+
+<p>Smart contracts are code deployed on a decentralized network. They usually encode the terms of an agreement (hence, the word <code class="highlighter-rouge">contract</code>, duh!) and auto-execute when the required conditions are met. Since they are deployed on trustless networks, there is no time loss or external involvement required to execute the contract - which makes them dependable and secure.</p>
+
+<p><br /><br /></p>
+
+<h3 id="ok-but-what-do-you-mean-by-deploy-a-contract">Ok, but what do you mean by “deploy a contract”?</h3>
+
+<p>Deploying a contract means making the program and its functions, available to users on the network.</p>
+
+<p>To deploy a contract on Ethereum, we make an Ethereum transaction with the code of the compiled contract. The contract then lives at a specific address, and its functions can be invoked by other transactions.</p>
+
+<p>Another important point - the contract is deployed as a transaction. Which means that it requires gas and fees. Which is just another way of saying that deploying a contract is NOT free. Yes, no more random unlimited deploys.</p>
+
+<p><br /><br /></p>
+
+<h1 id="the-deploy--">The Deploy -</h1>
+
+<p>Ok, now that we have some basics covered, let’s go ahead and deploy an example contract.</p>
+
+<p><br /><br /></p>
+
+<h3 id="tools-youll-need">Tools you’ll need</h3>
+
+<ul>
+  <li>
+    <p>Remix IDE
+You’ll need an IDE to write, compile and deploy your contract. <a href="https://remix.ethereum.org/" rel="nofollow" target="_blank">Remix</a> is the fastest out-of-the-box option:</p>
+  </li>
+  <li>
+    <p>MetaMask
+To deploy your contract, you’ll also need Ether. If you are using Remix and want to deploy your contract to different networks, an easy way of accessing your Ether is by using a Crypto Wallet. So go ahead, install the <a href="https://metamask.io/" rel="nofollow" target="_blank">MetaMask Chrome Extension</a>.
+Be careful though - make sure you are not using real Ether. Unless you have too much, in which case, please send me some.</p>
+  </li>
+  <li>
+    <p>Ganache
+You can choose to deploy to one of the test networks (or even the real Ethereum network, if you are bold .. and rich!). But to make things easier, I used <a href="https://www.trufflesuite.com/ganache" rel="nofollow" target="_blank">Ganache</a> to setup a local Ethereum blockchain to deploy to. You can setup one using Ganache, connect MetaMask to the local network and add a test account to MetaMask. And voila … you’ll have enough Ether to deploy.
+And yes, I agree that the blockchain world has some very tasty names.</p>
+  </li>
+</ul>
+
+<p><br /><br /></p>
+
+<h3 id="what-does-the-contract-look-like">What does the contract look like?</h3>
+
+<p>Remix comes pre-loaded with three contracts of increasing complexity. You can find them by clicking on the <code class="highlighter-rouge">Workspaces</code> tab on the left.</p>
+
+<p><img src="../assets/images/blog-remix/workspace-tab.png" /></p>
+
+<p>The contracts are written in Solidity. Here’s the simplest one that we’ll be deploying -</p>
+
+<pre><code class="language-sol">// SPDX-License-Identifier: GPL-3.0
+
+pragma solidity &gt;=0.7.0 &lt;0.9.0;
+
+/**
+ * @title Storage
+ * @dev Store &amp; retrieve value in a variable
+ */
+contract Storage {
+
+  uint256 number;
+
+  /**
+    * @dev Store value in variable
+    * @param num value to store
+    */
+  function store(uint256 num) public {
+      number = num;
+  }
+
+  /**
+    * @dev Return value
+    * @return value of 'number'
+    */
+  function retrieve() public view returns (uint256){
+      return number;
+  }
+}
+</code></pre>
+
+<p><br /><br /></p>
+
+<h3 id="lets-compile">Let’s Compile</h3>
+
+<p>Before we can deploy, we need to compile the contract into byte code. To do that, shift over to the <code class="highlighter-rouge">Compiler</code> Tab. The contract that you want to compile should be active in the workspace. If it is, you’ll see the enabled <code class="highlighter-rouge">Compile</code> button with the name of the contract that you’ve selected. Click on it to compile.</p>
+
+<p><img src="../assets/images/blog-remix/compile-tab.png" /></p>
+
+<p>And that’s it. We’ve compiled the contract. For the nerd in you, click on <code class="highlighter-rouge">Compilation Details</code>, to checkout details, the ABI and Bytecode - the actual payload that gets deployed.</p>
+
+<p><img src="../assets/images/blog-remix/compiled-contract.png" /></p>
+
+<p><img src="../assets/images/blog-remix/compiled-details.png" /></p>
+
+<p><br /><br /></p>
+
+<h3 id="and-now-for-the-deploy">And now, for the deploy!</h3>
+
+<p>Move to the <code class="highlighter-rouge">Deploy and Run Transactions</code> Tab. If you are using Metamask, select <code class="highlighter-rouge">Injected Web3</code> as your environment.</p>
+
+<p><img src="../assets/images/blog-remix/environment.png" /></p>
+
+<p>Metamask will then show up, asking you to log in, if you haven’t already.</p>
+
+<p>This is what my Metamask, connected to my local Ethereum looks like. (Look Ma - double-digit ETH!)</p>
+
+<p><img src="../assets/images/blog-remix/metamask-init.png" /></p>
+
+<p>Hit the <code class="highlighter-rouge">Deploy</code> button in the Deploy Tab, and MetaMask will ask you to confirm the transaction.</p>
+
+<p><img src="../assets/images/blog-remix/metamask-confirm.png" /></p>
+
+<p>Once you do, you’ll now be able to see your deployed contract details in the tab - ready to transact with!</p>
+
+<p><img src="../assets/images/blog-remix/deployed-contract-txn.png" />
+<img src="../assets/images/blog-remix/deployed-txn.png" /></p>
+
+<p>Move over to Ganache, and you’ll see a contract creation transaction listed.</p>
+
+<p><img src="../assets/images/blog-remix/ganache-contract.png" /></p>
+
+<p>And just like that, you’ve deployed your first smart contract. Ciao!</p>
+
+			</article>
+
+			<br />
+			<hr />
+
+			<div>
+				<div>Was this helpful? Share with friends!</div>
+				<div class="social-media-icons">
+						<a target="_blank"
+								href='https://www.linkedin.com/sharing/share-offsite/?url=https://iamaatoh.com/blog/deploy-an-ethereum-contract-with-remix.html'>
+								<i class="fa fa-linkedin"></i>
+						</a>
+						<a target="_blank"
+								href='https://twitter.com/intent/tweet?text=How to deploy a smart contract with Remix? by @iamaatoh&url=https://iamaatoh.com/blog/deploy-an-ethereum-contract-with-remix.html'>
+								<i class="fa fa-twitter"></i>
+						</a>
+						<a target="_blank"
+								href='http://www.reddit.com/submit?url=https://iamaatoh.com/blog/deploy-an-ethereum-contract-with-remix.html&title=How+to+deploy+a+smart+contract+with+Remix%3F%20by%20@akshatamohanty'>
+								<i class="fa fa-reddit"></i>
+						</a>
+						<a target="_blank"
+								href="http://news.ycombinator.com/submitlink?u=https://iamaatoh.com/blog/deploy-an-ethereum-contract-with-remix.html&t=How to deploy a smart contract with Remix? by Akshata Mohanty">
+								<i class="fa fa-y-combinator"></i>
+						</a>
+						<a href="whatsapp://send?text=How+to+deploy+a+smart+contract+with+Remix%3F%20by%20Akshata Mohanty%20https://iamaatoh.com/blog/deploy-an-ethereum-contract-with-remix.html"
+								data-action="share/whatsapp/share">
+								<i class="fa fa-whatsapp"></i>
+						</a>
+				</div>
+			</div>
+		</main>
+
+		<footer>
+      <footer>
+  <small>
+    Copyright © 2021
+    Akshata Mohanty
+  </small>
+</footer>
+    </footer>
+	</body>

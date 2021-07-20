@@ -100,6 +100,10 @@ blockquote::before {
 
 article {
   line-height: 1.5; }
+  article img {
+    max-width: 100%; }
+  article table {
+    max-width: 100%; }
   article a {
     text-decoration: underline; }
     article a:hover {
