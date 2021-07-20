@@ -124,6 +124,14 @@ blockquote::before {
 article {
   line-height: 1.5;
 
+  img {
+    max-width: 100%;
+  }
+
+  table {
+    max-width: 100%;
+  }
+
   a {
     text-decoration: underline;
 
