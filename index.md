@@ -3,10 +3,10 @@ page: Home
 title: Homepage
 layout: none
 artwork:
-  - moreFlowers
+  - longLadies
   - bird
+  - moreFlowers
   - rainwalk
-  - shading
 ---
 
 {% include head.html %}

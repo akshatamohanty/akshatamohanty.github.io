@@ -1,8 +1,8 @@
 ---
 published: false
-title: Bunny on the Pipes
+title: Queue Talks
 summary: Complete tutorial for setting up a pipeline with RabbitMQ
-date:  2021-07-19
+date:  2021-07-21
 image:
 credits:
 tags:
@@ -10,6 +10,13 @@ tags:
 ---
 
 Datapipelines require a plethora of information coming together to form a complete soup.
+
+https://www.rabbitmq.com/consumer-prefetch.html
+https://github.com/pika/pika/issues/1046
+https://www.cloudamqp.com/blog/part4-rabbitmq-13-common-errors.html
+https://www.datadoghq.com/blog/rabbitmq-monitoring
+
+Difference between a queue and a pub-sub?
 
 ### for whom is this?
 
