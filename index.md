@@ -7,6 +7,8 @@ artwork:
   - bird
   - moreFlowers
   - rainwalk
+  - village
+  - balloons
 ---
 
 {% include head.html %}
