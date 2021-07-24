@@ -6,9 +6,9 @@ artwork:
   - longLadies
   - bird
   - moreFlowers
-  - rainwalk
   - village
-  - balloons
+  - shading
+  - color-study-1
 ---
 
 {% include head.html %}
