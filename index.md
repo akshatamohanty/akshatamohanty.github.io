@@ -54,7 +54,7 @@ artwork:
     <!-- art -->
     <section>
       <h1>From the gallery,</h1>
-      <p>I paint with water colors. Here's some of my latest randomness.</p>
+      <p>I paint with water colors. Here's some of my latest randomness. Follow me on <a href='https://www.instagram.com/iamaatoh/' target='_blank' rel='nofollow' style='color: blue; text-decoration: underline;'>Instagram</a>.</p>
       <!-- gallery -->
       <div class='gallery'>
         {% for name in page.artwork %}

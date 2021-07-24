@@ -1,5 +1,5 @@
 ---
-title: How to deploy a smart contract with Remix?
+title: "[tutorial] Deploy a smart contract with Remix"
 summary:
 date:  2021-07-20
 image:
