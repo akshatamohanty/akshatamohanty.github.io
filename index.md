@@ -5,10 +5,8 @@ layout: none
 artwork:
   - longLadies
   - bird
-  - color-study-1
-  - moreFlowers
-  - village
   - shading
+  - color-study-1
 ---
 
 {% include head.html %}
