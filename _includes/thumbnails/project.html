@@ -1,4 +1,4 @@
-<a href="{{post.link}}" style="display: flex; flex-direction: row; margin-bottom: 16px;">
+<a href="{{post.link}}" style="display: flex; flex-direction: row; margin-bottom: 16px;" target='_blank'>
   <div style="margin-right: 16px;">
     <img src="{{post.image}}" width="150px" />
   </div>
@@ -6,6 +6,9 @@
   <div>
     <small>
       {{ post.date | date: "%b'%y" }}
+      {% if post.end_date %}
+      - {{ post.end_date | date: "%b'%y" }}
+      {% endif %}
     </small>
     <br />
     <b style="text-transform: uppercase;">{{ post.title }}</b>
