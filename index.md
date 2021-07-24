@@ -31,9 +31,12 @@ artwork:
                 {{ post.content | truncatewords:25 | strip_html }}
               </a>
             {% else %}
-              <a href="{{post.link}}" style="display: block; width: 100%; margin: 40px 0; text-align: center;">
+              <a href="{{post.link}}" target='_blank' rel='nofollow' style="display: block; width: 100%; margin: 40px 0; text-align: center;">
                 <div>
-                  {{ post.date | date: "%b'%y" }} | {{ post.type }}, {{ post.where }}
+                  {{ post.date | date: "%b'%y" }}
+                  {% if post.category == 'public' %}
+                    | {{ post.type }}, {{ post.where }}
+                  {% endif %}
                   <h2 style="margin-bottom: 8px">{{ post.title }}</h2>
                 </div>
                 <div style="position:relative; height: 300px">
