@@ -9,6 +9,28 @@
       
       <item>
         <category></category>
+        <title>Practical Blockchain</title>
+        <description>Youtube Channel for blockchain development tutorials</description>
+        <pubDate>Jul 2021</pubDate>
+        <link>https://iamaatoh.com/project/practical-blockchain.html </link>
+        <guid isPermaLink="true">https://iamaatoh.com/project/practical-blockchain.html</guid>
+      </item>
+      
+    
+      
+      <item>
+        <category></category>
+        <title>Modeling Relationships with Flask-SQLAlchemy</title>
+        <description></description>
+        <pubDate>Jul 2021</pubDate>
+        <link>https://iamaatoh.com/blog/one-to-many-with-python-flaskalchemy.html </link>
+        <guid isPermaLink="true">https://iamaatoh.com/blog/one-to-many-with-python-flaskalchemy.html</guid>
+      </item>
+      
+    
+      
+      <item>
+        <category></category>
         <title>[tutorial] Deploy a smart contract with Remix</title>
         <description></description>
         <pubDate>Jul 2021</pubDate>
@@ -36,28 +58,6 @@
         <pubDate>Jul 2021</pubDate>
         <link>https://iamaatoh.com/blog/setup-a-new-python-env.html </link>
         <guid isPermaLink="true">https://iamaatoh.com/blog/setup-a-new-python-env.html</guid>
-      </item>
-      
-    
-      
-      <item>
-        <category></category>
-        <title>Checklist for Better Software Documentation</title>
-        <description>Effective documentation not only helps understand code, but can also improve code. Here are some ways to create better docs.</description>
-        <pubDate>May 2021</pubDate>
-        <link>https://iamaatoh.com/blog/the-art-of-writing-documentation.html </link>
-        <guid isPermaLink="true">https://iamaatoh.com/blog/the-art-of-writing-documentation.html</guid>
-      </item>
-      
-    
-      
-      <item>
-        <category></category>
-        <title>From Construction Architects to Tech Architects</title>
-        <description>Transitioning into the tech industry</description>
-        <pubDate>Apr 2021</pubDate>
-        <link>https://iamaatoh.com/public/architecture-to-software-engineering.html </link>
-        <guid isPermaLink="true">https://iamaatoh.com/public/architecture-to-software-engineering.html</guid>
       </item>
       
     
