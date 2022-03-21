@@ -9,6 +9,17 @@
       
       <item>
         <category></category>
+        <title>The Meaning of My Name</title>
+        <description>It took me years to really understand and identify with my name.</description>
+        <pubDate>Mar 2022</pubDate>
+        <link>https://iamaatoh.com/blog/the-meaning-of-my-name.html </link>
+        <guid isPermaLink="true">https://iamaatoh.com/blog/the-meaning-of-my-name.html</guid>
+      </item>
+      
+    
+      
+      <item>
+        <category></category>
         <title>Practical Blockchain</title>
         <description>Youtube Channel for blockchain development tutorials</description>
         <pubDate>Jul 2021</pubDate>
@@ -47,17 +58,6 @@
         <pubDate>Jul 2021</pubDate>
         <link>https://iamaatoh.com/blog/handling-pandemic-the-developer-way.html </link>
         <guid isPermaLink="true">https://iamaatoh.com/blog/handling-pandemic-the-developer-way.html</guid>
-      </item>
-      
-    
-      
-      <item>
-        <category></category>
-        <title>Python Package Management, for the Node developer</title>
-        <description>Python is cold.</description>
-        <pubDate>Jul 2021</pubDate>
-        <link>https://iamaatoh.com/blog/setup-a-new-python-env.html </link>
-        <guid isPermaLink="true">https://iamaatoh.com/blog/setup-a-new-python-env.html</guid>
       </item>
       
     
