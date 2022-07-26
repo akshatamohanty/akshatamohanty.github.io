@@ -67,23 +67,23 @@
 
 <h1 id="creating-a-packagejson-file">Creating a package.json file</h1>
 
-<p>Use <code class="highlighter-rouge">npm init</code> to create the package.json file. It acts like a wizard and steps you through the entire file creation. Press enter to accept defaults (which will be in most cases). This file is what is used to configure the build process and run, build and test your application.</p>
+<p>Use <code class="language-plaintext highlighter-rouge">npm init</code> to create the package.json file. It acts like a wizard and steps you through the entire file creation. Press enter to accept defaults (which will be in most cases). This file is what is used to configure the build process and run, build and test your application.</p>
 
 <p><br /></p>
 
 <h1 id="folder-structure">Folder Structure</h1>
 <p>This projects implements a folder structure as follows -</p>
 
-<p>Folder: <code class="highlighter-rouge">./</code></p>
+<p>Folder: <code class="language-plaintext highlighter-rouge">./</code></p>
 <ul>
-  <li><code class="highlighter-rouge">.config</code>: [Contains all the config files]
+  <li><code class="language-plaintext highlighter-rouge">.config</code>: [Contains all the config files]
     <ul>
-      <li><code class="highlighter-rouge">karma.config.ts</code> : Karma Configuration File</li>
-      <li><code class="highlighter-rouge">tsconfig.json</code>: Typscript Configuration File</li>
+      <li><code class="language-plaintext highlighter-rouge">karma.config.ts</code> : Karma Configuration File</li>
+      <li><code class="language-plaintext highlighter-rouge">tsconfig.json</code>: Typscript Configuration File</li>
     </ul>
   </li>
-  <li><code class="highlighter-rouge">src</code>: [Containts all the source Typescript files]</li>
-  <li><code class="highlighter-rouge">tests</code>: [Contains tests to be run on the src folder files]</li>
+  <li><code class="language-plaintext highlighter-rouge">src</code>: [Containts all the source Typescript files]</li>
+  <li><code class="language-plaintext highlighter-rouge">tests</code>: [Contains tests to be run on the src folder files]</li>
 </ul>
 
 <p><br /></p>
@@ -92,13 +92,13 @@
 
 <p>Next, you’ll need to install the packages required to compile and test typescript files.</p>
 <ul>
-  <li><code class="highlighter-rouge">@types/nodes</code> - This is needed to allow you to script in nodejs and use keywords like require, export etc.</li>
-  <li><code class="highlighter-rouge">karma-typescript</code> - To compile typescript files into Javascript which can be tested by Jasmine</li>
-  <li><code class="highlighter-rouge">karma-chrome-launcher</code> - To launch an instance of chrome. You have to install a launcher for each browser that you want to check against.</li>
-  <li><code class="highlighter-rouge">karma-jasmine-html-reporter</code> - This is required to display the Jasmine test results on Chrome; [Note: not karma-html-report]</li>
-  <li><code class="highlighter-rouge">@types/jasmine</code>- Required for Jasmine test to run and to get rid of errors with <code class="highlighter-rouge">describe</code> keyword etc</li>
-  <li><code class="highlighter-rouge">typescript</code> - Duh!</li>
-  <li><code class="highlighter-rouge">Jasmine Core</code></li>
+  <li><code class="language-plaintext highlighter-rouge">@types/nodes</code> - This is needed to allow you to script in nodejs and use keywords like require, export etc.</li>
+  <li><code class="language-plaintext highlighter-rouge">karma-typescript</code> - To compile typescript files into Javascript which can be tested by Jasmine</li>
+  <li><code class="language-plaintext highlighter-rouge">karma-chrome-launcher</code> - To launch an instance of chrome. You have to install a launcher for each browser that you want to check against.</li>
+  <li><code class="language-plaintext highlighter-rouge">karma-jasmine-html-reporter</code> - This is required to display the Jasmine test results on Chrome; [Note: not karma-html-report]</li>
+  <li><code class="language-plaintext highlighter-rouge">@types/jasmine</code>- Required for Jasmine test to run and to get rid of errors with <code class="language-plaintext highlighter-rouge">describe</code> keyword etc</li>
+  <li><code class="language-plaintext highlighter-rouge">typescript</code> - Duh!</li>
+  <li><code class="language-plaintext highlighter-rouge">Jasmine Core</code></li>
 </ul>
 
 <p><br /></p>
@@ -113,20 +113,20 @@
 
 <p><br /></p>
 
-<h1 id="running-scripts-with-packagejson">Running scripts with <code class="highlighter-rouge">package.json</code></h1>
+<h1 id="running-scripts-with-packagejson">Running scripts with <code class="language-plaintext highlighter-rouge">package.json</code></h1>
 
 <p>Update package.json to run</p>
 
 <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="p">{</span> <span class="dl">"</span><span class="s2">test</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">karma start &lt;karma_config_file_path&gt;</span><span class="dl">"</span> <span class="p">}</span>
 </code></pre></div></div>
 
-<p>Basically, this gets run whenever <code class="highlighter-rouge">npm test</code> is run</p>
+<p>Basically, this gets run whenever <code class="language-plaintext highlighter-rouge">npm test</code> is run</p>
 
 <p><br /></p>
 
 <h1 id="typedocs">Typedocs</h1>
 
-<p>For the docs - just the following script in <code class="highlighter-rouge">package.json</code> will do:</p>
+<p>For the docs - just the following script in <code class="language-plaintext highlighter-rouge">package.json</code> will do:</p>
 
 <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="dl">"</span><span class="s2">build-docs</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">typedoc --out ./docs ./src --module commonjs</span><span class="dl">"</span>
 </code></pre></div></div>

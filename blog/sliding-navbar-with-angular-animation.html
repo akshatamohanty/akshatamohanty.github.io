@@ -77,10 +77,10 @@
 <h2 id="adding-an-animation">Adding an animation</h2>
 
 <h4 id="installing-angular-animations-package">Installing Angular Animations Package</h4>
-<p>Make sure you have @angular/animations installed, using <code class="highlighter-rouge">npm install @angular/animations --save</code>.</p>
+<p>Make sure you have @angular/animations installed, using <code class="language-plaintext highlighter-rouge">npm install @angular/animations --save</code>.</p>
 
 <p><strong><em>package.json</em></strong></p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"dependencies": {
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"dependencies": {
     ...
     "@angular/animations": "^5.2.10",
     ...
@@ -91,7 +91,7 @@
 <p>The BrowserAnimationsModule is part of the <strong>@angular/platform-browser</strong> package. The platform-browser is automatically installed if you’ve generated your app using angular-cli. Only the BrowserAnimationsModule will need to be imported and added to the <strong>imports</strong> array, as shown below.</p>
 
 <p><strong><em>app.module.ts</em></strong></p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   ...
@@ -117,7 +117,7 @@ export class AppModule { }
 </ul>
 
 <p><strong><em>app.component.ts</em></strong></p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import { trigger, state, style, transition, animate, keyframes } from '@angular/animations';
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import { trigger, state, style, transition, animate, keyframes } from '@angular/animations';
 </code></pre></div></div>
 
 <h4 id="adding-an-animation-to-the-component">Adding an animation to the component</h4>
@@ -126,7 +126,7 @@ export class AppModule { }
 <p>The transition is what specifies the animation when the states changes from slide_in to slide_out and vice versa. You can choose to define this animation in one direction, from void / any state, with different timing and effects.</p>
 
 <p><strong><em>app.component.ts</em></strong></p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@Component({
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@Component({
   ...
   animations: [
     trigger('slide_in_out', [
@@ -162,7 +162,7 @@ export class AppModule { }
 </code></pre></div></div>
 
 <p><strong><em>app.component.ts</em></strong></p>
-<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nx">slider_state</span><span class="p">:</span><span class="nx">string</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">slide_in</span><span class="dl">"</span><span class="p">;</span>
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nx">slider_state</span><span class="p">:</span><span class="kr">string</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">slide_in</span><span class="dl">"</span><span class="p">;</span>
   <span class="nx">toggleSlider</span><span class="p">():</span> <span class="k">void</span><span class="p">{</span>
     <span class="c1">// do something to change the animation_state variable</span>
     <span class="k">this</span><span class="p">.</span><span class="nx">slider_state</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">slider_state</span> <span class="o">===</span> <span class="dl">'</span><span class="s1">slide_out</span><span class="dl">'</span> <span class="p">?</span> <span class="dl">'</span><span class="s1">slide_in</span><span class="dl">'</span> <span class="p">:</span> <span class="dl">'</span><span class="s1">slide_out</span><span class="dl">'</span><span class="p">;</span>

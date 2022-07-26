@@ -88,38 +88,38 @@
 
 <h3 id="one-to-one">One-to-One</h3>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Author</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
-    <span class="nb">id</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Integer</span><span class="p">,</span> <span class="n">primary_key</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Author</span><span class="p">(</span><span class="n">db</span><span class="p">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="nb">id</span> <span class="o">=</span> <span class="n">db</span><span class="p">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="p">.</span><span class="n">Integer</span><span class="p">,</span> <span class="n">primary_key</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
     <span class="n">book</span> <span class="o">=</span> <span class="n">relationship</span><span class="p">(</span><span class="s">"Book"</span><span class="p">,</span> <span class="n">back_populates</span><span class="o">=</span><span class="s">"author"</span><span class="p">,</span> <span class="n">useList</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
 
-<span class="k">class</span> <span class="nc">Book</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
-    <span class="nb">id</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Integer</span><span class="p">,</span> <span class="n">primary_key</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="k">class</span> <span class="nc">Book</span><span class="p">(</span><span class="n">db</span><span class="p">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="nb">id</span> <span class="o">=</span> <span class="n">db</span><span class="p">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="p">.</span><span class="n">Integer</span><span class="p">,</span> <span class="n">primary_key</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
     <span class="c1">## add author_id as a foreign key
-</span>    <span class="n">author_id</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Integer</span><span class="p">,</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="s">'author.id'</span><span class="p">))</span>
+</span>    <span class="n">author_id</span> <span class="o">=</span> <span class="n">db</span><span class="p">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="p">.</span><span class="n">Integer</span><span class="p">,</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="s">'author.id'</span><span class="p">))</span>
 </code></pre></div></div>
 
-<p>In <code class="highlighter-rouge">Book</code>, there’s only one thing required,</p>
+<p>In <code class="language-plaintext highlighter-rouge">Book</code>, there’s only one thing required,</p>
 
 <ul>
-  <li>defining the <code class="highlighter-rouge">ForeignKey</code></li>
+  <li>defining the <code class="language-plaintext highlighter-rouge">ForeignKey</code></li>
 </ul>
 
-<p>Properties in <code class="highlighter-rouge">book</code>,</p>
+<p>Properties in <code class="language-plaintext highlighter-rouge">book</code>,</p>
 <ul>
   <li>id</li>
   <li>author_id</li>
   <li>author (back populated)</li>
 </ul>
 
-<p>In <code class="highlighter-rouge">Author</code>, there are 3 things happening,</p>
+<p>In <code class="language-plaintext highlighter-rouge">Author</code>, there are 3 things happening,</p>
 
 <ul>
-  <li><code class="highlighter-rouge">relationship</code> function returns a function that can load <code class="highlighter-rouge">book</code> instances for the property</li>
-  <li><code class="highlighter-rouge">useList=False</code> ensures that only a single <code class="highlighter-rouge">Book</code> instance is expected and loaded, hence conslidating the one-to-one relationship</li>
-  <li><code class="highlighter-rouge">back_populates='author'</code> back populates <code class="highlighter-rouge">book.author</code> in the <code class="highlighter-rouge">Book</code> instance</li>
+  <li><code class="language-plaintext highlighter-rouge">relationship</code> function returns a function that can load <code class="language-plaintext highlighter-rouge">book</code> instances for the property</li>
+  <li><code class="language-plaintext highlighter-rouge">useList=False</code> ensures that only a single <code class="language-plaintext highlighter-rouge">Book</code> instance is expected and loaded, hence conslidating the one-to-one relationship</li>
+  <li><code class="language-plaintext highlighter-rouge">back_populates='author'</code> back populates <code class="language-plaintext highlighter-rouge">book.author</code> in the <code class="language-plaintext highlighter-rouge">Book</code> instance</li>
 </ul>
 
-<p>Properties in <code class="highlighter-rouge">author</code>,</p>
+<p>Properties in <code class="language-plaintext highlighter-rouge">author</code>,</p>
 <ul>
   <li>id</li>
   <li>book
@@ -127,71 +127,71 @@
   </li>
 </ul>
 
-<p>The above one-to-one mapping can be easily converted to a one-to-many relationship by removing the <code class="highlighter-rouge">useList=False</code></p>
+<p>The above one-to-one mapping can be easily converted to a one-to-many relationship by removing the <code class="language-plaintext highlighter-rouge">useList=False</code></p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Author</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
-    <span class="nb">id</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Integer</span><span class="p">,</span> <span class="n">primary_key</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Author</span><span class="p">(</span><span class="n">db</span><span class="p">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="nb">id</span> <span class="o">=</span> <span class="n">db</span><span class="p">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="p">.</span><span class="n">Integer</span><span class="p">,</span> <span class="n">primary_key</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
     <span class="n">books</span> <span class="o">=</span> <span class="n">relationship</span><span class="p">(</span><span class="s">"Book"</span><span class="p">,</span> <span class="n">back_populates</span><span class="o">=</span><span class="s">"author"</span><span class="p">)</span>
 
-<span class="k">class</span> <span class="nc">Book</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
-    <span class="nb">id</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Integer</span><span class="p">,</span> <span class="n">primary_key</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="k">class</span> <span class="nc">Book</span><span class="p">(</span><span class="n">db</span><span class="p">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="nb">id</span> <span class="o">=</span> <span class="n">db</span><span class="p">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="p">.</span><span class="n">Integer</span><span class="p">,</span> <span class="n">primary_key</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
     <span class="c1">## add author_id as a foreign key
-</span>    <span class="n">author_id</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Integer</span><span class="p">,</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="s">'author.id'</span><span class="p">))</span>
+</span>    <span class="n">author_id</span> <span class="o">=</span> <span class="n">db</span><span class="p">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="p">.</span><span class="n">Integer</span><span class="p">,</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="s">'author.id'</span><span class="p">))</span>
 </code></pre></div></div>
 
-<p>In <code class="highlighter-rouge">Book</code>, there’s only one thing required,</p>
+<p>In <code class="language-plaintext highlighter-rouge">Book</code>, there’s only one thing required,</p>
 
 <ul>
-  <li>defining the <code class="highlighter-rouge">ForeignKey</code></li>
+  <li>defining the <code class="language-plaintext highlighter-rouge">ForeignKey</code></li>
 </ul>
 
-<p>Properties in <code class="highlighter-rouge">book</code>,</p>
+<p>Properties in <code class="language-plaintext highlighter-rouge">book</code>,</p>
 <ul>
   <li>id</li>
   <li>author_id</li>
   <li>author (back populated)</li>
 </ul>
 
-<p>In <code class="highlighter-rouge">Author</code>, there are 3 things happening,</p>
+<p>In <code class="language-plaintext highlighter-rouge">Author</code>, there are 3 things happening,</p>
 
 <ul>
-  <li><code class="highlighter-rouge">relationship</code> function returns a function that can load <code class="highlighter-rouge">book</code> instances for the property</li>
-  <li>removing <code class="highlighter-rouge">useList=True</code> allows for loading multiple book instances, hence conslidating the many-to-one relationship</li>
-  <li><code class="highlighter-rouge">back_populates='author'</code> back populates <code class="highlighter-rouge">book.author</code> in the <code class="highlighter-rouge">Book</code> instances</li>
+  <li><code class="language-plaintext highlighter-rouge">relationship</code> function returns a function that can load <code class="language-plaintext highlighter-rouge">book</code> instances for the property</li>
+  <li>removing <code class="language-plaintext highlighter-rouge">useList=True</code> allows for loading multiple book instances, hence conslidating the many-to-one relationship</li>
+  <li><code class="language-plaintext highlighter-rouge">back_populates='author'</code> back populates <code class="language-plaintext highlighter-rouge">book.author</code> in the <code class="language-plaintext highlighter-rouge">Book</code> instances</li>
 </ul>
 
-<p>Properties in <code class="highlighter-rouge">author</code>,</p>
+<p>Properties in <code class="language-plaintext highlighter-rouge">author</code>,</p>
 <ul>
   <li>id</li>
   <li>books (an array)</li>
 </ul>
 
 <h2 id="many-to-many">Many-to-many</h2>
-<p>Many to many is done by adding an association table between classes. The association table is denoted by the <code class="highlighter-rouge">secondary</code> argument.
-The <code class="highlighter-rouge">backref</code> parameter automatically uses the same relationship.secondary argument for the reverse relationship.</p>
+<p>Many to many is done by adding an association table between classes. The association table is denoted by the <code class="language-plaintext highlighter-rouge">secondary</code> argument.
+The <code class="language-plaintext highlighter-rouge">backref</code> parameter automatically uses the same relationship.secondary argument for the reverse relationship.</p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">association_table</span> <span class="o">=</span> <span class="n">Table</span><span class="p">(</span><span class="s">'association'</span><span class="p">,</span> <span class="n">Base</span><span class="o">.</span><span class="n">metadata</span><span class="p">,</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">association_table</span> <span class="o">=</span> <span class="n">Table</span><span class="p">(</span><span class="s">'association'</span><span class="p">,</span> <span class="n">Base</span><span class="p">.</span><span class="n">metadata</span><span class="p">,</span>
     <span class="n">Column</span><span class="p">(</span><span class="s">'author'</span><span class="p">,</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="s">'author.id'</span><span class="p">),</span> <span class="n">primary_key</span><span class="o">=</span><span class="bp">True</span><span class="p">),</span>
     <span class="n">Column</span><span class="p">(</span><span class="s">'book'</span><span class="p">,</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="s">'book.id'</span><span class="p">),</span> <span class="n">primary_key</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 <span class="p">)</span>
 
-<span class="k">class</span> <span class="nc">Author</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
-    <span class="nb">id</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Integer</span><span class="p">,</span> <span class="n">primary_key</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="k">class</span> <span class="nc">Author</span><span class="p">(</span><span class="n">db</span><span class="p">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="nb">id</span> <span class="o">=</span> <span class="n">db</span><span class="p">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="p">.</span><span class="n">Integer</span><span class="p">,</span> <span class="n">primary_key</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
     <span class="n">books</span> <span class="o">=</span> <span class="n">relationship</span><span class="p">(</span><span class="s">"Book"</span><span class="p">,</span>
                     <span class="n">secondary</span><span class="o">=</span><span class="n">association_table</span><span class="p">,</span>
                     <span class="n">backref</span><span class="o">=</span><span class="s">"authors"</span><span class="p">)</span>
 
-<span class="k">class</span> <span class="nc">Book</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
-    <span class="nb">id</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Integer</span><span class="p">,</span> <span class="n">primary_key</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="k">class</span> <span class="nc">Book</span><span class="p">(</span><span class="n">db</span><span class="p">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="nb">id</span> <span class="o">=</span> <span class="n">db</span><span class="p">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="p">.</span><span class="n">Integer</span><span class="p">,</span> <span class="n">primary_key</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 </code></pre></div></div>
 
-<p>Properites in <code class="highlighter-rouge">author</code>,</p>
+<p>Properites in <code class="language-plaintext highlighter-rouge">author</code>,</p>
 <ul>
   <li>id</li>
   <li>books</li>
 </ul>
 
-<p>Properties in <code class="highlighter-rouge">book</code></p>
+<p>Properties in <code class="language-plaintext highlighter-rouge">book</code></p>
 <ul>
   <li>id</li>
   <li>authors (backpopulated)</li>
@@ -201,22 +201,22 @@ The <code class="highlighter-rouge">backref</code> parameter automatically uses 
 
 <p><a href="https://flask-sqlalchemy.palletsprojects.com/en/2.x/models/#one-to-many-relationships">Documentation</a></p>
 
-<p>Difference between the <code class="highlighter-rouge">relationship</code> function and specifying the <code class="highlighter-rouge">ForeignKey</code></p>
+<p>Difference between the <code class="language-plaintext highlighter-rouge">relationship</code> function and specifying the <code class="language-plaintext highlighter-rouge">ForeignKey</code></p>
 <blockquote>
   <p>Relationships are expressed with the relationship() function. However the foreign key has to be separately declared with the ForeignKey class</p>
 </blockquote>
 
-<p>What is the <code class="highlighter-rouge">relationship</code> function?</p>
+<p>What is the <code class="language-plaintext highlighter-rouge">relationship</code> function?</p>
 <blockquote>
   <p>What does db.relationship() do? That function returns a new property that can do multiple things. In this case we told it to point to the Address class and load multiple of those. How does it know that this will return more than one address? Because SQLAlchemy guesses a useful default from your declaration. If you would want to have a one-to-one relationship you can pass uselist=False to relationship().</p>
 </blockquote>
 
-<p>What does <code class="highlighter-rouge">backref</code> mean?</p>
+<p>What does <code class="language-plaintext highlighter-rouge">backref</code> mean?</p>
 <blockquote>
-  <p>backref is a simple way to also declare a new property on the Address class. You can then also use my_address.person to get to the person at that address. <code class="highlighter-rouge">back_populates</code> is unidirectional, whereas <code class="highlighter-rouge">backref</code> is bidirectional</p>
+  <p>backref is a simple way to also declare a new property on the Address class. You can then also use my_address.person to get to the person at that address. <code class="language-plaintext highlighter-rouge">back_populates</code> is unidirectional, whereas <code class="language-plaintext highlighter-rouge">backref</code> is bidirectional</p>
 </blockquote>
 
-<p>What does <code class="highlighter-rouge">lazy</code> mean?</p>
+<p>What does <code class="language-plaintext highlighter-rouge">lazy</code> mean?</p>
 <blockquote>
   <p>lazy defines when SQLAlchemy will load the data from the database:</p>
 </blockquote>

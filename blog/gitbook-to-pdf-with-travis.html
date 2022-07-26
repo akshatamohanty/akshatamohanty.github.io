@@ -71,14 +71,14 @@
 
 <h1 id="the-requirement">The Requirement</h1>
 
-<p>The book in question was hosted on Github as Markdowns organised into folders in the <code class="highlighter-rouge">master</code> branch. Travis was then configured to run a command <code class="highlighter-rouge">gitpub</code> that automatically generated the Gitbook, cleans it up and commits it to the <code class="highlighter-rouge">gh-pages</code> branch, from which the github.io page is served. However, we also needed the <code class="highlighter-rouge">master</code> branch to have a directly downloadable PDF version of the latest Gitbook output.</p>
+<p>The book in question was hosted on Github as Markdowns organised into folders in the <code class="language-plaintext highlighter-rouge">master</code> branch. Travis was then configured to run a command <code class="language-plaintext highlighter-rouge">gitpub</code> that automatically generated the Gitbook, cleans it up and commits it to the <code class="language-plaintext highlighter-rouge">gh-pages</code> branch, from which the github.io page is served. However, we also needed the <code class="language-plaintext highlighter-rouge">master</code> branch to have a directly downloadable PDF version of the latest Gitbook output.</p>
 
 <p><br /></p>
 
 <h1 id="the-problem">The Problem</h1>
-<p>Generating a PDF with Gitbook is fairly straightforward using the <code class="highlighter-rouge">gitbook pdf &lt;gitbook-folder-location&gt; &lt;pdf-location&gt;.pdf</code> command. However, running this command inside Travis.CI throws the following Runtime Error.</p>
+<p>Generating a PDF with Gitbook is fairly straightforward using the <code class="language-plaintext highlighter-rouge">gitbook pdf &lt;gitbook-folder-location&gt; &lt;pdf-location&gt;.pdf</code> command. However, running this command inside Travis.CI throws the following Runtime Error.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>File "/usr/bin/ebook-convert", line 20, in &lt;module&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>File "/usr/bin/ebook-convert", line 20, in &lt;module&gt;
     sys.exit(main())
 ...
 ...
@@ -86,23 +86,23 @@
 RuntimeError: X server required. If you are running on a headless machine, use xvfb
 </code></pre></div></div>
 
-<p>As is obvious from the error, the error comes from the ebook-convert plugin, that is required by Gitbook for the PDF generation. However, the command <code class="highlighter-rouge">ebook-convert</code> needs to have prepended with <code class="highlighter-rouge">xbvf</code> to run in a headless environment like Travis.</p>
+<p>As is obvious from the error, the error comes from the ebook-convert plugin, that is required by Gitbook for the PDF generation. However, the command <code class="language-plaintext highlighter-rouge">ebook-convert</code> needs to have prepended with <code class="language-plaintext highlighter-rouge">xbvf</code> to run in a headless environment like Travis.</p>
 
 <p>And …</p>
 
-<p>There is no direct way to prepend the <code class="highlighter-rouge">ebook-convert</code> because that is getting called by Gitbook internally. Trying to change that, would mean modifying Gitbook for yourself.</p>
+<p>There is no direct way to prepend the <code class="language-plaintext highlighter-rouge">ebook-convert</code> because that is getting called by Gitbook internally. Trying to change that, would mean modifying Gitbook for yourself.</p>
 
 <p><br /></p>
 
 <h1 id="the-solution">The Solution</h1>
 
-<p>I found this <a href="https://www.systutorials.com/241364/how-to-run-gitbook-on-a-headless-server-make-calibre-run-in-headless-server/">gold nugget</a> which didn’t work for me but definitely led me to my current solution. The workaround was to ‘wrap’ the <code class="highlighter-rouge">ebook-convert</code> command so that when Gitbook calls <code class="highlighter-rouge">ebook-convert</code>, it is actually calling the wrapper command, that calls the actual command prepended with <code class="highlighter-rouge">xbvf</code>.</p>
+<p>I found this <a href="https://www.systutorials.com/241364/how-to-run-gitbook-on-a-headless-server-make-calibre-run-in-headless-server/">gold nugget</a> which didn’t work for me but definitely led me to my current solution. The workaround was to ‘wrap’ the <code class="language-plaintext highlighter-rouge">ebook-convert</code> command so that when Gitbook calls <code class="language-plaintext highlighter-rouge">ebook-convert</code>, it is actually calling the wrapper command, that calls the actual command prepended with <code class="language-plaintext highlighter-rouge">xbvf</code>.</p>
 
 <p>Steps:</p>
 <ul>
   <li>Create a wrapper shell script in the repository (script provided below)</li>
-  <li>Rename the ebook-covert in your <code class="highlighter-rouge">/usr/bin</code> folder to ebook-convert2 (or something else!)</li>
-  <li>Move your script to the <code class="highlighter-rouge">/usr/bin</code> folder as <code class="highlighter-rouge">ebook-convert</code></li>
+  <li>Rename the ebook-covert in your <code class="language-plaintext highlighter-rouge">/usr/bin</code> folder to ebook-convert2 (or something else!)</li>
+  <li>Move your script to the <code class="language-plaintext highlighter-rouge">/usr/bin</code> folder as <code class="language-plaintext highlighter-rouge">ebook-convert</code></li>
   <li>Allow the script to be excutable (the command will exit with an error if you don’t do this)</li>
 </ul>
 
@@ -113,15 +113,15 @@ RuntimeError: X server required. If you are running on a headless machine, use x
 <p><br /></p>
 
 <h2 id="wrapper-script">wrapper-script</h2>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
-<span class="nb">echo</span> <span class="s2">"Run xvfb-run /usr/bin/ebook-convert2 </span><span class="nv">$@</span><span class="s2">"</span>
-<span class="nb">sudo </span>xvfb-run /usr/bin/ebook-convert2 <span class="s2">"</span><span class="nv">$@</span><span class="s2">"</span>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#!/bin/bash
+echo "Run xvfb-run /usr/bin/ebook-convert2 $@"
+sudo xvfb-run /usr/bin/ebook-convert2 "$@"
 </code></pre></div></div>
 <p><br /></p>
 
 <h2 id="travisyml">.travis.yml</h2>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  language: node_js
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  language: node_js
   node_js:
     - "6"
   before_install:
