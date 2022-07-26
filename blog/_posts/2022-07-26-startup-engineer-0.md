@@ -1,7 +1,7 @@
 ---
 title: "Startup Engineer #0: The Beginning"
 summary: Build for yourself, or build for others?
-date:  2022-07-27
+date:  2022-07-26
 tags:
  - startup
  - user
