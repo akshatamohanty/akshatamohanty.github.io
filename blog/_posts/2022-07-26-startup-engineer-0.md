@@ -9,15 +9,15 @@ tags:
 
 Four years back, I moved from `#research` into `#tech`. And the decision to not join a startup was deliberate. 
 
-The pace, growth and autocracy of a startup appealed to my nature. However, startups work fast. And working fast comes with trade-offs. I wanted to know the trade-offs. 
+The pace, growth and autonomy in a startup appealed to my nature. However, startups work fast. And working fast comes with trade-offs. I wanted to know the trade-offs. 
 
-So I took my time to learn from established large-scale systems, observe "best practices" at work and train with expert mentors and colleagues. And finally, a year back - I joined a startup. 
+So I took my time to learn from established large-scale systems, observe "best practices" at work and train with expert mentors and colleagues. Finally, a year back - I joined a startup. 
 
-This series has been a year overdue. 
+This series has been long overdue. 
 
-But nevertheless, here I am, hoping to capture the engineering perspective of building an early-stage startup from scratch. There'll be war and horror stories, hacks, errors and mysteries or just cool bits of technology. Honestly, this mostly serves as my personal technical retrospective. 
+But nevertheless, here I am, hoping to capture the engineering perspective of building an early-stage startup from scratch. There'll be war stories, hacks, errors, mysteries or just cool bits of technology. Honestly, this is mostly my personal technical retrospective as I navigate the unknown. 
 
-So without much ado, here's the first one: 
+So without much ado, here's my first: 
 
 
 ## Know your user.
@@ -35,9 +35,8 @@ So after 2 weeks of hacking, going up some knowledge curves and iterations - we 
 ... only to realize that the Docker experience is pretty questionable on Windows. 1 / 2 devs on our team are Windows users. Not Docker-fans and voted against it, when asked. So much for Developer Experience! 
 
 
-Takeway - know your user.
+Know your user. 
 
-
-Anyway, we live to learn another day! 
+And live to learn another day! 
 
 
