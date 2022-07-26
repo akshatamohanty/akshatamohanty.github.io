@@ -15,7 +15,7 @@ artwork:
   {% include navigation.html %}
 
   <main style="text-align: center">
-    <h1>Recent happenings,</h1>
+    <h1>Latest Posts</h1>
     <br />
     <br />
     <ul>
@@ -54,7 +54,7 @@ artwork:
     <br><br>
     <!-- art -->
     <section>
-      <h1>From the gallery,</h1>
+      <h1>Latest Artwork</h1>
       <p>I paint with water colors. Here's some of my latest randomness. Follow me on <a href='https://www.instagram.com/iamaatoh/' target='_blank' rel='nofollow' style='color: blue; text-decoration: underline;'>Instagram</a>.</p>
       <!-- gallery -->
       <div class='gallery'>
