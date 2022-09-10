@@ -9,6 +9,17 @@
       
       <item>
         <category></category>
+        <title>The Alchemy of Grief</title>
+        <description></description>
+        <pubDate>Sep 2022</pubDate>
+        <link>https://iamaatoh.com/blog/the-alchemy-of-grief.html </link>
+        <guid isPermaLink="true">https://iamaatoh.com/blog/the-alchemy-of-grief.html</guid>
+      </item>
+      
+    
+      
+      <item>
+        <category></category>
         <title>Startup Engineer #1: Managing Imposter Syndrome</title>
         <description>Anti-Imposter Syndrome Checklist.</description>
         <pubDate>Jul 2022</pubDate>
@@ -47,17 +58,6 @@
         <pubDate>Jul 2021</pubDate>
         <link>https://iamaatoh.com/project/practical-blockchain.html </link>
         <guid isPermaLink="true">https://iamaatoh.com/project/practical-blockchain.html</guid>
-      </item>
-      
-    
-      
-      <item>
-        <category></category>
-        <title>Modeling Relationships with Flask-SQLAlchemy</title>
-        <description></description>
-        <pubDate>Jul 2021</pubDate>
-        <link>https://iamaatoh.com/blog/one-to-many-with-python-flaskalchemy.html </link>
-        <guid isPermaLink="true">https://iamaatoh.com/blog/one-to-many-with-python-flaskalchemy.html</guid>
       </item>
       
     
