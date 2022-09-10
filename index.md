@@ -3,10 +3,10 @@ page: Home
 title: Homepage
 layout: none
 artwork:
-  - longLadies
-  - bird
-  - shading
-  - color-study-1
+  - warehouse
+  - marina
+  - fairytale
+  - forest
 ---
 
 {% include head.html %}
@@ -26,7 +26,7 @@ artwork:
               {{ post.date | date: "%b'%y" }} | From the Blog
               <a href="{{post.url}}">
                 <h2>{{ post.title }}</h2>
-                {{ post.content | truncatewords:25 | strip_html }}
+                <div>{{ post.content | truncatewords:20 | strip_html }}</div>
               </a>
             {% else %}
               <a href="{{post.link}}" target='_blank' rel='nofollow' style="display: block; width: 100%; margin: 40px 0; text-align: center;">
@@ -54,8 +54,8 @@ artwork:
     <br><br>
     <!-- art -->
     <section>
-      <h1>Latest Artwork</h1>
-      <p>I paint with water colors. Here's some of my latest randomness. Follow me on <a href='https://www.instagram.com/iamaatoh/' target='_blank' rel='nofollow' style='color: blue; text-decoration: underline;'>Instagram</a>.</p>
+      <h1>Latest Captures</h1>
+      <p>Follow me on <a href='https://www.instagram.com/iamaatoh/' target='_blank' rel='nofollow' style='color: blue; text-decoration: underline;'>Instagram</a>.</p>
       <!-- gallery -->
       <div class='gallery'>
         {% for name in page.artwork %}
