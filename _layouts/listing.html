@@ -4,16 +4,33 @@
 
   <body>
     {% include navigation.html %}
+    <main style="margin-top: 52px;">
+      <section class="hero is-medium is-link">
+        <div class="hero-body">
+          <h1 class="title is-1">
+            {{ page.listing_type | capitalize }}
+          </h1>
+          <p class="subtitle">
+            {{ page.description }}
+          </p>
+        </div>
+      </section>
 
-    <main>
-      <ul>
-        {% for post in site.categories[page.category]  %}
-          <li>
-            {% include thumbnails/{{page.category}}.html %}
-            <br />
-          </li>
-        {% endfor %}
-      </ul>
+      <section class="section is-medium">
+        <ul class="columns is-multiline">
+          {% assign categories_list = site.categories %}
+          {% for post in site.categories[page.listing_type]  %}
+            <li style="display: flex; flex-direction: column; justify-content: space-between; margin-bottom: 24px;" class="column is-half">
+                {% if page.listing_type == 'essays' %} {% include fragments/essay.html %} {% endif %}
+                {% if page.listing_type == 'guides' %} {% include fragments/guide.html %} {% endif %}
+                {% if page.listing_type == 'talks' %} {% include fragments/talk.html %} {% endif %}
+                {% if page.listing_type == 'bookshelf' %} {% include fragments/note.html %} {% endif %}
+                {% if page.listing_type == 'research' %} {% include fragments/research.html %} {% endif %}
+                {% if page.listing_type == 'projects' %} {% include fragments/project.html %} {% endif %}
+            </li>
+          {% endfor %}
+          </ul>
+      </section>
     </main>
   </body>
 

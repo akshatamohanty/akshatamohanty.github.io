@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+
+  <body>
+    {% include navigation.html %}
+    <main style="margin-top: 52px;">
+      <section class="hero is-medium is-link">
+        <div class="hero-body">
+          <h1 class="title is-1">
+            {{ page.title }}
+          </h1>
+          <p class="subtitle">
+            {{ page.description }}
+          </p>
+        </div>
+      </section>
+
+      <section class="section is-medium">
+        <ul class="columns is-multiline">
+          {% assign categories_list = site.categories %}
+          {% for post in site.tags[page.topic] %}
+            <li style="display: flex; flex-direction: column; justify-content: space-between; margin-bottom: 24px;" class="column is-one-third">
+                <div class="tag is-warning">{{post.categories[0] | capitalize }}</div>
+                {% if post.categories[0] == 'essays' %} {% include fragments/essay.html %} {% endif %}
+                {% if post.categories[0] == 'guides' %} {% include fragments/guide.html %} {% endif %}
+                {% if post.categories[0] == 'talks' %} {% include fragments/talk.html %} {% endif %}
+                {% if post.categories[0] == 'bookshelf' %} {% include fragments/note.html %} {% endif %}
+                {% if post.categories[0] == 'research' %} {% include fragments/research.html %} {% endif %}
+            </li>
+          {% endfor %}
+          </ul>
+      </section>
+    </main>
+  </body>
+
+  {% include footer.html %}
+</html>

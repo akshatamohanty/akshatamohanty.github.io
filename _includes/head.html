@@ -1,10 +1,10 @@
 <head>
 	<title>{{ page.title }} | Akshata Mohanty</title>
-	<meta name="description" content="{{ page.summary }}" />
+	<meta name="description" content="{{ page.description }}" />
 
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<meta property="og:title" content="{{ page.title }}" />
 	<meta property="og:description" content="{{ page.summary }}" />
@@ -13,9 +13,8 @@
 	<meta property="og:image:height" content="300" />
 	<meta property="og:type" content="website" />
 
-	<!-- main stylesheet -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="/styles/main.css">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 
 	<link href='https://iamaatoh.com/feed.xml' rel='alternate' type='application/atom+xml'>
 
@@ -31,4 +30,41 @@
 			document.body.style.opacity = 1
 		});
 	</script>
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+
+		// Get all "navbar-burger" elements
+		const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+		// Add a click event on each of them
+		$navbarBurgers.forEach( el => {
+		el.addEventListener('click', () => {
+
+			// Get the target from the "data-target" attribute
+			const target = el.dataset.target;
+			const $target = document.getElementById(target);
+
+			// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+			el.classList.toggle('is-active');
+			$target.classList.toggle('is-active');
+
+		});
+		});
+
+		});
+	</script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+	<style>
+		html, body {
+			font-family: 'Source Sans Pro', sans-serif;
+		}
+
+		h1, h2, h3, h4, h5, h6 {
+			font-family: 'Libre Baskerville', serif;
+			font-weight: 700;
+		}
+	</style>
 </head>
