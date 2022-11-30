@@ -1,9 +1,12 @@
-<div>
+<div>   
+    <div class="tags are-medium">
+        <span class="tag tag-is-dark">{{post.where}}</span>
+      </div>
     <div class="title is-3">{{post.title}}</div>
-    <div class="block">{{post.description}}</div>
-    <!-- <div class="block">{{post.content | truncatewords:50 | strip_html}}</div> -->
+    <div class="subtitle is-5">{{post.description}}</div>
+    <br/><br/>
 </div>
 <div class="block">
-    <br/>
-    <a href={{post.url}} class="button is-small is-link">Read</a>
+    {{ post.embed}}
+    <br/><br/><br/>
 </div>

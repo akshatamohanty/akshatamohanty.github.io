@@ -2,6 +2,7 @@
 title: "How to deploy a smart contract with Remix?"
 description: "So, you've heard of smart contracts. And now you want to see one in action. Thanks to the age of developer-friendly tools, it is extremely simple to get started with building smart contracts. For this walk-through, we'll be deploying an Ethereum contract using Remix to a local Ethereum network."
 date: 2021-07-20
+layout: essay
 tags:
   - blockchain
   - ethereum

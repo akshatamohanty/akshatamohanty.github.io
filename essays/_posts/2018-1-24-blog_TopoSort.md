@@ -2,6 +2,8 @@
 title: Topological Sorting Algorithm with JS
 description: "Reprehenderit magna laborum sunt commodo. Excepteur ex culpa ut laboris occaecat mollit est sunt. Veniam adipisicing aliqua duis mollit. Consectetur enim aliquip incididunt et in."
 date: 24-1-2018
+layout: essay
+published: false
 tags:
   - algorithms
   - javascript

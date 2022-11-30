@@ -1,12 +1,10 @@
 ---
-published: true
 title: Python Package Management, for the Node developer
 summary: Python is cold.
-date:  2021-07-15
-image:
-credits:
+date: 2021-07-15
+layout: essay
 tags:
- - python
+  - python
 ---
 
 This is going to be simple.
@@ -20,7 +18,6 @@ Here's how to do it,
 ```bash
 python3 -m venv _environment_name_
 ```
-
 
 - Activate this environment using,
 

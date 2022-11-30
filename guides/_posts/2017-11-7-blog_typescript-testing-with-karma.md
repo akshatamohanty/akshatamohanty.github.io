@@ -1,10 +1,8 @@
 ---
-marker: tutorial
-title: "[tutorial] How to add integrate the Jasmine testing framework in Typescript project?"
-summary: Lessons learned while adding the jasmine testing framework for Typescript
+title: "How to add integrate the Jasmine testing framework in Typescript project?"
+description: Lessons learned while adding the jasmine testing framework for Typescript
 date: 2017-11-7
-image: https://images.pexels.com/photos/372796/pexels-photo-372796.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
-credits: https://images.pexels.com/photos/372796/pexels-photo-372796.jpeg
+layout: essay
 ---
 
 Test-driven development (TDD) is a best practice for clean, robust production-grade code. However, setting up these testing frameworks can be daunting. Here are some of the lessons I learned while setting up Jasmine testing framework for Typescript

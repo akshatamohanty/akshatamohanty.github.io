@@ -2,6 +2,7 @@
 title: "How to make an animated navigation component using Angular?"
 description: Getting started with Angular Animations by building a simple component
 date: 2018-04-25
+layout: essay
 tag:
   - web-and-performance
   - angularjs
