@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>How Google Works | Akshata Mohanty</title>
+	<meta name="description" content="My take-aways from this wonderful insight into the culture of Google" />
+
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta property="og:title" content="How Google Works" />
+	<meta property="og:description" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:image:width" content="400" />
+	<meta property="og:image:height" content="300" />
+	<meta property="og:type" content="website" />
+
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+	<link href='https://iamaatoh.com/feed.xml' rel='alternate' type='application/atom+xml'>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111560396-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-111560396-1');
+		document.fonts.ready.then((fontFaceSet) => {
+			document.body.style.opacity = 1
+		});
+	</script>
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+
+		// Get all "navbar-burger" elements
+		const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+		// Add a click event on each of them
+		$navbarBurgers.forEach( el => {
+		el.addEventListener('click', () => {
+
+			// Get the target from the "data-target" attribute
+			const target = el.dataset.target;
+			const $target = document.getElementById(target);
+
+			// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+			el.classList.toggle('is-active');
+			$target.classList.toggle('is-active');
+
+		});
+		});
+
+		});
+	</script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+	<style>
+		html, body {
+			font-family: 'Source Sans Pro', sans-serif;
+		}
+
+		h1, h2, h3, h4, h5, h6 {
+			font-family: 'Libre Baskerville', serif;
+			font-weight: 700;
+		}
+	</style>
+</head>
+
+    <style>
+        .page-content {
+            max-width: 700px;
+            margin: 0 auto;
+           
+            color:  #212121;
+            font-size: 1.2rem; 
+            line-height: 1.5;
+        }
+
+        .page-content > p, section {
+            padding: 1.5rem 0;
+        }
+
+        .page-content > h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+        }
+
+        .page-content > h1 {
+            font-size: 3rem;
+            line-height: 1.2;
+            margin: 3rem 0 0.5rem 0;
+        }
+
+        .page-content > h2 {
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem 0;
+        }
+
+        .page-content > ul {
+            margin: 0 1rem;
+            list-style-type: disc;
+        }
+
+        .page-content > ul > li {
+            margin: 0 1rem;
+        }
+    </style>
+    <nav class="navbar is-fixed-top is-link" role="navigation" aria-label="main navigation">
+	<div class="navbar-brand">
+	  <a class="navbar-item" href="/">
+		<span>&lt;iamaatoh /&gt;</span>
+	  </a>
+  
+	  <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+		<span aria-hidden="true"></span>
+		<span aria-hidden="true"></span>
+		<span aria-hidden="true"></span>
+	  </a>
+	</div>
+  
+	<div id="navbarBasicExample" class="navbar-menu">
+	  <div class="navbar-end">
+		<div class="navbar-item has-dropdown is-hoverable">
+			<a class="navbar-link">
+			  Topics
+			</a>
+	
+			<div class="navbar-dropdown">
+				<a href="/fullstack-engineering" class="navbar-item">
+					Fullstack Engineering
+				</a>
+			  <!-- <a href="/web-and-performance" class="navbar-item">
+				Web and Performance
+			  </a> -->
+			  <!-- <a href='/system-design' class="navbar-item">
+				System Design
+			  </a> -->
+			  <a href='/blockchain-and-web3' class="navbar-item">
+				Blockchain and Web3
+			  </a>
+			  <a href='/algorithms-and-data-structures' class="navbar-item">
+				Algorithms and Data Structures
+			  </a>
+			  <!-- <a href='/engineering-startups' class="navbar-item">
+				Engineering @startups
+			  </a> -->
+			</div>
+		</div>
+
+		<a href='/essays' class="navbar-item">
+		  	Essays
+		</a>
+  
+		<a href='/guides' class="navbar-item">
+		  	Guides
+		</a>
+
+		<a href='/research' class="navbar-item">
+			Research
+		</a>
+
+		<a href='/talks' class="navbar-item">
+			Speaking Events
+		</a>
+
+		<a href='/bookshelf' class="navbar-item">
+			Bookshelf
+		</a>
+	  </div>
+	</div>
+  </nav>
+    <body>
+        <section style="margin-top: 52px;" class="hero is-link is-medium">
+            <div class="hero-body">
+                <div class="block">
+                    <nav class="breadcrumb" aria-label="breadcrumbs">
+                        <ul>
+                          <li><a href="/">Home</a></li>
+                          <li><a href="/bookshelf">Bookshelf</a></li>
+                          <li class="is-active"><a href="#" aria-current="page">How Google Works</a></li>
+                        </ul>
+                      </nav>
+                </div>
+                <h1 class="title is-2">
+                    How Google Works
+                </h1>
+                <p class="subtitle is-5">
+                    My take-aways from this wonderful insight into the culture of Google
+                </p>
+                <p>
+                    <div class="field is-grouped is-grouped-multiline">
+                        <div class="tags are-medium">
+                            
+                        </div>
+                    </div>
+                </p>
+            </div>
+        </section>
+        
+        <section class="section is-medium columns">
+            <div class="column">
+                <div class="page-content">
+                    <p style="color: gray;">
+                       May 16, 2019</small>
+                    </p>
+                    <div>
+                        <p><a href="https://www.goodreads.com/book/show/23158207-how-google-works" target="_blank">How Google Works by Eric Schmidt and Jon Rosenberg</a> has been one of the defining books in my life. Even though the book was probably written with an intention of guiding corporates and entrepreneurs - it did help me consolidate some priciples that I’d like to incorporate into my life. <code class="language-plaintext highlighter-rouge">How Google Works</code> talks about Google as a company and provides an inside look into the foundations, principles and culture the company is built on. If books are meant to inspire growth, this one is definitely it. Here is a list of my five key takeaways from this amazing read.</p>
+
+<h3 id="be-a-smart-creative">Be a ‘smart creative’</h3>
+
+<p>The book centers around <code class="language-plaintext highlighter-rouge">smart creatives</code>, better known as <code class="language-plaintext highlighter-rouge">Googlers</code>. The description presented by Eric Schmidt about this genre of people is inspiring. These are people who are intelligent, agile, grow fast, and have a figure-it-out mentality. They are broad in their knowledge and skills and follow core principles of movement, elasticity and speed. Heck! I’d love to be one of these people - how can one not want to be - and not just because they get to work at Google!</p>
+
+<p>Eric Schmidt, himself, has a lot to teach, being a <code class="language-plaintext highlighter-rouge">smart creative</code> leader. He is generous with his acknowledgement of this group of people being the defining pillars of Google’s success. He discusses ways of attracting, managing and retaining such talent - providing a balance of autonomy and direction. The synergy of the approaches, the real examples of success with them makes for a compelling argument.</p>
+
+<p>My journey into software from Architecture started when I questioned a sub-optimal process in a firm, as an intern. I decided to make it better using code I mashed up together. Figuring out better solutions and caring about it has helped me speed up my own progress and growth. The book is all about the impact of such values working cumulatively (read: Google). It motivated me even more to chase after these principles with more aggression! A simple line in the book sort of stuck with me - it said Googlers often start with <code class="language-plaintext highlighter-rouge">let me show you..</code>. It is basically about developing a bias towards thought, data and action - and being a do-er.</p>
+
+<p>A psyche worth striving for - especially when Google Maps, Google Sky - all came out of this mindset! There’s an example in the book: a set of people unrelated to Google Ads, came up with solutions to make it better. Just because Larry Page stuck a post-it note somewhere saying <code class="language-plaintext highlighter-rouge">These ads suck</code>.</p>
+
+<p><br /></p>
+
+<h3 id="concentrate-on-first-principles">Concentrate on first principles</h3>
+
+<p>Foundations are important and everything comes from first principles. I am expecting some heated discussions with my MBA buddies over this. But it was funny and endearing how the book sort of dissed market research. Eric Schmidt minces no words in telling you to bet on technical insight, not market study. Market research can’t tell you what the customer doesn’t yet know he wants; but technical acuity can.
+He uses Henry Ford’s famous quote - <code class="language-plaintext highlighter-rouge">If I had asked people what they wanted, they would have said faster horses.</code>
+And then the fact that Google started out with no market strategy. And the case is closed.</p>
+
+<p>Personally, now, my next goal is to concentrate on building acute technical insight. Today’s times requires one to grow big fast. And Eric Schmidt predicts that building platforms with a specialization is the key to next generation big products. He advocates the hedgehog concept - to be amazing at one key thing. And also, that technical insight beats all.</p>
+
+<p>A strategy used at Google is to always ask the question to the PM:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>what is the most important thing you do?
+</code></pre></div></div>
+
+<p>Already fixed a post-it note on my mirror with this.</p>
+
+<p><br /></p>
+
+<h3 id="prioritize">Prioritize</h3>
+
+<p>Being the data-oriented company Google is, it gives a lot of numbers to quantify priority.</p>
+
+<p>For example:</p>
+
+<ul>
+  <li>80% time to 80% of your revenue;</li>
+  <li>70-20-10 rule for resource allocation with 70% on main business, 20% for adjacent and 10% on completely new</li>
+  <li>20% time for personal projects</li>
+</ul>
+
+<p>What I found amazing was the fact that even though this is a company with almost infinite resources and talent, they still aggressively prioritize at a fundamental level. And they do so, quantitatively.</p>
+
+<p>And here I am - struggling to keep track of my time - often spending 80% of time on things that make me 0% of my money! :D</p>
+
+<p>This principle had to go on the list.</p>
+
+<p><br /></p>
+
+<h3 id="keep-it-open">Keep it open</h3>
+
+<p>Where Jon Ronsenberg takes being called a <code class="language-plaintext highlighter-rouge">router</code>, as a compliment - it says a lot about how intrinsically the top management believes in the virtues of openness and trust. Apparently, Larry Page remembers everything that everyone does and follows up with them. Eric Schmidt , does the same, just with notes. The products are open, the board letters are open, OKRs are open and anyone can talk to anyone.</p>
+
+<p>For me, the philosophy of being open, is a slightly difficult one to incorporate. Being raised as a middle-class suspicious Indian - I like to hold my cards clos. Yet, the merit for this lies in the fact that more you open yourself up, the faster the refinement.</p>
+
+<p>The quality of being optimistic is important to for any new venture. And openness reinforces that optimism in a way. We tend to hide things, when we are unsure. Metaphorically speaking, by being open, there’s no way to hide the flaws, hence would disappear.</p>
+
+<p>Another imaginative way to keep the communication going is to reinforce the same principle in different ways. For example, the goal at Google has been excellence User Experience. To reinforce this, Eric Schmidt once talked about the increasing sophistication of users. Based on the increasing length of search queries. It was an interesting statistic that people didn’t know about. And I can see why that would immediate pique an interest towards striving for better UX. Hence, reinforcing the idea.</p>
+
+<p>I also liked the idea of keeping your OKRs openly available. It is one way of getting peer pressure to work for you. Helps keeps things ambitious as well as realistic - stops you from putting something on your todo-list just to check it off (I’m guilty!).</p>
+
+<p>Another intriguing point, was the idea of doing a self review - and using that as a basis for a 360. I often fret if I’m completely off in my judgement about myself, my growth and performance. Getting a random review, without any context is like writing an essay without any research. A review in context of a self-review would definitely be a more through, insightful one.</p>
+
+<p>PS: The book talked about an app called <code class="language-plaintext highlighter-rouge">Snippets</code> to keep track of work done everyday. Could be compiled for weekly progress reports and milestones? If there are any Googlers reading this, and the code is open-source - would you be so kind to send me a link? Just curious. :)</p>
+
+<p><br /></p>
+
+<h3 id="be-anti-fragile">Be anti-fragile</h3>
+
+<p>My favorite takeaway of all - Fail well.</p>
+
+<p>Technically, it tells you to figure out a way to let people experience the product. And to fail fast, fail well. Essentially, that failure should get you new data and new learnings. Ideas should be morphed, not changed and iterations should always be based on learning.</p>
+
+<p>It made failing well sound like a skill. Which it is.</p>
+
+<p>On the personal day to day front, we often hear how failure is a stepping stone for success. But no-one ever emphasizes that just experiencing failure is useless. Unless you take the time to extract meaning and tangible knowledge out of it. The books talks about having a playbook - for everything. About the importance of a coach. Someone who might not be better in the playing field, but is good at observation. Someone to distil the learning from watching you to provide you with the knowledge. Which is your advantage.</p>
+
+<p>Last but not the least, being a great believer in resilience, I loved the comparison between the two.</p>
+
+<p>Resilient remains the same, but anti-fragile changes to evolve.</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+    </body>
+    
+<footer class="footer">
+  <div class="content has-text-centered">
+    <div class='columns'>
+        <div class='column'>
+            <div class='heading'>Writing & Notes</div>  
+            <div>
+                <div><a href='/essays'>Essays</a></div>
+                <div><a href='/bookshelf'>Bookshelf</a></div>
+                <div><a href='/research'>Research</a></div>
+                <div><a href='/the-lab'>The Lab</a></div>
+            </div>        
+        </div>
+        <div class='column'>
+            <div class='heading'>Creations</div>  
+            <div>
+                <div><a href='https://www.meetup.com/practical-blockchain/' target="_blank">Pratical Blockchain</a></div>
+                <div><a href='https://startupengineer.substack.com/' target='_blank' >The Startup Engineer</a></div>
+                <div><a href='https://www.instagram.com/iamaatoh/' target='_blank'>My Artwork</a></div>
+                <div><a href='/projects'>Miscellaneous Projects</a></div>
+            </div>        
+        </div>
+    </div>
+    <br/><br/>
+    <div class='content has-text-centered'>
+        Copyright © 2022 Akshata Mohanty
+    </div>
+  </div>
+</footer>
+
+</html>

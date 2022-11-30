@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>How to prepare for the Google Cloud Associate Engineer Certification? | Akshata Mohanty</title>
+	<meta name="description" content="What is the Google Cloud Associate Engineer exam and how to ace it?" />
+
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta property="og:title" content="How to prepare for the Google Cloud Associate Engineer Certification?" />
+	<meta property="og:description" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:image:width" content="400" />
+	<meta property="og:image:height" content="300" />
+	<meta property="og:type" content="website" />
+
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+	<link href='https://iamaatoh.com/feed.xml' rel='alternate' type='application/atom+xml'>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111560396-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-111560396-1');
+		document.fonts.ready.then((fontFaceSet) => {
+			document.body.style.opacity = 1
+		});
+	</script>
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+
+		// Get all "navbar-burger" elements
+		const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+		// Add a click event on each of them
+		$navbarBurgers.forEach( el => {
+		el.addEventListener('click', () => {
+
+			// Get the target from the "data-target" attribute
+			const target = el.dataset.target;
+			const $target = document.getElementById(target);
+
+			// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+			el.classList.toggle('is-active');
+			$target.classList.toggle('is-active');
+
+		});
+		});
+
+		});
+	</script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+	<style>
+		html, body {
+			font-family: 'Source Sans Pro', sans-serif;
+		}
+
+		h1, h2, h3, h4, h5, h6 {
+			font-family: 'Libre Baskerville', serif;
+			font-weight: 700;
+		}
+	</style>
+</head>
+
+    <style>
+        .page-content {
+            max-width: 700px;
+            margin: 0 auto;
+           
+            color:  #212121;
+            font-size: 1.2rem; 
+            line-height: 1.5;
+        }
+
+        .page-content > p, section {
+            padding: 1.5rem 0;
+        }
+
+        .page-content > h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            margin: 24px 0 16px 0;
+        }
+
+        .page-content > h1 {
+            font-size: 3rem;
+            line-height: 1.2;
+            margin: 3rem 0 0.5rem 0;
+        }
+
+        .page-content > h2 {
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem 0;
+        }
+
+        .page-content > ul {
+            margin: 0 1rem;
+            list-style-type: disc;
+        }
+
+        .page-content > ul > li {
+            margin: 0 1rem;
+        }
+    </style>
+    <nav class="navbar is-fixed-top is-link" role="navigation" aria-label="main navigation">
+	<div class="navbar-brand">
+	  <a class="navbar-item" href="/">
+		<span>&lt;iamaatoh /&gt;</span>
+	  </a>
+  
+	  <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+		<span aria-hidden="true"></span>
+		<span aria-hidden="true"></span>
+		<span aria-hidden="true"></span>
+	  </a>
+	</div>
+  
+	<div id="navbarBasicExample" class="navbar-menu">
+	  <div class="navbar-end">
+		<div class="navbar-item has-dropdown is-hoverable">
+			<a class="navbar-link">
+			  Topics
+			</a>
+	
+			<div class="navbar-dropdown">
+				<a href="/fullstack-engineering" class="navbar-item">
+					Fullstack Engineering
+				</a>
+			  <!-- <a href="/web-and-performance" class="navbar-item">
+				Web and Performance
+			  </a> -->
+			  <!-- <a href='/system-design' class="navbar-item">
+				System Design
+			  </a> -->
+			  <a href='/blockchain-and-web3' class="navbar-item">
+				Blockchain and Web3
+			  </a>
+			  <a href='/algorithms-and-data-structures' class="navbar-item">
+				Algorithms and Data Structures
+			  </a>
+			  <!-- <a href='/engineering-startups' class="navbar-item">
+				Engineering @startups
+			  </a> -->
+			</div>
+		</div>
+
+		<a href='/essays' class="navbar-item">
+		  	Essays
+		</a>
+  
+		<a href='/guides' class="navbar-item">
+		  	Guides
+		</a>
+
+		<a href='/research' class="navbar-item">
+			Research
+		</a>
+
+		<a href='/talks' class="navbar-item">
+			Speaking Events
+		</a>
+
+		<a href='/bookshelf' class="navbar-item">
+			Bookshelf
+		</a>
+	  </div>
+	</div>
+  </nav>
+    <body>
+        <section style="margin-top: 52px;" class="hero is-link is-medium">
+            <div class="hero-body">
+                <div class="block">
+                    <nav class="breadcrumb" aria-label="breadcrumbs">
+                        <ul>
+                          <li><a href="/">Home</a></li>
+                          <li><a href="/guides">Guides</a></li>
+                          <li class="is-active"><a href="#" aria-current="page">How to prepare for the Google Cloud Associate Engineer Certification?</a></li>
+                        </ul>
+                      </nav>
+                </div>
+                <h1 class="title is-2">
+                    How to prepare for the Google Cloud Associate Engineer Certification?
+                </h1>
+                <p class="subtitle is-5">
+                    What is the Google Cloud Associate Engineer exam and how to ace it?
+                </p>
+                <p>
+                    <div class="field is-grouped is-grouped-multiline">
+                        <div class="tags are-medium">
+                            
+                        </div>
+                    </div>
+                </p>
+            </div>
+        </section>
+        
+        <section class="section is-medium columns">
+            <div class="column">
+                <div class="page-content">
+                    <p style="color: gray;">
+                       September 23, 2020</small>
+                    </p>
+                    <div>
+                        <div class="divider"></div>
+
+<h2 id="tldr">TLDR;</h2>
+
+<p><strong>Why take the Google Associate Cloud Engineer Exam?</strong></p>
+
+<ul>
+  <li>Holistic introduction to cloud computing</li>
+  <li>Better end-to-end understanding of cloud-based infrastructure</li>
+  <li>“Signalling” - as proof of skills to potential recuiters</li>
+</ul>
+
+<p><strong>How to prepare for the exam?</strong></p>
+
+<ul>
+  <li><strong>theory</strong>: learn about the product offerings &amp; their purpose</li>
+  <li><strong>decision-making</strong>: picking the right product aligned to business goals</li>
+  <li><strong>practice</strong>: familiarity with the actual commands and interface</li>
+</ul>
+
+<div class="divider"></div>
+
+<p>I recently took my Google Cloud Associate Engineer Exam (and passed)! Check out <a href="https://www.credential.net/2c22d5df-2091-4f8f-98f1-4db1eedc8504" target="\_blank">my credential here.</a></p>
+
+<p>It took a years’ worth of procrastination and 3 weeks of panick-ed focused preparation. However, it has been an incredibly useful learning experience and I wish I would have gotten to it sooner.</p>
+
+<h1 id="what-is-a-cloud-engineer-and-why-should-you-care">What is a Cloud Engineer and why should you care?</h1>
+
+<p>I am a Fullstack Engineer and I’ve been working with GCP for almost two years now. My work is usually centered around feature development, hence my knowledge of GCP had been limited to very specific deployment or monitoring processes, directly used as part of my job.</p>
+
+<p>My reasons for taking this exam were two-fold:</p>
+
+<ul>
+  <li>to understand the underlying infrastructure architecture at my company better, and</li>
+  <li>to be exposed to the whole array of solutions that GCP offered that I didn’t directly get to work with</li>
+</ul>
+
+<p>There are plenty other good reasons to take this exam though.</p>
+
+<p>For starters, let us look at the formal definition of what an Associate Cloud Engineer does.</p>
+
+<blockquote>
+  <p>An Associate Cloud Engineer deploys applications, monitors operations, and manages enterprise solutions. This individual is able to use Google Cloud Console and the command-line interface to perform common platform-based tasks to maintain one or more deployed solutions that leverage Google-managed or self-managed services on Google Cloud.</p>
+</blockquote>
+
+<p>It’s succint and accurate. However, I feel the relevance of this exam goes far beyond the scope of the role described above.</p>
+
+<p>With the aggressive growth in the cloud engineering, GCP or any cloud platform is fast becoming an integral part of any software development pipeline. Getting familiar with this area is soon going to be as crucial as understanding version control.</p>
+
+<p>Hence, the Google Cloud Associate Engineer Certification is great if you want to:</p>
+
+<ul>
+  <li>break into the tech industry as a Cloud Engineer / DevOps Engineer / System Architect</li>
+  <li>augment your skills as a developer, even in other verticals such as frontend, backend, machine learning etc</li>
+  <li>join or are joining a cloud-based company in any role and want more context</li>
+  <li>code your own software-startup</li>
+</ul>
+
+<p>Maybe you don’t really <strong>need</strong> the cert for the last two, but paying money for something always acts as a good motivation to learn!</p>
+
+<p><br /></p>
+
+<h1 id="starting-preparation">Starting Preparation</h1>
+
+<p>So, now that you’ve decided to go for it - the first thing is to book your examination. The cost of the exam is <strong>USD 125</strong>. The exam consists of <strong>50 multiple-choice questions</strong> to be finished in <strong>2 hours</strong>.</p>
+
+<p>Time-wise, the exam is forgiving. There’s more than enough time if you know the content - I was able to go through my answers twice before submitting.</p>
+
+<p>For budgeting, it could be slightly steep. However, given the increasing demand for cloud engineers - there seem to be more than enough funding opportunties. For me, passing the exam allowed me to use my education budget offered by my company. For women in Singapore, CodingGirlsSG is offering training as well as a funded attempt at the exam as part <a href="https://cloud.codinggirls.sg/" target="\_blank">Code with Cloud Programme</a>. Google also offers discounts and promos pretty frequently, as part of various challenges.</p>
+
+<p>I’d recommend booking the date before you start preparing - to combat procrastication (atleast marginally!). The date is easily changeable without any additional cost, for upto 72 hours before the exam. So, if you do get to that point un-prepared, you can still cost-freely procrastinate away!</p>
+
+<p>Go ahead, book your exam <a href="https://www.webassessor.com/" target="\_blank">here</a>.</p>
+
+<p>Congratulations! Now that you have booked your exam, we need to build out our plan to prepare for this exam.</p>
+
+<p>Minimally, you should go definitely through the following resources:</p>
+
+<ul>
+  <li><a href="https://cloud.google.com/certification/guides/cloud-engineer" target="\_blank">Google Cloud Associate Engineer Exam Guide</a></li>
+  <li><a href="https://cloud.google.com/certification/guides/cloud-engineer" target="\_blank">Google Cloud Associate Engineer Practice Exam</a></li>
+  <li><a href="https://www.udemy.com/course/google-certified-associate-cloud-engineer-2019-prep-course/" target="\_blank">Dan Sullivan’s Udemy Course</a> or the <a href="https://books.google.com.sg/books/about/Official_Google_Cloud_Certified_Associat.html?id=wwGQDwAAQBAJ&amp;redir_esc=y" target="\_blank">Official Guide</a></li>
+  <li><a href="https://www.coursera.org/learn/preparing-cloud-associate-cloud-engineer-exam" target="\_blank">Preparing for the Google Cloud Associate Cloud Engineer Exam - Coursera</a></li>
+  <li><a href="https://cloud.google.com/products" target="\_blank">GCP Products &amp; Services</a>, quickstarts &amp; guides</li>
+</ul>
+
+<p><br /></p>
+
+<h1 id="the-mindset-3-keys-objectives">The Mindset: 3 keys objectives</h1>
+
+<p>The GCP Associate Engineer exam is <strong>not a straightforward, fact-based exam</strong>. It tests your ability to use your knowledge. You’ll be asked practical questions with business context - questions that you might face on the job.</p>
+
+<p>It is essential to keep this in mind while beginning your preparation.</p>
+
+<h2 id="theory">Theory</h2>
+
+<p>If you are new to GCP (even if you are not!), it’s good to first get an overview of everything that you need to cover. Here’s a checklist for that:</p>
+
+<ul>
+  <li>Take a quick glance at the <a href="https://cloud.google.com/certification/guides/cloud-engineer" target="\_blank">Google Cloud Associate Engineer Exam Guide</a></li>
+  <li>Take the <a href="https://cloud.google.com/certification/guides/cloud-engineer" target="\_blank">Google Cloud Associate Engineer Practice Exam</a>. This will help you understand the type and scope of questions asked.</li>
+  <li>Complete the <a href="https://www.coursera.org/learn/preparing-cloud-associate-cloud-engineer-exam" target="\_blank">Preparing for the Google Cloud Associate Cloud Engineer Exam</a> from Coursera. It gives a quick, summarized overview of all the different products. Don’t stress on learning every detail as of now - that will come with repeated exposure to all the different concepts.</li>
+  <li>Go through <a href="https://www.udemy.com/course/google-certified-associate-cloud-engineer-2019-prep-course/" target="\_blank">Dan Sullivan’s Udemy Course</a>. It’s about 5 hours and in my opinion, pure gold as preparation for this exam. Every word uttered is important and expect to go through this multiple times, as part of you prep.</li>
+</ul>
+
+<p><strong>Digging Deeper</strong>
+Now that you have the general lay-of-the-land, it is time to dig deeper into the details.</p>
+
+<ul>
+  <li>This awesome <a href="https://docs.google.com/spreadsheets/d/1LUtqhOEjUMySCfn3zj8Arhzcmazr3vrPzy7VzJwIshE/edit#gid=1394988501" target="\_blank">checklist by Ivam Luz</a> lists out all the concepts and products you’ll need to be familar with. You might need to update it if the syllabus has changed - but it will serve as a good tracking system.</li>
+  <li>Start exploring the product documentation with the checklist on the side. For every offering, Google provides a ton of resources. But the most critical sections to building a solid understanding are (using Cloud Run as an example):
+    <ul>
+      <li><a href="https://cloud.google.com/run" target="\_blank">product page</a>,</li>
+      <li><a href="https://cloud.google.com/run/docs/concepts" target="\_blank">concepts</a>, and</li>
+      <li><a href="https://cloud.google.com/run/docs/how-to" target="\_blank">how-to-guides</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p>For each product, go through the above sections <strong>in order</strong>, making a mental note of any critical facts (for eg, limitations or scale of input etc). While reading the how-to-guides, consolidate your learning using <a href="qwiklabs.com" target="\_blank">Qwiklabs</a> or GCP directly.</p>
+
+<h2 id="critical-thinking">Critical Thinking</h2>
+
+<p>If you’ve prepared well with the above, this should come easy. But I felt, I did have to go back to my fact-gathering to understand some key differences and purposes in using different products, while trying to correctly solve the business-type questions.</p>
+
+<p>Ways to get better at this:</p>
+
+<ul>
+  <li>Make a comparison table between products; one place to see all properties, key points to have better insight into what can be used where</li>
+  <li>Read the different case-studies listed on the product overview page</li>
+  <li>For any pratice questions, dig deeper into the incorrect options and try to understand why an option is incorrect, in addition to why something is correct</li>
+</ul>
+
+<h2 id="practice">Practice</h2>
+
+<p>Yay! You’ve made it! You are reasonably confident. But, no learning sticks without practice.</p>
+
+<p>So,</p>
+
+<ul>
+  <li>Do atleast 2-3 mock tests - the number isn’t important but what is important is to repeatedly take them till you can solve all with 100% accuracy. When you get something wrong, make a note about the section in which you got it wrong (storage, kubernetes, app engine etc) and revisit it armed with product documentation.</li>
+  <li>Do relevant Qwiklabs, especially the <strong>Challenge Labs</strong>. Google frequently offers multiple cloud challenges which allow you get access free study material like Coursera and Qwiklabs. Make use of that - it is a fun way to learn with others that have the same goal as you. For eg, the <a href="https://events.withgoogle.com/majulahgcp-learn-data-analytics-using-google-cloud/" target="\_blank">Google Majulah v2</a> is currently on right now!</li>
+</ul>
+
+<p><br /></p>
+
+<h1 id="final-thoughts">Final thoughts</h1>
+
+<p>Hopefully, this guide should help you ace the exam!</p>
+
+<p>Something to note is that the knowledge gained while preparing for this exam is easily transferable to other cloud platforms too. The names of the products and interface change but the key fundamentals and understanding of the different components within a cloud-based architecture is the same.</p>
+
+<p>So - go on, take the test and best of luck!</p>
+
+<p><br /></p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+    </body>
+    
+<footer class="footer">
+  <div class="content has-text-centered">
+    <div class='columns'>
+        <div class='column'>
+            <div class='heading'>Writing & Notes</div>  
+            <div>
+                <div><a href='/essays'>Essays</a></div>
+                <div><a href='/bookshelf'>Bookshelf</a></div>
+                <div><a href='/research'>Research</a></div>
+                <div><a href='/the-lab'>The Lab</a></div>
+            </div>        
+        </div>
+        <div class='column'>
+            <div class='heading'>Creations</div>  
+            <div>
+                <div><a href='https://www.meetup.com/practical-blockchain/' target="_blank">Pratical Blockchain</a></div>
+                <div><a href='https://startupengineer.substack.com/' target='_blank' >The Startup Engineer</a></div>
+                <div><a href='https://www.instagram.com/iamaatoh/' target='_blank'>My Artwork</a></div>
+                <div><a href='/projects'>Miscellaneous Projects</a></div>
+            </div>        
+        </div>
+    </div>
+    <br/><br/>
+    <div class='content has-text-centered'>
+        Copyright © 2022 Akshata Mohanty
+    </div>
+  </div>
+</footer>
+
+</html>

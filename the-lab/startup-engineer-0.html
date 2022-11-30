@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
-  <head>
-	<title>Blog | Akshata Mohanty</title>
+    <head>
+	<title>Startup Engineer #0: The Beginning | Akshata Mohanty</title>
 	<meta name="description" content="" />
 
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<meta property="og:title" content="Blog" />
-	<meta property="og:description" content="I write about technology, business and personal productivity." />
+	<meta property="og:title" content="Startup Engineer #0: The Beginning" />
+	<meta property="og:description" content="Build for yourself, or build for others?" />
 	<meta property="og:image" content="" />
 	<meta property="og:image:width" content="400" />
 	<meta property="og:image:height" content="300" />
@@ -71,8 +71,44 @@
 	</style>
 </head>
 
+    <style>
+        .page-content {
+            max-width: 700px;
+            margin: 0 auto;
+           
+            color:  #212121;
+            font-size: 1.2rem; 
+            line-height: 1.5;
+        }
 
-  <body>
+        .page-content > p, section {
+            padding: 1.5rem 0;
+        }
+
+        .page-content > h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+        }
+
+        .page-content > h1 {
+            font-size: 3rem;
+            line-height: 1.2;
+            margin: 3rem 0 0.5rem 0;
+        }
+
+        .page-content > h2 {
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem 0;
+        }
+
+        .page-content > ul {
+            margin: 0 1rem;
+            list-style-type: disc;
+        }
+
+        .page-content > ul > li {
+            margin: 0 1rem;
+        }
+    </style>
     <nav class="navbar is-fixed-top is-link" role="navigation" aria-label="main navigation">
 	<div class="navbar-brand">
 	  <a class="navbar-item" href="/">
@@ -137,28 +173,79 @@
 	  </div>
 	</div>
   </nav>
-    <main style="margin-top: 52px;">
-      <section class="hero is-medium is-link">
-        <div class="hero-body">
-          <h1 class="title is-1">
-            
-          </h1>
-          <p class="subtitle">
-            
-          </p>
-        </div>
-      </section>
+    <body>
+        <section style="margin-top: 52px;" class="hero is-link is-medium">
+            <div class="hero-body">
+                <div class="block">
+                    <nav class="breadcrumb" aria-label="breadcrumbs">
+                        <ul>
+                          <li><a href="/">Home</a></li>
+                          <li><a href="/the-lab">The-lab</a></li>
+                          <li class="is-active"><a href="#" aria-current="page">Startup Engineer #0: The Beginning</a></li>
+                        </ul>
+                      </nav>
+                </div>
+                <h1 class="title is-2">
+                    Startup Engineer #0: The Beginning
+                </h1>
+                <p class="subtitle is-5">
+                    
+                </p>
+                <p>
+                    <div class="field is-grouped is-grouped-multiline">
+                        <div class="tags are-medium">
+                            
+                                <a class="tag is-link is-light">Startup</a>
+                            
+                                <a class="tag is-link is-light">User</a>
+                            
+                        </div>
+                    </div>
+                </p>
+            </div>
+        </section>
+        
+        <section class="section is-medium columns">
+            <div class="column">
+                <div class="page-content">
+                    <p style="color: gray;">
+                       July 26, 2022</small>
+                    </p>
+                    <div>
+                        <p>Four years back, I moved from <code class="language-plaintext highlighter-rouge">#research</code> into <code class="language-plaintext highlighter-rouge">#tech</code>. And the decision to not join a startup was deliberate.</p>
 
-      <section class="section is-medium">
-        <ul class="columns is-multiline">
-          
-          
-          </ul>
-      </section>
-    </main>
-  </body>
+<p>The pace, growth and autonomy in a startup appealed to my nature. However, startups work fast. And working fast comes with trade-offs. I wanted to know the trade-offs.</p>
 
-  
+<p>So I took my time to learn from established large-scale systems, observe “best practices” at work and train with expert mentors and colleagues. Finally, a year back - I joined a startup.</p>
+
+<p>This series has been long overdue.</p>
+
+<p>But nevertheless, here I am, hoping to capture the engineering perspective of building an early-stage startup from scratch. There’ll be war stories, hacks, errors, mysteries or just cool bits of technology. Honestly, this is mostly my personal technical retrospective as I navigate the unknown.</p>
+
+<p>So without much ado, here’s my first:</p>
+
+<h2 id="know-your-user">Know your user.</h2>
+
+<p>We are building a 10x engineering org. (Or so we like to think!)
+And DevOps is obviously one of the foundational pieces.</p>
+
+<p>With that thought, we started our DevOps journey with a simple goal - dockerize our main backend. Purpose was to get consistent dev environments, onboard engineers faster. Happy Engineers = Happy Life!</p>
+
+<p>So after 2 weeks of hacking, going up some knowledge curves and iterations - we managed to get it all dockerized…</p>
+
+<p>… only to realize that the Docker experience is pretty questionable on Windows. 1 / 2 devs on our team are Windows users. Not Docker-fans and voted against it, when asked. So much for Developer Experience!</p>
+
+<p>Know your user.</p>
+
+<p>And live to learn another day!</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+    </body>
+    
 <footer class="footer">
   <div class="content has-text-centered">
     <div class='columns'>

@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
-  <head>
-	<title>Blog | Akshata Mohanty</title>
+    <head>
+	<title>Python Package Management, for the Node developer | Akshata Mohanty</title>
 	<meta name="description" content="" />
 
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<meta property="og:title" content="Blog" />
-	<meta property="og:description" content="I write about technology, business and personal productivity." />
+	<meta property="og:title" content="Python Package Management, for the Node developer" />
+	<meta property="og:description" content="Python is cold." />
 	<meta property="og:image" content="" />
 	<meta property="og:image:width" content="400" />
 	<meta property="og:image:height" content="300" />
@@ -71,8 +71,45 @@
 	</style>
 </head>
 
+    <style>
+        .page-content {
+            max-width: 700px;
+            margin: 0 auto;
+           
+            color:  #212121;
+            font-size: 1.2rem; 
+            line-height: 1.5;
+        }
 
-  <body>
+        .page-content > p, section {
+            padding: 1.5rem 0;
+        }
+
+        .page-content > h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            margin: 24px 0 16px 0;
+        }
+
+        .page-content > h1 {
+            font-size: 3rem;
+            line-height: 1.2;
+            margin: 3rem 0 0.5rem 0;
+        }
+
+        .page-content > h2 {
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem 0;
+        }
+
+        .page-content > ul {
+            margin: 0 1rem;
+            list-style-type: disc;
+        }
+
+        .page-content > ul > li {
+            margin: 0 1rem;
+        }
+    </style>
     <nav class="navbar is-fixed-top is-link" role="navigation" aria-label="main navigation">
 	<div class="navbar-brand">
 	  <a class="navbar-item" href="/">
@@ -137,28 +174,81 @@
 	  </div>
 	</div>
   </nav>
-    <main style="margin-top: 52px;">
-      <section class="hero is-medium is-link">
-        <div class="hero-body">
-          <h1 class="title is-1">
-            
-          </h1>
-          <p class="subtitle">
-            
-          </p>
-        </div>
-      </section>
+    <body>
+        <section style="margin-top: 52px;" class="hero is-link is-medium">
+            <div class="hero-body">
+                <div class="block">
+                    <nav class="breadcrumb" aria-label="breadcrumbs">
+                        <ul>
+                          <li><a href="/">Home</a></li>
+                          <li><a href="/guides">Guides</a></li>
+                          <li class="is-active"><a href="#" aria-current="page">Python Package Management, for the Node developer</a></li>
+                        </ul>
+                      </nav>
+                </div>
+                <h1 class="title is-2">
+                    Python Package Management, for the Node developer
+                </h1>
+                <p class="subtitle is-5">
+                    
+                </p>
+                <p>
+                    <div class="field is-grouped is-grouped-multiline">
+                        <div class="tags are-medium">
+                            
+                                <a class="tag is-link is-light">Python</a>
+                            
+                        </div>
+                    </div>
+                </p>
+            </div>
+        </section>
+        
+        <section class="section is-medium columns">
+            <div class="column">
+                <div class="page-content">
+                    <p style="color: gray;">
+                       July 15, 2021</small>
+                    </p>
+                    <div>
+                        <p>This is going to be simple.</p>
 
-      <section class="section is-medium">
-        <ul class="columns is-multiline">
-          
-          
-          </ul>
-      </section>
-    </main>
-  </body>
+<p>I started building an API in Python. And the first thing was to manage my packages - because, let’s face it - installation hell is the worst kind of hell!</p>
 
-  
+<p>Here’s how to do it,</p>
+
+<ul>
+  <li>Use the command below to create a new environment. This will add a new folder in your project with <code class="language-plaintext highlighter-rouge">_environment_name</code>. Make sure to add this to <code class="language-plaintext highlighter-rouge">.gitignore</code></li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 <span class="nt">-m</span> venv _environment_name_
+</code></pre></div></div>
+
+<ul>
+  <li>Activate this environment using,</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">source </span>_environment_name_/bin/activate
+</code></pre></div></div>
+
+<ul>
+  <li>Now, if you want to install and freeze packages, i.e, the nodejs equivalent of <code class="language-plaintext highlighter-rouge">npm install package_name --save</code>, here’s what you need</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>package_name <span class="o">&amp;&amp;</span> pip freeze <span class="o">&gt;</span> requirements.txt
+</code></pre></div></div>
+
+<p>Might add more to this post later - but for now - adios!</p>
+
+<p>Happy building!</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+    </body>
+    
 <footer class="footer">
   <div class="content has-text-centered">
     <div class='columns'>

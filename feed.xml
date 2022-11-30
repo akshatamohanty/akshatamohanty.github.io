@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Akshata Mohanty | Software Engineer</title>
-    <description>This is my personal blog, where I write about technology, books and other odd things.</description>
+    <title>Akshata Mohanty | Engineer</title>
+    <description>Learn, Reflect and Engineer. Capturing my journey in print through this website.</description>
     <link>https://iamaatoh.com</link>
     <atom:link href="https://iamaatoh.com/feed.xml" rel="self" type="application/rss+xml" />
     
@@ -12,8 +12,8 @@
         <title>The Alchemy of Grief</title>
         <description></description>
         <pubDate>Sep 2022</pubDate>
-        <link>https://iamaatoh.com/blog/the-alchemy-of-grief.html </link>
-        <guid isPermaLink="true">https://iamaatoh.com/blog/the-alchemy-of-grief.html</guid>
+        <link>https://iamaatoh.com/the-lab/the-alchemy-of-grief.html </link>
+        <guid isPermaLink="true">https://iamaatoh.com/the-lab/the-alchemy-of-grief.html</guid>
       </item>
       
     
@@ -23,8 +23,8 @@
         <title>Startup Engineer #1: Managing Imposter Syndrome</title>
         <description>Anti-Imposter Syndrome Checklist.</description>
         <pubDate>Jul 2022</pubDate>
-        <link>https://iamaatoh.com/blog/startup-engineer-1-imposter-syndrome.html </link>
-        <guid isPermaLink="true">https://iamaatoh.com/blog/startup-engineer-1-imposter-syndrome.html</guid>
+        <link>https://iamaatoh.com/the-lab/startup-engineer-1-imposter-syndrome.html </link>
+        <guid isPermaLink="true">https://iamaatoh.com/the-lab/startup-engineer-1-imposter-syndrome.html</guid>
       </item>
       
     
@@ -34,8 +34,8 @@
         <title>Startup Engineer #0: The Beginning</title>
         <description>Build for yourself, or build for others?</description>
         <pubDate>Jul 2022</pubDate>
-        <link>https://iamaatoh.com/blog/startup-engineer-0.html </link>
-        <guid isPermaLink="true">https://iamaatoh.com/blog/startup-engineer-0.html</guid>
+        <link>https://iamaatoh.com/the-lab/startup-engineer-0.html </link>
+        <guid isPermaLink="true">https://iamaatoh.com/the-lab/startup-engineer-0.html</guid>
       </item>
       
     
@@ -45,8 +45,8 @@
         <title>The Meaning of My Name</title>
         <description>It took me years to really understand and identify with my name.</description>
         <pubDate>Mar 2022</pubDate>
-        <link>https://iamaatoh.com/blog/the-meaning-of-my-name.html </link>
-        <guid isPermaLink="true">https://iamaatoh.com/blog/the-meaning-of-my-name.html</guid>
+        <link>https://iamaatoh.com/the-lab/the-meaning-of-my-name.html </link>
+        <guid isPermaLink="true">https://iamaatoh.com/the-lab/the-meaning-of-my-name.html</guid>
       </item>
       
     
@@ -56,8 +56,8 @@
         <title>Practical Blockchain</title>
         <description>Youtube Channel for blockchain development tutorials</description>
         <pubDate>Jul 2021</pubDate>
-        <link>https://iamaatoh.com/project/practical-blockchain.html </link>
-        <guid isPermaLink="true">https://iamaatoh.com/project/practical-blockchain.html</guid>
+        <link>https://iamaatoh.com/projects/practical-blockchain.html </link>
+        <guid isPermaLink="true">https://iamaatoh.com/projects/practical-blockchain.html</guid>
       </item>
       
     
