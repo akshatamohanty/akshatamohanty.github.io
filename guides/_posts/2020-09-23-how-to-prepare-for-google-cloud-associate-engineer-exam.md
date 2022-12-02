@@ -4,7 +4,8 @@ description: What is the Google Cloud Associate Engineer exam and how to ace it?
 date: 2020-09-23
 layout: posts/default
 tags:
-  - fullstack-engineering
+  - cloud computing
+  - GCE
 ---
 
 <div class='divider'></div>

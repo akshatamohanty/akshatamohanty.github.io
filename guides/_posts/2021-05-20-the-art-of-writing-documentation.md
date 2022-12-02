@@ -6,7 +6,6 @@ image: https://images.pexels.com/photos/357514/pexels-photo-357514.jpeg?auto=com
 tags:
   - code
   - documentation
-  - fullstack-engineering
 layout: posts/default
 ---
 
