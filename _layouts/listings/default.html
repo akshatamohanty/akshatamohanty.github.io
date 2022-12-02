@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+
+  <body>
+    {% include navigation.html %}
+    <main style="margin-top: 52px;">
+      <section class="hero is-medium is-link">
+        <div class="hero-body">
+          <h1 class="title is-1">
+            {{ page.listing_type | capitalize }}
+          </h1>
+          <p class="subtitle">
+            {{ page.description }}
+          </p>
+        </div>
+      </section>
+
+      <section class="section is-medium">
+        <ul class="columns is-multiline">
+          {% assign categories_list = site.categories %}
+          {% for post in site.categories[page.listing_type]  %}
+            <li style="display: flex; flex-direction: column; justify-content: space-between; margin-bottom: 24px;" class="column is-half">
+              {% include thumbnail.html %}
+            </li>
+          {% endfor %}
+          </ul>
+      </section>
+    </main>
+  </body>
+
+  {% include footer.html %}
+</html>

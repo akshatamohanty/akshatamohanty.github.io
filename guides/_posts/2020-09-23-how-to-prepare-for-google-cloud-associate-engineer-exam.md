@@ -2,7 +2,9 @@
 title: How to prepare for the Google Cloud Associate Engineer Certification?
 description: What is the Google Cloud Associate Engineer exam and how to ace it?
 date: 2020-09-23
-layout: essay
+layout: posts/default
+tags:
+  - fullstack-engineering
 ---
 
 <div class='divider'></div>

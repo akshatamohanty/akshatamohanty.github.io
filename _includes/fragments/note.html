@@ -1,9 +1,6 @@
-<div>
-    <div class="title is-3">{{post.title}}</div>
-    <div class="block">{{post.description}}</div>
-    <!-- <div class="block">{{post.content | truncatewords:50 | strip_html}}</div> -->
-</div>
-<div class="block">
-    <br/>
-    <a href={{post.url}} class="button is-small is-link">Read</a>
+<div style="max-width: 750px; text-align: left;">   
+    <a style="color: inherit;" href="{{ post.url }}">
+        <div  style="font-size: 24px;" class="">{{post.title}}</div>
+        <div  style="font-size: 18px;"  style="color: black;">{{post.description}}</small>
+    </a>
 </div>

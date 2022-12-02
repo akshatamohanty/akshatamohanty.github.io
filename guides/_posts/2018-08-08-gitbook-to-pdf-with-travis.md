@@ -2,9 +2,9 @@
 title: "How to convert a gitbook to PDF using CI/CD tools?"
 description: Creating PDFs from Gitbook automatically using Travis.CI
 date: 2018-08-08
-layout: essay
+layout: posts/default
 tags:
-  - tutorial
+  - fullstack-engineering
 ---
 
 # What is Gitbook?

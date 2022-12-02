@@ -1,12 +1,12 @@
 ---
 published: false
 title: Queue Talks
-summary: Complete tutorial for setting up a pipeline with RabbitMQ
-date:  2021-07-21
+description: Complete tutorial for setting up a pipeline with RabbitMQ
+date: 2021-07-21
 image:
 credits:
 tags:
- - tag1
+  - tag1
 ---
 
 Datapipelines require a plethora of information coming together to form a complete soup.
@@ -27,16 +27,19 @@ Difference between a queue and a pub-sub?
 ### headline 1
 
 #### Subpoint 1
+
 #### Subpoint 2
 
 ### headline 2
 
 #### Subpoint 1
+
 #### Subpoint 2
 
 ### headline 3
 
 #### Subpoint 1
+
 #### Subpoint 2
 
 ### takeaway - make it memorable!

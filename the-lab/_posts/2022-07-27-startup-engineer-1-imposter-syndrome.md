@@ -1,8 +1,8 @@
 ---
 title: "Startup Engineer #1: Managing Imposter Syndrome"
-summary: Anti-Imposter Syndrome Checklist.
+description: Anti-Imposter Syndrome Checklist.
 date: 2022-07-27
-layout: default
+layout: posts/default
 tags:
   - startups
   - imposter-syndrome

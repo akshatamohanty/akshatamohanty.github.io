@@ -1,10 +1,14 @@
 ---
 title: "How Google Works"
 author: "Eric Schmidt and Jon Rosenberg"
-note_type: "Book"
+type: "Book Review"
 description: My take-aways from this wonderful insight into the culture of Google
 date: 2019-05-16
-layout: types/book_review
+layout: posts/default
+tags:
+  - google
+  - leadership
+  - mindset
 ---
 
 <a href='https://www.goodreads.com/book/show/23158207-how-google-works' target='_blank'>How Google Works by Eric Schmidt and Jon Rosenberg</a> has been one of the defining books in my life. Even though the book was probably written with an intention of guiding corporates and entrepreneurs - it did help me consolidate some priciples that I'd like to incorporate into my life. `How Google Works` talks about Google as a company and provides an inside look into the foundations, principles and culture the company is built on. If books are meant to inspire growth, this one is definitely it. Here is a list of my five key takeaways from this amazing read.
@@ -18,8 +22,6 @@ Eric Schmidt, himself, has a lot to teach, being a `smart creative` leader. He i
 My journey into software from Architecture started when I questioned a sub-optimal process in a firm, as an intern. I decided to make it better using code I mashed up together. Figuring out better solutions and caring about it has helped me speed up my own progress and growth. The book is all about the impact of such values working cumulatively (read: Google). It motivated me even more to chase after these principles with more aggression! A simple line in the book sort of stuck with me - it said Googlers often start with `let me show you..`. It is basically about developing a bias towards thought, data and action - and being a do-er.
 
 A psyche worth striving for - especially when Google Maps, Google Sky - all came out of this mindset! There's an example in the book: a set of people unrelated to Google Ads, came up with solutions to make it better. Just because Larry Page stuck a post-it note somewhere saying `These ads suck`.
-
-<br />
 
 ### Concentrate on first principles
 
@@ -37,8 +39,6 @@ what is the most important thing you do?
 
 Already fixed a post-it note on my mirror with this.
 
-<br />
-
 ### Prioritize
 
 Being the data-oriented company Google is, it gives a lot of numbers to quantify priority.
@@ -55,8 +55,6 @@ And here I am - struggling to keep track of my time - often spending 80% of time
 
 This principle had to go on the list.
 
-<br />
-
 ### Keep it open
 
 Where Jon Ronsenberg takes being called a `router`, as a compliment - it says a lot about how intrinsically the top management believes in the virtues of openness and trust. Apparently, Larry Page remembers everything that everyone does and follows up with them. Eric Schmidt , does the same, just with notes. The products are open, the board letters are open, OKRs are open and anyone can talk to anyone.
@@ -72,8 +70,6 @@ I also liked the idea of keeping your OKRs openly available. It is one way of ge
 Another intriguing point, was the idea of doing a self review - and using that as a basis for a 360. I often fret if I'm completely off in my judgement about myself, my growth and performance. Getting a random review, without any context is like writing an essay without any research. A review in context of a self-review would definitely be a more through, insightful one.
 
 PS: The book talked about an app called `Snippets` to keep track of work done everyday. Could be compiled for weekly progress reports and milestones? If there are any Googlers reading this, and the code is open-source - would you be so kind to send me a link? Just curious. :)
-
-<br />
 
 ### Be anti-fragile
 

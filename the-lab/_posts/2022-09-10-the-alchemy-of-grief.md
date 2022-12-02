@@ -1,7 +1,7 @@
 ---
 title: The Alchemy of Grief
 date: 2022-09-10
-layout: default
+layout: posts/default
 tags:
   - grief
   - loss

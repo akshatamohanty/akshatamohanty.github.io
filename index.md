@@ -20,14 +20,14 @@ layout: none
                     I am a Software Engineer with 7+ years experience building fullstack applications for research organizations, enterprises and startups.
                 </div>
                 <div class='block'>
-                    I am a self-taught developer. I graduated from IIT Kharagpur, India with a major in Architecture. I am based in Singapore. Over the last decade, I have built computational design tools, revamped K-drama video-on-demand platforms, re-thought construction-tech and made sense of ed-tech data.
+                    I am a self-taught developer. I graduated from IIT Kharagpur in India with a major in Architecture. I am based in Singapore. Over the last 10 years, I have worked in construction-tech, edtech, fintech and the media industry.
                     <br/><br/>
-                    More recently, I have been working on Blockchain-related technologies. I was also part of Gitcoin's <a href='https://www.kernel.community/' target='_blank'>Kernel Block 7</a>.
+                    More recently, I have been working on Blockchain-related technologies. I was part of Gitcoin's <a href='https://www.kernel.community/' target='_blank'>Kernel Block 7</a>.
                     <br/> <br/>
                     I enjoy building large-scale end-to-end fullstack systems that solve a problem. 
                 </div>
                 <div class='block'> 
-                    I am mostly active on  <a href='https://github.com/akshatamohanty' target='_blank'>Github</a> and <a href='https://twitter.com/iamaatoh' target='_blank'>Twitter</a>.
+                    Follow my work on  <a href='https://github.com/akshatamohanty' target='_blank'>Github</a> and <a href='https://twitter.com/iamaatoh' target='_blank'>Twitter</a>.
                 </div>
             </div>
             <div class='column'>
@@ -51,9 +51,9 @@ layout: none
                 We are moving towards a decentralized world.
                 <br/><br/>
                 <div>
-                     And the lessons from this shift are going to be significant for the next generation of internet applications and how humans cooperate. I have embarked on a mission to learn and educate more engineers towards this oldish-new paradigm in technology.    
+                     And the lessons from this shift are going to be significant for the next generation of internet applications. My mission is to learn and educate more engineers towards this oldish-new paradigm in technology.    
                      <br/><br />
-                    If you are excited to learn about decentralized applications, distributed ledgers, cryptographic proofs and web3, join us at Practical Blockchain - an online community for web3 developers.
+                    If you are excited to learn about decentralized applications, distributed ledgers, cryptographic proofs and web3, join us at Practical Blockchain - an online community for blockchain developers. 
                     <br/><br/>
                     <div class='block'>
                         <a href='https://www.meetup.com/practical-blockchain/' target='_blank'>
@@ -168,8 +168,9 @@ layout: none
         <div class='message-body has-text-centered'>
             <h1 class="title is-1">The Startup Engineer</h1>
             <div class="content" style='max-width: 700px; margin: 0 auto;'>
-                Startups are hard. And engineering for startups harder. Building for startups requires coordinating fast product iterations without accumulating crippling technical debt.
-                This is what I cover in my new newsletter - <b>The Startup Engineer</b>. I will be posting weekly articles, interviews and strategies to build effectively for startups. 
+                Startups are hard. Engineering for startups is harder. It requires coordinating fast product iterations while balancing crippling technical debt.
+                <br/><br/>And this is what I address in my new newsletter - <b>The Startup Engineer</b>. <br/><br/>
+                This newsletter has weekly articles, interviews and strategies to build effectively for startups. 
                 <br/><br/>
                 To subscribe to updates, sign up below
                 <br/><br/>
@@ -183,14 +184,14 @@ layout: none
   <h1 class="title is-1">Speaking Events & Workshops</h1>
     <div class='columns'>
     <div class='column'>
-        I am a self-taught engineer. Much of what I learned is because others have shared their knowledge. I try my best to support all initiatives towards building open-access education, learning communities and technical events.
+        I am a self-taught engineer. Much of what I learned is because others shared their knowledge freely. I try my best to support all initiatives towards building open-access education, learning communities and technical events.
         <br/><br/>
         If you'd like me to speak at your event, 
         reach out at <b>iamaatoh@gmail.com</b>
     </div>
     <div class='column'>
         <figure>
-            <img style="padding: 0" class="image is-3by2" src="/assets/akshata_talk.jpg">
+            <img style="padding: 0" class="image is-4by5" src="/assets/akshata_talk.jpg">
         </figure>
     </div>
    </div>

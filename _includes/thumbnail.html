@@ -1,0 +1,7 @@
+{% if page.listing_type == 'essays' %} {% include fragments/default.html %} {% endif %}
+{% if page.listing_type == 'guides' %} {% include fragments/default.html %} {% endif %}
+{% if page.listing_type == 'bookshelf' %} {% include fragments/review.html %} {% endif %}
+{% if page.listing_type == 'talks' %} {% include fragments/talk.html %} {% endif %}
+{% if page.listing_type == 'research' %} {% include fragments/research.html %} {% endif %}
+{% if page.listing_type == 'projects' %} {% include fragments/link.html %} {% endif %}
+{% if page.listing_type == 'stacks' %} {% include fragments/note.html %} {% endif %}

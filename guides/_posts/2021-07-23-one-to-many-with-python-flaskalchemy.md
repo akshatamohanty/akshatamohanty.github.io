@@ -6,7 +6,8 @@ tags:
   - python
   - orm
   - flask
-layout: guide
+  - fullstack-engineering
+layout: posts/default
 published: false
 ---
 
