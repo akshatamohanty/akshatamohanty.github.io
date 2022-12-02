@@ -6,7 +6,7 @@
 
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<meta property="og:title" content="How to deploy a smart contract with Remix?" />
 	<meta property="og:description" content="" />
@@ -62,18 +62,34 @@
 	<style>
 		html, body {
 			font-family: 'Source Sans Pro', sans-serif;
+			width: 100%;
+			height: 100%; 
+			position: relative;
+			overflow-x: hidden;
 		}
 
 		h1, h2, h3, h4, h5, h6 {
 			font-family: 'Libre Baskerville', serif;
 			font-weight: 700;
 		}
+
+		body {
+			position: relative;
+		}
+
+		.breadcrumb li {
+			white-space: pre-wrap;
+		}
+
+		.navbar {
+			max-width: 100vw;
+		}
 	</style>
 </head>
 
     <style>
-        .page-content {
-            max-width: 700px;
+        .content {
+            max-width: 900px;
             margin: 0 auto;
            
             color:  #212121;
@@ -81,33 +97,42 @@
             line-height: 1.5;
         }
 
-        .page-content > p, section {
-            padding: 1.5rem 0;
-        }
+        .essay-content > p {
+            padding: 1rem 0;
+        }   
 
-        .page-content > h1, h2, h3, h4, h5, h6 {
+        .essay-content > h1, h2, h3, h4, h5, h6 {
             font-weight: 700;
             margin: 24px 0 16px 0;
         }
 
-        .page-content > h1 {
+        .essay-content > h1 {
             font-size: 3rem;
             line-height: 1.2;
             margin: 3rem 0 0.5rem 0;
         }
 
-        .page-content > h2 {
+        .essay-content > h2 {
             font-size: 1.5rem;
             margin: 2rem 0 1rem 0;
         }
 
-        .page-content > ul {
-            margin: 0 1rem;
-            list-style-type: disc;
+        ul.task-list {
+            margin-left: 0;
+            padding-left: 0;
         }
 
-        .page-content > ul > li {
-            margin: 0 1rem;
+        .task-list-item {
+            list-style-type: none;
+            margin-left: 0;
+        }
+
+        input.task-list-item-checkbox {
+            margin-right: 0.5rem;
+        }
+
+        img {
+            max-height: 400px;
         }
     </style>
     <nav class="navbar is-fixed-top is-link" role="navigation" aria-label="main navigation">
@@ -160,9 +185,11 @@
 		  	Guides
 		</a>
 
+
 		<a href='/research' class="navbar-item">
 			Research
 		</a>
+
 
 		<a href='/talks' class="navbar-item">
 			Speaking Events
@@ -174,7 +201,6 @@
 	  </div>
 	</div>
   </nav>
-    <body>
         <section style="margin-top: 52px;" class="hero is-link is-medium">
             <div class="hero-body">
                 <div class="block">
@@ -212,11 +238,11 @@
         
         <section class="section is-medium columns">
             <div class="column">
-                <div class="page-content">
-                    <p style="color: gray;">
+                <div class="content">
+                    <div style="color: gray;">
                        July 20, 2021</small>
-                    </p>
-                    <div>
+                    </div>
+                    <div class="essay-content">
                         <p>So, you’ve heard of smart contracts. And now you want to see one in action.</p>
 
 <p>Thanks to the age of developer-friendly tools, it is extremely simple to get started with building smart contracts.</p>
@@ -241,13 +267,9 @@
 
 <p><img src="../assets/images/blog-remix/remix-ide.png" /></p>
 
-<p><br /><br /></p>
-
 <h3 id="um-whats-a-smart-contract-again">Um, what’s a smart contract again?</h3>
 
 <p>Smart contracts are code deployed on a decentralized network. They usually encode the terms of an agreement (hence, the word <code class="language-plaintext highlighter-rouge">contract</code>, duh!) and auto-execute when the required conditions are met. Since they are deployed on trustless networks, there is no time loss or external involvement required to execute the contract - which makes them dependable and secure.</p>
-
-<p><br /><br /></p>
 
 <h3 id="ok-but-what-do-you-mean-by-deploy-a-contract">Ok, but what do you mean by “deploy a contract”?</h3>
 
@@ -257,13 +279,9 @@
 
 <p>Another important point - the contract is deployed as a transaction. Which means that it requires gas and fees. Which is just another way of saying that deploying a contract is NOT free. Yes, no more random unlimited deploys.</p>
 
-<p><br /><br /></p>
-
 <h1 id="the-deploy--">The Deploy -</h1>
 
 <p>Ok, now that we have some basics covered, let’s go ahead and deploy an example contract.</p>
-
-<p><br /><br /></p>
 
 <h3 id="tools-youll-need">Tools you’ll need</h3>
 
@@ -283,8 +301,6 @@ You can choose to deploy to one of the test networks (or even the real Ethereum 
 And yes, I agree that the blockchain world has some very tasty names.</p>
   </li>
 </ul>
-
-<p><br /><br /></p>
 
 <h3 id="what-does-the-contract-look-like">What does the contract look like?</h3>
 
@@ -324,8 +340,6 @@ contract Storage {
 }
 </code></pre>
 
-<p><br /><br /></p>
-
 <h3 id="lets-compile">Let’s Compile</h3>
 
 <p>Before we can deploy, we need to compile the contract into byte code. To do that, shift over to the <code class="language-plaintext highlighter-rouge">Compiler</code> Tab. The contract that you want to compile should be active in the workspace. If it is, you’ll see the enabled <code class="language-plaintext highlighter-rouge">Compile</code> button with the name of the contract that you’ve selected. Click on it to compile.</p>
@@ -334,11 +348,10 @@ contract Storage {
 
 <p>And that’s it. We’ve compiled the contract. For the nerd in you, click on <code class="language-plaintext highlighter-rouge">Compilation Details</code>, to checkout details, the ABI and Bytecode - the actual payload that gets deployed.</p>
 
-<p><img src="../assets/images/blog-remix/compiled-contract.png" /></p>
-
-<p><img src="../assets/images/blog-remix/compiled-details.png" /></p>
-
-<p><br /><br /></p>
+<div class="flex flex-row">
+<img src="../assets/images/blog-remix/compiled-contract.png" />
+<img src="../assets/images/blog-remix/compiled-details.png" />
+</div>
 
 <h3 id="and-now-for-the-deploy">And now, for the deploy!</h3>
 
@@ -358,9 +371,10 @@ contract Storage {
 
 <p>Once you do, you’ll now be able to see your deployed contract details in the tab - ready to transact with!</p>
 
-<p><img src="../assets/images/blog-remix/deployed-contract-txn.png" />
-<img src="../assets/images/blog-remix/deployed-txn.png" /></p>
-
+<div class="flex flex-row">
+  <img src="../assets/images/blog-remix/deployed-contract-txn.png" />
+  <img src="../assets/images/blog-remix/deployed-txn.png" />
+</div>
 <p>Move over to Ganache, and you’ll see a contract creation transaction listed.</p>
 
 <p><img src="../assets/images/blog-remix/ganache-contract.png" /></p>
@@ -371,9 +385,8 @@ contract Storage {
                 </div>
             </div>
         </section>
-       
-    </body>
-    
+
+        
 <footer class="footer">
   <div class="content has-text-centered">
     <div class='columns'>
@@ -381,8 +394,9 @@ contract Storage {
             <div class='heading'>Writing & Notes</div>  
             <div>
                 <div><a href='/essays'>Essays</a></div>
+                <div><a href='/guides'>Guides</a></div>
+                <div><a href='/stacks'>Stacks</a></div>
                 <div><a href='/bookshelf'>Bookshelf</a></div>
-                <div><a href='/research'>Research</a></div>
                 <div><a href='/the-lab'>The Lab</a></div>
             </div>        
         </div>
@@ -392,6 +406,7 @@ contract Storage {
                 <div><a href='https://www.meetup.com/practical-blockchain/' target="_blank">Pratical Blockchain</a></div>
                 <div><a href='https://startupengineer.substack.com/' target='_blank' >The Startup Engineer</a></div>
                 <div><a href='https://www.instagram.com/iamaatoh/' target='_blank'>My Artwork</a></div>
+                <div><a href='/research'>Research</a></div>
                 <div><a href='/projects'>Miscellaneous Projects</a></div>
             </div>        
         </div>
@@ -403,4 +418,5 @@ contract Storage {
   </div>
 </footer>
 
+    </body>
 </html>

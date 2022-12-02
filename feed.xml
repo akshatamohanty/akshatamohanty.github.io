@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Akshata Mohanty | Engineer</title>
-    <description>Learn, Reflect and Engineer. Capturing my journey in print through this website.</description>
+    <description></description>
     <link>https://iamaatoh.com</link>
     <atom:link href="https://iamaatoh.com/feed.xml" rel="self" type="application/rss+xml" />
     
@@ -21,7 +21,7 @@
       <item>
         <category></category>
         <title>Startup Engineer #1: Managing Imposter Syndrome</title>
-        <description>Anti-Imposter Syndrome Checklist.</description>
+        <description></description>
         <pubDate>Jul 2022</pubDate>
         <link>https://iamaatoh.com/the-lab/startup-engineer-1-imposter-syndrome.html </link>
         <guid isPermaLink="true">https://iamaatoh.com/the-lab/startup-engineer-1-imposter-syndrome.html</guid>
@@ -32,7 +32,7 @@
       <item>
         <category></category>
         <title>Startup Engineer #0: The Beginning</title>
-        <description>Build for yourself, or build for others?</description>
+        <description></description>
         <pubDate>Jul 2022</pubDate>
         <link>https://iamaatoh.com/the-lab/startup-engineer-0.html </link>
         <guid isPermaLink="true">https://iamaatoh.com/the-lab/startup-engineer-0.html</guid>
@@ -43,7 +43,7 @@
       <item>
         <category></category>
         <title>The Meaning of My Name</title>
-        <description>It took me years to really understand and identify with my name.</description>
+        <description></description>
         <pubDate>Mar 2022</pubDate>
         <link>https://iamaatoh.com/the-lab/the-meaning-of-my-name.html </link>
         <guid isPermaLink="true">https://iamaatoh.com/the-lab/the-meaning-of-my-name.html</guid>
@@ -54,7 +54,7 @@
       <item>
         <category></category>
         <title>Practical Blockchain</title>
-        <description>Youtube Channel for blockchain development tutorials</description>
+        <description></description>
         <pubDate>Jul 2021</pubDate>
         <link>https://iamaatoh.com/projects/practical-blockchain.html </link>
         <guid isPermaLink="true">https://iamaatoh.com/projects/practical-blockchain.html</guid>

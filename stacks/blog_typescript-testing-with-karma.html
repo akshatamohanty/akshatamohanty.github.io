@@ -6,7 +6,7 @@
 
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<meta property="og:title" content="How to add integrate the Jasmine testing framework in Typescript project?" />
 	<meta property="og:description" content="" />
@@ -62,18 +62,34 @@
 	<style>
 		html, body {
 			font-family: 'Source Sans Pro', sans-serif;
+			width: 100%;
+			height: 100%; 
+			position: relative;
+			overflow-x: hidden;
 		}
 
 		h1, h2, h3, h4, h5, h6 {
 			font-family: 'Libre Baskerville', serif;
 			font-weight: 700;
 		}
+
+		body {
+			position: relative;
+		}
+
+		.breadcrumb li {
+			white-space: pre-wrap;
+		}
+
+		.navbar {
+			max-width: 100vw;
+		}
 	</style>
 </head>
 
     <style>
-        .page-content {
-            max-width: 700px;
+        .content {
+            max-width: 900px;
             margin: 0 auto;
            
             color:  #212121;
@@ -81,33 +97,42 @@
             line-height: 1.5;
         }
 
-        .page-content > p, section {
-            padding: 1.5rem 0;
-        }
+        .essay-content > p {
+            padding: 1rem 0;
+        }   
 
-        .page-content > h1, h2, h3, h4, h5, h6 {
+        .essay-content > h1, h2, h3, h4, h5, h6 {
             font-weight: 700;
             margin: 24px 0 16px 0;
         }
 
-        .page-content > h1 {
+        .essay-content > h1 {
             font-size: 3rem;
             line-height: 1.2;
             margin: 3rem 0 0.5rem 0;
         }
 
-        .page-content > h2 {
+        .essay-content > h2 {
             font-size: 1.5rem;
             margin: 2rem 0 1rem 0;
         }
 
-        .page-content > ul {
-            margin: 0 1rem;
-            list-style-type: disc;
+        ul.task-list {
+            margin-left: 0;
+            padding-left: 0;
         }
 
-        .page-content > ul > li {
-            margin: 0 1rem;
+        .task-list-item {
+            list-style-type: none;
+            margin-left: 0;
+        }
+
+        input.task-list-item-checkbox {
+            margin-right: 0.5rem;
+        }
+
+        img {
+            max-height: 400px;
         }
     </style>
     <nav class="navbar is-fixed-top is-link" role="navigation" aria-label="main navigation">
@@ -160,9 +185,11 @@
 		  	Guides
 		</a>
 
+
 		<a href='/research' class="navbar-item">
 			Research
 		</a>
+
 
 		<a href='/talks' class="navbar-item">
 			Speaking Events
@@ -174,14 +201,13 @@
 	  </div>
 	</div>
   </nav>
-    <body>
         <section style="margin-top: 52px;" class="hero is-link is-medium">
             <div class="hero-body">
                 <div class="block">
                     <nav class="breadcrumb" aria-label="breadcrumbs">
                         <ul>
                           <li><a href="/">Home</a></li>
-                          <li><a href="/guides">Guides</a></li>
+                          <li><a href="/stacks">Stacks</a></li>
                           <li class="is-active"><a href="#" aria-current="page">How to add integrate the Jasmine testing framework in Typescript project?</a></li>
                         </ul>
                       </nav>
@@ -204,11 +230,11 @@
         
         <section class="section is-medium columns">
             <div class="column">
-                <div class="page-content">
-                    <p style="color: gray;">
+                <div class="content">
+                    <div style="color: gray;">
                        November 07, 2017</small>
-                    </p>
-                    <div>
+                    </div>
+                    <div class="essay-content">
                         <p>Test-driven development (TDD) is a best practice for clean, robust production-grade code. However, setting up these testing frameworks can be daunting. Here are some of the lessons I learned while setting up Jasmine testing framework for Typescript</p>
 
 <h1 id="creating-a-packagejson-file">Creating a package.json file</h1>
@@ -284,9 +310,8 @@
                 </div>
             </div>
         </section>
-       
-    </body>
-    
+
+        
 <footer class="footer">
   <div class="content has-text-centered">
     <div class='columns'>
@@ -294,8 +319,9 @@
             <div class='heading'>Writing & Notes</div>  
             <div>
                 <div><a href='/essays'>Essays</a></div>
+                <div><a href='/guides'>Guides</a></div>
+                <div><a href='/stacks'>Stacks</a></div>
                 <div><a href='/bookshelf'>Bookshelf</a></div>
-                <div><a href='/research'>Research</a></div>
                 <div><a href='/the-lab'>The Lab</a></div>
             </div>        
         </div>
@@ -305,6 +331,7 @@
                 <div><a href='https://www.meetup.com/practical-blockchain/' target="_blank">Pratical Blockchain</a></div>
                 <div><a href='https://startupengineer.substack.com/' target='_blank' >The Startup Engineer</a></div>
                 <div><a href='https://www.instagram.com/iamaatoh/' target='_blank'>My Artwork</a></div>
+                <div><a href='/research'>Research</a></div>
                 <div><a href='/projects'>Miscellaneous Projects</a></div>
             </div>        
         </div>
@@ -316,4 +343,5 @@
   </div>
 </footer>
 
+    </body>
 </html>

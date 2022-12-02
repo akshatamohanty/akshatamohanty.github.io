@@ -6,7 +6,7 @@
 
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<meta property="og:title" content="How Google Works" />
 	<meta property="og:description" content="" />
@@ -62,18 +62,34 @@
 	<style>
 		html, body {
 			font-family: 'Source Sans Pro', sans-serif;
+			width: 100%;
+			height: 100%; 
+			position: relative;
+			overflow-x: hidden;
 		}
 
 		h1, h2, h3, h4, h5, h6 {
 			font-family: 'Libre Baskerville', serif;
 			font-weight: 700;
 		}
+
+		body {
+			position: relative;
+		}
+
+		.breadcrumb li {
+			white-space: pre-wrap;
+		}
+
+		.navbar {
+			max-width: 100vw;
+		}
 	</style>
 </head>
 
     <style>
-        .page-content {
-            max-width: 700px;
+        .content {
+            max-width: 900px;
             margin: 0 auto;
            
             color:  #212121;
@@ -81,32 +97,42 @@
             line-height: 1.5;
         }
 
-        .page-content > p, section {
-            padding: 1.5rem 0;
-        }
+        .essay-content > p {
+            padding: 1rem 0;
+        }   
 
-        .page-content > h1, h2, h3, h4, h5, h6 {
+        .essay-content > h1, h2, h3, h4, h5, h6 {
             font-weight: 700;
+            margin: 24px 0 16px 0;
         }
 
-        .page-content > h1 {
+        .essay-content > h1 {
             font-size: 3rem;
             line-height: 1.2;
             margin: 3rem 0 0.5rem 0;
         }
 
-        .page-content > h2 {
+        .essay-content > h2 {
             font-size: 1.5rem;
             margin: 2rem 0 1rem 0;
         }
 
-        .page-content > ul {
-            margin: 0 1rem;
-            list-style-type: disc;
+        ul.task-list {
+            margin-left: 0;
+            padding-left: 0;
         }
 
-        .page-content > ul > li {
-            margin: 0 1rem;
+        .task-list-item {
+            list-style-type: none;
+            margin-left: 0;
+        }
+
+        input.task-list-item-checkbox {
+            margin-right: 0.5rem;
+        }
+
+        img {
+            max-height: 400px;
         }
     </style>
     <nav class="navbar is-fixed-top is-link" role="navigation" aria-label="main navigation">
@@ -159,9 +185,11 @@
 		  	Guides
 		</a>
 
+
 		<a href='/research' class="navbar-item">
 			Research
 		</a>
+
 
 		<a href='/talks' class="navbar-item">
 			Speaking Events
@@ -173,7 +201,6 @@
 	  </div>
 	</div>
   </nav>
-    <body>
         <section style="margin-top: 52px;" class="hero is-link is-medium">
             <div class="hero-body">
                 <div class="block">
@@ -195,6 +222,12 @@
                     <div class="field is-grouped is-grouped-multiline">
                         <div class="tags are-medium">
                             
+                                <a class="tag is-link is-light">Google</a>
+                            
+                                <a class="tag is-link is-light">Leadership</a>
+                            
+                                <a class="tag is-link is-light">Mindset</a>
+                            
                         </div>
                     </div>
                 </p>
@@ -203,11 +236,11 @@
         
         <section class="section is-medium columns">
             <div class="column">
-                <div class="page-content">
-                    <p style="color: gray;">
+                <div class="content">
+                    <div style="color: gray;">
                        May 16, 2019</small>
-                    </p>
-                    <div>
+                    </div>
+                    <div class="essay-content">
                         <p><a href="https://www.goodreads.com/book/show/23158207-how-google-works" target="_blank">How Google Works by Eric Schmidt and Jon Rosenberg</a> has been one of the defining books in my life. Even though the book was probably written with an intention of guiding corporates and entrepreneurs - it did help me consolidate some priciples that I’d like to incorporate into my life. <code class="language-plaintext highlighter-rouge">How Google Works</code> talks about Google as a company and provides an inside look into the foundations, principles and culture the company is built on. If books are meant to inspire growth, this one is definitely it. Here is a list of my five key takeaways from this amazing read.</p>
 
 <h3 id="be-a-smart-creative">Be a ‘smart creative’</h3>
@@ -219,8 +252,6 @@
 <p>My journey into software from Architecture started when I questioned a sub-optimal process in a firm, as an intern. I decided to make it better using code I mashed up together. Figuring out better solutions and caring about it has helped me speed up my own progress and growth. The book is all about the impact of such values working cumulatively (read: Google). It motivated me even more to chase after these principles with more aggression! A simple line in the book sort of stuck with me - it said Googlers often start with <code class="language-plaintext highlighter-rouge">let me show you..</code>. It is basically about developing a bias towards thought, data and action - and being a do-er.</p>
 
 <p>A psyche worth striving for - especially when Google Maps, Google Sky - all came out of this mindset! There’s an example in the book: a set of people unrelated to Google Ads, came up with solutions to make it better. Just because Larry Page stuck a post-it note somewhere saying <code class="language-plaintext highlighter-rouge">These ads suck</code>.</p>
-
-<p><br /></p>
 
 <h3 id="concentrate-on-first-principles">Concentrate on first principles</h3>
 
@@ -236,8 +267,6 @@ And then the fact that Google started out with no market strategy. And the case 
 </code></pre></div></div>
 
 <p>Already fixed a post-it note on my mirror with this.</p>
-
-<p><br /></p>
 
 <h3 id="prioritize">Prioritize</h3>
 
@@ -257,8 +286,6 @@ And then the fact that Google started out with no market strategy. And the case 
 
 <p>This principle had to go on the list.</p>
 
-<p><br /></p>
-
 <h3 id="keep-it-open">Keep it open</h3>
 
 <p>Where Jon Ronsenberg takes being called a <code class="language-plaintext highlighter-rouge">router</code>, as a compliment - it says a lot about how intrinsically the top management believes in the virtues of openness and trust. Apparently, Larry Page remembers everything that everyone does and follows up with them. Eric Schmidt , does the same, just with notes. The products are open, the board letters are open, OKRs are open and anyone can talk to anyone.</p>
@@ -274,8 +301,6 @@ And then the fact that Google started out with no market strategy. And the case 
 <p>Another intriguing point, was the idea of doing a self review - and using that as a basis for a 360. I often fret if I’m completely off in my judgement about myself, my growth and performance. Getting a random review, without any context is like writing an essay without any research. A review in context of a self-review would definitely be a more through, insightful one.</p>
 
 <p>PS: The book talked about an app called <code class="language-plaintext highlighter-rouge">Snippets</code> to keep track of work done everyday. Could be compiled for weekly progress reports and milestones? If there are any Googlers reading this, and the code is open-source - would you be so kind to send me a link? Just curious. :)</p>
-
-<p><br /></p>
 
 <h3 id="be-anti-fragile">Be anti-fragile</h3>
 
@@ -295,9 +320,8 @@ And then the fact that Google started out with no market strategy. And the case 
                 </div>
             </div>
         </section>
-       
-    </body>
-    
+
+        
 <footer class="footer">
   <div class="content has-text-centered">
     <div class='columns'>
@@ -305,8 +329,9 @@ And then the fact that Google started out with no market strategy. And the case 
             <div class='heading'>Writing & Notes</div>  
             <div>
                 <div><a href='/essays'>Essays</a></div>
+                <div><a href='/guides'>Guides</a></div>
+                <div><a href='/stacks'>Stacks</a></div>
                 <div><a href='/bookshelf'>Bookshelf</a></div>
-                <div><a href='/research'>Research</a></div>
                 <div><a href='/the-lab'>The Lab</a></div>
             </div>        
         </div>
@@ -316,6 +341,7 @@ And then the fact that Google started out with no market strategy. And the case 
                 <div><a href='https://www.meetup.com/practical-blockchain/' target="_blank">Pratical Blockchain</a></div>
                 <div><a href='https://startupengineer.substack.com/' target='_blank' >The Startup Engineer</a></div>
                 <div><a href='https://www.instagram.com/iamaatoh/' target='_blank'>My Artwork</a></div>
+                <div><a href='/research'>Research</a></div>
                 <div><a href='/projects'>Miscellaneous Projects</a></div>
             </div>        
         </div>
@@ -327,4 +353,5 @@ And then the fact that Google started out with no market strategy. And the case 
   </div>
 </footer>
 
+    </body>
 </html>

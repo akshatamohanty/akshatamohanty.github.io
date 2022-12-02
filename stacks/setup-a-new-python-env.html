@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-	<title>Exploring the Memory Tab in Chrome Task Manager | Akshata Mohanty</title>
-	<meta name="description" content="Performance leaks in the Chrome Browser are common and hard to detect. This is simple first-level diagnostic to track down memory leaks and problems." />
+	<title>Python Package Management, for the Node developer | Akshata Mohanty</title>
+	<meta name="description" content="Python is cold." />
 
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<meta property="og:title" content="Exploring the Memory Tab in Chrome Task Manager" />
+	<meta property="og:title" content="Python Package Management, for the Node developer" />
 	<meta property="og:description" content="" />
 	<meta property="og:image" content="" />
 	<meta property="og:image:width" content="400" />
@@ -62,18 +62,34 @@
 	<style>
 		html, body {
 			font-family: 'Source Sans Pro', sans-serif;
+			width: 100%;
+			height: 100%; 
+			position: relative;
+			overflow-x: hidden;
 		}
 
 		h1, h2, h3, h4, h5, h6 {
 			font-family: 'Libre Baskerville', serif;
 			font-weight: 700;
 		}
+
+		body {
+			position: relative;
+		}
+
+		.breadcrumb li {
+			white-space: pre-wrap;
+		}
+
+		.navbar {
+			max-width: 100vw;
+		}
 	</style>
 </head>
 
     <style>
-        .page-content {
-            max-width: 700px;
+        .content {
+            max-width: 900px;
             margin: 0 auto;
            
             color:  #212121;
@@ -81,33 +97,42 @@
             line-height: 1.5;
         }
 
-        .page-content > p, section {
-            padding: 1.5rem 0;
-        }
+        .essay-content > p {
+            padding: 1rem 0;
+        }   
 
-        .page-content > h1, h2, h3, h4, h5, h6 {
+        .essay-content > h1, h2, h3, h4, h5, h6 {
             font-weight: 700;
             margin: 24px 0 16px 0;
         }
 
-        .page-content > h1 {
+        .essay-content > h1 {
             font-size: 3rem;
             line-height: 1.2;
             margin: 3rem 0 0.5rem 0;
         }
 
-        .page-content > h2 {
+        .essay-content > h2 {
             font-size: 1.5rem;
             margin: 2rem 0 1rem 0;
         }
 
-        .page-content > ul {
-            margin: 0 1rem;
-            list-style-type: disc;
+        ul.task-list {
+            margin-left: 0;
+            padding-left: 0;
         }
 
-        .page-content > ul > li {
-            margin: 0 1rem;
+        .task-list-item {
+            list-style-type: none;
+            margin-left: 0;
+        }
+
+        input.task-list-item-checkbox {
+            margin-right: 0.5rem;
+        }
+
+        img {
+            max-height: 400px;
         }
     </style>
     <nav class="navbar is-fixed-top is-link" role="navigation" aria-label="main navigation">
@@ -160,9 +185,11 @@
 		  	Guides
 		</a>
 
+
 		<a href='/research' class="navbar-item">
 			Research
 		</a>
+
 
 		<a href='/talks' class="navbar-item">
 			Speaking Events
@@ -174,29 +201,28 @@
 	  </div>
 	</div>
   </nav>
-    <body>
         <section style="margin-top: 52px;" class="hero is-link is-medium">
             <div class="hero-body">
                 <div class="block">
                     <nav class="breadcrumb" aria-label="breadcrumbs">
                         <ul>
                           <li><a href="/">Home</a></li>
-                          <li><a href="/essays">Essays</a></li>
-                          <li class="is-active"><a href="#" aria-current="page">Exploring the Memory Tab in Chrome Task Manager</a></li>
+                          <li><a href="/stacks">Stacks</a></li>
+                          <li class="is-active"><a href="#" aria-current="page">Python Package Management, for the Node developer</a></li>
                         </ul>
                       </nav>
                 </div>
                 <h1 class="title is-2">
-                    Exploring the Memory Tab in Chrome Task Manager
+                    Python Package Management, for the Node developer
                 </h1>
                 <p class="subtitle is-5">
-                    Performance leaks in the Chrome Browser are common and hard to detect. This is simple first-level diagnostic to track down memory leaks and problems.
+                    Python is cold.
                 </p>
                 <p>
                     <div class="field is-grouped is-grouped-multiline">
                         <div class="tags are-medium">
                             
-                                <a class="tag is-link is-light">Web-and-performance</a>
+                                <a class="tag is-link is-light">Python</a>
                             
                         </div>
                     </div>
@@ -206,56 +232,48 @@
         
         <section class="section is-medium columns">
             <div class="column">
-                <div class="page-content">
-                    <p style="color: gray;">
-                       April 30, 2018</small>
-                    </p>
-                    <div>
-                        <h1 id="getting-to-the-task-manager">Getting to the Task Manager</h1>
+                <div class="content">
+                    <div style="color: gray;">
+                       July 15, 2021</small>
+                    </div>
+                    <div class="essay-content">
+                        <p>This is going to be simple.</p>
+
+<p>I started building an API in Python. And the first thing was to manage my packages - because, let’s face it - installation hell is the worst kind of hell!</p>
+
+<p>Here’s how to do it,</p>
 
 <ul>
-  <li>Shortcut: Shift + Esc, <strong>OR</strong></li>
-  <li>Chrome -&gt; Settings -&gt; More Tools -&gt; Task Manager</li>
+  <li>Use the command below to create a new environment. This will add a new folder in your project with <code class="language-plaintext highlighter-rouge">_environment_name</code>. Make sure to add this to <code class="language-plaintext highlighter-rouge">.gitignore</code></li>
 </ul>
 
-<h1 id="understanding-memory-usage-columns-in-task-manager">Understanding Memory Usage Columns in Task Manager</h1>
-
-<h2 id="memory-footprint">Memory Footprint</h2>
-
-<p>The memory footprint represents memory reserved entirely for that process. It is the same value as that in the <strong>Commit Size</strong> column in Windows Task Manager. <em>The Commit column shows the amount of virtual memory in kilobytes that the operating system has reserved for a process. This number includes the amount of physical memory that is in use as well as any pages that have been saved in the page file.</em></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 <span class="nt">-m</span> venv _environment_name_
+</code></pre></div></div>
 
 <ul>
-  <li>
-    <h1 id="memory">Memory</h1>
-
-    <p>Memory is the same value as that in the <strong>Memory (Private Working Set)</strong> column in Windows Task Manager. Private Working Set of a process refers to the amount of memory that is allocated to the process, is not shareable. In Chrome context, it refers to the native memory, which is used to store DOM nodes. A constantly increasing value for this indicates creation of additional DOM noes.</p>
-  </li>
-  <li>
-    <h1 id="gpu-memory">GPU Memory</h1>
-
-    <p>It represents the amount of GPU memory being used by the page. The GPU process is a process used only when Chrome is displaying GPU-accelerated content. Chrome uses GPU to accelerate web-page rendering, typical HTML, CSS, WebGL, etc.</p>
-  </li>
-  <li>
-    <h1 id="javascript-memory">Javascript Memory</h1>
-    <p>The JavaScript Memory column represents the memory reserved for the JS VM heap. The number in parenthese is represents how much memory the reachable objects on your page are using. So, if the value is x ( y ) imples that ‘y’ is the active memory and (x-y) is memory is unreachable and will be garbage collected. If ‘x’ is increasing, it might signify a memory leak since either new objects are being created, or the existing objects are growing.</p>
-  </li>
+  <li>Activate this environment using,</li>
 </ul>
 
-<h1 id="references">References:</h1>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">source </span>_environment_name_/bin/activate
+</code></pre></div></div>
 
 <ul>
-  <li><a href="https://developers.google.com/web/tools/chrome-devtools/memory-problems/#monitor_memory_use_in_realtime_with_the_chrome_task_manager">Chrome DevTools</a></li>
-  <li><a href="https://stackoverflow.com/questions/14167013/javascript-memory-and-leak-problems">Stackoverflow</a></li>
-  <li><a href="https://www.techrepublic.com/blog/windows-and-office/investigate-memory-usage-with-windows-7-resource-monitor/">investigate-memory-usage-with-windows-7-resource-monitor/</a></li>
+  <li>Now, if you want to install and freeze packages, i.e, the nodejs equivalent of <code class="language-plaintext highlighter-rouge">npm install package_name --save</code>, here’s what you need</li>
 </ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>package_name <span class="o">&amp;&amp;</span> pip freeze <span class="o">&gt;</span> requirements.txt
+</code></pre></div></div>
+
+<p>Might add more to this post later - but for now - adios!</p>
+
+<p>Happy building!</p>
 
                     </div>
                 </div>
             </div>
         </section>
-       
-    </body>
-    
+
+        
 <footer class="footer">
   <div class="content has-text-centered">
     <div class='columns'>
@@ -263,8 +281,9 @@
             <div class='heading'>Writing & Notes</div>  
             <div>
                 <div><a href='/essays'>Essays</a></div>
+                <div><a href='/guides'>Guides</a></div>
+                <div><a href='/stacks'>Stacks</a></div>
                 <div><a href='/bookshelf'>Bookshelf</a></div>
-                <div><a href='/research'>Research</a></div>
                 <div><a href='/the-lab'>The Lab</a></div>
             </div>        
         </div>
@@ -274,6 +293,7 @@
                 <div><a href='https://www.meetup.com/practical-blockchain/' target="_blank">Pratical Blockchain</a></div>
                 <div><a href='https://startupengineer.substack.com/' target='_blank' >The Startup Engineer</a></div>
                 <div><a href='https://www.instagram.com/iamaatoh/' target='_blank'>My Artwork</a></div>
+                <div><a href='/research'>Research</a></div>
                 <div><a href='/projects'>Miscellaneous Projects</a></div>
             </div>        
         </div>
@@ -285,4 +305,5 @@
   </div>
 </footer>
 
+    </body>
 </html>
