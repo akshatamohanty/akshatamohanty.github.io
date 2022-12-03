@@ -24,7 +24,7 @@ layout: none
                 <div class='block'>
                     I am a self-taught developer. I graduated from IIT Kharagpur in India with a major in Architecture. I am based in Singapore. Over the last 10 years, I have worked in construction-tech, edtech, fintech and the media industry.
                     <br/><br/>
-                    More recently, I have been working on Blockchain-related technologies. I was part of Gitcoin's <a href='https://www.kernel.community/' target='_blank'>Kernel Block 7</a> and recently won the <a href='https://devpost.com/software/chainwiz' target='blank'>Women in Tech Prize in the Chainlink Hackathon Fall 2022</a>. 
+                    More recently, I have been working on Blockchain-related technologies. I was part of Gitcoin's <a href='https://www.kernel.community/' target='_blank'>Kernel Block 7</a> and won the <a href='https://devpost.com/software/chainwiz' target='blank'>Women in Tech Prize in the Chainlink Hackathon Fall 2022</a>. 
                     <br/> <br/>
                     I enjoy building large-scale end-to-end fullstack systems that solve a problem. 
                 </div>
