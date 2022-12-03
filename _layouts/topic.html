@@ -21,12 +21,7 @@
           {% assign categories_list = site.categories %}
           {% for post in site.tags[page.topic] %}
             <li style="display: flex; flex-direction: column; justify-content: space-between; margin-bottom: 24px;" class="column is-one-third">
-                <div class="tag is-warning">{{post.categories[0] | capitalize }}</div>
-                {% if post.categories[0] == 'essays'  %} {% include fragments/default.html %} {% endif %}
-                {% if post.categories[0] == 'guides' %} {% include fragments/default.html %} {% endif %}
-                {% if post.categories[0] == 'talks' %} {% include fragments/talk.html %} {% endif %}
-                {% if post.categories[0] == 'bookshelf' %} {% include fragments/default.html %} {% endif %}
-                {% if post.categories[0] == 'research' %} {% include fragments/research.html %} {% endif %}
+               {% include thumbnail.html %}
             </li>
           {% endfor %}
           </ul>

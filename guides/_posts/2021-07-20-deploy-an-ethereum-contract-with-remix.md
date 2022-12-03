@@ -4,10 +4,9 @@ description: "So, you've heard of smart contracts. And now you want to see one i
 date: 2021-07-20
 layout: posts/default
 tags:
-  - blockchain
-  - ethereum
-  - smart-contracts
   - blockchain-and-web3
+  - remix
+  - smart-contracts
 ---
 
 So, you've heard of smart contracts. And now you want to see one in action.

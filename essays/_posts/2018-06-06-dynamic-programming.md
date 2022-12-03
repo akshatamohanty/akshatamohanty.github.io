@@ -4,7 +4,6 @@ description: Slightly less uncommon for coding interviews, Dynamic Programming q
 layout: posts/default
 date: 2018-06-06
 tags:
-  - algorithms
   - programming
   - algorithms-and-data-structures
 ---

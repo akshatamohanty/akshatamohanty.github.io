@@ -1,6 +1,6 @@
 ---
 type: Workshop
-where: CAADRIA Conference, 2018, Beijing, China
+where: CAADRIA, 2018, Beijing, China
 title:  "Extruded City: Geospatial Coding With Möbius Modeller"
 authors: Janssen, P, Chen, KW, Mohanty, A, Sun, H, Lim, J, and Pung, D
 affiliation: National University of Singapore
