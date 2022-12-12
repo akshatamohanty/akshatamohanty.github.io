@@ -8,7 +8,7 @@ layout: none
 {% include head.html %}
 {% include navigation.html %}
 
-{% include notification.html %}
+<!-- {% include notification.html %} -->
 
 <section style="padding-top: 52px;" class="hero is-medium">
   <div style='padding-top: 4rem' class="hero-body">
