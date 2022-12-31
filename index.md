@@ -165,14 +165,14 @@ layout: none
   </div>
 </section>
 
-<section class="section is-small is-link">
+<!-- <section class="section is-small is-link">
     <article class="message is-dark">
         <div class='message-body has-text-centered'>
             <h1 class="title is-1">The Startup Engineer</h1>
             <div class="content" style='max-width: 700px; margin: 0 auto;'>
                 Startups are hard. Engineering for startups is harder. It requires coordinating fast product iterations while balancing crippling technical debt.
                 <br/><br/>And this is what I address in my new newsletter - <b>The Startup Engineer</b>. <br/><br/>
-                This newsletter has weekly articles, interviews and strategies to build effectively for startups. 
+                This newsletter has weekly articles, interviews and strategies to build effectively for startups.
                 <br/><br/>
                 To subscribe to updates, sign up below
                 <br/><br/>
@@ -180,7 +180,7 @@ layout: none
             </div>
         </div>
     </article>
-</section>
+</section> -->
 
 <section class="section is-medium is-primary">
   <h1 class="title is-1">Speaking Events & Workshops</h1>
