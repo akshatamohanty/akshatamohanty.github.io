@@ -5,7 +5,7 @@ NC='\033[0m' # No Color
 echo Post title?
 read name
 name=${name:="hello-world"}
-echo Choose a category [blog, project, public]
+echo Choose a category [guides,bookshelf,essays,projects,talks,research,the-lab]
 read cate
 cate=${cate:="blog"}
 formattedDate=$(date +"%Y-%m-%d")
