@@ -189,7 +189,7 @@ layout: none
         I am a self-taught engineer. Much of what I learned is because others shared their knowledge freely. I try my best to support all initiatives towards building open-access education, learning communities and technical events.
         <br/><br/>
         If you'd like me to speak at your event, 
-        email me at <a href='mailto:iamaatoh@gmail.com' target='_blank'><b>iamaatoh@gmail.com</b></a>.
+        email me at <a href='mailto:iamaatoh@gmail.com' target='_blank'><b><u>iamaatoh@gmail.com</b></u></a>.
     </div>
     <div class='column'>
         <figure>
