@@ -165,6 +165,7 @@ layout: none
   </div>
 </section>
 
+<!--
 <section class="section is-small is-link">
     <article class="message is-dark">
         <div class='message-body has-text-centered'>
@@ -180,7 +181,7 @@ layout: none
             </div>
         </div>
     </article>
-</section>
+</section> -->
 
 <section class="section is-medium is-primary">
   <h1 class="title is-1">Speaking Events & Workshops</h1>
