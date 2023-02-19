@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Akshata Mohanty | Engineer</title>
+    <description></description>
+    <link>https://iamaatoh.com</link>
+    <atom:link href="https://iamaatoh.com/feed.xml" rel="self" type="application/rss+xml" />
+    
+      
+      <item>
+        <category></category>
+        <title>List of Useful Websites for Fullstack Developers</title>
+        <description></description>
+        <pubDate>Feb 2023</pubDate>
+        <link>https://iamaatoh.com/guides/websites-to-know-as-a-fullstack-developer.html </link>
+        <guid isPermaLink="true">https://iamaatoh.com/guides/websites-to-know-as-a-fullstack-developer.html</guid>
+      </item>
+      
+    
+      
+      <item>
+        <category></category>
+        <title>The Alchemy of Grief</title>
+        <description></description>
+        <pubDate>Sep 2022</pubDate>
+        <link>https://iamaatoh.com/the-lab/the-alchemy-of-grief.html </link>
+        <guid isPermaLink="true">https://iamaatoh.com/the-lab/the-alchemy-of-grief.html</guid>
+      </item>
+      
+    
+      
+      <item>
+        <category></category>
+        <title>Startup Engineer #1: Managing Imposter Syndrome</title>
+        <description></description>
+        <pubDate>Jul 2022</pubDate>
+        <link>https://iamaatoh.com/the-lab/startup-engineer-1-imposter-syndrome.html </link>
+        <guid isPermaLink="true">https://iamaatoh.com/the-lab/startup-engineer-1-imposter-syndrome.html</guid>
+      </item>
+      
+    
+      
+      <item>
+        <category></category>
+        <title>Startup Engineer #0: The Beginning</title>
+        <description></description>
+        <pubDate>Jul 2022</pubDate>
+        <link>https://iamaatoh.com/the-lab/startup-engineer-0.html </link>
+        <guid isPermaLink="true">https://iamaatoh.com/the-lab/startup-engineer-0.html</guid>
+      </item>
+      
+    
+      
+      <item>
+        <category></category>
+        <title>The Meaning of My Name</title>
+        <description></description>
+        <pubDate>Mar 2022</pubDate>
+        <link>https://iamaatoh.com/the-lab/the-meaning-of-my-name.html </link>
+        <guid isPermaLink="true">https://iamaatoh.com/the-lab/the-meaning-of-my-name.html</guid>
+      </item>
+      
+    
+  </channel>
+</rss>
