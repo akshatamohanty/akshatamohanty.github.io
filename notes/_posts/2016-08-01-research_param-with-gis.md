@@ -1,7 +1,6 @@
 ---
-type: Research Paper
-title: "[Conference] Parametric Modelling with GIS"
-where: eCAADe 2016, Finland
+type: Conference
+title: "Parametric Modelling with GIS, eCAADe 2016, Finland"
 authors: Janssen, P, Stouffs, R, Mohanty, A, Tan, E, and Li, R
 details: Proceedings of eCAADe 2016, 22-26 August 2016, Oulu, Finland, pp. 59–68.
 affiliation: National University of Singapore

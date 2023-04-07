@@ -33,6 +33,7 @@
 		});
 	</script>
 	<script>
+		let isActive = null
 		document.addEventListener('DOMContentLoaded', () => {
 
 			// Get all "navbar-burger" elements
@@ -52,7 +53,28 @@
 
 				});
 			});
-		});
+
+			// scroll
+			const body = (document.getElementsByTagName('body')[0])
+			const sideLinks = document.querySelectorAll(".menu-list-item");
+			body.addEventListener("scroll", event => {
+				let fromTop = body.scrollTop - 250; // top nav + hero
+				sideLinks.forEach(link => {
+					const id = link.href.split('#')[1]
+					let section = document.getElementById(id);
+					if (
+						section?.offsetTop <= fromTop &&
+						section?.offsetTop + section?.offsetHeight > fromTop
+					) {
+						link.classList.add("is-active");
+						isActive = link
+					}
+				});
+				sideLinks.forEach(link => {
+					if (link !== isActive) link.classList.remove('is-active')
+				})
+			}, false);
+			});
 	</script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -116,7 +138,8 @@
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-end">
         <!-- <a href="/ideas" class="navbar-item">Ideas Marketplace</a> -->
-        <a href="/startup-toolkit" class="navbar-item is-hoverable is-active">Startup Toolkit</a>
+        <a href="/startup-toolkit" class="navbar-item is-hoverable ">Startup Toolkit</a>
+        <a href="/practical-blockchain" class="navbar-item is-hoverable is-active">Practical Blockchain</a>
         <a href="/engineering" class="navbar-item is-hoverable ">Engineering</a>
         <a href="/notes" class="navbar-item is-hoverable ">Notes</a>
       </div>
@@ -130,7 +153,7 @@
                     <nav class="breadcrumb" aria-label="breadcrumbs">
                         <ul>
                             <li><a class="is-size-7" href="/">Home</a></li>
-                            <li><a class="is-size-7" href="/startup-toolkit">Startup-toolkit</a></li>
+                            <li><a class="is-size-7" href="/practical-blockchain">Practical-blockchain</a></li>
                             <li class="is-active is-size-7 is-link"><a href="#" aria-current="page">Be Smart Contract-ready in 60 minutes.</a></li>
                         </ul>
                     </nav>
@@ -147,11 +170,12 @@
                 </div>
             </section>
             
-            <section class="section" style="max-width: 1028px;">
+            <section class="section post" style="max-width: 1028px;">
                 <div class="container">
                     <div class="columns is-6">
                         
-                        <div class="column">
+
+                        <div class="column is-three-quarters">
                             <div class="content">
                                 <p>So, you’ve heard of smart contracts. And now you want to see one in action.</p>
 
@@ -293,6 +317,8 @@ contract Storage {
 
                             </div>
                         </div>
+
+                        
                     </div>
                 </div>
             </section>

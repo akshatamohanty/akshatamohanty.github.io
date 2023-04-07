@@ -1,7 +1,11 @@
 ---
 page: Notes
 title: Notes
-description: "Research, talks, workshops, notes and everything else."
+description: "Research, reviews and everything else."
 listing_type: "notes"
 layout: listings/link-list
 ---
+
+<i>
+Remember to let her into your heart. And then you can start, to make it better. ~The Beatles
+</i>

@@ -13,8 +13,10 @@
       </section>
 
       {% if page.content %}
-      <div class="container">
-        {{ page.content }}
+      <div class="section is-small">
+        <div class="container">
+          {{ page.content | markdownify }}
+        </div>
       </div>
       {% endif %}
 
@@ -25,18 +27,19 @@
           {% for post in site.categories[page.listing_type]  %}
             <li class="container mb-2">
               <span class="is-size-7 is-light is-flex-mobile" style="display: inline-block; width: 100px;">
-                {{ post.date | date: "%b %d, '%y" }} 
+                {{ post.date | date: "%b, %y" }}
               </span>
               <span>
                 {% if post.link %}
                   <a href={{post.link}} target="_blank">
-                    {{ post.title }}  ↪
+                    {{ post.title }}
                   </a>
                   {% else %}
                   <a href={{post.url}}>
                     {{ post.title }}
                   </a>
                 {% endif %}
+                {% if post.type %}<span class="tag ml-2">{{ post.type }}</span>{% endif %}
               </span>
             </li>
           {% endfor %}

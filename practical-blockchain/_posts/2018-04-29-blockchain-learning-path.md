@@ -1,10 +1,10 @@
 ---
-title: You want to learn Blockchain? Start here.
+title: Blockchain Learning Roadmap
 description: Combination of learning paths from various resources to learn blockchain
 date: 2018-04-29
 tags:
   - blockchain-and-web3
-published: false
+layout: posts/default
 ---
 
 ## Prerequisites

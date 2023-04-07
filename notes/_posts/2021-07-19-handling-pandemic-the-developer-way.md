@@ -1,5 +1,5 @@
 ---
-title: Handling the pandemic, the developer way.
+title: Handling the pandemic, the developer way
 summary:
 date: 2021-07-19
 layout: posts/blog

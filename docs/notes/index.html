@@ -2,7 +2,7 @@
 <html>
   <head>
 	<title>Notes</title>
-	<meta name="description" content="Research, talks, workshops, notes and everything else." />
+	<meta name="description" content="Research, reviews and everything else." />
 
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
@@ -33,6 +33,7 @@
 		});
 	</script>
 	<script>
+		let isActive = null
 		document.addEventListener('DOMContentLoaded', () => {
 
 			// Get all "navbar-burger" elements
@@ -52,7 +53,28 @@
 
 				});
 			});
-		});
+
+			// scroll
+			const body = (document.getElementsByTagName('body')[0])
+			const sideLinks = document.querySelectorAll(".menu-list-item");
+			body.addEventListener("scroll", event => {
+				let fromTop = body.scrollTop - 250; // top nav + hero
+				sideLinks.forEach(link => {
+					const id = link.href.split('#')[1]
+					let section = document.getElementById(id);
+					if (
+						section?.offsetTop <= fromTop &&
+						section?.offsetTop + section?.offsetHeight > fromTop
+					) {
+						link.classList.add("is-active");
+						isActive = link
+					}
+				});
+				sideLinks.forEach(link => {
+					if (link !== isActive) link.classList.remove('is-active')
+				})
+			}, false);
+			});
 	</script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -114,6 +136,7 @@
       <div class="navbar-end">
         <!-- <a href="/ideas" class="navbar-item">Ideas Marketplace</a> -->
         <a href="/startup-toolkit" class="navbar-item is-hoverable ">Startup Toolkit</a>
+        <a href="/practical-blockchain" class="navbar-item is-hoverable ">Practical Blockchain</a>
         <a href="/engineering" class="navbar-item is-hoverable ">Engineering</a>
         <a href="/notes" class="navbar-item is-hoverable is-active">Notes</a>
       </div>
@@ -125,13 +148,18 @@
       <section class="hero is-small is-light">
         <div class="hero-body container has-text-centered">
           <p class="title is-3">Notes</p>
-          <p class="subtitle is-5">Research, talks, workshops, notes and everything else.</p>
+          <p class="subtitle is-5">Research, reviews and everything else.</p>
         </div>
       </section>
 
       
-      <div class="container">
-        
+      <div class="section is-small">
+        <div class="container">
+          <p><i>
+Remember to let her into your heart. And then you can start, to make it better. ~The Beatles
+</i></p>
+
+        </div>
       </div>
       
 
@@ -142,7 +170,35 @@
           
             <li class="container mb-2">
               <span class="is-size-7 is-light is-flex-mobile" style="display: inline-block; width: 100px;">
-                Sep 10, '22 
+                Apr, 23
+              </span>
+              <span>
+                
+                  <a href=/notes/book-inspired-marty-cagan.html>
+                    Inspired, Marty Cagan
+                  </a>
+                
+                <span class="tag ml-2">Book Review</span>
+              </span>
+            </li>
+          
+            <li class="container mb-2">
+              <span class="is-size-7 is-light is-flex-mobile" style="display: inline-block; width: 100px;">
+                Apr, 23
+              </span>
+              <span>
+                
+                  <a href=/notes/book-art-of-war-sun-tzu.html>
+                    Art of War,  Sun Tze
+                  </a>
+                
+                <span class="tag ml-2">Book Review</span>
+              </span>
+            </li>
+          
+            <li class="container mb-2">
+              <span class="is-size-7 is-light is-flex-mobile" style="display: inline-block; width: 100px;">
+                Sep, 22
               </span>
               <span>
                 
@@ -150,12 +206,13 @@
                     The Alchemy of Grief
                   </a>
                 
+                
               </span>
             </li>
           
             <li class="container mb-2">
               <span class="is-size-7 is-light is-flex-mobile" style="display: inline-block; width: 100px;">
-                Mar 21, '22 
+                Mar, 22
               </span>
               <span>
                 
@@ -163,25 +220,27 @@
                     The Meaning of My Name
                   </a>
                 
+                
               </span>
             </li>
           
             <li class="container mb-2">
               <span class="is-size-7 is-light is-flex-mobile" style="display: inline-block; width: 100px;">
-                Jul 19, '21 
+                Jul, 21
               </span>
               <span>
                 
                   <a href=/notes/handling-pandemic-the-developer-way.html>
-                    Handling the pandemic, the developer way.
+                    Handling the pandemic, the developer way
                   </a>
+                
                 
               </span>
             </li>
           
             <li class="container mb-2">
               <span class="is-size-7 is-light is-flex-mobile" style="display: inline-block; width: 100px;">
-                May 20, '21 
+                May, 21
               </span>
               <span>
                 
@@ -189,201 +248,217 @@
                     Better Software Documentation: Checklists and Best Practices
                   </a>
                 
+                
               </span>
             </li>
           
             <li class="container mb-2">
               <span class="is-size-7 is-light is-flex-mobile" style="display: inline-block; width: 100px;">
-                Apr 03, '21 
+                Apr, 21
               </span>
               <span>
                 
                   <a href=https://youtu.be/c9R0aqaqiPY target="_blank">
-                    [panel discussion] Fireside Chat: From Construction Architects to Tech Architects  ↪
+                    From Construction Architects to Tech Architects
                   </a>
                   
+                <span class="tag ml-2">Panel Discussion</span>
               </span>
             </li>
           
             <li class="container mb-2">
               <span class="is-size-7 is-light is-flex-mobile" style="display: inline-block; width: 100px;">
-                Sep 23, '20 
+                Sep, 20
               </span>
               <span>
                 
                   <a href=/notes/how-to-prepare-for-google-cloud-associate-engineer-exam.html>
-                    [career] How to prepare for the Google Cloud Associate Engineer Certification?
+                    Preparation Tips for the Google Cloud Associate Engineer Certification
                   </a>
+                
                 
               </span>
             </li>
           
             <li class="container mb-2">
               <span class="is-size-7 is-light is-flex-mobile" style="display: inline-block; width: 100px;">
-                Sep 08, '20 
+                Sep, 20
               </span>
               <span>
                 
                   <a href=https://www.youtube.com/watch?v=kS3UycijvDY target="_blank">
-                    Code with Cloud Programme  ↪
+                    How to break into Cloud Computing?
                   </a>
                   
+                <span class="tag ml-2">Panel Discussion</span>
               </span>
             </li>
           
             <li class="container mb-2">
               <span class="is-size-7 is-light is-flex-mobile" style="display: inline-block; width: 100px;">
-                Aug 18, '20 
+                Aug, 20
               </span>
               <span>
                 
                   <a href=https://github.com/ReactJSSG/meetups/blob/master/recordings/aug-2020/akshata.mp4 target="_blank">
-                    [talk] React-ing faster: Optimize components for performance  ↪
+                    React-ing faster: Optimize components for performance
                   </a>
                   
+                <span class="tag ml-2">Tech Talk</span>
               </span>
             </li>
           
             <li class="container mb-2">
               <span class="is-size-7 is-light is-flex-mobile" style="display: inline-block; width: 100px;">
-                Aug 01, '20 
+                Aug, 20
               </span>
               <span>
                 
                   <a href=https://www.facebook.com/watch/?v=222708802311279&extid=t2JebCcTTEpBCOqJ target="_blank">
-                    [workshop] Introduction to NodeJs: Pre-Bootcamp Workshop  ↪
+                    Introduction to NodeJs
                   </a>
                   
+                <span class="tag ml-2">Workshop</span>
               </span>
             </li>
           
             <li class="container mb-2">
               <span class="is-size-7 is-light is-flex-mobile" style="display: inline-block; width: 100px;">
-                Jul 31, '20 
+                Jul, 20
               </span>
               <span>
                 
                   <a href=https://www.youtube.com/watch?v=hr8NPNJjIn0 target="_blank">
-                    [talk] AI for Non-PhDs: AI Superpowers in 30 minutes  ↪
+                    AI for Non-PhDs: AI Superpowers in 30 minutes @teensinai, London
                   </a>
                   
+                <span class="tag ml-2">Tech Talk</span>
               </span>
             </li>
           
             <li class="container mb-2">
               <span class="is-size-7 is-light is-flex-mobile" style="display: inline-block; width: 100px;">
-                Jun 17, '20 
+                Jun, 20
               </span>
               <span>
                 
                   <a href=https://www.youtube.com/embed/WbVTrbSzzbs?start=4533 target="_blank">
-                    [talk] Handling performance in React  ↪
+                    Handling performance in React @talk.js, Singapore
                   </a>
                   
+                <span class="tag ml-2">Tech Talk</span>
               </span>
             </li>
           
             <li class="container mb-2">
               <span class="is-size-7 is-light is-flex-mobile" style="display: inline-block; width: 100px;">
-                May 18, '19 
+                May, 19
               </span>
               <span>
                 
                   <a href=https://www.youtube.com/embed/1gEaPTeuBmE target="_blank">
-                    [talk] Demystifying Client-side AI  ↪
+                    Demystifying Client-side AI @juniordevsg, Singapore
                   </a>
                   
+                <span class="tag ml-2">Tech Talk</span>
               </span>
             </li>
           
             <li class="container mb-2">
               <span class="is-size-7 is-light is-flex-mobile" style="display: inline-block; width: 100px;">
-                May 16, '19 
+                May, 19
               </span>
               <span>
                 
                   <a href=/notes/how-google-works.html>
-                    [book review] How Google Works, Eric Schmidt and Jon Rosenberg
+                    How Google Works, Eric Schmidt and Jon Rosenberg
                   </a>
                 
+                <span class="tag ml-2">Book Review</span>
               </span>
             </li>
           
             <li class="container mb-2">
               <span class="is-size-7 is-light is-flex-mobile" style="display: inline-block; width: 100px;">
-                Aug 08, '18 
+                Aug, 18
               </span>
               <span>
                 
                   <a href=/notes/gitbook-to-pdf-with-travis.html>
-                    [tutorial] How to convert a gitbook to PDF using CI/CD tools?
+                    Automate Gitbook to PDF converstion with CI/CD tools
                   </a>
+                
                 
               </span>
             </li>
           
             <li class="container mb-2">
               <span class="is-size-7 is-light is-flex-mobile" style="display: inline-block; width: 100px;">
-                May 01, '18 
+                May, 18
               </span>
               <span>
                 
                   <a href=http://design-automation.net/software/mobius/mobius_geospatial.html target="_blank">
-                    [workshop] Extruded City: Geospatial Coding With Möbius Modeller  ↪
+                    Extruded City: Geospatial Coding With Möbius Modeller, CAADRIA, 2018, Beijing, China
                   </a>
                   
+                <span class="tag ml-2">Workshop</span>
               </span>
             </li>
           
             <li class="container mb-2">
               <span class="is-size-7 is-light is-flex-mobile" style="display: inline-block; width: 100px;">
-                Aug 22, '16 
+                Aug, 16
               </span>
               <span>
                 
                   <a href=https://www.researchgate.net/publication/307413179 target="_blank">
-                    [Conference] Parametric Modelling with GIS  ↪
+                    Parametric Modelling with GIS, eCAADe 2016, Finland
                   </a>
                   
+                <span class="tag ml-2">Conference</span>
               </span>
             </li>
           
             <li class="container mb-2">
               <span class="is-size-7 is-light is-flex-mobile" style="display: inline-block; width: 100px;">
-                Aug 22, '16 
+                Aug, 16
               </span>
               <span>
                 
                   <a href=https://www.researchgate.net/publication/323694162_Mobius_A_Parametric_Modeller_for_the_Web target="_blank">
-                    [Conference] Möbius: A Parametric Modeller for the Web  ↪
+                    Möbius: A Parametric Modeller for the Web, CAADRIA 2016, Australia
                   </a>
                   
+                <span class="tag ml-2">Conference</span>
               </span>
             </li>
           
             <li class="container mb-2">
               <span class="is-size-7 is-light is-flex-mobile" style="display: inline-block; width: 100px;">
-                Aug 22, '16 
+                Aug, 16
               </span>
               <span>
                 
                   <a href=https://www.researchgate.net/publication/311534326 target="_blank">
-                    [Conference] Automated Generation of BIM Models  ↪
+                    Automated Generation of BIM Models, eCAADe 2016, Finland
                   </a>
                   
+                <span class="tag ml-2">Conference</span>
               </span>
             </li>
           
             <li class="container mb-2">
               <span class="is-size-7 is-light is-flex-mobile" style="display: inline-block; width: 100px;">
-                Feb 01, '16 
+                Feb, 16
               </span>
               <span>
                 
                   <a href=https://www.amazon.com/Systems-Evaluation-Global-History-Architecture/dp/8192473325 target="_blank">
-                    [Book] A System's Evaluation of Global History of Indian Architecture  ↪
+                    A System's Evaluation of Global History of Indian Architecture, Joy Sen & A. Mohanty
                   </a>
                   
+                <span class="tag ml-2">Book</span>
               </span>
             </li>
           

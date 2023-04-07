@@ -2,7 +2,7 @@
 <html>
   <head>
 	<title>Engineering</title>
-	<meta name="description" content="Long-form technical deep dives for geeks." />
+	<meta name="description" content="Long-form technical essays for the geeks." />
 
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
@@ -33,6 +33,7 @@
 		});
 	</script>
 	<script>
+		let isActive = null
 		document.addEventListener('DOMContentLoaded', () => {
 
 			// Get all "navbar-burger" elements
@@ -52,7 +53,28 @@
 
 				});
 			});
-		});
+
+			// scroll
+			const body = (document.getElementsByTagName('body')[0])
+			const sideLinks = document.querySelectorAll(".menu-list-item");
+			body.addEventListener("scroll", event => {
+				let fromTop = body.scrollTop - 250; // top nav + hero
+				sideLinks.forEach(link => {
+					const id = link.href.split('#')[1]
+					let section = document.getElementById(id);
+					if (
+						section?.offsetTop <= fromTop &&
+						section?.offsetTop + section?.offsetHeight > fromTop
+					) {
+						link.classList.add("is-active");
+						isActive = link
+					}
+				});
+				sideLinks.forEach(link => {
+					if (link !== isActive) link.classList.remove('is-active')
+				})
+			}, false);
+			});
 	</script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -114,6 +136,7 @@
       <div class="navbar-end">
         <!-- <a href="/ideas" class="navbar-item">Ideas Marketplace</a> -->
         <a href="/startup-toolkit" class="navbar-item is-hoverable ">Startup Toolkit</a>
+        <a href="/practical-blockchain" class="navbar-item is-hoverable ">Practical Blockchain</a>
         <a href="/engineering" class="navbar-item is-hoverable is-active">Engineering</a>
         <a href="/notes" class="navbar-item is-hoverable ">Notes</a>
       </div>
@@ -125,14 +148,14 @@
         <section class="hero is-small is-light">
           <div class="hero-body container has-text-centered">
             <p class="title is-3">Engineering</p>
-            <p class="subtitle is-5">Long-form technical deep dives for geeks.</p>
+            <p class="subtitle is-5">Long-form technical essays for the geeks.</p>
           </div>
         </section>
         <section class="section is-small">
           <div class="is-flex is-flex-direction-column is-align-items-center">
             
             
-                 
+                
 <div class="card my-3" style="max-width: 550px; width: 100%;">
     <header class="card-header">
         <p class="card-header-title is-size-5">
@@ -147,12 +170,9 @@
         
         <a href=/engineering/low-cost-search.html class="card-footer-item">Read</a>
     </footer>
-</div> 
-
-
-
+</div>
             
-                 
+                
 <div class="card my-3" style="max-width: 550px; width: 100%;">
     <header class="card-header">
         <p class="card-header-title is-size-5">
@@ -167,10 +187,7 @@
         
         <a href=/engineering/dynamic-programming.html class="card-footer-item">Read</a>
     </footer>
-</div> 
-
-
-
+</div>
             
           </div>
         </section>

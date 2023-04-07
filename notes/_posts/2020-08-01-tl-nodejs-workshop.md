@@ -1,5 +1,6 @@
 ---
-title: "[workshop] Introduction to NodeJs: Pre-Bootcamp Workshop"
+title: "Introduction to NodeJs"
+type: "Workshop"
 where: TechLadies, Singapore
 description: Workshop by Fara Blanco, Thomas Chia & Akshata Mohanty
 date: 2020-08-01

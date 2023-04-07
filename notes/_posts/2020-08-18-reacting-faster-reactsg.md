@@ -1,5 +1,6 @@
 ---
-title: "[talk] React-ing faster: Optimize components for performance"
+title: "React-ing faster: Optimize components for performance"
+type: "Tech Talk"
 where: ReactSG, Singapore
 description: Strategies to make your React components faster
 date: 2020-08-18

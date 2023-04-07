@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-	<title>[tutorial] How to convert a gitbook to PDF using CI/CD tools?</title>
+	<title>Automate Gitbook to PDF converstion with CI/CD tools</title>
 	<meta name="description" content="Creating PDFs from Gitbook automatically using Travis.CI" />
 
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<meta property="og:title" content="[tutorial] How to convert a gitbook to PDF using CI/CD tools?" />
+	<meta property="og:title" content="Automate Gitbook to PDF converstion with CI/CD tools" />
 	<meta property="og:description" content="" />
 	<meta property="og:image" content="" />
 	<meta property="og:image:width" content="400" />
@@ -33,6 +33,7 @@
 		});
 	</script>
 	<script>
+		let isActive = null
 		document.addEventListener('DOMContentLoaded', () => {
 
 			// Get all "navbar-burger" elements
@@ -52,7 +53,28 @@
 
 				});
 			});
-		});
+
+			// scroll
+			const body = (document.getElementsByTagName('body')[0])
+			const sideLinks = document.querySelectorAll(".menu-list-item");
+			body.addEventListener("scroll", event => {
+				let fromTop = body.scrollTop - 250; // top nav + hero
+				sideLinks.forEach(link => {
+					const id = link.href.split('#')[1]
+					let section = document.getElementById(id);
+					if (
+						section?.offsetTop <= fromTop &&
+						section?.offsetTop + section?.offsetHeight > fromTop
+					) {
+						link.classList.add("is-active");
+						isActive = link
+					}
+				});
+				sideLinks.forEach(link => {
+					if (link !== isActive) link.classList.remove('is-active')
+				})
+			}, false);
+			});
 	</script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -117,6 +139,7 @@
       <div class="navbar-end">
         <!-- <a href="/ideas" class="navbar-item">Ideas Marketplace</a> -->
         <a href="/startup-toolkit" class="navbar-item is-hoverable ">Startup Toolkit</a>
+        <a href="/practical-blockchain" class="navbar-item is-hoverable ">Practical Blockchain</a>
         <a href="/engineering" class="navbar-item is-hoverable ">Engineering</a>
         <a href="/notes" class="navbar-item is-hoverable is-active">Notes</a>
       </div>
@@ -130,11 +153,11 @@
                     <ul>
                         <li><a class="is-size-7" href="/">Home</a></li>
                         <li><a class="is-size-7" href="/notes">Notes</a></li>
-                        <li class="is-active is-size-7 is-link"><a href="#" aria-current="page">[tutorial] How to convert a gitbook to PDF using CI/CD tools?</a></li>
+                        <li class="is-active is-size-7 is-link"><a href="#" aria-current="page">Automate Gitbook to PDF converstion with CI/CD tools</a></li>
                     </ul>
                 </nav>
                 <h1 class="title is-3" style="max-width: 600px; line-height: 1.25;">
-                    [tutorial] How to convert a gitbook to PDF using CI/CD tools?
+                    Automate Gitbook to PDF converstion with CI/CD tools
                 </h1>
                 <div class="is-light is-size-7">
                     Last updated on Aug 08, '18</small>

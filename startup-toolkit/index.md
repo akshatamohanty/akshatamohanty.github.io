@@ -1,7 +1,7 @@
 ---
 page: Startup Toolkit
 title: Startup Toolkit
-description: "Quick bootstrapping tools for product and engineering."
+description: "Processes and tools for ideation, rapid prototyping and first launches."
 listing_type: "startup-toolkit"
 layout: listings/default
 ---

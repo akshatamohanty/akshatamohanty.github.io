@@ -1,5 +1,5 @@
 ---
-title: "[career] How to prepare for the Google Cloud Associate Engineer Certification?"
+title: "Preparation Tips for the Google Cloud Associate Engineer Certification"
 description: What is the Google Cloud Associate Engineer exam and how to ace it?
 date: 2020-09-23
 layout: posts/blog

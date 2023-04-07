@@ -1,5 +1,5 @@
 ---
-title: "[book review] How Google Works, Eric Schmidt and Jon Rosenberg"
+title: "How Google Works, Eric Schmidt and Jon Rosenberg"
 author: "Eric Schmidt and Jon Rosenberg"
 type: "Book Review"
 description: My take-aways from this wonderful insight into the culture of Google

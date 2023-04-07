@@ -30,43 +30,26 @@
                 </div>
             </section>
             
-            <section class="section" style="max-width: 1028px;">
+            <section class="section post" style="max-width: 1028px;">
                 <div class="container">
                     <div class="columns is-6">
                         {% if page.menu %}
-                        <div class="fixed column is-one-quarter">
-                            <aside class="menu">
-                            {% for item in page.menu %}
-                                <p class="menu-label">
-                                {{ item.label }}
-                                </p>
-                                {% if item.list %}
-                                <ul class="menu-list">
-                                    {% for subitem in item.list %}
-                                        <li class="is-size-7">
-                                            <a href="#{{subitem.href}}" {% if active contains subitem.id %}class="active"{% endif %}> {{ subitem.label | capitalize }}</a>
-                                            {% if subitem.list %}
-                                                <ul>
-                                                {% for subsubitem in subitem.list %}
-                                                    <li class="is-size-7">
-                                                        <a href="#{{subsubitem.href}}" >{{ subsubitem.label | capitalize }}</a>
-                                                    </li>
-                                                    {% endfor %}
-                                                </ul>
-                                            {% endif %}
-                                        </li>
-                                    {% endfor %}
-                                </ul>
-                                {% endif %}
-                            {% endfor %}
-                            </aside>
+                        <div class="fixed column is-one-quarter is-hidden-tablet">
+                            {% include fragments/menu.html %}
                         </div>
                         {% endif %}
-                        <div class="column">
+
+                        <div class="column is-three-quarters">
                             <div class="content">
                                 {{ page.content }}
                             </div>
                         </div>
+
+                        {% if page.menu %}
+                        <div class="column is-one-quarter is-hidden-mobile">
+                            {% include fragments/menu.html %}
+                        </div>
+                        {% endif %}
                     </div>
                 </div>
             </section>

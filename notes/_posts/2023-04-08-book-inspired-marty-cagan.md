@@ -1,0 +1,248 @@
+---
+title: "Inspired, Marty Cagan"
+description: hello world
+date: 2023-04-08
+layout: posts/default
+type: Book Review
+menu:
+  - label: Context
+    list:
+      - label: About Marty
+        href: about
+      - label: Why
+        href: why
+  - label: The Right Product
+    list:
+      - label: Product Principles.
+      - label: The Engineers.
+        href: the-engineers
+      - label: Root Cause of Failed Efforts
+        href: failed-efforts-rootcause
+---
+
+Author: Marty Cagan
+Marty Cagan - Silicon Valley Product Group
+
+## About Marty {#about}
+
+Marty has worked with Marc Andreessen, at Netscape Communications Corporation. He is a product leader.
+
+## Initial Thoughts & Goals {#why}
+
+Part 1: Lessons from Top Tech Companies
+
+Chapter 1: Behind every great product.
+Chapter 2: Technology-powered products and services.
+Chapter 3: Startups: Getting to Product/Market Fit.
+Chapter 4: Growth-Staging Companies: Scaling to Success.
+Chapter 5: Enterprise Companies: Consistent Product Innovation.
+Chapter 6: The Root Causes of Failed Product Efforts.
+Chapter 7: Beyond Lean and Agile.
+Chapter 8: Key Concepts: Holistic Product, Continuous Discovery and Delivery, Product Discovery, Prototypes, Product Delivery, Products and Product/Market Fit, Product Vision.
+
+Part 2: The Right People
+
+Chapter 9: Principles of Strong Product Teams.
+Chapter 10: The Product Manager.
+Chapter 11: The Product Designer.
+Chapter 12: The Engineers.
+Chapter 13: Product Marketing Managers.
+Chapter 14: The Supporting Roles.
+Chapter 15: Profile: Jane Manning of Google.
+Chapter 16: The Role of Leadership.
+Chapter 17: The Head of Product Role.
+Chapter 18: The Head of Technology Role.
+Chapter 19: The Delivery Manager Role.
+Chapter 20: Principles of Structuring Product Teams.
+Chapter 21: Profile: Lea Hickman of Adobe.
+
+Part 3: The Right Product
+
+Chapter 22: The Problems with Product Roadmaps.
+Chapter 23: The Alternative to Roadmaps.
+Chapter 24: Product Vision and Product Strategy.
+Chapter 25: Principles of Product Vision.
+Chapter 26: Principles of Product Strategy.
+Chapter 27: Product Principles.
+Chapter 28: The OKR Technique.
+Chapter 29: Product Team Objectives.
+Chapter 30: Product Objectives at Scale.
+Chapter 31: Product Evangelism.
+Chapter 32: Profile: Alex Pressland of the BBC.
+
+Part 4: The Right Process
+
+Chapter 33: Principles of Product Discovery.
+Chapter 34: Discovery Techniques Overview.
+Chapter 35: Opportunity Assessment Technique.
+Chapter 36: Customer Letter Technique.
+Chapter 37: Startup Canvas Technique.
+Chapter 38: Story Map Technique.
+Chapter 39: Customer Discovery Program Technique.
+Chapter 40: Profile: Martina Lauchengco of Microsoft.
+Chapter 41: Customer Interviews.
+Chapter 42: Concierge Test Technique.
+Chapter 43: The Power of Customer Misbehaviour.
+Chapter 44: Hack Days.
+Chapter 45: Principles of Prototypes.
+Chapter 46: Feasibility Prototype Technique.
+Chapter 47: User Prototype Technique.
+Chapter 48: Live-Data Prototype Technique.
+Chapter 49: Hybrid Prototype Technique.
+Chapter 50: Testing Usability.
+Chapter 51: Testing Value.
+Chapter 52: Demand Testing Techniques.
+Chapter 53: Qualitative Value Testing Techniques.
+Chapter 54: Quantitative Value Testing Techniques.
+Chapter 55: Testing Feasibility.
+Chapter 56: Testing Business Viability.
+Chapter 57: Profile: Kate Arnold of Netflix.
+Chapter 58: Discovery Sprint Technique.
+Chapter 59: Pilot Team Technique.
+Chapter 60: Weaning an Organization off Roadmaps.
+Chapter 61: Managing Stakeholders.
+Chapter 62: Communicating Product Learnings.
+Chapter 63: Profile: Camille Hearst of Apple.
+
+Part 5: The Right Culture
+
+Chapter 64: Good Product Team / Bad Product Team.
+Chapter 65: Top Reasons for Loss of Innovation.
+Chapter 66: Top Reasons for Loss of Velocity.
+Chapter 67: Establishing a Strong Product Culture.
+
+Chapter 2: Technology Powered Products and Services.
+Most products are changing into technology-powered services. And those that don’t realize this are getting disrupted.
+Technology products are often combination of offline and online experiences.
+Chapter 3: Startups: Getting to Product/Market Fit.
+Technology companies can be divided into the following three categories:
+Startups
+Growth-stage
+Enterprise
+
+Startup can be defined as
+a new product company,
+yet to achieve product/market fit i.e still trying to come up with a product that can power a viable business
+one of co-founders usually does product
+< 25 engineers
+1-5 product team
+
+The goal of a startup is: achieve product market fit before you run out of money.
+
+Hence, success is usually dependent on having a team that is great at product discovery. You want a strong product that meets the needs of an initial market.
+
+## Chapter 6: The Root Causes of Failed Product Efforts. {#failed-efforts-rootcause}
+
+Most companies function in a Project-Centric approach. Here’s the flow:
+Idea > Business Case > Roadmap > Requirements > Design (UX) > Build (Engineering) > Test (QA) > Deploy
+This process is waterfall. And the best product teams don’t work in the above way. The most important thing to remember here is that, most people believe they are working in an agile method while following the above method, which is mainly waterfall.
+
+The top-10 reasons, any of which could make a company fail are:
+Source of ideas. You are either sourcing ideas from clients or the top stakeholders. This breeds a non-empowered atmosphere. The two quoted sources are not the best sources for ideas.
+Business cases are great, if the product requires a lot of funding. But this is mostly done to prioritize roadmaps and justify paychecks. To answer the question as to what the teams are actually doing. You are trying to answer to questions:
+How much will it make
+How much will it cost
+Both these questions you can’t at this stage. Knowing what we can’t know.
+People want product roadmaps. Yet, these aren’t really useful. Because of two inconvenient truths of product:
+Half of your ideas will not work. Customers won’t be as excited or it’ll be too hard to use. Or it’ll be too hard to build.
+Ideas which show potential will take many iterations to get right. It’s called Time to Money.
+There is no hiding away from these truths. The best product teams handle these truths more effectively.  
+Opportunity cost. When you are following a methodology such as this, you are losing out on other more important things you could have been doing that would have given you higher return on interest.
+Engineers are a source of innovation, and are brought in too late. If an engineer is only implementing, that’s just half their value.
+Designers are brought in too late, and are just putting lipstick on a pig.
+Product Managers become more like Project Managers, only sourcing requirements.
+Waterfall methods cause the focus to be on Projects, which are output-based. For successful products however, you need to be outcome based.
+Doing projects essentially means customer validation is pushed to the very end. All the risk is at the very end.
+Agile enters the picture far too late. Only for a certain part of the process. The overall context is not agile.
+
+Best teams assume that 75% of all their products will fail.
+
+## Chapter 12: The Engineers. {#the-engineers}
+
+This relationship is the most important for a product manager.
+It is your job as a product manager to
+No bluff.
+Communicate user pain points and business requirements to the engineers as much as possible.
+Provide as much latitude in terms of solutioning.
+You are responsible for morale.
+Don’t bluff. Engineers are skeptical and see through you.
+Chapter 33: Principles of Product Discovery.
+Purpose of Product Discovery
+Purpose of product discovery is to address the critical risks:
+
+1. value risk: will the customer buy this or choose to use it?
+2. usability risk: can the user figure out how to use it?
+3. feasibility risk: can we build it?
+4. business viability risk: does this solution work for our business?
+
+We need evidence for all 4.
+
+## Core Principles {#core-principles}
+
+1. Don’t count on customers to tell you. We can't count on customers to tell us what to build. The solution we deliver should solve the underlying problem.
+2. Establish compelling value. most important thing => establish compelling value. It has to be a necessary value. we can survive for a while with usability or performance issues.
+3. Good user ux => critical to success.
+4. Functionality, design and technology are intertwined. pm, pd and tech lead should all sit together
+5. Know what you can’t know. most ideas will fail.
+6. Validate ideas with real customers.
+7. Validate ideas in the fastest, cheapest way possible. discovery => need for speed.
+8. Validate feasibility during discovery, not after.
+9. Validate business viability during discovery, not after.
+10. Shared learning. team of missionaries that have seen the customers' pain together, learned together, understood why this is important.
+
+Discovery Iterations
+Discovery iterations are NOT delivery iterations. Discovery iteration is defined as a way of trying out at least one new idea or approach. Purpose is to get insights faster and cheaper.
+
+Competent product teams can test out 10-20 iterations per week. Most iterations never make it beyond you, your designer and your tech lead. Discovery iterations should be at least one order of magnitude worth of effort cheaper than a delivery iteration.
+
+The very act of trying to create a prototype exposes issues with the idea.
+Chapter 34: Discovery Techniques Overview.
+Discovery Framing Techniques. Quickly identify which underlying issues to tackle during discovery. What is the problem, what are the risks, where to focus time, which teams are involved.
+Discovery Planning Techniques. Identify bigger challenges, and how to attack these.
+Discovery Ideation Techniques. Some sources of ideas are better than others. This is a wealth of promising solutions.
+Discovery Prototyping Techniques.
+Discovery Testing Techniques.
+Testing Feasibility.
+Testing Usability.
+Testing Value.
+Testing Business Viability.
+Transformation Techniques.
+Chapter 35: Opportunity Assessment Technique.
+The technique comprises answering four key questions:
+What business objective is being met via this product endeavor? Is it to reduce churn, get more customers, increase revenue? This business objective refers to the business objective of the developing company.
+What is the success metric? How do we consider the product successful? Does a 1% decrease in churn count as an enormous success?
+What is the customer problem? What are we helping our users with? What customer pain point are we solving?
+What is the target market? What type of customer are we addressing? Is it the old grand mom or the teenage tech savvy grandson?
+Chapter 36: Customer Letter Technique.
+For bigger projects, with multiple goals, just answering the four questions in the Opportunity Assessment Technique may not be sufficient.
+
+To frame the purpose of the product endeavor, it is effective to work backwards. One way is to draft a press release. A refinement of this process is to draft a hypothetical letter from a happy customer, describing exactly why your product makes them happy and improves their life. This letter should ideally communicate the value to your team. And if it doesn’t, it’s probably not worth building.
+
+Chapter 37: Startup Canvas Technique.
+Startup Canvas highlights in a comprehensive way:
+The Assumptions
+The Risks, especially the big ones like in startups.
+
+The biggest risk is value risk (solution risk) in a startup. Everything else is secondary till you can provide exceptional value.
+Chapter 51: Testing Value.
+Just because you have a product, doesn’t mean someone will use it. People will only use it if the product provides significant value.
+
+There are three aspects to testing value:
+Testing demand.
+Mostly demand is defined because most products enter a validated market. Then, the challenge is to provide a significantly more valuable product.
+Testing value qualitatively.
+This is the response of your user. Do they love it? Will they pay for it?
+Testing value quantitatively.
+This is about testing efficacy. This is easier in products like advertising, and less easy for products like games.
+Chapter 52: Testing Demand.
+One of the worst things to happen is - there is no demand.
+You can recover from people signing up for trials and not buying. But if no one is signing up for a trial, that is fatal. This is common in new startups and it is easily avoided.
+
+Fake Door Technique/ Landing Page Demand Test: Create a landing page and add a CTA. Talk to people who come through the fake door. We describe the offering exactly as we would if we were launching the service.
+
+There gives you two things:
+Idea of demand.
+List of early users.
+
+Discovery Techniques in Risk Averse Companies
+// TODO

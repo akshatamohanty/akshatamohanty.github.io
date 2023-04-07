@@ -31,6 +31,7 @@
 		});
 	</script>
 	<script>
+		let isActive = null
 		document.addEventListener('DOMContentLoaded', () => {
 
 			// Get all "navbar-burger" elements
@@ -50,7 +51,28 @@
 
 				});
 			});
-		});
+
+			// scroll
+			const body = (document.getElementsByTagName('body')[0])
+			const sideLinks = document.querySelectorAll(".menu-list-item");
+			body.addEventListener("scroll", event => {
+				let fromTop = body.scrollTop - 250; // top nav + hero
+				sideLinks.forEach(link => {
+					const id = link.href.split('#')[1]
+					let section = document.getElementById(id);
+					if (
+						section?.offsetTop <= fromTop &&
+						section?.offsetTop + section?.offsetHeight > fromTop
+					) {
+						link.classList.add("is-active");
+						isActive = link
+					}
+				});
+				sideLinks.forEach(link => {
+					if (link !== isActive) link.classList.remove('is-active')
+				})
+			}, false);
+			});
 	</script>
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
@@ -100,6 +122,7 @@
       <div class="navbar-end">
         <!-- <a href="/ideas" class="navbar-item">Ideas Marketplace</a> -->
         <a href="/startup-toolkit" class="navbar-item is-hoverable ">Startup Toolkit</a>
+        <a href="/practical-blockchain" class="navbar-item is-hoverable ">Practical Blockchain</a>
         <a href="/engineering" class="navbar-item is-hoverable ">Engineering</a>
         <a href="/notes" class="navbar-item is-hoverable ">Notes</a>
       </div>
@@ -119,14 +142,14 @@
             <img width="150px" height="150px" style="border-radius: 10px;" src="/assets/akshata_alt.jpg" />
         </figure>
         <h5><span class="is-size-6 has-text-weight-normal">➜  ~ whoami</span> akshata</h5>
-        <p>Software Engineer. Building tech for fun, efficiency and profit. Futurizing the world, bit by bit. Sharing insights as I go. </p>
+        <p>I write code for fun and profit. Living in the future and building what's missing. Sharing insights bit by bit. </p>
         <p>
             <span class="tag"><a href="https://www.linkedin.com/in/iamaatoh/" target="_blank">LinkedIn</a></span>
             <span class="tag"><a href="https://twitter.com/iamaatoh" target="_blank">Twitter</a></span>
         </p>
         <br />
         <a href="https://akshata.youcanbook.me/" target="_blank">
-            <button class="button is-link">Want to collaborate? Get in touch.</button>
+            <button class="button is-dark">Want to collaborate? Let's talk.</button>
         </a>
     </div>
 </section>
