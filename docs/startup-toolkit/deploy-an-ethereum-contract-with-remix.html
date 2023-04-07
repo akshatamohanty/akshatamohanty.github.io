@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-	<title>Smart Contract-ready in 60 minutes.</title>
+	<title>Be Smart Contract-ready in 60 minutes.</title>
 	<meta name="description" content="Smart contracts are code running on shared computing. " />
 
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<meta property="og:title" content="Smart Contract-ready in 60 minutes." />
+	<meta property="og:title" content="Be Smart Contract-ready in 60 minutes." />
 	<meta property="og:description" content="" />
 	<meta property="og:image" content="" />
 	<meta property="og:image:width" content="400" />
@@ -35,24 +35,23 @@
 	<script>
 		document.addEventListener('DOMContentLoaded', () => {
 
-		// Get all "navbar-burger" elements
-		const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+			// Get all "navbar-burger" elements
+			const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
-		// Add a click event on each of them
-		$navbarBurgers.forEach( el => {
-		el.addEventListener('click', () => {
+			// Add a click event on each of them
+			$navbarBurgers.forEach( el => {
+				el.addEventListener('click', () => {
 
-			// Get the target from the "data-target" attribute
-			const target = el.dataset.target;
-			const $target = document.getElementById(target);
+					// Get the target from the "data-target" attribute
+					const target = el.dataset.target;
+					const $target = document.getElementById(target);
 
-			// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-			el.classList.toggle('is-active');
-			$target.classList.toggle('is-active');
+					// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+					el.classList.toggle('is-active');
+					$target.classList.toggle('is-active');
 
-		});
-		});
-
+				});
+			});
 		});
 	</script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -66,6 +65,11 @@
 			position: relative;
 			overflow-x: hidden;
 			font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+			scroll-behavior: smooth;
+		}
+
+		h1, h2, h3, h4, h5, h6 {
+			scroll-margin-top: 100px;
 		}
 
 		body {
@@ -86,7 +90,7 @@
         }
     </style>
         <nav
-  class="navbar is-fixed-top is-light"
+  class="navbar is-fixed-top is-dark"
   role="navigation"
   aria-label="main navigation"
 >
@@ -112,9 +116,9 @@
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-end">
         <!-- <a href="/ideas" class="navbar-item">Ideas Marketplace</a> -->
-        <a href="/startup-toolkit" class="navbar-item">Startup Toolkit</a>
-        <a href="/engineering" class="navbar-item">Engineering</a>
-        <a href="/notes" class="navbar-item">Notes</a>
+        <a href="/startup-toolkit" class="navbar-item is-hoverable is-active">Startup Toolkit</a>
+        <a href="/engineering" class="navbar-item is-hoverable ">Engineering</a>
+        <a href="/notes" class="navbar-item is-hoverable ">Notes</a>
       </div>
     </div>
   </div>
@@ -127,11 +131,11 @@
                         <ul>
                             <li><a class="is-size-7" href="/">Home</a></li>
                             <li><a class="is-size-7" href="/startup-toolkit">Startup-toolkit</a></li>
-                            <li class="is-active is-size-7 is-link"><a href="#" aria-current="page">Smart Contract-ready in 60 minutes.</a></li>
+                            <li class="is-active is-size-7 is-link"><a href="#" aria-current="page">Be Smart Contract-ready in 60 minutes.</a></li>
                         </ul>
                     </nav>
                     <h1 class="title is-3">
-                        Smart Contract-ready in 60 minutes.
+                        Be Smart Contract-ready in 60 minutes.
                     </h1>
                     <div style="max-width: 600px">
                         Smart contracts are code running on shared computing. 
@@ -145,10 +149,9 @@
             
             <section class="section" style="max-width: 1028px;">
                 <div class="container">
-                    
                     <div class="columns is-6">
+                        
                         <div class="column">
-                            
                             <div class="content">
                                 <p>So, you’ve heard of smart contracts. And now you want to see one in action.</p>
 
@@ -290,7 +293,6 @@ contract Storage {
 
                             </div>
                         </div>
-                        
                     </div>
                 </div>
             </section>
@@ -326,6 +328,6 @@ contract Storage {
     
 </footer> 
 -->
-<footer><div class="container pt-8 pb-2 is-size-6"><small>Copyright © 2023 Akshata Mohanty</small></div></footer>
+<footer class="section"><small>Copyright © 2023 Akshata Mohanty</small></footer>
     </body>
 </html>

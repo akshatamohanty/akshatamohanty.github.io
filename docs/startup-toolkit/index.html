@@ -2,7 +2,7 @@
 <html>
   <head>
 	<title>Startup Toolkit</title>
-	<meta name="description" content="Useful resources and guides for product & engineering at startups." />
+	<meta name="description" content="Quick bootstrapping tools for product and engineering." />
 
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
@@ -35,24 +35,23 @@
 	<script>
 		document.addEventListener('DOMContentLoaded', () => {
 
-		// Get all "navbar-burger" elements
-		const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+			// Get all "navbar-burger" elements
+			const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
-		// Add a click event on each of them
-		$navbarBurgers.forEach( el => {
-		el.addEventListener('click', () => {
+			// Add a click event on each of them
+			$navbarBurgers.forEach( el => {
+				el.addEventListener('click', () => {
 
-			// Get the target from the "data-target" attribute
-			const target = el.dataset.target;
-			const $target = document.getElementById(target);
+					// Get the target from the "data-target" attribute
+					const target = el.dataset.target;
+					const $target = document.getElementById(target);
 
-			// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-			el.classList.toggle('is-active');
-			$target.classList.toggle('is-active');
+					// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+					el.classList.toggle('is-active');
+					$target.classList.toggle('is-active');
 
-		});
-		});
-
+				});
+			});
 		});
 	</script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -66,6 +65,11 @@
 			position: relative;
 			overflow-x: hidden;
 			font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+			scroll-behavior: smooth;
+		}
+
+		h1, h2, h3, h4, h5, h6 {
+			scroll-margin-top: 100px;
 		}
 
 		body {
@@ -83,7 +87,7 @@
 
   <body>
     <nav
-  class="navbar is-fixed-top is-light"
+  class="navbar is-fixed-top is-dark"
   role="navigation"
   aria-label="main navigation"
 >
@@ -109,19 +113,19 @@
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-end">
         <!-- <a href="/ideas" class="navbar-item">Ideas Marketplace</a> -->
-        <a href="/startup-toolkit" class="navbar-item">Startup Toolkit</a>
-        <a href="/engineering" class="navbar-item">Engineering</a>
-        <a href="/notes" class="navbar-item">Notes</a>
+        <a href="/startup-toolkit" class="navbar-item is-hoverable is-active">Startup Toolkit</a>
+        <a href="/engineering" class="navbar-item is-hoverable ">Engineering</a>
+        <a href="/notes" class="navbar-item is-hoverable ">Notes</a>
       </div>
     </div>
   </div>
 </nav>
 
     <main style="margin-top: 52px;">
-        <section class="hero is-small is-link">
+        <section class="hero is-small is-light">
           <div class="hero-body container has-text-centered">
             <p class="title is-3">Startup Toolkit</p>
-            <p class="subtitle is-6">Useful resources and guides for product & engineering at startups.</p>
+            <p class="subtitle is-5">Quick bootstrapping tools for product and engineering.</p>
           </div>
         </section>
         <section class="section is-small">
@@ -133,7 +137,7 @@
 <div class="card my-3" style="max-width: 550px; width: 100%;">
     <header class="card-header">
         <p class="card-header-title is-size-5">
-        Smart Contract-ready in 60 minutes.
+        Be Smart Contract-ready in 60 minutes.
         </p>
     </header>
     <div class="card-content is-size-6">

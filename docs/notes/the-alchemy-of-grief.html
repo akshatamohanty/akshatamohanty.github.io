@@ -35,24 +35,23 @@
 	<script>
 		document.addEventListener('DOMContentLoaded', () => {
 
-		// Get all "navbar-burger" elements
-		const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+			// Get all "navbar-burger" elements
+			const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
-		// Add a click event on each of them
-		$navbarBurgers.forEach( el => {
-		el.addEventListener('click', () => {
+			// Add a click event on each of them
+			$navbarBurgers.forEach( el => {
+				el.addEventListener('click', () => {
 
-			// Get the target from the "data-target" attribute
-			const target = el.dataset.target;
-			const $target = document.getElementById(target);
+					// Get the target from the "data-target" attribute
+					const target = el.dataset.target;
+					const $target = document.getElementById(target);
 
-			// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-			el.classList.toggle('is-active');
-			$target.classList.toggle('is-active');
+					// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+					el.classList.toggle('is-active');
+					$target.classList.toggle('is-active');
 
-		});
-		});
-
+				});
+			});
 		});
 	</script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -66,6 +65,11 @@
 			position: relative;
 			overflow-x: hidden;
 			font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+			scroll-behavior: smooth;
+		}
+
+		h1, h2, h3, h4, h5, h6 {
+			scroll-margin-top: 100px;
 		}
 
 		body {
@@ -86,7 +90,7 @@
         }
     </style>
         <nav
-  class="navbar is-fixed-top is-light"
+  class="navbar is-fixed-top is-dark"
   role="navigation"
   aria-label="main navigation"
 >
@@ -112,9 +116,9 @@
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-end">
         <!-- <a href="/ideas" class="navbar-item">Ideas Marketplace</a> -->
-        <a href="/startup-toolkit" class="navbar-item">Startup Toolkit</a>
-        <a href="/engineering" class="navbar-item">Engineering</a>
-        <a href="/notes" class="navbar-item">Notes</a>
+        <a href="/startup-toolkit" class="navbar-item is-hoverable ">Startup Toolkit</a>
+        <a href="/engineering" class="navbar-item is-hoverable ">Engineering</a>
+        <a href="/notes" class="navbar-item is-hoverable is-active">Notes</a>
       </div>
     </div>
   </div>
@@ -199,6 +203,6 @@ Then, you’ll learn to channel it.</p>
     
 </footer> 
 -->
-<footer><div class="container pt-8 pb-2 is-size-6"><small>Copyright © 2023 Akshata Mohanty</small></div></footer>
+<footer class="section"><small>Copyright © 2023 Akshata Mohanty</small></footer>
     </body>
 </html>

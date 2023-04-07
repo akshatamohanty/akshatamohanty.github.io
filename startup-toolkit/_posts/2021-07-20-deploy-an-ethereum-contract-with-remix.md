@@ -1,5 +1,5 @@
 ---
-title: "Smart Contract-ready in 60 minutes."
+title: "Be Smart Contract-ready in 60 minutes."
 description: "Smart contracts are code running on shared computing. "
 date: 2021-07-20
 layout: posts/default

@@ -35,24 +35,23 @@
 	<script>
 		document.addEventListener('DOMContentLoaded', () => {
 
-		// Get all "navbar-burger" elements
-		const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+			// Get all "navbar-burger" elements
+			const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
-		// Add a click event on each of them
-		$navbarBurgers.forEach( el => {
-		el.addEventListener('click', () => {
+			// Add a click event on each of them
+			$navbarBurgers.forEach( el => {
+				el.addEventListener('click', () => {
 
-			// Get the target from the "data-target" attribute
-			const target = el.dataset.target;
-			const $target = document.getElementById(target);
+					// Get the target from the "data-target" attribute
+					const target = el.dataset.target;
+					const $target = document.getElementById(target);
 
-			// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-			el.classList.toggle('is-active');
-			$target.classList.toggle('is-active');
+					// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+					el.classList.toggle('is-active');
+					$target.classList.toggle('is-active');
 
-		});
-		});
-
+				});
+			});
 		});
 	</script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -66,6 +65,11 @@
 			position: relative;
 			overflow-x: hidden;
 			font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+			scroll-behavior: smooth;
+		}
+
+		h1, h2, h3, h4, h5, h6 {
+			scroll-margin-top: 100px;
 		}
 
 		body {
@@ -86,7 +90,7 @@
         }
     </style>
         <nav
-  class="navbar is-fixed-top is-light"
+  class="navbar is-fixed-top is-dark"
   role="navigation"
   aria-label="main navigation"
 >
@@ -112,9 +116,9 @@
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-end">
         <!-- <a href="/ideas" class="navbar-item">Ideas Marketplace</a> -->
-        <a href="/startup-toolkit" class="navbar-item">Startup Toolkit</a>
-        <a href="/engineering" class="navbar-item">Engineering</a>
-        <a href="/notes" class="navbar-item">Notes</a>
+        <a href="/startup-toolkit" class="navbar-item is-hoverable ">Startup Toolkit</a>
+        <a href="/engineering" class="navbar-item is-hoverable is-active">Engineering</a>
+        <a href="/notes" class="navbar-item is-hoverable ">Notes</a>
       </div>
     </div>
   </div>
@@ -145,10 +149,98 @@
             
             <section class="section" style="max-width: 1028px;">
                 <div class="container">
-                    
                     <div class="columns is-6">
-                        <div class="column">
+                        
+                        <div class="fixed column is-one-quarter">
+                            <aside class="menu">
                             
+                                <p class="menu-label">
+                                general
+                                </p>
+                                
+                                <ul class="menu-list">
+                                    
+                                        <li class="is-size-7">
+                                            <a href="#" > Dashboard</a>
+                                            
+                                        </li>
+                                    
+                                        <li class="is-size-7">
+                                            <a href="#" > Customers</a>
+                                            
+                                        </li>
+                                    
+                                </ul>
+                                
+                            
+                                <p class="menu-label">
+                                administration
+                                </p>
+                                
+                                <ul class="menu-list">
+                                    
+                                        <li class="is-size-7">
+                                            <a href="#" > Team settings</a>
+                                            
+                                        </li>
+                                    
+                                        <li class="is-size-7">
+                                            <a href="#" > Manage your team</a>
+                                            
+                                                <ul>
+                                                
+                                                    <li class="is-size-7">
+                                                        <a href="#" ></a>
+                                                    </li>
+                                                    
+                                                    <li class="is-size-7">
+                                                        <a href="#" ></a>
+                                                    </li>
+                                                    
+                                                    <li class="is-size-7">
+                                                        <a href="#" ></a>
+                                                    </li>
+                                                    
+                                                </ul>
+                                            
+                                        </li>
+                                    
+                                        <li class="is-size-7">
+                                            <a href="#" > Invitations</a>
+                                            
+                                        </li>
+                                    
+                                        <li class="is-size-7">
+                                            <a href="#" > Cloud storage environment</a>
+                                            
+                                        </li>
+                                    
+                                </ul>
+                                
+                            
+                                <p class="menu-label">
+                                transactions
+                                </p>
+                                
+                                <ul class="menu-list">
+                                    
+                                        <li class="is-size-7">
+                                            <a href="#" > Payments</a>
+                                            
+                                        </li>
+                                    
+                                        <li class="is-size-7">
+                                            <a href="#" > Transfers</a>
+                                            
+                                        </li>
+                                    
+                                </ul>
+                                
+                            
+                            </aside>
+                        </div>
+                        
+                        <div class="column">
                             <div class="content">
                                 <h1 id="what-is-dynamic-programming">What is Dynamic Programming?</h1>
 
@@ -379,96 +471,6 @@ for test in range(12):
 
                             </div>
                         </div>
-                        
-                        <div class="column is-one-fifth">
-                            <aside class="menu">
-                                
-                                    <p class="menu-label">
-                                    general
-                                    </p>
-                                    
-                                    <ul class="menu-list">
-                                        
-                                            <li>
-                                                <a  class="is-size-7"> Dashboard</a>
-                                                
-                                            </li>
-                                        
-                                            <li>
-                                                <a  class="is-size-7"> Customers</a>
-                                                
-                                            </li>
-                                        
-                                    </ul>
-                                    
-                                
-                                    <p class="menu-label">
-                                    administration
-                                    </p>
-                                    
-                                    <ul class="menu-list">
-                                        
-                                            <li>
-                                                <a  class="is-size-7"> Team settings</a>
-                                                
-                                            </li>
-                                        
-                                            <li>
-                                                <a  class="is-size-7"> Manage your team</a>
-                                                
-                                                    <ul>
-                                                    
-                                                        <li>
-                                                            <a class="is-size-7">Members</a>
-                                                        </li>
-                                                        
-                                                        <li>
-                                                            <a class="is-size-7">Plugins</a>
-                                                        </li>
-                                                        
-                                                        <li>
-                                                            <a class="is-size-7">Add a member</a>
-                                                        </li>
-                                                        
-                                                    </ul>
-                                                
-                                            </li>
-                                        
-                                            <li>
-                                                <a  class="is-size-7"> Invitations</a>
-                                                
-                                            </li>
-                                        
-                                            <li>
-                                                <a  class="is-size-7"> Cloud storage environment</a>
-                                                
-                                            </li>
-                                        
-                                    </ul>
-                                    
-                                
-                                    <p class="menu-label">
-                                    transactions
-                                    </p>
-                                    
-                                    <ul class="menu-list">
-                                        
-                                            <li>
-                                                <a  class="is-size-7"> Payments</a>
-                                                
-                                            </li>
-                                        
-                                            <li>
-                                                <a  class="is-size-7"> Transfers</a>
-                                                
-                                            </li>
-                                        
-                                    </ul>
-                                    
-                                
-                                </aside>
-                        </div>
-                        
                     </div>
                 </div>
             </section>
@@ -504,6 +506,6 @@ for test in range(12):
     
 </footer> 
 -->
-<footer><div class="container pt-8 pb-2 is-size-6"><small>Copyright © 2023 Akshata Mohanty</small></div></footer>
+<footer class="section"><small>Copyright © 2023 Akshata Mohanty</small></footer>
     </body>
 </html>

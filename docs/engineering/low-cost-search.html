@@ -35,24 +35,23 @@
 	<script>
 		document.addEventListener('DOMContentLoaded', () => {
 
-		// Get all "navbar-burger" elements
-		const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+			// Get all "navbar-burger" elements
+			const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
-		// Add a click event on each of them
-		$navbarBurgers.forEach( el => {
-		el.addEventListener('click', () => {
+			// Add a click event on each of them
+			$navbarBurgers.forEach( el => {
+				el.addEventListener('click', () => {
 
-			// Get the target from the "data-target" attribute
-			const target = el.dataset.target;
-			const $target = document.getElementById(target);
+					// Get the target from the "data-target" attribute
+					const target = el.dataset.target;
+					const $target = document.getElementById(target);
 
-			// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-			el.classList.toggle('is-active');
-			$target.classList.toggle('is-active');
+					// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+					el.classList.toggle('is-active');
+					$target.classList.toggle('is-active');
 
-		});
-		});
-
+				});
+			});
 		});
 	</script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -66,6 +65,11 @@
 			position: relative;
 			overflow-x: hidden;
 			font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+			scroll-behavior: smooth;
+		}
+
+		h1, h2, h3, h4, h5, h6 {
+			scroll-margin-top: 100px;
 		}
 
 		body {
@@ -86,7 +90,7 @@
         }
     </style>
         <nav
-  class="navbar is-fixed-top is-light"
+  class="navbar is-fixed-top is-dark"
   role="navigation"
   aria-label="main navigation"
 >
@@ -112,9 +116,9 @@
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-end">
         <!-- <a href="/ideas" class="navbar-item">Ideas Marketplace</a> -->
-        <a href="/startup-toolkit" class="navbar-item">Startup Toolkit</a>
-        <a href="/engineering" class="navbar-item">Engineering</a>
-        <a href="/notes" class="navbar-item">Notes</a>
+        <a href="/startup-toolkit" class="navbar-item is-hoverable ">Startup Toolkit</a>
+        <a href="/engineering" class="navbar-item is-hoverable is-active">Engineering</a>
+        <a href="/notes" class="navbar-item is-hoverable ">Notes</a>
       </div>
     </div>
   </div>
@@ -145,12 +149,137 @@
             
             <section class="section" style="max-width: 1028px;">
                 <div class="container">
-                    
                     <div class="columns is-6">
-                        <div class="column">
+                        
+                        <div class="fixed column is-one-quarter">
+                            <aside class="menu">
                             
+                                <p class="menu-label">
+                                Context
+                                </p>
+                                
+                                <ul class="menu-list">
+                                    
+                                        <li class="is-size-7">
+                                            <a href="#context" > Use case & contraints</a>
+                                            
+                                        </li>
+                                    
+                                        <li class="is-size-7">
+                                            <a href="#evaluation" > Evaluating existing options</a>
+                                            
+                                        </li>
+                                    
+                                        <li class="is-size-7">
+                                            <a href="#rationale" > Rationale for in-house</a>
+                                            
+                                        </li>
+                                    
+                                </ul>
+                                
+                            
+                                <p class="menu-label">
+                                Methodology
+                                </p>
+                                
+                                <ul class="menu-list">
+                                    
+                                        <li class="is-size-7">
+                                            <a href="#ngram" > Ngrams</a>
+                                            
+                                                <ul>
+                                                
+                                                    <li class="is-size-7">
+                                                        <a href="#hello" >Heloo</a>
+                                                    </li>
+                                                    
+                                                    <li class="is-size-7">
+                                                        <a href="#" >World</a>
+                                                    </li>
+                                                    
+                                                </ul>
+                                            
+                                        </li>
+                                    
+                                        <li class="is-size-7">
+                                            <a href="#" > System design</a>
+                                            
+                                                <ul>
+                                                
+                                                    <li class="is-size-7">
+                                                        <a href="#" >Heloo</a>
+                                                    </li>
+                                                    
+                                                    <li class="is-size-7">
+                                                        <a href="#" >World</a>
+                                                    </li>
+                                                    
+                                                </ul>
+                                            
+                                        </li>
+                                    
+                                        <li class="is-size-7">
+                                            <a href="#" > Implementation</a>
+                                            
+                                        </li>
+                                    
+                                </ul>
+                                
+                            
+                                <p class="menu-label">
+                                Challenges
+                                </p>
+                                
+                                <ul class="menu-list">
+                                    
+                                        <li class="is-size-7">
+                                            <a href="#" > Memory issues</a>
+                                            
+                                        </li>
+                                    
+                                        <li class="is-size-7">
+                                            <a href="#" > Edge cases in matching</a>
+                                            
+                                        </li>
+                                    
+                                        <li class="is-size-7">
+                                            <a href="#" > Latency</a>
+                                            
+                                        </li>
+                                    
+                                        <li class="is-size-7">
+                                            <a href="#" > Limitations of lambda</a>
+                                            
+                                        </li>
+                                    
+                                </ul>
+                                
+                            
+                                <p class="menu-label">
+                                Conclustion
+                                </p>
+                                
+                                <ul class="menu-list">
+                                    
+                                        <li class="is-size-7">
+                                            <a href="#" > Demo</a>
+                                            
+                                        </li>
+                                    
+                                        <li class="is-size-7">
+                                            <a href="#" > Insights</a>
+                                            
+                                        </li>
+                                    
+                                </ul>
+                                
+                            
+                            </aside>
+                        </div>
+                        
+                        <div class="column">
                             <div class="content">
-                                <h3 id="building-awens-internal-search-engine">Building Awen’s Internal Search Engine</h3>
+                                <h3 id="context">Building Awen’s Internal Search Engine</h3>
 
 <p><a href="https://awen.finance">Awen</a> is a machine learning startup that provides AI-assisted underwriting tools to financial institutions. The underwriting process is an intensive process requiring triangulation of data from multiple sources. Aggregating, processing and consuming large datasets to surface insights is critical to Awen’s mission.</p>
 
@@ -160,7 +289,7 @@
 
 <p>This service would be a high traffic service with high volume of reads, but not as many writes.</p>
 
-<h3 id="evaluating-existing-options">Evaluating Existing Options</h3>
+<h3 id="evaluation">Evaluating Existing Options</h3>
 
 <table>
   <thead>
@@ -199,13 +328,13 @@
   </tbody>
 </table>
 
-<h3 id="rationale-for-in-house-solution">Rationale for In-House Solution</h3>
+<h3 id="rationale">Rationale for In-House Solution</h3>
 
 <p>Nostrud eiusmod esse occaecat eiusmod aliqua commodo quis eiusmod occaecat fugiat ea. Lorem incididunt voluptate dolore commodo duis minim pariatur mollit aute dolor irure. Ad esse est nisi labore velit elit. Et consectetur officia consectetur sit minim tempor consectetur eu nostrud reprehenderit laborum. Exercitation veniam sunt eiusmod velit exercitation ex deserunt quis ullamco dolor cupidatat laborum esse. Irure occaecat ad irure ut officia ea. Est esse nulla sunt ut et exercitation elit tempor quis Lorem.</p>
 
 <p>Labore eu occaecat commodo do deserunt. Velit deserunt ullamco dolore exercitation minim in occaecat excepteur quis tempor adipisicing id. Dolore laborum aliquip elit occaecat non laboris incididunt enim eiusmod aliqua incididunt Lorem. Eiusmod aute deserunt amet magna Lorem occaecat mollit culpa tempor cupidatat ipsum.</p>
 
-<h3 id="methodology">Methodology</h3>
+<h3 id="method">Methodology</h3>
 
 <p>Nisi labore ad cupidatat fugiat. Et cillum sunt irure ad eu ullamco enim laboris enim ea ea. Officia deserunt consequat irure laboris aute minim magna. Laboris aliqua adipisicing et consequat cillum ut dolor elit ut. Eu eu dolore nostrud incididunt cillum aliqua consectetur deserunt dolor proident sunt reprehenderit et velit. Et aliqua veniam adipisicing nisi labore veniam dolor dolor deserunt nulla amet in. Incididunt non id aliqua duis. Nostrud laboris dolore ex duis fugiat enim cillum nisi adipisicing in velit aliquip aliqua. Nostrud excepteur eiusmod dolor sint ex nisi sit consectetur ea commodo labore id.</p>
 
@@ -213,9 +342,9 @@
 
 <h4 id="how-it-works">How it works?</h4>
 
-<h4 id="ngrams-storage--computation">Ngrams: Storage &amp; Computation</h4>
+<h4 id="ngram">Ngrams: Storage &amp; Computation</h4>
 
-<h3 id="challenges">Challenges</h3>
+<h3 id="hello">Challenges</h3>
 
 <h4 id="out-of-memory">Out of Memory</h4>
 
@@ -236,124 +365,6 @@ Results were good.</p>
 
                             </div>
                         </div>
-                        
-                        <div class="column is-one-fifth">
-                            <aside class="menu">
-                                
-                                    <p class="menu-label">
-                                    Context
-                                    </p>
-                                    
-                                
-                                    <p class="menu-label">
-                                    Evaluating existing options
-                                    </p>
-                                    
-                                    <ul class="menu-list">
-                                        
-                                            <li>
-                                                <a  class="is-size-7"> Elasticsearch</a>
-                                                
-                                            </li>
-                                        
-                                            <li>
-                                                <a  class="is-size-7"> Typesense</a>
-                                                
-                                            </li>
-                                        
-                                            <li>
-                                                <a  class="is-size-7"> Opensearch</a>
-                                                
-                                            </li>
-                                        
-                                            <li>
-                                                <a  class="is-size-7"> Mongo atlas</a>
-                                                
-                                            </li>
-                                        
-                                    </ul>
-                                    
-                                
-                                    <p class="menu-label">
-                                    Rationale for In-house
-                                    </p>
-                                    
-                                
-                                    <p class="menu-label">
-                                    Methodology
-                                    </p>
-                                    
-                                    <ul class="menu-list">
-                                        
-                                            <li>
-                                                <a  class="is-size-7"> Ngrams</a>
-                                                
-                                            </li>
-                                        
-                                            <li>
-                                                <a  class="is-size-7"> System design</a>
-                                                
-                                            </li>
-                                        
-                                            <li>
-                                                <a  class="is-size-7"> Implementation</a>
-                                                
-                                            </li>
-                                        
-                                    </ul>
-                                    
-                                
-                                    <p class="menu-label">
-                                    Challenges & Quirks
-                                    </p>
-                                    
-                                    <ul class="menu-list">
-                                        
-                                            <li>
-                                                <a  class="is-size-7"> Memory issues</a>
-                                                
-                                            </li>
-                                        
-                                            <li>
-                                                <a  class="is-size-7"> Edge cases in matching</a>
-                                                
-                                            </li>
-                                        
-                                            <li>
-                                                <a  class="is-size-7"> Latency</a>
-                                                
-                                            </li>
-                                        
-                                            <li>
-                                                <a  class="is-size-7"> Limitations of lambda</a>
-                                                
-                                            </li>
-                                        
-                                    </ul>
-                                    
-                                
-                                    <p class="menu-label">
-                                    Final Product
-                                    </p>
-                                    
-                                    <ul class="menu-list">
-                                        
-                                            <li>
-                                                <a  class="is-size-7"> Demo</a>
-                                                
-                                            </li>
-                                        
-                                            <li>
-                                                <a  class="is-size-7"> Conclusion</a>
-                                                
-                                            </li>
-                                        
-                                    </ul>
-                                    
-                                
-                                </aside>
-                        </div>
-                        
                     </div>
                 </div>
             </section>
@@ -389,6 +400,6 @@ Results were good.</p>
     
 </footer> 
 -->
-<footer><div class="container pt-8 pb-2 is-size-6"><small>Copyright © 2023 Akshata Mohanty</small></div></footer>
+<footer class="section"><small>Copyright © 2023 Akshata Mohanty</small></footer>
     </body>
 </html>
