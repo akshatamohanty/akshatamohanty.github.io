@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>How to add integrate the Jasmine testing framework in Typescript project? | Akshata Mohanty</title>
+	<meta name="description" content="Lessons learned while adding the jasmine testing framework for Typescript" />
+
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta property="og:title" content="How to add integrate the Jasmine testing framework in Typescript project?" />
+	<meta property="og:description" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:image:width" content="400" />
+	<meta property="og:image:height" content="300" />
+	<meta property="og:type" content="website" />
+
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+	<link href='https://iamaatoh.com/feed.xml' rel='alternate' type='application/atom+xml'>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111560396-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-111560396-1');
+		document.fonts.ready.then((fontFaceSet) => {
+			document.body.style.opacity = 1
+		});
+	</script>
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+
+		// Get all "navbar-burger" elements
+		const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+		// Add a click event on each of them
+		$navbarBurgers.forEach( el => {
+		el.addEventListener('click', () => {
+
+			// Get the target from the "data-target" attribute
+			const target = el.dataset.target;
+			const $target = document.getElementById(target);
+
+			// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+			el.classList.toggle('is-active');
+			$target.classList.toggle('is-active');
+
+		});
+		});
+
+		});
+	</script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<style>
+		html, body {
+			width: 100%;
+			height: 100%; 
+			position: relative;
+			overflow-x: hidden;
+		}
+
+		h1, h2, h3, h4, h5, h6 {
+			font-weight: 600;
+		}
+
+		body {
+			position: relative;
+			font-size: 16px; 
+			line-height: 24px;
+		}
+
+		.breadcrumb li {
+			white-space: pre-wrap;
+		}
+
+		.navbar {
+			max-width: 100vw;
+		}
+	</style>
+</head>
+
+    <style>
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+           
+            color:  #212121;
+            font-size: 1.2rem; 
+            line-height: 1.5;
+        }
+
+        .essay-content > p {
+            padding: 0.5rem 0;
+        }   
+
+        .essay-content > h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            margin: 24px 0 16px 0;
+        }
+
+        .essay-content > h1 {
+            font-size: 3rem;
+            line-height: 1.2;
+            margin: 3rem 0 0.5rem 0;
+        }
+
+        .essay-content > h2 {
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem 0;
+        }
+
+        ul.task-list {
+            margin-left: 0;
+            padding-left: 0;
+        }
+
+        .task-list-item {
+            list-style-type: none;
+            margin-left: 0;
+        }
+
+        input.task-list-item-checkbox {
+            margin-right: 0.5rem;
+        }
+
+        img {
+            max-height: 400px;
+        }
+    </style>
+    <nav
+  class="navbar is-fixed-top is-link"
+  role="navigation"
+  aria-label="main navigation"
+>
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/">
+      <span>&lt;iamaatoh /&gt;</span>
+    </a>
+
+    <a
+      role="button"
+      class="navbar-burger"
+      aria-label="menu"
+      aria-expanded="false"
+      data-target="navbarBasicExample"
+    >
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-end">
+      <a href="/ideas" class="navbar-item">Ideas Marketplace</a>
+      <a href="/startup-toolkit" class="navbar-item">Startup Toolkit</a>
+      <a href="/engineering" class="navbar-item">Engineering</a>
+      <a href="/research" class="navbar-item">Research & Talks</a>
+      <a href="/notes" class="navbar-item">My Notes</a>
+    </div>
+  </div>
+</nav>
+
+        <section class="hero is-link is-medium">
+            <div class="hero-body">
+                <div class="block">
+                    <nav class="breadcrumb" aria-label="breadcrumbs">
+                        <ul>
+                          <li><a href="/">Home</a></li>
+                          <li><a href="/notes">Notes</a></li>
+                          <li class="is-active"><a href="#" aria-current="page">How to add integrate the Jasmine testing framework in Typescript project?</a></li>
+                        </ul>
+                      </nav>
+                </div>
+                <h1 class="title is-2">
+                    How to add integrate the Jasmine testing framework in Typescript project?
+                </h1>
+                <p class="subtitle is-5">
+                    Lessons learned while adding the jasmine testing framework for Typescript
+                </p>
+                <p>
+                    <div class="field is-grouped is-grouped-multiline">
+                        <div class="tags are-medium">
+                            
+                        </div>
+                    </div>
+                </p>
+            </div>
+        </section>
+        
+        <section class="section is-small columns">
+            <div class="column">
+                <div class="content">
+                    <div style="color: gray;">
+                       November 07, 2017</small>
+                    </div>
+                    <div class="essay-content">
+                        <p>Test-driven development (TDD) is a best practice for clean, robust production-grade code. However, setting up these testing frameworks can be daunting. Here are some of the lessons I learned while setting up Jasmine testing framework for Typescript</p>
+
+<h1 id="creating-a-packagejson-file">Creating a package.json file</h1>
+
+<p>Use <code class="language-plaintext highlighter-rouge">npm init</code> to create the package.json file. It acts like a wizard and steps you through the entire file creation. Press enter to accept defaults (which will be in most cases). This file is what is used to configure the build process and run, build and test your application.</p>
+
+<p><br /></p>
+
+<h1 id="folder-structure">Folder Structure</h1>
+
+<p>This projects implements a folder structure as follows -</p>
+
+<p>Folder: <code class="language-plaintext highlighter-rouge">./</code></p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">.config</code>: [Contains all the config files]
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">karma.config.ts</code> : Karma Configuration File</li>
+      <li><code class="language-plaintext highlighter-rouge">tsconfig.json</code>: Typscript Configuration File</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">src</code>: [Containts all the source Typescript files]</li>
+  <li><code class="language-plaintext highlighter-rouge">tests</code>: [Contains tests to be run on the src folder files]</li>
+</ul>
+
+<p><br /></p>
+
+<h1 id="packages-to-install">Packages to install</h1>
+
+<p>Next, you’ll need to install the packages required to compile and test typescript files.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">@types/nodes</code> - This is needed to allow you to script in nodejs and use keywords like require, export etc.</li>
+  <li><code class="language-plaintext highlighter-rouge">karma-typescript</code> - To compile typescript files into Javascript which can be tested by Jasmine</li>
+  <li><code class="language-plaintext highlighter-rouge">karma-chrome-launcher</code> - To launch an instance of chrome. You have to install a launcher for each browser that you want to check against.</li>
+  <li><code class="language-plaintext highlighter-rouge">karma-jasmine-html-reporter</code> - This is required to display the Jasmine test results on Chrome; [Note: not karma-html-report]</li>
+  <li><code class="language-plaintext highlighter-rouge">@types/jasmine</code>- Required for Jasmine test to run and to get rid of errors with <code class="language-plaintext highlighter-rouge">describe</code> keyword etc</li>
+  <li><code class="language-plaintext highlighter-rouge">typescript</code> - Duh!</li>
+  <li><code class="language-plaintext highlighter-rouge">Jasmine Core</code></li>
+</ul>
+
+<p><br /></p>
+
+<h1 id="karma-config-files">Karma Config Files</h1>
+
+<p>Update the config file “files”: [] property, to point to the test files as well as the imports. This is required for the karma-typescript-compiler to compile properly or it won’t find the imported files, which you might be trying to check.</p>
+
+<p>If the tests are not visible, but Jasmine is, means there is problem with file paths in the karma.config file</p>
+
+<p>Specify the module in the karmaTypescriptConfig options as “commonjs” or it will not accept export/import modules</p>
+
+<p><br /></p>
+
+<h1 id="running-scripts-with-packagejson">Running scripts with <code class="language-plaintext highlighter-rouge">package.json</code></h1>
+
+<p>Update package.json to run</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="p">{</span> <span class="dl">"</span><span class="s2">test</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">karma start &lt;karma_config_file_path&gt;</span><span class="dl">"</span> <span class="p">}</span>
+</code></pre></div></div>
+
+<p>Basically, this gets run whenever <code class="language-plaintext highlighter-rouge">npm test</code> is run</p>
+
+<p><br /></p>
+
+<h1 id="typedocs">Typedocs</h1>
+
+<p>For the docs - just the following script in <code class="language-plaintext highlighter-rouge">package.json</code> will do:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="dl">"</span><span class="s2">build-docs</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">typedoc --out ./docs ./src --module commonjs</span><span class="dl">"</span>
+</code></pre></div></div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+<footer class="footer">
+    <!-- <div class='columns'>
+        <div class='column'>
+            <div class='heading'>Writing & Notes</div>  
+            <div>
+                <div><a href='/essays'>Essays</a></div>
+                <div><a href='/guides'>Guides</a></div>
+                <div><a href='/stacks'>Stacks</a></div>
+                <div><a href='/bookshelf'>Bookshelf</a></div>
+                <div><a href='/the-lab'>The Lab</a></div>
+            </div>        
+        </div>
+        <div class='column'>
+            <div class='heading'>Creations</div>  
+            <div>
+                <div><a href='https://www.meetup.com/practical-blockchain/' target="_blank">Practical Blockchain</a></div>
+                <div><a href='https://startupengineer.substack.com/' target='_blank' >The Startup Engineer</a></div>
+                <div><a href='https://www.instagram.com/iamaatoh/' target='_blank'>My Artwork</a></div>
+                <div><a href='/research'>Research</a></div>
+                <div><a href='/projects'>Miscellaneous Projects</a></div>
+            </div>        
+        </div>
+    </div> -->
+    <div class='content has-text-centered'>
+        Copyright © 2023 Akshata Mohanty
+    </div>
+</footer>
+
+    </body>
+</html>

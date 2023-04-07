@@ -1,8 +1,8 @@
 # File: _config.yml
 destination: docs
 encoding: UTF-8
-name: Akshata Mohanty | Engineer
-description: Learn, Reflect and Engineer. Capturing my journey in print through this website.
+name: Akshata / Aatoh
+description: "Sharing technical insights and resources for non-tech builders."
 url: https://iamaatoh.com
 title: Akshata Mohanty | Engineer
 permalink: none
@@ -11,7 +11,7 @@ sass:
 author:
   name: "Akshata Mohanty"
   url: https://iamaatoh.com
-version: 5.0.0
+version: 6.0.0
 github:
   repo: https://github.com/akshatamohanty/akshatamohanty.github.io
 plugins:

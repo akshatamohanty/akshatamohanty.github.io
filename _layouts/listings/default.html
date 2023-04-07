@@ -15,8 +15,8 @@
           </p>
         </div>
       </section>
-
-      <section class="section is-medium">
+      {{ page.listing_type}}
+      <section class="section is-small">
         <ul class="columns is-multiline">
           {% assign categories_list = site.categories %}
           {% for post in site.categories[page.listing_type]  %}
