@@ -9,33 +9,11 @@
       
       <item>
         <category></category>
-        <title>Building a cost-effective search.</title>
+        <title>Chip Search: Awen's Internal Search Engine</title>
         <description></description>
         <pubDate>Apr 2023</pubDate>
         <link>http://localhost:4000/engineering/low-cost-search.html </link>
         <guid isPermaLink="true">http://localhost:4000/engineering/low-cost-search.html</guid>
-      </item>
-      
-    
-      
-      <item>
-        <category></category>
-        <title>Text Similarity Algorithms</title>
-        <description></description>
-        <pubDate>Mar 2023</pubDate>
-        <link>http://localhost:4000/engineering/hamming-distance-algorithm.html </link>
-        <guid isPermaLink="true">http://localhost:4000/engineering/hamming-distance-algorithm.html</guid>
-      </item>
-      
-    
-      
-      <item>
-        <category></category>
-        <title>List of Useful Websites for Fullstack Developers</title>
-        <description></description>
-        <pubDate>Feb 2023</pubDate>
-        <link>http://localhost:4000/notes/websites-to-know-as-a-fullstack-developer.html </link>
-        <guid isPermaLink="true">http://localhost:4000/notes/websites-to-know-as-a-fullstack-developer.html</guid>
       </item>
       
     
@@ -53,11 +31,33 @@
       
       <item>
         <category></category>
-        <title>Startup Engineer #1: Managing Imposter Syndrome</title>
+        <title>The Meaning of My Name</title>
         <description></description>
-        <pubDate>Jul 2022</pubDate>
-        <link>http://localhost:4000/notes/startup-engineer-1-imposter-syndrome.html </link>
-        <guid isPermaLink="true">http://localhost:4000/notes/startup-engineer-1-imposter-syndrome.html</guid>
+        <pubDate>Mar 2022</pubDate>
+        <link>http://localhost:4000/notes/the-meaning-of-my-name.html </link>
+        <guid isPermaLink="true">http://localhost:4000/notes/the-meaning-of-my-name.html</guid>
+      </item>
+      
+    
+      
+      <item>
+        <category></category>
+        <title>Smart Contract-ready in 60 minutes.</title>
+        <description></description>
+        <pubDate>Jul 2021</pubDate>
+        <link>http://localhost:4000/startup-toolkit/deploy-an-ethereum-contract-with-remix.html </link>
+        <guid isPermaLink="true">http://localhost:4000/startup-toolkit/deploy-an-ethereum-contract-with-remix.html</guid>
+      </item>
+      
+    
+      
+      <item>
+        <category></category>
+        <title>Handling the pandemic, the developer way.</title>
+        <description></description>
+        <pubDate>Jul 2021</pubDate>
+        <link>http://localhost:4000/notes/handling-pandemic-the-developer-way.html </link>
+        <guid isPermaLink="true">http://localhost:4000/notes/handling-pandemic-the-developer-way.html</guid>
       </item>
       
     

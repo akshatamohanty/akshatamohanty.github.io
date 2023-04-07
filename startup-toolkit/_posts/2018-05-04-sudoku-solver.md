@@ -1,5 +1,5 @@
 ---
-title: sudoku solver
+title: Game Solvers
 description: an python algorithm to solve a sudoku puzzle using constraint propagation
 date: 2018-06-02
 link: https://github.com/akshatamohanty/udacity-ai-nanodegree/tree/master/project-01-sudoku
@@ -9,4 +9,5 @@ tags:
   - cnn
   - keras
   - AWS
+published: false
 ---

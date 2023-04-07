@@ -1,8 +1,28 @@
 ---
-title: "Solving coin-change with Dynamic Programming"
+title: "Fundamentals of Dynamic Programming"
 description: Slightly less uncommon for coding interviews, Dynamic Programming questions are still a favourite. This approach is an optimization over recursion. Developed in the 1950s, in my opinion, it tests developers' ability to break down a problem into its smallest, most fundamental piece. In this article, we learn about Dynamic Programming by digging deeper into the "coin-change" problem with dynamic programming.
 layout: posts/default
 date: 2018-06-06
+menu:
+  - label: general
+    list:
+      - label: dashboard
+      - label: customers
+  - label: administration
+    list:
+      - label: team settings
+        id: 1
+      - label: manage your team
+        list:
+          - members
+          - plugins
+          - add a member
+      - label: invitations
+      - label: cloud storage environment
+  - label: transactions
+    list:
+      - label: payments
+      - label: transfers
 tags:
   - programming
   - cs-basics

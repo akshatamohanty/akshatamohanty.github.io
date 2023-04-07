@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    {% include head.html %}
+    <style>
+        img {
+            max-height: 400px;
+        }
+    </style>
+        {% include navigation.html %}
+        <div style="margin-top: 52px;">
+            <section class="section">
+                <nav class="breadcrumb" aria-label="breadcrumbs">
+                    <ul>
+                        <li><a class="is-size-7" href="/">Home</a></li>
+                        <li><a class="is-size-7" href="/{{page.categories[0]}}">{{page.categories[0] | capitalize }}</a></li>
+                        <li class="is-active is-size-7 is-link"><a href="#" aria-current="page">{{page.title}}</a></li>
+                    </ul>
+                </nav>
+                <h1 class="title is-3" style="max-width: 600px; line-height: 1.25;">
+                    {{ page.title }}
+                </h1>
+                <div class="is-light is-size-7">
+                    Last updated on {{page.date | date: "%b %d, '%y"}}</small>
+                </div>
+                <br/>
+                <div class="content" style="max-width: 550px">
+                    {{ page.content }}
+                </div>
+            </section>
+        </div>
+
+        {% include footer.html %}
+    </body>
+</html>

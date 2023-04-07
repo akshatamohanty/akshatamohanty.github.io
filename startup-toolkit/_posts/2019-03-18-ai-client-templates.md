@@ -6,4 +6,5 @@ description: templates for client-only ai apps using tensorflow-js and tensorflo
 date: 2019-03-18
 link: https://github.com/akshatamohanty/client-ai-template
 image: ../assets/images/404.png
+published: false
 ---

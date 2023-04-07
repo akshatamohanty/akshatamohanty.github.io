@@ -1,7 +1,7 @@
 ---
 page: Engineering
 title: Engineering
-description: "Long-form deep-dives into technical topics."
+description: "Long-form technical deep dives for geeks."
 listing_type: "engineering"
 layout: listings/default
 ---

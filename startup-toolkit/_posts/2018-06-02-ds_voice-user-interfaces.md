@@ -1,9 +1,4 @@
 ---
-showcase: false
-published: false
-
-size: 4
-group: works
 title: Speech Transcription
 description: Neural network for speech transcription to function as part of an end-to-end automatic speech recognition (ASR) pipeline
 role: Artificial Intelligence and Machine Learning
@@ -16,4 +11,5 @@ tags:
   - voice-recognition
   - keras
   - AWS
+published: false
 ---

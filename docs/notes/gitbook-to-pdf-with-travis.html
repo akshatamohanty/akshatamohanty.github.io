@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-	<title>How to convert a gitbook to PDF using CI/CD tools? | Akshata Mohanty</title>
+	<title>[tutorial] How to convert a gitbook to PDF using CI/CD tools?</title>
 	<meta name="description" content="Creating PDFs from Gitbook automatically using Travis.CI" />
 
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<meta property="og:title" content="How to convert a gitbook to PDF using CI/CD tools?" />
+	<meta property="og:title" content="[tutorial] How to convert a gitbook to PDF using CI/CD tools?" />
 	<meta property="og:description" content="" />
 	<meta property="og:image" content="" />
 	<meta property="og:image:width" content="400" />
@@ -57,6 +57,7 @@
 	</script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;900&display=swap" rel="stylesheet">
 
 	<style>
 		html, body {
@@ -64,159 +65,91 @@
 			height: 100%; 
 			position: relative;
 			overflow-x: hidden;
-		}
-
-		h1, h2, h3, h4, h5, h6 {
-			font-weight: 600;
+			font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 		}
 
 		body {
 			position: relative;
-			font-size: 16px; 
-			line-height: 24px;
+			font-size: 16px !important; 
+			line-height: 24px !important;
 		}
 
 		.breadcrumb li {
 			white-space: pre-wrap;
 		}
-
-		.navbar {
-			max-width: 100vw;
-		}
 	</style>
 </head>
 
     <style>
-        .content {
-            max-width: 900px;
-            margin: 0 auto;
-           
-            color:  #212121;
-            font-size: 1.2rem; 
-            line-height: 1.5;
-        }
-
-        .essay-content > p {
-            padding: 0.5rem 0;
-        }   
-
-        .essay-content > h1, h2, h3, h4, h5, h6 {
-            font-weight: 700;
-            margin: 24px 0 16px 0;
-        }
-
-        .essay-content > h1 {
-            font-size: 3rem;
-            line-height: 1.2;
-            margin: 3rem 0 0.5rem 0;
-        }
-
-        .essay-content > h2 {
-            font-size: 1.5rem;
-            margin: 2rem 0 1rem 0;
-        }
-
-        ul.task-list {
-            margin-left: 0;
-            padding-left: 0;
-        }
-
-        .task-list-item {
-            list-style-type: none;
-            margin-left: 0;
-        }
-
-        input.task-list-item-checkbox {
-            margin-right: 0.5rem;
-        }
-
         img {
             max-height: 400px;
         }
     </style>
-    <nav
-  class="navbar is-fixed-top is-link"
+        <nav
+  class="navbar is-fixed-top is-light"
   role="navigation"
   aria-label="main navigation"
 >
-  <div class="navbar-brand">
-    <a class="navbar-item" href="/">
-      <span>&lt;iamaatoh /&gt;</span>
-    </a>
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <span>&lt;iamaatoh /&gt;</span>
+      </a>
 
-    <a
-      role="button"
-      class="navbar-burger"
-      aria-label="menu"
-      aria-expanded="false"
-      data-target="navbarBasicExample"
-    >
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
+      <a
+        role="button"
+        class="navbar-burger"
+        aria-label="menu"
+        aria-expanded="false"
+        data-target="navbarBasicExample"
+      >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
 
-  <div id="navbarBasicExample" class="navbar-menu">
-    <div class="navbar-end">
-      <a href="/ideas" class="navbar-item">Ideas Marketplace</a>
-      <a href="/startup-toolkit" class="navbar-item">Startup Toolkit</a>
-      <a href="/engineering" class="navbar-item">Engineering</a>
-      <a href="/research" class="navbar-item">Research & Talks</a>
-      <a href="/notes" class="navbar-item">My Notes</a>
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-end">
+        <!-- <a href="/ideas" class="navbar-item">Ideas Marketplace</a> -->
+        <a href="/startup-toolkit" class="navbar-item">Startup Toolkit</a>
+        <a href="/engineering" class="navbar-item">Engineering</a>
+        <a href="/notes" class="navbar-item">Notes</a>
+      </div>
     </div>
   </div>
 </nav>
 
-        <section class="hero is-link is-medium">
-            <div class="hero-body">
-                <div class="block">
-                    <nav class="breadcrumb" aria-label="breadcrumbs">
-                        <ul>
-                          <li><a href="/">Home</a></li>
-                          <li><a href="/notes">Notes</a></li>
-                          <li class="is-active"><a href="#" aria-current="page">How to convert a gitbook to PDF using CI/CD tools?</a></li>
-                        </ul>
-                      </nav>
-                </div>
-                <h1 class="title is-2">
-                    How to convert a gitbook to PDF using CI/CD tools?
+        <div style="margin-top: 52px;">
+            <section class="section">
+                <nav class="breadcrumb" aria-label="breadcrumbs">
+                    <ul>
+                        <li><a class="is-size-7" href="/">Home</a></li>
+                        <li><a class="is-size-7" href="/notes">Notes</a></li>
+                        <li class="is-active is-size-7 is-link"><a href="#" aria-current="page">[tutorial] How to convert a gitbook to PDF using CI/CD tools?</a></li>
+                    </ul>
+                </nav>
+                <h1 class="title is-3" style="max-width: 600px; line-height: 1.25;">
+                    [tutorial] How to convert a gitbook to PDF using CI/CD tools?
                 </h1>
-                <p class="subtitle is-5">
-                    Creating PDFs from Gitbook automatically using Travis.CI
-                </p>
-                <p>
-                    <div class="field is-grouped is-grouped-multiline">
-                        <div class="tags are-medium">
-                            
-                                <a class="tag is-link is-light">Fullstack-engineering</a>
-                            
-                        </div>
-                    </div>
-                </p>
-            </div>
-        </section>
-        
-        <section class="section is-small columns">
-            <div class="column">
-                <div class="content">
-                    <div style="color: gray;">
-                       August 08, 2018</small>
-                    </div>
-                    <div class="essay-content">
-                        <h1 id="what-is-gitbook">What is Gitbook?</h1>
+                <div class="is-light is-size-7">
+                    Last updated on Aug 08, '18</small>
+                </div>
+                <br/>
+                <div class="content" style="max-width: 550px">
+                    <h5 id="what-is-gitbook">What is Gitbook?</h5>
 
 <p>Gitbook is an excellent opensource platform to generate awesome looking documentation and books from simple markdown files. They also have a paid version with an editor. However, the open source free version can easily be paired with Github and Travis to pretty much provide a nice workflow.</p>
 
 <p><br /></p>
 
-<h1 id="the-requirement">The Requirement</h1>
+<h5 id="the-requirement">The Requirement</h5>
 
 <p>The book in question was hosted on Github as Markdowns organised into folders in the <code class="language-plaintext highlighter-rouge">master</code> branch. Travis was then configured to run a command <code class="language-plaintext highlighter-rouge">gitpub</code> that automatically generated the Gitbook, cleans it up and commits it to the <code class="language-plaintext highlighter-rouge">gh-pages</code> branch, from which the github.io page is served. However, we also needed the <code class="language-plaintext highlighter-rouge">master</code> branch to have a directly downloadable PDF version of the latest Gitbook output.</p>
 
 <p><br /></p>
 
-<h1 id="the-problem">The Problem</h1>
+<h5 id="the-problem">The Problem</h5>
 
 <p>Generating a PDF with Gitbook is fairly straightforward using the <code class="language-plaintext highlighter-rouge">gitbook pdf &lt;gitbook-folder-location&gt; &lt;pdf-location&gt;.pdf</code> command. However, running this command inside Travis.CI throws the following Runtime Error.</p>
 
@@ -236,7 +169,7 @@ RuntimeError: X server required. If you are running on a headless machine, use x
 
 <p><br /></p>
 
-<h1 id="the-solution">The Solution</h1>
+<h5 id="the-solution">The Solution</h5>
 
 <p>I found this <a href="https://www.systutorials.com/241364/how-to-run-gitbook-on-a-headless-server-make-calibre-run-in-headless-server/">gold nugget</a> which didn’t work for me but definitely led me to my current solution. The workaround was to ‘wrap’ the <code class="language-plaintext highlighter-rouge">ebook-convert</code> command so that when Gitbook calls <code class="language-plaintext highlighter-rouge">ebook-convert</code>, it is actually calling the wrapper command, that calls the actual command prepended with <code class="language-plaintext highlighter-rouge">xbvf</code>.</p>
 
@@ -251,11 +184,11 @@ RuntimeError: X server required. If you are running on a headless machine, use x
 
 <p>And that’s it! Enjoy your automatic PDFs</p>
 
-<h1 id="files">Files</h1>
+<h5 id="files">Files</h5>
 
 <p><br /></p>
 
-<h2 id="wrapper-script">wrapper-script</h2>
+<h6 id="wrapper-script">wrapper-script</h6>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#!/bin/bash
 echo "Run xvfb-run /usr/bin/ebook-convert2 $@"
@@ -264,7 +197,7 @@ sudo xvfb-run /usr/bin/ebook-convert2 "$@"
 
 <p><br /></p>
 
-<h2 id="travisyml">.travis.yml</h2>
+<h6 id="travisyml">.travis.yml</h6>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  language: node_js
   node_js:
@@ -296,14 +229,13 @@ sudo xvfb-run /usr/bin/ebook-convert2 "$@"
 
 <p><br /></p>
 
-                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
 
-        
-<footer class="footer">
-    <!-- <div class='columns'>
+        <!-- 
+<footer class="footer" style="padding-top: 0">
+    <div class='columns'>
         <div class='column'>
             <div class='heading'>Writing & Notes</div>  
             <div>
@@ -324,11 +256,13 @@ sudo xvfb-run /usr/bin/ebook-convert2 "$@"
                 <div><a href='/projects'>Miscellaneous Projects</a></div>
             </div>        
         </div>
-    </div> -->
+    </div> 
     <div class='content has-text-centered'>
-        Copyright © 2023 Akshata Mohanty
+        
     </div>
-</footer>
-
+    
+</footer> 
+-->
+<footer><div class="container pt-8 pb-2 is-size-6"><small>Copyright © 2023 Akshata Mohanty</small></div></footer>
     </body>
 </html>

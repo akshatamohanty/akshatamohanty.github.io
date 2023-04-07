@@ -1,5 +1,5 @@
 ---
-title: "Bash Scripts: Quick & Simple"
+title: "[tutorial] Bash Scripts: Quick & Simple"
 description: Using bash scripts to automate daily workflows is common. But how do you write them? Here's a set of 5 use tips.
 date: 2020-10-01
 tags:

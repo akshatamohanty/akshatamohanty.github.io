@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-	<title>Building a cost-effective search. | Akshata Mohanty</title>
-	<meta name="description" content="In reprehenderit voluptate anim fugiat dolore ea anim ex deserunt laboris. Velit qui occaecat ea magna Lorem est est ipsum excepteur. Officia duis duis ut excepteur ad voluptate fugiat pariatur non amet dolor deserunt est duis. Ea nisi do fugiat laborum dolor ipsum sunt ut deserunt non anim dolor nostrud. Adipisicing eiusmod occaecat cillum ipsum duis proident exercitation qui fugiat eiusmod eiusmod proident pariatur. Deserunt labore ullamco voluptate est veniam sint aute consectetur ad Lorem minim occaecat." />
+	<title>Chip Search: Awen's Internal Search Engine</title>
+	<meta name="description" content="We built an in-house text search service for 20 million records costing less than $1 / month." />
 
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<meta property="og:title" content="Building a cost-effective search." />
+	<meta property="og:title" content="Chip Search: Awen's Internal Search Engine" />
 	<meta property="og:description" content="" />
 	<meta property="og:image" content="" />
 	<meta property="og:image:width" content="400" />
@@ -57,6 +57,7 @@
 	</script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;900&display=swap" rel="stylesheet">
 
 	<style>
 		html, body {
@@ -64,181 +65,303 @@
 			height: 100%; 
 			position: relative;
 			overflow-x: hidden;
-		}
-
-		h1, h2, h3, h4, h5, h6 {
-			font-weight: 600;
+			font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 		}
 
 		body {
 			position: relative;
-			font-size: 16px; 
-			line-height: 24px;
+			font-size: 16px !important; 
+			line-height: 24px !important;
 		}
 
 		.breadcrumb li {
 			white-space: pre-wrap;
 		}
-
-		.navbar {
-			max-width: 100vw;
-		}
 	</style>
 </head>
 
     <style>
-        .content {
-            max-width: 900px;
-            margin: 0 auto;
-           
-            color:  #212121;
-            font-size: 1.2rem; 
-            line-height: 1.5;
-        }
-
-        .essay-content > p {
-            padding: 0.5rem 0;
-        }   
-
-        .essay-content > h1, h2, h3, h4, h5, h6 {
-            font-weight: 700;
-            margin: 24px 0 16px 0;
-        }
-
-        .essay-content > h1 {
-            font-size: 3rem;
-            line-height: 1.2;
-            margin: 3rem 0 0.5rem 0;
-        }
-
-        .essay-content > h2 {
-            font-size: 1.5rem;
-            margin: 2rem 0 1rem 0;
-        }
-
-        ul.task-list {
-            margin-left: 0;
-            padding-left: 0;
-        }
-
-        .task-list-item {
-            list-style-type: none;
-            margin-left: 0;
-        }
-
-        input.task-list-item-checkbox {
-            margin-right: 0.5rem;
-        }
-
         img {
             max-height: 400px;
         }
     </style>
-    <nav
-  class="navbar is-fixed-top is-link"
+        <nav
+  class="navbar is-fixed-top is-light"
   role="navigation"
   aria-label="main navigation"
 >
-  <div class="navbar-brand">
-    <a class="navbar-item" href="/">
-      <span>&lt;iamaatoh /&gt;</span>
-    </a>
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <span>&lt;iamaatoh /&gt;</span>
+      </a>
 
-    <a
-      role="button"
-      class="navbar-burger"
-      aria-label="menu"
-      aria-expanded="false"
-      data-target="navbarBasicExample"
-    >
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
+      <a
+        role="button"
+        class="navbar-burger"
+        aria-label="menu"
+        aria-expanded="false"
+        data-target="navbarBasicExample"
+      >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
 
-  <div id="navbarBasicExample" class="navbar-menu">
-    <div class="navbar-end">
-      <a href="/ideas" class="navbar-item">Ideas Marketplace</a>
-      <a href="/startup-toolkit" class="navbar-item">Startup Toolkit</a>
-      <a href="/engineering" class="navbar-item">Engineering</a>
-      <a href="/research" class="navbar-item">Research & Talks</a>
-      <a href="/notes" class="navbar-item">My Notes</a>
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-end">
+        <!-- <a href="/ideas" class="navbar-item">Ideas Marketplace</a> -->
+        <a href="/startup-toolkit" class="navbar-item">Startup Toolkit</a>
+        <a href="/engineering" class="navbar-item">Engineering</a>
+        <a href="/notes" class="navbar-item">Notes</a>
+      </div>
     </div>
   </div>
 </nav>
 
-        <section class="hero is-link is-medium">
-            <div class="hero-body">
-                <div class="block">
+        <div style="margin-top: 52px;">
+            <section class="section is-light hero">
+                <div class="">
                     <nav class="breadcrumb" aria-label="breadcrumbs">
                         <ul>
-                          <li><a href="/">Home</a></li>
-                          <li><a href="/engineering">Engineering</a></li>
-                          <li class="is-active"><a href="#" aria-current="page">Building a cost-effective search.</a></li>
+                            <li><a class="is-size-7" href="/">Home</a></li>
+                            <li><a class="is-size-7" href="/engineering">Engineering</a></li>
+                            <li class="is-active is-size-7 is-link"><a href="#" aria-current="page">Chip Search: Awen's Internal Search Engine</a></li>
                         </ul>
-                      </nav>
+                    </nav>
+                    <h1 class="title is-3">
+                        Chip Search: Awen's Internal Search Engine
+                    </h1>
+                    <div style="max-width: 600px">
+                        We built an in-house text search service for 20 million records costing less than $1 / month.
+                    </div>
+                    <br/>
+                    <div class="is-light is-size-7">
+                        Last updated on Apr 06, '23</small>
+                    </div>
                 </div>
-                <h1 class="title is-2">
-                    Building a cost-effective search.
-                </h1>
-                <p class="subtitle is-5">
-                    In reprehenderit voluptate anim fugiat dolore ea anim ex deserunt laboris. Velit qui occaecat ea magna Lorem est est ipsum excepteur. Officia duis duis ut excepteur ad voluptate fugiat pariatur non amet dolor deserunt est duis. Ea nisi do fugiat laborum dolor ipsum sunt ut deserunt non anim dolor nostrud. Adipisicing eiusmod occaecat cillum ipsum duis proident exercitation qui fugiat eiusmod eiusmod proident pariatur. Deserunt labore ullamco voluptate est veniam sint aute consectetur ad Lorem minim occaecat.
-                </p>
-                <p>
-                    <div class="field is-grouped is-grouped-multiline">
-                        <div class="tags are-medium">
+            </section>
+            
+            <section class="section" style="max-width: 1028px;">
+                <div class="container">
+                    
+                    <div class="columns is-6">
+                        <div class="column">
                             
-                                <a class="tag is-link is-light">Ngrams</a>
-                            
-                                <a class="tag is-link is-light">Search</a>
-                            
+                            <div class="content">
+                                <h3 id="building-awens-internal-search-engine">Building Awen’s Internal Search Engine</h3>
+
+<p><a href="https://awen.finance">Awen</a> is a machine learning startup that provides AI-assisted underwriting tools to financial institutions. The underwriting process is an intensive process requiring triangulation of data from multiple sources. Aggregating, processing and consuming large datasets to surface insights is critical to Awen’s mission.</p>
+
+<p>Awen has a company database with 22 million records with details of enterprises across India. We need to build way to effectively search this database by company name, location, promoter names’ and other parameters.</p>
+
+<p>Latency was critical because this was a background service. And if this took time, other AI models dependent on this data would be stalled and take longer. All insights from Awen’s tools are realtime. Hence, a long latency wasn’t an option.</p>
+
+<p>This service would be a high traffic service with high volume of reads, but not as many writes.</p>
+
+<h3 id="evaluating-existing-options">Evaluating Existing Options</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Service</th>
+      <th>Storage</th>
+      <th>Compute</th>
+      <th>Fixed Cost</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>OpenSearch</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Mongo Atlas Search</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Typesense</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>ElasticSearch</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="rationale-for-in-house-solution">Rationale for In-House Solution</h3>
+
+<p>Nostrud eiusmod esse occaecat eiusmod aliqua commodo quis eiusmod occaecat fugiat ea. Lorem incididunt voluptate dolore commodo duis minim pariatur mollit aute dolor irure. Ad esse est nisi labore velit elit. Et consectetur officia consectetur sit minim tempor consectetur eu nostrud reprehenderit laborum. Exercitation veniam sunt eiusmod velit exercitation ex deserunt quis ullamco dolor cupidatat laborum esse. Irure occaecat ad irure ut officia ea. Est esse nulla sunt ut et exercitation elit tempor quis Lorem.</p>
+
+<p>Labore eu occaecat commodo do deserunt. Velit deserunt ullamco dolore exercitation minim in occaecat excepteur quis tempor adipisicing id. Dolore laborum aliquip elit occaecat non laboris incididunt enim eiusmod aliqua incididunt Lorem. Eiusmod aute deserunt amet magna Lorem occaecat mollit culpa tempor cupidatat ipsum.</p>
+
+<h3 id="methodology">Methodology</h3>
+
+<p>Nisi labore ad cupidatat fugiat. Et cillum sunt irure ad eu ullamco enim laboris enim ea ea. Officia deserunt consequat irure laboris aute minim magna. Laboris aliqua adipisicing et consequat cillum ut dolor elit ut. Eu eu dolore nostrud incididunt cillum aliqua consectetur deserunt dolor proident sunt reprehenderit et velit. Et aliqua veniam adipisicing nisi labore veniam dolor dolor deserunt nulla amet in. Incididunt non id aliqua duis. Nostrud laboris dolore ex duis fugiat enim cillum nisi adipisicing in velit aliquip aliqua. Nostrud excepteur eiusmod dolor sint ex nisi sit consectetur ea commodo labore id.</p>
+
+<h4 id="system-design">System Design</h4>
+
+<h4 id="how-it-works">How it works?</h4>
+
+<h4 id="ngrams-storage--computation">Ngrams: Storage &amp; Computation</h4>
+
+<h3 id="challenges">Challenges</h3>
+
+<h4 id="out-of-memory">Out of Memory</h4>
+
+<h4 id="matching">Matching</h4>
+
+<h4 id="latency">Latency</h4>
+
+<h4 id="limitations">Limitations</h4>
+
+<h3 id="conclusions">Conclusions</h3>
+
+<h4 id="demo">Demo</h4>
+
+<h4 id="insights">Insights</h4>
+
+<p>Cost was really cheap.
+Results were good.</p>
+
+                            </div>
                         </div>
-                    </div>
-                </p>
-            </div>
-        </section>
-        
-        <section class="section is-small columns">
-            <div class="column">
-                <div class="content">
-                    <div style="color: gray;">
-                       April 06, 2023</small>
-                    </div>
-                    <div class="essay-content">
-                        <p>Ideas to talk about:</p>
-
-<ol>
-  <li>what is text search and when do you want to use one?</li>
-  <li>current providers and comparisons.</li>
-  <li>our requirements.</li>
-  <li>why we decided to build it inhouse.</li>
-  <li>system diagram.</li>
-  <li>the ngram algorithm.</li>
-  <li>challenges.
-    <ul>
-      <li>ngram generation</li>
-      <li>memory errors</li>
-      <li>regeneration issues</li>
-    </ul>
-  </li>
-  <li>final product - live demo.</li>
-  <li>takeaways
-    <ul>
-      <li>what it doesn’t do</li>
-      <li>final costs</li>
-    </ul>
-  </li>
-</ol>
-
+                        
+                        <div class="column is-one-fifth">
+                            <aside class="menu">
+                                
+                                    <p class="menu-label">
+                                    Context
+                                    </p>
+                                    
+                                
+                                    <p class="menu-label">
+                                    Evaluating existing options
+                                    </p>
+                                    
+                                    <ul class="menu-list">
+                                        
+                                            <li>
+                                                <a  class="is-size-7"> Elasticsearch</a>
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                <a  class="is-size-7"> Typesense</a>
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                <a  class="is-size-7"> Opensearch</a>
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                <a  class="is-size-7"> Mongo atlas</a>
+                                                
+                                            </li>
+                                        
+                                    </ul>
+                                    
+                                
+                                    <p class="menu-label">
+                                    Rationale for In-house
+                                    </p>
+                                    
+                                
+                                    <p class="menu-label">
+                                    Methodology
+                                    </p>
+                                    
+                                    <ul class="menu-list">
+                                        
+                                            <li>
+                                                <a  class="is-size-7"> Ngrams</a>
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                <a  class="is-size-7"> System design</a>
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                <a  class="is-size-7"> Implementation</a>
+                                                
+                                            </li>
+                                        
+                                    </ul>
+                                    
+                                
+                                    <p class="menu-label">
+                                    Challenges & Quirks
+                                    </p>
+                                    
+                                    <ul class="menu-list">
+                                        
+                                            <li>
+                                                <a  class="is-size-7"> Memory issues</a>
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                <a  class="is-size-7"> Edge cases in matching</a>
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                <a  class="is-size-7"> Latency</a>
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                <a  class="is-size-7"> Limitations of lambda</a>
+                                                
+                                            </li>
+                                        
+                                    </ul>
+                                    
+                                
+                                    <p class="menu-label">
+                                    Final Product
+                                    </p>
+                                    
+                                    <ul class="menu-list">
+                                        
+                                            <li>
+                                                <a  class="is-size-7"> Demo</a>
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                <a  class="is-size-7"> Conclusion</a>
+                                                
+                                            </li>
+                                        
+                                    </ul>
+                                    
+                                
+                                </aside>
+                        </div>
+                        
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
 
-        
-<footer class="footer">
-    <!-- <div class='columns'>
+        <!-- 
+<footer class="footer" style="padding-top: 0">
+    <div class='columns'>
         <div class='column'>
             <div class='heading'>Writing & Notes</div>  
             <div>
@@ -259,11 +382,13 @@
                 <div><a href='/projects'>Miscellaneous Projects</a></div>
             </div>        
         </div>
-    </div> -->
+    </div> 
     <div class='content has-text-centered'>
-        Copyright © 2023 Akshata Mohanty
+        
     </div>
-</footer>
-
+    
+</footer> 
+-->
+<footer><div class="container pt-8 pb-2 is-size-6"><small>Copyright © 2023 Akshata Mohanty</small></div></footer>
     </body>
 </html>

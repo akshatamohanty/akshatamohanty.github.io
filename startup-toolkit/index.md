@@ -1,7 +1,7 @@
 ---
 page: Startup Toolkit
 title: Startup Toolkit
-description: "How to get started with building a technology product?"
+description: "Useful resources and guides for product & engineering at startups."
 listing_type: "startup-toolkit"
 layout: listings/default
 ---

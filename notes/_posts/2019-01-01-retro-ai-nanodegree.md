@@ -1,5 +1,6 @@
 ---
-title: "Artificial Intelligence Nanodegree: A Retrospective"
+published: false
+title: "[retro] Artificial Intelligence Nanodegree: A Retrospective"
 description: I completed the Artificial Intelligence Nanodegree - an online year-long programme covering the fundamentals of Artificial Intelligence. This is a documentation of all my projects - from search and planning, game playing agents, image recognition, NLP to my final capstone project based on voice user interfaces.
 layout: posts/default
 tags:

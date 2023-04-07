@@ -1,10 +1,10 @@
 ---
-title: "How Google Works"
+title: "[book review] How Google Works, Eric Schmidt and Jon Rosenberg"
 author: "Eric Schmidt and Jon Rosenberg"
 type: "Book Review"
 description: My take-aways from this wonderful insight into the culture of Google
 date: 2019-05-16
-layout: posts/default
+layout: posts/blog
 tags:
   - google
   - leadership
@@ -13,7 +13,7 @@ tags:
 
 <a href='https://www.goodreads.com/book/show/23158207-how-google-works' target='_blank'>How Google Works by Eric Schmidt and Jon Rosenberg</a> has been one of the defining books in my life. Even though the book was probably written with an intention of guiding corporates and entrepreneurs - it did help me consolidate some priciples that I'd like to incorporate into my life. `How Google Works` talks about Google as a company and provides an inside look into the foundations, principles and culture the company is built on. If books are meant to inspire growth, this one is definitely it. Here is a list of my five key takeaways from this amazing read.
 
-### Be a 'smart creative'
+##### Be a 'smart creative'
 
 The book centers around `smart creatives`, better known as `Googlers`. The description presented by Eric Schmidt about this genre of people is inspiring. These are people who are intelligent, agile, grow fast, and have a figure-it-out mentality. They are broad in their knowledge and skills and follow core principles of movement, elasticity and speed. Heck! I'd love to be one of these people - how can one not want to be - and not just because they get to work at Google!
 
@@ -23,7 +23,7 @@ My journey into software from Architecture started when I questioned a sub-optim
 
 A psyche worth striving for - especially when Google Maps, Google Sky - all came out of this mindset! There's an example in the book: a set of people unrelated to Google Ads, came up with solutions to make it better. Just because Larry Page stuck a post-it note somewhere saying `These ads suck`.
 
-### Concentrate on first principles
+##### Concentrate on first principles
 
 Foundations are important and everything comes from first principles. I am expecting some heated discussions with my MBA buddies over this. But it was funny and endearing how the book sort of dissed market research. Eric Schmidt minces no words in telling you to bet on technical insight, not market study. Market research can't tell you what the customer doesn't yet know he wants; but technical acuity can.
 He uses Henry Ford's famous quote - `If I had asked people what they wanted, they would have said faster horses.`
@@ -39,7 +39,7 @@ what is the most important thing you do?
 
 Already fixed a post-it note on my mirror with this.
 
-### Prioritize
+##### Prioritize
 
 Being the data-oriented company Google is, it gives a lot of numbers to quantify priority.
 
@@ -55,7 +55,7 @@ And here I am - struggling to keep track of my time - often spending 80% of time
 
 This principle had to go on the list.
 
-### Keep it open
+##### Keep it open
 
 Where Jon Ronsenberg takes being called a `router`, as a compliment - it says a lot about how intrinsically the top management believes in the virtues of openness and trust. Apparently, Larry Page remembers everything that everyone does and follows up with them. Eric Schmidt , does the same, just with notes. The products are open, the board letters are open, OKRs are open and anyone can talk to anyone.
 
@@ -71,7 +71,7 @@ Another intriguing point, was the idea of doing a self review - and using that a
 
 PS: The book talked about an app called `Snippets` to keep track of work done everyday. Could be compiled for weekly progress reports and milestones? If there are any Googlers reading this, and the code is open-source - would you be so kind to send me a link? Just curious. :)
 
-### Be anti-fragile
+##### Be anti-fragile
 
 My favorite takeaway of all - Fail well.
 

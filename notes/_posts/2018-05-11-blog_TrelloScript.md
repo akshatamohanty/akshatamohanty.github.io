@@ -1,10 +1,9 @@
 ---
 published: false
-
 group: blog1
-title:  Using the Trello API
+title: Using the Trello API
 subtitle: Trello API to collect all cards and make a checklist
-date:   2018-05-11
+date: 2018-05-11
 categories: snippet
 type: snippet
 tags: trello

@@ -5,4 +5,5 @@ image: ../assets/images/techladies-bootcamp.png
 description: An accelerated 15-week learning program to make professional developers out of non-programmers
 date: 2021-02-01
 end_date: ongoing
+published: false
 ---

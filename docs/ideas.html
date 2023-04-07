@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-	<title>Web and Performance | Akshata Mohanty</title>
-	<meta name="description" content="Commodo mollit tempor laborum sint voluptate et elit. Minim nisi consequat proident mollit incididunt in et qui qui anim amet do. Deserunt anim laborum ipsum nostrud mollit nostrud excepteur aute." />
+	<title>Ideas Marketplace</title>
+	<meta name="description" content="Commodo mollit tempor laborum sint voluptate et elit." />
 
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<meta property="og:title" content="Web and Performance" />
+	<meta property="og:title" content="Ideas Marketplace" />
 	<meta property="og:description" content="" />
 	<meta property="og:image" content="" />
 	<meta property="og:image:width" content="400" />
@@ -57,6 +57,7 @@
 	</script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;900&display=swap" rel="stylesheet">
 
 	<style>
 		html, body {
@@ -64,24 +65,17 @@
 			height: 100%; 
 			position: relative;
 			overflow-x: hidden;
-		}
-
-		h1, h2, h3, h4, h5, h6 {
-			font-weight: 600;
+			font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 		}
 
 		body {
 			position: relative;
-			font-size: 16px; 
-			line-height: 24px;
+			font-size: 16px !important; 
+			line-height: 24px !important;
 		}
 
 		.breadcrumb li {
 			white-space: pre-wrap;
-		}
-
-		.navbar {
-			max-width: 100vw;
 		}
 	</style>
 </head>
@@ -89,35 +83,36 @@
 
   <body>
     <nav
-  class="navbar is-fixed-top is-link"
+  class="navbar is-fixed-top is-light"
   role="navigation"
   aria-label="main navigation"
 >
-  <div class="navbar-brand">
-    <a class="navbar-item" href="/">
-      <span>&lt;iamaatoh /&gt;</span>
-    </a>
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <span>&lt;iamaatoh /&gt;</span>
+      </a>
 
-    <a
-      role="button"
-      class="navbar-burger"
-      aria-label="menu"
-      aria-expanded="false"
-      data-target="navbarBasicExample"
-    >
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
+      <a
+        role="button"
+        class="navbar-burger"
+        aria-label="menu"
+        aria-expanded="false"
+        data-target="navbarBasicExample"
+      >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
 
-  <div id="navbarBasicExample" class="navbar-menu">
-    <div class="navbar-end">
-      <a href="/ideas" class="navbar-item">Ideas Marketplace</a>
-      <a href="/startup-toolkit" class="navbar-item">Startup Toolkit</a>
-      <a href="/engineering" class="navbar-item">Engineering</a>
-      <a href="/research" class="navbar-item">Research & Talks</a>
-      <a href="/notes" class="navbar-item">My Notes</a>
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-end">
+        <!-- <a href="/ideas" class="navbar-item">Ideas Marketplace</a> -->
+        <a href="/startup-toolkit" class="navbar-item">Startup Toolkit</a>
+        <a href="/engineering" class="navbar-item">Engineering</a>
+        <a href="/notes" class="navbar-item">Notes</a>
+      </div>
     </div>
   </div>
 </nav>
@@ -126,10 +121,10 @@
       <section class="hero is-medium is-link">
         <div class="hero-body">
           <h1 class="title is-1">
-            Web and Performance
+            Ideas Marketplace
           </h1>
           <p class="subtitle">
-            Commodo mollit tempor laborum sint voluptate et elit. Minim nisi consequat proident mollit incididunt in et qui qui anim amet do. Deserunt anim laborum ipsum nostrud mollit nostrud excepteur aute.
+            Commodo mollit tempor laborum sint voluptate et elit.
           </p>
         </div>
       </section>
@@ -138,36 +133,14 @@
         <ul class="columns is-multiline">
           
           
-            <li style="display: flex; flex-direction: column; justify-content: space-between; margin-bottom: 24px;" class="column is-one-third">
-               
-
-
-
-<!-- Only for listing pages -->
-
-
-
-            </li>
-          
-            <li style="display: flex; flex-direction: column; justify-content: space-between; margin-bottom: 24px;" class="column is-one-third">
-               
-
-
-
-<!-- Only for listing pages -->
-
-
-
-            </li>
-          
           </ul>
       </section>
     </main>
   </body>
 
-  
-<footer class="footer">
-    <!-- <div class='columns'>
+  <!-- 
+<footer class="footer" style="padding-top: 0">
+    <div class='columns'>
         <div class='column'>
             <div class='heading'>Writing & Notes</div>  
             <div>
@@ -188,10 +161,12 @@
                 <div><a href='/projects'>Miscellaneous Projects</a></div>
             </div>        
         </div>
-    </div> -->
+    </div> 
     <div class='content has-text-centered'>
-        Copyright © 2023 Akshata Mohanty
+        
     </div>
-</footer>
-
+    
+</footer> 
+-->
+<footer><div class="container pt-8 pb-2 is-size-6"><small>Copyright © 2023 Akshata Mohanty</small></div></footer>
 </html>

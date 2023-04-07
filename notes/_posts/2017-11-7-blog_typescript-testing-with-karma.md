@@ -1,5 +1,6 @@
 ---
-title: "How to add integrate the Jasmine testing framework in Typescript project?"
+published: false
+title: "[tutorial] How to add integrate the Jasmine testing framework in Typescript project?"
 description: Lessons learned while adding the jasmine testing framework for Typescript
 date: 2017-11-7
 layout: posts/default

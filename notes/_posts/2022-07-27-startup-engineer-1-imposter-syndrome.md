@@ -1,4 +1,5 @@
 ---
+published: false
 title: "Startup Engineer #1: Managing Imposter Syndrome"
 description: Anti-Imposter Syndrome Checklist.
 date: 2022-07-27

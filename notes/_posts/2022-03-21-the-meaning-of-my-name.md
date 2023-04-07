@@ -2,7 +2,7 @@
 title: The Meaning of My Name
 description: It took me years to really understand and identify with my name.
 date: 2022-03-21
-layout: posts/default
+layout: posts/blog
 tags:
   - personal
   - growth

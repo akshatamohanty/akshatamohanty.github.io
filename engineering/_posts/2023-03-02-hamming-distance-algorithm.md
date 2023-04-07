@@ -6,6 +6,7 @@ layout: posts/default
 tags:
   - cs-basics
   - algorithms
+published: false
 ---
 
 > Distance Metrics

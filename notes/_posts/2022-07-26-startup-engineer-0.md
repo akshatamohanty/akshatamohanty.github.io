@@ -1,4 +1,5 @@
 ---
+published: false
 title: "Startup Engineer #0: The Beginning"
 description: Build for yourself, or build for others?
 date: 2022-07-26

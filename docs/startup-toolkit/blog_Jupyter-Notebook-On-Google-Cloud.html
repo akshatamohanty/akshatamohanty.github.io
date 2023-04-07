@@ -1,0 +1,9 @@
+<h3 id="to-acces-jupyter-notebook-running-in-gcloud-instance">To acces Jupyter Notebook running in GCloud Instance</h3>
+
+<ul>
+  <li>Make the compute instance static from <code class="language-plaintext highlighter-rouge">External IP Addresses</code> in the VPC Network menu</li>
+  <li>Add a Firewall rule for all instances</li>
+  <li>0.0.0.0/0 for Source IP ranges and tcp:<port-number> for Specified protocols and ports where <port-number> is the number you used above.</port-number></port-number></li>
+  <li>Hit create
+Running jupyter-notebook –port=<specified-port></specified-port></li>
+</ul>

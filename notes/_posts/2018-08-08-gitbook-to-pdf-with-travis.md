@@ -1,25 +1,25 @@
 ---
-title: "How to convert a gitbook to PDF using CI/CD tools?"
+title: "[tutorial] How to convert a gitbook to PDF using CI/CD tools?"
 description: Creating PDFs from Gitbook automatically using Travis.CI
 date: 2018-08-08
-layout: posts/default
+layout: posts/blog
 tags:
   - fullstack-engineering
 ---
 
-# What is Gitbook?
+##### What is Gitbook?
 
 Gitbook is an excellent opensource platform to generate awesome looking documentation and books from simple markdown files. They also have a paid version with an editor. However, the open source free version can easily be paired with Github and Travis to pretty much provide a nice workflow.
 
 <br />
 
-# The Requirement
+##### The Requirement
 
 The book in question was hosted on Github as Markdowns organised into folders in the `master` branch. Travis was then configured to run a command `gitpub` that automatically generated the Gitbook, cleans it up and commits it to the `gh-pages` branch, from which the github.io page is served. However, we also needed the `master` branch to have a directly downloadable PDF version of the latest Gitbook output.
 
 <br />
 
-# The Problem
+##### The Problem
 
 Generating a PDF with Gitbook is fairly straightforward using the `gitbook pdf <gitbook-folder-location> <pdf-location>.pdf` command. However, running this command inside Travis.CI throws the following Runtime Error.
 
@@ -40,7 +40,7 @@ There is no direct way to prepend the `ebook-convert` because that is getting ca
 
 <br />
 
-# The Solution
+##### The Solution
 
 I found this [gold nugget](https://www.systutorials.com/241364/how-to-run-gitbook-on-a-headless-server-make-calibre-run-in-headless-server/) which didn't work for me but definitely led me to my current solution. The workaround was to 'wrap' the `ebook-convert` command so that when Gitbook calls `ebook-convert`, it is actually calling the wrapper command, that calls the actual command prepended with `xbvf`.
 
@@ -53,11 +53,11 @@ Steps:
 
 And that's it! Enjoy your automatic PDFs
 
-# Files
+##### Files
 
 <br />
 
-## wrapper-script
+###### wrapper-script
 
 ```
 #!/bin/bash
@@ -67,7 +67,7 @@ sudo xvfb-run /usr/bin/ebook-convert2 "$@"
 
 <br />
 
-## .travis.yml
+###### .travis.yml
 
 ```
   language: node_js

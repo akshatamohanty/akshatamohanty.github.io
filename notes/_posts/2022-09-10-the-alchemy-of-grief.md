@@ -1,10 +1,7 @@
 ---
 title: The Alchemy of Grief
 date: 2022-09-10
-layout: posts/default
-tags:
-  - grief
-  - loss
+layout: posts/blog
 ---
 
 Life and loss go hand-in-hand. Everyone is going through something. And everyone has a story.

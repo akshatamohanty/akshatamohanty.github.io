@@ -6,7 +6,7 @@ image: https://images.pexels.com/photos/357514/pexels-photo-357514.jpeg?auto=com
 tags:
   - code
   - documentation
-layout: posts/default
+layout: posts/blog
 ---
 
 Up until recently, I'd considered documentation irksome and something for "hand-overs". I believed that clean, commented code should be self-documenting. Recent experiences have made me reconsider my opinion.
@@ -25,31 +25,17 @@ Documentation is great for:
 
 This post outlines some things to consider while writing documentation.
 
-# TL;DR Checklist
-
-- [ ] Plan structure of documentation - heirarchy of headings
-- [ ] Add outline in the beginning
-- [ ] Add Introduction Section; Identify stakeholders, purpose of the documentation and what it'll cover
-- [ ] Overexplain; Focus on the `Why`
-- [ ] Use templates; Standardize documentation methods of common software elements
-- [ ] Provide examples; payloads, contracts; what does the end user see?
-- [ ] Use simple diagrams! Once concept, one diagram
-- [ ] Play with layouts
-- [ ] Add complementary sections - glossary, FAQ
-- [ ] Link, link and more links!
-- [ ] Setup maintaince processes
-
-# Plan the structure
+##### Plan the structure
 
 Good stories have good structure. They consider the audience and pace the information. Documentation is the story of your code. <u>The goal of documentation is to serve the reader. To provide answers. And to do that as effectively as possible.</u>
 
 There is nothing more frustrating than going through large pieces of text, full of unexplained terminology - only to realise it wasn't relevant.
 
-# Add an outline
+##### Add an outline
 
 Add a list of contents at the outset, that'll allow the user to immediately navigate to the section most relevant to them.
 
-# Do not skip the introduction
+##### Do not skip the introduction
 
 Add an introduction, to set context and introduce stakeholders.
 
@@ -73,30 +59,30 @@ This is good place to interlink with any parent/sibling documentation. Also prov
 
 This section helps identify the key stakeholders at this point - the main development teams, the consumers of this code and the business areas that the code affects. Elaborating on this section also helps the author of the documentation think about who their target audience is. This helps tailor the writing, add/subtract any details and missing context and ascertain.
 
-# Follow Progressive Information Disclosure
+##### Follow Progressive Information Disclosure
 
 - Explain terminology, fundamental concepts building blocks early
 - Keep information scannable - by using header heirarchy
 - Information flow should be drilldown - broad to details
 
-# Overexplain - focus on the why
+##### Overexplain - focus on the why
 
 Whenever explaining logic, explain the rationale behind that logic. Documentation is a great place to capture business and technical intent in one place.
 
 When explain technical architecture or decisions, always have a section that outlines the business (soft) requirement that led to that decision.
 
-# Use Templates
+##### Use Templates
 
 When explaining technical details, use templates.
 Details about common software elements like databases, queues etc, should have the same layout of documentation. For eg, a queue can be described with a table, with the same headers, covering the same information.
 
 This helps reduce cognitive load for the reader. Once they are used the format, they already know what to expect and where to look.
 
-# Practical Views
+##### Practical Views
 
 Add practical examples, expected payload formats wherever possible. For interactions and processes - outline the end-user impact, the design language and specify contracts
 
-# Use Visualizations - Diagrams, Tables and Tools
+##### Use Visualizations - Diagrams, Tables and Tools
 
 Diagrams, charts, tables etc help provide structure to information to make it easily scannable.
 
@@ -111,11 +97,11 @@ Diagrams, charts, tables etc help provide structure to information to make it ea
 - If possible, embed videos
 - Think about the layout - documentation doesn't need to be a boring, linear dump of colorless information
 
-# Complementary Sections
+##### Complementary Sections
 
 It is easy to forget the smaller details in the big picture of things. But keep the documention comprehensive, as much as possible. Adding simple sections for monitoring, links to dashboards, other documents that provide additional context, a glossary and an FAQ section as simple ways of achieving that goal.
 
-# <a name="maintenance"></a> Maintenance
+##### <a name="maintenance"></a> Maintenance
 
 Change is the only constant in the world.
 

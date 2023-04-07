@@ -1,16 +1,14 @@
 ---
-title: How to prepare for the Google Cloud Associate Engineer Certification?
+title: "[career] How to prepare for the Google Cloud Associate Engineer Certification?"
 description: What is the Google Cloud Associate Engineer exam and how to ace it?
 date: 2020-09-23
-layout: posts/default
+layout: posts/blog
 tags:
   - cloud computing
   - GCE
 ---
 
-<div class='divider'></div>
-
-## TLDR;
+##### TLDR;
 
 **Why take the Google Associate Cloud Engineer Exam?**
 
@@ -90,7 +88,7 @@ The GCP Associate Engineer exam is **not a straightforward, fact-based exam**. I
 
 It is essential to keep this in mind while beginning your preparation.
 
-## Theory
+##### Theory
 
 If you are new to GCP (even if you are not!), it's good to first get an overview of everything that you need to cover. Here's a checklist for that:
 
@@ -110,7 +108,7 @@ Now that you have the general lay-of-the-land, it is time to dig deeper into the
 
 For each product, go through the above sections **in order**, making a mental note of any critical facts (for eg, limitations or scale of input etc). While reading the how-to-guides, consolidate your learning using [Qwiklabs](qwiklabs.com){:target="\_blank"} or GCP directly.
 
-## Critical Thinking
+##### Critical Thinking
 
 If you've prepared well with the above, this should come easy. But I felt, I did have to go back to my fact-gathering to understand some key differences and purposes in using different products, while trying to correctly solve the business-type questions.
 
@@ -120,7 +118,7 @@ Ways to get better at this:
 - Read the different case-studies listed on the product overview page
 - For any pratice questions, dig deeper into the incorrect options and try to understand why an option is incorrect, in addition to why something is correct
 
-## Practice
+##### Practice
 
 Yay! You've made it! You are reasonably confident. But, no learning sticks without practice.
 

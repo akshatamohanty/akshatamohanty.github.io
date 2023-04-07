@@ -1,5 +1,5 @@
 ---
-title: "How to model relationships with Flask-SQLAlchemy?"
+title: "[tutorial] How to model relationships with Flask-SQLAlchemy?"
 description:
 date: 2021-07-23
 tags:

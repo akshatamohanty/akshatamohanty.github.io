@@ -2,14 +2,14 @@
 title: Handling the pandemic, the developer way.
 summary:
 date: 2021-07-19
-layout: posts/default
+layout: posts/blog
 tags:
   - life
 ---
 
 The last 18-months have been hard - for everyone. We have all been united in our misery, dealt with it in our own unique ways. Some have come closer, some have drifted apart. I'm a numbers person, mostly. So, here's a quantitive twist on common anecdotes - that have helped me stay sane.
 
-# 15-minutes, documented
+##### 15-minutes, documented
 
 Last year was hard for me. I questioned every concept known to mankind - individual identity, marriage, motherhood, family, love, loyalty, trust, honesty, goals, ambitions, philanthropy, religion and science itself. Everything that life could stand for.
 
@@ -34,7 +34,7 @@ Documenting it helps externalize and depersonalize it. Allows us to look at our 
 
 <br /><br /><br />
 
-# Netflix builds for failures. So should we.
+##### Netflix builds for failures. So should we.
 
 I failed spectacularly last year in numerous ways. You probably did too.
 
@@ -83,7 +83,7 @@ Outages make the system stronger, a bit more resilient, every time they hit.
 
 <br /><br /><br />
 
-# Progress is non-linear.
+##### Progress is non-linear.
 
 In thirty years of my life, I'd never managed to do a push-up. And it would annoy the hell out of me. So this pandemic, I decided to give it another try (probably my 10th). Only this time, instead of brute-forcing it - I decided to build up to it. At a rate of only 15-minutes at a time.
 
@@ -128,7 +128,7 @@ Point is, you keep failing every day. Keep being wrong every day. And it all add
 
 <br /><br /><br />
 
-# Hey Jude
+##### Hey Jude
 
 Ok, this has nothing to do with Math and everything to do with Paul McCartney's smile. Warms my heart everytime - that's love, I think? But then, love is never enough.
 

@@ -1,7 +1,4 @@
 ---
-showcase: false
-published: false
-
 size: 4
 group: works
 title: Exploring RNNs
@@ -17,4 +14,5 @@ tags:
   - lstm
   - keras
   - AWS
+published: false
 ---

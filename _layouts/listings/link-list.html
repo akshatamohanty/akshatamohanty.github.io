@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+
+  <body>
+    {% include navigation.html %}
+    <main style="margin-top: 52px;">
+      <section class="hero is-small is-link">
+        <div class="hero-body container has-text-centered">
+          <p class="title is-3">{{ page.title }}</p>
+          <p class="subtitle is-6">{{ page.description}}</p>
+        </div>
+      </section>
+
+      {% if page.content %}
+      <div class="container">
+        {{ page.content }}
+      </div>
+      {% endif %}
+
+      <!-- my notes -->
+      <section class="section is-small">
+        <ul class="container content" style="margin: 0 auto;">
+          {% assign categories_list = site.categories %}
+          {% for post in site.categories[page.listing_type]  %}
+            <li class="container mb-2">
+              <span class="is-size-7 is-light is-flex-mobile" style="display: inline-block; width: 100px;">
+                {{ post.date | date: "%b %d, '%y" }} 
+              </span>
+              <span>
+                {% if post.link %}
+                  <a href={{post.link}} target="_blank">
+                    {{ post.title }}  ↪
+                  </a>
+                  {% else %}
+                  <a href={{post.url}}>
+                    {{ post.title }}
+                  </a>
+                {% endif %}
+              </span>
+            </li>
+          {% endfor %}
+          </ul>
+      </section>
+    </main>
+  </body>
+</html>

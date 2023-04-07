@@ -1,6 +1,6 @@
 ---
-title: "Topological Sorting and use-cases"
-description: "Reprehenderit magna laborum sunt commodo. Excepteur ex culpa ut laboris occaecat mollit est sunt. Veniam adipisicing aliqua duis mollit. Consectetur enim aliquip incididunt et in."
+title: "Applications of Topological Sorting."
+description: "Topological sorting is a way to sort nodes in a graph with the number of connections they have in a particular direction. It is incredibly useful in visualization and this is how we used it."
 date: 24-1-2018
 layout: posts/default
 tags:
