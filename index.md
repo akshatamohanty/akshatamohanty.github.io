@@ -15,7 +15,7 @@ layout: none
         <figure>
             <img width='150px' height='150px' style="border-radius: 10px;" src='/assets/akshata_alt.jpg'>
         </figure>
-        <h5><span class='is-size-6 has-text-weight-normal'>➜  ~ whoami</span> akshata</h5>
+        <h5><span class='is-size-6 has-text-weight-normal'>➜  ~ whoami</span> aatoh</h5>
         <p>I write code for fun and profit. Living in the future and building what's missing. Sharing insights bit by bit. </p>
         <p>
             <span class='tag'><a href='https://www.linkedin.com/in/iamaatoh/' target='_blank'>LinkedIn</a></span>
