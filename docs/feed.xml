@@ -3,8 +3,8 @@
   <channel>
     <title>Akshata / Aatoh</title>
     <description></description>
-    <link>http://localhost:4000</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <link>https://iamaatoh.com</link>
+    <atom:link href="https://iamaatoh.com/feed.xml" rel="self" type="application/rss+xml" />
     
       
       <item>
@@ -12,8 +12,8 @@
         <title>(wip) Inspired, Marty Cagan</title>
         <description></description>
         <pubDate>Apr 2023</pubDate>
-        <link>http://localhost:4000/notes/book-inspired-marty-cagan.html </link>
-        <guid isPermaLink="true">http://localhost:4000/notes/book-inspired-marty-cagan.html</guid>
+        <link>https://iamaatoh.com/notes/book-inspired-marty-cagan.html </link>
+        <guid isPermaLink="true">https://iamaatoh.com/notes/book-inspired-marty-cagan.html</guid>
       </item>
       
     
@@ -23,8 +23,8 @@
         <title>Building Awen's Internal Search Engine</title>
         <description></description>
         <pubDate>Apr 2023</pubDate>
-        <link>http://localhost:4000/engineering/low-cost-search.html </link>
-        <guid isPermaLink="true">http://localhost:4000/engineering/low-cost-search.html</guid>
+        <link>https://iamaatoh.com/engineering/low-cost-search.html </link>
+        <guid isPermaLink="true">https://iamaatoh.com/engineering/low-cost-search.html</guid>
       </item>
       
     
@@ -34,8 +34,8 @@
         <title>The Alchemy of Grief</title>
         <description></description>
         <pubDate>Sep 2022</pubDate>
-        <link>http://localhost:4000/notes/the-alchemy-of-grief.html </link>
-        <guid isPermaLink="true">http://localhost:4000/notes/the-alchemy-of-grief.html</guid>
+        <link>https://iamaatoh.com/notes/the-alchemy-of-grief.html </link>
+        <guid isPermaLink="true">https://iamaatoh.com/notes/the-alchemy-of-grief.html</guid>
       </item>
       
     
@@ -45,8 +45,8 @@
         <title>The Meaning of My Name</title>
         <description></description>
         <pubDate>Mar 2022</pubDate>
-        <link>http://localhost:4000/notes/the-meaning-of-my-name.html </link>
-        <guid isPermaLink="true">http://localhost:4000/notes/the-meaning-of-my-name.html</guid>
+        <link>https://iamaatoh.com/notes/the-meaning-of-my-name.html </link>
+        <guid isPermaLink="true">https://iamaatoh.com/notes/the-meaning-of-my-name.html</guid>
       </item>
       
     
@@ -56,8 +56,8 @@
         <title>Be Smart Contract-ready in 60 minutes.</title>
         <description></description>
         <pubDate>Jul 2021</pubDate>
-        <link>http://localhost:4000/practical-blockchain/deploy-an-ethereum-contract-with-remix.html </link>
-        <guid isPermaLink="true">http://localhost:4000/practical-blockchain/deploy-an-ethereum-contract-with-remix.html</guid>
+        <link>https://iamaatoh.com/practical-blockchain/deploy-an-ethereum-contract-with-remix.html </link>
+        <guid isPermaLink="true">https://iamaatoh.com/practical-blockchain/deploy-an-ethereum-contract-with-remix.html</guid>
       </item>
       
     
