@@ -1,6 +1,6 @@
 ---
 page: Home
-title: "Akshata's Cyber Fortress"
+title: "Akshata's Space"
 description: "Making technology accessible, one solution at a time."
 layout: none
 ---
