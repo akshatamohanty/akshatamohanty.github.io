@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-	<title>Chip Search: Awen's Internal Search Engine</title>
+	<title>Building Awen's Internal Search Engine</title>
 	<meta name="description" content="We built an in-house text search service for 20 million records costing less than $1 / month." />
 
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<meta property="og:title" content="Chip Search: Awen's Internal Search Engine" />
+	<meta property="og:title" content="Building Awen's Internal Search Engine" />
 	<meta property="og:description" content="" />
 	<meta property="og:image" content="" />
 	<meta property="og:image:width" content="400" />
@@ -57,6 +57,7 @@
 			// scroll
 			const body = (document.getElementsByTagName('body')[0])
 			const sideLinks = document.querySelectorAll(".menu-list-item");
+
 			body.addEventListener("scroll", event => {
 				let fromTop = body.scrollTop - 250; // top nav + hero
 				sideLinks.forEach(link => {
@@ -138,9 +139,9 @@
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-end">
         <!-- <a href="/ideas" class="navbar-item">Ideas Marketplace</a> -->
-        <a href="/startup-toolkit" class="navbar-item is-hoverable ">Startup Toolkit</a>
-        <a href="/practical-blockchain" class="navbar-item is-hoverable ">Practical Blockchain</a>
-        <a href="/engineering" class="navbar-item is-hoverable is-active">Engineering</a>
+        <!-- <a href="/startup-toolkit" class="navbar-item is-hoverable ">Startup Toolkit</a> -->
+        <!-- <a href="/practical-blockchain" class="navbar-item is-hoverable ">Practical Blockchain</a> -->
+        <!-- <a href="/engineering" class="navbar-item is-hoverable is-active">Engineering</a> -->
         <a href="/notes" class="navbar-item is-hoverable ">Notes</a>
       </div>
     </div>
@@ -154,11 +155,11 @@
                         <ul>
                             <li><a class="is-size-7" href="/">Home</a></li>
                             <li><a class="is-size-7" href="/engineering">Engineering</a></li>
-                            <li class="is-active is-size-7 is-link"><a href="#" aria-current="page">Chip Search: Awen's Internal Search Engine</a></li>
+                            <li class="is-active is-size-7 is-link"><a href="#" aria-current="page">Building Awen's Internal Search Engine</a></li>
                         </ul>
                     </nav>
                     <h1 class="title is-3">
-                        Chip Search: Awen's Internal Search Engine
+                        Building Awen's Internal Search Engine
                     </h1>
                     <div style="max-width: 600px">
                         We built an in-house text search service for 20 million records costing less than $1 / month.
@@ -305,13 +306,17 @@
                             <div class="content">
                                 <h3 id="context">Building Awen’s Internal Search Engine</h3>
 
-<p><a href="https://awen.finance">Awen</a> is a machine learning startup that provides AI-assisted underwriting tools to financial institutions. The underwriting process is an intensive process requiring triangulation of data from multiple sources. Aggregating, processing and consuming large datasets to surface insights is critical to Awen’s mission.</p>
+<p><a href="https://awen.finance">Awen</a> is a machine learning startup that provides AI-powered underwriting tools to financial institutions. The underwriting process is a labour-intensive process requiring triangulation of data from multiple sources. Aggregating, processing and consuming large datasets to surface insights is critical to Awen’s mission.</p>
 
-<p>Awen has a company database with 22 million records with details of enterprises across India. We need to build way to effectively search this database by company name, location, promoter names’ and other parameters.</p>
+<p>Awen compiles data from multiple sources. For our first use-case, we had a database of companies with 22 million records, containing rich information about their location, directors etc. We need to build way to effectively search this database by company name, location, promoter names’ and other parameters.</p>
 
 <p>Latency was critical because this was a background service. And if this took time, other AI models dependent on this data would be stalled and take longer. All insights from Awen’s tools are realtime. Hence, a long latency wasn’t an option.</p>
 
 <p>This service would be a high traffic service with high volume of reads, but not as many writes.</p>
+
+<h3 id="estimations">Estimations</h3>
+
+<p>For India alone, we had 21 million (active) entites. Assuming</p>
 
 <h3 id="evaluation">Evaluating Existing Options</h3>
 
@@ -322,6 +327,7 @@
       <th>Storage</th>
       <th>Compute</th>
       <th>Fixed Cost</th>
+      <th>Serverless</th>
     </tr>
   </thead>
   <tbody>
@@ -330,24 +336,28 @@
       <td> </td>
       <td> </td>
       <td> </td>
+      <td>Yes, with minimum commitment</td>
     </tr>
     <tr>
       <td>Mongo Atlas Search</td>
       <td> </td>
       <td> </td>
       <td> </td>
+      <td>Coming Soon</td>
     </tr>
     <tr>
       <td>Typesense</td>
       <td> </td>
       <td> </td>
       <td> </td>
+      <td>No</td>
     </tr>
     <tr>
       <td>ElasticSearch</td>
       <td> </td>
       <td> </td>
       <td> </td>
+      <td>No</td>
     </tr>
   </tbody>
 </table>

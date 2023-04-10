@@ -57,6 +57,7 @@
 			// scroll
 			const body = (document.getElementsByTagName('body')[0])
 			const sideLinks = document.querySelectorAll(".menu-list-item");
+
 			body.addEventListener("scroll", event => {
 				let fromTop = body.scrollTop - 250; // top nav + hero
 				sideLinks.forEach(link => {
@@ -138,9 +139,9 @@
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-end">
         <!-- <a href="/ideas" class="navbar-item">Ideas Marketplace</a> -->
-        <a href="/startup-toolkit" class="navbar-item is-hoverable ">Startup Toolkit</a>
-        <a href="/practical-blockchain" class="navbar-item is-hoverable ">Practical Blockchain</a>
-        <a href="/engineering" class="navbar-item is-hoverable ">Engineering</a>
+        <!-- <a href="/startup-toolkit" class="navbar-item is-hoverable ">Startup Toolkit</a> -->
+        <!-- <a href="/practical-blockchain" class="navbar-item is-hoverable ">Practical Blockchain</a> -->
+        <!-- <a href="/engineering" class="navbar-item is-hoverable ">Engineering</a> -->
         <a href="/notes" class="navbar-item is-hoverable is-active">Notes</a>
       </div>
     </div>
@@ -148,23 +149,71 @@
 </nav>
 
         <div style="margin-top: 52px;">
-            <section class="section">
-                <nav class="breadcrumb" aria-label="breadcrumbs">
-                    <ul>
-                        <li><a class="is-size-7" href="/">Home</a></li>
-                        <li><a class="is-size-7" href="/notes">Notes</a></li>
-                        <li class="is-active is-size-7 is-link"><a href="#" aria-current="page">Better Software Documentation: Checklists and Best Practices</a></li>
-                    </ul>
-                </nav>
-                <h1 class="title is-3" style="max-width: 600px; line-height: 1.25;">
-                    Better Software Documentation: Checklists and Best Practices
-                </h1>
-                <div class="is-light is-size-7">
-                    Last updated on May 20, '21</small>
+            <section class="section is-light hero">
+                <div class="">
+                    <nav class="breadcrumb" aria-label="breadcrumbs">
+                        <ul>
+                            <li><a class="is-size-7" href="/">Home</a></li>
+                            <li><a class="is-size-7" href="/notes">Notes</a></li>
+                            <li class="is-active is-size-7 is-link"><a href="#" aria-current="page">Better Software Documentation: Checklists and Best Practices</a></li>
+                        </ul>
+                    </nav>
+                    <h1 class="title is-3">
+                        Better Software Documentation: Checklists and Best Practices
+                    </h1>
+                    <div style="max-width: 600px">
+                        No one likes documentation. One could argue that good code is self-documenting. The argument would be a fair one. However, effective documentation not only helps understand code, but can also improve code. And many times, documention helps serve non-developers more than developers. So how do you write documentation that survives the test of time? Here are some ways to create better docs.
+                    </div>
+                    <br/>
+                    <div class="is-light is-size-7">
+                        Last updated on May 20, '21</small>
+                    </div>
                 </div>
-                <br/>
-                <div class="content" style="max-width: 550px">
-                    <p>Up until recently, I’d considered documentation irksome and something for “hand-overs”. I believed that clean, commented code should be self-documenting. Recent experiences have made me reconsider my opinion.</p>
+            </section>
+            
+            <section class="section post" style="max-width: 1028px;">
+                <div class="container">
+                    <div class="columns is-6">
+                        
+                        <div class="fixed column is-one-quarter is-hidden-tablet">
+                            <aside class="menu" style="position: sticky; top: 0; padding-top: 80px; margin-top: -80px;">
+
+    <p class="menu-label">
+    Overview
+    </p>
+    
+
+    <p class="menu-label">
+    
+    </p>
+    
+    <ul class="menu-list">
+        
+            <li class="is-size-7">
+                <a class="menu-list-item" href="#plan"> Planning</a>
+                
+            </li>
+        
+            <li class="is-size-7">
+                <a class="menu-list-item" href="#write"> Writing</a>
+                
+            </li>
+        
+            <li class="is-size-7">
+                <a class="menu-list-item" href="#maintain"> Maintaining</a>
+                
+            </li>
+        
+    </ul>
+    
+
+</aside>
+                        </div>
+                        
+
+                        <div class="column is-three-quarters">
+                            <div class="content">
+                                <p>Up until recently, I’d considered documentation irksome and something for “hand-overs”. I believed that clean, commented code should be self-documenting. Recent experiences have made me reconsider my opinion.</p>
 
 <p>Say you have or are a new engineer on the team. With no clue about the tech stack, the terminology and the “tribal knowledge”. So what happens in the absence of a “tribal”? Long, painful hours of reading code, following dependencies to try and distill out the intent.</p>
 
@@ -182,17 +231,19 @@
 
 <p>This post outlines some things to consider while writing documentation.</p>
 
+<h3 id="plan">Planning</h3>
+
 <h5 id="plan-the-structure">Plan the structure</h5>
 
 <p>Good stories have good structure. They consider the audience and pace the information. Documentation is the story of your code. <u>The goal of documentation is to serve the reader. To provide answers. And to do that as effectively as possible.</u></p>
 
 <p>There is nothing more frustrating than going through large pieces of text, full of unexplained terminology - only to realise it wasn’t relevant.</p>
 
-<h5 id="add-an-outline">Add an outline</h5>
+<h5 id="outline">Add an outline</h5>
 
 <p>Add a list of contents at the outset, that’ll allow the user to immediately navigate to the section most relevant to them.</p>
 
-<h5 id="do-not-skip-the-introduction">Do not skip the introduction</h5>
+<h5 id="introduction">Do not skip the introduction</h5>
 
 <p>Add an introduction, to set context and introduce stakeholders.</p>
 
@@ -220,7 +271,7 @@
 
 <p>This section helps identify the key stakeholders at this point - the main development teams, the consumers of this code and the business areas that the code affects. Elaborating on this section also helps the author of the documentation think about who their target audience is. This helps tailor the writing, add/subtract any details and missing context and ascertain.</p>
 
-<h5 id="follow-progressive-information-disclosure">Follow Progressive Information Disclosure</h5>
+<h5 id="progressive-information-disclosure">Follow Progressive Information Disclosure</h5>
 
 <ul>
   <li>Explain terminology, fundamental concepts building blocks early</li>
@@ -228,24 +279,26 @@
   <li>Information flow should be drilldown - broad to details</li>
 </ul>
 
-<h5 id="overexplain---focus-on-the-why">Overexplain - focus on the why</h5>
+<h3 id="write">About Writing</h3>
+
+<h5 id="overexplain">Overexplain - focus on the why</h5>
 
 <p>Whenever explaining logic, explain the rationale behind that logic. Documentation is a great place to capture business and technical intent in one place.</p>
 
 <p>When explain technical architecture or decisions, always have a section that outlines the business (soft) requirement that led to that decision.</p>
 
-<h5 id="use-templates">Use Templates</h5>
+<h5 id="templates">Use Templates</h5>
 
 <p>When explaining technical details, use templates.
 Details about common software elements like databases, queues etc, should have the same layout of documentation. For eg, a queue can be described with a table, with the same headers, covering the same information.</p>
 
 <p>This helps reduce cognitive load for the reader. Once they are used the format, they already know what to expect and where to look.</p>
 
-<h5 id="practical-views">Practical Views</h5>
+<h5 id="views">Practical Views</h5>
 
 <p>Add practical examples, expected payload formats wherever possible. For interactions and processes - outline the end-user impact, the design language and specify contracts</p>
 
-<h5 id="use-visualizations---diagrams-tables-and-tools">Use Visualizations - Diagrams, Tables and Tools</h5>
+<h5 id="visualizations">Use Visualizations - Diagrams, Tables and Tools</h5>
 
 <p>Diagrams, charts, tables etc help provide structure to information to make it easily scannable.</p>
 
@@ -264,11 +317,11 @@ Details about common software elements like databases, queues etc, should have t
   <li>Think about the layout - documentation doesn’t need to be a boring, linear dump of colorless information</li>
 </ul>
 
-<h5 id="complementary-sections">Complementary Sections</h5>
+<h5 id="complement">Complementary Sections</h5>
 
 <p>It is easy to forget the smaller details in the big picture of things. But keep the documention comprehensive, as much as possible. Adding simple sections for monitoring, links to dashboards, other documents that provide additional context, a glossary and an FAQ section as simple ways of achieving that goal.</p>
 
-<h5 id="-maintenance"><a name="maintenance"></a> Maintenance</h5>
+<h3 id="maintain">Maintenance</h3>
 
 <p>Change is the only constant in the world.</p>
 
@@ -280,6 +333,46 @@ Details about common software elements like databases, queues etc, should have t
   <li>Plan for periodic syncs with other stakeholders; Have them draw out mentals models, to evaluate the efficiency of your documentation</li>
 </ul>
 
+                            </div>
+                        </div>
+
+                        
+                        <div class="column is-one-quarter is-hidden-mobile">
+                            <aside class="menu" style="position: sticky; top: 0; padding-top: 80px; margin-top: -80px;">
+
+    <p class="menu-label">
+    Overview
+    </p>
+    
+
+    <p class="menu-label">
+    
+    </p>
+    
+    <ul class="menu-list">
+        
+            <li class="is-size-7">
+                <a class="menu-list-item" href="#plan"> Planning</a>
+                
+            </li>
+        
+            <li class="is-size-7">
+                <a class="menu-list-item" href="#write"> Writing</a>
+                
+            </li>
+        
+            <li class="is-size-7">
+                <a class="menu-list-item" href="#maintain"> Maintaining</a>
+                
+            </li>
+        
+    </ul>
+    
+
+</aside>
+                        </div>
+                        
+                    </div>
                 </div>
             </section>
         </div>

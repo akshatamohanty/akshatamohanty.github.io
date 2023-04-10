@@ -55,6 +55,7 @@
 			// scroll
 			const body = (document.getElementsByTagName('body')[0])
 			const sideLinks = document.querySelectorAll(".menu-list-item");
+
 			body.addEventListener("scroll", event => {
 				let fromTop = body.scrollTop - 250; // top nav + hero
 				sideLinks.forEach(link => {

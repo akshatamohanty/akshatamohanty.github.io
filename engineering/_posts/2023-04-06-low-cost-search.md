@@ -1,5 +1,5 @@
 ---
-title: "Chip Search: Awen's Internal Search Engine"
+title: "Building Awen's Internal Search Engine"
 description: We built an in-house text search service for 20 million records costing less than $1 / month.
 date: 2023-04-06
 layout: posts/default
@@ -40,22 +40,26 @@ menu:
 
 ### Building Awen's Internal Search Engine {#context}
 
-[Awen](https://awen.finance) is a machine learning startup that provides AI-assisted underwriting tools to financial institutions. The underwriting process is an intensive process requiring triangulation of data from multiple sources. Aggregating, processing and consuming large datasets to surface insights is critical to Awen's mission.
+[Awen](https://awen.finance) is a machine learning startup that provides AI-powered underwriting tools to financial institutions. The underwriting process is a labour-intensive process requiring triangulation of data from multiple sources. Aggregating, processing and consuming large datasets to surface insights is critical to Awen's mission.
 
-Awen has a company database with 22 million records with details of enterprises across India. We need to build way to effectively search this database by company name, location, promoter names' and other parameters.
+Awen compiles data from multiple sources. For our first use-case, we had a database of companies with 22 million records, containing rich information about their location, directors etc. We need to build way to effectively search this database by company name, location, promoter names' and other parameters.
 
 Latency was critical because this was a background service. And if this took time, other AI models dependent on this data would be stalled and take longer. All insights from Awen's tools are realtime. Hence, a long latency wasn't an option.
 
 This service would be a high traffic service with high volume of reads, but not as many writes.
 
+### Estimations
+
+For India alone, we had 21 million (active) entites. Assuming
+
 ### Evaluating Existing Options {#evaluation}
 
-| Service            | Storage | Compute | Fixed Cost |
-| ------------------ | ------- | ------- | ---------- |
-| OpenSearch         |         |         |            |
-| Mongo Atlas Search |         |         |            |
-| Typesense          |         |         |            |
-| ElasticSearch      |         |         |            |
+| Service            | Storage | Compute | Fixed Cost | Serverless                   |
+| ------------------ | ------- | ------- | ---------- | ---------------------------- |
+| OpenSearch         |         |         |            | Yes, with minimum commitment |
+| Mongo Atlas Search |         |         |            | Coming Soon                  |
+| Typesense          |         |         |            | No                           |
+| ElasticSearch      |         |         |            | No                           |
 
 ### Rationale for In-House Solution {#rationale}
 

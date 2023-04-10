@@ -57,6 +57,7 @@
 			// scroll
 			const body = (document.getElementsByTagName('body')[0])
 			const sideLinks = document.querySelectorAll(".menu-list-item");
+
 			body.addEventListener("scroll", event => {
 				let fromTop = body.scrollTop - 250; // top nav + hero
 				sideLinks.forEach(link => {
@@ -135,9 +136,9 @@
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-end">
         <!-- <a href="/ideas" class="navbar-item">Ideas Marketplace</a> -->
-        <a href="/startup-toolkit" class="navbar-item is-hoverable ">Startup Toolkit</a>
-        <a href="/practical-blockchain" class="navbar-item is-hoverable ">Practical Blockchain</a>
-        <a href="/engineering" class="navbar-item is-hoverable is-active">Engineering</a>
+        <!-- <a href="/startup-toolkit" class="navbar-item is-hoverable ">Startup Toolkit</a> -->
+        <!-- <a href="/practical-blockchain" class="navbar-item is-hoverable ">Practical Blockchain</a> -->
+        <!-- <a href="/engineering" class="navbar-item is-hoverable is-active">Engineering</a> -->
         <a href="/notes" class="navbar-item is-hoverable ">Notes</a>
       </div>
     </div>
@@ -159,7 +160,7 @@
 <div class="card my-3" style="max-width: 550px; width: 100%;">
     <header class="card-header">
         <p class="card-header-title is-size-5">
-        Chip Search: Awen's Internal Search Engine
+        Building Awen's Internal Search Engine
         </p>
     </header>
     <div class="card-content is-size-6">

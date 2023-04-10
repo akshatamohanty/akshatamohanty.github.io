@@ -4,6 +4,7 @@ description: hello wrold
 date: 2023-04-08
 layout: posts/default
 type: Book Review
+published: false
 ---
 
 If commands are not followed, the leader is unclear. If commands are clear, deputies are at fault - behead them. That trains the army.

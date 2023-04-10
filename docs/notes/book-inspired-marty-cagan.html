@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-	<title>Inspired, Marty Cagan</title>
-	<meta name="description" content="hello world" />
+	<title>(wip) Inspired, Marty Cagan</title>
+	<meta name="description" content="How to build products people love?" />
 
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<meta property="og:title" content="Inspired, Marty Cagan" />
+	<meta property="og:title" content="(wip) Inspired, Marty Cagan" />
 	<meta property="og:description" content="" />
 	<meta property="og:image" content="" />
 	<meta property="og:image:width" content="400" />
@@ -57,6 +57,7 @@
 			// scroll
 			const body = (document.getElementsByTagName('body')[0])
 			const sideLinks = document.querySelectorAll(".menu-list-item");
+
 			body.addEventListener("scroll", event => {
 				let fromTop = body.scrollTop - 250; // top nav + hero
 				sideLinks.forEach(link => {
@@ -138,9 +139,9 @@
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-end">
         <!-- <a href="/ideas" class="navbar-item">Ideas Marketplace</a> -->
-        <a href="/startup-toolkit" class="navbar-item is-hoverable ">Startup Toolkit</a>
-        <a href="/practical-blockchain" class="navbar-item is-hoverable ">Practical Blockchain</a>
-        <a href="/engineering" class="navbar-item is-hoverable ">Engineering</a>
+        <!-- <a href="/startup-toolkit" class="navbar-item is-hoverable ">Startup Toolkit</a> -->
+        <!-- <a href="/practical-blockchain" class="navbar-item is-hoverable ">Practical Blockchain</a> -->
+        <!-- <a href="/engineering" class="navbar-item is-hoverable ">Engineering</a> -->
         <a href="/notes" class="navbar-item is-hoverable is-active">Notes</a>
       </div>
     </div>
@@ -154,14 +155,14 @@
                         <ul>
                             <li><a class="is-size-7" href="/">Home</a></li>
                             <li><a class="is-size-7" href="/notes">Notes</a></li>
-                            <li class="is-active is-size-7 is-link"><a href="#" aria-current="page">Inspired, Marty Cagan</a></li>
+                            <li class="is-active is-size-7 is-link"><a href="#" aria-current="page">(wip) Inspired, Marty Cagan</a></li>
                         </ul>
                     </nav>
                     <h1 class="title is-3">
-                        Inspired, Marty Cagan
+                        (wip) Inspired, Marty Cagan
                     </h1>
                     <div style="max-width: 600px">
-                        hello world
+                        How to build products people love?
                     </div>
                     <br/>
                     <div class="is-light is-size-7">
@@ -178,42 +179,73 @@
                             <aside class="menu" style="position: sticky; top: 0; padding-top: 80px; margin-top: -80px;">
 
     <p class="menu-label">
-    Context
+    Overview
     </p>
     
     <ul class="menu-list">
         
             <li class="is-size-7">
-                <a class="menu-list-item" href="#about"> About marty</a>
+                <a class="menu-list-item" href="#the-startup"> What is a startup?</a>
                 
             </li>
         
             <li class="is-size-7">
-                <a class="menu-list-item" href="#why"> Why</a>
-                
-            </li>
-        
-    </ul>
-    
-
-    <p class="menu-label">
-    The Right Product
-    </p>
-    
-    <ul class="menu-list">
-        
-            <li class="is-size-7">
-                <a class="menu-list-item" href="#"> Product principles.</a>
+                <a class="menu-list-item" href="#failed-efforts-rootcause"> The root causes of failed product efforts</a>
                 
             </li>
         
             <li class="is-size-7">
-                <a class="menu-list-item" href="#the-engineers"> The engineers.</a>
+                <a class="menu-list-item" href="#the-engineers"> Engineers</a>
                 
             </li>
         
             <li class="is-size-7">
-                <a class="menu-list-item" href="#failed-efforts-rootcause"> Root cause of failed efforts</a>
+                <a class="menu-list-item" href="#principles-pdd"> Principles of product discovery</a>
+                
+            </li>
+        
+            <li class="is-size-7">
+                <a class="menu-list-item" href="#core-principles"> Core principles</a>
+                
+            </li>
+        
+            <li class="is-size-7">
+                <a class="menu-list-item" href="#discovery-iteration"> Discovery iteration</a>
+                
+            </li>
+        
+            <li class="is-size-7">
+                <a class="menu-list-item" href="#discovery-techniques"> Discovery techniques</a>
+                
+            </li>
+        
+            <li class="is-size-7">
+                <a class="menu-list-item" href="#opportunity-assessment"> Opportunity assessment</a>
+                
+            </li>
+        
+            <li class="is-size-7">
+                <a class="menu-list-item" href="#customer-letter"> Customer letter technique</a>
+                
+            </li>
+        
+            <li class="is-size-7">
+                <a class="menu-list-item" href="#startup-canvas"> Startup canvas</a>
+                
+            </li>
+        
+            <li class="is-size-7">
+                <a class="menu-list-item" href="#testing-value"> Testing value</a>
+                
+            </li>
+        
+            <li class="is-size-7">
+                <a class="menu-list-item" href="#testing-demand"> Testing demand</a>
+                
+            </li>
+        
+            <li class="is-size-7">
+                <a class="menu-list-item" href="#fake-door"> Fake door technique</a>
                 
             </li>
         
@@ -226,129 +258,46 @@
 
                         <div class="column is-three-quarters">
                             <div class="content">
-                                <p>Author: Marty Cagan
-Marty Cagan - Silicon Valley Product Group</p>
+                                <p>This is a compilation of my notes from Inspired, by Marty Cagan.</p>
 
-<h2 id="about">About Marty</h2>
+<h3 id="the-startup">What is a startup?</h3>
 
-<p>Marty has worked with Marc Andreessen, at Netscape Communications Corporation. He is a product leader.</p>
+<p>Startup can be defined as</p>
 
-<h2 id="why">Initial Thoughts &amp; Goals</h2>
+<ul>
+  <li>a new product company,</li>
+  <li>yet to achieve product/market fit i.e still trying to come up with a product that can power a viable business</li>
+  <li>one of co-founders usually does product</li>
+  <li>&lt; 25 engineers</li>
+  <li>1-5 product team</li>
+</ul>
 
-<p>Part 1: Lessons from Top Tech Companies</p>
+<p>The goal of a startup is:</p>
 
-<p>Chapter 1: Behind every great product.
-Chapter 2: Technology-powered products and services.
-Chapter 3: Startups: Getting to Product/Market Fit.
-Chapter 4: Growth-Staging Companies: Scaling to Success.
-Chapter 5: Enterprise Companies: Consistent Product Innovation.
-Chapter 6: The Root Causes of Failed Product Efforts.
-Chapter 7: Beyond Lean and Agile.
-Chapter 8: Key Concepts: Holistic Product, Continuous Discovery and Delivery, Product Discovery, Prototypes, Product Delivery, Products and Product/Market Fit, Product Vision.</p>
-
-<p>Part 2: The Right People</p>
-
-<p>Chapter 9: Principles of Strong Product Teams.
-Chapter 10: The Product Manager.
-Chapter 11: The Product Designer.
-Chapter 12: The Engineers.
-Chapter 13: Product Marketing Managers.
-Chapter 14: The Supporting Roles.
-Chapter 15: Profile: Jane Manning of Google.
-Chapter 16: The Role of Leadership.
-Chapter 17: The Head of Product Role.
-Chapter 18: The Head of Technology Role.
-Chapter 19: The Delivery Manager Role.
-Chapter 20: Principles of Structuring Product Teams.
-Chapter 21: Profile: Lea Hickman of Adobe.</p>
-
-<p>Part 3: The Right Product</p>
-
-<p>Chapter 22: The Problems with Product Roadmaps.
-Chapter 23: The Alternative to Roadmaps.
-Chapter 24: Product Vision and Product Strategy.
-Chapter 25: Principles of Product Vision.
-Chapter 26: Principles of Product Strategy.
-Chapter 27: Product Principles.
-Chapter 28: The OKR Technique.
-Chapter 29: Product Team Objectives.
-Chapter 30: Product Objectives at Scale.
-Chapter 31: Product Evangelism.
-Chapter 32: Profile: Alex Pressland of the BBC.</p>
-
-<p>Part 4: The Right Process</p>
-
-<p>Chapter 33: Principles of Product Discovery.
-Chapter 34: Discovery Techniques Overview.
-Chapter 35: Opportunity Assessment Technique.
-Chapter 36: Customer Letter Technique.
-Chapter 37: Startup Canvas Technique.
-Chapter 38: Story Map Technique.
-Chapter 39: Customer Discovery Program Technique.
-Chapter 40: Profile: Martina Lauchengco of Microsoft.
-Chapter 41: Customer Interviews.
-Chapter 42: Concierge Test Technique.
-Chapter 43: The Power of Customer Misbehaviour.
-Chapter 44: Hack Days.
-Chapter 45: Principles of Prototypes.
-Chapter 46: Feasibility Prototype Technique.
-Chapter 47: User Prototype Technique.
-Chapter 48: Live-Data Prototype Technique.
-Chapter 49: Hybrid Prototype Technique.
-Chapter 50: Testing Usability.
-Chapter 51: Testing Value.
-Chapter 52: Demand Testing Techniques.
-Chapter 53: Qualitative Value Testing Techniques.
-Chapter 54: Quantitative Value Testing Techniques.
-Chapter 55: Testing Feasibility.
-Chapter 56: Testing Business Viability.
-Chapter 57: Profile: Kate Arnold of Netflix.
-Chapter 58: Discovery Sprint Technique.
-Chapter 59: Pilot Team Technique.
-Chapter 60: Weaning an Organization off Roadmaps.
-Chapter 61: Managing Stakeholders.
-Chapter 62: Communicating Product Learnings.
-Chapter 63: Profile: Camille Hearst of Apple.</p>
-
-<p>Part 5: The Right Culture</p>
-
-<p>Chapter 64: Good Product Team / Bad Product Team.
-Chapter 65: Top Reasons for Loss of Innovation.
-Chapter 66: Top Reasons for Loss of Velocity.
-Chapter 67: Establishing a Strong Product Culture.</p>
-
-<p>Chapter 2: Technology Powered Products and Services.
-Most products are changing into technology-powered services. And those that don’t realize this are getting disrupted.
-Technology products are often combination of offline and online experiences.
-Chapter 3: Startups: Getting to Product/Market Fit.
-Technology companies can be divided into the following three categories:
-Startups
-Growth-stage
-Enterprise</p>
-
-<p>Startup can be defined as
-a new product company,
-yet to achieve product/market fit i.e still trying to come up with a product that can power a viable business
-one of co-founders usually does product
-&lt; 25 engineers
-1-5 product team</p>
-
-<p>The goal of a startup is: achieve product market fit before you run out of money.</p>
+<blockquote>
+  <p>achieve product market fit before you run out of money.</p>
+</blockquote>
 
 <p>Hence, success is usually dependent on having a team that is great at product discovery. You want a strong product that meets the needs of an initial market.</p>
 
-<h2 id="failed-efforts-rootcause">Chapter 6: The Root Causes of Failed Product Efforts.</h2>
+<h2 id="failed-efforts-rootcause">The Root Causes of Failed Product Efforts.</h2>
 
-<p>Most companies function in a Project-Centric approach. Here’s the flow:
-Idea &gt; Business Case &gt; Roadmap &gt; Requirements &gt; Design (UX) &gt; Build (Engineering) &gt; Test (QA) &gt; Deploy
-This process is waterfall. And the best product teams don’t work in the above way. The most important thing to remember here is that, most people believe they are working in an agile method while following the above method, which is mainly waterfall.</p>
+<p>Most companies function in a Project-Centric approach. Here’s the flow:</p>
 
-<p>The top-10 reasons, any of which could make a company fail are:
-Source of ideas. You are either sourcing ideas from clients or the top stakeholders. This breeds a non-empowered atmosphere. The two quoted sources are not the best sources for ideas.
-Business cases are great, if the product requires a lot of funding. But this is mostly done to prioritize roadmaps and justify paychecks. To answer the question as to what the teams are actually doing. You are trying to answer to questions:
-How much will it make
-How much will it cost
-Both these questions you can’t at this stage. Knowing what we can’t know.
+<blockquote>
+  <p>Idea &gt; Business Case &gt; Roadmap &gt; Requirements &gt; Design (UX) &gt; Build (Engineering) &gt; Test (QA) &gt; Deploy</p>
+</blockquote>
+
+<p>This process is waterfall. And the best product teams don’t work in the above way. The most important thing to remember here is that, most people believe they are working in an agile method while following the above method, which is mainly waterfall.</p>
+
+<p>The top-10 reasons, any of which could make a company fail are:</p>
+
+<ol>
+  <li>Source of ideas. You are either sourcing ideas from clients or the top stakeholders. This breeds a non-empowered atmosphere. The two quoted sources are not the best sources for ideas.</li>
+  <li>Business cases are great, if the product requires a lot of funding. But this is mostly done to prioritize roadmaps and justify paychecks. To answer the question as to what the teams are actually doing. You are trying to answer to questions:</li>
+  <li>How much will it make</li>
+  <li>How much will it cost</li>
+  <li>Both these questions you can’t at this stage. Knowing what we can’t know.
 People want product roadmaps. Yet, these aren’t really useful. Because of two inconvenient truths of product:
 Half of your ideas will not work. Customers won’t be as excited or it’ll be too hard to use. Or it’ll be too hard to build.
 Ideas which show potential will take many iterations to get right. It’s called Time to Money.
@@ -359,21 +308,23 @@ Designers are brought in too late, and are just putting lipstick on a pig.
 Product Managers become more like Project Managers, only sourcing requirements.
 Waterfall methods cause the focus to be on Projects, which are output-based. For successful products however, you need to be outcome based.
 Doing projects essentially means customer validation is pushed to the very end. All the risk is at the very end.
-Agile enters the picture far too late. Only for a certain part of the process. The overall context is not agile.</p>
+Agile enters the picture far too late. Only for a certain part of the process. The overall context is not agile.</li>
+</ol>
 
 <p>Best teams assume that 75% of all their products will fail.</p>
 
-<h2 id="the-engineers">Chapter 12: The Engineers.</h2>
+<h2 id="the-engineers">The Engineers.</h2>
 
 <p>This relationship is the most important for a product manager.
 It is your job as a product manager to
-No bluff.
 Communicate user pain points and business requirements to the engineers as much as possible.
 Provide as much latitude in terms of solutioning.
 You are responsible for morale.
-Don’t bluff. Engineers are skeptical and see through you.
-Chapter 33: Principles of Product Discovery.
-Purpose of Product Discovery
+Don’t bluff. Engineers are skeptical and see through you.</p>
+
+<h2 id="principles-pdd">Principles of Product Discovery.</h2>
+
+<p>Purpose of Product Discovery
 Purpose of product discovery is to address the critical risks:</p>
 
 <ol>
@@ -400,14 +351,17 @@ Purpose of product discovery is to address the critical risks:</p>
   <li>Shared learning. team of missionaries that have seen the customers’ pain together, learned together, understood why this is important.</li>
 </ol>
 
-<p>Discovery Iterations
-Discovery iterations are NOT delivery iterations. Discovery iteration is defined as a way of trying out at least one new idea or approach. Purpose is to get insights faster and cheaper.</p>
+<h2 id="discovery-iteration">Discovery Iterations</h2>
+
+<p>Discovery iterations are NOT delivery iterations. Discovery iteration is defined as a way of trying out at least one new idea or approach. Purpose is to get insights faster and cheaper.</p>
 
 <p>Competent product teams can test out 10-20 iterations per week. Most iterations never make it beyond you, your designer and your tech lead. Discovery iterations should be at least one order of magnitude worth of effort cheaper than a delivery iteration.</p>
 
-<p>The very act of trying to create a prototype exposes issues with the idea.
-Chapter 34: Discovery Techniques Overview.
-Discovery Framing Techniques. Quickly identify which underlying issues to tackle during discovery. What is the problem, what are the risks, where to focus time, which teams are involved.
+<p>The very act of trying to create a prototype exposes issues with the idea.</p>
+
+<h2 id="discovery-techniques">Discovery Techniques Overview.</h2>
+
+<p>Discovery Framing Techniques. Quickly identify which underlying issues to tackle during discovery. What is the problem, what are the risks, where to focus time, which teams are involved.
 Discovery Planning Techniques. Identify bigger challenges, and how to attack these.
 Discovery Ideation Techniques. Some sources of ideas are better than others. This is a wealth of promising solutions.
 Discovery Prototyping Techniques.
@@ -416,46 +370,61 @@ Testing Feasibility.
 Testing Usability.
 Testing Value.
 Testing Business Viability.
-Transformation Techniques.
-Chapter 35: Opportunity Assessment Technique.
-The technique comprises answering four key questions:
+Transformation Techniques.</p>
+
+<h2 id="opportunity-assessment">Opportunity Assessment Technique.</h2>
+
+<p>The technique comprises answering four key questions:
 What business objective is being met via this product endeavor? Is it to reduce churn, get more customers, increase revenue? This business objective refers to the business objective of the developing company.
 What is the success metric? How do we consider the product successful? Does a 1% decrease in churn count as an enormous success?
 What is the customer problem? What are we helping our users with? What customer pain point are we solving?
-What is the target market? What type of customer are we addressing? Is it the old grand mom or the teenage tech savvy grandson?
-Chapter 36: Customer Letter Technique.
-For bigger projects, with multiple goals, just answering the four questions in the Opportunity Assessment Technique may not be sufficient.</p>
+What is the target market? What type of customer are we addressing? Is it the old grand mom or the teenage tech savvy grandson?</p>
+
+<h2 id="customer-letter">Customer Letter Technique.</h2>
+
+<p>For bigger projects, with multiple goals, just answering the four questions in the Opportunity Assessment Technique may not be sufficient.</p>
 
 <p>To frame the purpose of the product endeavor, it is effective to work backwards. One way is to draft a press release. A refinement of this process is to draft a hypothetical letter from a happy customer, describing exactly why your product makes them happy and improves their life. This letter should ideally communicate the value to your team. And if it doesn’t, it’s probably not worth building.</p>
 
-<p>Chapter 37: Startup Canvas Technique.
-Startup Canvas highlights in a comprehensive way:
-The Assumptions
-The Risks, especially the big ones like in startups.</p>
+<h2 id="startup-canvas">Startup Canvas Technique.</h2>
 
-<p>The biggest risk is value risk (solution risk) in a startup. Everything else is secondary till you can provide exceptional value.
-Chapter 51: Testing Value.
-Just because you have a product, doesn’t mean someone will use it. People will only use it if the product provides significant value.</p>
+<p>Startup Canvas highlights in a comprehensive way:</p>
 
-<p>There are three aspects to testing value:
-Testing demand.
-Mostly demand is defined because most products enter a validated market. Then, the challenge is to provide a significantly more valuable product.
-Testing value qualitatively.
-This is the response of your user. Do they love it? Will they pay for it?
-Testing value quantitatively.
-This is about testing efficacy. This is easier in products like advertising, and less easy for products like games.
-Chapter 52: Testing Demand.
-One of the worst things to happen is - there is no demand.
+<ul>
+  <li>The Assumptions</li>
+  <li>The Risks, especially the big ones like in startups.</li>
+</ul>
+
+<p>The biggest risk is value risk (solution risk) in a startup. Everything else is secondary till you can provide exceptional value.</p>
+
+<h2 id="testing-value">Testing Value.</h2>
+
+<p>Just because you have a product, doesn’t mean someone will use it. People will only use it if the product provides significant value.</p>
+
+<p>There are three aspects to testing value:</p>
+
+<ul>
+  <li>Testing demand. Mostly demand is defined because most products enter a validated market. Then, the challenge is to provide a significantly more valuable product.</li>
+  <li>Testing value qualitatively. This is the response of your user. Do they love it? Will they pay for it?</li>
+  <li>Testing value quantitatively.
+This is about testing efficacy. This is easier in products like advertising, and less easy for products like games.</li>
+</ul>
+
+<h2 id="testing-demand">Testing Demand.</h2>
+
+<p>One of the worst things to happen is - there is no demand.
 You can recover from people signing up for trials and not buying. But if no one is signing up for a trial, that is fatal. This is common in new startups and it is easily avoided.</p>
+
+<h2 id="fake-door">Fake Door Technique</h2>
 
 <p>Fake Door Technique/ Landing Page Demand Test: Create a landing page and add a CTA. Talk to people who come through the fake door. We describe the offering exactly as we would if we were launching the service.</p>
 
-<p>There gives you two things:
-Idea of demand.
-List of early users.</p>
+<p>There gives you two things:</p>
 
-<p>Discovery Techniques in Risk Averse Companies
-// TODO</p>
+<ul>
+  <li>Idea of demand.</li>
+  <li>List of early users.</li>
+</ul>
 
                             </div>
                         </div>
@@ -465,42 +434,73 @@ List of early users.</p>
                             <aside class="menu" style="position: sticky; top: 0; padding-top: 80px; margin-top: -80px;">
 
     <p class="menu-label">
-    Context
+    Overview
     </p>
     
     <ul class="menu-list">
         
             <li class="is-size-7">
-                <a class="menu-list-item" href="#about"> About marty</a>
+                <a class="menu-list-item" href="#the-startup"> What is a startup?</a>
                 
             </li>
         
             <li class="is-size-7">
-                <a class="menu-list-item" href="#why"> Why</a>
-                
-            </li>
-        
-    </ul>
-    
-
-    <p class="menu-label">
-    The Right Product
-    </p>
-    
-    <ul class="menu-list">
-        
-            <li class="is-size-7">
-                <a class="menu-list-item" href="#"> Product principles.</a>
+                <a class="menu-list-item" href="#failed-efforts-rootcause"> The root causes of failed product efforts</a>
                 
             </li>
         
             <li class="is-size-7">
-                <a class="menu-list-item" href="#the-engineers"> The engineers.</a>
+                <a class="menu-list-item" href="#the-engineers"> Engineers</a>
                 
             </li>
         
             <li class="is-size-7">
-                <a class="menu-list-item" href="#failed-efforts-rootcause"> Root cause of failed efforts</a>
+                <a class="menu-list-item" href="#principles-pdd"> Principles of product discovery</a>
+                
+            </li>
+        
+            <li class="is-size-7">
+                <a class="menu-list-item" href="#core-principles"> Core principles</a>
+                
+            </li>
+        
+            <li class="is-size-7">
+                <a class="menu-list-item" href="#discovery-iteration"> Discovery iteration</a>
+                
+            </li>
+        
+            <li class="is-size-7">
+                <a class="menu-list-item" href="#discovery-techniques"> Discovery techniques</a>
+                
+            </li>
+        
+            <li class="is-size-7">
+                <a class="menu-list-item" href="#opportunity-assessment"> Opportunity assessment</a>
+                
+            </li>
+        
+            <li class="is-size-7">
+                <a class="menu-list-item" href="#customer-letter"> Customer letter technique</a>
+                
+            </li>
+        
+            <li class="is-size-7">
+                <a class="menu-list-item" href="#startup-canvas"> Startup canvas</a>
+                
+            </li>
+        
+            <li class="is-size-7">
+                <a class="menu-list-item" href="#testing-value"> Testing value</a>
+                
+            </li>
+        
+            <li class="is-size-7">
+                <a class="menu-list-item" href="#testing-demand"> Testing demand</a>
+                
+            </li>
+        
+            <li class="is-size-7">
+                <a class="menu-list-item" href="#fake-door"> Fake door technique</a>
                 
             </li>
         

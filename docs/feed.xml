@@ -9,7 +9,7 @@
       
       <item>
         <category></category>
-        <title>Inspired, Marty Cagan</title>
+        <title>(wip) Inspired, Marty Cagan</title>
         <description></description>
         <pubDate>Apr 2023</pubDate>
         <link>http://localhost:4000/notes/book-inspired-marty-cagan.html </link>
@@ -20,18 +20,7 @@
       
       <item>
         <category></category>
-        <title>Art of War,  Sun Tze</title>
-        <description></description>
-        <pubDate>Apr 2023</pubDate>
-        <link>http://localhost:4000/notes/book-art-of-war-sun-tzu.html </link>
-        <guid isPermaLink="true">http://localhost:4000/notes/book-art-of-war-sun-tzu.html</guid>
-      </item>
-      
-    
-      
-      <item>
-        <category></category>
-        <title>Chip Search: Awen's Internal Search Engine</title>
+        <title>Building Awen's Internal Search Engine</title>
         <description></description>
         <pubDate>Apr 2023</pubDate>
         <link>http://localhost:4000/engineering/low-cost-search.html </link>
@@ -58,6 +47,17 @@
         <pubDate>Mar 2022</pubDate>
         <link>http://localhost:4000/notes/the-meaning-of-my-name.html </link>
         <guid isPermaLink="true">http://localhost:4000/notes/the-meaning-of-my-name.html</guid>
+      </item>
+      
+    
+      
+      <item>
+        <category></category>
+        <title>Be Smart Contract-ready in 60 minutes.</title>
+        <description></description>
+        <pubDate>Jul 2021</pubDate>
+        <link>http://localhost:4000/practical-blockchain/deploy-an-ethereum-contract-with-remix.html </link>
+        <guid isPermaLink="true">http://localhost:4000/practical-blockchain/deploy-an-ethereum-contract-with-remix.html</guid>
       </item>
       
     
