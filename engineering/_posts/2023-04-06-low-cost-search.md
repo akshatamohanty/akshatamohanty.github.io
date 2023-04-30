@@ -1,4 +1,5 @@
 ---
+published: false
 title: "Building Awen's Internal Search Engine"
 description: We built an in-house text search service for 20 million records costing less than $1 / month.
 date: 2023-04-06

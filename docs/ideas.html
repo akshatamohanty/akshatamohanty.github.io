@@ -59,6 +59,16 @@
 			const sideLinks = document.querySelectorAll(".menu-list-item");
 
 			body.addEventListener("scroll", event => {
+				// if (window.location.hash) {
+				// 	let selected = null
+				// 	sideLinks.forEach((s) => { if (s.href.split('#')[1] === window.location.hash.substring(1)) selected = s  })
+				// 	if (selected) {
+				// 		sideLinks.forEach((s) => s.classList.remove('is-active'))
+				// 		selected.classList.add('is-active')
+				// 		return
+				// 	}
+				// }
+
 				let fromTop = body.scrollTop - 250; // top nav + hero
 				sideLinks.forEach(link => {
 					const id = link.href.split('#')[1]
@@ -138,7 +148,7 @@
         <!-- <a href="/ideas" class="navbar-item">Ideas Marketplace</a> -->
         <!-- <a href="/startup-toolkit" class="navbar-item is-hoverable ">Startup Toolkit</a> -->
         <!-- <a href="/practical-blockchain" class="navbar-item is-hoverable ">Practical Blockchain</a> -->
-        <!-- <a href="/engineering" class="navbar-item is-hoverable ">Engineering</a> -->
+        <a href="/engineering" class="navbar-item is-hoverable ">Engineering</a>
         <a href="/notes" class="navbar-item is-hoverable ">Notes</a>
       </div>
     </div>
