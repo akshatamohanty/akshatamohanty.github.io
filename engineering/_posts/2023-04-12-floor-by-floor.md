@@ -56,8 +56,6 @@ There are two ways of doing this:
 
 The second option is more commonly used as a way to avoid overflow errors. In Javascript, given that all numbers are represented as 64-bit floating point, it hardly matters thought.
 
-Operationally, the **option 1 is 2 times faster than option 2**. // todo: why?
-
 ### Use Bitwise Operators {#bitwise}
 
 Bit operators, like the name suggests, operate on the binary representations hence can be significantly faster. And, they make great shorthands.
