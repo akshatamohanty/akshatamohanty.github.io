@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>Diving into Dynamic Programming</title>
+	<meta name="description" content="Slightly less uncommon for coding interviews, Dynamic Programming questions are still a favourite. This approach is an optimization over recursion. Developed in the 1950s, in my opinion, it tests developers' ability to break down a problem into its smallest, most fundamental piece. In this article, we learn about Dynamic Programming by digging deeper into the "coin-change" problem with dynamic programming." />
+
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta property="og:title" content="Diving into Dynamic Programming" />
+	<meta property="og:description" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:image:width" content="400" />
+	<meta property="og:image:height" content="300" />
+	<meta property="og:type" content="website" />
+
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+	<link href='https://iamaatoh.com/feed.xml' rel='alternate' type='application/atom+xml'>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111560396-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-111560396-1');
+		document.fonts.ready.then((fontFaceSet) => {
+			document.body.style.opacity = 1
+		});
+	</script>
+	<script>
+		let isActive = null
+		document.addEventListener('DOMContentLoaded', () => {
+
+			// Get all "navbar-burger" elements
+			const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+			// Add a click event on each of them
+			$navbarBurgers.forEach( el => {
+				el.addEventListener('click', () => {
+
+					// Get the target from the "data-target" attribute
+					const target = el.dataset.target;
+					const $target = document.getElementById(target);
+
+					// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+					el.classList.toggle('is-active');
+					$target.classList.toggle('is-active');
+
+				});
+			});
+
+			// scroll
+			const body = (document.getElementsByTagName('body')[0])
+			const sideLinks = document.querySelectorAll(".menu-list-item");
+
+			body.addEventListener("scroll", event => {
+				// if (window.location.hash) {
+				// 	let selected = null
+				// 	sideLinks.forEach((s) => { if (s.href.split('#')[1] === window.location.hash.substring(1)) selected = s  })
+				// 	if (selected) {
+				// 		sideLinks.forEach((s) => s.classList.remove('is-active'))
+				// 		selected.classList.add('is-active')
+				// 		return
+				// 	}
+				// }
+
+				let fromTop = body.scrollTop - 250; // top nav + hero
+				sideLinks.forEach(link => {
+					const id = link.href.split('#')[1]
+					let section = document.getElementById(id);
+					if (
+						section?.offsetTop <= fromTop &&
+						section?.offsetTop + section?.offsetHeight > fromTop
+					) {
+						link.classList.add("is-active");
+						isActive = link
+					}
+				});
+				sideLinks.forEach(link => {
+					if (link !== isActive) link.classList.remove('is-active')
+				})
+			}, false);
+			});
+	</script>
+
+	<style>
+		html, body {
+			width: 100%;
+			height: 100%; 
+			position: relative;
+			overflow-x: hidden;
+			font-family: Verdana, sans-serif;
+			scroll-behavior: smooth;
+			background-color: #0C1214;
+			color: #F5F5F5;
+			overflow-y: initial !important;
+		}
+
+		body::-webkit-scrollbar {
+			background: #292929 !important;
+			width: 12px;
+		}
+
+		body {
+			position: relative;
+			font-size: 16px !important; 
+			line-height: 1.7 !important;
+		}
+
+
+		h1, h2, h3, h4, h5, h6 {
+			scroll-margin-top: 100px;
+			color: #F5F5F5 !important;
+			line-height: 1.4;
+		}
+
+		a {
+			color: #F5F5F5 !important;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		pre.highlight {
+			background-color: black;
+			color: wheat
+		}
+
+		table {
+			background-color: black;
+		}
+
+		th {
+			color: #b5b5b5 !important;
+		}
+
+		code {
+			background-color: black;
+			color: wheat
+		}
+
+		blockquote {
+			background-color: transparent !important;
+		}
+
+		section {
+			padding: 3rem 0!important;
+		}
+
+		#logo:hover {
+			text-decoration: none;
+		}
+
+		.navbar-item:hover {
+			text-decoration: none;
+		}
+
+		.breadcrumb li {
+			white-space: pre-wrap;
+			text-decoration: none !important;
+		}
+
+		.menu-list a:hover {
+			background-color: inherit;
+		}
+
+		.navbar.is-dark { 
+			background-color:#252629d4 !important;
+		}
+
+		.navbar-item:hover, .navbar-item.is-active {
+			background-color: #292929 !important ;
+		}
+
+		@media screen and (max-width: 1023px)   {
+			.navbar-menu{
+				background-color: #252629d4 !important;
+			}
+		}
+	</style>
+</head>
+
+    <style>
+        img {
+            max-height: 400px;
+        }
+    </style>
+        <nav
+  class="navbar is-fixed-top is-dark"
+  role="navigation"
+  aria-label="main navigation"
+>
+  <div class="container" style="max-width: 750px;">
+    <div class="navbar-brand">
+      <a id="logo" class="navbar-item has-text-weight-bold" href="/">
+        <span>&lt;iamaatoh /&gt;</span>
+      </a>
+
+      <a
+        role="button"
+        class="navbar-burger"
+        aria-label="menu"
+        aria-expanded="false"
+        data-target="navbar"
+      >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+ 
+    <div id="navbar" class="navbar-menu">
+      <div class="navbar-end">
+        <a href="/blog" class="navbar-item is-hoverable is-active">Notes</a>
+        <a href="/reads" class="navbar-item is-hoverable ">Bookshelf</a>
+        <!-- <a href="/projects" class="navbar-item is-hoverable ">Projects</a> -->
+        <a href="/talks" class="navbar-item is-hoverable ">Talks</a>
+        <a href="/research" class="navbar-item is-hoverable ">Research</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+        <div style="margin: 52px auto; max-width: 750px;" class="has-text-grey-light">
+            <section class="hero pb-2">
+                <nav class="breadcrumb" aria-label="breadcrumbs">
+                    <ul class="is-align-items-center">
+                        <li><a class="is-size-7" href="/">Home</a></li>
+                        <li><a class="is-size-7" href="/blog">Blog</a></li>
+                        <li class="is-active is-size-7 is-underlined has-text-ligh">&nbsp;Diving into Dynamic Programming</li>
+                    </ul>
+                </nav>
+                <h1 class="title is-3 has-text-light">
+                    Diving into Dynamic Programming
+                </h1>
+                <div>
+                    Slightly less uncommon for coding interviews, Dynamic Programming questions are still a favourite. This approach is an optimization over recursion. Developed in the 1950s, in my opinion, it tests developers' ability to break down a problem into its smallest, most fundamental piece. In this article, we learn about Dynamic Programming by digging deeper into the "coin-change" problem with dynamic programming.
+                </div>
+                <br/>
+                <div class="is-light is-size-7 has-text-grey-light">
+                    Posted on Jun 06, '18</small>
+                </div>
+            </section>
+            <hr/>
+            <section class="post pt-2">
+                <div class="container">
+                    <div class="columns is-6">
+                        
+                        <div class="fixed column is-one-quarter is-hidden-tablet">
+                            <aside class="menu" style="position: sticky; top: 0; padding-top: 80px; margin-top: -80px;">
+
+    <p class="menu-label">
+    general
+    </p>
+    
+    <ul class="menu-list has-text-grey-light">
+        
+            <li class="is-size-7">
+                <a class="menu-list-item" href="#"> Dashboard</a>
+                
+            </li>
+        
+            <li class="is-size-7">
+                <a class="menu-list-item" href="#"> Customers</a>
+                
+            </li>
+        
+    </ul>
+    
+
+    <p class="menu-label">
+    administration
+    </p>
+    
+    <ul class="menu-list has-text-grey-light">
+        
+            <li class="is-size-7">
+                <a class="menu-list-item" href="#"> Team settings</a>
+                
+            </li>
+        
+            <li class="is-size-7">
+                <a class="menu-list-item" href="#"> Manage your team</a>
+                
+                    <ul>
+                    
+                        <li class="is-size-7">
+                            <a class="menu-list-item" href="#" ></a>
+                        </li>
+                        
+                        <li class="is-size-7">
+                            <a class="menu-list-item" href="#" ></a>
+                        </li>
+                        
+                        <li class="is-size-7">
+                            <a class="menu-list-item" href="#" ></a>
+                        </li>
+                        
+                    </ul>
+                
+            </li>
+        
+            <li class="is-size-7">
+                <a class="menu-list-item" href="#"> Invitations</a>
+                
+            </li>
+        
+            <li class="is-size-7">
+                <a class="menu-list-item" href="#"> Cloud storage environment</a>
+                
+            </li>
+        
+    </ul>
+    
+
+    <p class="menu-label">
+    transactions
+    </p>
+    
+    <ul class="menu-list has-text-grey-light">
+        
+            <li class="is-size-7">
+                <a class="menu-list-item" href="#"> Payments</a>
+                
+            </li>
+        
+            <li class="is-size-7">
+                <a class="menu-list-item" href="#"> Transfers</a>
+                
+            </li>
+        
+    </ul>
+    
+
+</aside>
+                        </div>
+                        
+
+                        <div class="column  is-three-quarters">
+                            <div class="content">
+                                <h1 id="what-is-dynamic-programming">What is Dynamic Programming?</h1>
+
+<p>Dynamic Programming is a method of problem-solving where you breakdown the problems into smaller subproblems, similar to the original problem. It may or maynot use recursion.</p>
+
+<p>For example, the pet question to apply DP can be to get the nth term of the Fibonacci Series;
+By definition, F(n) = F(n-1) + F(n-2)</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">## recursive function
+</span><span class="k">def</span> <span class="nf">fibonacci</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span> <span class="k">return</span> <span class="mi">1</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span> <span class="k">return</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span> <span class="k">return</span> <span class="nf">fibonacci</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="nf">fibonacci</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span>
+
+
+<span class="c1"># print 50th term
+</span><span class="nf">print</span><span class="p">(</span> <span class="nf">fibonacci</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span> <span class="p">)</span>
+</code></pre></div></div>
+
+<p>If I tabulate the iterations:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>calling-function</th>
+      <th>dependency</th>
+      <th>dependency</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>fib(50)</td>
+      <td>fib(49)</td>
+      <td>fib(48)</td>
+    </tr>
+    <tr>
+      <td>fib(49)</td>
+      <td>fib(48)</td>
+      <td>fib(47)</td>
+    </tr>
+    <tr>
+      <td>fib(48)</td>
+      <td>fib(47)</td>
+      <td>fib(46)</td>
+    </tr>
+    <tr>
+      <td>fib(47)</td>
+      <td>fib(46)</td>
+      <td>fib(45) … and so on</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Notice how fib(48), fib(47)… are all repeated? Well, that’s redundant. We can reduce this redundancy by saving the computed values in a lookup table. This saving of results, is known as <strong>Memoization</strong></p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">## recursive function
+</span><span class="k">def</span> <span class="nf">fibonacci</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span> <span class="k">return</span> <span class="mi">1</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span> <span class="k">return</span> <span class="mi">1</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">lookup</span><span class="p">:</span> <span class="k">return</span> <span class="n">lookup</span><span class="p">[</span><span class="n">n</span><span class="p">]</span>
+    <span class="k">else</span><span class="p">:</span>
+      <span class="n">result</span> <span class="o">=</span> <span class="nf">fibonacci</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="nf">fibonacci</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span>
+      <span class="n">lookup</span><span class="p">[</span><span class="n">n</span><span class="p">]</span> <span class="o">=</span> <span class="n">result</span>
+      <span class="k">return</span> <span class="n">result</span>
+
+<span class="n">lookup</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="c1"># print 50th term
+</span><span class="nf">print</span><span class="p">(</span> <span class="nf">fibonacci</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span> <span class="p">)</span>
+</code></pre></div></div>
+
+<p><br /></p>
+
+<h1 id="how-is-it-different-from-divide-and-conquer">How is it different from Divide and Conquer?</h1>
+
+<p>Divide and Conquer algorithms like split a problem into smaller problems, solve each of them and <strong>combine</strong> the results. Dynamic Programming on the other hand is used to solve problems with <strong>overlapping subproblems</strong>, for example, like in the Fibonacci term computation explained earlier, where the same subproblem was required multiple times.</p>
+
+<p><br /></p>
+
+<h1 id="how-to-know-if-a-problem-can-be-solved-with-dp">How to know if a problem can be solved with DP?</h1>
+
+<p>DP Problems usually have the following characteristics:</p>
+
+<ul>
+  <li>For optimization problems, with a focus on arrangement or ordering of the elements</li>
+  <li>They can be broken down into subproblems which as similar to the main problem</li>
+  <li>The global optimum found using DP will usualy be more efficient and better than those found by typical heuristics</li>
+</ul>
+
+<p><br /></p>
+
+<h1 id="linear-partition-problem-work-in-progress">Linear Partition Problem (work-in-progress)</h1>
+
+<p>This problem has been described in Steven Skiena, and took me no less than 3 hours to get my head around. Hence, the <strong>attempt</strong> to explain it…</p>
+
+<h2 id="problem-statement">Problem Statement:</h2>
+
+<p>Suppose the job scanning through a shelf of books is to be split between k workers. To avoid the need to rearrange the books or separate them into piles, we can divide the shelf into k regions and assign each region to one worker.
+What is the fairest way to divide the shelf up?</p>
+
+<p>The first thing to understand is the ‘fairest’ way to divide the shelf up. The fairest way would be when all partitions are as close as possible to the sum of all pages divided equally amongst the workers.</p>
+
+<p>Let’s start with a fair solutions - say there are 300 pages, and 3 workers.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Solution</th>
+      <th>Partition A</th>
+      <th>Partition B</th>
+      <th>Partition C</th>
+      <th>Average</th>
+      <th>max</th>
+      <th>min</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fairest</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>Less Fair</td>
+      <td>101</td>
+      <td>100</td>
+      <td>99</td>
+      <td>100</td>
+      <td>101</td>
+      <td>99</td>
+    </tr>
+    <tr>
+      <td>Least Fair</td>
+      <td>120</td>
+      <td>110</td>
+      <td>70</td>
+      <td>100</td>
+      <td>120</td>
+      <td>70</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Now, the criteria of evaluation would be to check how much further from the average are each of the partition assignments. However, the constraint that the total sum of pages is constant means that if one partition is say 50 more from the average, it would pull the other two away by a sum of 50 pages from the average, to keep the total number of pages the same. Hence, if the largest partition is smaller, the amount of deviation of the other partitions is also smaller.</p>
+
+<p>So, this problem can be redescribed as - partition the set of books in such a way, maximum of the partitions is the minimum of all solutions available, i.e, if each partition is pln_n, we need to find -
+min ( max(pln_1), max(pln_2), max(pln_3) .. )</p>
+
+<p>Dynamic Programming is a systematic approach that evaluation all possible options;</p>
+
+<p>Say the books have the following number of pages:
+S1 S2 S3 S4 S5 S6 S7 S8</p>
+
+<p>Let the initial problem be - P(8, 3) i.e 8 elements with 3 partitions, which return the maximum of the partitions of the solution.</p>
+
+<p>And we put our first partition after S1 …</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>S1</td>
+      <td>S2 S3 S4 S5 S6 S7 S8</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>There are two options now - either our optimum solution has a partition after S1 or… it doesn’t.</p>
+
+<p>Case 1:
+Our optimum solution has a partition after S1. Now S2, S3… S8, need to be divided by k-1 partitions in such a way, that the maxmimum of those partitions is minimum …. which is exactly the problem we are trying to solve - but with lesser elements and lesser partitions i.e P(7, 2)</p>
+
+<p>Case 2:
+Our optimum solution doesn’t have a partition after S1. So, we look at the next solution, we might have a partition after S2. And again this reduces to the same problem as the original problem - P(5, 2)</p>
+
+<p>.. This goes on progressively till we reach the end of where the first partition might be placed.</p>
+
+<p>Now, we need the minimum of Case 1 and Case 2</p>
+
+<p>min ( P(7, 2), P(6, 2), P(5, 2) .. )</p>
+
+<p><br /></p>
+
+<h1 id="questions">Questions</h1>
+
+<p><a href="https://www.codechef.com/ZCOPRAC/problems/ZCO14002" target="_blank">Link to CodeChef Problem</a></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># wip
+
+def mt(s, st=0):
+    if len(s) == 0:
+        return 0
+
+    min_time = []
+    final = None
+    if not (lookup[st] == None):
+        return lookup[st]
+    elif len(s) &lt; 4:
+        final = s[0]
+    else:
+        a = mt(s[1:], st+1)
+        b = mt(s[2:], st+2)
+        c = mt(s[3:], st+3)
+        final = s[0] + min(a, b, c)
+    lookup[st] = final
+    return final
+
+
+for test in range(12):
+    days = input("Enter days")
+    inp = input("Enter sequence")
+    seq = [ int(z) for z in inp.split() ]
+    lookup = [None]*len(seq)
+    mt(seq)
+    print(min(lookup[0:3]))
+
+</code></pre></div></div>
+
+<p><br /></p>
+
+<h1 id="resources">Resources</h1>
+
+<ul>
+  <li>The Algorithm Design Manual - Steven Skiena</li>
+</ul>
+
+                            </div>
+                        </div>
+
+                        
+                        <div class="column is-one-quarter is-hidden-mobile ">
+                            <aside class="menu" style="position: sticky; top: 0; padding-top: 80px; margin-top: -80px;">
+
+    <p class="menu-label">
+    general
+    </p>
+    
+    <ul class="menu-list has-text-grey-light">
+        
+            <li class="is-size-7">
+                <a class="menu-list-item" href="#"> Dashboard</a>
+                
+            </li>
+        
+            <li class="is-size-7">
+                <a class="menu-list-item" href="#"> Customers</a>
+                
+            </li>
+        
+    </ul>
+    
+
+    <p class="menu-label">
+    administration
+    </p>
+    
+    <ul class="menu-list has-text-grey-light">
+        
+            <li class="is-size-7">
+                <a class="menu-list-item" href="#"> Team settings</a>
+                
+            </li>
+        
+            <li class="is-size-7">
+                <a class="menu-list-item" href="#"> Manage your team</a>
+                
+                    <ul>
+                    
+                        <li class="is-size-7">
+                            <a class="menu-list-item" href="#" ></a>
+                        </li>
+                        
+                        <li class="is-size-7">
+                            <a class="menu-list-item" href="#" ></a>
+                        </li>
+                        
+                        <li class="is-size-7">
+                            <a class="menu-list-item" href="#" ></a>
+                        </li>
+                        
+                    </ul>
+                
+            </li>
+        
+            <li class="is-size-7">
+                <a class="menu-list-item" href="#"> Invitations</a>
+                
+            </li>
+        
+            <li class="is-size-7">
+                <a class="menu-list-item" href="#"> Cloud storage environment</a>
+                
+            </li>
+        
+    </ul>
+    
+
+    <p class="menu-label">
+    transactions
+    </p>
+    
+    <ul class="menu-list has-text-grey-light">
+        
+            <li class="is-size-7">
+                <a class="menu-list-item" href="#"> Payments</a>
+                
+            </li>
+        
+            <li class="is-size-7">
+                <a class="menu-list-item" href="#"> Transfers</a>
+                
+            </li>
+        
+    </ul>
+    
+
+</aside>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer style="max-width: 750px; margin: 0 auto" class="pb-2"><small>Copyright © 2023 iamaatoh.com</small></footer>
+    </body>
+</html>

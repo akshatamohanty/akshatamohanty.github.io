@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+
+  <body>
+    {% include navigation.html %}
+    <main style="margin: 120px auto; max-width: 750px;">
+        <div class='m-4 has-text-light'>
+          <p class="title is-3 has-text-light" style="padding-bottom: 16px;">{{ page.title }}</p>
+          <p class="subtitle is-6 has-text-light" style="line-height: 1.6;">{{ page.description}}</p>
+        </div>
+        <div class="m-4 content has-text-light pt-4" style="max-width: 750px">
+            {{ content }}
+        </div>
+    </main>
+  </body>
+</html>

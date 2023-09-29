@@ -1,17 +1,19 @@
 # File: _config.yml
-destination: docs
+destination: _dist
 encoding: UTF-8
-name: Akshata / Aatoh
-description: "I engineer technology products for fun, efficiency and profit. Futurizing the world one solution at a time. Sharing my insights as I go along."
+name: aatoh
+description: "Coding for fun and food, in that order."
 url: https://iamaatoh.com
 permalink: none
-sass:
-  sass_dir: styles/_scss
 author:
-  name: "Akshata Mohanty"
+  name: "aatoh"
   url: https://iamaatoh.com
-version: 6.0.0
+version: 7.0.0
 github:
   repo: https://github.com/akshatamohanty/akshatamohanty.github.io
+pagination:
+  enabled: true
+  per_page: 10
 plugins:
   - jekyll-sitemap
+  - jekyll-paginate-v2

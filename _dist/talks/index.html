@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Technical Talks</title>
+	<meta name="description" content="<p> <br/>I speak about web applications, cloud computing and blockchains. If you'd like me to speak at your event, drop me a mail at <a class='has-text-white is-underlined' href='mailto:iamaatoh@gmail.com' target='_blank'>iamaatoh@gmail.com</a> <br/><br/> Here's my <a href='https://sessionize.com/iamaatoh/' target='blank' style='text-decoration:underline;'>profile</a> on Sessionize. <br/><br/> <p>" />
+
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta property="og:title" content="Technical Talks" />
+	<meta property="og:description" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:image:width" content="400" />
+	<meta property="og:image:height" content="300" />
+	<meta property="og:type" content="website" />
+
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+	<link href='https://iamaatoh.com/feed.xml' rel='alternate' type='application/atom+xml'>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111560396-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-111560396-1');
+		document.fonts.ready.then((fontFaceSet) => {
+			document.body.style.opacity = 1
+		});
+	</script>
+	<script>
+		let isActive = null
+		document.addEventListener('DOMContentLoaded', () => {
+
+			// Get all "navbar-burger" elements
+			const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+			// Add a click event on each of them
+			$navbarBurgers.forEach( el => {
+				el.addEventListener('click', () => {
+
+					// Get the target from the "data-target" attribute
+					const target = el.dataset.target;
+					const $target = document.getElementById(target);
+
+					// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+					el.classList.toggle('is-active');
+					$target.classList.toggle('is-active');
+
+				});
+			});
+
+			// scroll
+			const body = (document.getElementsByTagName('body')[0])
+			const sideLinks = document.querySelectorAll(".menu-list-item");
+
+			body.addEventListener("scroll", event => {
+				// if (window.location.hash) {
+				// 	let selected = null
+				// 	sideLinks.forEach((s) => { if (s.href.split('#')[1] === window.location.hash.substring(1)) selected = s  })
+				// 	if (selected) {
+				// 		sideLinks.forEach((s) => s.classList.remove('is-active'))
+				// 		selected.classList.add('is-active')
+				// 		return
+				// 	}
+				// }
+
+				let fromTop = body.scrollTop - 250; // top nav + hero
+				sideLinks.forEach(link => {
+					const id = link.href.split('#')[1]
+					let section = document.getElementById(id);
+					if (
+						section?.offsetTop <= fromTop &&
+						section?.offsetTop + section?.offsetHeight > fromTop
+					) {
+						link.classList.add("is-active");
+						isActive = link
+					}
+				});
+				sideLinks.forEach(link => {
+					if (link !== isActive) link.classList.remove('is-active')
+				})
+			}, false);
+			});
+	</script>
+
+	<style>
+		html, body {
+			width: 100%;
+			height: 100%; 
+			position: relative;
+			overflow-x: hidden;
+			font-family: Verdana, sans-serif;
+			scroll-behavior: smooth;
+			background-color: #0C1214;
+			color: #F5F5F5;
+			overflow-y: initial !important;
+		}
+
+		body::-webkit-scrollbar {
+			background: #292929 !important;
+			width: 12px;
+		}
+
+		body {
+			position: relative;
+			font-size: 16px !important; 
+			line-height: 1.7 !important;
+		}
+
+
+		h1, h2, h3, h4, h5, h6 {
+			scroll-margin-top: 100px;
+			color: #F5F5F5 !important;
+			line-height: 1.4;
+		}
+
+		a {
+			color: #F5F5F5 !important;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		pre.highlight {
+			background-color: black;
+			color: wheat
+		}
+
+		table {
+			background-color: black;
+		}
+
+		th {
+			color: #b5b5b5 !important;
+		}
+
+		code {
+			background-color: black;
+			color: wheat
+		}
+
+		blockquote {
+			background-color: transparent !important;
+		}
+
+		section {
+			padding: 3rem 0!important;
+		}
+
+		#logo:hover {
+			text-decoration: none;
+		}
+
+		.navbar-item:hover {
+			text-decoration: none;
+		}
+
+		.breadcrumb li {
+			white-space: pre-wrap;
+			text-decoration: none !important;
+		}
+
+		.menu-list a:hover {
+			background-color: inherit;
+		}
+
+		.navbar.is-dark { 
+			background-color:#252629d4 !important;
+		}
+
+		.navbar-item:hover, .navbar-item.is-active {
+			background-color: #292929 !important ;
+		}
+
+		@media screen and (max-width: 1023px)   {
+			.navbar-menu{
+				background-color: #252629d4 !important;
+			}
+		}
+	</style>
+</head>
+
+
+  <body>
+    <nav
+  class="navbar is-fixed-top is-dark"
+  role="navigation"
+  aria-label="main navigation"
+>
+  <div class="container" style="max-width: 750px;">
+    <div class="navbar-brand">
+      <a id="logo" class="navbar-item has-text-weight-bold" href="/">
+        <span>&lt;iamaatoh /&gt;</span>
+      </a>
+
+      <a
+        role="button"
+        class="navbar-burger"
+        aria-label="menu"
+        aria-expanded="false"
+        data-target="navbar"
+      >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+ 
+    <div id="navbar" class="navbar-menu">
+      <div class="navbar-end">
+        <a href="/blog" class="navbar-item is-hoverable ">Notes</a>
+        <a href="/reads" class="navbar-item is-hoverable ">Bookshelf</a>
+        <!-- <a href="/projects" class="navbar-item is-hoverable ">Projects</a> -->
+        <a href="/talks" class="navbar-item is-hoverable is-active">Talks</a>
+        <a href="/research" class="navbar-item is-hoverable ">Research</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    <main style="margin: 120px auto; max-width: 750px;">
+
+          <div class='m-4 has-text-light'>
+            <p class="title is-3 has-text-light" style="padding-bottom: 16px;">Technical Talks</p>
+            <p class="subtitle is-6 has-text-light" style="line-height: 1.6;"><p> <br/>I speak about web applications, cloud computing and blockchains. If you'd like me to speak at your event, drop me a mail at <a class='has-text-white is-underlined' href='mailto:iamaatoh@gmail.com' target='_blank'>iamaatoh@gmail.com</a> <br/><br/> Here's my <a href='https://sessionize.com/iamaatoh/' target='blank' style='text-decoration:underline;'>profile</a> on Sessionize. <br/><br/> <p></p>
+          </div>
+
+          <div class="m-4 is-flex is-flex-direction-column">
+            
+            
+            
+              
+                <div class="has-text-white my-3 columns" style="width: 100%;padding-bottom: 12px;">
+    <div class="column">
+        <iframe src="https://www.youtube.com/embed/c9R0aqaqiPY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="column">
+        <p class="is-size-7 has-text-grey-light">Apr 03, '21</p>
+        <div class="is-size-5 has-text-light mb-1">
+            <a class='has-text-white has-text-weight-light' target="_blank" href=https://youtu.be/c9R0aqaqiPY>From Construction Architects to Tech Architects</a>
+        </div>
+        <p style="font-size: 14px; line-height: 1.3;" class="has-text-grey-light">
+            Transitioning into the tech industry
+        </p>
+    </div>
+</div>
+              
+            
+              
+                <div class="has-text-white my-3 columns" style="width: 100%;padding-bottom: 12px;">
+    <div class="column">
+        
+    </div>
+    <div class="column">
+        <p class="is-size-7 has-text-grey-light">Feb 01, '21</p>
+        <div class="is-size-5 has-text-light mb-1">
+            <a class='has-text-white has-text-weight-light' target="_blank" href=https://techladies.co/bootcamp-7/>TechLadies Bootcamp #7</a>
+        </div>
+        <p style="font-size: 14px; line-height: 1.3;" class="has-text-grey-light">
+            An accelerated 15-week learning program to make professional developers out of non-programmers
+        </p>
+    </div>
+</div>
+              
+            
+              
+                <div class="has-text-white my-3 columns" style="width: 100%;padding-bottom: 12px;">
+    <div class="column">
+        <iframe src="https://www.youtube.com/embed/kS3UycijvDY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="column">
+        <p class="is-size-7 has-text-grey-light">Sep 08, '20</p>
+        <div class="is-size-5 has-text-light mb-1">
+            <a class='has-text-white has-text-weight-light' target="_blank" href=https://www.youtube.com/watch?v=kS3UycijvDY>How to break into Cloud Computing?</a>
+        </div>
+        <p style="font-size: 14px; line-height: 1.3;" class="has-text-grey-light">
+            
+        </p>
+    </div>
+</div>
+              
+            
+              
+                <div class="has-text-white my-3 columns" style="width: 100%;padding-bottom: 12px;">
+    <div class="column">
+        <video controls width="300px"> <source src="https://github.com/ReactJSSG/meetups/blob/master/recordings/aug-2020/akshata.mp4?raw=true"></source> </video>
+    </div>
+    <div class="column">
+        <p class="is-size-7 has-text-grey-light">Aug 18, '20</p>
+        <div class="is-size-5 has-text-light mb-1">
+            <a class='has-text-white has-text-weight-light' target="_blank" href=https://github.com/ReactJSSG/meetups/blob/master/recordings/aug-2020/akshata.mp4>React-ing faster: Optimize components for performance</a>
+        </div>
+        <p style="font-size: 14px; line-height: 1.3;" class="has-text-grey-light">
+            Strategies to make your React components faster
+        </p>
+    </div>
+</div>
+              
+            
+              
+                <div class="has-text-white my-3 columns" style="width: 100%;padding-bottom: 12px;">
+    <div class="column">
+        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FTechLadies%2Fvideos%2F222708802311279%2F&show_text=0&width=560" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+    </div>
+    <div class="column">
+        <p class="is-size-7 has-text-grey-light">Aug 01, '20</p>
+        <div class="is-size-5 has-text-light mb-1">
+            <a class='has-text-white has-text-weight-light' target="_blank" href=https://www.facebook.com/watch/?v=222708802311279&extid=t2JebCcTTEpBCOqJ>Introduction to NodeJs</a>
+        </div>
+        <p style="font-size: 14px; line-height: 1.3;" class="has-text-grey-light">
+            Workshop by Fara Blanco, Thomas Chia & Akshata Mohanty
+        </p>
+    </div>
+</div>
+              
+            
+              
+                <div class="has-text-white my-3 columns" style="width: 100%;padding-bottom: 12px;">
+    <div class="column">
+        <iframe src="https://www.youtube.com/embed/hr8NPNJjIn0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="column">
+        <p class="is-size-7 has-text-grey-light">Jul 31, '20</p>
+        <div class="is-size-5 has-text-light mb-1">
+            <a class='has-text-white has-text-weight-light' target="_blank" href=https://www.youtube.com/watch?v=hr8NPNJjIn0>AI for Non-PhDs: AI Superpowers in 30 minutes @teensinai, London</a>
+        </div>
+        <p style="font-size: 14px; line-height: 1.3;" class="has-text-grey-light">
+            Exploring accessible AI by building a voice-app
+        </p>
+    </div>
+</div>
+              
+            
+              
+                <div class="has-text-white my-3 columns" style="width: 100%;padding-bottom: 12px;">
+    <div class="column">
+        <iframe src="https://www.youtube.com/embed/WbVTrbSzzbs?start=4533" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="column">
+        <p class="is-size-7 has-text-grey-light">Jun 17, '20</p>
+        <div class="is-size-5 has-text-light mb-1">
+            <a class='has-text-white has-text-weight-light' target="_blank" href=https://www.youtube.com/embed/WbVTrbSzzbs?start=4533>Handling performance in React @talk.js, Singapore</a>
+        </div>
+        <p style="font-size: 14px; line-height: 1.3;" class="has-text-grey-light">
+            Case Study describing the optimization process of a real-life a chat feature
+        </p>
+    </div>
+</div>
+              
+            
+              
+                <div class="has-text-white my-3 columns" style="width: 100%;padding-bottom: 12px;">
+    <div class="column">
+        <iframe src="https://www.youtube.com/embed/1gEaPTeuBmE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="column">
+        <p class="is-size-7 has-text-grey-light">May 18, '19</p>
+        <div class="is-size-5 has-text-light mb-1">
+            <a class='has-text-white has-text-weight-light' target="_blank" href=https://www.youtube.com/embed/1gEaPTeuBmE>Demystifying Client-side AI @juniordevsg, Singapore</a>
+        </div>
+        <p style="font-size: 14px; line-height: 1.3;" class="has-text-grey-light">
+            Learn to deploy an AI app without a server
+        </p>
+    </div>
+</div>
+              
+            
+          </div>
+
+          
+          </nav>
+
+    </main>
+  </body>
+</html>

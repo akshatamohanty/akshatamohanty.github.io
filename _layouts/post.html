@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    {% include head.html %}
+    <style>
+        img {
+            max-height: 400px;
+        }
+    </style>
+        {% include navigation.html %}
+        <div style="margin: 52px auto; max-width: 750px;" class="has-text-grey-light">
+            <section class="hero pb-2">
+                <nav class="breadcrumb" aria-label="breadcrumbs">
+                    <ul class="is-align-items-center">
+                        <li><a class="is-size-7" href="/">Home</a></li>
+                        <li><a class="is-size-7" href="/{{page.categories[0]}}">{{page.categories[0] | capitalize }}</a></li>
+                        <li class="is-active is-size-7 is-underlined has-text-ligh">&nbsp;{{page.title}}</li>
+                    </ul>
+                </nav>
+                <h1 class="title is-3 has-text-light">
+                    {{ page.title }}
+                </h1>
+                <div>
+                    {{ page.description }}
+                </div>
+                <br/>
+                <div class="is-light is-size-7 has-text-grey-light">
+                    Posted on {{page.date | date: "%b %d, '%y"}}</small>
+                </div>
+            </section>
+            <hr/>
+            <section class="post pt-2">
+                <div class="container">
+                    <div class="columns is-6">
+                        {% if page.menu %}
+                        <div class="fixed column is-one-quarter is-hidden-tablet">
+                            {% include menu.html %}
+                        </div>
+                        {% endif %}
+
+                        <div class="column {% if page.menu %} is-three-quarters{% endif %}">
+                            <div class="content">
+                                {{ page.content }}
+                            </div>
+                        </div>
+
+                        {% if page.menu %}
+                        <div class="column is-one-quarter is-hidden-mobile ">
+                            {% include menu.html %}
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        {% include footer.html %}
+    </body>
+</html>

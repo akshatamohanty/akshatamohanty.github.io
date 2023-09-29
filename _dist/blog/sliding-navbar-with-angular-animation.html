@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>How to make an animated navigation component using Angular?</title>
+	<meta name="description" content="Getting started with Angular Animations by building a simple component" />
+
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta property="og:title" content="How to make an animated navigation component using Angular?" />
+	<meta property="og:description" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:image:width" content="400" />
+	<meta property="og:image:height" content="300" />
+	<meta property="og:type" content="website" />
+
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+	<link href='https://iamaatoh.com/feed.xml' rel='alternate' type='application/atom+xml'>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111560396-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-111560396-1');
+		document.fonts.ready.then((fontFaceSet) => {
+			document.body.style.opacity = 1
+		});
+	</script>
+	<script>
+		let isActive = null
+		document.addEventListener('DOMContentLoaded', () => {
+
+			// Get all "navbar-burger" elements
+			const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+			// Add a click event on each of them
+			$navbarBurgers.forEach( el => {
+				el.addEventListener('click', () => {
+
+					// Get the target from the "data-target" attribute
+					const target = el.dataset.target;
+					const $target = document.getElementById(target);
+
+					// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+					el.classList.toggle('is-active');
+					$target.classList.toggle('is-active');
+
+				});
+			});
+
+			// scroll
+			const body = (document.getElementsByTagName('body')[0])
+			const sideLinks = document.querySelectorAll(".menu-list-item");
+
+			body.addEventListener("scroll", event => {
+				// if (window.location.hash) {
+				// 	let selected = null
+				// 	sideLinks.forEach((s) => { if (s.href.split('#')[1] === window.location.hash.substring(1)) selected = s  })
+				// 	if (selected) {
+				// 		sideLinks.forEach((s) => s.classList.remove('is-active'))
+				// 		selected.classList.add('is-active')
+				// 		return
+				// 	}
+				// }
+
+				let fromTop = body.scrollTop - 250; // top nav + hero
+				sideLinks.forEach(link => {
+					const id = link.href.split('#')[1]
+					let section = document.getElementById(id);
+					if (
+						section?.offsetTop <= fromTop &&
+						section?.offsetTop + section?.offsetHeight > fromTop
+					) {
+						link.classList.add("is-active");
+						isActive = link
+					}
+				});
+				sideLinks.forEach(link => {
+					if (link !== isActive) link.classList.remove('is-active')
+				})
+			}, false);
+			});
+	</script>
+
+	<style>
+		html, body {
+			width: 100%;
+			height: 100%; 
+			position: relative;
+			overflow-x: hidden;
+			font-family: Verdana, sans-serif;
+			scroll-behavior: smooth;
+			background-color: #0C1214;
+			color: #F5F5F5;
+			overflow-y: initial !important;
+		}
+
+		body::-webkit-scrollbar {
+			background: #292929 !important;
+			width: 12px;
+		}
+
+		body {
+			position: relative;
+			font-size: 16px !important; 
+			line-height: 1.7 !important;
+		}
+
+
+		h1, h2, h3, h4, h5, h6 {
+			scroll-margin-top: 100px;
+			color: #F5F5F5 !important;
+			line-height: 1.4;
+		}
+
+		a {
+			color: #F5F5F5 !important;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		pre.highlight {
+			background-color: black;
+			color: wheat
+		}
+
+		table {
+			background-color: black;
+		}
+
+		th {
+			color: #b5b5b5 !important;
+		}
+
+		code {
+			background-color: black;
+			color: wheat
+		}
+
+		blockquote {
+			background-color: transparent !important;
+		}
+
+		section {
+			padding: 3rem 0!important;
+		}
+
+		#logo:hover {
+			text-decoration: none;
+		}
+
+		.navbar-item:hover {
+			text-decoration: none;
+		}
+
+		.breadcrumb li {
+			white-space: pre-wrap;
+			text-decoration: none !important;
+		}
+
+		.menu-list a:hover {
+			background-color: inherit;
+		}
+
+		.navbar.is-dark { 
+			background-color:#252629d4 !important;
+		}
+
+		.navbar-item:hover, .navbar-item.is-active {
+			background-color: #292929 !important ;
+		}
+
+		@media screen and (max-width: 1023px)   {
+			.navbar-menu{
+				background-color: #252629d4 !important;
+			}
+		}
+	</style>
+</head>
+
+    <style>
+        img {
+            max-height: 400px;
+        }
+    </style>
+        <nav
+  class="navbar is-fixed-top is-dark"
+  role="navigation"
+  aria-label="main navigation"
+>
+  <div class="container" style="max-width: 750px;">
+    <div class="navbar-brand">
+      <a id="logo" class="navbar-item has-text-weight-bold" href="/">
+        <span>&lt;iamaatoh /&gt;</span>
+      </a>
+
+      <a
+        role="button"
+        class="navbar-burger"
+        aria-label="menu"
+        aria-expanded="false"
+        data-target="navbar"
+      >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+ 
+    <div id="navbar" class="navbar-menu">
+      <div class="navbar-end">
+        <a href="/blog" class="navbar-item is-hoverable is-active">Notes</a>
+        <a href="/reads" class="navbar-item is-hoverable ">Bookshelf</a>
+        <!-- <a href="/projects" class="navbar-item is-hoverable ">Projects</a> -->
+        <a href="/talks" class="navbar-item is-hoverable ">Talks</a>
+        <a href="/research" class="navbar-item is-hoverable ">Research</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+        <div style="margin: 52px auto; max-width: 750px;" class="has-text-grey-light">
+            <section class="hero pb-2">
+                <nav class="breadcrumb" aria-label="breadcrumbs">
+                    <ul class="is-align-items-center">
+                        <li><a class="is-size-7" href="/">Home</a></li>
+                        <li><a class="is-size-7" href="/blog">Blog</a></li>
+                        <li class="is-active is-size-7 is-underlined has-text-ligh">&nbsp;How to make an animated navigation component using Angular?</li>
+                    </ul>
+                </nav>
+                <h1 class="title is-3 has-text-light">
+                    How to make an animated navigation component using Angular?
+                </h1>
+                <div>
+                    Getting started with Angular Animations by building a simple component
+                </div>
+                <br/>
+                <div class="is-light is-size-7 has-text-grey-light">
+                    Posted on Apr 25, '18</small>
+                </div>
+            </section>
+            <hr/>
+            <section class="post pt-2">
+                <div class="container">
+                    <div class="columns is-6">
+                        
+
+                        <div class="column ">
+                            <div class="content">
+                                <p>Animations are an important part of the user experience. The subtle movements in an app, when done right, not only provide the user with useful feedback but also create an unconscious, favourable impression of ‘smoothness’ in your application/website. Angular provides a way to add animations to your app, tied to your application logic, with almost similar performance as native CSS animations.</p>
+
+<h2 id="tldr-recipe">tl;dr recipe</h2>
+
+<ul>
+  <li>Import BrowserAnimationsModule and add it to imports in <strong><em>app.module.ts</em></strong></li>
+  <li>Import { trigger, state, style, transition, animate, keyframes } from ‘@angular/animations’</li>
+  <li>Add an animation in the <strong>animations</strong> array of the Component</li>
+  <li>Define states and add function in the component.ts file to switch between states</li>
+  <li>Add [@animation_name] to an element in your HTML and give it a value controlled by component</li>
+</ul>
+
+<h2 id="adding-an-animation">Adding an animation</h2>
+
+<h4 id="installing-angular-animations-package">Installing Angular Animations Package</h4>
+
+<p>Make sure you have @angular/animations installed, using <code class="language-plaintext highlighter-rouge">npm install @angular/animations --save</code>.</p>
+
+<p><strong><em>package.json</em></strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"dependencies": {
+    ...
+    "@angular/animations": "^5.2.10",
+    ...
+
+</code></pre></div></div>
+
+<h4 id="importing-the-browser-animation-module">Importing the Browser Animation Module</h4>
+
+<p>The BrowserAnimationsModule is part of the <strong>@angular/platform-browser</strong> package. The platform-browser is automatically installed if you’ve generated your app using angular-cli. Only the BrowserAnimationsModule will need to be imported and added to the <strong>imports</strong> array, as shown below.</p>
+
+<p><strong><em>app.module.ts</em></strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+@NgModule({
+  ...
+  imports: [
+    BrowserAnimationsModule,
+    ...
+  ]
+  ...
+})
+export class AppModule { }
+</code></pre></div></div>
+
+<h4 id="importing-required-animation-functions-in-the-component">Importing required animation functions in the component</h4>
+
+<p>To add animations to your component, you will need to add metadata defining your animation while creating your component. To define your animation, you’ll need to minimally import</p>
+
+<ul>
+  <li>trigger</li>
+  <li>state</li>
+  <li>style</li>
+  <li>transition</li>
+  <li>animate</li>
+  <li>keyframes</li>
+</ul>
+
+<p><strong><em>app.component.ts</em></strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import { trigger, state, style, transition, animate, keyframes } from '@angular/animations';
+</code></pre></div></div>
+
+<h4 id="adding-an-animation-to-the-component">Adding an animation to the component</h4>
+
+<p>In the example below, the metadata has defined an animation trigger, called “slide<em>in_out” with two states - ‘slide_in’ and ‘slide_out’. The states can be considered as the values the animation _slide_in_out</em> can be assigned and the corresponding CSS that becomes active on getting that value.</p>
+
+<p>The transition is what specifies the animation when the states changes from slide_in to slide_out and vice versa. You can choose to define this animation in one direction, from void / any state, with different timing and effects.</p>
+
+<p><strong><em>app.component.ts</em></strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@Component({
+  ...
+  animations: [
+    trigger('slide_in_out', [
+      state('slide_in', style({
+        width: '350px',
+        // css styles when the element is in slide_in
+      })),
+      state('slide_out', style({
+        width: '0px'
+        // css styles when the element is in slide_out
+      })),
+      // animation effect when transitioning from one state to another
+      transition('slide_in &lt;=&gt; slide_out', animate(300))
+    ]),
+  ]
+})
+</code></pre></div></div>
+
+<h4 id="add-the-animation-to-the-element">Add the animation to the element</h4>
+
+<p>Once you’ve defined your animation, you can now add it to your HTML element and link it to a variable, slider_state in this example. In this example, when the slider_state equals ‘slide_in’, the width of the div is 350px and when the slider_state equals ‘slide_out’, the width of the div is 0.</p>
+
+<p>The slider_state variable needs to be controlled in your component file. In this example, we control the slide-in-out navbar using a button.</p>
+
+<p>When the button is clicked, it changes the value of slider_state, as shown below, hence triggering the animation.</p>
+
+<p><strong><em>app.component.html</em></strong></p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;button</span> <span class="na">(click)=</span><span class="s">"toggleSlider()"</span><span class="nt">&gt;</span>Toggle Slider<span class="nt">&lt;/button&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"slide-nav"</span> <span class="err">[@</span><span class="na">slide_in_out]=</span><span class="s">"slider_state"</span><span class="nt">&gt;</span>
+  <span class="c">&lt;!-- some content --&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<p><strong><em>app.component.ts</em></strong></p>
+
+<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nx">slider_state</span><span class="p">:</span><span class="kr">string</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">slide_in</span><span class="dl">"</span><span class="p">;</span>
+  <span class="nf">toggleSlider</span><span class="p">():</span> <span class="k">void</span><span class="p">{</span>
+    <span class="c1">// do something to change the animation_state variable</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">slider_state</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">slider_state</span> <span class="o">===</span> <span class="dl">'</span><span class="s1">slide_out</span><span class="dl">'</span> <span class="p">?</span> <span class="dl">'</span><span class="s1">slide_in</span><span class="dl">'</span> <span class="p">:</span> <span class="dl">'</span><span class="s1">slide_out</span><span class="dl">'</span><span class="p">;</span>
+  <span class="p">}</span>
+</code></pre></div></div>
+
+<p>And that’s it. That’s how you implement a simple slide-in, slide-out sidenav. View a demo <a href="https://stackblitz.com/edit/angular-slide-nav?file=app%2Fapp.module.ts">here</a></p>
+
+<h2 id="pitfalls">Pitfalls</h2>
+
+<ul>
+  <li>web-animations-js is required to make an angular animation work in browsers that donot support the <strong>Web Animations API</strong></li>
+  <li>The state is defined as a <strong>string</strong> value and use booleans or numerical values might cause errors</li>
+</ul>
+
+<h4 id="references">References:</h4>
+
+<p><a href="https://angular.io/guide/animations">Angular Animations Documentation</a></p>
+
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer style="max-width: 750px; margin: 0 auto" class="pb-2"><small>Copyright © 2023 iamaatoh.com</small></footer>
+    </body>
+</html>

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Learning List</title>
+	<meta name="description" content="Current list of everything I am learning from - books, articles, podcasts, courses etc." />
+
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta property="og:title" content="Learning List" />
+	<meta property="og:description" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:image:width" content="400" />
+	<meta property="og:image:height" content="300" />
+	<meta property="og:type" content="website" />
+
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+	<link href='https://iamaatoh.com/feed.xml' rel='alternate' type='application/atom+xml'>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111560396-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-111560396-1');
+		document.fonts.ready.then((fontFaceSet) => {
+			document.body.style.opacity = 1
+		});
+	</script>
+	<script>
+		let isActive = null
+		document.addEventListener('DOMContentLoaded', () => {
+
+			// Get all "navbar-burger" elements
+			const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+			// Add a click event on each of them
+			$navbarBurgers.forEach( el => {
+				el.addEventListener('click', () => {
+
+					// Get the target from the "data-target" attribute
+					const target = el.dataset.target;
+					const $target = document.getElementById(target);
+
+					// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+					el.classList.toggle('is-active');
+					$target.classList.toggle('is-active');
+
+				});
+			});
+
+			// scroll
+			const body = (document.getElementsByTagName('body')[0])
+			const sideLinks = document.querySelectorAll(".menu-list-item");
+
+			body.addEventListener("scroll", event => {
+				// if (window.location.hash) {
+				// 	let selected = null
+				// 	sideLinks.forEach((s) => { if (s.href.split('#')[1] === window.location.hash.substring(1)) selected = s  })
+				// 	if (selected) {
+				// 		sideLinks.forEach((s) => s.classList.remove('is-active'))
+				// 		selected.classList.add('is-active')
+				// 		return
+				// 	}
+				// }
+
+				let fromTop = body.scrollTop - 250; // top nav + hero
+				sideLinks.forEach(link => {
+					const id = link.href.split('#')[1]
+					let section = document.getElementById(id);
+					if (
+						section?.offsetTop <= fromTop &&
+						section?.offsetTop + section?.offsetHeight > fromTop
+					) {
+						link.classList.add("is-active");
+						isActive = link
+					}
+				});
+				sideLinks.forEach(link => {
+					if (link !== isActive) link.classList.remove('is-active')
+				})
+			}, false);
+			});
+	</script>
+
+	<style>
+		html, body {
+			width: 100%;
+			height: 100%; 
+			position: relative;
+			overflow-x: hidden;
+			font-family: Verdana, sans-serif;
+			scroll-behavior: smooth;
+			background-color: #0C1214;
+			color: #F5F5F5;
+			overflow-y: initial !important;
+		}
+
+		body::-webkit-scrollbar {
+			background: #292929 !important;
+			width: 12px;
+		}
+
+		body {
+			position: relative;
+			font-size: 16px !important; 
+			line-height: 1.7 !important;
+		}
+
+
+		h1, h2, h3, h4, h5, h6 {
+			scroll-margin-top: 100px;
+			color: #F5F5F5 !important;
+			line-height: 1.4;
+		}
+
+		a {
+			color: #F5F5F5 !important;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		pre.highlight {
+			background-color: black;
+			color: wheat
+		}
+
+		table {
+			background-color: black;
+		}
+
+		th {
+			color: #b5b5b5 !important;
+		}
+
+		code {
+			background-color: black;
+			color: wheat
+		}
+
+		blockquote {
+			background-color: transparent !important;
+		}
+
+		section {
+			padding: 3rem 0!important;
+		}
+
+		#logo:hover {
+			text-decoration: none;
+		}
+
+		.navbar-item:hover {
+			text-decoration: none;
+		}
+
+		.breadcrumb li {
+			white-space: pre-wrap;
+			text-decoration: none !important;
+		}
+
+		.menu-list a:hover {
+			background-color: inherit;
+		}
+
+		.navbar.is-dark { 
+			background-color:#252629d4 !important;
+		}
+
+		.navbar-item:hover, .navbar-item.is-active {
+			background-color: #292929 !important ;
+		}
+
+		@media screen and (max-width: 1023px)   {
+			.navbar-menu{
+				background-color: #252629d4 !important;
+			}
+		}
+	</style>
+</head>
+
+
+  <body>
+    <nav
+  class="navbar is-fixed-top is-dark"
+  role="navigation"
+  aria-label="main navigation"
+>
+  <div class="container" style="max-width: 750px;">
+    <div class="navbar-brand">
+      <a id="logo" class="navbar-item has-text-weight-bold" href="/">
+        <span>&lt;iamaatoh /&gt;</span>
+      </a>
+
+      <a
+        role="button"
+        class="navbar-burger"
+        aria-label="menu"
+        aria-expanded="false"
+        data-target="navbar"
+      >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+ 
+    <div id="navbar" class="navbar-menu">
+      <div class="navbar-end">
+        <a href="/blog" class="navbar-item is-hoverable ">Notes</a>
+        <a href="/reads" class="navbar-item is-hoverable is-active">Bookshelf</a>
+        <!-- <a href="/projects" class="navbar-item is-hoverable ">Projects</a> -->
+        <a href="/talks" class="navbar-item is-hoverable ">Talks</a>
+        <a href="/research" class="navbar-item is-hoverable ">Research</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    <main style="margin: 120px auto; max-width: 750px;">
+        <div class='m-4 has-text-light'>
+          <p class="title is-3 has-text-light" style="padding-bottom: 16px;">Learning List</p>
+          <p class="subtitle is-6 has-text-light" style="line-height: 1.6;">Current list of everything I am learning from - books, articles, podcasts, courses etc.</p>
+        </div>
+        <div class="m-4 content has-text-light pt-4" style="max-width: 750px">
+            <h3 id="currently-working-on">Currently working on</h3>
+
+<ul>
+  <li><a href="./designing-data-intensive-applications-martin-kleppman">Designing Data Intensive Applications, Martin Kleppman</a></li>
+  <li>German A1/A2 for Beginners</li>
+  <li>How we implemented serverless full-text search in Rust – Grafbase</li>
+</ul>
+
+<h3 id="stuff-that-ive-enjoyed-consistently">Stuff that I’ve enjoyed consistently</h3>
+
+<ul>
+  <li>Lex Fridman</li>
+  <li>Huberman Lab</li>
+  <li>Paul Graham’s Essays</li>
+  <li>Vitalik Buterin’s blog</li>
+  <li>Startup School</li>
+  <li>Crypto Startup School</li>
+  <li>Indie Hackers</li>
+  <li>Hacker News</li>
+  <li>Papers With Code</li>
+  <li>Depth First Learning</li>
+  <li>Pragmatic Engineer</li>
+  <li>Casey Muratori, Computers Enhance</li>
+  <li>Web technology for developers, MDN</li>
+  <li>Martin Fowler</li>
+  <li>Lenny’s Newsletter</li>
+  <li>ByteByteGo</li>
+</ul>
+
+<h3 id="next-up--someday">Next up / Someday</h3>
+
+<ul>
+  <li>Meditations by Marcus Aurelius</li>
+  <li>We the living, Ayn Rand</li>
+  <li>Superintelligence: Paths, Dangers, Strategies, Nick Bostrom</li>
+  <li>Thinking in Systems: A Primer (Donella H. Meadows, 2008)</li>
+  <li>What Is Life? with Mind and Matter and Autobiographical Sketches by Schrödinger, Erwin</li>
+  <li>Godel, Escher, Bach: an Eternal Golden Braid, Douglas R Hofstadter</li>
+  <li>Hit Refresh, Satya Nadella</li>
+  <li>What’s the future and why it’s up to us, Tim O’Reilly</li>
+  <li>Whatcha gonna do with that duck, Seth Godin</li>
+  <li>Design Patterns, Gamma, Helm, Johnson, Vlissides</li>
+  <li>Code Complete, McConnel</li>
+  <li>The Art of Computer Programming, Donald Knuth</li>
+  <li>The Pragmatic Programmer, Hunt</li>
+  <li>Algorithms to Live By: The Computer Science of Human Decisions by Christian Brian</li>
+  <li>The Startup Way, Eric Ries</li>
+  <li>The Critique of Pure Reason, Immanuel Kant</li>
+  <li>Thinking Fast and Slow, Daniel Kahneman</li>
+  <li>The Intelligent Investor, Benjamin Graham</li>
+  <li>Warren Buffett and the Interpretation of Financial Statements: The Search for the Company with a Durable Competitive Advantage by Mary Buffet</li>
+  <li>Programming Pearls, Bentley</li>
+  <li>Introduction to Algorithms, CLRS</li>
+  <li>The Bezos Blueprint, Carmine Gallo</li>
+  <li>See, Solve, Scale, Danny Warshay</li>
+  <li>The Art of the Start, Guy Kawasaki</li>
+  <li>The Design of Everyday Things, Dan Norman</li>
+  <li>Zero to One, Peter Thiel</li>
+  <li>The Startup Owner’s Manual, Steve Blank</li>
+  <li>How to Mind Works by Steven Pinker</li>
+  <li>The Future of the Mind: The Scientific Quest to Understand, Enhance, and Empower the Mind by Michio Kaku</li>
+  <li>The Righteous Mind: Why Good People Are Divided by Politics and Religion by Jonathan Haidt</li>
+  <li>The Society of Minds (Marvin Minsky, 1986)</li>
+  <li>Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets (Nassim Taleb, 2001)</li>
+  <li>The Selfish Gene by Richard Dawkins</li>
+  <li>The Immortal Life of Henrietta Lacks (Rebecca Skloot, 2011)</li>
+  <li>From Third World to First: The Singapore Story: 1965-2000 by Lee Kuan Yew</li>
+  <li>Man’s Search for Meaning by Victor Frankel</li>
+  <li>Sapiens by Yuval Noah Harari</li>
+  <li>Animal Farm or 1984 by George Orwell</li>
+  <li>Guns, Germs, and Steel: The Fates of Human Societies by Jared Diamond</li>
+  <li>When: The Scientific Secrets of Perfect Timing by Daniel Pink</li>
+  <li>Noise by Daniel Kahneman</li>
+  <li>The Republic by Plato</li>
+  <li>Genghis Khan and the Making of the Modern World by Weatherford, Jack</li>
+  <li>Principles: Life and Work by Ray Dalio</li>
+  <li>Fads and Fallacies in the Name of Science (Martin Gardner, 1952)</li>
+  <li>2001: A Space Odyssey, Arthur C Clarke</li>
+  <li>Profiles of the Future : An Inquiry into the Limits of the Possible (Arthur C. Clarke, 1962)</li>
+  <li>Chaos: Making a New Science (James Gleick, 1987)</li>
+  <li>The Hitchhiker’s Guide to the Galaxy by Douglas Adams</li>
+  <li>Nine Pints: A Journey Through the Money, Medicine, and Mysteries of Blood, George Rose</li>
+  <li>Three-Body Problem by Cixin Liu</li>
+  <li>Astrophysics for People in a Hurry by Neil DeGrasse</li>
+  <li>From One to Zero: A Universal History of Numbers (Georges Ifrah, 1985)</li>
+  <li>McKinsey Technology Insights</li>
+  <li>Feynman’s Lectures.</li>
+  <li>The Internet of Money by Antonopoulos, Andreas M.</li>
+  <li>Business Adventures: Twelve Classic Tales from the World of Wall Street</li>
+  <li>7 Lessons Growing a Bootstrapped SaaS to $50K MRR - Bannerbear</li>
+  <li>From the Transistor to the Web Browser, a rough outline for a 12 week course</li>
+  <li>The Crypto Compendium</li>
+  <li>The Soul of a New Machine, Tracy Kidder</li>
+  <li>Code: The Hidden Language of Computer Hardware and Software, Charles Petzold</li>
+  <li>The Chip: How Two Americans Invented the Microchip and Launched a Revolution, TR Reid</li>
+  <li>Hackers: Heroes of the Computer Revolution, Steven Levy</li>
+  <li>The Network State: How To Start a New Country by Balaji S</li>
+  <li>The Codebreakers: The Comprehensive History of Secret Communication from Ancient Times to the Internet (David Kahn, 1996)</li>
+  <li>The Cathedral &amp; the Bazaar: Musings on Linux and Open Source by an Accidental Revolutionary by Eric Raymond</li>
+  <li>Codes, Ciphers and Secret Writing by Martin Gardener</li>
+  <li>Coders at Work: Reflections on the Craft of Programming by Peter Siebel</li>
+  <li>Prime Obsession: Bernhard Riemann and the Greatest Unsolved Problem in Mathematics by Derbyshire, John</li>
+  <li>Pattern Language, Christopher Alexander</li>
+  <li>About Face by Alan Cooper</li>
+  <li>Hackers and Painters by Paul Graham</li>
+  <li>The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies</li>
+  <li>The Innovators: How a Group of Hackers, Geniuses, and Geeks Created the Digital Revolution, Walter Isaacson</li>
+  <li>The Road Ahead, Bill Gates</li>
+  <li>The Cluetrain Manifesto</li>
+  <li>The Golden Age of Video Games: The Birth of a Multibillion Dollar Industry, Roberto Dillon</li>
+  <li>The New New Thing: A Silicon Valley Story</li>
+  <li>Alan Turing: The Enigma</li>
+  <li>Smartcuts: How Hackers, Innovators, and Icons Accelerate Success, Shane Snow</li>
+  <li>Disrupted: My Misadventure in the Start-Up Bubble</li>
+  <li>Microcosm: The Quantum Revolution in Economics and Technology, George Gilder</li>
+  <li>The Singularity is Near, Ray Kurzweil</li>
+  <li>The Annotated Turing: A Guided Tour Through Alan Turing’s Historic Paper on Computability and the Turing Machine, Charles Petzold</li>
+  <li>The Computer Boys Take Over: Computers, Programmers, and the Politics of Technical Expertise, Nathan Ensmenger</li>
+  <li>Andy Grove: The Life and Times of an American, Richard S. Tedlow</li>
+  <li>Dreaming in Code: Two Dozen Programmers, Three Years, 4,732 Bugs, and One Quest for Transcendent Software, Scott Rosenberg (Creator of Lotus 1-2-3)</li>
+  <li>Love &amp; Math: The Heart of Hidden Reality.</li>
+  <li>Uncommon Genius: How Great Ideas are Born (Denise Shekerjian, 1991)</li>
+  <li>Just My Type: A Book About Fonts (Simon Garfield, 2010)</li>
+  <li>[fiction] The Idiot by Dostoevsky</li>
+  <li>[fiction] The Little Prince by Antoine de Saint-Exupéry</li>
+  <li>Zero Knowledge Proofs</li>
+  <li><a href="">Successful blockchain experiments unlock potential of tokenisation, Swift</a></li>
+  <li>On Writing Well, William Zinsner</li>
+</ul>
+
+        </div>
+    </main>
+  </body>
+</html>

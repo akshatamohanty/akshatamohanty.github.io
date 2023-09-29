@@ -85,9 +85,6 @@
 			}, false);
 			});
 	</script>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;900&display=swap" rel="stylesheet">
 
 	<style>
 		html, body {
@@ -95,22 +92,94 @@
 			height: 100%; 
 			position: relative;
 			overflow-x: hidden;
-			font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+			font-family: Verdana, sans-serif;
 			scroll-behavior: smooth;
+			background-color: #0C1214;
+			color: #F5F5F5;
+			overflow-y: initial !important;
 		}
 
-		h1, h2, h3, h4, h5, h6 {
-			scroll-margin-top: 100px;
+		body::-webkit-scrollbar {
+			background: #292929 !important;
+			width: 12px;
 		}
 
 		body {
 			position: relative;
 			font-size: 16px !important; 
-			line-height: 24px !important;
+			line-height: 1.7 !important;
+		}
+
+
+		h1, h2, h3, h4, h5, h6 {
+			scroll-margin-top: 100px;
+			color: #F5F5F5 !important;
+			line-height: 1.4;
+		}
+
+		a {
+			color: #F5F5F5 !important;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		pre.highlight {
+			background-color: black;
+			color: wheat
+		}
+
+		table {
+			background-color: black;
+		}
+
+		th {
+			color: #b5b5b5 !important;
+		}
+
+		code {
+			background-color: black;
+			color: wheat
+		}
+
+		blockquote {
+			background-color: transparent !important;
+		}
+
+		section {
+			padding: 3rem 0!important;
+		}
+
+		#logo:hover {
+			text-decoration: none;
+		}
+
+		.navbar-item:hover {
+			text-decoration: none;
 		}
 
 		.breadcrumb li {
 			white-space: pre-wrap;
+			text-decoration: none !important;
+		}
+
+		.menu-list a:hover {
+			background-color: inherit;
+		}
+
+		.navbar.is-dark { 
+			background-color:#252629d4 !important;
+		}
+
+		.navbar-item:hover, .navbar-item.is-active {
+			background-color: #292929 !important ;
+		}
+
+		@media screen and (max-width: 1023px)   {
+			.navbar-menu{
+				background-color: #252629d4 !important;
+			}
 		}
 	</style>
 </head>

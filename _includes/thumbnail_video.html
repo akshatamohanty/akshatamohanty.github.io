@@ -1,0 +1,14 @@
+<div class="has-text-white my-3 columns" style="width: 100%;padding-bottom: 12px;">
+    <div class="column">
+        {{post.embed}}
+    </div>
+    <div class="column">
+        <p class="is-size-7 has-text-grey-light">{{post.date | date: "%b %d, '%y" }}</p>
+        <div class="is-size-5 has-text-light mb-1">
+            <a class='has-text-white has-text-weight-light' target="_blank" href={{post.external_url}}>{{ post.title }}</a>
+        </div>
+        <p style="font-size: 14px; line-height: 1.3;" class="has-text-grey-light">
+            {{ post.description }}
+        </p>
+    </div>
+</div>

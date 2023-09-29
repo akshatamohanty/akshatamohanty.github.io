@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>Getting smart-contract ready</title>
+	<meta name="description" content="So, you've heard of smart contracts. And now you want to see one in action. This tutorial gets up and running in under 60-minutes" />
+
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta property="og:title" content="Getting smart-contract ready" />
+	<meta property="og:description" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:image:width" content="400" />
+	<meta property="og:image:height" content="300" />
+	<meta property="og:type" content="website" />
+
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+	<link href='https://iamaatoh.com/feed.xml' rel='alternate' type='application/atom+xml'>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111560396-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-111560396-1');
+		document.fonts.ready.then((fontFaceSet) => {
+			document.body.style.opacity = 1
+		});
+	</script>
+	<script>
+		let isActive = null
+		document.addEventListener('DOMContentLoaded', () => {
+
+			// Get all "navbar-burger" elements
+			const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+			// Add a click event on each of them
+			$navbarBurgers.forEach( el => {
+				el.addEventListener('click', () => {
+
+					// Get the target from the "data-target" attribute
+					const target = el.dataset.target;
+					const $target = document.getElementById(target);
+
+					// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+					el.classList.toggle('is-active');
+					$target.classList.toggle('is-active');
+
+				});
+			});
+
+			// scroll
+			const body = (document.getElementsByTagName('body')[0])
+			const sideLinks = document.querySelectorAll(".menu-list-item");
+
+			body.addEventListener("scroll", event => {
+				// if (window.location.hash) {
+				// 	let selected = null
+				// 	sideLinks.forEach((s) => { if (s.href.split('#')[1] === window.location.hash.substring(1)) selected = s  })
+				// 	if (selected) {
+				// 		sideLinks.forEach((s) => s.classList.remove('is-active'))
+				// 		selected.classList.add('is-active')
+				// 		return
+				// 	}
+				// }
+
+				let fromTop = body.scrollTop - 250; // top nav + hero
+				sideLinks.forEach(link => {
+					const id = link.href.split('#')[1]
+					let section = document.getElementById(id);
+					if (
+						section?.offsetTop <= fromTop &&
+						section?.offsetTop + section?.offsetHeight > fromTop
+					) {
+						link.classList.add("is-active");
+						isActive = link
+					}
+				});
+				sideLinks.forEach(link => {
+					if (link !== isActive) link.classList.remove('is-active')
+				})
+			}, false);
+			});
+	</script>
+
+	<style>
+		html, body {
+			width: 100%;
+			height: 100%; 
+			position: relative;
+			overflow-x: hidden;
+			font-family: Verdana, sans-serif;
+			scroll-behavior: smooth;
+			background-color: #0C1214;
+			color: #F5F5F5;
+			overflow-y: initial !important;
+		}
+
+		body::-webkit-scrollbar {
+			background: #292929 !important;
+			width: 12px;
+		}
+
+		body {
+			position: relative;
+			font-size: 16px !important; 
+			line-height: 1.7 !important;
+		}
+
+
+		h1, h2, h3, h4, h5, h6 {
+			scroll-margin-top: 100px;
+			color: #F5F5F5 !important;
+			line-height: 1.4;
+		}
+
+		a {
+			color: #F5F5F5 !important;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		pre.highlight {
+			background-color: black;
+			color: wheat
+		}
+
+		table {
+			background-color: black;
+		}
+
+		th {
+			color: #b5b5b5 !important;
+		}
+
+		code {
+			background-color: black;
+			color: wheat
+		}
+
+		blockquote {
+			background-color: transparent !important;
+		}
+
+		section {
+			padding: 3rem 0!important;
+		}
+
+		#logo:hover {
+			text-decoration: none;
+		}
+
+		.navbar-item:hover {
+			text-decoration: none;
+		}
+
+		.breadcrumb li {
+			white-space: pre-wrap;
+			text-decoration: none !important;
+		}
+
+		.menu-list a:hover {
+			background-color: inherit;
+		}
+
+		.navbar.is-dark { 
+			background-color:#252629d4 !important;
+		}
+
+		.navbar-item:hover, .navbar-item.is-active {
+			background-color: #292929 !important ;
+		}
+
+		@media screen and (max-width: 1023px)   {
+			.navbar-menu{
+				background-color: #252629d4 !important;
+			}
+		}
+	</style>
+</head>
+
+    <style>
+        img {
+            max-height: 400px;
+        }
+    </style>
+        <nav
+  class="navbar is-fixed-top is-dark"
+  role="navigation"
+  aria-label="main navigation"
+>
+  <div class="container" style="max-width: 750px;">
+    <div class="navbar-brand">
+      <a id="logo" class="navbar-item has-text-weight-bold" href="/">
+        <span>&lt;iamaatoh /&gt;</span>
+      </a>
+
+      <a
+        role="button"
+        class="navbar-burger"
+        aria-label="menu"
+        aria-expanded="false"
+        data-target="navbar"
+      >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+ 
+    <div id="navbar" class="navbar-menu">
+      <div class="navbar-end">
+        <a href="/blog" class="navbar-item is-hoverable is-active">Notes</a>
+        <a href="/reads" class="navbar-item is-hoverable ">Bookshelf</a>
+        <!-- <a href="/projects" class="navbar-item is-hoverable ">Projects</a> -->
+        <a href="/talks" class="navbar-item is-hoverable ">Talks</a>
+        <a href="/research" class="navbar-item is-hoverable ">Research</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+        <div style="margin: 52px auto; max-width: 750px;" class="has-text-grey-light">
+            <section class="hero pb-2">
+                <nav class="breadcrumb" aria-label="breadcrumbs">
+                    <ul class="is-align-items-center">
+                        <li><a class="is-size-7" href="/">Home</a></li>
+                        <li><a class="is-size-7" href="/blog">Blog</a></li>
+                        <li class="is-active is-size-7 is-underlined has-text-ligh">&nbsp;Getting smart-contract ready</li>
+                    </ul>
+                </nav>
+                <h1 class="title is-3 has-text-light">
+                    Getting smart-contract ready
+                </h1>
+                <div>
+                    So, you've heard of smart contracts. And now you want to see one in action. This tutorial gets up and running in under 60-minutes
+                </div>
+                <br/>
+                <div class="is-light is-size-7 has-text-grey-light">
+                    Posted on Jul 20, '21</small>
+                </div>
+            </section>
+            <hr/>
+            <section class="post pt-2">
+                <div class="container">
+                    <div class="columns is-6">
+                        
+
+                        <div class="column ">
+                            <div class="content">
+                                <p>So, you’ve heard of smart contracts. And now you want to see one in action.</p>
+
+<p>Thanks to the age of developer-friendly tools, it is extremely simple to get started with building smart contracts.</p>
+
+<p>For this walk-through, we’ll be deploying an Ethereum contract using Remix to a local Ethereum network.</p>
+
+<h1 id="some-background--">Some background -</h1>
+
+<p>But first, for some background,</p>
+
+<h3 id="what-is-remix-new-black-pink-song">What is… Remix? New Black Pink song?</h3>
+
+<p>No, it’s better. It’s the fast track into the world of smart contract development.</p>
+
+<p>Remix is an IDE for developing smart contracts. And given that it has an incredibly accessible web application, it is often used as a playground for baby Ethereum developers, like ourselves.</p>
+
+<p>So, here’s <a href="https://remix.ethereum.org/" rel="nofollow">Remix</a>.</p>
+
+<p>There are the <a href="https://remix-ide.readthedocs.io/en/latest/" rel="nofollow">docs</a>.</p>
+
+<p>And this is what it looks like,</p>
+
+<p><img src="../assets/images/blog-remix/remix-ide.png" /></p>
+
+<h3 id="um-whats-a-smart-contract-again">Um, what’s a smart contract again?</h3>
+
+<p>Smart contracts are code deployed on a decentralized network. They usually encode the terms of an agreement (hence, the word <code class="language-plaintext highlighter-rouge">contract</code>, duh!) and auto-execute when the required conditions are met. Since they are deployed on trustless networks, there is no time loss or external involvement required to execute the contract - which makes them dependable and secure.</p>
+
+<h3 id="ok-but-what-do-you-mean-by-deploy-a-contract">Ok, but what do you mean by “deploy a contract”?</h3>
+
+<p>Deploying a contract means making the program and its functions, available to users on the network.</p>
+
+<p>To deploy a contract on Ethereum, we make an Ethereum transaction with the code of the compiled contract. The contract then lives at a specific address, and its functions can be invoked by other transactions.</p>
+
+<p>Another important point - the contract is deployed as a transaction. Which means that it requires gas and fees. Which is just another way of saying that deploying a contract is NOT free. Yes, no more random unlimited deploys.</p>
+
+<h1 id="the-deploy--">The Deploy -</h1>
+
+<p>Ok, now that we have some basics covered, let’s go ahead and deploy an example contract.</p>
+
+<h3 id="tools-youll-need">Tools you’ll need</h3>
+
+<ul>
+  <li>
+    <p>Remix IDE
+You’ll need an IDE to write, compile and deploy your contract. <a href="https://remix.ethereum.org/" rel="nofollow" target="_blank">Remix</a> is the fastest out-of-the-box option:</p>
+  </li>
+  <li>
+    <p>MetaMask
+To deploy your contract, you’ll also need Ether. If you are using Remix and want to deploy your contract to different networks, an easy way of accessing your Ether is by using a Crypto Wallet. So go ahead, install the <a href="https://metamask.io/" rel="nofollow" target="_blank">MetaMask Chrome Extension</a>.
+Be careful though - make sure you are not using real Ether. Unless you have too much, in which case, please send me some.</p>
+  </li>
+  <li>
+    <p>Ganache
+You can choose to deploy to one of the test networks (or even the real Ethereum network, if you are bold .. and rich!). But to make things easier, I used <a href="https://www.trufflesuite.com/ganache" rel="nofollow" target="_blank">Ganache</a> to setup a local Ethereum blockchain to deploy to. You can setup one using Ganache, connect MetaMask to the local network and add a test account to MetaMask. And voila … you’ll have enough Ether to deploy.
+And yes, I agree that the blockchain world has some very tasty names.</p>
+  </li>
+</ul>
+
+<h3 id="what-does-the-contract-look-like">What does the contract look like?</h3>
+
+<p>Remix comes pre-loaded with three contracts of increasing complexity. You can find them by clicking on the <code class="language-plaintext highlighter-rouge">Workspaces</code> tab on the left.</p>
+
+<p><img src="../assets/images/blog-remix/workspace-tab.png" /></p>
+
+<p>The contracts are written in Solidity. Here’s the simplest one that we’ll be deploying -</p>
+
+<pre><code class="language-sol">// SPDX-License-Identifier: GPL-3.0
+
+pragma solidity &gt;=0.7.0 &lt;0.9.0;
+
+/**
+ * @title Storage
+ * @dev Store &amp; retrieve value in a variable
+ */
+contract Storage {
+
+  uint256 number;
+
+  /**
+    * @dev Store value in variable
+    * @param num value to store
+    */
+  function store(uint256 num) public {
+      number = num;
+  }
+
+  /**
+    * @dev Return value
+    * @return value of 'number'
+    */
+  function retrieve() public view returns (uint256){
+      return number;
+  }
+}
+</code></pre>
+
+<h3 id="lets-compile">Let’s Compile</h3>
+
+<p>Before we can deploy, we need to compile the contract into byte code. To do that, shift over to the <code class="language-plaintext highlighter-rouge">Compiler</code> Tab. The contract that you want to compile should be active in the workspace. If it is, you’ll see the enabled <code class="language-plaintext highlighter-rouge">Compile</code> button with the name of the contract that you’ve selected. Click on it to compile.</p>
+
+<p><img src="../assets/images/blog-remix/compile-tab.png" /></p>
+
+<p>And that’s it. We’ve compiled the contract. For the nerd in you, click on <code class="language-plaintext highlighter-rouge">Compilation Details</code>, to checkout details, the ABI and Bytecode - the actual payload that gets deployed.</p>
+
+<div class="flex flex-row">
+<img src="../assets/images/blog-remix/compiled-contract.png" />
+<img src="../assets/images/blog-remix/compiled-details.png" />
+</div>
+
+<h3 id="and-now-for-the-deploy">And now, for the deploy!</h3>
+
+<p>Move to the <code class="language-plaintext highlighter-rouge">Deploy and Run Transactions</code> Tab. If you are using Metamask, select <code class="language-plaintext highlighter-rouge">Injected Web3</code> as your environment.</p>
+
+<p><img src="../assets/images/blog-remix/environment.png" /></p>
+
+<p>Metamask will then show up, asking you to log in, if you haven’t already.</p>
+
+<p>This is what my Metamask, connected to my local Ethereum looks like. (Look Ma - double-digit ETH!)</p>
+
+<p><img src="../assets/images/blog-remix/metamask-init.png" /></p>
+
+<p>Hit the <code class="language-plaintext highlighter-rouge">Deploy</code> button in the Deploy Tab, and MetaMask will ask you to confirm the transaction.</p>
+
+<p><img src="../assets/images/blog-remix/metamask-confirm.png" /></p>
+
+<p>Once you do, you’ll now be able to see your deployed contract details in the tab - ready to transact with!</p>
+
+<div class="flex flex-row">
+  <img src="../assets/images/blog-remix/deployed-contract-txn.png" />
+  <img src="../assets/images/blog-remix/deployed-txn.png" />
+</div>
+<p>Move over to Ganache, and you’ll see a contract creation transaction listed.</p>
+
+<p><img src="../assets/images/blog-remix/ganache-contract.png" /></p>
+
+<p>And just like that, you’ve deployed your first smart contract. Ciao!</p>
+
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer style="max-width: 750px; margin: 0 auto" class="pb-2"><small>Copyright © 2023 iamaatoh.com</small></footer>
+    </body>
+</html>

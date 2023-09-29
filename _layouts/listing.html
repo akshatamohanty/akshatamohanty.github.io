@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+
+  <body>
+    {% include navigation.html %}
+    <main style="margin: 120px auto; max-width: 750px;">
+
+          <div class='m-4 has-text-light'>
+            <p class="title is-3 has-text-light" style="padding-bottom: 16px;">{{ page.title }}</p>
+            <p class="subtitle is-6 has-text-light" style="line-height: 1.6;">{{ page.description}}</p>
+          </div>
+
+          <div class="m-4 is-flex is-flex-direction-column">
+            {{page.autopages.display_name}}
+            {% assign categories_list = site.categories %}
+            {% for post in paginator.posts %}
+              {% if page.thumbnail %}
+                {% include {{page.thumbnail}} %}
+              {% else %}
+                {% include thumbnail.html %}
+              {% endif %}
+            {% endfor %}
+          </div>
+
+          {% if paginator.total_pages > 1 %}
+          <nav class="pagination has-text-grey-light" role="navigation" aria-label="pagination">
+            <ul class="mr-4 ml-4 mb-2 mt-1 is-flex is-flex-direction-row pager is-justify-content-space-between" style="width: 100%;">
+              {% if paginator.previous_page %}
+              <li class="previous">
+                  <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="pagination-previous">&larr; Newer Posts</a>
+              </li>
+              {% endif %}
+              {% if paginator.next_page %}
+              <li class="next">
+                  <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="pagination-next">Older Posts &rarr;</a>
+              </li>
+              {% endif %}
+          </ul>
+          {% endif %}
+          </nav>
+
+    </main>
+  </body>
+</html>

@@ -3,9 +3,9 @@
   role="navigation"
   aria-label="main navigation"
 >
-  <div class="container">
+  <div class="container" style="max-width: 750px;">
     <div class="navbar-brand">
-      <a class="navbar-item" href="/">
+      <a id="logo" class="navbar-item has-text-weight-bold" href="/">
         <span>&lt;iamaatoh /&gt;</span>
       </a>
 
@@ -14,21 +14,21 @@
         class="navbar-burger"
         aria-label="menu"
         aria-expanded="false"
-        data-target="navbarBasicExample"
+        data-target="navbar"
       >
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
       </a>
     </div>
-
-    <div id="navbarBasicExample" class="navbar-menu">
+ 
+    <div id="navbar" class="navbar-menu">
       <div class="navbar-end">
-        <!-- <a href="/ideas" class="navbar-item">Ideas Marketplace</a> -->
-        <!-- <a href="/startup-toolkit" class="navbar-item is-hoverable {% if page.url contains 'startup-toolkit' %}is-active{% endif %}">Startup Toolkit</a> -->
-        <!-- <a href="/practical-blockchain" class="navbar-item is-hoverable {% if page.url contains 'practical-blockchain' %}is-active{% endif %}">Practical Blockchain</a> -->
-        <a href="/engineering" class="navbar-item is-hoverable {% if page.url contains 'engineering' %}is-active{% endif %}">Engineering</a>
-        <a href="/notes" class="navbar-item is-hoverable {% if page.url contains 'notes' %}is-active{% endif %}">Notes</a>
+        <a href="/blog" class="navbar-item is-hoverable {% if page.url contains 'blog' %}is-active{% endif %}">Notes</a>
+        <a href="/reads" class="navbar-item is-hoverable {% if page.url contains 'reads' %}is-active{% endif %}">Bookshelf</a>
+        <!-- <a href="/projects" class="navbar-item is-hoverable {% if page.url contains 'projects' %}is-active{% endif %}">Projects</a> -->
+        <a href="/talks" class="navbar-item is-hoverable {% if page.url contains 'talks' %}is-active{% endif %}">Talks</a>
+        <a href="/research" class="navbar-item is-hoverable {% if page.url contains 'research' %}is-active{% endif %}">Research</a>
       </div>
     </div>
   </div>
