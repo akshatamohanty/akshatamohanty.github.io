@@ -1,5 +1,6 @@
 # File: _config.yml
 destination: docs
+url: "https://iamaatoh.com"
 encoding: UTF-8
 name: aatoh
 description: "Coding for fun and food, in that order."

@@ -128,3 +128,4 @@ layout: list
 - Zero Knowledge Proofs
 - [Successful blockchain experiments unlock potential of tokenisation, Swift]()
 - On Writing Well, William Zinsner
+- [Coffee Can Investing](https://www.amazon.sg/Coffee-Can-Investing-Stupendous-Wealth/dp/067009045X)
