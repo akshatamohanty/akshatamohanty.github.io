@@ -3,8 +3,19 @@
   <channel>
     <title>aatoh</title>
     <description></description>
-    <link>https://iamaatoh.com</link>
-    <atom:link href="https://iamaatoh.com/feed.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:4000</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    
+      
+      <item>
+        <category></category>
+        <title>Good (n)gram hunting: How we built search in-house at (almost) zero cost</title>
+        <description></description>
+        <pubDate>Oct 2023</pubDate>
+        <link>http://localhost:4000/talks/lcs23-geeksg.html </link>
+        <guid isPermaLink="true">http://localhost:4000/talks/lcs23-geeksg.html</guid>
+      </item>
+      
     
       
       <item>
@@ -12,8 +23,8 @@
         <title>Floored by (math.)floor</title>
         <description></description>
         <pubDate>Apr 2023</pubDate>
-        <link>https://iamaatoh.com/blog/floor-by-floor.html </link>
-        <guid isPermaLink="true">https://iamaatoh.com/blog/floor-by-floor.html</guid>
+        <link>http://localhost:4000/blog/floor-by-floor.html </link>
+        <guid isPermaLink="true">http://localhost:4000/blog/floor-by-floor.html</guid>
       </item>
       
     
@@ -23,8 +34,8 @@
         <title>Inspired, Marty Cagan</title>
         <description></description>
         <pubDate>Apr 2023</pubDate>
-        <link>https://iamaatoh.com/reads/book-inspired-marty-cagan.html </link>
-        <guid isPermaLink="true">https://iamaatoh.com/reads/book-inspired-marty-cagan.html</guid>
+        <link>http://localhost:4000/reads/book-inspired-marty-cagan.html </link>
+        <guid isPermaLink="true">http://localhost:4000/reads/book-inspired-marty-cagan.html</guid>
       </item>
       
     
@@ -34,8 +45,8 @@
         <title>Art of War,  Sun Tze</title>
         <description></description>
         <pubDate>Apr 2023</pubDate>
-        <link>https://iamaatoh.com/reads/book-art-of-war-sun-tzu.html </link>
-        <guid isPermaLink="true">https://iamaatoh.com/reads/book-art-of-war-sun-tzu.html</guid>
+        <link>http://localhost:4000/reads/book-art-of-war-sun-tzu.html </link>
+        <guid isPermaLink="true">http://localhost:4000/reads/book-art-of-war-sun-tzu.html</guid>
       </item>
       
     
@@ -45,19 +56,8 @@
         <title>The Alchemy of Grief</title>
         <description></description>
         <pubDate>Sep 2022</pubDate>
-        <link>https://iamaatoh.com/archives/the-alchemy-of-grief.html </link>
-        <guid isPermaLink="true">https://iamaatoh.com/archives/the-alchemy-of-grief.html</guid>
-      </item>
-      
-    
-      
-      <item>
-        <category></category>
-        <title>The Meaning of My Name</title>
-        <description></description>
-        <pubDate>Mar 2022</pubDate>
-        <link>https://iamaatoh.com/archives/the-meaning-of-my-name.html </link>
-        <guid isPermaLink="true">https://iamaatoh.com/archives/the-meaning-of-my-name.html</guid>
+        <link>http://localhost:4000/archives/the-alchemy-of-grief.html </link>
+        <guid isPermaLink="true">http://localhost:4000/archives/the-alchemy-of-grief.html</guid>
       </item>
       
     
