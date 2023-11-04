@@ -1,4 +1,5 @@
 ---
+published: false
 title: "TechLadies Bootcamp #7"
 external_url: https://techladies.co/bootcamp-7/
 image: ../assets/images/techladies-bootcamp.png

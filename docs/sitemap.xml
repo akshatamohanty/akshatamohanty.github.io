@@ -137,10 +137,6 @@
 <lastmod>2020-09-23T00:00:00+08:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/talks/techladies-bootcamp.html</loc>
-<lastmod>2021-02-01T00:00:00+08:00</lastmod>
-</url>
-<url>
 <loc>http://localhost:4000/talks/architecture-to-software-engineering.html</loc>
 <lastmod>2021-04-03T00:00:00+08:00</lastmod>
 </url>
@@ -155,6 +151,14 @@
 <url>
 <loc>http://localhost:4000/blog/deploy-an-ethereum-contract-with-remix.html</loc>
 <lastmod>2021-07-20T00:00:00+08:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/talks/pb-ss-1.html</loc>
+<lastmod>2021-12-07T00:00:00+08:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/talks/pb-ss-2.html</loc>
+<lastmod>2021-12-14T00:00:00+08:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/archives/the-meaning-of-my-name.html</loc>
