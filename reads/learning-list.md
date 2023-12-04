@@ -1,41 +1,26 @@
 ---
 page: iamaatoh - Learning List
 title: Learning List
-description: Current list of everything I am learning from - books, articles, podcasts, courses etc.
+description: My collection of learning material from everywhere.
 layout: list
 ---
 
-### Currently working on
+### Currently in progress,
 
+- [Thinking in Systems: A Primer (Donella H. Meadows, 2008)](./thinking-in-systems)
 - [Designing Data Intensive Applications, Martin Kleppman](./designing-data-intensive-applications-martin-kleppman)
-- German A1/A2 for Beginners
-- How we implemented serverless full-text search in Rust – Grafbase
+- [German A1/A2 for Beginners](./the-german-beginner)
 
-### Stuff that I've enjoyed consistently
+### Next up,
 
-- Lex Fridman
-- Huberman Lab
-- Paul Graham's Essays
-- Vitalik Buterin's blog
-- Startup School
-- Crypto Startup School
-- Indie Hackers
-- Hacker News
-- Papers With Code
-- Depth First Learning
-- Pragmatic Engineer
-- Casey Muratori, Computers Enhance
-- Web technology for developers, MDN
-- Martin Fowler
-- Lenny’s Newsletter
-- ByteByteGo
+- [The Consulting Handbook by the Seattle Data Guy](https://github.com/sdg-1/consulting-handbook)
 
-### Next up / Someday
+### Someday,
 
+- On Writing Well, William Zinsner
 - Meditations by Marcus Aurelius
 - We the living, Ayn Rand
 - Superintelligence: Paths, Dangers, Strategies, Nick Bostrom
-- Thinking in Systems: A Primer (Donella H. Meadows, 2008)
 - What Is Life? with Mind and Matter and Autobiographical Sketches by Schrödinger, Erwin
 - Godel, Escher, Bach: an Eternal Golden Braid, Douglas R Hofstadter
 - Hit Refresh, Satya Nadella
@@ -127,5 +112,27 @@ layout: list
 - [fiction] The Little Prince by Antoine de Saint-Exupéry
 - Zero Knowledge Proofs
 - [Successful blockchain experiments unlock potential of tokenisation, Swift]()
-- On Writing Well, William Zinsner
 - [Coffee Can Investing](https://www.amazon.sg/Coffee-Can-Investing-Stupendous-Wealth/dp/067009045X)
+
+### Stuff that I've enjoyed consistently,
+
+- Lex Fridman
+- Huberman Lab
+- Paul Graham's Essays
+- Vitalik Buterin's blog
+- Startup School
+- Crypto Startup School
+- Indie Hackers
+- Hacker News
+- Papers With Code
+- Depth First Learning
+- Pragmatic Engineer
+- Casey Muratori, Computers Enhance
+- Web technology for developers, MDN
+- Martin Fowler
+- Lenny’s Newsletter
+- ByteByteGo
+
+### All done,
+
+- How we implemented serverless full-text search in Rust – Grafbase

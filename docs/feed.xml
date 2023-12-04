@@ -9,6 +9,28 @@
       
       <item>
         <category></category>
+        <title>Thinking in Systems, Donella Meadows</title>
+        <description></description>
+        <pubDate>Dec 2023</pubDate>
+        <link>http://localhost:4000/reads/thinking-in-systems.html </link>
+        <guid isPermaLink="true">http://localhost:4000/reads/thinking-in-systems.html</guid>
+      </item>
+      
+    
+      
+      <item>
+        <category></category>
+        <title>The German Beginner</title>
+        <description></description>
+        <pubDate>Dec 2023</pubDate>
+        <link>http://localhost:4000/reads/the-german-beginner.html </link>
+        <guid isPermaLink="true">http://localhost:4000/reads/the-german-beginner.html</guid>
+      </item>
+      
+    
+      
+      <item>
+        <category></category>
         <title>Good (n)gram hunting: Building serverless search at zero* cost</title>
         <description></description>
         <pubDate>Nov 2023</pubDate>
@@ -36,28 +58,6 @@
         <pubDate>Oct 2023</pubDate>
         <link>http://localhost:4000/talks/lcs23-geeksg.html </link>
         <guid isPermaLink="true">http://localhost:4000/talks/lcs23-geeksg.html</guid>
-      </item>
-      
-    
-      
-      <item>
-        <category></category>
-        <title>Floored by (math.)floor</title>
-        <description></description>
-        <pubDate>Apr 2023</pubDate>
-        <link>http://localhost:4000/blog/floor-by-floor.html </link>
-        <guid isPermaLink="true">http://localhost:4000/blog/floor-by-floor.html</guid>
-      </item>
-      
-    
-      
-      <item>
-        <category></category>
-        <title>Inspired, Marty Cagan</title>
-        <description></description>
-        <pubDate>Apr 2023</pubDate>
-        <link>http://localhost:4000/reads/book-inspired-marty-cagan.html </link>
-        <guid isPermaLink="true">http://localhost:4000/reads/book-inspired-marty-cagan.html</guid>
       </item>
       
     

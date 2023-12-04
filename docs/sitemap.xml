@@ -181,6 +181,10 @@
 <lastmod>2023-04-12T00:00:00+09:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/reads/designing-data-intensive-applications-martin-kleppman.html</loc>
+<lastmod>2023-10-05T00:00:00+09:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/talks/lcs23-geeksg.html</loc>
 <lastmod>2023-10-14T00:00:00+09:00</lastmod>
 </url>
@@ -191,6 +195,14 @@
 <url>
 <loc>http://localhost:4000/talks/lcs23-gdgsgp.html</loc>
 <lastmod>2023-11-18T00:00:00+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/reads/the-german-beginner.html</loc>
+<lastmod>2023-12-05T00:00:00+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/reads/thinking-in-systems.html</loc>
+<lastmod>2023-12-05T00:00:00+09:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/archives/</loc>

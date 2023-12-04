@@ -1,6 +1,6 @@
 ---
 page: Blog
-title: My experients with tech (and truth)
+title: My experiments with tech, travel and truth
 description: ""
 listing_type: "blog"
 layout: listing

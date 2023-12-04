@@ -1,5 +1,14 @@
 <div class="has-text-white my-3" style="width: 100%;padding-bottom: 12px;">
-    <p class="is-size-7 has-text-grey-light">{{post.date | date: "%b %d, '%y" }}</p>
+    <div class="is-size-7 has-text-grey-light">{{post.date | date: "%b %d, '%y" }}
+       {% if post.wip %}
+       <div class="control ml-2 is-inline-block">
+        <div class="tags has-addons">
+          <span class="tag is-dark">status</span>
+          <span class="tag is-info">work-in-progress</span>
+        </div>
+      </div>
+       {% endif %}
+    </div>
     <div class="is-size-5 has-text-light mb-1">
         <a class='has-text-white has-text-weight-light' href={{post.url}}>{{ post.title }}</a>
     </div>

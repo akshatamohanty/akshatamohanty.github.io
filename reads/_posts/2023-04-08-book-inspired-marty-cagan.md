@@ -1,6 +1,6 @@
 ---
 title: "Inspired, Marty Cagan"
-description: One of the most clear books on building a product perspective - complete playbook of techniques and actionables.
+description: This book helped me build product perspective like no other. A complete playbook of techniques and actionables.
 date: 2023-04-08
 layout: post
 type: Book Review

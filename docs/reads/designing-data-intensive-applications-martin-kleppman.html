@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
-	<title>Parametric Modelling with GIS, eCAADe 2016, Finland</title>
-	<meta name="description" content="Existing urban planning and design systems and workflows do not effectively support a fast iterative design process capable of generating and evaluating large-scale urban models. One of the key issues is the lack of flexibility in workflows to support iterative design generation. We present and demonstrate a parametric modelling system, Möbius, that can easily be linked to Geographic Information Systems for creating modular workflows, uses a rich topological data structure that allows custom data attributes to be added to geometric entities at any topological level, and is fully web-based." />
+	<title>Designing Data Intensive Applications, Martin Kleppman</title>
+	<meta name="description" content="Foundational resource for understanding and building large scale systems." />
 
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<meta property="og:title" content="Parametric Modelling with GIS, eCAADe 2016, Finland" />
+	<meta property="og:title" content="Designing Data Intensive Applications, Martin Kleppman" />
 	<meta property="og:description" content="" />
-	<meta property="og:image" content="../assets/images/mobius_screenshot.jpg" />
+	<meta property="og:image" content="/assets/embeds/ddis/ddis-overview.png" />
 	<meta property="og:image:width" content="400" />
 	<meta property="og:image:height" content="300" />
 	<meta property="og:type" content="website" />
@@ -222,10 +222,10 @@
     <div id="navbar" class="navbar-menu">
       <div class="navbar-end">
         <a href="/blog" class="navbar-item is-hoverable ">Blog</a>
-        <a href="/reads" class="navbar-item is-hoverable ">Bookshelf</a>
+        <a href="/reads" class="navbar-item is-hoverable is-active">Bookshelf</a>
         <!-- <a href="/projects" class="navbar-item is-hoverable ">Projects</a> -->
         <a href="/talks" class="navbar-item is-hoverable ">Talks</a>
-        <a href="/research" class="navbar-item is-hoverable is-active">Research</a>
+        <a href="/research" class="navbar-item is-hoverable ">Research</a>
       </div>
     </div>
   </div>
@@ -236,19 +236,19 @@
                 <nav class="breadcrumb" aria-label="breadcrumbs">
                     <ul class="is-align-items-center">
                         <li><a class="is-size-7" href="/">Home</a></li>
-                        <li><a class="is-size-7" href="/research">Research</a></li>
-                        <li class="is-active is-size-7 is-underlined has-text-ligh">&nbsp;Parametric Modelling with GIS, eCAADe 2016, Finland</li>
+                        <li><a class="is-size-7" href="/reads">Reads</a></li>
+                        <li class="is-active is-size-7 is-underlined has-text-ligh">&nbsp;Designing Data Intensive Applications, Martin Kleppman</li>
                     </ul>
                 </nav>
                 <h1 class="title is-3 has-text-light">
-                    Parametric Modelling with GIS, eCAADe 2016, Finland
+                    Designing Data Intensive Applications, Martin Kleppman
                 </h1>
                 <div>
-                    Existing urban planning and design systems and workflows do not effectively support a fast iterative design process capable of generating and evaluating large-scale urban models. One of the key issues is the lack of flexibility in workflows to support iterative design generation. We present and demonstrate a parametric modelling system, Möbius, that can easily be linked to Geographic Information Systems for creating modular workflows, uses a rich topological data structure that allows custom data attributes to be added to geometric entities at any topological level, and is fully web-based.
+                    Foundational resource for understanding and building large scale systems.
                 </div>
                 <br/>
                 <div class="is-light is-size-7 has-text-grey-light">
-                    Posted on Aug 22, '16</small>
+                    Posted on Oct 05, '23</small>
                 </div>
             </section>
             <hr/>
@@ -259,7 +259,58 @@
 
                         <div class="column ">
                             <div class="content">
-                                
+                                <h2 id="introduction">Introduction</h2>
+
+<p>This has been long quoted as a fundamental book every software engineer should read. And it did live upto my expectations. The book said it would discuss big ideas and what stood out to me was how well structured it was.</p>
+
+<p><br /><br /></p>
+
+<p><img src="/assets/embeds/ddis/ddis-overview.png" alt="Book Overview" title="Designing Data Intensive Applications, Martin Kleppman" /></p>
+
+<h2 id="the-three-pillars-of-systems---reliabilty-scalability-and-measurability">The three pillars of systems - reliabilty, scalability and measurability</h2>
+
+<p><em>Reliability.</em>
+Error-proof. Tolerating hardware and software faults, human errors.
+The system should continue to work correctly (performing the correct function at the desired level of performance) even in the face of adversity (hardware or software faults, and even human error).</p>
+
+<p><em>Scalability</em>
+Measuring load and performance. Latency percentiles, throughput.
+As the system grows (in data volume, traffic volume, or complexity), there should be reasonable ways of dealing with that growth. See “Scalability”.</p>
+
+<p><em>Maintainability</em>
+Operability, simplicity and evolvability.
+As more people work on it, to maintain and grow - they should be able to work on this productively.</p>
+
+<p>Data Systems are painfully obvious. They need repeated implementations of the same type of functionality:</p>
+
+<ul>
+  <li>Store and recover data - databases</li>
+  <li>Memorize heavy computation - caches</li>
+  <li>Search for data - search indexes</li>
+  <li>Process data elsewhere asynchronous - data queues / stream processing</li>
+  <li>Process large amounts of accumulated data - batch processing</li>
+</ul>
+
+<h2 id="thinking-about-data">Thinking about data</h2>
+
+<p>Why are data models important?
+Because they determine how we think about and understand the data at hand.</p>
+
+<p>What is the main function of a data model?
+To abstract away the complexities and inner workings of a given layer.
+Describe the history of different data models.
+Historically, we started with hierarchical data models. However, they didn’t capture entity-entity relationships well. Hence, in the 1970s, Edgar Codd proposed the SQL data models, with tuples and relationships between the tuples. This worked great for business transaction processing, and later for a lot of other applications. However, in the 2010s, developers felt restricted by the strictness of SQL schemas and explored more free-form data models like NoSQL, better known as Document databases. They worked well for capturing data with not many interlinks between the entities. Another database that came into popularity was Graph databases, for addressing the other spectrum of data, with many cross-links.</p>
+
+<p>What are the different kinds of query languages?
+Query languages are usually imperative or declarative. Declarative query languages declare what is required but do not map the data access method. Hence, they offer greater optimization for less flexibility. Conversely, imperative query languages offer much more flexibility and power at the cost of optimizations gained by specialized query engines.</p>
+
+<p>What are the benefits of a document model?
+Document databases are preferred for:
+Higher scalability, larger datasets
+High throughput write databases
+Open source implementations
+Flexible schemas
+Complex query support</p>
 
                             </div>
                         </div>
