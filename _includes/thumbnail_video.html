@@ -1,7 +1,9 @@
 <div class="has-text-white my-3 columns" style="width: 100%;padding-bottom: 12px;">
+    {% if post.embed %}
     <div class="column">
         {{post.embed}}
     </div>
+    {% endif %}
     <div class="column">
         <p class="is-size-7 has-text-grey-light">{{post.date | date: "%b %d, '%y" }} | {{ post.where }}</p>
         <div class="is-size-5 has-text-light mb-1">
@@ -9,14 +11,13 @@
         </div>
         <p style="font-size: 14px; line-height: 1.3;" class="has-text-grey-light">
             {{ post.description }}
-        </p>
-        <div style="display: flex; flex-direction: row; gap: 12px" class="is-family-monospace is-size-7">
+            &nbsp;&nbsp;
             {% if post.slides %}
             <a class='has-text-white has-text-weight-light underline' href={{post.slides}} target="_blank">[Slides]</a>
             {% endif %}
             {% if post.demo %}
             <a class='has-text-white has-text-weight-light underline' href={{post.demo}} target="_blank">[Demo]</a>
             {% endif %}
-         </div>
+        </p>
     </div>
 </div>

@@ -14,12 +14,11 @@ layout: none
             <img width='150px' height='150px' style="border-radius: 10px;" src='/assets/akshata2.jpg'>
         </figure>
         <h5 class='has-text-white'><span class='is-size-6 has-text-weight-normal'>➜  ~ whoami&nbsp;</span>aatoh</h5>
-        <p class='has-text-justified p-3'>
-        I write code for fun and profit. Living in the future and building what's missing. Sharing insights bit by bit.
+        <p class='has-text-justified p-3' style="word-wrap: break;">
+        I build tech products for startups, specialize in cloud computing and make blockchains practical. Happier with hotpot, whiskey and water colors. Indian, at home in Singapore, currently travel bugged.
         </p>
-        <br/>
         <a href='https://akshata.youcanbook.me/' target='_blank'>
-            <button class="button is-dark">Connect with me.</button>
+            <button class="button is-dark">Let's collaborate.</button>
         </a>
     </div>
 </section>
