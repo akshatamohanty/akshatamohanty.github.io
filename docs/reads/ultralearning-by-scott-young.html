@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>Ultralearning, Scott Young</title>
+	<meta name="description" content="Humans are born intelligent. Education ruins us." />
+
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta property="og:title" content="Ultralearning, Scott Young" />
+	<meta property="og:description" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:image:width" content="400" />
+	<meta property="og:image:height" content="300" />
+	<meta property="og:type" content="website" />
+
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+	<link href='https://iamaatoh.com/feed.xml' rel='alternate' type='application/atom+xml'>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111560396-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-111560396-1');
+		document.fonts.ready.then((fontFaceSet) => {
+			document.body.style.opacity = 1
+		});
+	</script>
+	<script>
+		let isActive = null
+		document.addEventListener('DOMContentLoaded', () => {
+
+			// Get all "navbar-burger" elements
+			const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+			// Add a click event on each of them
+			$navbarBurgers.forEach( el => {
+				el.addEventListener('click', () => {
+
+					// Get the target from the "data-target" attribute
+					const target = el.dataset.target;
+					const $target = document.getElementById(target);
+
+					// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+					el.classList.toggle('is-active');
+					$target.classList.toggle('is-active');
+
+				});
+			});
+
+			// scroll
+			const body = (document.getElementsByTagName('body')[0])
+			const sideLinks = document.querySelectorAll(".menu-list-item");
+
+			body.addEventListener("scroll", event => {
+				// if (window.location.hash) {
+				// 	let selected = null
+				// 	sideLinks.forEach((s) => { if (s.href.split('#')[1] === window.location.hash.substring(1)) selected = s  })
+				// 	if (selected) {
+				// 		sideLinks.forEach((s) => s.classList.remove('is-active'))
+				// 		selected.classList.add('is-active')
+				// 		return
+				// 	}
+				// }
+
+				let fromTop = body.scrollTop - 250; // top nav + hero
+				sideLinks.forEach(link => {
+					const id = link.href.split('#')[1]
+					let section = document.getElementById(id);
+					if (
+						section?.offsetTop <= fromTop &&
+						section?.offsetTop + section?.offsetHeight > fromTop
+					) {
+						link.classList.add("is-active");
+						isActive = link
+					}
+				});
+				sideLinks.forEach(link => {
+					if (link !== isActive) link.classList.remove('is-active')
+				})
+			}, false);
+			});
+	</script>
+
+	<style>
+		html, body {
+			width: 100%;
+			height: 100%; 
+			position: relative;
+			overflow-x: hidden;
+			font-family: Verdana, sans-serif;
+			scroll-behavior: smooth;
+			background-color: #0C1214;
+			color: #F5F5F5;
+			overflow-y: initial !important;
+		}
+
+		strong {
+			color: #b5b5b5;
+		}
+
+		body::-webkit-scrollbar {
+			background: #292929 !important;
+			width: 12px;
+		}
+
+		body {
+			position: relative;
+			font-size: 16px !important; 
+			line-height: 1.7 !important;
+		}
+
+
+		h1, h2, h3, h4, h5, h6 {
+			scroll-margin-top: 100px;
+			color: #F5F5F5 !important;
+			line-height: 1.4;
+		}
+
+		a {
+			color: #F5F5F5 !important;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		pre.highlight {
+			background-color: black;
+			color: wheat
+		}
+
+		table {
+			background-color: black;
+		}
+
+		th {
+			color: #b5b5b5 !important;
+		}
+
+		code {
+			background-color: black;
+			color: wheat
+		}
+
+		blockquote {
+			background-color: transparent !important;
+		}
+
+		section {
+			padding: 3rem 0!important;
+		}
+
+		#logo:hover {
+			text-decoration: none;
+		}
+
+		.navbar-item:hover {
+			text-decoration: none;
+		}
+
+		.breadcrumb li {
+			white-space: pre-wrap;
+			text-decoration: none !important;
+		}
+
+		.menu-list a:hover {
+			background-color: inherit;
+		}
+
+		.navbar.is-dark { 
+			background-color:#252629d4 !important;
+		}
+
+		.navbar-item:hover, .navbar-item.is-active {
+			background-color: #292929 !important ;
+		}
+
+		@media screen and (max-width: 1023px)   {
+			.navbar-menu{
+				background-color: #252629d4 !important;
+			}
+		}
+	</style>
+</head>
+
+    <style>
+        img {
+            max-height: 400px;
+        }
+    </style>
+        <nav
+  class="navbar is-fixed-top is-dark"
+  role="navigation"
+  aria-label="main navigation"
+>
+  <div class="container" style="max-width: 750px;">
+    <div class="navbar-brand">
+      <a id="logo" class="navbar-item has-text-weight-bold" href="/">
+        <span>&lt;iamaatoh /&gt;</span>
+      </a>
+
+      <a
+        role="button"
+        class="navbar-burger"
+        aria-label="menu"
+        aria-expanded="false"
+        data-target="navbar"
+      >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+ 
+    <div id="navbar" class="navbar-menu">
+      <div class="navbar-end">
+        <a href="/blog" class="navbar-item is-hoverable ">Blog</a>
+        <a href="/reads" class="navbar-item is-hoverable is-active">Bookshelf</a>
+        <!-- <a href="/projects" class="navbar-item is-hoverable ">Projects</a> -->
+        <a href="/talks" class="navbar-item is-hoverable ">Talks</a>
+        <a href="/research" class="navbar-item is-hoverable ">Research</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+        <div style="margin: 52px auto; max-width: 750px; padding: 8px 12px;" class="has-text-grey-light">
+            <section class="hero pb-2">
+                <nav class="breadcrumb" aria-label="breadcrumbs">
+                    <ul class="is-align-items-center">
+                        <li><a class="is-size-7" href="/">Home</a></li>
+                        <li><a class="is-size-7" href="/reads">Reads</a></li>
+                        <li class="is-active is-size-7 is-underlined has-text-ligh">&nbsp;Ultralearning, Scott Young</li>
+                    </ul>
+                </nav>
+                <h1 class="title is-3 has-text-light">
+                    Ultralearning, Scott Young
+                </h1>
+                <div>
+                    Humans are born intelligent. Education ruins us.
+                </div>
+                <br/>
+                <div class="is-light is-size-7 has-text-grey-light">
+                    Posted on Oct 19, '23</small>
+                </div>
+            </section>
+            <hr/>
+            <section class="post pt-2">
+                <div class="container">
+                    <div class="columns is-6">
+                        
+
+                        <div class="column ">
+                            <div class="content">
+                                <p>This book caught my attention from a self-productivity article (yes, I read a lot of those!).</p>
+
+<p>However, what stood out to me was two things:</p>
+
+<ul>
+  <li>This person had done the entire course content for MIT CS in just one year.</li>
+  <li>James Clear (I’m a fan!) had a glowing forward for Scott Young. He stated that his own process of writing Atomic Habits was very similar to the process described in the Ultralearning book.</li>
+</ul>
+
+<p>And one idea by Scott Young stood out to me,</p>
+
+<blockquote>
+  <p>A deep year, dedicated to your area of interest, is usually enough to be really proficient at it.</p>
+</blockquote>
+
+<p>It was a light read. So all this was enough to get me sold on reading it.</p>
+
+<h2 id="the-ultralearning-archetype">The Ultralearning archetype</h2>
+
+<p>Scott Young describes Ultralearners almost like an archetype.</p>
+
+<p>Characteristics:</p>
+
+<ul>
+  <li>solo players</li>
+  <li>characterized by intensity and commitment</li>
+  <li>sacrificed credentials and conformance</li>
+  <li>tend towards obsession</li>
+  <li>work alone</li>
+  <li>only for themselves</li>
+</ul>
+
+<p>It made a uncomfortable. But I do agree agree that often <strong>rapid</strong> deep learning, requires a certain degree of obsession.</p>
+
+<h2 id="what-sets-apart-ultralearning-from-traditional-learning">What sets apart ultralearning from traditional learning?</h2>
+
+<ul>
+  <li>Aggressively optimizing strategies</li>
+  <li>Debating merits - e.g interleaving practice, keyword mnemonics, leech thresholds</li>
+  <li>Optimize for efficiency constantly</li>
+  <li>Directness in skill development is a priority e.g hands-on practice</li>
+  <li>Unorthodox tactics and aggressive analysis</li>
+  <li>Spaced Repetition, by Polish researcher - Wozniak.</li>
+</ul>
+
+<p>Ultra learning is three things:</p>
+
+<ul>
+  <li>Strategic</li>
+  <li>Self directed</li>
+  <li>
+    <p>Intense (unusual steps to maximize their learning)</p>
+  </li>
+  <li>Creating a really quick feedback cycle for the material, helped him learn better for his MIT project. Instead of first doing material, then assignment, he mixed the two.</li>
+  <li>What is required is an insane obsessive work ethic (de Montebello’s story - ToastMasters World Top 10 in 10 days)</li>
+</ul>
+
+<h2 id="principles-of-ultralearning">Principles of Ultralearning</h2>
+
+<ol>
+  <li>Metalearning: First draw the map.</li>
+  <li>Focus: sharpen your knife.</li>
+  <li>Directness: Go straight ahead.</li>
+  <li>Drill: Attack your weakest point.</li>
+  <li>Retrieval: Test to Learn.</li>
+  <li>Feedback: Don’t dodge the punches.</li>
+  <li>Retention: Don’t fill a leaky bucket.</li>
+  <li>Intuition: Dig deep before building up.</li>
+  <li>Experimentation: Explore outside your comfort zone.</li>
+</ol>
+
+<p>Here’s the framework,</p>
+
+<h3 id="beginner">Beginner</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>Metalearning</th>
+      <th>Focus</th>
+      <th>Directness</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>What is it?</td>
+      <td>Noticing the structure and relationships of the information for the skill. Not learning about the object of inquiry itself. This is meta information. For example, learning Chess, might be like learning AlphaGo. Positioning and tactics.</td>
+      <td>Mono-focus; working on a single thing at one time without distractions.</td>
+      <td>Direct application of skills learned to the real world.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Why is it important?</td>
+      <td>Optimize for efficiency.</td>
+      <td>Focus deeply and quickly is a necessary requirement for ultra learning.</td>
+      <td>Cut through and eliminate inconsequential jargon.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Example</td>
+      <td>Language, noun-verb demo. Monolingual framework demonstration.</td>
+      <td>Somerville</td>
+      <td>Vatsal Jaiswal, architect</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Concepts</td>
+      <td>Why-What-How? Why =&gt; intrinsic motivation and instrumental motivation</td>
+      <td>Start =&gt; Identify, being aware Mental tools Avoidance of unpleasant feelings Sustain =&gt; Interleaving vs Flow Quality =&gt; Focus can be practiced.</td>
+      <td>The transfer problem in education. We can transfer what we learn, to something else. Short transfer and far transfer</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Facts</td>
+      <td>How much planning=&gt; 10% of total study time.</td>
+      <td>Struggles =&gt; starting, sustaining, optimizing the quality Study duration =&gt; 50 minutes</td>
+      <td>Build context, outside of the learning kernel.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Tactics</td>
+      <td>Why =&gt; Expert Interview Method What =&gt; Concepts-Facts-Procedures Method Bottlenecking - which is the most difficult How =&gt; Benchmarking Emphasize/Exclude</td>
+      <td>Starting =&gt; 5-minute Pomodoro Rules Sustaining =&gt; Environment, task, mind; Eliminate distractions, choose more engaging tasks, let the bad feeling pass Focus quality =&gt; Arousal level</td>
+      <td>Project-based learning. Immersive learning. Join communities. Flight Simulator method. Overkill approach. Put yourself in an environment where demands are extremely high. Don’t miss lessons or feedback.</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="intermediate">Intermediate</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>Drill</th>
+      <th>Retrieval</th>
+      <th>Feedback</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>What is it?</td>
+      <td>Breaking elements of a skill down + designing ingenious drills to practice + transfer to complex context; Improving part of the process.</td>
+      <td>Strategy to learn deeply</td>
+      <td>Actionable data collection from outside to fix broken processes</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Why is it important?</td>
+      <td>Rate-limiting step, eliminates bottlenecks to learning.</td>
+      <td>Deep expansive learning Consider programmers. The best programmer is the one that knows how to do one thing a 100 ways. You can only get that with breadth and depth.</td>
+      <td>Feedback is information and the most consistent ultra learning strategy.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Example</td>
+      <td>Ben Franklin and writing</td>
+      <td>Ramanujan and Carr</td>
+      <td>Chris Rock and comedy cellar. Game design and spurious feedback.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Concepts</td>
+      <td>Rate limiting Designing drills: hypothesis-feedback</td>
+      <td>Forward testing Free recall</td>
+      <td>Immediate feedback =&gt; expert level performance; no feedback is stagnation. Feedback for ego versus feedback with information. Feedback processing. Choosing which feedback to use. Ultra learners choose aggressive feedback.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Facts</td>
+      <td>Direct-drill-feedback</td>
+      <td>Free recall is one of the most powerful methods of learning Difficulty is very important; more difficult is more training JoL =&gt; humans are bad at their own judgment of how much they have learned.</td>
+      <td>Outcome feedback (most common, goals and grades), informational feedback (what are you doing wrong) and corrective feedback (accelerates most). Faster feedback works better.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Tactics</td>
+      <td>Copycat: copy parts of the skill you aren’t drilling. Drill without prereq: do a drill without prereq, and then do what is holding you back. Recursive learning. Time slice method: slice of time in a skill. Cognitive slide method: cognitive pieces of a skill. Magnifying glass: elongate and spend 10x more time on a particular step.</td>
+      <td>Free recall (sheets of white paper, recall as much as possible, similar to feynman method) Flashcards (work better for cue and response type) Question-answer method (be weary of making dumb questions) Closed book learning - cut off all hints Self-generated challenges - create your own complex challenges to apply the principles.</td>
+      <td>Noise Cancellation by filtering; which feedback signal are you paying attention to (for eg virality is random) Proxy signals, what percentage of readers read all the way to the end. Difficulty sweet spot: you shouldn’t be able to predict if you’ll be successful or not. Metalearning: apart from how well you are learning what you are learning, tracking how well your learning methods are working i.e learning rates</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="advanced">Advanced</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>Recall</th>
+      <th>Intuition</th>
+      <th>Experimentation</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>What is it?</td>
+      <td>Memorization; long term memory</td>
+      <td>Developing mastery and magic.</td>
+      <td>Go above and beyond. Extending -growth mindset.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Why is it important?</td>
+      <td>Fundamental of learning</td>
+      <td>Apply your skill to even more extended situations; be a magician</td>
+      <td>Mastery.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Example</td>
+      <td>Nigel Richards + Scrabble in French</td>
+      <td>Richard Feynman and Maths and Physics</td>
+      <td>Vincent Van Gogh</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Concepts</td>
+      <td>Memory and how it works; forgetting is default Forgetting =&gt; decay, interference (intra and retro), lost cues Memory augmentation (treat your brain as a cache)</td>
+      <td>Connecting ideas Deep understanding (bicycle example)</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Facts</td>
+      <td> </td>
+      <td>Feynman method.</td>
+      <td>Experiment with - Learning resources Style techniques</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Tactics</td>
+      <td>Spaced repetition - repeating Interleaving Overlearning - doesn’t improve performance, but improves durability (core practice and advanced practice) Procedural - making a procedure out of it. Tactical memory is faster and better than normal memory Mnemonics - has downsides; upfront cost and still slow.</td>
+      <td>Don’t fool yourself. (Dunning Kruger effect). Ask a lot of questions. Even dumb questions. Ego has no place in learning. Always start with a concrete example. Stick with problems for longer. Don’t give up on hard problems. Prove things to understand them. (the bicycle example)</td>
+      <td>Explore extremes. Introduce constraints. Hybrid applications for your skillset. Copy, then create. Compare methods side-by-side.</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="how-to-do-your-own-ultralearning-project">How to do your own ultralearning project?</h2>
+
+<p>For your own ultra learning project, two important things:</p>
+
+<ul>
+  <li>For each of these principles, keep constantly asking questions on what could be better, what are you doing.
+Do a retro.</li>
+  <li>Ultralearning is a strategy. There could be other slower strategies.</li>
+</ul>
+
+<blockquote>
+  <p>Judith Polgar’s father proved that genius children could be raised.</p>
+</blockquote>
+
+<h2 id="my-thoughts">My thoughts</h2>
+
+<p>Overall, it was a good read.</p>
+
+<p>Scott Young’s framework made sense to me. The framework brought structure to an otherwise intuitive process of self-directed learning. I especially loved the use of examples for each of this elements, and that each chapter had the same structure - it was optimized for effective reading!</p>
+
+<p>My only two points of negative feedback would be:</p>
+
+<ol>
+  <li>A lot of the methods discussed here probably naturally come to people who decide to embark on a journey of self-directed learning.</li>
+  <li>Ultralearning, or any form of self-learning is really a mental game. Someone has to move beyond thinking and actually do. Even though this book gives techniques on how to learn, talks about directness, but it doesn’t give enough to build intent (unlike Atomic Habits).</li>
+</ol>
+
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer style="max-width: 750px; margin: 0 auto; padding: 0px 12px;" class="pb-2"><small>Copyright © 2023 iamaatoh.com</small></footer>
+    </body>
+</html>

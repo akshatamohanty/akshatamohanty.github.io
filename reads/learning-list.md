@@ -136,3 +136,4 @@ layout: list
 ### All done,
 
 - How we implemented serverless full-text search in Rust – Grafbase
+- [Ultralearning, Scott Young](./2023-10-19-ultralearning-by-scott-young)
