@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>Refactoring UI: Adam Wathan and Steve Schoger</title>
+	<meta name="description" content="From the makers of TailwindCSS, this is only design guide a developer will ever need." />
+
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta property="og:title" content="Refactoring UI: Adam Wathan and Steve Schoger" />
+	<meta property="og:description" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:image:width" content="400" />
+	<meta property="og:image:height" content="300" />
+	<meta property="og:type" content="website" />
+
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+	<link href='https://iamaatoh.com/feed.xml' rel='alternate' type='application/atom+xml'>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111560396-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-111560396-1');
+		document.fonts.ready.then((fontFaceSet) => {
+			document.body.style.opacity = 1
+		});
+	</script>
+	<script>
+		let isActive = null
+		document.addEventListener('DOMContentLoaded', () => {
+
+			// Get all "navbar-burger" elements
+			const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+			// Add a click event on each of them
+			$navbarBurgers.forEach( el => {
+				el.addEventListener('click', () => {
+
+					// Get the target from the "data-target" attribute
+					const target = el.dataset.target;
+					const $target = document.getElementById(target);
+
+					// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+					el.classList.toggle('is-active');
+					$target.classList.toggle('is-active');
+
+				});
+			});
+
+			// scroll
+			const body = (document.getElementsByTagName('body')[0])
+			const sideLinks = document.querySelectorAll(".menu-list-item");
+
+			body.addEventListener("scroll", event => {
+				// if (window.location.hash) {
+				// 	let selected = null
+				// 	sideLinks.forEach((s) => { if (s.href.split('#')[1] === window.location.hash.substring(1)) selected = s  })
+				// 	if (selected) {
+				// 		sideLinks.forEach((s) => s.classList.remove('is-active'))
+				// 		selected.classList.add('is-active')
+				// 		return
+				// 	}
+				// }
+
+				let fromTop = body.scrollTop - 250; // top nav + hero
+				sideLinks.forEach(link => {
+					const id = link.href.split('#')[1]
+					let section = document.getElementById(id);
+					if (
+						section?.offsetTop <= fromTop &&
+						section?.offsetTop + section?.offsetHeight > fromTop
+					) {
+						link.classList.add("is-active");
+						isActive = link
+					}
+				});
+				sideLinks.forEach(link => {
+					if (link !== isActive) link.classList.remove('is-active')
+				})
+			}, false);
+			});
+	</script>
+
+	<style>
+		html, body {
+			width: 100%;
+			height: 100%; 
+			position: relative;
+			overflow-x: hidden;
+			font-family: Verdana, sans-serif;
+			scroll-behavior: smooth;
+			background-color: #0C1214;
+			color: #F5F5F5;
+			overflow-y: initial !important;
+		}
+
+		strong {
+			color: #b5b5b5;
+		}
+
+		body::-webkit-scrollbar {
+			background: #292929 !important;
+			width: 12px;
+		}
+
+		body {
+			position: relative;
+			font-size: 16px !important; 
+			line-height: 1.7 !important;
+		}
+
+
+		h1, h2, h3, h4, h5, h6 {
+			scroll-margin-top: 100px;
+			color: #F5F5F5 !important;
+			line-height: 1.4;
+		}
+
+		a {
+			color: #F5F5F5 !important;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		pre.highlight {
+			background-color: black;
+			color: wheat
+		}
+
+		table {
+			background-color: black;
+		}
+
+		th {
+			color: #b5b5b5 !important;
+		}
+
+		code {
+			background-color: black;
+			color: wheat
+		}
+
+		blockquote {
+			background-color: transparent !important;
+		}
+
+		section {
+			padding: 3rem 0!important;
+		}
+
+		#logo:hover {
+			text-decoration: none;
+		}
+
+		.navbar-item:hover {
+			text-decoration: none;
+		}
+
+		.breadcrumb li {
+			white-space: pre-wrap;
+			text-decoration: none !important;
+		}
+
+		.menu-list a:hover {
+			background-color: inherit;
+		}
+
+		.navbar.is-dark { 
+			background-color:#252629d4 !important;
+		}
+
+		.navbar-item:hover, .navbar-item.is-active {
+			background-color: #292929 !important ;
+		}
+
+		@media screen and (max-width: 1023px)   {
+			.navbar-menu{
+				background-color: #252629d4 !important;
+			}
+		}
+	</style>
+</head>
+
+    <style>
+        img {
+            max-height: 400px;
+        }
+    </style>
+        <nav
+  class="navbar is-fixed-top is-dark"
+  role="navigation"
+  aria-label="main navigation"
+>
+  <div class="container" style="max-width: 750px;">
+    <div class="navbar-brand">
+      <a id="logo" class="navbar-item has-text-weight-bold" href="/">
+        <span>&lt;iamaatoh /&gt;</span>
+      </a>
+
+      <a
+        role="button"
+        class="navbar-burger"
+        aria-label="menu"
+        aria-expanded="false"
+        data-target="navbar"
+      >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+ 
+    <div id="navbar" class="navbar-menu">
+      <div class="navbar-end">
+        <a href="/blog" class="navbar-item is-hoverable ">Blog</a>
+        <a href="/reads" class="navbar-item is-hoverable is-active">Bookshelf</a>
+        <!-- <a href="/projects" class="navbar-item is-hoverable ">Projects</a> -->
+        <a href="/talks" class="navbar-item is-hoverable ">Talks</a>
+        <a href="/research" class="navbar-item is-hoverable ">Research</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+        <div style="margin: 52px auto; max-width: 750px; padding: 8px 12px;" class="has-text-grey-light">
+            <section class="hero pb-2">
+                <nav class="breadcrumb" aria-label="breadcrumbs">
+                    <ul class="is-align-items-center">
+                        <li><a class="is-size-7" href="/">Home</a></li>
+                        <li><a class="is-size-7" href="/reads">Reads</a></li>
+                        <li class="is-active is-size-7 is-underlined has-text-ligh">&nbsp;Refactoring UI: Adam Wathan and Steve Schoger</li>
+                    </ul>
+                </nav>
+                <h1 class="title is-3 has-text-light">
+                    Refactoring UI: Adam Wathan and Steve Schoger
+                </h1>
+                <div>
+                    From the makers of TailwindCSS, this is only design guide a developer will ever need.
+                </div>
+                <br/>
+                <div class="is-light is-size-7 has-text-grey-light">
+                    Posted on Dec 07, '23</small>
+                </div>
+            </section>
+            <hr/>
+            <section class="post pt-2">
+                <div class="container">
+                    <div class="columns is-6">
+                        
+
+                        <div class="column ">
+                            <div class="content">
+                                <p>PS: This is my random dump of notes from this awesome <a href="https://www.refactoringui.com/">resource</a>.</p>
+
+<h2 id="getting-started">Getting started</h2>
+
+<ul>
+  <li>don’t design too much, eliminate</li>
+  <li>build systems</li>
+  <li>start with a feature, not a layout (break it down)</li>
+  <li>DONT think about the shell</li>
+  <li>app =&gt; collection of features</li>
+  <li>start with a piece of functionality</li>
+  <li>details come later - dont get stuck on making low-level decisions like typefaces, shadows and icons</li>
+  <li>jason fried, basecamp =&gt; design on paper with a sharpie</li>
+  <li>hold the color: DONOT introduce color; design in grayscale; cleaner + strong hierarchy</li>
+  <li>don’t overinvest: move fast, low fidelity; use only to make decisions; leave them behind once done</li>
+  <li>don’t over-design: dont design every single feature in the app before implementation; it’s better not to. edge cases are hard.  you’ll set yourself up for frustration</li>
+  <li>work in cycles - design a simple version; leave it; iterate</li>
+  <li>make a basic design, then make it real;</li>
+  <li>iterate on the working design until there are no more problems to solve; design &lt;&gt; code; build the real thing so that your imagination doesn’t need to do all the heavy lifting</li>
+  <li>be a pessimist - do design for functionality you won’t have</li>
+  <li>when designing a new feature, expect it to be hard to build</li>
+  <li>nice to have =&gt; design later</li>
+  <li>choose a personality</li>
+  <li>font choice</li>
+  <li>elegant or classic =&gt; serif</li>
+  <li>playful look =&gt; rounded sans serif</li>
+  <li>plainer =&gt; neutral sans serif</li>
+  <li>color</li>
+  <li>blue is safe and familiar</li>
+  <li>gold is expensive</li>
+  <li>pink is fun</li>
+  <li>color psychology</li>
+  <li>border radius</li>
+  <li>larger border radius =&gt; more playful</li>
+  <li>no border radius =&gt; formal</li>
+  <li>stick to one</li>
+  <li>language</li>
+  <li>use playful language with playful fonts</li>
+  <li>decide on what you want; look at the competition but dont borrow too much</li>
+  <li>limit your choices</li>
+  <li>what are the components of a design system?</li>
+  <li>wasteful options</li>
+  <li>define systems in advance - pick shades ahead of time and pick from that</li>
+  <li>pick from limited set of font sizes</li>
+  <li>icon sizes</li>
+  <li>fontsize, font weight, line height, color, margin, padding, width, height, box shadows, border radius, border width, opacity</li>
+</ul>
+
+<h2 id="hierarchy-is-everything">Hierarchy is everything</h2>
+
+<ul>
+  <li>not all element are equal</li>
+  <li>strategies:</li>
+  <li>size isn’t everything</li>
+  <li>use font-weight and font-color</li>
+  <li>stick to 2-3 colors (dark color for primary, grey for secondary, lighter gray for tertiary)</li>
+  <li>2 font-weights: 400-500, 600-700</li>
+  <li>stay away from &lt; 400 (use a lighter color or font size instead)</li>
+  <li>dont use grey text on colored backgrounds (how would i automate this; effect is reduced in contrast) make it closer to the background color to deemphasize; use the same hue and adjust saturation and lightness till it looks right</li>
+  <li>de-emphasize instead of emphasizing</li>
+  <li>labels are last resort; add label but treat it like supporting content</li>
+  <li>for information dense pages, where user would be looking for labels  - like product specs, emphasize there</li>
+  <li>separate visual hierarchy from document hierarchy</li>
+  <li>use semantic markup; but dont style accordingly</li>
+  <li>balance weight and contrast</li>
+  <li>bold covers more surface area, hence looks emphasized</li>
+  <li>surface area and hierarchy have a relationship</li>
+  <li>use contrast to balance out over weighted icons</li>
+  <li>semantics are secondary</li>
+  <li>primary - high contrast backgrounds</li>
+  <li>secondary - outline + low contrast</li>
+  <li>
+    <h2 id="tertiary---design-as-links">tertiary - design as links</h2>
+  </li>
+</ul>
+
+<h2 id="layout-and-spacing">Layout and spacing</h2>
+
+<ul>
+  <li>easiest ways to clean up a design - start with too much whitespace</li>
+  <li>dense UIs have their place - dashboards</li>
+  <li>linear styles dont work</li>
+  <li>have a system =&gt; relative difference between adjacent values;</li>
+  <li>no two values should be closer than 25%</li>
+  <li>start with a sensible base value; build a scale using factors and multiples of that value; lower end is compact; higher end is spaced out</li>
+  <li>use the system to design faster; especially spacing and sizing (take the one in refactoring UI)</li>
+  <li>dont forcefully fill the screen</li>
+  <li>extra space around never hurt anyone; give it the space it needs; you dont need to make it match</li>
+  <li>shrink the canvas - it’s easier; for responsive, design the mobile layout first</li>
+  <li>think in columns</li>
+  <li>grids are overrated;</li>
+  <li>forcing everything to be fluid - is a mistake</li>
+  <li>only shrink a component, if it needs to shrink</li>
+  <li>relative sizing doesn’t scale (large elements on smaller screens need to shrink faster than the smaller elements)</li>
+  <li>connected components have less space between them</li>
+</ul>
+
+<h2 id="establish-a-type-scale">Establish a type scale</h2>
+
+<ul>
+  <li>use a hand-crafted scale</li>
+  <li>use a design system</li>
+  <li>avoid fractional sizes</li>
+  <li>avoid em units; stick to px or rem.</li>
+  <li>use good fonts</li>
+  <li>play it safe - neutral: helvetica</li>
+  <li>ignore typefaces with less than 5 weights; crank it up to 10+ on google fonts</li>
+  <li>optimize for legibility</li>
+  <li>headlines: tight letter spacing, short x height (futura)</li>
+  <li>body: wider letter space + taller lowercase (proxima)</li>
+  <li>trust the wisdom of the crowd; if it’s popular, it’s good; sort by popularity</li>
+  <li>steal</li>
+  <li>develop your intuition</li>
+  <li>keep your line length in check: 45-75 chars length; em relative to current font size 20-35em</li>
+  <li>vertical align by baseline</li>
+  <li>line-height 1.5; is proportional</li>
+  <li>line-height and font-size are inversely proportional</li>
+  <li>not every link needs a color</li>
+  <li>dont center long form text; headlnes or short independent blocks 1-2 lines are ok; more than that, left-align</li>
+  <li>right align numbers (get the decimals aligned)</li>
+  <li>justify text with hyphenation</li>
+  <li>letter-spacing: mostly leave alone</li>
+  <li>tighten headlines</li>
+  <li>headline fonts rarely work in body</li>
+  <li>increase letter space for all-caps</li>
+</ul>
+
+<h2 id="working-with-color">working with color</h2>
+
+<ul>
+  <li>use HSL (hue saturation and lightness)</li>
+  <li>hue =&gt; position on the color wheel</li>
+  <li>saturation =&gt; how vivid the color is; 0 is grey, 100 is intense</li>
+  <li>lightness =&gt; how close to white or black - 100% is pure white, 0 is pure black</li>
+  <li>color palette has 3 categories</li>
+  <li>greys: text, background, panels, form controls</li>
+  <li>darkest grey</li>
+  <li>dark grey</li>
+  <li>grey</li>
+  <li>light grey</li>
+  <li>lightest grey</li>
+  <li>you’ll need 10 greys</li>
+  <li>primary color</li>
+  <li>primary action, active navigation element</li>
+  <li>5-10 light to dark shades</li>
+  <li>accent colors</li>
+  <li>destructive actions</li>
+  <li>eye-grabbing</li>
+  <li>yellow for warnings</li>
+  <li>greens for positive trends</li>
+  <li>ten different colors with 5-10 different shades</li>
+  <li>define your shades upfront</li>
+  <li>how to put together a palette</li>
+  <li>choose a base color (pick something that works well as a button background) - darkest reserved for text, lightest as a background (think alerts)</li>
+  <li>base color - adjust saturation and lightness</li>
+  <li>fill in the gaps</li>
+  <li>increase saturation as lightness goes up;</li>
+  <li>rotate the hue to make it lighter (dont rotate by more than 20-30 degrees)</li>
+  <li>greys</li>
+  <li>cool greys =&gt; saturate with blue</li>
+  <li>warm greys =&gt; saturate with yellow</li>
+  <li>neutral greys =&gt; 0 saturation</li>
+  <li>contrast ratio</li>
+  <li>small text =&gt; 4.5:1</li>
+  <li>large test =&gt; 3:1</li>
+  <li>dont rely on color alone (color blindness)</li>
+  <li>reinforce with color, don’t make it the only communication available</li>
+</ul>
+
+<h2 id="creating-depth">Creating depth</h2>
+
+<ul>
+  <li>emulate a light source: light comes from above</li>
+  <li>box-shadow: inset 0 1px 0 hsl(…) [choose a lighter color by hand]</li>
+  <li>box-shadow:  0 1px 3px hsla(..)</li>
+  <li>closer something feels to the user, more it’ll attract focus</li>
+  <li>dropdowns + buttons + inset input boxes</li>
+  <li>large shadows =&gt; dialogs</li>
+  <li>5 options for elevations</li>
+  <li>mix with interactions</li>
+  <li>two shadows (refer to the book)</li>
+  <li>creating depth with color</li>
+  <li>lighter than the background, appears elevated</li>
+  <li>darker = further away</li>
+  <li>short vertically offset shadows, no blur radius</li>
+  <li>overlap elements to create layers</li>
+  <li>image on image overlap - give it an invisible border</li>
+</ul>
+
+<h2 id="working-with-images">Working with images</h2>
+
+<ul>
+  <li>use high quality stock images</li>
+  <li>Dont design using placeholder images; it doesn’t work</li>
+  <li>Text needs consistent contrast. All images will not work as background OR add a black overlay or lower the image contrast or lower the contrast of the image itself or colorize the image</li>
+  <li>Dont scale up icons - everything has an intended size; for small icons, keep them in a shaded circle or something</li>
+  <li>Don’t scale down screenshots; take a screenshot at a smaller screen size and use that; or it gets cramped; or consider a partial screenshot; or draw a simplified version; blur the details out</li>
+  <li>Redraw icons (favicons); control the compromises</li>
+  <li>User uploaded content</li>
+  <li>Control shape and size; center images in fixed containers, cropping things out</li>
+  <li>Prevent background bleed with subtle inner box shadow or semi transparent inner border</li>
+</ul>
+
+<h2 id="finishing-touches">Finishing touches</h2>
+
+<ul>
+  <li>Do simple things - bullets =&gt; icons</li>
+  <li>Quotes to visual elements</li>
+  <li>Forms =&gt; custom checkboxes and radio buttons; use brand color instead of browser defaults</li>
+  <li>Add colors with accent borders</li>
+  <li>Play with backgrounds</li>
+  <li>Change the background color - add gradients (2 hues not more than 30 degrees aprt)</li>
+  <li>Try a repeating pattern (<a href="https://heropatterns.com/">https://heropatterns.com/</a>)</li>
+  <li>Add a simple shape or illustration</li>
+  <li>Or simplified world map</li>
+  <li>Don’t overlook empty states</li>
+  <li>Use fewer borders</li>
+  <li>Add spacing</li>
+  <li>Use multiple background colors</li>
+  <li>Think outside the box</li>
+</ul>
+
+<h2 id="how-to-get-better--leveling-up">how to get better / leveling up</h2>
+
+<ol>
+  <li>notice decisions you wouldn’t have made yourself</li>
+  <li>rebuild favorite interfaces (WITHOUT looking into developer tools)</li>
+</ol>
+
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer style="max-width: 750px; margin: 0 auto; padding: 0px 12px;" class="pb-2"><small>Copyright © 2023 iamaatoh.com</small></footer>
+    </body>
+</html>
