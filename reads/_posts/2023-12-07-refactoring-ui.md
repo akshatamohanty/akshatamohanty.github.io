@@ -5,12 +5,12 @@ date: 2023-12-07
 layout: post
 ---
 
-PS: This is my random dump of notes from this awesome [resource](https://www.refactoringui.com/).
+PS: This is my stack of of notes from this awesome [resource](https://www.refactoringui.com/).
 
 ## Getting started
 
-- don't design too much, eliminate
-- build systems
+- Don't design too much, eliminate as much as possible. Design a little, reiterate.
+- Build systems
 - start with a feature, not a layout (break it down)
 - DONT think about the shell
 - app => collection of features
