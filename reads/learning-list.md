@@ -13,6 +13,8 @@ layout: list
 
 ### Next up,
 
+- [Mental Models](https://jamesclear.com/mental-models)
+- [Mental Models - 2](https://github.com/AdrienLemaire/awesome-mental-models#books])
 - [The Consulting Handbook by the Seattle Data Guy](https://github.com/sdg-1/consulting-handbook)
 
 ### Someday,
@@ -75,7 +77,7 @@ layout: list
 - The Internet of Money by Antonopoulos, Andreas M.
 - Business Adventures: Twelve Classic Tales from the World of Wall Street
 - 7 Lessons Growing a Bootstrapped SaaS to $50K MRR - Bannerbear
-- From the Transistor to the Web Browser, a rough outline for a 12 week course
+- [From the Transistor to the Web Browser, a rough outline for a 12 week course](https://github.com/geohot/fromthetransistor)
 - The Crypto Compendium
 - The Soul of a New Machine, Tracy Kidder
 - Code: The Hidden Language of Computer Hardware and Software, Charles Petzold
@@ -132,6 +134,7 @@ layout: list
 - Martin Fowler
 - Lenny’s Newsletter
 - ByteByteGo
+- [Stratechery](https://stratechery.com/)
 
 ### All done,
 
