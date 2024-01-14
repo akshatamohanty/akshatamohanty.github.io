@@ -68,6 +68,20 @@ layout: post
 - Language keeps changing
 - Good usage is using good words, to express yourself clearly and simply to someone else.
 
+# Attitudes
+
+## The Sound of Your Voice
+
+- Writing is about the author. It is "the author's book about baseball or jazz"
+- Cliches or slang lacks style and is breezy
+- Good writing is not accidental, it is discipline
+- Finding a voice is about taste. Taste is about what not to do.
+- Less is more
+- Taste can be acquired
+- Imitation is part of the creative process
+- Fresh imagery is good taste; simple homey words with clear meaning
+- Remember the uses of past when you tell your story
+
 # What I love about this book?
 
 - The book itself is an example of all it teaches.
