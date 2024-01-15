@@ -82,6 +82,17 @@ layout: post
 - Fresh imagery is good taste; simple homey words with clear meaning
 - Remember the uses of past when you tell your story
 
+## Enjoyment, Confidence and Fear
+
+- You have to jumpstart yourself, motivate yourself, get over the fear.
+- With each rewrite, you insert more personality into your work.
+- How to fight fears - write about what interests you, what you enjoy.
+- "Dying is no big deal. Living is the trick."
+- To be interesting, be interested.
+- Learning is a tonic.
+- If you write about stuff that you are interested in, you will automatically sound interesting
+- Listen to yourself for - "That's interesting"
+
 # What I love about this book?
 
 - The book itself is an example of all it teaches.
