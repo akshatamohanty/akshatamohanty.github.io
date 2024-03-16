@@ -9,6 +9,28 @@
       
       <item>
         <category></category>
+        <title>Finding the Genesis Block: My first forays into working with blockchain data</title>
+        <description></description>
+        <pubDate>Jan 2024</pubDate>
+        <link>http://localhost:4000/talks/bw-pb-10.html </link>
+        <guid isPermaLink="true">http://localhost:4000/talks/bw-pb-10.html</guid>
+      </item>
+      
+    
+      
+      <item>
+        <category></category>
+        <title>Build with AI: Multimodality with Gemini Workshop</title>
+        <description></description>
+        <pubDate>Jan 2024</pubDate>
+        <link>http://localhost:4000/talks/multimodality-with-gemini.html </link>
+        <guid isPermaLink="true">http://localhost:4000/talks/multimodality-with-gemini.html</guid>
+      </item>
+      
+    
+      
+      <item>
+        <category></category>
         <title>On Writing Well by William Zinsser</title>
         <description></description>
         <pubDate>Jan 2024</pubDate>
@@ -36,28 +58,6 @@
         <pubDate>Dec 2023</pubDate>
         <link>http://localhost:4000/reads/refactoring-ui.html </link>
         <guid isPermaLink="true">http://localhost:4000/reads/refactoring-ui.html</guid>
-      </item>
-      
-    
-      
-      <item>
-        <category></category>
-        <title>Thinking in Systems, Donella Meadows</title>
-        <description></description>
-        <pubDate>Dec 2023</pubDate>
-        <link>http://localhost:4000/reads/thinking-in-systems.html </link>
-        <guid isPermaLink="true">http://localhost:4000/reads/thinking-in-systems.html</guid>
-      </item>
-      
-    
-      
-      <item>
-        <category></category>
-        <title>The German Beginner</title>
-        <description></description>
-        <pubDate>Dec 2023</pubDate>
-        <link>http://localhost:4000/reads/the-german-beginner.html </link>
-        <guid isPermaLink="true">http://localhost:4000/reads/the-german-beginner.html</guid>
       </item>
       
     
