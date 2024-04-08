@@ -201,10 +201,6 @@
 <lastmod>2023-11-18T00:00:00+08:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/reads/the-german-beginner.html</loc>
-<lastmod>2023-12-05T00:00:00+08:00</lastmod>
-</url>
-<url>
 <loc>http://localhost:4000/reads/thinking-in-systems.html</loc>
 <lastmod>2023-12-05T00:00:00+08:00</lastmod>
 </url>
@@ -229,6 +225,10 @@
 <lastmod>2024-03-16T00:00:00+08:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/papers/the-aptos-blockchain.html</loc>
+<lastmod>2024-04-09T00:00:00+08:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/archives/</loc>
 </url>
 <url>
@@ -236,5 +236,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/learning-list.html</loc>
+</url>
+<url>
+<loc>http://localhost:4000/papers/annotated_pdfs/the-aptos-blockchain-annotated.pdf</loc>
+<lastmod>2024-04-09T03:05:37+08:00</lastmod>
 </url>
 </urlset>

@@ -1,12 +1,21 @@
 <div class="has-text-white my-3" style="width: 100%;padding-bottom: 12px;">
     <div class="is-size-7 has-text-grey-light">{{post.date | date: "%b %d, '%y" }}
-       {% if post.wip %}
-       <div class="control ml-2 is-inline-block">
-        <div class="tags has-addons">
-          <span class="tag is-dark">status</span>
-          <span class="tag is-info">work-in-progress</span>
+      {% if post.tags %}
+      <div class="control ml-2 is-inline-block">
+        <div class="tags">
+          {% for tag in post.tags %}
+          <span class="tag is-dark">{{tag}}</span>
+          {% endfor %}
         </div>
       </div>
+     {% endif %}
+       {% if post.wip %}
+        <div class="control ml-2 is-inline-block">
+          <div class="tags has-addons">
+            <span class="tag is-dark">status</span>
+            <span class="tag is-info">work-in-progress</span>
+          </div>
+        </div>
        {% endif %}
     </div>
     <div class="is-size-5 has-text-light mb-1">

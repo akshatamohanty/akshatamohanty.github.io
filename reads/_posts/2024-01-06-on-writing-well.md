@@ -2,7 +2,6 @@
 title: "On Writing Well by William Zinsser"
 description: "Writing is an act of ego. You might as well admit it. Use its energy to keep it going."
 date: 2024-01-06
-wip: true
 layout: post
 ---
 

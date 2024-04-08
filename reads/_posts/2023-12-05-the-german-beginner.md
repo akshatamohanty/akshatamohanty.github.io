@@ -1,4 +1,5 @@
 ---
+published: false
 wip: true
 title: The German Beginner
 description: Closer to Goethe. Und es ist gut.
