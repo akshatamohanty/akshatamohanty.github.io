@@ -1,5 +1,4 @@
 ---
-wip: true
 layout: annotated_paper
 title: "The Aptos Blockchain: Safe, Scalable, and Upgradeable Web3 Infrastructure"
 description: "The Aptos project is a Layer-1 with a focus on scalability, safety, reliability, and upgradeability
