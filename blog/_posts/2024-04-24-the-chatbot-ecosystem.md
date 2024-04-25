@@ -1,8 +1,9 @@
 ---
-wip: true
+published: false
 title: The Chatbot Ecosystem
 description:
 date: 2024-04-24
+layout: post
 ---
 
 # LLMs are the trend today. But should you invest in an AI-enabled customer service?
