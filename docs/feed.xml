@@ -20,6 +20,17 @@
       
       <item>
         <category></category>
+        <title>Should you use LLMs to improve customer experience?</title>
+        <description></description>
+        <pubDate>Apr 2024</pubDate>
+        <link>http://localhost:4000/blog/should-i-chatbot.html </link>
+        <guid isPermaLink="true">http://localhost:4000/blog/should-i-chatbot.html</guid>
+      </item>
+      
+    
+      
+      <item>
+        <category></category>
         <title>Monad: A highly scalable Ethereum-compatible smart contract platform</title>
         <description></description>
         <pubDate>Apr 2024</pubDate>
@@ -47,17 +58,6 @@
         <pubDate>Mar 2024</pubDate>
         <link>http://localhost:4000/talks/multimodality-with-gemini.html </link>
         <guid isPermaLink="true">http://localhost:4000/talks/multimodality-with-gemini.html</guid>
-      </item>
-      
-    
-      
-      <item>
-        <category></category>
-        <title>Finding the Genesis Block: My first forays into working with blockchain data</title>
-        <description></description>
-        <pubDate>Jan 2024</pubDate>
-        <link>http://localhost:4000/talks/bw-pb-10.html </link>
-        <guid isPermaLink="true">http://localhost:4000/talks/bw-pb-10.html</guid>
       </item>
       
     
