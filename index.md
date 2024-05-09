@@ -13,7 +13,7 @@ layout: none
         <figure>
             <img width='150px' height='150px' style="border-radius: 10px;" src='/assets/akshata_3.jpeg'>
         </figure>
-        <h4 class='has-text-white'><span class='is-size-6 has-text-weight-normal'>➜  ~ whoami&nbsp;</span>iamaatoh</h4>
+        <h4 class='has-text-white'><span class='is-size-6 has-text-weight-normal'>➜  ~ whoami&nbsp;</span>aatoh</h4>
         <p class='p-3' style="word-wrap: break-word;">
         Coding for fun and food, in that order. <br/>
         Working with serverless cloud architectures and practical blockchains. 
