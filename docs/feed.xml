@@ -9,6 +9,17 @@
       
       <item>
         <category></category>
+        <title>Everyday principles of software development.</title>
+        <description></description>
+        <pubDate>May 2024</pubDate>
+        <link>http://localhost:4000/blog/software-development-principles-for-every-developer.html </link>
+        <guid isPermaLink="true">http://localhost:4000/blog/software-development-principles-for-every-developer.html</guid>
+      </item>
+      
+    
+      
+      <item>
+        <category></category>
         <title>There are too many blockchains - here's why.</title>
         <description></description>
         <pubDate>May 2024</pubDate>
@@ -47,17 +58,6 @@
         <pubDate>Apr 2024</pubDate>
         <link>http://localhost:4000/papers/the-aptos-blockchain.html </link>
         <guid isPermaLink="true">http://localhost:4000/papers/the-aptos-blockchain.html</guid>
-      </item>
-      
-    
-      
-      <item>
-        <category></category>
-        <title>Build with AI: Multimodality with Gemini Workshop</title>
-        <description></description>
-        <pubDate>Mar 2024</pubDate>
-        <link>http://localhost:4000/talks/multimodality-with-gemini.html </link>
-        <guid isPermaLink="true">http://localhost:4000/talks/multimodality-with-gemini.html</guid>
       </item>
       
     
