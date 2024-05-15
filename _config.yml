@@ -1,13 +1,13 @@
 # File: _config.yml
 destination: docs
 url: "https://iamaatoh.com"
+baseurl: ""
 encoding: UTF-8
 name: aatoh
 description: "Coding for fun and food, in that order."
-url: https://iamaatoh.com
 permalink: none
 author:
-  name: "aatoh"
+  name: "Akshata Mohanty"
   url: https://iamaatoh.com
 version: 7.0.0
 github:
