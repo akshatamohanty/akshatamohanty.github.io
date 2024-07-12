@@ -1,5 +1,5 @@
 ---
-title: "Akshata Mohanty, also known as iamaatoh"
+title: "Akshata Mohanty (iamaatoh)"
 description: "I help companies deploy cloud-native data applications to production. I write about app architectures, tooling, and enabling AI and web3 use-cases with cloud."
 layout: none
 ---
