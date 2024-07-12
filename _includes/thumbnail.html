@@ -4,7 +4,7 @@
       <div class="control ml-2 is-inline-block">
         <div class="tags">
           {% for tag in post.tags %}
-          <span class="tag is-dark">{{tag}}</span>
+          <span class="tag">#{{tag}}</span>
           {% endfor %}
         </div>
       </div>
@@ -18,7 +18,7 @@
         </div>
        {% endif %}
     </div>
-    <div class="is-size-3 my-2" style="line-height: 1.3;">
+    <div class="is-size-4 my-2" style="line-height: 1.3;">
         <a class='' href={{post.url}}>{{ post.title }}</a>
     </div>
     <p class="is-size-6">

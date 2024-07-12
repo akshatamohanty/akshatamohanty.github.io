@@ -1,15 +1,15 @@
-<div class="my-3 columns" style="width: 100%;padding-bottom: 12px;">
+<div class="my-6 columns is-flex" style="padding-bottom: 12px;">
     {% if post.embed %}
-    <div class="column">
+    <div class="p-2 column is-one-third">
         {{post.embed}}
     </div>
     {% endif %}
-    <div class="column">
+    <div class="p-2 column">
         <p class="is-size-6 ">{{post.date | date: "%b %d, '%y" }} | {{ post.where }}</p>
-        <div class="is-size-3">
+        <div class="is-size-4">
             <a class='' target="_blank" href={{post.external_url}}>{{ post.title }}</a>
         </div>
-        <p style="font-size: 14px;" class="">
+        <p class="is-size-6">
             {{ post.description }}
             &nbsp;&nbsp;
             {% if post.slides %}
