@@ -16,7 +16,7 @@ layout: none
             </p>
             <br/>
             <p>
-                In 2024, I founded <a target='_blank' rel='nofollow' href='https://keis.dev' class='is-underlined'>Keis</a>, a tech consultancy to help enterprises evaluate the latest trends like AI, ML, and Web3 without incurring significant upfront costs, by leveraging cost-efficient cloud-native approaches. Before this, I was senior engineer and tech lead at <a target='_blank' rel='nofollow' href='https://awen.finance' class='is-underlined link'>Awen</a>,  <a target='_blank' rel='nofollow' href='https://nasacademy.com' class='is-underlined'>NasAcademy</a>, <a target='_blank' rel='nofollow' href='https://viki.com' class='is-underlined'>Rakuten Viki</a> and the <a target='_blank' rel='nofollow' href='https://design-automation.net/pages/people.html' class='is-underlined'>National University of Singapore</a>. 
+                In 2024, I founded <a target='_blank' rel='nofollow' href='https://keis.dev' class='is-underlined'>Keis</a>, a tech consultancy to help enterprises evaluate latest trends in tech like AI, ML, and Web3 by leveraging cost-efficient cloud-native approaches. Before this, I was senior engineer and tech lead at <a target='_blank' rel='nofollow' href='https://awen.finance' class='is-underlined link'>Awen</a>,  <a target='_blank' rel='nofollow' href='https://nasacademy.com' class='is-underlined'>NasAcademy</a>, <a target='_blank' rel='nofollow' href='https://viki.com' class='is-underlined'>Rakuten Viki</a> and the <a target='_blank' rel='nofollow' href='https://design-automation.net/pages/people.html' class='is-underlined'>National University of Singapore</a>. 
             </p>
             <br/>
             <p>

@@ -3,8 +3,8 @@
   <channel>
     <title>Akshata Mohanty (also known as iamaatoh)</title>
     <description></description>
-    <link>http://localhost:4000</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <link>https://iamaatoh.com</link>
+    <atom:link href="https://iamaatoh.com/feed.xml" rel="self" type="application/rss+xml" />
     
       
       <item>
@@ -12,8 +12,8 @@
         <title>Architecting AI Agents: Supercharge your workflows with Vertex AI</title>
         <description></description>
         <pubDate>Jun 2024</pubDate>
-        <link>http://localhost:4000/talks/ai-agent-architectures-gdg-cloud-kl.html </link>
-        <guid isPermaLink="true">http://localhost:4000/talks/ai-agent-architectures-gdg-cloud-kl.html</guid>
+        <link>https://iamaatoh.com/talks/ai-agent-architectures-gdg-cloud-kl.html </link>
+        <guid isPermaLink="true">https://iamaatoh.com/talks/ai-agent-architectures-gdg-cloud-kl.html</guid>
       </item>
       
     
@@ -23,8 +23,8 @@
         <title>Architecting AI Agents: Supercharge your workflows with Vertex AI</title>
         <description></description>
         <pubDate>Jun 2024</pubDate>
-        <link>http://localhost:4000/talks/ai-agent-architectures-datascience-sg.html </link>
-        <guid isPermaLink="true">http://localhost:4000/talks/ai-agent-architectures-datascience-sg.html</guid>
+        <link>https://iamaatoh.com/talks/ai-agent-architectures-datascience-sg.html </link>
+        <guid isPermaLink="true">https://iamaatoh.com/talks/ai-agent-architectures-datascience-sg.html</guid>
       </item>
       
     
@@ -34,8 +34,8 @@
         <title>Everyday principles of software development.</title>
         <description></description>
         <pubDate>May 2024</pubDate>
-        <link>http://localhost:4000/blog/software-development-principles-for-every-developer.html </link>
-        <guid isPermaLink="true">http://localhost:4000/blog/software-development-principles-for-every-developer.html</guid>
+        <link>https://iamaatoh.com/blog/software-development-principles-for-every-developer.html </link>
+        <guid isPermaLink="true">https://iamaatoh.com/blog/software-development-principles-for-every-developer.html</guid>
       </item>
       
     
@@ -45,8 +45,8 @@
         <title>There are too many blockchains - here's why.</title>
         <description></description>
         <pubDate>May 2024</pubDate>
-        <link>http://localhost:4000/blog/the-blockchain-trilemma.html </link>
-        <guid isPermaLink="true">http://localhost:4000/blog/the-blockchain-trilemma.html</guid>
+        <link>https://iamaatoh.com/blog/the-blockchain-trilemma.html </link>
+        <guid isPermaLink="true">https://iamaatoh.com/blog/the-blockchain-trilemma.html</guid>
       </item>
       
     
@@ -56,8 +56,8 @@
         <title>Should you use LLMs to improve customer experience?</title>
         <description></description>
         <pubDate>Apr 2024</pubDate>
-        <link>http://localhost:4000/blog/should-i-chatbot.html </link>
-        <guid isPermaLink="true">http://localhost:4000/blog/should-i-chatbot.html</guid>
+        <link>https://iamaatoh.com/blog/should-i-chatbot.html </link>
+        <guid isPermaLink="true">https://iamaatoh.com/blog/should-i-chatbot.html</guid>
       </item>
       
     
