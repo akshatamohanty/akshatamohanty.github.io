@@ -1,16 +1,16 @@
 ---
 page: Home
 title: "Akshata Mohanty (also known as iamaatoh)"
-description: "I help companies deploy cloud-native data applications to production. I write about application architectures, tooling, and leveraging AI and blockchains with cloud technologies."
+description: "I help companies deploy cloud-native data applications to production. I write about app architectures, tooling, and enabling AI and web3 use-cases with cloud."
 layout: none
 ---
 
 {% include head.html %}
 {% include navigation.html %}
 
-<section class='m-4'>
+<section class='mt-4'>
     <div class='columns pt-6' style="max-width: 900px; margin: 0 auto;">
-        <div class='pr-6 pt-3'>
+        <div class='pt-3'>
             <p>
                 Hi, I’m Akshata, a cloud architect specializing in data applications. Originally from India, I am currently based in Singapore but am an aspirational nomad (yes, the picture is from Heidelberg, Germany!).
             </p>
@@ -20,11 +20,11 @@ layout: none
             </p>
             <br/>
             <p>
-                I am a self-taught developer and learned how to code with FreeCodeCamp and Udacity. In 2015, I graduated from <a target='_blank' rel='nofollow' href='https://en.wikipedia.org/wiki/IIT_Kharagpur'>IIT, Kharagpur in India in 2015 with a degree in Architecture</a>. However, a hacky internship changed the type of architect I was supposed to be (read <a target='_blank' rel='nofollow' href=''>here</a>). I enjoy teaching and host tech workshops to support cross-domain collaborator and career shifters in making the transition easier.
+                I am a self-taught developer and learned how to code with FreeCodeCamp and Udacity. In 2015, I graduated from <a target='_blank' rel='nofollow' href='https://en.wikipedia.org/wiki/IIT_Kharagpur' class='is-underlined link'>IIT, Kharagpur</a> in India in 2015 with a degree in Architecture. However, a hacky internship changed the type of architect I was supposed to be (read <a class='is-underlined' target='_blank' rel='nofollow' href='https://www.linkedin.com/posts/iamaatoh_nushackers-hackathons-hackathon-activity-7157208397199671296-CaZ4/'>here</a>). I enjoy teaching and host tech workshops to support cross-domain collaborator and career shifters in making the transition easier.
             </p>
         </div>
-        <div class='is-one-fifth' style='max-width: 300px' >
-            <figure class="image">
+        <div class='is-one-fifth pl-3' style='max-width: 300px' >
+            <figure class="image" style='margin: 0 auto;'>
                 <img class="is-rounded" src='/assets/akshata_4.jpg'/>
             </figure>
         </div>

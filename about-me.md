@@ -1,6 +1,6 @@
 ---
 title: "Akshata Mohanty, also known as iamaatoh"
-description: "I help companies deploy cloud-native data applications to production. I write about application architectures, tooling, and leveraging AI and blockchains with cloud technologies."
+description: "I help companies deploy cloud-native data applications to production. I write about app architectures, tooling, and enabling AI and web3 use-cases with cloud."
 layout: none
 ---
 
