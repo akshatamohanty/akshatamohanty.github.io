@@ -9,8 +9,8 @@ layout: none
 {% include navigation.html %}
 
 <section class='mt-4'>
-    <div class='columns pt-6' style="max-width: 900px; margin: 0 auto;">
-        <div class='pt-3'>
+    <div class='columns pt-6 px-4' style="max-width: 900px; margin: 0 auto;">
+        <div class='pt-3 pb-6'>
             <p>
                 Hi, I’m Akshata, a cloud architect specializing in data applications. Originally from India, I am currently based in Singapore but am an aspirational nomad (yes, the picture is from Heidelberg, Germany).
             </p>
@@ -23,9 +23,9 @@ layout: none
                 I am a self-taught developer and learned how to code with FreeCodeCamp and Udacity. In 2015, I graduated with a degree in Architecture (**for buildings**) from <a target='_blank' rel='nofollow' href='https://en.wikipedia.org/wiki/IIT_Kharagpur' class='is-underlined link'>IIT Kharagpur</a> in India. However, a hacky internship changed the type of architect I was supposed to have been (read <a class='is-underlined' target='_blank' rel='nofollow' href='https://www.linkedin.com/posts/iamaatoh_nushackers-hackathons-hackathon-activity-7157208397199671296-CaZ4/'>here</a>). I enjoy teaching and doing tech walkthroughs to encourage more cross-domain collaborations and to help make the transition easier for career shifters like myself.
             </p>
         </div>
-        <div class='is-one-fifth pl-3' style='max-width: 300px' >
+        <div class='is-one-fifth pl-6 pt-4' style='max-width: 300px' >
             <figure class="image" style='margin: 0 auto;'>
-                <img class="is-rounded" src='/assets/akshata_4.jpg'/>
+                <img class="" src='/assets/akshata_4.jpg'/>
             </figure>
         </div>
     </div>
