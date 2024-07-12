@@ -1,7 +1,7 @@
 ---
 page: Home
-title: "iamaatoh - Homepage"
-description: "Coding for fun, food and karma."
+title: "Akshata Mohanty (also known as iamaatoh)"
+description: "I help companies deploy cloud-native data applications to production. I write about application architectures, tooling, and leveraging AI and blockchains with cloud technologies."
 layout: none
 ---
 

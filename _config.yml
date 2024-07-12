@@ -3,8 +3,8 @@ destination: docs
 url: "https://iamaatoh.com"
 baseurl: ""
 encoding: UTF-8
-name: aatoh
-description: "Coding for fun and food, in that order."
+name: "Akshata Mohanty (also known as iamaatoh)"
+description: "I help companies deploy cloud-native data applications to production."
 permalink: none
 author:
   name: "Akshata Mohanty"
