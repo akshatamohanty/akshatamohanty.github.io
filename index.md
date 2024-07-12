@@ -8,7 +8,7 @@ layout: none
 {% include head.html %}
 {% include navigation.html %}
 
-<section>
+<section class='m-4'>
     <div class='columns pt-6' style="max-width: 900px; margin: 0 auto;">
         <div class='pr-6 pt-3'>
             <p>
