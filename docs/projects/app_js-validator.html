@@ -2,14 +2,16 @@
 <html>
     <head>
 	<title>Code Checker</title>
+	<meta name="title" content="Code Checker" />
 	<meta name="description" content="web app to validate and check javascript errors in realtime" />
+	<meta name="image" content="../assets/images/jsvalidate.png" />
 
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<meta property="og:title" content="Code Checker" />
-	<meta property="og:description" content="" />
+	<meta property="og:description" content="web app to validate and check javascript errors in realtime" />
 	<meta property="og:image" content="../assets/images/jsvalidate.png" />
 	<meta property="og:image:width" content="400" />
 	<meta property="og:image:height" content="300" />
@@ -90,8 +92,28 @@
 			}, false);
 			});
 	</script>
-
 	<style>
+		html, body {
+			width: 100%;
+			height: 100%; 
+			position: relative;
+			overflow-x: hidden;
+			font-family: Inter, sans-serif;
+			scroll-behavior: smooth;
+		}
+
+		body {
+			position: relative;
+			font-size: 16px !important; 
+			line-height: 1.7 !important;
+		}
+
+		section {
+			padding: 3rem 0!important;
+		}
+	</style>
+
+	<!-- <style>
 		html, body {
 			width: 100%;
 			height: 100%; 
@@ -108,10 +130,10 @@
 			color: #b5b5b5;
 		}
 
-		body::-webkit-scrollbar {
+		/* body::-webkit-scrollbar {
 			background: #292929 !important;
 			width: 12px;
-		}
+		} */
 
 		body {
 			position: relative;
@@ -126,13 +148,13 @@
 			line-height: 1.4;
 		}
 
-		a {
+		/* a {
 			color: #F5F5F5 !important;
 		}
 
 		a:hover {
 			text-decoration: underline;
-		}
+		} */
 
 		pre.highlight {
 			background-color: black;
@@ -190,7 +212,7 @@
 				background-color: #252629d4 !important;
 			}
 		}
-	</style>
+	</style> -->
 </head>
 
     <style>
@@ -203,10 +225,10 @@
   role="navigation"
   aria-label="main navigation"
 >
-  <div class="container" style="max-width: 750px;">
+  <div class="container" style="max-width: 900px;">
     <div class="navbar-brand">
       <h1 id="logo" class="navbar-item has-text-weight-bold">
-        <a href='/'><span>Akshata Mohanty</span></a>
+        <a href='/' style="color: white;">Akshata Mohanty</a>
       </h1>
 
       <a
@@ -274,6 +296,8 @@
             </section>
         </div>
 
-        <footer style="max-width: 750px; margin: 0 auto; padding: 0px 12px;" class="pb-2"><small>Copyright © 2024 iamaatoh.com</small></footer>
+        <footer style="max-width: 900px; margin: 0 auto; padding: 0px 12px;" class="pb-2">
+    <small>Copyright © 2024 iamaatoh.com</small>
+</footer>
     </body>
 </html>
