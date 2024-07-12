@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
-  <head>
-	<title>Bookshelf</title>
-	<meta name="title" content="Bookshelf" />
-	<meta name="description" content="<p>Notes on the books from <a href='../learning-list' class='has-text-light is-underlined'>my learning list</a>.</p>" />
-	<meta name="image" content="" />
+    <head>
+	<title>Designing Data Intensive Applications, Martin Kleppman</title>
+	<meta name="title" content="Designing Data Intensive Applications, Martin Kleppman" />
+	<meta name="description" content="Foundational resource for understanding and building large scale systems." />
+	<meta name="image" content="/assets/embeds/ddis/ddis-overview.png" />
 
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<meta property="og:title" content="Bookshelf" />
-	<meta property="og:description" content="<p>Notes on the books from <a href='../learning-list' class='has-text-light is-underlined'>my learning list</a>.</p>" />
-	<meta property="og:image" content="" />
+	<meta property="og:title" content="Designing Data Intensive Applications, Martin Kleppman" />
+	<meta property="og:description" content="Foundational resource for understanding and building large scale systems." />
+	<meta property="og:image" content="/assets/embeds/ddis/ddis-overview.png" />
 	<meta property="og:image:width" content="400" />
 	<meta property="og:image:height" content="300" />
 	<meta property="og:type" content="website" />
@@ -215,9 +215,12 @@
 	</style> -->
 </head>
 
-
-  <body>
-    <nav
+    <style>
+        img {
+            max-height: 400px;
+        }
+    </style>
+        <nav
   class="navbar is-fixed-top is-dark"
   role="navigation"
   aria-label="main navigation"
@@ -243,7 +246,7 @@
  
     <div id="navbar" class="navbar-menu">
       <div class="navbar-end">
-        <a href="/blog" class="navbar-item is-hoverable ">Blog</a>
+        <a href="/blog" class="navbar-item is-hoverable is-active">Blog</a>
         <a href="/talks" class="navbar-item is-hoverable ">Talks</a>
         <a href="/projects" class="navbar-item is-hoverable ">Architect's Data</a>
         <a href="/designing-ai-agents" class="navbar-item is-hoverable">AI Agents</a>
@@ -254,24 +257,97 @@
   </div>
 </nav>
 
-    <main style="margin: 120px auto; max-width: 900px;">
-          <div class='m-4'>
-            <h1 class="title is-3">Bookshelf</h1>
-            <h2 class="subtitle is-6 pt-1"><p>Notes on the books from <a href='../learning-list' class='has-text-light is-underlined'>my learning list</a>.</p></h2>
-          </div>
+        <div style="margin: 52px auto; max-width: 900px; padding: 8px 12px;" class="">
+            <section class="hero pb-2">
+                <nav class="breadcrumb" aria-label="breadcrumbs">
+                    <ul class="is-align-items-center">
+                        <li><a class="is-size-6" href="/">Home</a></li>
+                        <li><a class="is-size-6" href="/blog">Blog</a></li>
+                        <li><a class="is-size-6 is-active" href="">Designing Data Intensive Applications, Martin Kleppman</a></li>
+                    </ul>
+                </nav>
+                <h1 class="title is-2">
+                    Designing Data Intensive Applications, Martin Kleppman
+                </h1>
+                <h2 class="subtitle is-5 mt-2">
+                    Foundational resource for understanding and building large scale systems.
+                </h2>
+                <br/>
+                <div class="is-light is-size-6">
+                    Posted on Oct 05, '23</small>
+                </div>
+            </section>
+            <hr/>
+            <section class="post pt-2">
+                <div class="container">
+                    <div class="columns is-6">
+                        
 
-          <div class="m-4 is-flex is-flex-direction-column">
-            
-            
-            
-          </div>
+                        <div class="column ">
+                            <div class="content">
+                                <h2 id="introduction">Introduction</h2>
 
-          
-          </nav>
+<p>This has been long quoted as a fundamental book every software engineer should read. And it did live upto my expectations. The book said it would discuss big ideas and what stood out to me was how well structured it was.</p>
 
-    </main>
-  </body>
-  <hr/>
+<p><br /><br /></p>
+
+<p><img src="/assets/embeds/ddis/ddis-overview.png" alt="Book Overview" title="Designing Data Intensive Applications, Martin Kleppman" /></p>
+
+<h2 id="the-three-pillars-of-systems---reliabilty-scalability-and-measurability">The three pillars of systems - reliabilty, scalability and measurability</h2>
+
+<p><em>Reliability.</em>
+Error-proof. Tolerating hardware and software faults, human errors.
+The system should continue to work correctly (performing the correct function at the desired level of performance) even in the face of adversity (hardware or software faults, and even human error).</p>
+
+<p><em>Scalability</em>
+Measuring load and performance. Latency percentiles, throughput.
+As the system grows (in data volume, traffic volume, or complexity), there should be reasonable ways of dealing with that growth. See “Scalability”.</p>
+
+<p><em>Maintainability</em>
+Operability, simplicity and evolvability.
+As more people work on it, to maintain and grow - they should be able to work on this productively.</p>
+
+<p>Data Systems are painfully obvious. They need repeated implementations of the same type of functionality:</p>
+
+<ul>
+  <li>Store and recover data - databases</li>
+  <li>Memorize heavy computation - caches</li>
+  <li>Search for data - search indexes</li>
+  <li>Process data elsewhere asynchronous - data queues / stream processing</li>
+  <li>Process large amounts of accumulated data - batch processing</li>
+</ul>
+
+<h2 id="thinking-about-data">Thinking about data</h2>
+
+<p>Why are data models important?
+Because they determine how we think about and understand the data at hand.</p>
+
+<p>What is the main function of a data model?
+To abstract away the complexities and inner workings of a given layer.
+Describe the history of different data models.
+Historically, we started with hierarchical data models. However, they didn’t capture entity-entity relationships well. Hence, in the 1970s, Edgar Codd proposed the SQL data models, with tuples and relationships between the tuples. This worked great for business transaction processing, and later for a lot of other applications. However, in the 2010s, developers felt restricted by the strictness of SQL schemas and explored more free-form data models like NoSQL, better known as Document databases. They worked well for capturing data with not many interlinks between the entities. Another database that came into popularity was Graph databases, for addressing the other spectrum of data, with many cross-links.</p>
+
+<p>What are the different kinds of query languages?
+Query languages are usually imperative or declarative. Declarative query languages declare what is required but do not map the data access method. Hence, they offer greater optimization for less flexibility. Conversely, imperative query languages offer much more flexibility and power at the cost of optimizations gained by specialized query engines.</p>
+
+<p>What are the benefits of a document model?
+Document databases are preferred for:
+Higher scalability, larger datasets
+High throughput write databases
+Open source implementations
+Flexible schemas
+Complex query support</p>
+
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <hr/>
 <footer style="max-width: 900px; margin: 0 auto;">
     <div class="columns px-4">
         <div class="column is-one-third">
@@ -288,4 +364,5 @@
         </div>
     </div>
 </footer>
+    </body>
 </html>
