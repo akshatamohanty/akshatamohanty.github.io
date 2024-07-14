@@ -1,4 +1,4 @@
-<div class="my-6 columns" style="padding-bottom: 12px;">
+<div class="my-4 columns" style="padding-bottom: 12px;">
     {% if post.embed %}
     <div class="p-2 column is-one-third">
         {{post.embed}}
@@ -6,10 +6,10 @@
     {% endif %}
     <div class="p-2 column">
         <p class="is-size-6 ">{{post.date | date: "%b %d, '%y" }} | {{ post.where }}</p>
-        <div class="is-size-4">
+        <div class="is-size-5">
             <a class='' target="_blank" href={{post.external_url}}>{{ post.title }}</a>
         </div>
-        <p class="is-size-6">
+        <p class="is-size-7">
             {{ post.description }}
             &nbsp;&nbsp;
             {% if post.slides %}

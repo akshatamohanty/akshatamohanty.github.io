@@ -1,5 +1,5 @@
 ---
-title: "Introduction to NodeJs"
+title: "Introduction to Node.js"
 type: "Workshop"
 where: TechLadies, Singapore
 description: Workshop by Fara Blanco, Thomas Chia & Akshata Mohanty
