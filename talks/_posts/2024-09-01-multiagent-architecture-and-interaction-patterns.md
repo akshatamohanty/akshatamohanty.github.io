@@ -4,7 +4,7 @@ description: "In this talk, we explore the topologies within different framework
 where: Ernst & Young (EY), Malaysia (Webinar)
 date: 2024-08-30
 slides: https://docs.google.com/presentation/d/1bf-khtAkGM2iwhzY6QCTXyqRyx9TgZpKRF0hHA5Diu0/pub?start=false&loop=false&delayms=3000
-external_url: /videos/2024-09-01-multiagent-architecture-and-interaction-patterns.mp4
-embed: <video controls width="400px"><source src="https://drive.google.com/file/d/1HPDLAO1tuBBLbsZebKaIt7NWOyNk79PV/view?usp=sharing"></source></video>
+external_url: https://drive.google.com/file/d/1HPDLAO1tuBBLbsZebKaIt7NWOyNk79PV/view?usp=sharing
+embed: <video src='https://drive.google.com/file/d/1HPDLAO1tuBBLbsZebKaIt7NWOyNk79PV/view?usp=sharing' controls width="400px"></video>
 demo:
 ---
