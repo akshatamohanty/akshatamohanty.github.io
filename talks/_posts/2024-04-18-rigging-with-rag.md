@@ -5,5 +5,5 @@ where: Women TechMakers & GDG Cloud, Singapore
 date: 2024-04-18
 slides: https://docs.google.com/presentation/d/e/2PACX-1vQOs4tLbg4eInOU420P6F7d434fzJWtoTJF9_6GamqK-rnZRm_aT46cS6yQhG4t3psDNx1WlL_V22mX/pub?start=false&loop=false&delayms=3000
 external_url: https://docs.google.com/presentation/d/e/2PACX-1vQOs4tLbg4eInOU420P6F7d434fzJWtoTJF9_6GamqK-rnZRm_aT46cS6yQhG4t3psDNx1WlL_V22mX/pub?start=false&loop=false&delayms=3000
-embed: <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQOs4tLbg4eInOU420P6F7d434fzJWtoTJF9_6GamqK-rnZRm_aT46cS6yQhG4t3psDNx1WlL_V22mX/embed?start=false&loop=false&delayms=3000" frameborder="0"  width="270" height="200" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+embed: <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQOs4tLbg4eInOU420P6F7d434fzJWtoTJF9_6GamqK-rnZRm_aT46cS6yQhG4t3psDNx1WlL_V22mX/embed?start=false&loop=false&delayms=3000" frameborder="0"  width="320" height="200" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 ---

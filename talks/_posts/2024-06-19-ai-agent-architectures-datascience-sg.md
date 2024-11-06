@@ -5,5 +5,5 @@ where: DataScienceSG, Singapore
 date: 2024-06-19
 slides: https://docs.google.com/presentation/d/e/2PACX-1vR_e8nJJATcB4V4HWPVewOZvJRh-nhI94S_pE3X0B6J5QE0JheNlz6fYfScS3G9Mo-nwMvstMaLM-rr/pub?start=false&loop=false&delayms=3000
 external_url: https://docs.google.com/presentation/d/e/2PACX-1vR_e8nJJATcB4V4HWPVewOZvJRh-nhI94S_pE3X0B6J5QE0JheNlz6fYfScS3G9Mo-nwMvstMaLM-rr/pub?start=false&loop=false&delayms=3000
-embed: <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vR_e8nJJATcB4V4HWPVewOZvJRh-nhI94S_pE3X0B6J5QE0JheNlz6fYfScS3G9Mo-nwMvstMaLM-rr/embed?start=false&loop=false&delayms=3000" frameborder="0"  width="270" height="200" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+embed: <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vR_e8nJJATcB4V4HWPVewOZvJRh-nhI94S_pE3X0B6J5QE0JheNlz6fYfScS3G9Mo-nwMvstMaLM-rr/embed?start=false&loop=false&delayms=3000" frameborder="0"  width="320" height="200" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 ---

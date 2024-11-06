@@ -5,5 +5,5 @@ where: GDG Cloud, Singapore
 date: 2024-03-16
 slides: https://docs.google.com/presentation/d/e/2PACX-1vQ5QPnFTuUGeMdPbOdkbGeAMyQ1J2cDlo24nI7ojkn6D4H68PudXkDXA7Eb8toqk9Vz38M0wdCMaLJQ/pub?start=false&loop=false&delayms=3000
 external_url: https://docs.google.com/presentation/d/e/2PACX-1vQ5QPnFTuUGeMdPbOdkbGeAMyQ1J2cDlo24nI7ojkn6D4H68PudXkDXA7Eb8toqk9Vz38M0wdCMaLJQ/pub?start=false&loop=false&delayms=3000
-embed: <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ5QPnFTuUGeMdPbOdkbGeAMyQ1J2cDlo24nI7ojkn6D4H68PudXkDXA7Eb8toqk9Vz38M0wdCMaLJQ/embed?start=false&loop=false&delayms=3000" frameborder="0"  width="270" height="200" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+embed: <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ5QPnFTuUGeMdPbOdkbGeAMyQ1J2cDlo24nI7ojkn6D4H68PudXkDXA7Eb8toqk9Vz38M0wdCMaLJQ/embed?start=false&loop=false&delayms=3000" frameborder="0"  width="320" height="200" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 ---
