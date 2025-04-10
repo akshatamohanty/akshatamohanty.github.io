@@ -9,11 +9,22 @@
       
       <item>
         <category></category>
+        <title>Peak Prompting: Pattern priming with Vertex AI</title>
+        <description></description>
+        <pubDate>Apr 2025</pubDate>
+        <link>https://iamaatoh.com/talks/advanced-prompting-with-vertex-ai-salzburg.html </link>
+        <guid isPermaLink="true">https://iamaatoh.com/talks/advanced-prompting-with-vertex-ai-salzburg.html</guid>
+      </item>
+      
+    
+      
+      <item>
+        <category></category>
         <title>Peak Prompting: Advanced prompting strategies and optimizations with Vertex AI</title>
         <description></description>
         <pubDate>Mar 2025</pubDate>
-        <link>https://iamaatoh.com/talks/advanced-prompting-with-vertex-ai.html </link>
-        <guid isPermaLink="true">https://iamaatoh.com/talks/advanced-prompting-with-vertex-ai.html</guid>
+        <link>https://iamaatoh.com/talks/advanced-prompting-with-vertex-ai-munich.html </link>
+        <guid isPermaLink="true">https://iamaatoh.com/talks/advanced-prompting-with-vertex-ai-munich.html</guid>
       </item>
       
     
@@ -47,17 +58,6 @@
         <pubDate>Nov 2024</pubDate>
         <link>https://iamaatoh.com/talks/mlops-with-vertex-ai-sg.html </link>
         <guid isPermaLink="true">https://iamaatoh.com/talks/mlops-with-vertex-ai-sg.html</guid>
-      </item>
-      
-    
-      
-      <item>
-        <category></category>
-        <title>AI Agent Builder Workshop: Let's code an AI agent from scratch</title>
-        <description></description>
-        <pubDate>Nov 2024</pubDate>
-        <link>https://iamaatoh.com/talks/ai-agent-builder-workshop.html </link>
-        <guid isPermaLink="true">https://iamaatoh.com/talks/ai-agent-builder-workshop.html</guid>
       </item>
       
     
