@@ -7,7 +7,7 @@ read name
 name=${name:="hello-world"}
 echo Choose a category [guides,bookshelf,essays,projects,talks,research,the-lab]
 read cate
-cate=${cate:="blog"}
+cate=${cate:="essays"}
 formattedDate=$(date +"%Y-%m-%d")
 filename=${cate}/_posts/${formattedDate}-${name}.md
 cat > ${filename} <<EOL
