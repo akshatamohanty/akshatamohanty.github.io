@@ -2,9 +2,8 @@
 page: Talks
 title: Technical Talks & Workshops
 description: <p>
-  <br/>I speak about building cloud native data applications. If you'd like me to speak at your event, drop me a mail at <a class='' href='mailto:iamaatoh@gmail.com' target='_blank'>iamaatoh@gmail.com</a>
-  <br/><br/>
-  Here's my <a href='https://sessionize.com/iamaatoh/' target='blank' style='text-decoration:underline;'>profile</a> on Sessionize.
+  <br/>I enjoying speaking about Google Cloud, building cloud-native data applications, genAI and systems engineering. If you'd like me at your event, drop me a mail at <a class='' href='mailto:iamaatoh@gmail.com' target='_blank'>iamaatoh@gmail.com</a>.
+  My speaker profile is available on <a href='https://sessionize.com/iamaatoh/' target='blank' style='text-decoration:underline;'>Sessionize</a>.
   <br/><br/>
   <p>
 listing_type: "talks"

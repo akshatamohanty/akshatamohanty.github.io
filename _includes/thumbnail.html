@@ -4,19 +4,26 @@
       <div class="control ml-2 is-inline-block">
         <div class="tags">
           {% for tag in post.tags %}
-          <span class="tag">#{{tag}}</span>
+          <span class="tag is-active">{{tag}}</span>
           {% endfor %}
         </div>
       </div>
      {% endif %}
-       {% if post.wip %}
-        <div class="control ml-2 is-inline-block">
-          <div class="tags has-addons">
-            <span class="tag is-dark">status</span>
-            <span class="tag is-info">work-in-progress</span>
-          </div>
+      {% if post.wip %}
+      <div class="control ml-2 is-inline-block">
+        <div class="tags has-addons">
+          <span class="tag is-dark">status</span>
+          <span class="tag is-info">work-in-progress</span>
         </div>
-       {% endif %}
+      </div>
+      {% endif %}
+      {% if post.summary %}
+      <div class="control ml-2 is-inline-block">
+        <div class="tags has-addons">
+          <span class="tag is-dark">Book Summary</span>
+        </div>
+      </div>
+      {% endif %}
     </div>
     <div class="is-size-4 my-2" style="line-height: 1.3;">
         <a class='' href={{post.url}}>{{ post.title }}</a>
