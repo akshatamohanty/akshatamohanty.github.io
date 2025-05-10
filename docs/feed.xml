@@ -20,6 +20,17 @@
       
       <item>
         <category></category>
+        <title>[Workshop] Building agents for insights—Linking LLMs to real data</title>
+        <description></description>
+        <pubDate>Apr 2025</pubDate>
+        <link>https://iamaatoh.com/talks/build-with-ai-gdg-kl.html </link>
+        <guid isPermaLink="true">https://iamaatoh.com/talks/build-with-ai-gdg-kl.html</guid>
+      </item>
+      
+    
+      
+      <item>
+        <category></category>
         <title>From Prompt to Product: Designing Better Prompts with Vertex AI</title>
         <description></description>
         <pubDate>Apr 2025</pubDate>
@@ -47,17 +58,6 @@
         <pubDate>Mar 2025</pubDate>
         <link>https://iamaatoh.com/talks/advanced-prompting-with-vertex-ai-munich.html </link>
         <guid isPermaLink="true">https://iamaatoh.com/talks/advanced-prompting-with-vertex-ai-munich.html</guid>
-      </item>
-      
-    
-      
-      <item>
-        <category></category>
-        <title>From prototype to production: Streamlining GenAI MLOps with Vertex AI</title>
-        <description></description>
-        <pubDate>Dec 2024</pubDate>
-        <link>https://iamaatoh.com/talks/mlops-with-vertex-ai.html </link>
-        <guid isPermaLink="true">https://iamaatoh.com/talks/mlops-with-vertex-ai.html</guid>
       </item>
       
     
