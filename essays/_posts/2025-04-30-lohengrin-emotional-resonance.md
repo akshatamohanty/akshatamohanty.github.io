@@ -1,5 +1,5 @@
 ---
-title: "Emotional Resonance — Love, Longing, and Lohengrin"
+title: "Emotional Resonance — Love, Longing, and <i>Lohengrin</i>"
 description: "Our lives are shaped by the emotional tapestry we weave from our experiences—each thread colored by the moments that move us. I was recently reminded of this truth after attending my first opera, Richard Wagner's Lohengrin. This led me to reflect on the vast range and timeless nature of human emotion—how it transcends time, place, and culture, yet remains deeply personal and unique to each of us."
 date: 2025-05-02
 layout: post

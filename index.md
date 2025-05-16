@@ -24,7 +24,7 @@ layout: none
             </p>
             <br/>
             <p>
-                I grew up in <a href='https://en.wikipedia.org/wiki/Chandigarh' target='_blank' rel='nofollow'>Le Corbusier's brutalist concrete poetry—Chandigarh</a>. Now, I split my time between Germany, Singapore, and India. 
+                I grew up in <a href='https://en.wikipedia.org/wiki/Chandigarh' target='_blank' rel='nofollow'>Le Corbusier's urban poetry in concrete—Chandigarh</a>. Now, I split my time between Germany, Singapore, and India. 
             </p>
         </div>
         <div class='is-one-fifth pl-6 pt-4' style='max-width: 300px' >

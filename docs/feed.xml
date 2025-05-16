@@ -9,7 +9,29 @@
       
       <item>
         <category></category>
-        <title>[Workshop] Building agents for insights—Linking LLMs to real data</title>
+        <title>Protocols, Prompts, and Productivity: Building Data-Literate AI Agents [Workshop]</title>
+        <description></description>
+        <pubDate>May 2025</pubDate>
+        <link>https://iamaatoh.com/talks/build-with-ai-1-gdg-surabaya.html </link>
+        <guid isPermaLink="true">https://iamaatoh.com/talks/build-with-ai-1-gdg-surabaya.html</guid>
+      </item>
+      
+    
+      
+      <item>
+        <category></category>
+        <title>Connecting AI Agents to data—For collaboration and productivity [Workshop]</title>
+        <description></description>
+        <pubDate>May 2025</pubDate>
+        <link>https://iamaatoh.com/talks/build-with-ai-0-upm-selangor.html </link>
+        <guid isPermaLink="true">https://iamaatoh.com/talks/build-with-ai-0-upm-selangor.html</guid>
+      </item>
+      
+    
+      
+      <item>
+        <category></category>
+        <title>Building agents for insights—Linking LLMs to real data [Workshop]</title>
         <description></description>
         <pubDate>May 2025</pubDate>
         <link>https://iamaatoh.com/talks/build-with-ai-gdg-kl.html </link>
@@ -20,7 +42,7 @@
       
       <item>
         <category></category>
-        <title>Emotional Resonance — Love, Longing, and Lohengrin</title>
+        <title>Emotional Resonance — Love, Longing, and <i>Lohengrin</i></title>
         <description></description>
         <pubDate>May 2025</pubDate>
         <link>https://iamaatoh.com/essays/lohengrin-emotional-resonance.html </link>
@@ -31,33 +53,11 @@
       
       <item>
         <category></category>
-        <title>[Workshop] From Prompt to Product: Designing Better Prompts with Vertex AI</title>
+        <title>From Prompt to Product: Designing Better Prompts with Vertex AI [Workshop]</title>
         <description></description>
         <pubDate>Apr 2025</pubDate>
         <link>https://iamaatoh.com/talks/build-with-ai-utm-my.html </link>
         <guid isPermaLink="true">https://iamaatoh.com/talks/build-with-ai-utm-my.html</guid>
-      </item>
-      
-    
-      
-      <item>
-        <category></category>
-        <title>Peak Prompting: Pattern priming with Vertex AI</title>
-        <description></description>
-        <pubDate>Apr 2025</pubDate>
-        <link>https://iamaatoh.com/talks/advanced-prompting-with-vertex-ai-salzburg.html </link>
-        <guid isPermaLink="true">https://iamaatoh.com/talks/advanced-prompting-with-vertex-ai-salzburg.html</guid>
-      </item>
-      
-    
-      
-      <item>
-        <category></category>
-        <title>Peak Prompting: Advanced prompting strategies and optimizations with Vertex AI</title>
-        <description></description>
-        <pubDate>Mar 2025</pubDate>
-        <link>https://iamaatoh.com/talks/advanced-prompting-with-vertex-ai-munich.html </link>
-        <guid isPermaLink="true">https://iamaatoh.com/talks/advanced-prompting-with-vertex-ai-munich.html</guid>
       </item>
       
     

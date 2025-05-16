@@ -1,5 +1,5 @@
 ---
-title: "[Workshop] From Prompt to Product: Designing Better Prompts with Vertex AI"
+title: "From Prompt to Product: Designing Better Prompts with Vertex AI [Workshop]"
 description: "This tech talk covers prompt engineering for generative AI, addressing challenges like output quality and ethical concerns. It offers strategies for effective prompting, including model understanding, structure, and techniques like Chain-of-Thought and Automatic Reasoning, and using Vertex AI for optimization."
 where: Build with AI, Universiti Teknologi Malaysia, Malaysia (Virtual)
 date: 2025-04-20
