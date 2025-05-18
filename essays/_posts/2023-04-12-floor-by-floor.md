@@ -1,5 +1,5 @@
 ---
-title: Floored by (math.)floor
+title: Floored by (math.)floor — Breaking javascript limits with big data.
 description: In computing, flooring a number is a common operation. Pretty mundane, but the perks of working with big data is that mundane things get exciting. Big Data breaks language limits.
 date: 2023-04-12
 tags:

@@ -1,6 +1,6 @@
 ---
 summary: true
-title: Ultralearning, by Scott Young
+title: Ultralearning, by Scott Young [Notes]
 description: Acquiring new skills has always been both a passion and a professional necessity for me. This book piqued my interest when I learned that Scott Young completed the entire MIT Computer Science curriculum in just one year.
 date: 2023-10-19
 layout: post

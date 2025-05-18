@@ -13,7 +13,7 @@ However, more recently, modular blockchains have evolved to offer an alternative
 - settlement, i.e when a miner includes a transaction into a block, ensuring transaction immutability
 - consensus, i.e the process by which all nodes establishes a shared agreement on the validity of transactions and the chain state,
 - data availability, i.e refers to the confidence a user can have that the data required to verify a block is really available to all network participants.
-  Modular blockchains propose to split the core layers, with separate components being responsible for their own function, thereby allowing parallel processing and higher throughputs without compromising decentralization and security.
+  Modular blockchains propose to split the core layers, with separate components being responsible for their own function, thereby allowing parallel processing and higher throughput without compromising decentralization and security.
 
 Layer 2 roll ups have quickly gained popularity in accordance with the modular design, i.e solutions where the execution layer is offloaded to its own network. The general mechanism of a rollup is to introduce a separate network or layer of nodes, which receives transactions and acts as a proxy between the main chain and clients. This layer then batches the transactions into groups and anchors them to Layer 1, thereby achieving settlement and consensus. To ensure data availability, i.e, the guarantee that the data of the rolled-up transactions, rollups execute transactions outside of Ethereum, but post transaction data to Mainnet as calldata or in blobs.
 

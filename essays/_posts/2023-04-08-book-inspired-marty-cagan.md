@@ -1,6 +1,6 @@
 ---
 summary: true
-title: "Inspired, Marty Cagan"
+title: "Inspired, Marty Cagan [Notes]"
 description: This book helped me build product perspective like no other. A complete playbook of techniques and actionables.
 date: 2023-04-08
 layout: post

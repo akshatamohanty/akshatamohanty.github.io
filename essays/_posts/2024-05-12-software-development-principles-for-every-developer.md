@@ -1,6 +1,6 @@
 ---
-title: Everyday principles of software development.
-description: Because once in a while we should all go back to basics.
+title: Everyday principles of software development—Because once in a while we should all go back to basics.
+description: 
 date: 2024-05-12
 tags:
   - software-engineering

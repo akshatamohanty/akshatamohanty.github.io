@@ -1,13 +1,10 @@
 ---
 published: true
-title: "Refactoring UI: Adam Wathan and Steve Schoger"
-description: From the makers of TailwindCSS, this is only design guide a developer will ever need.
+title: "Refactoring UI, by Adam Wathan and Steve Schoger [Notes]"
+description: From the makers of TailwindCSS, this is only design guide a developer will ever need. Stack of of notes from this awesome-https://www.refactoringui.com/.
 date: 2023-12-07
 layout: post
-published: false
 ---
-
-PS: This is my stack of of notes from this awesome [resource](https://www.refactoringui.com/).
 
 ## Getting started
 
@@ -76,7 +73,6 @@ PS: This is my stack of of notes from this awesome [resource](https://www.refact
 - primary - high contrast backgrounds
 - secondary - outline + low contrast
 - tertiary - design as links
--
 
 ## Layout and spacing
 
