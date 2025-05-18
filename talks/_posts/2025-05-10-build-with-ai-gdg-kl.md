@@ -1,5 +1,5 @@
 ---
-title: "Building agents for insights—Linking LLMs to real data [Workshop]"
+title: "Building Data-Literate AI Agents [Workshop]"
 description: "Information silos and delayed data access can hinder decision-making and slow business agility, while overburdened data teams struggle with manual processes. This session walks through a demo showing using function calling and search tools with the GenAI SDK for generation of research reports and answering queries, providing real-time access to data and insights. We’ll also explore the design and architecture of an AI agent, including serverless implementations and addressing system and security considerations."
 where: Build with AI, GDG Cloud, Kuala Lumpur, Malaysia
 date: 2025-05-10

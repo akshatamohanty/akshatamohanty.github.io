@@ -4,7 +4,7 @@
 
   <body>
     {% include navigation.html %}
-    <main class="container" style="margin: 90px auto;">
+    <main class="container" style="margin: 72px auto;">
       <nav class="breadcrumb container mx-4" aria-label="breadcrumbs" style="padding: 0; margin: 0">
           <ul class="is-align-items-center">
               <li><a class="is-size-6" href="/">Home</a></li>
@@ -26,11 +26,9 @@
           {% for year_group in grouped_posts %}
             <div class="mb-5">
               <h2 class="title is-4">{{ year_group.name }}</h2>
-              <ul>
+              <ul class="list" style="list-style-type: disc;">
                 {% for post in year_group.items %}
-                  <li>
-                    {% include thumbnail.html post=post %}
-                  </li>
+                  {% include thumbnail.html post=post %}
                 {% endfor %}
               </ul>
             </div>

@@ -1,5 +1,5 @@
 ---
-title: "Protocols, Prompts, and Productivity: Building Data-Literate AI Agents [Workshop]"
+title: "Building Data-Literate AI Agents [Workshop]"
 description: "Learn how to build AI agents connected to real time data sources using Gemini models. We'll explore concepts like grounding, function calling, deep-dive into the Model Context Protocol, and walk through architectures and tools to connect LLMs to databases. This workshop covers connecting agents to real-time data sources via APIs and tools, enabling them to generate contextual, collaborative reports within your enterprise stack."
 where: Build with AI, GDG, Surabaya, Indonesia
 date: 2025-05-17

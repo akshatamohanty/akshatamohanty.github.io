@@ -1,7 +1,7 @@
 ---
 page: Home
 title: "Akshata Mohanty (iamaatoh)"
-description: "I help companies deploy cloud-native data applications to production. I write about app architecture, tooling, and enabling AI and web3 use-cases with cloud."
+description: "Hi, I'm Akshata. I help companies build generative AI applications on Google Cloud."
 layout: none
 ---
 
@@ -9,19 +9,19 @@ layout: none
 {% include navigation.html %}
 
 <section class='mt-4 container'>
-    <div class='columns pt-6 px-2' style='margin: 0 auto;'>
-        <div class='pt-3 pb-3' style='width: 100%'>
-            <div style="max-width: 730px;">
+    <div class='columns pt-3 px-2' style='margin: 0 auto;'>
+        <div class='pt-2' style='width: 100%'>
+            <div style="max-width: 720px;">
                 <p>
-                    Hi, I'm Akshata — also known as Aatoh. I am a software engineer and cloud architect specializing in data and generative AI applications. I am a <a target='_blank' href='https://developers.google.com/community/experts'>Google Developer Expert (GDE) in Artificial Intelligence and Machine Learning.</a>
+                    Hi, I'm Akshata (Aatoh). I am a software engineer and cloud architect specializing in data and generative AI applications. I am also a <a class='is-underlined' target='_blank' href='https://developers.google.com/community/experts'>Google Developer Expert (GDE) in Artificial Intelligence and Machine Learning.</a>
                 </p>
                 <br/>
                 <p>
-                    Currently, I lead engineering at <a href='https://tilla.tech' target='_blank' rel='nofollow'>Tilla Technologies GmbH</a> in Berlin. I am also the founder of <a target='_blank' rel='nofollow' href='https://keis.dev' class='is-underlined'>Keis</a>, a tech consultancy focused on helping enterprises prototype and launch generative AI products on Google Cloud. Previously, I have held senior engineering roles at <a target='_blank' rel='nofollow' href='https://awen.finance' class='is-underlined link'>Metaphi</a>,  <a target='_blank' rel='nofollow' href='https://nasacademy.com' class='is-underlined'>nas.io</a>, <a target='_blank' rel='nofollow' href='https://viki.com' class='is-underlined'>Rakuten's viki.com</a>, and the <a target='_blank' rel='nofollow' href='https://design-automation.net/pages/people.html' class='is-underlined'>National University of Singapore</a>. 
+                    Currently, I head engineering at <a href='https://tilla.tech' target='_blank' rel='nofollow'>Tilla Technologies GmbH</a> in Berlin. I am also the founder of <a target='_blank' rel='nofollow' href='https://keis.dev' class='is-underlined'>Keis</a>, a tech consultancy focused on helping enterprises launch AI agents on Google Cloud. Before this, I held senior engineering roles at <a target='_blank' rel='nofollow' href='https://awen.finance' class='is-underlined link'>Metaphi</a>,  <a target='_blank' rel='nofollow' href='https://nasacademy.com' class='is-underlined'>nas.io</a>, <a target='_blank' rel='nofollow' href='https://viki.com' class='is-underlined'>Rakuten's viki.com</a>, and the <a target='_blank' rel='nofollow' href='https://design-automation.net/pages/people.html' class='is-underlined'>National University of Singapore</a>. 
                 </p>
                 <br/>
                 <p>
-                    Once upon a time, I majored in Architecture (*for buildings*) at the <a target='_blank' rel='nofollow' href='https://en.wikipedia.org/wiki/IIT_Kharagpur' class='is-underlined link'>Indian Institute of Technology (IIT) Kharagpur</a> in India. However, a random side project in computational architecture pivoted the type of <a class='is-underlined' target='_blank' rel='nofollow' href='https://www.linkedin.com/posts/iamaatoh_nushackers-hackathons-hackathon-activity-7157208397199671296-CaZ4/'>architect</a> I would have been. I enjoy speaking at (and occasionally organizing) tech events. 
+                    A decade ago, I majored in Architecture (*for buildings*) at the <a target='_blank' rel='nofollow' href='https://en.wikipedia.org/wiki/IIT_Kharagpur' class='is-underlined link'>Indian Institute of Technology (IIT) Kharagpur</a> in India. However, a side project pivoted the type of <a class='is-underlined' target='_blank' rel='nofollow' href='https://www.linkedin.com/posts/iamaatoh_nushackers-hackathons-hackathon-activity-7157208397199671296-CaZ4/'>architect</a> I would have been. I enjoy <a href='/talks'>speaking</a> at (and occasionally organizing) tech events. 
                 </p>
                 <br/>
                 <p>

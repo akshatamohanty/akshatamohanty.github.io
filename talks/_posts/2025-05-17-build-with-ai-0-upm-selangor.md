@@ -1,5 +1,5 @@
 ---
-title: "Connecting AI Agents to data—For collaboration and productivity [Workshop]"
+title: "Building Data-Literate AI Agents [Workshop]"
 description: "Information silos and delayed data access can hinder decision-making and slow business agility, while overburdened data teams struggle with manual processes. This workshop walks through building simple AI agents for Slack that are enabled with search and connect to data sources like BigQuery, providing real-time access to data and insights. We’ll also explore the design of the agent, including serverless implementations and addressing system and security considerations."
 where: Build with AI, GDG on Campus, Universiti Putra Malaysia, Selangor (Virtual)
 date: 2025-05-17
