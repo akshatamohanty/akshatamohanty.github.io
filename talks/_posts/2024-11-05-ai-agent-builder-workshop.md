@@ -1,7 +1,7 @@
 ---
-title: "AI Agent Builder Workshop: Let's code an AI agent from scratch"
+title: "AI Agent Builder—Let's code an AI agent from scratch [Workshop]"
 description: "This comprehensive workshop covers a detailed code walkthrough of building an AI agent from scratch and deploying it to production. We'll cover key concepts like RAG, and explore the design process for agents, including planning, tool design, handling agent communication, memory, evaluation, testing and observability. Attendees will get hands-on experience with both code and no-code tools to build and deploy AI agents to production using open source frameworks like LangChain and Cloud Platform tools like Vertex AI."
-where: Stack Developer Conference 2024, Singapore
+where: STACK Developer Conference 2024, Govtech, Singapore
 date: 2024-11-05
 slides: https://github.com/akshatamohanty/ai-agent-builder-workshop
 external_url: https://www.developer.tech.gov.sg/communities/events/conferences/stack-developer-conference-2024/

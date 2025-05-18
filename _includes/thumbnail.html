@@ -7,7 +7,7 @@
     ">
       {{ post.date | date: "%Y-%m" }}
     </time>
-    <a class="ml-4 has-text-black is-text-semi-bold" href="{{ post.url }}">
+    <a class="ml-4 has-text-weight-semibold has-text-black" href="{{ post.url }}">
       {{ post.title }}
     </a>
   </div>
@@ -17,11 +17,11 @@
 {% if post.categories contains 'talks' %}
 <li class="list-item my-2 mx-4">
   <span>
-    <a class="has-text-weight-semibold has-text-black" href="{{ post.external_url }}">
-      {{ post.title }},
+    <a class="has-text-weight-semibold has-text-black" href="{{ post.external_url }}" target="_blank" rel="noopener noreferrer">
+      {{ post.title }}{% if post.is_virtual %}<sup>*</sup>{% endif %}, 
     </a>
     <span class="has-text-grey">
-      {{ post.where | default: "Venue info not provided" }}, {{ post.date | date: "%b, %Y" }}
+      {{ post.where | default: "Venue info not provided" }}, {{ post.date | date: "%B %Y" }}
       <a class="has-text-info is-text-6 is-italic" href="{{ post.slides }}" target="_blank" rel="noopener noreferrer">
         [Slides]
       </a>

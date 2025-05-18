@@ -1,7 +1,7 @@
 ---
-title: "GenAI for Data Teams: Leveraging Vertex AI for Data Analytics"
+title: "GenAI for Data Teams—Leveraging Vertex AI for Data Analytics"
 description: "Use GenAI for data cleaning, augmentation, and complex business analytics. This talk walks through GenAI capabilities for synthetic data generation, using multimodality for feature engineering and working with AI agents for data insights."
-where: GDG, Singapore
+where: Monthly Meetup, Google Developer Groups (GDG), Singapore
 date: 2024-09-24
 slides: https://docs.google.com/presentation/d/1x2gq8Zlv6d6qwdEXonFJgWdDJ1muRDXcpDb0Wu0wLqU/edit?usp=sharing
 external_url: https://gdg.community.dev/events/details/google-gdg-singapore-presents-gdg-monthly-meetup-9/
