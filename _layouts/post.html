@@ -6,53 +6,56 @@
             max-height: 400px;
         }
     </style>
-        {% include navigation.html %}
-        <div style="margin: 52px auto; max-width: 900px; padding: 8px 12px;" class="">
-            <section class="hero pb-2">
-                <nav class="breadcrumb" aria-label="breadcrumbs">
-                    <ul class="is-align-items-center">
-                        <li><a class="is-size-6" href="/">Home</a></li>
-                        <li><a class="is-size-6" href="/{{page.categories[0]}}">{{page.categories[0] | capitalize }}</a></li>
-                        <li><a class="is-size-6 is-active" href="">{{page.title}}</a></li>
-                    </ul>
-                </nav>
-                <h1 class="title is-2">
-                    {{ page.title }}
-                </h1>
-                <h2 class="subtitle is-5 mt-2">
-                    {{ page.description }}
-                </h2>
-                <br/>
-                <div class="is-light is-size-6">
-                    Posted on {{page.date | date: "%b %d, '%y"}}</small>
-                </div>
-            </section>
-            <hr/>
-            <section class="post pt-2">
-                <div class="container">
-                    <div class="columns is-6">
-                        {% if page.menu %}
-                        <div class="fixed column is-one-quarter is-hidden-tablet">
-                            {% include menu.html %}
-                        </div>
-                        {% endif %}
-
-                        <div class="column {% if page.menu %} is-three-quarters{% endif %}">
-                            <div class="content">
-                                {{ page.content }}
-                            </div>
-                        </div>
-
-                        {% if page.menu %}
-                        <div class="column is-one-quarter is-hidden-mobile ">
-                            {% include menu.html %}
-                        </div>
-                        {% endif %}
+    <body>
+        <main class="container">
+            {% include navigation.html %}
+            <div class="container mx-2" style="margin: 52px auto;" >
+                <section class="hero pb-2">
+                    <nav class="breadcrumb" aria-label="breadcrumbs">
+                        <ul class="is-align-items-center">
+                            <li><a class="is-size-6" href="/">Home</a></li>
+                            <li><a class="is-size-6" href="/{{page.categories[0]}}">{{page.categories[0] | capitalize }}</a></li>
+                            <li><a class="is-size-6 is-active" href="">{{page.title}}</a></li>
+                        </ul>
+                    </nav>
+                    <h1 class="title is-2">
+                        {{ page.title }}
+                    </h1>
+                    <h2 class="subtitle is-5 mt-2">
+                        {{ page.description }}
+                    </h2>
+                    <br/>
+                    <div class="is-light is-size-6">
+                        Posted on {{page.date | date: "%b %d, '%y"}}</small>
                     </div>
-                </div>
-            </section>
-        </div>
+                </section>
+                <hr/>
+                <section class="post pt-2">
+                    <div class="container">
+                        <div class="columns is-6">
+                            {% if page.menu %}
+                            <div class="fixed column is-one-quarter is-hidden-tablet">
+                                {% include menu.html %}
+                            </div>
+                            {% endif %}
 
-        {% include footer.html %}
+                            <div class="column {% if page.menu %} is-three-quarters{% endif %}">
+                                <div class="content">
+                                    {{ page.content }}
+                                </div>
+                            </div>
+
+                            {% if page.menu %}
+                            <div class="column is-one-quarter is-hidden-mobile ">
+                                {% include menu.html %}
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            {% include footer.html %}
+        </main>
     </body>
 </html>

@@ -1,16 +1,11 @@
 ---
 page: Talks
-title: Technical Talks & Workshops
+title: Technical Talks
 description: <p>
-  <br/>I enjoying speaking about Google Cloud, building cloud-native data applications, genAI and systems engineering. If you'd like me at your event, drop me a mail at <a class='' href='mailto:iamaatoh@gmail.com' target='_blank'>iamaatoh@gmail.com</a>.
-  My speaker profile is available on <a href='https://sessionize.com/iamaatoh/' target='blank' style='text-decoration:underline;'>Sessionize</a>.
-  <br/><br/>
+  I speak on cloud-native data applications, Google Cloud generative AI, and systems engineering. For speaking inquiries, contact me at <a class='' href='mailto:iamaatoh@gmail.com' target='_blank'>iamaatoh@gmail.com</a>. My speaker profile is on <a href='https://sessionize.com/iamaatoh/' target='blank' style='text-decoration:underline;'>Sessionize</a>.
   <p>
+category: talks
+group_by_year: true
 listing_type: "talks"
 layout: listing
-thumbnail: thumbnail_video.html
-pagination:
-  enabled: true
-  category: "talks"
-  sort_reverse: true
 ---

@@ -1,3 +1,10 @@
+<li class="mb-4" style="line-height: 1.2;">
+    <a href="{{ post.external_url }}">{{ post.title }}</a>
+    <span class="has-text-grey has-text-right ml-2">
+        {{ post.where }}, {{ post.date | date: "%Y-%m-%d" }}
+    </span>
+</li>
+<!-- 
 <div class="my-4 columns" style="padding-bottom: 12px;">
     {% if post.embed %}
     <div class="p-2 column is-two-fifths">
@@ -20,4 +27,4 @@
             {% endif %}
         </p>
     </div>
-</div>
+</div> -->
