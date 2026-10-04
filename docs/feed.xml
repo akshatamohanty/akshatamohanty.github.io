@@ -12,8 +12,8 @@
         <title>AI in Production: Sampling, Labeling and Detecting Drift Before Your Customers Do</title>
         <description></description>
         <pubDate>Oct 2026</pubDate>
-        <link>https://iamaatoh.com/talks/agents-to-zero-gdg-pretoria.html </link>
-        <guid isPermaLink="true">https://iamaatoh.com/talks/agents-to-zero-gdg-pretoria.html</guid>
+        <link>https://iamaatoh.com/talks/detecting-drift-gdg-pretoria.html </link>
+        <guid isPermaLink="true">https://iamaatoh.com/talks/detecting-drift-gdg-pretoria.html</guid>
       </item>
       
     
@@ -25,6 +25,17 @@
         <pubDate>Sep 2026</pubDate>
         <link>https://iamaatoh.com/talks/building-a-distributed-multiagent-gdg-skopje.html </link>
         <guid isPermaLink="true">https://iamaatoh.com/talks/building-a-distributed-multiagent-gdg-skopje.html</guid>
+      </item>
+      
+    
+      
+      <item>
+        <category></category>
+        <title>AI in Production: Sampling, Labeling and Detecting Drift Before Your Customers Do</title>
+        <description></description>
+        <pubDate>Aug 2026</pubDate>
+        <link>https://iamaatoh.com/talks/detecting-drift-gdg-stuttgart.html </link>
+        <guid isPermaLink="true">https://iamaatoh.com/talks/detecting-drift-gdg-stuttgart.html</guid>
       </item>
       
     
@@ -47,17 +58,6 @@
         <pubDate>Mar 2026</pubDate>
         <link>https://iamaatoh.com/talks/agents-to-zero-cloudfest-poland.html </link>
         <guid isPermaLink="true">https://iamaatoh.com/talks/agents-to-zero-cloudfest-poland.html</guid>
-      </item>
-      
-    
-      
-      <item>
-        <category></category>
-        <title>Agents to Zero: Experiments with Serverless Multi-Agent Architectures on Google Cloud</title>
-        <description></description>
-        <pubDate>Dec 2025</pubDate>
-        <link>https://iamaatoh.com/talks/devfest-2025-gdg-porto.html </link>
-        <guid isPermaLink="true">https://iamaatoh.com/talks/devfest-2025-gdg-porto.html</guid>
       </item>
       
     
