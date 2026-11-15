@@ -9,6 +9,17 @@
       
       <item>
         <category></category>
+        <title>AI Doesn't Crash, It Drifts: Building continuous evaluation loops for AI Pipelines</title>
+        <description></description>
+        <pubDate>Nov 2026</pubDate>
+        <link>https://iamaatoh.com/talks/devfest-catania-2026.html </link>
+        <guid isPermaLink="true">https://iamaatoh.com/talks/devfest-catania-2026.html</guid>
+      </item>
+      
+    
+      
+      <item>
+        <category></category>
         <title>AI in Production: Sampling, Labeling and Detecting Drift Before Your Customers Do</title>
         <description></description>
         <pubDate>Oct 2026</pubDate>
@@ -47,17 +58,6 @@
         <pubDate>Mar 2026</pubDate>
         <link>https://iamaatoh.com/talks/agents-to-zero-gdg-saarbrucken.html </link>
         <guid isPermaLink="true">https://iamaatoh.com/talks/agents-to-zero-gdg-saarbrucken.html</guid>
-      </item>
-      
-    
-      
-      <item>
-        <category></category>
-        <title>Agents to Zero: Experiments with Serverless Multi-Agent Architectures on Google Cloud</title>
-        <description></description>
-        <pubDate>Mar 2026</pubDate>
-        <link>https://iamaatoh.com/talks/agents-to-zero-cloudfest-poland.html </link>
-        <guid isPermaLink="true">https://iamaatoh.com/talks/agents-to-zero-cloudfest-poland.html</guid>
       </item>
       
     
